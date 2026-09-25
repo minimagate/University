@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "4259d445f7668d75",
+    "type": "split",
+    "children": [
+      {
+        "id": "995fafb120573111",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2663350c94c0ccc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-09-23 - Insiemi, applicazioni e spazi vettoriali"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d29f19ab428e682e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fcb5cd747760a21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30e29a4449e2e66a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6db30c7fbb5c0f76",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2cd4c37d872916b7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 320.1953125
+  },
+  "right": {
+    "id": "cfaa1f077aa9c112",
+    "type": "split",
+    "children": [
+      {
+        "id": "803dd56b20b44082",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c3b96f6159ba8ca",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "d931787c6b748c4d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_transcripts/Geometria 1/Transcriptions.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "9d2e72a0dda19741",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8bdca8f13889b76b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "47de174ce1e9b3cf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_transcripts/Geometria 1/Transcriptions.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 345.203125
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "2663350c94c0ccc9",
+  "lastOpenFiles": [
+    "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "_audio/Fondamenti di Programmazione",
+    "_transcripts/Fondamenti di Programmazione/Transcriptions.base",
+    "_transcripts/Fondamenti di Programmazione",
+    "Notes/Fondamenti di Programmazione",
+    "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "_audio/Analisi 1/Università Di Pisa Dipartimento di Matematica 2.m4a",
+    "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "Notes/Analisi 1/Lectures",
+    "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica.m4a",
+    "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica 2.m4a",
+    "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica.txt",
+    "_audio/Analisi 1",
+    "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e introduzione agli spazi vettoriali.md",
+    "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e introduzione agli spazi vettoriali.md",
+    "_transcripts/Geometria 1/2026-09-23 - Scienza, spiritualità e formazione personale.md",
+    "_transcripts/Geometria 1/2026-09-23 - Scienza, spiritualità e formazione della persona.md"
+  ]
+}

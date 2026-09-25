@@ -1,0 +1,18 @@
+filters: 'file.inFolder("_transcripts/Fondamenti di Programmazione") && file.ext == "md"'
+properties:
+  date:
+    displayName: Date
+  title:
+    displayName: Lecture
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: Transcriptions
+    order:
+      - note.date
+      - note.title
+      - note.summary
+    sort:
+      - property: note.date
+        direction: DESC

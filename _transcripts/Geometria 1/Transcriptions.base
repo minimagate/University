@@ -1,0 +1,18 @@
+filters: file.inFolder("_transcripts/Geometria 1") && file.ext == "md"
+properties:
+  date:
+    displayName: Date
+  title:
+    displayName: Lecture
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: Transcriptions
+    order:
+      - date
+      - title
+      - summary
+    sort:
+      - property: date
+        direction: DESC
