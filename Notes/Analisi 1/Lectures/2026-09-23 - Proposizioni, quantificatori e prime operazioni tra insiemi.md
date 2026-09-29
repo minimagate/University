@@ -416,7 +416,7 @@ Esempio:
 Formalmente:
 
 $$
-\forall p,\quad \text{$p$ è una pecora}\Rightarrow\text{$p$ è nera}.
+\forall p,\quad (p\text{ è una pecora})\Rightarrow(p\text{ è nera}).
 $$
 
 La negazione è:

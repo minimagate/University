@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "995fafb120573111",
+        "id": "f1bda8523c766d72",
         "type": "tabs",
         "children": [
           {
-            "id": "2663350c94c0ccc9",
+            "id": "cb49407fb8880402",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+                "file": "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-23 - Insiemi, applicazioni e spazi vettoriali"
+              "title": "2026-09-24 - Funzioni, composizione e principio d’induzione"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.1953125
+    "width": 339.55078125
   },
   "right": {
     "id": "cfaa1f077aa9c112",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+                "file": "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,26 +187,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "2663350c94c0ccc9",
+  "active": "cb49407fb8880402",
   "lastOpenFiles": [
-    "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
     "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
     "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "_audio/Aritmetica/09-28-2026.mp3",
+    "_audio/Aritmetica/09-28-2026.mp3 1.adding",
+    "_audio/Aritmetica/09-28-2026.mp3.adding",
+    "Notes/Weekly Recaps/2026-W39 - 21–26 settembre.md",
+    "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+    "_audio/Analisi 1/analisi_FaPxzecJ.mp3",
+    "Notes/Weekly Recaps",
+    "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
     "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
-    "_audio/Fondamenti di Programmazione",
-    "_transcripts/Fondamenti di Programmazione/Transcriptions.base",
-    "_transcripts/Fondamenti di Programmazione",
-    "Notes/Fondamenti di Programmazione",
-    "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
-    "_audio/Analisi 1/Università Di Pisa Dipartimento di Matematica 2.m4a",
-    "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
-    "Notes/Analisi 1/Lectures",
-    "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+    "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "_transcripts/Fondamenti di Programmazione/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+    "Notes/Fondamenti di Programmazione/Lectures",
+    "_audio/Fondamenti di Programmazione/Biblioteca di Matematica Informatica e Fisica 1.m4a",
+    "_audio/Fondamenti di Programmazione/09-25-202614.m4a",
     "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica.m4a",
-    "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica 2.m4a",
-    "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica.txt",
-    "_audio/Analisi 1",
+    "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali 1.md",
     "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "_audio/Fondamenti di Programmazione/09-25-202614.23.m4a",
+    "_transcripts/Geometria 1/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+    "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
     "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e introduzione agli spazi vettoriali.md",
     "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e introduzione agli spazi vettoriali.md",
     "_transcripts/Geometria 1/2026-09-23 - Scienza, spiritualità e formazione personale.md",

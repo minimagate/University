@@ -538,7 +538,7 @@ In forma equivalente:
 
 $$
 f(E)=\{b\in B\mid \exists a\in E,\ f(a)=b\}.
-$$`
+$$
 
 L’immagine $f(E)$ è l’insieme degli arrivi di tutte le frecce che partono dagli elementi di $E$.
 
@@ -1032,7 +1032,7 @@ $$
 
 Poi si usa $n+1\geq 2$, che è certamente vero per $n\geq 1$.
 
-Quindi la proprietà vale per ogni $n\geq 4`.
+Quindi la proprietà vale per ogni $n\geq 4$.
 
 ### 13.4 Il meccanismo di caduta non deve necessariamente partire da zero
 
@@ -1138,7 +1138,7 @@ $$
 \frac12
 =
 \frac{1}{2}.
-$$`
+$$
 
 Supponiamo ora che
 
