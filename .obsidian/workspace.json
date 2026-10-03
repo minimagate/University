@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+                "file": "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-30 - Fattorizzazione dei polinomi e radici complesse"
+              "title": "2026-09-25 - Stati, algoritmi e fondamenti della logica formale"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+                "file": "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,16 +189,32 @@
   },
   "active": "cb49407fb8880402",
   "lastOpenFiles": [
-    "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-21 - Semantica del calcolo proposizionale e dimostrazioni per equivalenza.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-22 - Equivalenze tautologiche e sostituzione nell'implicazione.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-23 - Forme normali, tecniche di dimostrazione e logica del primo ordine.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+    "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+    "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+    "_transcripts/Geometria 1/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+    "_audio/Geometria 1/Biblioteca di Matematica Informatica e Fisica 2.m4a",
+    "Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
     "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
-    "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+    "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+    "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
     "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "_transcripts/Analisi 1/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+    "_audio/Analisi 1/Largo Bruno Pontecorvo 2.m4a",
+    "_transcripts/Geometria 1/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+    "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+    "_transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+    "_audio/Analisi 1/Largo Bruno Pontecorvo.m4a",
+    "_transcripts/Aritmetica/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+    "_audio/Aritmetica/Via Filippo Buonarroti 2.m4a",
+    "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
     "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
     "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
     "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
-    "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
-    "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
-    "_transcripts/Geometria 1/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
     "_audio/Geometria 1/Via Filippo Buonarroti.m4a",
     "_transcripts/Geometria 1/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
     "_audio/Geometria 1/geo.mp3",
@@ -208,22 +224,6 @@
     "_audio/Aritmetica/09-28-2026.mp3 1.adding",
     "_audio/Aritmetica/09-28-2026.mp3.adding",
     "Notes/Weekly Recaps/2026-W39 - 21–26 settembre.md",
-    "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
-    "_audio/Analisi 1/analisi_FaPxzecJ.mp3",
-    "Notes/Weekly Recaps",
-    "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
-    "_transcripts/Fondamenti di Programmazione/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
-    "Notes/Fondamenti di Programmazione/Lectures",
-    "_audio/Fondamenti di Programmazione/Biblioteca di Matematica Informatica e Fisica 1.m4a",
-    "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali 1.md",
-    "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
-    "_transcripts/Geometria 1/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
-    "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
-    "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
-    "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
-    "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e introduzione agli spazi vettoriali.md",
-    "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e introduzione agli spazi vettoriali.md",
-    "_transcripts/Geometria 1/2026-09-23 - Scienza, spiritualità e formazione personale.md",
-    "_transcripts/Geometria 1/2026-09-23 - Scienza, spiritualità e formazione della persona.md"
+    "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md"
   ]
 }

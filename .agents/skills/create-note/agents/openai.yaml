@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Note"
+  short_description: "Turn supplied material into a polished study note"
+  default_prompt: "Use $create-note to turn this material into a well-structured study note."

@@ -384,7 +384,7 @@ Nel corso dell’esposizione era stato inizialmente commesso un errore di calcol
 
 ---
 
-# 6. Introduzione alla logica
+## 6. Introduzione alla logica
 
 La logica è una disciplina antica, nata dal tentativo di formalizzare il ragionamento umano, cioè di individuare le regole che governano i processi di ragionamento.
 
@@ -395,7 +395,7 @@ I primi studi sistematici risalgono ai filosofi dell’antica Grecia, in partico
 - sillogismi;
 - dimostrazioni.
 
-## 6.1 Il sillogismo
+### 6.1 Il sillogismo
 
 Un esempio classico di ragionamento è:
 
@@ -432,7 +432,7 @@ $$
 
 La formalizzazione rende esplicita la struttura dell’enunciato e ne riduce l’ambiguità.
 
-## 6.2 Logica e informatica
+### 6.2 Logica e informatica
 
 La logica è strettamente collegata all’informatica e costituisce una parte dei suoi fondamenti teorici.
 
@@ -453,9 +453,9 @@ Il linguaggio **Prolog** è un esempio di linguaggio di programmazione logica: v
 
 ---
 
-# 7. Ragionamenti validi e ragionamenti non validi
+## 7. Ragionamenti validi e ragionamenti non validi
 
-## 7.1 Il problema degli amici al cinema
+### 7.1 Il problema degli amici al cinema
 
 Si considerino tre amici: Antonio, Bruno e Corrado. Sono note le seguenti informazioni:
 
@@ -477,7 +477,7 @@ Il problema consiste nel:
 4. dimostrare che la conclusione è corretta;
 5. dimostrare, eventualmente, che le altre conclusioni non seguono dalle premesse.
 
-## 7.2 Conseguenza logica
+### 7.2 Conseguenza logica
 
 In un ragionamento non è essenziale, inizialmente, stabilire se le premesse siano effettivamente vere nel mondo reale.
 
@@ -513,7 +513,7 @@ La struttura logica non garantisce la conclusione.
 
 ---
 
-# 8. Regole di inferenza
+## 8. Regole di inferenza
 
 Una **regola di inferenza** è una legge che consente di derivare uno o più asserti a partire da altri asserti.
 
@@ -559,7 +559,7 @@ $$
 
 Questa regola consente di passare da un’affermazione universale a un caso particolare.
 
-## 8.1 Dimostrazione del caso di Socrate
+### 8.1 Dimostrazione del caso di Socrate
 
 Introduciamo i predicati:
 
@@ -605,7 +605,7 @@ La dimostrazione è composta da passi meccanici:
 
 La stessa struttura può essere usata per dimostrare che $8$ non è primo. Cambiano i significati dei simboli, ma la struttura formale della dimostrazione rimane la stessa.
 
-## 8.2 Sintassi e significato
+### 8.2 Sintassi e significato
 
 Se si sostituiscono i simboli con lettere prive di significato, lo schema diventa:
 
@@ -631,7 +631,7 @@ Una dimostrazione è quindi una sequenza di trasformazioni simboliche eseguite s
 
 ---
 
-# 9. Logica classica e proposizioni
+## 9. Logica classica e proposizioni
 
 Una proposizione, o asserto, è un enunciato dichiarativo al quale è associato un valore di verità:
 
@@ -656,7 +656,7 @@ Una proposizione non può essere contemporaneamente vera e falsa.
 
 Esistono altre logiche, come la logica intuizionista, che possono adottare impostazioni diverse; in questo corso si considera la logica classica.
 
-## 9.1 Esempi di proposizioni
+### 9.1 Esempi di proposizioni
 
 Sono proposizioni:
 
@@ -680,11 +680,11 @@ L’espressione $x+1=2$ è problematica perché il suo valore di verità dipende
 
 ---
 
-# 10. Interpretazioni, modelli e conseguenza logica
+## 10. Interpretazioni, modelli e conseguenza logica
 
 Una dimostrazione simbolica opera sui simboli senza considerarne il significato. Il significato viene introdotto tramite il concetto di **interpretazione**.
 
-## 10.1 Interpretazione
+### 10.1 Interpretazione
 
 Un’interpretazione attribuisce un significato ai simboli presenti negli asserti.
 
@@ -710,7 +710,7 @@ Allora:
 
 Lo stesso asserto sintattico può quindi essere vero in alcune interpretazioni e falso in altre.
 
-## 10.2 Modello
+### 10.2 Modello
 
 Sia $\Gamma$ un insieme di asserti.
 
@@ -724,7 +724,7 @@ $$
 
 significa che l’interpretazione $I$ rende veri tutti gli asserti di $\Gamma$.
 
-## 10.3 Conseguenza logica
+### 10.3 Conseguenza logica
 
 Un asserto $Q$ è una conseguenza logica dell’insieme di asserti $\Gamma$ se $Q$ è vero in tutti i modelli di $\Gamma$.
 
@@ -750,7 +750,7 @@ Questa è la formalizzazione precisa dell’idea intuitiva secondo cui una concl
 
 ---
 
-# 11. Dimostrazione sintattica e semantica
+## 11. Dimostrazione sintattica e semantica
 
 Il concetto di conseguenza logica è semantico: riguarda la verità degli asserti nelle possibili interpretazioni.
 
@@ -771,7 +771,7 @@ $$
 
 La dimostrazione non utilizza il significato dei simboli: è una manipolazione puramente sintattica.
 
-## 11.1 Correttezza delle regole
+### 11.1 Correttezza delle regole
 
 Un insieme di regole di inferenza è **corretto** se ogni conclusione ottenuta applicando una regola è effettivamente conseguenza logica delle premesse utilizzate.
 
@@ -779,7 +779,7 @@ In forma concettuale:
 
 > applicando una regola corretta non si può derivare una conclusione falsa in un’interpretazione in cui tutte le premesse sono vere.
 
-## 11.2 Completezza delle regole
+### 11.2 Completezza delle regole
 
 Un insieme di regole è **completo** se consente di dimostrare ogni conseguenza logica.
 
@@ -795,7 +795,7 @@ La correttezza garantisce che non vengano dimostrate conclusioni illegittime; la
 
 ---
 
-# 12. Calcolo proposizionale
+## 12. Calcolo proposizionale
 
 Per formalizzare rigorosamente i ragionamenti si introduce un linguaggio simbolico. Il primo linguaggio logico studiato è il **calcolo proposizionale**.
 
@@ -815,7 +815,7 @@ Lo studio comprenderà:
 4. il concetto di conseguenza logica;
 5. le dimostrazioni.
 
-## 12.1 Proposizioni atomiche e non atomiche
+### 12.1 Proposizioni atomiche e non atomiche
 
 Una **proposizione atomica** è una proposizione che non viene scomposta in proposizioni più semplici.
 
@@ -834,7 +834,7 @@ I connettivi logici svolgono un ruolo analogo a quello degli operatori aritmetic
 
 ---
 
-# 13. Connettivi logici
+## 13. Connettivi logici
 
 I principali connettivi introdotti sono:
 
@@ -856,7 +856,7 @@ Date due proposizioni $p$ e $q$, le notazioni utilizzate sono:
 
 L’equivalenza può essere rappresentata anche con una doppia freccia. La notazione precisa può variare, purché sia chiaro il significato.
 
-## 13.1 Negazione
+### 13.1 Negazione
 
 La negazione di $p$ è indicata con:
 
@@ -869,7 +869,7 @@ Il suo valore di verità è opposto a quello di $p$:
 - $\neg p$ è vera quando $p$ è falsa;
 - $\neg p$ è falsa quando $p$ è vera.
 
-## 13.2 Congiunzione
+### 13.2 Congiunzione
 
 La congiunzione è indicata con:
 
@@ -885,7 +885,7 @@ p \land q \text{ è vera}
 p \text{ è vera e } q \text{ è vera}.
 $$
 
-## 13.3 Disgiunzione inclusiva
+### 13.3 Disgiunzione inclusiva
 
 La disgiunzione è indicata con:
 
@@ -915,7 +915,7 @@ si potrebbe intendere che si mangia una sola delle due cose, non entrambe. In ta
 
 La disgiunzione ordinaria $p\lor q$, invece, permette che siano vere entrambe.
 
-## 13.4 Implicazione
+### 13.4 Implicazione
 
 L’implicazione è indicata con:
 
@@ -945,7 +945,7 @@ In particolare:
 
 Le tabelle di verità permetteranno di formalizzare completamente questi casi.
 
-## 13.5 Equivalenza
+### 13.5 Equivalenza
 
 L’equivalenza è indicata con:
 
