@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e5541f8651f1dd6",
+            "id": "a93bfe4529c0f9ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
-                "mode": "preview",
+                "file": "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-10-02 - Span, indipendenza lineare e basi vettoriali"
+              "title": "2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione"
             }
           }
         ]
@@ -117,7 +117,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+            "file": "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -171,14 +171,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "0e5541f8651f1dd6",
+  "active": "a93bfe4529c0f9ea",
   "lastOpenFiles": [
+    "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+    "Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+    "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
     "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
     "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
     "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
     "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
     "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
-    "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
     "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
     "_audio/Geometria 1/Biblioteca di Matematica Informatica e Fisica 2.m4a",
     "_transcripts/Geometria 1/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
