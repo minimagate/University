@@ -82,7 +82,7 @@ Se la base è finita, $K^{(\mathcal{B})}$ coincide con un opportuno spazio $K^n$
 
 La scelta della base induce quindi una corrispondenza tra:
 
-- i vettori di $V;
+- i vettori di $V$;
 - le loro famiglie di coordinate rispetto a $\mathcal{B}$.
 
 La base permette di descrivere astrattamente un vettore tramite i coefficienti che compaiono nel suo sviluppo.

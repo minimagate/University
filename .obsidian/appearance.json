@@ -1,6 +1,6 @@
 {
   "showRibbon": false,
   "cssTheme": "Minimal",
-  "accentColor": "",
+  "accentColor": "#ababab",
   "theme": "system"
 }
