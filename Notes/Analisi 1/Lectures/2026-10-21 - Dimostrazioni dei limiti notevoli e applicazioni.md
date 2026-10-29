@@ -1,6 +1,7 @@
 ---
 type: lecture-note
 course: Analisi 1
+date: 2026-10-21
 title: Dimostrazioni dei limiti notevoli e applicazioni
 source_files:
   - AM1_26_L019.pdf
@@ -572,8 +573,8 @@ $$
 
 ## Fonti e precisazioni
 
-- [Lezione 019](/Users/michelangelogubinelli/Downloads/AM1_26_L019.pdf): dimostrazioni dei limiti notevoli, confronto su intervalli unitari e limite $x\log x$.
-- [Lezione 020](/Users/michelangelogubinelli/Downloads/AM1_26_L020.pdf): passaggio dai limiti di funzioni a quelli di successioni ed esercizi svolti.
+- Lezione 019 (`AM1_26_L019.pdf`, in Downloads): dimostrazioni dei limiti notevoli, confronto su intervalli unitari e limite $x\log x$.
+- Lezione 020 (`AM1_26_L020.pdf`, in Downloads): passaggio dai limiti di funzioni a quelli di successioni ed esercizi svolti.
 
 Entrambi i PDF riportano la data **15/10/2025**, conservata nel campo `source_date`.
 

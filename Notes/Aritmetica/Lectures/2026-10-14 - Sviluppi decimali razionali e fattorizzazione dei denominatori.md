@@ -214,7 +214,7 @@ $$
 
 dove $B$ è l’intero rappresentato dal periodo.
 
-Poiché il periodo inizia dopo $s$ cifre decimali, esso deve essere diviso per $10^s per collocarlo nella posizione corretta:
+Poiché il periodo inizia dopo $s$ cifre decimali, esso deve essere diviso per $10^s$ per collocarlo nella posizione corretta:
 
 $$
 x=

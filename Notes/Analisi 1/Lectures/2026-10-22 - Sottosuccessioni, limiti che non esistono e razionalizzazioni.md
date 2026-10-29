@@ -1,6 +1,7 @@
 ---
 type: lecture-note
 course: Analisi 1
+date: 2026-10-22
 title: Sottosuccessioni, limiti che non esistono e razionalizzazioni
 source_files:
   - AM1_26_L021.pdf
@@ -10,7 +11,7 @@ source_date: 2025-10-20
 
 # Sottosuccessioni, limiti che non esistono e razionalizzazioni
 
-Questa nota riunisce le due parti **021 e 022** della stessa lezione e prosegue [[Lezioni 019-020 - Dimostrazioni dei limiti notevoli e applicazioni]]. La prima parte introduce le **sottosuccessioni** e le usa per dimostrare che un limite **non esiste**, per successioni e per funzioni. La seconda parte è una raccolta di esercizi: **razionalizzazioni** per le forme $+\infty-\infty$, somme con un numero crescente di termini, limiti dipendenti da un parametro e forme $1^{+\infty}$.
+Questa nota riunisce le due parti **021 e 022** della stessa lezione e prosegue [[2026-10-21 - Dimostrazioni dei limiti notevoli e applicazioni]]. La prima parte introduce le **sottosuccessioni** e le usa per dimostrare che un limite **non esiste**, per successioni e per funzioni. La seconda parte è una raccolta di esercizi: **razionalizzazioni** per le forme $+\infty-\infty$, somme con un numero crescente di termini, limiti dipendenti da un parametro e forme $1^{+\infty}$.
 
 ## 1. Sottosuccessioni
 
@@ -143,7 +144,7 @@ Negli appunti «$x\to$ CANE» indica un punto di arrivo generico: $+\infty$, $-\
 
 Per ora è una condizione sufficiente; anche questa in realtà è un «se e solo se».
 
-**Dimostrazione.** Se per assurdo $\lim_{x\to\text{CANE}}f(x)=\ell\in\overline{\mathbb R}$, allora $f(a_n)$ e $f(b_n)$ tenderebbero entrambe a $\ell$. È il [[Lezioni 019-020 - Dimostrazioni dei limiti notevoli e applicazioni#5.1 Lemma di passaggio al limite lungo una successione|criterio funzioni → successioni]], applicato con $x=a_n$ e con $x=b_n$.
+**Dimostrazione.** Se per assurdo $\lim_{x\to\text{CANE}}f(x)=\ell\in\overline{\mathbb R}$, allora $f(a_n)$ e $f(b_n)$ tenderebbero entrambe a $\ell$. È il [[2026-10-21 - Dimostrazioni dei limiti notevoli e applicazioni#5.1 Lemma di passaggio al limite lungo una successione|criterio funzioni → successioni]], applicato con $x=a_n$ e con $x=b_n$.
 
 **Promemoria (dalle ipotesi del criterio).** Le successioni devono stare nel dominio di $f$ e, se il punto è finito, essere diverse da $x_0$; per $x_0^+$ o $x_0^-$ devono avvicinarsi dal lato giusto.
 
