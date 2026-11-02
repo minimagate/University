@@ -1,4 +1,4 @@
-"""Disegni selezionati per Analisi 1 Spark (settembre–ottobre 2026).
+"""Disegni selezionati per Analisi 1 Spark (ottobre 2026).
 Derivati dalla biblioteca del volume archiviato, conservata immutata.
 
 Genera gli SVG originali a tratto sottile:  python3 disegni.py [cartella] [sizes.json]

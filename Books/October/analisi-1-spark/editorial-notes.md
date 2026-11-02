@@ -1,6 +1,22 @@
 # Analisi 1 Spark — scelte editoriali e correzioni
 
-## Revisione profonda del 2 novembre 2026
+## Revisione narrativa del 2 novembre 2026
+
+Questa revisione riguarda soltanto la prosa e segue le nuove regole Spark (`.agents/skills/monthly-book/references/spark-standard.md` e l'esempio approvato in `prose-example.md`, tratto proprio dal capitolo 6 di questo libro). Sono stati riscritti l'introduzione, i 14 capitoli con i loro «In breve» e tutte le 30 soluzioni.
+
+**Che cosa è cambiato.** Il testo precedente era corretto ma spezzato in frasi brevi e isolate, tenute insieme soprattutto dai due punti. Ora ogni sezione racconta un percorso: una domanda concreta, la difficoltà che incontra, l'idea che la risolve e infine la definizione o il teorema come risposta. Le frasi sono collegate da connettivi e hanno lunghezza variabile; le scelte (intervalli principali, passo h nella costruzione di √2, esponente comune per e, ordine degli sviluppi) sono motivate invece che dichiarate. Gli «In breve» sono paragrafi narrativi di tre o quattro frasi, con aperture diverse da capitolo a capitolo invece dello schema domanda → «Partiamo da» → «Impareremo». Sono state eliminate le personificazioni («compie una scelta», «la verifica completa l'equivalenza», «il percorso conserva») e l'abuso di «conservare» e di «proprio».
+
+Indicatori sul testo senza formule (script di stile della sessione): frase media da 13,0 a 16,5 parole; frasi di al massimo 8 parole dal 27% al 16%; due punti da 177 a 43 ogni 10.000 parole; punti e virgola da 62 a 4. Sono segnali, non giudizi: la valutazione è stata fatta rileggendo.
+
+**Che cosa è stato asciugato.** Osservazioni rivolte a un revisore più che allo studente (per esempio «come nelle fonti del corso», «enunciato senza dimostrazione nelle fonti», «la lezione anticipa»), ripetizioni fra paragrafo e riquadro e alcune frasi di raccordo ridondanti. Nessun concetto, teorema, ipotesi, prova, esempio, figura o esercizio è stato rimosso. La sezione 5.5 ha un titolo nuovo («Esponenziale e logaritmo: le proprietà che useremo», prima «un ponte per ottobre»), la 14.2 dice «quali termini tenere»; nel capitolo 6 l'andata e ritorno delle inverse è ora la sottosezione 6.3.1. La numerazione delle sezioni non cambia.
+
+**Copertina e prefazione.** La copertina dice «ottobre 2026»; la prefazione dice che il volume raccoglie le lezioni fino al 31 ottobre, senza l'intervallo di date, che resta in `coverage.md` e `source-audit.md`. Le convenzioni scrivono 1/n e n! in modalità matematica.
+
+**Matematica.** Nessun errore nei contenuti precedenti. Durante la riscrittura sono stati ricontrollati tutti i passaggi riformulati, in particolare le stime di √2, l'equivalenza (1−1/n²)ⁿ ≥ 1−1/n, il margine 35/12 per e, i coefficienti di sin x cos x, cos(sin x), tan x e (sin x)³, e i valori arcsin(sin 2)=π−2, arccos(cos 4)=2π−4. Tre sviste introdotte nelle bozze di questa revisione sono state corrette prima della compilazione (una disequazione descritta «sopra la retta» invece di «su di essa»; due marcatori matematici chiusi male).
+
+**Impaginazione.** Il libro passa da 73 a 76 pagine. Sono stati tolti i due salti pagina forzati dei capitoli 6 e 14, che con il nuovo testo lasciavano pagine mezze vuote. Nessuna figura nuova: la revisione è stata deliberatamente limitata alla prosa.
+
+## Revisione profonda del 2 novembre 2026 (precedente)
 
 Sono stati riveduti tutti i frammenti di lettura: introduzione, 14 capitoli e 30 soluzioni. Il confronto editoriale usa i capitoli 1, 5 e 6 di Aritmetica Spark. «In breve» è presente una sola volta subito dopo ogni titolo di capitolo; il resto della revisione riguarda la spiegazione effettiva, non soltanto i riquadri.
 

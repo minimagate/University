@@ -69,3 +69,17 @@ Il rapporto `reviews/deep-pass-paragraphs.json` è solo un controllo del sorgent
 Le aperture di tutti i capitoli sono state rilette e riscritte per dare una domanda e un percorso in poche frasi naturali. Verificata la densità del PDF, con il preambolo di Aritmetica e senza ridurre caratteri o margini. Il respiro aggiunto serve ai passaggi e alle decisioni spiegate; il numero di pagine non è un obiettivo. I dati correnti e i limiti effettivi sono in validation.md.
 
 La revisione indipendente ha precisato due ipotesi: nel teorema del fattore P∈K[z],r∈K; una famiglia di colonne parallele genera una retta quando almeno una colonna è non nulla, mentre la matrice nulla ha immagine {0}. Il capitolo4 distingue con sottotitoli gli esempi sui polinomi, sulle funzioni, sulle matrici e sui campi.
+
+
+## Revisione narrativa del 2 novembre 2026
+
+Dopo la revisione approfondita il testo era corretto ma spezzato: frasi brevissime e isolate, due punti usati come legame principale, «In breve» costruiti tutti sullo schema domanda → «Partiamo da» → «Impareremo». In questo passaggio tutta la prosa, l'introduzione e le soluzioni sono state riscritte come una narrazione continua, con la voce approvata in `prose-example.md`.
+
+- **Filo del ragionamento.** Ogni sezione parte da una domanda concreta, mostra l'ostacolo e arriva alla definizione o al teorema come risposta (per esempio: perché il prodotto complesso si definisce così, perché serve lo scambio per confrontare le basi, perché nella prova di Grassmann si parte dall'intersezione).
+- **Frasi collegate e scelte motivate.** Connettivi al posto dei due punti; motivato ogni passo che prima era soltanto dichiarato (scelta del coefficiente non nullo nello scambio, scelta della descrizione per equazioni o per generatori, uso del nucleo per confrontare i ranghi).
+- **«In breve» riscritti** come brevi paragrafi narrativi di tre o quattro frasi, con aperture diverse.
+- **Tolte le osservazioni rivolte al revisore**: il riferimento alla lezione del 22 ottobre nel capitolo 9, «riportiamo l'unicità senza prova, come nel corso» nel capitolo 10, la data di inizio delle fonti nella prefazione (sostituita da «lezioni fino al 31 ottobre 2026»). Ridotti gli intercalari *proprio*, *conservare* e *restituisce*.
+- **Snellimenti.** Uniti in un solo capoverso le verifiche ripetute degli assiomi di K<sup>n</sup>, le due direzioni delle caratterizzazioni massimale/minimale e le osservazioni sull'unione di sottospazi; nessun concetto rimosso.
+- **Piccole precisazioni.** Nel capitolo 5 la base a cui si riferiscono le coordinate (2,1) di (3,1) è ora indicata esplicitamente; nel capitolo 10 la disuguaglianza rank(A) ≤ min(m,n) è motivata separatamente per righe e colonne; nel capitolo 2 aggiunta la verifica esplicita della divisione (5+i)(1−i)/2 = 3−2i.
+
+Nessun errore matematico trovato nel testo precedente; nessuna figura aggiunta. Titoli modificati: 9.2 «Operazioni di riga: cambiare la forma senza cambiare le soluzioni», 6.3.3 «Le coordinate rispettano le operazioni», 10.2.2 «Perché bastano e perché il rango non cambia», 10.3.1 «Quali colonne scegliere nella matrice iniziale?», sezione della prefazione «Le fonti». coverage.md è aggiornato per il titolo 9.2.

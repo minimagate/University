@@ -1,4 +1,4 @@
-"""Disegni del libro Fondamenti di Programmazione (settembre-ottobre 2026).
+"""Disegni del libro Fondamenti di Programmazione (ottobre 2026).
 
 Genera gli SVG originali a tratto sottile. Lanciare:  python3 disegni.py [cartella] [sizes.json]
 Poi creare le copie PDF:      swift svg-to-pdf.swift <cartella>

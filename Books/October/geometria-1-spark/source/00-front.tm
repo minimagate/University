@@ -17,31 +17,29 @@
 
 <chapter*|Dalle coordinate alle strutture>
 
-Una freccia nel piano, un polinomio e una lista di numeri sembrano oggetti diversi. Eppure possiamo sommarli e moltiplicarli per numeri seguendo le stesse regole. Questa somiglianza ci permetterà di studiarli insieme.
+Una freccia nel piano, un polinomio e una lista di numeri sembrano oggetti che non hanno nulla in comune. Eppure con tutti e tre facciamo le stesse due cose, li sommiamo e li moltiplichiamo per un numero, e le regole che seguiamo sono identiche. Questo libro nasce da quella somiglianza: se le regole sono le stesse, possiamo studiare tutti questi oggetti in una volta sola.
 
-Le coordinate saranno il nostro strumento per calcolare. Impareremo anche a distinguere il vettore dai numeri con cui lo descriviamo: cambiando base, cambiano le coordinate, ma il vettore resta lo stesso.
+Per fare i conti useremo le coordinate, ma impareremo presto a non confonderle con il vettore che descrivono. Se cambiamo il sistema di riferimento cambiano i numeri, mentre il vettore resta esattamente quello di prima. Tenere separate queste due cose è una delle abitudini più utili dell'algebra lineare.
 
-Il libro presuppone frazioni, equazioni elementari e la trigonometria del triangolo e della circonferenza. Introduce il linguaggio universitario e spiega le mosse delle dimostrazioni. Quando una prova è impegnativa, conviene rileggere prima l'esempio che la prepara e poi chiedersi quale ostacolo risolve ciascun passaggio.
+Per cominciare bastano le frazioni, le equazioni elementari e un po' di trigonometria del triangolo e della circonferenza. Il linguaggio universitario viene introdotto man mano, e le dimostrazioni sono accompagnate dal motivo di ogni mossa. Quando una prova ti sembra impegnativa, conviene tornare all'esempio che la prepara e chiederti quale difficoltà risolve ciascun passaggio.
 
 <section*|Mappa del percorso>
 
-I primi tre capitoli costruiscono il linguaggio degli <strong|insiemi e delle applicazioni>, i <strong|campi>, i <strong|numeri complessi> e la <strong|fattorizzazione dei polinomi>. I complessi insegnano anche una prima distinzione decisiva: la stessa operazione si capisce meglio cambiando rappresentazione.
+I primi tre capitoli preparano il terreno. Costruiamo il linguaggio degli <strong|insiemi e delle applicazioni>, scopriamo che cosa rende un insieme di numeri un <strong|campo>, incontriamo i <strong|numeri complessi> e arriviamo alla <strong|fattorizzazione dei polinomi>. Con i complessi vedremo anche, per la prima volta, che la stessa operazione può diventare molto più chiara se cambiamo il modo di rappresentarla.
 
-I capitoli 4 e 5 introducono <strong|spazi e sottospazi vettoriali>, <strong|span>, <strong|indipendenza lineare>, <strong|basi e coordinate>. La domanda è: con quali vettori possiamo costruire tutti gli altri, senza introdurre ambiguità?
+Nei capitoli 4 e 5 entrano in scena gli <strong|spazi e i sottospazi vettoriali>, lo <strong|span>, l'<strong|indipendenza lineare>, le <strong|basi e le coordinate>. Tutti questi concetti rispondono a una domanda sola, cioè quali vettori ci bastano per costruire tutti gli altri senza ambiguità.
 
-Nel capitolo 6 la <strong|dimensione> misura quanti vettori servono; nel 7 la <strong|somma diretta> e la <strong|formula di Grassmann> spiegano come combinare sottospazi senza contare due volte la parte comune.
+Il capitolo 6 introduce la <strong|dimensione>, che misura quanti vettori servono davvero. Il capitolo 7 mostra come si combinano due sottospazi con la <strong|somma diretta> e la <strong|formula di Grassmann>, facendo attenzione a non contare due volte la parte che hanno in comune.
 
-Gli ultimi tre capitoli collegano <strong|matrici e applicazioni lineari>, <strong|nucleo e immagine>, <strong|eliminazione di Gauss>, <strong|rango e sistemi lineari>. Qui le idee astratte diventano strumenti per calcolare, e i calcoli aiutano a vedere le idee.
+Gli ultimi tre capitoli collegano <strong|matrici e applicazioni lineari>, <strong|nucleo e immagine>, l'<strong|eliminazione di Gauss>, il <strong|rango e i sistemi lineari>. Qui le idee astratte diventano strumenti di calcolo, e a loro volta i calcoli ci aiutano a vedere le idee.
 
-Le definizioni essenziali sono raccolte in riquadri «Concetto chiave». Gli esempi spiegano le scelte oltre ai conti. Gli esercizi finali permettono di provare in autonomia: ogni domanda ha una soluzione ragionata in appendice. Le parti «Per proseguire» raccolgono dettagli secondari che puoi riprendere dopo il primo studio.
+Le definizioni essenziali sono raccolte nei riquadri «Concetto chiave», e gli esempi spiegano le scelte oltre ai conti. Alla fine di ogni capitolo trovi qualche esercizio da provare da solo, con una soluzione ragionata in appendice. Le parti intitolate «Per proseguire» contengono sviluppi secondari, che puoi riprendere dopo una prima lettura.
 
-<strong|Convenzioni.> <math|K> indica un campo, con <math|0≠1>.
+<strong|Convenzioni.> Con <math|K> indichiamo sempre un campo, in cui <math|0≠1>. Una tupla di numeri, quando compare in un prodotto con una matrice, va letta come una colonna. Scriviamo <math|K<rsub|d>[X]> per i polinomi di grado al più <math|d>, polinomio nullo compreso. Quando il campo cambia una conclusione lo diciamo esplicitamente, e una combinazione lineare ha sempre un numero finito di termini.
 
-I vettori scritti come tuple sono letti come colonne quando compaiono in un prodotto matriciale. <math|K<rsub|d>[X]> indica i polinomi di grado al più <math|d>, compreso il polinomio nullo. Quando il campo influenza una conclusione, lo indichiamo espressamente. Una combinazione lineare contiene sempre un numero finito di termini.
+<section*|Le fonti>
 
-<section*|Il periodo e le fonti>
-
-Il periodo coperto va dal 23 settembre, prima lezione disponibile, al 31 ottobre 2026; l'ultima registrazione nel periodo è del 27 ottobre. Le fonti disponibili sono dodici note e dodici trascrizioni. Novembre appartiene al volume successivo. Le motivazioni, le figure e gli esercizi aggiunti sono rielaborazioni didattiche, non citazioni del docente. La documentazione delle fonti accompagna il libro in file separati.
+Il volume raccoglie le lezioni del corso fino al 31 ottobre 2026, a partire da dodici note e dodici trascrizioni; le lezioni di novembre appartengono al volume successivo. Le motivazioni, le figure e gli esercizi aggiunti sono rielaborazioni didattiche e non citazioni del docente. La documentazione dettagliata delle fonti accompagna il libro in file separati.
 
 <\table-of-contents|toc>
 </table-of-contents>

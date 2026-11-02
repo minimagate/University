@@ -9,14 +9,14 @@ Spark is the default for every new book. Use `Books/October/aritmetica-1-spark/`
 
 ## Teaching and page design
 
-Write simply and patiently: a concrete case, the reason a strategy works, then the rigorous argument. For Euclid's lemma, first show why `3∣5t` implies `3∣t` through `t=2·3t−5t`, explain why Bézout supplies this identity, then prove the general statement. Explain unfamiliar notation before using it. Name all main concepts explicitly in chapter or section titles; add concise `concetto` boxes selectively, a mental map and useful connections. A student must be able to find the course's pillars in the contents.
+Write simply, patiently and as a narrative (voice and approved example: `monthly-book/references/spark-standard.md` and `prose-example.md`): a concrete case, the reason a strategy works, then the rigorous argument, in connected sentences that are pleasant to read. For Euclid's lemma, first show why `3∣5t` implies `3∣t` through `t=2·3t−5t`, explain why Bézout supplies this identity, then prove the general statement. Explain unfamiliar notation before using it. Name all main concepts explicitly in chapter or section titles; add concise `concetto` boxes selectively, a mental map and useful connections. A student must be able to find the course's pillars in the contents.
 
-Choose chapter length from the reasoning. Every numbered chapter must open with the canonical `inbreve` environment containing two or three short orienting sentences. This matches Aritmetica. No page/chapter quotas, repeated seven-part structure or requirement to use the other boxes in every chapter. Keep secondary variants in an optional “Per proseguire” passage or document their omission in `coverage.md`. Use `anatomia` sparingly where it reveals a proof's decisions; include explained solutions in an appendix. Do not restore the old “Officina” language or a compulsory proof-toolbox appendix.
+Choose chapter length from the reasoning. Every numbered chapter must open with the canonical `inbreve` environment containing a short narrative orientation, usually three or four connected sentences, with an opening that varies across chapters. No page/chapter quotas, repeated seven-part structure or requirement to use the other boxes in every chapter. Keep secondary variants in an optional “Per proseguire” passage or document their omission in `coverage.md`. Use `anatomia` sparingly where it reveals a proof's decisions; include explained solutions in an appendix. Do not restore the old “Officina” language or a compulsory proof-toolbox appendix.
 
 Preserve the canonical preamble and tail:
 
 - Computer Modern defaults, 11 pt, A4; never assign `font` or `math-font`.
-- Minimal cover: course, month and year. Centered chapter titles, small-caps chapter number, title size 1.7 without bold; 24 mm horizontal and 21/22 mm vertical margins.
+- Minimal cover: course, edition month and year (for example «ottobre 2026»; never a span such as «settembre e ottobre»). Centered chapter titles, small-caps chapter number, title size 1.7 without bold; 24 mm horizontal and 21/22 mm vertical margins.
 - Contents include chapters and main sections; suppress subsections with `subsection-toc`, never `section-toc`. No sources/editorial appendix in the PDF: use the companion Markdown and `fonti.json`.
 - Fine monochrome vector figures, the existing figure library and SVG+PDF originals (see `book-figures`).
 
@@ -57,7 +57,7 @@ A direct TeXmacs edit of the generated full `.tm` is valid, but rebuilding from 
 - Text: `<strong|…>`, `<em|…>`, `<\itemize>`, `<\enumerate>`, Italian «quotes».
 - Figures: `<figura|@IMG(name)|Caption.>` or `@IMG(name,0.85)`. `sizes.json` supplies physical dimensions; TeXmacs embeds the vector PDF. Figure and caption stay together.
 
-Keep one conceptual move per real paragraph. Separate calculations, definitions and the reasons for choosing a proof step. Use meaningful subheadings or a small trace table for changes of subject or state; avoid both dense prose catalogues and fragmented notes.
+Develop one idea per real paragraph, in several connected sentences. Separate calculations, definitions and the reasons for choosing a proof step. Use meaningful subheadings or a small trace table for changes of subject or state; avoid both dense prose catalogues and fragmented notes made of one-fact sentences.
 
 The canonical macros are available when helpful; only the opening `inbreve` is required in every numbered chapter:
 
@@ -75,7 +75,7 @@ Titles start with capitals. Box cells can break over pages; avoid stranded label
 
 ## Verify before delivery
 
-Run `python3 scripts/check-editorial.py .` before export (included in the bundle build). It fails when a numbered chapter lacks its opening `In breve` and flags unusually long prose for human review; it cannot evaluate clarity or mathematical density. Read the prose and rendered pages independently.
+Run `python3 scripts/check-editorial.py .` before export (included in the bundle build). It fails when a numbered chapter lacks its opening `In breve`, flags unusually long paragraphs (over 130 ordinary words) for human review and prints per-chapter rhythm diagnostics (mean sentence length, share of very short sentences, colons per 100 words, repeated tics). These are signals, not grades: it cannot evaluate clarity, narrative or mathematical density. Read the prose and rendered pages independently.
 
 Run syntax checking before export: a TeXmacs parse error can silently load a blank page. `check.py` checks tag balance, not mathematical correctness. Verify computations and proof hypotheses independently at the scale required by the text; record findings in `validation.md`.
 

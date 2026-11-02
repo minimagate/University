@@ -4,7 +4,7 @@ Data: 2 novembre 2026.
 
 ## Artefatti verificati
 
-- PDF definitivo: **52 pagine**, incluse copertina, introduzione, indice, 12 capitoli e soluzioni.
+- PDF definitivo: **56 pagine** dopo la revisione narrativa (erano 52), incluse copertina, introduzione, indice su due pagine, 12 capitoli e soluzioni.
 - 23 figure vettoriali richiamate; tutti gli SVG originali e i PDF corrispondenti presenti.
 - 24 esercizi conclusivi, ciascuno con soluzione spiegata.
 - Sorgente TeXmacs completo, capitoli UTF-8, impaginazione e script di rigenerazione consegnati insieme.
@@ -31,5 +31,17 @@ La copertura è selettiva nei dettagli, come concordato con l'utente: tutte le s
 
 ## Impronte degli output
 
-- PDF SHA-256: `73b905361d98d0f6f0e7ad40c97980fe7690e122bbd5e9f7992cacf5fe1c241b`
-- TeXmacs SHA-256: `68047d2e4e0453f5b1afbd881fd0b6ce3defe7d3f96171f2a6f0b6e903f4e533`
+- PDF SHA-256: `e0aaef35d27a1ea1f4aa991105281f3158d59805dbdb7a3f7b520b2a7fbcbe57`
+- TeXmacs SHA-256: `15492e6120c543206b2eaae09523b2dba1e8f1afa00b20d43104f6db59635576`
+
+## Revisione narrativa del 2 novembre 2026
+
+Controlli eseguiti dopo la riscrittura della prosa:
+
+- `sh build.sh` riuscito (assemblaggio, conversione, controllo sintattico, esportazione con TeXmacs 2.1.5); PDF di 56 pagine.
+- Tutte le 56 pagine renderizzate a scala 0,6 e ispezionate su fogli di contatto; copertina, introduzione, indice, apertura del capitolo 1, pagine 38–39, 51 e 54 ispezionate a scala 1,2. Corretta una pagina con la sola Verifica 8 (capitolo 8 compattato). Restano pagine finali di capitolo parzialmente vuote prima di un nuovo capitolo, come nell'edizione precedente; nessuna sovrapposizione, formula tagliata, titolo isolato o riquadro spezzato male.
+- Controlli numerici rieseguiti e superati: `checks/foundations.py` (765), `checks/integers.py` (26.380), `checks/algebra.py` (105), `checks/algebra-independent.py` (141). Le formule e i dati degli esempi non sono cambiati; i calcoli riscritti nel testo e nelle soluzioni sono stati ricontrollati a mano.
+- `sources.py verify assets/fonti.json`: 27 fonti intatte, 0 modificate. `scripts/verify_sources.py` termina invece con errore perché cerca il volume precedente in `Books/October/aritmetica-1.tm`, che non esiste più dopo il riordino dell'archivio (manca anche `Books/Archive/relocations.json`); il problema è precedente a questa revisione e non riguarda le fonti delle lezioni.
+- Testo estratto dal PDF: nessuna occorrenza di «settembre»; la copertina riporta «ottobre 2026».
+- `check-editorial.py`: nessun capitolo senza «In breve»; diagnostica di ritmo registrata per la revisione umana.
+

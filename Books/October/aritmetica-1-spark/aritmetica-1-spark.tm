@@ -25,7 +25,9 @@
     <arg|num>>|<arg|body>>>>> <assign|figura|<macro|img|cap|<padded|<surround|<no-indent>||<tabular|<tformat|<twith|table-width|1par>|<cwith|1|2|1|1|cell-width|1par>|<cwith|1|2|1|1|cell-halign|c>|<cwith|2|2|1|1|cell-hyphen|t>|<cwith|1|2|1|1|cell-lsep|0pt>|<cwith|1|2|1|1|cell-rsep|0pt>|<cwith|1|1|1|1|cell-bsep|0.5fn>|<cwith|2|2|1|1|cell-tsep|0pt>|<table|<row|<cell|<arg|img>>>|<row|<cell|<with|par-mode|center|font-size|0.86|<arg|cap>>>>>>>>>>>
     <assign|concetto|<macro|title|body|<padded|<box2|0.7pt|0ln|0ln||1.2spc|<box-head|Concetto
     chiave|<arg|title>>|<arg|body>>>>> <assign|toc-strong-2|<macro|left|right|<vspace*|1fn><with|font-series|bold|math-font-series|bold|<arg|left>><toc-dots><no-break><arg|right><vspace|0.5fn><no-page-break>>>
-  </hide-preamble> <assign|page-this-header|><assign|page-this-footer|>
+  </hide-preamble>
+
+  <assign|page-this-header|><assign|page-this-footer|>
 
   <\with|par-mode|center>
     <vspace*|6.7cm>
@@ -38,49 +40,55 @@
 
     <vspace|1.4fn>
 
-    <with|font-shape|small-caps|font-size|1.15|settembre e ottobre 2026>
+    <with|font-shape|small-caps|font-size|1.15|ottobre 2026>
   </with>
 
   <chapter*|Un percorso, un tassello alla volta>
 
   Questo libro accompagna il primo incontro con l'aritmetica universitaria.
-  Presuppone le operazioni con interi e frazioni e le equazioni elementari;
-  introduce nel testo il linguaggio degli insiemi, le dimostrazioni e le
-  strutture algebriche.
+  Per leggerlo bastano le operazioni con interi e frazioni e le equazioni che
+  si risolvono a scuola, mentre il linguaggio degli insiemi, le dimostrazioni
+  e le strutture algebriche vengono introdotti strada facendo.
 
-  Il percorso segue tre domande. <strong|Come ragioniamo e contiamo?> I primi
-  tre capitoli costruiscono induzione, conteggio e ricorrenze. <strong|Come
-  lavoriamo negli interi?> I capitoli dal 4 all'8 collegano divisione, MCD,
-  Bézout, equazioni diofantee e congruenze. <strong|Quali regole hanno queste
-  operazioni?> Gli ultimi quattro capitoli introducono strutture algebriche,
-  cicli e applicazioni.
+  Il percorso segue tre domande. La prima è <strong|come ragioniamo e
+  contiamo>, e i primi tre capitoli rispondono con l'induzione, il conteggio
+  e le ricorrenze. La seconda è <strong|come lavoriamo con gli interi>, e i
+  capitoli dal 4 all'8 collegano la divisione, il MCD, l'identità di Bézout,
+  le equazioni diofantee e le congruenze. La terza è <strong|quali regole
+  hanno queste operazioni>, e gli ultimi quattro capitoli la affrontano con
+  le strutture algebriche, i gruppi ciclici, le permutazioni e alcune
+  applicazioni.
 
-  I titoli indicano i concetti che formano l'ossatura del percorso. Quando
-  incontri un concetto chiave, fermati sul suo significato e sull'esempio che
-  lo precede. Le dimostrazioni centrali spiegano prima che cosa cerchiamo e
-  quali informazioni possono aiutarci; poi scrivono il ragionamento completo.
+  I titoli dei capitoli e delle sezioni nominano i concetti che reggono tutto
+  il percorso. Quando ne incontri uno, prenditi il tempo di capire che cosa
+  significa e di guardare con calma l'esempio che lo precede. Le
+  dimostrazioni più importanti cominciano spiegando che cosa cerchiamo e
+  quali informazioni possono aiutarci, e soltanto dopo scrivono il
+  ragionamento completo.
 
-  Gli esempi guidati mostrano anche le scelte. Negli esercizi finali gli
-  aiuti diminuiscono: prova a cominciare prima di leggere le soluzioni. Trovi
-  una risposta spiegata per ogni esercizio nell'ultima parte del libro.
+  Gli esempi guidati mostrano non solo i calcoli ma anche le scelte che li
+  rendono possibili. Negli esercizi alla fine di ogni capitolo gli aiuti
+  diminuiscono man mano, e conviene provare a cominciare da soli prima di
+  guardare le soluzioni, che trovi spiegate una per una nell'ultima parte del
+  libro.
 
   Le sezioni intitolate <em|Per proseguire> raccolgono sviluppi più tecnici
-  del corso. Puoi riprenderle dopo aver capito l'idea centrale del capitolo.
-  Alla prima lettura dai priorità alle definizioni, agli esempi e alle
-  dimostrazioni che costruiscono il percorso.
+  del corso. Puoi tornarci dopo aver capito l'idea centrale del capitolo,
+  perché alla prima lettura contano soprattutto le definizioni, gli esempi e
+  le dimostrazioni che costruiscono il percorso.
 
-  Il volume rielabora il materiale disponibile dal 23 settembre al 31 ottobre
-  2026, inclusa la nota del 19 ottobre sul teorema cinese. Le lezioni di
-  novembre appartengono al seguito. Spiegazioni aggiuntive, figure ed
-  esercizi di consolidamento sono integrazioni didattiche; non sono
-  attribuzioni al docente. La selezione dei dettagli e la corrispondenza con
-  le fonti sono documentate nei file che accompagnano il libro.
+  Il volume raccoglie le lezioni del corso fino al 31 ottobre 2026, compresa
+  la nota sul teorema cinese del resto. Le spiegazioni aggiuntive, le figure
+  e gli esercizi di consolidamento sono integrazioni didattiche, e la
+  corrispondenza con le lezioni è documentata nei file che accompagnano il
+  libro.
 
   <strong|Convenzioni.> I naturali comprendono lo zero. Scriviamo
-  <math|a\<mid\>b> per dire che <math|b=a*k> per qualche intero <math|k>:
-  \S<math|a> divide <math|b>\T. Il MCD è positivo e si considera per coppie
-  non entrambe nulle; i divisori contati sono positivi. Nei moduli lavoriamo
-  con <math|n\<geq\>2>, salvo indicazioni esplicite.
+  <math|a\<mid\>b> per dire che <math|b=a*k> per qualche intero <math|k>, e
+  leggiamo \S<math|a> divide <math|b>\T. Il MCD è sempre positivo e si
+  considera per coppie di numeri non entrambi nulli, e i divisori che
+  contiamo sono positivi. Quando lavoriamo con un modulo <math|n> supponiamo
+  <math|n\<geq\>2>, salvo indicazione contraria.
 
   <\table-of-contents|toc>
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Un percorso, un
@@ -171,8 +179,8 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-22>
 
-    4.4<space|2spc>Algoritmo di Euclide: conservare i divisori, ridurre i
-    numeri <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    4.4<space|2spc>Algoritmo di Euclide: stessi divisori, numeri più piccoli
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-23>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>Bézout
@@ -291,7 +299,7 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-52>
 
-    9.5<space|2spc>Omomorfismi: cambiare oggetti conservando i conti
+    9.5<space|2spc>Omomorfismi: cambiare oggetti senza cambiare i conti
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-53>
 
@@ -375,88 +383,103 @@
   <chapter|Il linguaggio matematico e l'induzione>
 
   <\inbreve>
-    Come possiamo essere sicuri che una proprietà valga per tutti i numeri,
-    anche quelli che non abbiamo controllato? Cominciamo dal significato di
-    una dimostrazione e impariamo l'induzione. Questo sarà il punto di
-    partenza per giustificare molti risultati del libro.
+    Possiamo controllare una formula su dieci numeri, o su mille, e restare
+    comunque con il dubbio che il milleunesimo la smentisca. In questo
+    capitolo vediamo come una dimostrazione riesce a parlare di tutti i
+    numeri insieme. Lo strumento principale è l'induzione, che collega ogni
+    caso al successivo e che ci accompagnerà per tutto il libro.
   </inbreve>
 
   <section|Insiemi ed enunciati: che cosa stiamo dicendo?>
 
-  Un <strong|insieme> raccoglie oggetti che chiamiamo <strong|elementi>. Per
-  esempio <math|A=<around|{|1,3,5|}>>. Scrivere <math|3\<in\>A> significa che
-  3 appartiene ad <math|A>; scrivere <math|2\<nin\>A> significa che 2 non vi
-  appartiene. L'insieme senza elementi si indica con <math|\<varnothing\>>.
+  Prima di dimostrare qualcosa conviene mettersi d'accordo sulle parole. Un
+  <strong|insieme> è una raccolta di oggetti, che chiamiamo i suoi
+  <strong|elementi>. Per esempio <math|A=<around|{|1,3,5|}>> contiene tre
+  numeri. Scriviamo <math|3\<in\>A> per dire che 3 appartiene ad <math|A>, e
+  <math|2\<nin\>A> per dire che 2 non vi appartiene. L'insieme senza elementi
+  si chiama insieme vuoto e si indica con <math|\<varnothing\>>.
 
-  Useremo soprattutto i naturali <math|\<bbb-N\>=<around|{|0,1,2,\<ldots\>|}>>,
-  gli interi <math|\<bbb-Z\>=<around|{|\<ldots\>,-2,-1,0,1,2,\<ldots\>|}>> e
-  i razionali <math|\<bbb-Q\>>, cioè le frazioni di interi con denominatore
-  diverso da zero. Specificare dove cerchiamo un numero fa parte del
-  problema: <math|2x=1> ha una soluzione razionale, <math|x=1/2>, ma nessuna
-  soluzione intera.
+  Gli insiemi che useremo più spesso sono i naturali
+  <math|\<bbb-N\>=<around|{|0,1,2,\<ldots\>|}>>, gli interi
+  <math|\<bbb-Z\>=<around|{|\<ldots\>,-2,-1,0,1,2,\<ldots\>|}>> e i razionali
+  <math|\<bbb-Q\>>, cioè le frazioni di interi con denominatore diverso da
+  zero. Sapere dove cerchiamo un numero fa già parte del problema.
+  L'equazione <math|2x=1> ha la soluzione razionale <math|x=1/2>, ma fra gli
+  interi non ha soluzioni.
 
-  Se ogni elemento di <math|A> appartiene anche a <math|B>, scriviamo
-  <math|A\<subseteq\>B>: <math|A> è un <strong|sottoinsieme> di <math|B>.
-  L'unione <math|A\<cup\>B> contiene gli elementi che stanno in almeno uno
-  dei due insiemi; l'intersezione <math|A\<cap\>B> quelli comuni; la
-  differenza <math|A\<setminus\>B> quelli di <math|A> che non stanno in
+  Quando ogni elemento di <math|A> appartiene anche a <math|B> diciamo che
+  <math|A> è un <strong|sottoinsieme> di <math|B> e scriviamo
+  <math|A\<subseteq\>B>. Da due insiemi possiamo poi costruirne altri.
+  L'unione <math|A\<cup\>B> raccoglie gli elementi che stanno in almeno uno
+  dei due, l'intersezione <math|A\<cap\>B> quelli che stanno in entrambi, e
+  la differenza <math|A\<setminus\>B> quelli di <math|A> che non stanno in
   <math|B>.
 
   Due insiemi sono uguali quando hanno esattamente gli stessi elementi. Per
-  dimostrare <math|A=B> possiamo quindi fare due lavori: mostrare che ogni
-  elemento di <math|A> sta in <math|B>, poi che ogni elemento di <math|B> sta
-  in <math|A>. Sono le <strong|due inclusioni>.
+  dimostrare <math|A=B> facciamo quindi due lavori separati, mostrando prima
+  che ogni elemento di <math|A> sta in <math|B> e poi che ogni elemento di
+  <math|B> sta in <math|A>. Sono le cosiddette <strong|due inclusioni>, e le
+  useremo spesso.
 
-  Un <strong|enunciato> è una frase matematica di cui possiamo discutere la
-  verità. In \Sogni intero pari ha quadrato pari\T, la parola <em|ogni> è
-  essenziale: la frase riguarda tutti gli interi pari. Controllare
-  <math|2<rsup|2>=4> e <math|4<rsup|2>=16> dà esempi favorevoli, ma lascia
-  aperti tutti gli altri casi.
+  <subsection|Esempi e dimostrazioni>
 
-  Una dimostrazione considera invece un intero pari qualsiasi. Si può
-  scrivere <math|n=2k> con <math|k\<in\>\<bbb-Z\>>. Allora
-  <math|n<rsup|2>=4k<rsup|2>=2(2k<rsup|2>)>, che è pari. Il ragionamento vale
-  per qualunque <math|k>, e perciò copre tutti i casi.
+  Un <strong|enunciato> è una frase matematica di cui ha senso chiedersi se
+  sia vera. Prendiamo \Sogni intero pari ha quadrato pari\T. La parola
+  <em|ogni> pesa moltissimo, perché la frase parla di tutti gli interi pari,
+  che sono infiniti. Controllare che <math|2<rsup|2>=4> e <math|4<rsup|2>=16>
+  sono pari ci incoraggia, ma lascia aperti tutti gli altri casi.
 
-  Il simbolo <math|\<forall\>> significa \Sper ogni\T, mentre
-  <math|\<exists\>> significa \Sesiste\T. Per dimostrare che <em|esiste> un
-  intero con una proprietà basta esibirne uno; per dimostrare che <em|ogni>
-  intero la possiede serve un ragionamento generale. Per smentire \Sogni
-  intero è pari\T basta invece un <strong|controesempio>, come 3.
+  Una dimostrazione lavora invece con un intero pari qualsiasi, senza
+  sceglierlo. Se <math|n> è pari possiamo scriverlo come <math|n=2k> con
+  <math|k\<in\>\<bbb-Z\>>, e allora <math|n<rsup|2>=4k<rsup|2>=2(2k<rsup|2>)>,
+  che è pari. Il conto non dipende da quale <math|k> abbiamo in mente, e per
+  questo vale per tutti.
 
-  Nella frase \Sse <math|P>, allora <math|Q>\T, indicata con
-  <math|P\<Rightarrow\>Q>, <math|P> è l'<strong|ipotesi> e <math|Q> la
-  <strong|tesi>. Assumiamo l'ipotesi e cerchiamo di arrivare alla tesi. \SSe
-  e solo se\T, scritto <math|P\<Leftrightarrow\>Q>, richiede entrambi i
-  versi: <math|P\<Rightarrow\>Q> e <math|Q\<Rightarrow\>P>. La frase \Sesiste
-  un unico\T richiede sia l'esistenza sia l'unicità: trovare un oggetto e
-  provare che non ce ne sono altri.
+  Per abbreviare useremo il simbolo <math|\<forall\>>, che si legge \Sper
+  ogni\T, e il simbolo <math|\<exists\>>, che si legge \Sesiste\T. Le due
+  parole chiedono prove molto diverse. Per mostrare che <em|esiste> un intero
+  con una certa proprietà basta trovarne uno, mentre per mostrare che
+  <em|ogni> intero la possiede serve un ragionamento generale. Al contrario,
+  per smentire \Sogni intero è pari\T basta un solo <strong|controesempio>,
+  come 3.
+
+  Molti enunciati hanno la forma \Sse <math|P>, allora <math|Q>\T, che
+  scriviamo <math|P\<Rightarrow\>Q>. La parte <math|P> si chiama
+  <strong|ipotesi> e la parte <math|Q> <strong|tesi>, e dimostrare
+  l'enunciato vuol dire partire dall'ipotesi e arrivare alla tesi. La forma
+  \S<math|P> se e solo se <math|Q>\T, scritta <math|P\<Leftrightarrow\>Q>,
+  chiede di percorrere entrambe le strade, da <math|P> a <math|Q> e da
+  <math|Q> a <math|P>. Infine \Sesiste un unico\T chiede due cose distinte,
+  cioè trovare un oggetto con la proprietà e mostrare che non ce ne sono
+  altri.
 
   <section|Induzione: passare da un caso al successivo>
 
-  Guardiamo le somme dei primi numeri dispari:
+  Proviamo a sommare i primi numeri dispari e guardiamo che cosa succede:
 
   <\equation*>
     1=1, <space|2em>1+3=4, <space|2em>1+3+5=9, <space|2em>1+3+5+7=16.
   </equation*>
 
-  I risultati sono quadrati. Il disegno suggerisce una spiegazione: per
-  passare da un quadrato di lato <math|n> a uno di lato <math|n+1>
-  aggiungiamo una cornice a L di <math|2n+1> quadratini.
+  Escono sempre quadrati, e un disegno ci suggerisce perché. Un quadrato di
+  lato <math|n> diventa un quadrato di lato <math|n+1> se gli aggiungiamo una
+  cornice a forma di L, e quella cornice contiene <math|2n+1> quadratini,
+  cioè proprio il dispari successivo.
 
   <figura|<image|assets/dispari.pdf|117.5mm|52.5mm||>|Ogni nuova cornice
   aggiunge il dispari successivo. Dopo le prime <math|n> cornici, i
   quadratini formano un quadrato di lato <math|n>.>
 
-  La formula da dimostrare è quindi
+  Viene allora da congetturare che
 
   <\equation*>
     1+3+5+\<cdots\>+(2n-1)=n<rsup|2><space|2em>(n\<geq\>1).
   </equation*>
 
-  L'idea è usare il caso con <math|n> addendi per ottenere quello con
-  <math|n+1>. Il nuovo caso contiene infatti la somma precedente, più il
-  numero <math|2n+1>.
+  Il disegno contiene anche l'idea della dimostrazione. La somma con
+  <math|n+1> addendi è la somma con <math|n> addendi più il numero
+  <math|2n+1>. Se sappiamo già quanto vale il caso <math|n>, il caso
+  <math|n+1> si ottiene con un passo solo. Questa idea ha un nome preciso.
 
   <\concetto|Principio di induzione>
     Per dimostrare una proprietà <math|P(n)> per ogni naturale
@@ -465,122 +488,134 @@
     <math|n\<geq\>n<rsub|0>>, se vale <math|P(n)> allora vale <math|P(n+1)>.
   </concetto>
 
-  La base fa iniziare il ragionamento. Il passo permette di ripeterlo: dalla
-  base otteniamo il caso successivo, poi quello ancora successivo, e così
-  raggiungiamo ogni indice. Nel passo assumiamo solo il caso <math|n> per
-  dimostrare il caso <math|n+1>; questa assunzione si chiama <strong|ipotesi
-  induttiva>.
+  Possiamo immaginare una fila di tessere del domino. La base fa cadere la
+  prima, e il passo garantisce che ogni tessera che cade fa cadere la
+  successiva, così prima o poi cadono tutte. Nel passo non sappiamo ancora
+  che <math|P(n)> sia vera, la supponiamo soltanto per vedere se ne segue
+  <math|P(n+1)>. Questa supposizione si chiama <strong|ipotesi induttiva>.
 
   <\anatomia|La somma dei dispari>
-    Vogliamo dimostrare la formula per ogni <math|n\<geq\>1>. La base è
-    <math|n=1>: la somma vale 1, come <math|1<rsup|2>>.
+    Vogliamo la formula per ogni <math|n\<geq\>1>, quindi la base è
+    <math|n=1>. In quel caso la somma contiene il solo 1, che è uguale a
+    <math|1<rsup|2>>.
 
-    Per il passo, supponiamo che la somma dei primi <math|n> dispari sia
-    <math|n<rsup|2>>. Il nostro obiettivo è la somma dei primi <math|n+1>
-    dispari. Per poter usare l'ipotesi separiamo l'ultimo addendo:
+    Per il passo supponiamo che la somma dei primi <math|n> dispari valga
+    <math|n<rsup|2>> e guardiamo la somma dei primi <math|n+1>. Per poter
+    usare quello che sappiamo, separiamo l'ultimo addendo dagli altri:
 
     <\equation*>
       1+3+\<cdots\>+(2n-1)+(2n+1)=n<rsup|2>+(2n+1).
     </equation*>
 
-    Il membro destro è <math|(n+1)<rsup|2>>. Abbiamo quindi dimostrato che la
-    formula passa da <math|n> a <math|n+1>. Per induzione vale per ogni
-    <math|n\<geq\>1>.
+    Il membro destro è <math|(n+1)<rsup|2>>, che è esattamente ciò che
+    volevamo. La formula passa quindi da ogni <math|n> al successivo, e per
+    induzione vale per tutti gli <math|n\<geq\>1>.
 
-    Il punto riutilizzabile è questo: prima cerchiamo, nel problema nuovo,
-    una parte che coincida con il problema precedente. Qui la troviamo
-    separando l'ultimo addendo.
+    La mossa da ricordare è la prima. Nel problema nuovo abbiamo cercato un
+    pezzo che coincidesse con il problema già risolto, e qui l'abbiamo
+    trovato staccando l'ultimo addendo.
   </anatomia>
 
-  L'induzione ci ha permesso di <em|verificare> una formula. La formula era
-  stata suggerita dagli esempi e dal disegno. Scoprire una congettura e
-  dimostrarla sono due momenti diversi del lavoro.
+  Vale la pena notare l'ordine in cui sono andate le cose. La formula ci è
+  venuta in mente guardando gli esempi e il disegno, e soltanto dopo
+  l'induzione ci ha permesso di <em|verificarla>. Scoprire una congettura e
+  dimostrarla sono due momenti diversi del lavoro, e l'induzione aiuta solo
+  nel secondo.
 
   <\attenzione|La base e il passo devono combaciare>
-    La proprietà \S<math|n\<geq\>5>\T passa da <math|n> a <math|n+1>, ma non
-    vale per tutti i naturali: manca una base a 0. È invece vera da 5 in poi.
-    Bisogna anche controllare che il passo funzioni a partire dalla base
-    scelta: una dimostrazione valida soltanto da 2 in poi non collega il caso
+    La proprietà \S<math|n\<geq\>5>\T passa da ogni <math|n> al successivo,
+    eppure non vale per tutti i naturali, perché per 0 è falsa e manca quindi
+    una base. È vera soltanto da 5 in poi. Allo stesso modo bisogna
+    controllare che il passo funzioni già a partire dalla base scelta: se la
+    dimostrazione del passo vale solo da 2 in poi, nessuno ci porta dal caso
     1 al caso 2.
   </attenzione>
 
   <section|Il principio del minimo e il più piccolo controesempio>
 
-  Se scegliamo alcuni naturali, per esempio
-  <math|S=<around|{|4,7,10,\<ldots\>|}>>, tra quelli scelti ce n'è uno che
-  viene prima di tutti: qui è 4. Il <strong|principio del minimo> afferma che
+  Scegliamo alcuni naturali, per esempio <math|S=<around|{|4,7,10,\<ldots\>|}>>.
+  Fra quelli scelti ce n'è sempre uno che viene prima di tutti gli altri, che
+  qui è 4. Il <strong|principio del minimo> dice che succede sempre, cioè che
   ogni sottoinsieme non vuoto di <math|\<bbb-N\>> ha un elemento minimo.
 
-  È una proprietà specifica dei naturali. L'insieme di tutti gli interi non
-  ha minimo: per ogni intero possiamo scendere di uno. Neppure i numeri reali
-  positivi, cioè i numeri sulla retta a destra dello zero, hanno minimo,
-  perché la metà di un numero positivo è ancora positiva ed è più piccola.
+  Sembra ovvio, ma è una proprietà tipica dei naturali. Gli interi, presi
+  tutti insieme, non hanno un minimo, perché da ogni intero possiamo scendere
+  di uno. Nemmeno i numeri reali positivi, quelli che sulla retta stanno a
+  destra dello zero, hanno un minimo, perché la metà di un numero positivo è
+  ancora positiva ed è più piccola.
 
-  Il minimo spiega perché l'induzione funziona. Supponiamo di avere base e
-  passo, ma che qualche caso sia falso. Scegliamo il più piccolo indice
-  falso, <math|m>. Non è la base, che abbiamo controllato. Perciò esiste il
-  caso precedente <math|m-1>, ed è vero: altrimenti <math|m> non sarebbe il
-  primo caso falso. Il passo ci porta allora da <math|P(m-1)> a <math|P(m)>.
-  Contraddizione: <math|P(m)> risulta sia vera sia falsa. Non possono dunque
-  esistere casi falsi.
+  Il minimo ci aiuta a capire perché l'induzione funziona davvero. Supponiamo
+  di aver dimostrato base e passo, ma che qualche caso sia comunque falso.
+  Fra gli indici falsi scegliamo il più piccolo, che chiamiamo <math|m>. Non
+  può essere la base, perché quella l'abbiamo controllata, e allora esiste il
+  caso precedente <math|m-1>. Quel caso è vero, altrimenti <math|m> non
+  sarebbe il primo falso, e il passo ci porta da <math|P(m-1)> a <math|P(m)>.
+  Così <math|P(m)> risulterebbe insieme vera e falsa, il che è impossibile, e
+  quindi casi falsi non ce ne sono.
 
-  Questo è un ragionamento <strong|per assurdo>: assumiamo che la conclusione
-  fallisca e mostriamo che l'assunzione è incompatibile con ciò che sappiamo.
-  Scegliere il <strong|minimo controesempio> aggiunge un'informazione
-  preziosa: tutti i casi più piccoli funzionano.
+  Abbiamo appena ragionato <strong|per assurdo>, cioè abbiamo supposto che la
+  conclusione fosse falsa e abbiamo mostrato che questa supposizione
+  contraddice ciò che sappiamo. La scelta del <strong|minimo controesempio>
+  ci ha regalato un'informazione in più, perché sapevamo che tutti i casi più
+  piccoli funzionavano.
 
-  Anche l'induzione permette di recuperare il principio del minimo. Se un
-  insieme <math|S\<subseteq\>\<bbb-N\>> non avesse minimo, 0 non potrebbe
-  appartenergli. Supponiamo ora che nessun numero da 0 a <math|n> appartenga
-  a <math|S>. Neppure <math|n+1> potrebbe appartenergli: sarebbe il suo
-  minimo. L'induzione sulla frase cumulativa \Snessun numero da 0 a <math|n>
-  sta in <math|S>\T darebbe <math|S=\<varnothing\>>. Quindi un insieme non
-  vuoto deve avere minimo.
+  Anche il percorso inverso è possibile, e dall'induzione si ricava il
+  principio del minimo. Prendiamo un insieme <math|S\<subseteq\>\<bbb-N\>>
+  senza minimo. Lo 0 non può stare in <math|S>, perché ne sarebbe il minimo.
+  Se poi nessun numero da 0 a <math|n> sta in <math|S>, nemmeno <math|n+1>
+  può starci, per lo stesso motivo. Per induzione sulla frase \Snessun numero
+  da 0 a <math|n> sta in <math|S>\T concludiamo che <math|S> è vuoto, e
+  dunque ogni insieme non vuoto di naturali ha un minimo.
 
   <section|Induzione forte: usare tutti i casi precedenti>
 
-  A volte il caso nuovo dipende da numeri più piccoli, ma non dal solo
-  precedente. Per esempio, per scomporre 12 possiamo usare
-  <math|12=3\<cdot\>4>: ci servono informazioni su 3 e 4, non su 11.
+  Ci sono problemi in cui il caso nuovo non dipende dal precedente, ma da
+  casi più piccoli qualsiasi. Per scomporre 12 possiamo scrivere
+  <math|12=3\<cdot\>4>, e a quel punto ci servono informazioni su 3 e su 4,
+  mentre di 11 non ci importa nulla.
 
-  L'<strong|induzione forte> permette proprio questo. Verifichiamo la base;
-  poi, per dimostrare <math|P(n)>, possiamo assumere vere tutte le proprietà
-  <math|P(k)> con <math|n<rsub|0>\<leq\>k\<less\>n>.
+  In queste situazioni usiamo l'<strong|induzione forte>. Verifichiamo la
+  base come prima, ma nel passo, per dimostrare <math|P(n)>, ci concediamo di
+  supporre vere tutte le proprietà <math|P(k)> con
+  <math|n<rsub|0>\<leq\>k\<less\>n>, e non soltanto l'ultima.
 
-  Come esempio, mostriamo che ogni intero <math|n\<geq\>2> è prodotto di
-  numeri primi. Ricordiamo il significato dei termini: un numero <math|d>
-  <strong|divide> <math|n> se <math|n=d*k> per qualche intero <math|k>; un
-  naturale <math|p\<geq\>2> è <strong|primo> se i suoi soli divisori positivi
-  sono 1 e <math|p>. Un numero <math|n\<geq\>2> non primo è
-  <strong|composto>: si scrive <math|n=a*b> con <math|2\<leq\>a,b\<less\>n>.
+  Vediamola all'opera su un risultato importante, il fatto che ogni intero
+  <math|n\<geq\>2> sia un prodotto di numeri primi. Ricordiamo prima le
+  parole. Un numero <math|d> <strong|divide> <math|n> se <math|n=d*k> per
+  qualche intero <math|k>. Un naturale <math|p\<geq\>2> è <strong|primo> se i
+  suoi soli divisori positivi sono 1 e <math|p>, e un numero <math|n\<geq\>2>
+  che non è primo si dice <strong|composto>, perché si può scrivere come
+  <math|n=a*b> con <math|2\<leq\>a,b\<less\>n>.
 
-  La base è 2, che è già primo. Per il passo, supponiamo fattorizzabili tutti
-  i numeri da 2 a <math|n-1>. Se <math|n> è primo, è esso stesso il prodotto
-  cercato, con un solo fattore. Se è composto, scriviamo <math|n=a*b>:
-  entrambi i fattori sono più piccoli di <math|n>, quindi per ipotesi si
-  scompongono in primi. Unendo le loro scomposizioni otteniamo quella di
-  <math|n>.
+  La base è 2, che è già primo. Supponiamo ora di saper scomporre tutti i
+  numeri da 2 a <math|n-1> e guardiamo <math|n>. Se <math|n> è primo non c'è
+  nulla da fare, perché è già un prodotto con un solo fattore. Se invece è
+  composto, lo scriviamo come <math|n=a*b>. Entrambi i fattori sono più
+  piccoli di <math|n>, quindi per ipotesi sappiamo scomporli in primi, e
+  mettendo insieme le due scomposizioni otteniamo quella di <math|n>.
 
   <figura|<image|assets/fattori.pdf|117.5mm|53.8mm||>|Un numero composto si
   divide in fattori più piccoli. Il ragionamento di induzione forte assicura
   che la scomposizione possa arrivare fino ai primi.>
 
-  Abbiamo provato che una scomposizione esiste. Per dimostrare che è
-  <em|unica>, indipendentemente dalle scelte iniziali, servirà il lemma di
-  Euclide del capitolo 5.
+  Per ora sappiamo soltanto che una scomposizione esiste. Che sia anche
+  <em|unica>, qualunque strada si scelga all'inizio, è una questione più
+  delicata, e la risolveremo nel capitolo 5 con il lemma di Euclide.
 
-  L'induzione forte si ottiene anche dall'induzione ordinaria: basta
-  applicare quest'ultima alla frase \Stutti i casi fino a <math|n> sono
-  veri\T. La forza apparente in più viene dalla scelta di una proprietà che
-  conserva tutte le informazioni utili.
+  L'induzione forte non è in realtà un principio nuovo. Si ottiene da quella
+  ordinaria applicandola alla frase \Stutti i casi fino a <math|n> sono
+  veri\T, che porta con sé tutte le informazioni accumulate. Spesso la
+  difficoltà di una dimostrazione per induzione sta proprio nello scegliere
+  bene la frase da far passare da un caso all'altro.
 
   <subsection|In sintesi>
 
-  Una dimostrazione precisa il dominio, le ipotesi e la tesi. L'induzione
-  collega una base a un passo generale; la forma forte permette di usare
-  tutti i casi precedenti. Il principio del minimo consente di ragionare sul
-  primo eventuale fallimento. Useremo queste idee per dimostrare formule e
-  spiegare perché certi procedimenti terminano.
+  Una dimostrazione chiarisce dove lavoriamo, che cosa supponiamo e che cosa
+  vogliamo ottenere. L'induzione collega una base a un passo generale, e
+  nella forma forte ci lascia usare tutti i casi precedenti. Il principio del
+  minimo ci permette di ragionare sul primo caso che eventualmente fallisce.
+  Sono gli strumenti con cui dimostreremo formule e spiegheremo perché certi
+  procedimenti finiscono.
 
   <\verifica|1>
     <strong|1. Con un suggerimento.> Dimostra per induzione che
@@ -597,110 +632,131 @@
   <chapter|Funzioni e conteggio>
 
   <\inbreve>
-    Contare diventa difficile quando gli oggetti sono molti o quando uno
-    stesso oggetto può comparire in più modi. Impariamo a descrivere con
-    precisione ciò che contiamo, a costruirlo per scelte successive e a
-    correggere le ripetizioni. Le funzioni ci daranno il linguaggio per
-    mettere in corrispondenza due famiglie di oggetti.
+    Contare sembra facile finché gli oggetti sono pochi. Appena diventano
+    molti, o appena uno stesso oggetto si può ottenere in più modi, rischiamo
+    di dimenticarne qualcuno o di contarlo due volte. In questo capitolo
+    impariamo a descrivere con cura ciò che contiamo, a costruirlo con scelte
+    successive e a correggere le ripetizioni, usando le funzioni come
+    linguaggio comune.
   </inbreve>
 
   <section|Funzioni: associare a ogni elemento una sola immagine>
 
-  Prendiamo <math|X=<around|{|a,b,c|}>> e <math|Y=<around|{|0,1|}>>. Possiamo
-  assegnare ad <math|a> il valore 0, a <math|b> il valore 1 e a <math|c>
-  ancora 0. Abbiamo costruito una <strong|funzione>
-  <math|f:X\<rightarrow\>Y>.
+  Prendiamo due insiemi piccoli, <math|X=<around|{|a,b,c|}>> e
+  <math|Y=<around|{|0,1|}>>, e decidiamo di assegnare ad <math|a> il valore
+  0, a <math|b> il valore 1 e a <math|c> di nuovo 0. Senza accorgercene
+  abbiamo costruito una <strong|funzione> <math|f:X\<rightarrow\>Y>.
 
-  L'insieme di partenza <math|X> è il <strong|dominio>; quello di arrivo
-  <math|Y> è il <strong|codominio>. Ogni elemento del dominio deve avere
-  esattamente un valore assegnato, detto <strong|immagine>. È consentito
-  assegnare lo stesso valore a elementi diversi. Non è invece consentito
-  lasciare un elemento senza valore o attribuirgli due valori diversi.
+  L'insieme di partenza <math|X> si chiama <strong|dominio> e quello di
+  arrivo <math|Y> <strong|codominio>. La regola del gioco è che ogni elemento
+  del dominio riceva esattamente un valore, detto la sua <strong|immagine>.
+  Possiamo dare lo stesso valore a elementi diversi, come abbiamo fatto con
+  <math|a> e <math|c>, ma non possiamo lasciare un elemento senza valore né
+  assegnargliene due.
 
-  Una funzione è <strong|iniettiva> quando elementi distinti hanno immagini
-  distinte. È <strong|suriettiva> quando raggiunge ogni elemento del
-  codominio. È <strong|biiettiva> quando possiede entrambe le proprietà: ogni
-  elemento di arrivo corrisponde a uno e un solo elemento di partenza.
+  Fra le funzioni ce ne sono alcune particolarmente ordinate. Una funzione è
+  <strong|iniettiva> quando elementi distinti finiscono sempre in immagini
+  distinte, ed è <strong|suriettiva> quando raggiunge ogni elemento del
+  codominio. Se ha entrambe le proprietà si dice <strong|biiettiva>, e allora
+  ogni elemento di arrivo corrisponde a uno e un solo elemento di partenza.
 
   <figura|<image|assets/funzioni.pdf|153.6mm|45.6mm||>|Nell'iniezione le
   frecce non arrivano insieme allo stesso punto; nella suriezione tutti i
   punti di arrivo sono raggiunti. Nella biiezione valgono entrambe le
   condizioni.>
 
-  La funzione iniziale è suriettiva perché usa sia 0 sia 1, ma non è
-  iniettiva: <math|a> e <math|c> hanno la stessa immagine. L'<strong|immagine
-  della funzione> è l'insieme dei valori effettivamente raggiunti; può essere
-  più piccolo del codominio. Per esempio, una funzione costante con valore 0
-  e codominio <math|<around|{|0,1|}>> ha immagine <math|<around|{|0|}>>.
+  La nostra funzione iniziale è suriettiva, perché usa sia 0 sia 1, ma non è
+  iniettiva, perché <math|a> e <math|c> hanno la stessa immagine. L'insieme
+  dei valori effettivamente raggiunti si chiama <strong|immagine della
+  funzione>, e può essere più piccolo del codominio. Una funzione costante
+  che vale sempre 0, con codominio <math|<around|{|0,1|}>>, ha per esempio
+  immagine <math|<around|{|0|}>>.
 
-  Per un insieme finito, la <strong|cardinalità> <math|\|X\|> è il numero dei
-  suoi elementi. Una biiezione tra due insiemi finiti dimostra che hanno la
-  stessa cardinalità: accoppia tutti gli elementi senza ripeterne né perderne
-  nessuno.
+  Le biiezioni sono lo strumento più naturale per contare. Per un insieme
+  finito chiamiamo <strong|cardinalità> il numero <math|\|X\|> dei suoi
+  elementi, e una biiezione fra due insiemi finiti mostra che hanno la stessa
+  cardinalità, perché li accoppia tutti senza ripeterne né perderne nessuno.
 
-  Se dominio e codominio hanno entrambi <math|n> elementi, una funzione
-  iniettiva è anche suriettiva: le sue <math|n> immagini distinte occupano
-  tutti i posti disponibili. Viceversa una suriezione deve essere iniettiva:
-  se due elementi condividessero un'immagine, rimarrebbero meno di <math|n>
-  immagini distinte. Questa equivalenza richiede insiemi finiti della stessa
-  cardinalità.
+  C'è poi un fatto che useremo spesso. Se dominio e codominio hanno entrambi
+  <math|n> elementi, una funzione iniettiva è automaticamente suriettiva,
+  perché le sue <math|n> immagini distinte occupano tutti i posti
+  disponibili. Vale anche il viceversa, perché se una funzione suriettiva
+  desse a due elementi la stessa immagine resterebbero meno di <math|n>
+  immagini distinte, troppo poche per coprire il codominio. L'argomento
+  funziona solo per insiemi finiti della stessa cardinalità.
 
   <section|Sommare i casi e moltiplicare le scelte>
 
-  Se possiamo scegliere fra 3 libri di algebra e 2 libri di geometria, tutti
-  diversi, i libri disponibili sono <math|3+2=5>. Abbiamo sommato due gruppi
-  <strong|disgiunti>, cioè senza elementi comuni.
+  Supponiamo di avere sullo scaffale 3 libri di algebra e 2 di geometria,
+  tutti diversi. Se dobbiamo sceglierne uno solo abbiamo <math|3+2=5>
+  possibilità, perché i due gruppi sono <strong|disgiunti>, cioè non hanno
+  libri in comune, e quindi possiamo semplicemente sommarli.
 
-  Se invece vogliamo formare una coppia scegliendo un libro di algebra e uno
-  di geometria, per ciascuna delle 3 prime scelte abbiamo 2 seconde scelte.
-  Le coppie sono <math|3\<cdot\>2=6>. È il <strong|principio del prodotto>.
-  Vale quando ogni scelta al primo passo ha lo stesso numero previsto di
-  continuazioni; se questo numero cambia, dobbiamo distinguere i casi.
+  Le cose cambiano se vogliamo portare via una coppia, un libro di algebra e
+  uno di geometria. Per ciascuno dei 3 libri di algebra possiamo affiancare
+  uno qualsiasi dei 2 di geometria, e così le coppie sono
+  <math|3\<cdot\>2=6>. È il <strong|principio del prodotto>. Funziona quando
+  ogni scelta al primo passo lascia lo stesso numero di possibilità al passo
+  successivo, e se quel numero cambia da caso a caso dobbiamo invece
+  distinguere i casi e sommarli.
 
-  Il <strong|prodotto cartesiano> <math|X\<times\>Y> è proprio l'insieme
-  delle coppie ordinate <math|(x,y)> con <math|x\<in\>X> e <math|y\<in\>Y>.
-  Se <math|\|X\|=n> e <math|\|Y\|=m>, allora <math|\|X\<times\>Y\|=n*m>.
+  Le coppie che abbiamo appena contato formano il <strong|prodotto
+  cartesiano> <math|X\<times\>Y>, l'insieme delle coppie ordinate
+  <math|(x,y)> con <math|x\<in\>X> e <math|y\<in\>Y>. Il principio del
+  prodotto dice che se <math|\|X\|=n> e <math|\|Y\|=m> allora
+  <math|\|X\<times\>Y\|=n*m>.
 
-  Possiamo ora contare le funzioni. Consideriamo <math|n,m\<geq\>1>. Per
-  ciascuno degli <math|n> elementi di <math|X> scegliamo una delle <math|m>
-  immagini possibili, senza vincoli sulle altre scelte. Otteniamo
-  <math|m<rsup|n>> funzioni. Nel primo esempio, da tre elementi a due, sono
-  <math|2<rsup|3>=8>.
+  <subsection|Contare le funzioni>
 
-  Per contare solo le iniezioni, ogni immagine già usata diventa
-  indisponibile. Abbiamo <math|m> scelte per il primo elemento, <math|m-1>
-  per il secondo, e così via. Se <math|n\<leq\>m>, il numero è
+  Con lo stesso principio possiamo contare tutte le funzioni da un insieme
+  <math|X> di <math|n> elementi a un insieme <math|Y> di <math|m> elementi,
+  con <math|n,m\<geq\>1>. Costruire una funzione vuol dire scegliere
+  un'immagine per ciascun elemento di <math|X>, e ogni scelta è libera, cioè
+  non dipende dalle altre. Abbiamo quindi <math|m> possibilità per ognuno
+  degli <math|n> elementi, in tutto <math|m<rsup|n>> funzioni. Nel nostro
+  primo esempio, da tre elementi a due, le funzioni sono <math|2<rsup|3>=8>.
+
+  Se vogliamo solo funzioni iniettive, ogni immagine usata diventa
+  indisponibile per gli elementi successivi. Per il primo elemento abbiamo
+  <math|m> scelte, per il secondo <math|m-1>, e così via fino
+  all'<math|n>-esimo. Se <math|n\<leq\>m> il numero delle iniezioni è dunque
 
   <\equation*>
     m(m-1)\<cdots\>(m-n+1)=<frac|m!|(m-n)!>.
   </equation*>
 
-  Qui <math|m!>, letto \S<math|m> fattoriale\T, significa
-  <math|m(m-1)\<cdots\>1>; poniamo <math|0!=1>. Per ordinare tutti gli
-  <math|m> elementi distinti abbiamo quindi <math|m!> possibilità.
+  Il simbolo <math|m!>, che si legge \S<math|m> fattoriale\T, indica il
+  prodotto <math|m(m-1)\<cdots\>1>, e per comodità si pone <math|0!=1>.
+  Quando <math|n=m> la formula dice che possiamo mettere in fila <math|m>
+  oggetti distinti in <math|m!> modi.
 
-  Se <math|n\<gtr\>m>, un'iniezione è impossibile. È il <strong|principio dei
-  cassetti>: se gli oggetti sono più dei posti disponibili, almeno due devono
-  occupare lo stesso posto. Per esempio, fra 13 persone almeno due sono nate
-  nello stesso mese. Il principio assicura l'esistenza della coincidenza
-  anche senza dirci quali siano le persone.
+  E se <math|n\<gtr\>m>? In quel caso un'iniezione non esiste, perché non ci
+  sono abbastanza immagini diverse. È il <strong|principio dei cassetti>: se
+  gli oggetti sono più dei cassetti, almeno due finiscono nello stesso
+  cassetto. Fra 13 persone, per esempio, almeno due sono nate nello stesso
+  mese. Il principio garantisce che la coincidenza c'è, anche se non ci dice
+  quali siano le due persone.
 
   <section|Coefficienti binomiali: scegliere senza ordinare>
 
-  Da tre elementi <math|a,b,c> scegliamone due distinti. Se l'ordine conta,
-  abbiamo sei liste: <math|(a,b)>, <math|(a,c)>, <math|(b,a)>, <math|(b,c)>,
-  <math|(c,a)>, <math|(c,b)>. Se vogliamo soltanto una coppia di elementi,
-  ogni coppia è stata contata due volte: per esempio <math|(a,b)> e
-  <math|(b,a)> descrivono lo stesso sottoinsieme <math|<around|{|a,b|}>>.
+  Da tre elementi <math|a,b,c> vogliamo sceglierne due distinti. Se l'ordine
+  conta otteniamo sei liste, cioè <math|(a,b)>, <math|(a,c)>, <math|(b,a)>,
+  <math|(b,c)>, <math|(c,a)> e <math|(c,b)>. Spesso però ci interessa solo
+  quali elementi abbiamo preso, e allora <math|(a,b)> e <math|(b,a)>
+  descrivono lo stesso sottoinsieme <math|<around|{|a,b|}>>. Ogni
+  sottoinsieme compare due volte nella lista, e quindi i sottoinsiemi sono
+  <math|6/2=3>.
 
   <figura|<image|assets/scelte.pdf|155.0mm|72.5mm||>|Sei scelte ordinate
   diventano tre sottoinsiemi. Possiamo dividere per 2 perché ogni
   sottoinsieme compare esattamente due volte.>
 
-  In generale, per scegliere e ordinare <math|k> elementi distinti fra
-  <math|n> abbiamo <math|n!/(n-k)!> possibilità. Ma ciascun sottoinsieme di
-  <math|k> elementi può essere ordinato in <math|k!> modi. Per contare i
-  sottoinsiemi dividiamo per questo numero.
+  Lo stesso ragionamento funziona in generale. Per scegliere in ordine
+  <math|k> elementi distinti fra <math|n> abbiamo <math|n!/(n-k)!>
+  possibilità, come abbiamo visto contando le iniezioni. Ogni sottoinsieme di
+  <math|k> elementi compare in questa lista <math|k!> volte, una per ciascun
+  modo di metterlo in fila, e dividendo per <math|k!> contiamo ogni
+  sottoinsieme una volta sola.
 
   <\concetto|Coefficiente binomiale>
     Il numero dei sottoinsiemi di <math|k> elementi di un insieme con
@@ -715,67 +771,86 @@
     <math|<binom|n|n>=1>. Fuori dall'intervallo poniamo <math|<binom|n|k>=0>.
   </concetto>
 
-  Per scegliere due persone fra cinque abbiamo dunque
-  <math|<binom|5|2>=5\<cdot\>4/2=10> possibilità. Se le due persone devono
-  invece ricoprire due ruoli diversi, i modi sono 20: il ruolo conserva
-  l'ordine.
+  Così, per scegliere due persone fra cinque, abbiamo
+  <math|<binom|5|2>=5\<cdot\>4/2=10> possibilità. Se invece le due persone
+  devono ricoprire due ruoli diversi, per esempio presidente e segretario, i
+  modi diventano 20, perché i ruoli distinguono chi viene scelto per primo.
 
-  Lo stesso ragionamento spiega gli <strong|anagrammi con lettere ripetute>.
-  La parola NONNO contiene tre N e due O. Numerando provvisoriamente le
-  copie, gli ordinamenti sarebbero <math|5!>. Ma ogni parola visibile si
-  ottiene in <math|3!\<cdot\>2!> modi, scambiando fra loro le N e fra loro le
-  O. Gli anagrammi distinti sono quindi <math|5!/(3!2!)=10>.
+  <subsection|Anagrammi con lettere ripetute>
 
-  Con <math|r> tipi di lettere, presenti rispettivamente
-  <math|n<rsub|1>,\<ldots\>,n<rsub|r>> volte e con somma <math|n>, otteniamo
-  il <strong|coefficiente multinomiale> <math|n!/(n<rsub|1>!\<cdots\>n<rsub|r>!)>.
-  Conta anche le ripartizioni di <math|n> oggetti distinti in gruppi
-  etichettati di quelle dimensioni.
+  L'idea di dividere per le ripetizioni spiega anche gli anagrammi. La parola
+  NONNO contiene tre N e due O. Se per un momento numeriamo le lettere
+  uguali, scrivendo per esempio <math|N<rsub|1>,N<rsub|2>,N<rsub|3>>,
+  otteniamo cinque lettere distinte e quindi <math|5!> ordinamenti. Ogni
+  parola che vediamo davvero, però, si ottiene in <math|3!\<cdot\>2!> modi,
+  scambiando fra loro le N e fra loro le O. Gli anagrammi distinti sono
+  quindi <math|5!/(3!2!)=10>.
+
+  Con <math|r> tipi di lettere, ripetute rispettivamente
+  <math|n<rsub|1>,\<ldots\>,n<rsub|r>> volte e con somma <math|n>, lo stesso
+  conto dà il <strong|coefficiente multinomiale>
+  <math|n!/(n<rsub|1>!\<cdots\>n<rsub|r>!)>. Lo stesso numero conta anche i
+  modi di dividere <math|n> oggetti distinti in gruppi etichettati di quelle
+  dimensioni, perché assegnare a ogni oggetto il nome del suo gruppo è come
+  scrivere una parola con quelle lettere.
 
   <section|Binomio di Newton e doppio conteggio>
 
-  Il coefficiente binomiale compare anche sviluppando <math|(a+b)<rsup|n>>.
-  In ciascuna delle <math|n> parentesi scegliamo <math|a> oppure <math|b>.
-  Per ottenere <math|a<rsup|k>b<rsup|n-k>> dobbiamo scegliere quali <math|k>
-  parentesi forniscono <math|a>: ci sono <math|<binom|n|k>> modi. Questo
-  dimostra il <strong|binomio di Newton>:
+  I coefficienti binomiali compaiono anche in algebra, quando sviluppiamo
+  <math|(a+b)<rsup|n>>. Moltiplicare <math|n> parentesi uguali vuol dire
+  scegliere, in ciascuna, la lettera <math|a> oppure la lettera <math|b>. Per
+  ottenere il termine <math|a<rsup|k>b<rsup|n-k>> dobbiamo decidere quali
+  <math|k> parentesi forniscono la <math|a>, e questo si può fare in
+  <math|<binom|n|k>> modi. Abbiamo così dimostrato il <strong|binomio di
+  Newton>:
 
   <\equation*>
     (a+b)<rsup|n>=<big|sum><rsub|k=0><rsup|n><binom|n|k>a<rsup|k>b<rsup|n-k>.
   </equation*>
 
-  Il simbolo di somma dice di aggiungere i termini corrispondenti a tutti gli
-  indici da 0 a <math|n>. Con <math|n=3> ritroviamo
+  Il simbolo di somma dice di sommare i termini per tutti gli indici <math|k>
+  da 0 a <math|n>. Con <math|n=3>, per esempio, ritroviamo il cubo di binomio
   <math|a<rsup|3>+3a<rsup|2>b+3a*b<rsup|2>+b<rsup|3>>.
 
-  Scegliere <math|k> elementi equivale a scegliere i <math|n-k> da lasciare
-  fuori: dunque <math|<binom|n|k>=<binom|n|n-k>>. Inoltre, fissato un
-  elemento, un sottoinsieme di <math|k> elementi può contenerlo oppure no. I
-  due casi danno l'<strong|identità di Pascal>:
+  <subsection|Contare due volte la stessa cosa>
+
+  Molte identità fra coefficienti binomiali si spiegano senza calcoli,
+  contando la stessa famiglia di oggetti in due modi diversi. Scegliere i
+  <math|k> elementi da prendere, per esempio, equivale a scegliere gli
+  <math|n-k> da lasciare fuori, e quindi <math|<binom|n|k>=<binom|n|n-k>>.
+
+  Un po' più interessante è fissare un elemento e chiedersi se il
+  sottoinsieme lo contiene. Quelli che lo contengono si ottengono scegliendo
+  altri <math|k-1> elementi fra i rimanenti <math|n-1>, mentre quelli che non
+  lo contengono scelgono tutti i loro <math|k> elementi fra quegli
+  <math|n-1>. Sommando i due casi otteniamo l'<strong|identità di Pascal>:
 
   <\equation*>
     <binom|n|k>=<binom|n-1|k-1>+<binom|n-1|k><space|2em>(n\<geq\>1).
   </equation*>
 
-  Queste dimostrazioni contano la stessa famiglia in due modi: è il
-  <strong|doppio conteggio>. Anche tutti i sottoinsiemi si possono contare in
-  due modi. Per ogni elemento scegliamo se inserirlo: <math|2<rsup|n>>
-  possibilità. Oppure li raggruppiamo per dimensione. Ne segue
+  Questo modo di ragionare si chiama <strong|doppio conteggio>. Applichiamolo
+  a tutti i sottoinsiemi di un insieme con <math|n> elementi. Da un lato, per
+  ogni elemento decidiamo se metterlo dentro o lasciarlo fuori, e otteniamo
+  <math|2<rsup|n>> sottoinsiemi. Dall'altro possiamo raggrupparli per numero
+  di elementi. I due conti devono coincidere, e quindi
   <math|<big|sum><rsub|k=0><rsup|n><binom|n|k>=2<rsup|n>>.
 
-  Se <math|n\<geq\>1>, i sottoinsiemi di dimensione pari e quelli di
-  dimensione dispari sono altrettanti: fissiamo un elemento e aggiungiamolo
-  quando manca, togliendolo quando c'è. Questa operazione è reversibile e
-  cambia la parità. Ciascuna famiglia contiene quindi <math|2<rsup|n-1>>
-  sottoinsiemi.
+  Con un'idea simile scopriamo che, per <math|n\<geq\>1>, i sottoinsiemi con
+  un numero pari di elementi sono tanti quanti quelli con un numero dispari.
+  Fissiamo un elemento e trasformiamo ogni sottoinsieme aggiungendolo se
+  manca e togliendolo se c'è. L'operazione si può sempre annullare
+  ripetendola, quindi è una biiezione, e cambia sempre la parità del numero
+  di elementi. Le due famiglie sono quindi ugualmente numerose, e ciascuna
+  contiene <math|2<rsup|n-1>> sottoinsiemi.
 
-  Un altro esempio utile è scegliere un sottoinsieme con un suo elemento
-  contrassegnato. Scegliendo prima la dimensione <math|k>, poi il
-  sottoinsieme, poi il contrassegno, otteniamo
-  <math|<big|sum><rsub|k=0><rsup|n>k<binom|n|k>>. Scegliendo prima l'elemento
-  contrassegnato abbiamo <math|n> possibilità; degli altri <math|n-1>
-  elementi scegliamo liberamente quali inserire. Perciò, per
-  <math|n\<geq\>1>,
+  Un ultimo esempio mostra quanto il metodo sia flessibile. Contiamo i
+  sottoinsiemi con un elemento contrassegnato, come una squadra con il suo
+  capitano. Possiamo scegliere prima la dimensione <math|k>, poi la squadra e
+  infine il capitano, e otteniamo <math|<big|sum><rsub|k=0><rsup|n>k<binom|n|k>>.
+  Oppure possiamo scegliere prima il capitano, in <math|n> modi, e poi
+  decidere liberamente quali degli altri <math|n-1> elementi entrano in
+  squadra. Per <math|n\<geq\>1> i due conti danno
 
   <\equation*>
     <big|sum><rsub|k=0><rsup|n>k<binom|n|k>=n2<rsup|n-1>.
@@ -783,90 +858,100 @@
 
   <section|Inclusione-esclusione: correggere le sovrapposizioni>
 
-  Fra gli interi da 1 a 12, sei sono multipli di 2 e quattro sono multipli di
-  3. Per contare quelli divisibili per almeno uno dei due, non possiamo
-  limitarci a sommare: 6 e 12 compaiono in entrambi i gruppi. Li abbiamo
-  contati due volte, quindi sottraiamo una delle due copie. Il risultato è
-  <math|6+4-2=8>.
+  Fra gli interi da 1 a 12 ce ne sono sei multipli di 2 e quattro multipli di
+  3. Quanti sono divisibili per almeno uno dei due? Sommare darebbe 10, ma 6
+  e 12 stanno in entrambi i gruppi e li avremmo contati due volte. Togliendo
+  una copia di ciascuno otteniamo la risposta giusta, <math|6+4-2=8>.
 
-  Per due insiemi finiti questo dà
+  Per due insiemi finiti questa correzione diventa la formula
 
   <\equation*>
     \|A\<cup\>B\|=\|A\|+\|B\|-\|A\<cap\>B\|.
   </equation*>
 
-  Con tre insiemi sommiamo i singoli, sottraiamo le intersezioni a due a due
-  e aggiungiamo l'intersezione tripla. Un elemento comune a tutti e tre è
-  infatti contato <math|3-3=0> volte prima dell'ultima aggiunta: dobbiamo
-  riportare il suo contributo a 1.
+  Con tre insiemi la correzione va fatta con più attenzione. Sommiamo i tre
+  insiemi, togliamo le tre intersezioni a due a due e poi aggiungiamo di
+  nuovo l'intersezione tripla. L'ultima aggiunta serve perché un elemento
+  comune a tutti e tre viene contato tre volte all'inizio e tolto tre volte
+  subito dopo, e senza quel ritocco sparirebbe dal conto.
 
   <figura|<image|assets/venn3.pdf|150.0mm|62.5mm||>|Il contributo finale di
   ogni elemento dell'unione deve essere 1, anche se appartiene a più insiemi.
   Le intersezioni correggono le copie in eccesso.>
 
-  La stessa regola continua per più insiemi: singoli con segno più,
-  intersezioni doppie con segno meno, triple con segno più, e così via.
-  Perché funziona? Se un elemento sta in esattamente <math|j\<geq\>1>
-  insiemi, il suo contributo è
+  Con più insiemi la regola continua allo stesso modo, alternando i segni:
+  più per i singoli insiemi, meno per le intersezioni doppie, più per quelle
+  triple, e così via. Per capire perché funzioni, seguiamo un elemento che
+  sta in esattamente <math|j\<geq\>1> degli insiemi. Il suo contributo totale
+  è
 
   <\equation*>
     <binom|j|1>-<binom|j|2>+\<cdots\>+(-1)<rsup|j+1><binom|j|j>=1.
   </equation*>
 
-  L'uguaglianza segue da Newton: <math|(1-1)<rsup|j>=0>; separando il termine
-  iniziale 1 e portando gli altri dall'altra parte otteniamo proprio questa
-  somma. Ogni elemento presente viene dunque contato una volta; gli elementi
-  esterni non contribuiscono.
+  Questa uguaglianza viene dal binomio di Newton. Sviluppando
+  <math|(1-1)<rsup|j>=0> otteniamo <math|1> meno esattamente la somma qui
+  sopra, che deve quindi valere 1. Ogni elemento dell'unione viene così
+  contato una volta sola, mentre gli elementi che non stanno in nessun
+  insieme non contribuiscono affatto.
 
-  Una <strong|funzione caratteristica> esprime lo stesso meccanismo con
-  numeri: <math|\<chi\><rsub|A>(x)> vale 1 se <math|x\<in\>A> e 0 altrimenti.
-  Sommando questi valori contiamo gli elementi di <math|A>. Il prodotto
-  <math|\<chi\><rsub|A>\<chi\><rsub|B>> segnala l'intersezione, mentre
-  <math|\<chi\><rsub|A>+\<chi\><rsub|B>-\<chi\><rsub|A>\<chi\><rsub|B>>
-  segnala l'unione. È un modo algebrico di descrivere il conteggio
-  precedente.
+  Lo stesso meccanismo si può scrivere con i numeri usando la
+  <strong|funzione caratteristica> <math|\<chi\><rsub|A>>, che vale 1 sugli
+  elementi di <math|A> e 0 altrove. Sommare i suoi valori vuol dire contare
+  gli elementi di <math|A>. Il prodotto <math|\<chi\><rsub|A>\<chi\><rsub|B>>
+  vale 1 esattamente sull'intersezione, e la combinazione
+  <math|\<chi\><rsub|A>+\<chi\><rsub|B>-\<chi\><rsub|A>\<chi\><rsub|B>> vale
+  1 esattamente sull'unione, che è la formula di prima tradotta in algebra.
 
   <section|Per proseguire: due applicazioni del conteggio>
 
-  Le idee fondamentali del capitolo sono già costruite. Le prossime due
-  applicazioni mostrano come combinarle in problemi più articolati; puoi
-  tornarci dopo una prima lettura.
+  Le idee principali del capitolo sono ormai tutte sul tavolo. Le due
+  applicazioni che seguono mostrano come combinarle in problemi un po' più
+  articolati, e puoi tornarci dopo una prima lettura.
 
   <subsection|Contare le suriezioni>
 
-  Per contare le suriezioni da tre elementi a due, partiamo dalle 8 funzioni
-  totali. Quelle che omettono 0 sono la sola funzione costante 1; quelle che
-  omettono 1 sono la sola funzione costante 0. Restano <math|8-1-1=6>
-  suriezioni.
+  Quante funzioni suriettive vanno da tre elementi a due? Delle 8 funzioni
+  totali, una sola evita il valore 0, cioè la funzione costante 1, e una sola
+  evita il valore 1, cioè la costante 0. Le suriezioni sono quindi
+  <math|8-1-1=6>.
 
-  Per <math|n\<geq\>1> elementi di partenza e <math|m\<geq\>1> di arrivo, le
-  funzioni che evitano un valore fissato sono <math|(m-1)<rsup|n>>; quelle
-  che evitano due valori fissati sono <math|(m-2)<rsup|n>>, e così via.
-  Scegliendo i valori da evitare e correggendo le sovrapposizioni otteniamo
+  Per <math|n\<geq\>1> elementi di partenza e <math|m\<geq\>1> di arrivo
+  seguiamo la stessa strada, ma servono le correzioni
+  dell'inclusione-esclusione. Le funzioni che evitano un valore fissato sono
+  <math|(m-1)<rsup|n>>, quelle che ne evitano due fissati sono
+  <math|(m-2)<rsup|n>>, e così via. Scegliendo quali valori evitare e
+  alternando i segni otteniamo il numero delle suriezioni,
 
   <\equation*>
     <big|sum><rsub|k=0><rsup|m>(-1)<rsup|k><binom|m|k>(m-k)<rsup|n>.
   </equation*>
 
-  Il termine <math|k=0> conta tutte le funzioni. I successivi eliminano
-  quelle che omettono almeno un valore, con le correzioni necessarie.
+  Il termine con <math|k=0> conta tutte le funzioni, e i successivi tolgono
+  quelle che mancano almeno un valore, correggendo a ogni passo le
+  sottrazioni fatte in eccesso.
 
   <subsection|Stelle e sbarre: distribuire quantità uguali>
 
-  Quante soluzioni intere non negative ha <math|x+y+z=4>? Le posizioni sono
-  distinguibili: <math|(4,0,0)> e <math|(0,4,0)> sono soluzioni diverse.
+  Quante soluzioni intere non negative ha l'equazione <math|x+y+z=4>? Qui le
+  posizioni contano, quindi <math|(4,0,0)> e <math|(0,4,0)> sono soluzioni
+  diverse.
 
-  Rappresentiamo le quattro unità con stelle e separiamo le tre quantità con
-  due sbarre. Per esempio \Sdue stelle, sbarra, due stelle, sbarra\T descrive
-  <math|(2,2,0)>. Sbarre adiacenti o agli estremi permettono quantità nulle.
+  C'è un modo molto visivo di contarle. Rappresentiamo le quattro unità con
+  quattro stelle e separiamo le tre quantità con due sbarre. La sequenza
+  \Sdue stelle, sbarra, due stelle, sbarra\T, per esempio, descrive
+  <math|(2,2,0)>. Due sbarre vicine, oppure una sbarra in fondo o all'inizio,
+  indicano una quantità nulla.
 
   <figura|<image|assets/stelle.pdf|140.0mm|37.5mm||>|Quattro stelle
   rappresentano le unità; due sbarre separano tre quantità. La posizione
   delle sbarre determina una e una sola soluzione.>
 
-  Abbiamo sei posizioni e scegliamo quali due occupare con le sbarre:
-  <math|<binom|6|2>=15> soluzioni. In generale, per <math|r\<geq\>1> e
-  <math|n\<geq\>0>,
+  In tutto abbiamo sei simboli, e una soluzione corrisponde a una scelta
+  delle due posizioni occupate dalle sbarre. Le soluzioni sono quindi
+  <math|<binom|6|2>=15>. Lo stesso ragionamento, con <math|n> stelle e
+  <math|r-1> sbarre, vale in generale per <math|r\<geq\>1> e
+  <math|n\<geq\>0>:
 
   <\equation*>
     x<rsub|1>+\<cdots\>+x<rsub|r>=n,<space|1em>x<rsub|i>\<geq\>0
@@ -874,18 +959,19 @@
     soluzioni.>
   </equation*>
 
-  Se le quantità devono essere tutte positive, assegniamo prima un'unità a
-  ciascuna. Restano <math|n-r> unità da distribuire senza altri vincoli: per
-  <math|n\<geq\>r> le soluzioni sono <math|<binom|n-1|r-1>>. Per
-  <math|n\<less\>r> non ce ne sono.
+  Se le quantità devono essere tutte positive basta un piccolo trucco. Diamo
+  prima un'unità a ciascuna variabile, e restano <math|n-r> unità da
+  distribuire senza vincoli. Per <math|n\<geq\>r> le soluzioni sono quindi
+  <math|<binom|n-1|r-1>>, mentre per <math|n\<less\>r> non ce n'è nessuna.
 
   <subsection|In sintesi>
 
-  La domanda decisiva è quali scelte descrivano un oggetto una volta sola. I
-  casi disgiunti si sommano, le scelte successive si moltiplicano. Se
-  dimentichiamo l'ordine correggiamo le ripetizioni uniformi; se i casi si
-  sovrappongono usiamo inclusione-esclusione. Una biiezione o un doppio
-  conteggio possono spiegare un'identità senza lunghe manipolazioni.
+  Il cuore di ogni conteggio è descrivere gli oggetti in modo che ciascuno
+  venga contato una volta sola. I casi disgiunti si sommano e le scelte
+  successive si moltiplicano. Quando l'ordine non ci interessa dividiamo per
+  le ripetizioni, purché siano tutte uguali, e quando i casi si sovrappongono
+  usiamo l'inclusione-esclusione. Una biiezione o un doppio conteggio,
+  infine, spiegano spesso un'identità meglio di una lunga serie di calcoli.
 
   <\verifica|2>
     <strong|1. Con un suggerimento.> Quante funzioni suriettive esistono da
@@ -902,62 +988,73 @@
   <chapter|Successioni e ricorrenze>
 
   <\inbreve>
-    Nel conteggio possiamo riconoscere un problema più piccolo dentro quello
-    che stiamo affrontando. Questo produce una ricorrenza: una regola che
-    calcola un termine usando i precedenti. Impariamo a costruire questa
-    regola, a capire quali dati la completano e a ricavarne una formula
-    esplicita.
+    Certi conteggi diventano più semplici se riconosciamo, dentro il problema
+    che stiamo affrontando, una copia più piccola dello stesso problema. Da
+    questa osservazione nasce una ricorrenza, cioè una regola che calcola
+    ogni termine a partire dai precedenti. Vedremo come trovarla, quali dati
+    servono per farla partire e come ricavarne una formula che dia subito il
+    termine che ci interessa.
   </inbreve>
 
   <section|Una ricorrenza nasce dalle tassellazioni>
 
-  Vogliamo ricoprire un rettangolo di due righe e <math|n> colonne con
-  tessere di dimensioni <math|2\<times\>1>. Possiamo ruotarle, ma non
-  sovrapporle o lasciare buchi. Indichiamo con <math|T<rsub|n>> il numero
-  delle coperture possibili.
+  Immaginiamo di dover ricoprire un rettangolo di due righe e <math|n>
+  colonne con tessere di dimensioni <math|2\<times\>1>, che possiamo ruotare
+  ma non sovrapporre, e senza lasciare buchi. Chiamiamo <math|T<rsub|n>> il
+  numero dei modi possibili.
 
-  Per una colonna c'è una sola possibilità: una tessera verticale. Per due
-  colonne ce ne sono due: due tessere verticali oppure due orizzontali. Per
-  quattro colonne le coperture sono cinque.
+  I primi casi si fanno a mano. Con una colonna c'è un solo modo, una tessera
+  verticale. Con due colonne i modi sono due, perché possiamo mettere due
+  tessere verticali oppure due orizzontali una sopra l'altra. Con quattro
+  colonne, disegnando con un po' di pazienza, se ne trovano cinque.
 
   <figura|<image|assets/tassellazioni.pdf|155.0mm|23.0mm||>|Le cinque
   coperture di un rettangolo <math|2\<times\>4>. Per lunghezze maggiori,
   disegnarle tutte diventa poco pratico.>
 
-  Cerchiamo una classificazione che non richieda di elencare tutte le
-  coperture. Guardiamo la casella in alto a sinistra. Se la tessera che la
-  copre è verticale, occupa la prima colonna: resta un rettangolo di
-  lunghezza <math|n-1>, con <math|T<rsub|n-1>> coperture.
+  Per rettangoli più lunghi disegnare tutto diventa impraticabile, e ci serve
+  un modo di contare senza elencare. Concentriamoci allora sulla casella in
+  alto a sinistra e chiediamoci come può essere coperta.
 
-  Se invece la tessera è orizzontale, anche la casella sotto deve essere
-  coperta da una tessera orizzontale: una verticale si sovrapporrebbe alla
-  prima. Le due tessere occupano le prime due colonne. Resta un rettangolo di
-  lunghezza <math|n-2>, con <math|T<rsub|n-2>> coperture.
+  Se la tessera che la copre è verticale, occupa l'intera prima colonna.
+  Quello che resta è un rettangolo di lunghezza <math|n-1>, che si può
+  coprire in <math|T<rsub|n-1>> modi.
+
+  Se invece è orizzontale, anche la casella sotto deve essere coperta da una
+  tessera orizzontale, perché una verticale andrebbe a sovrapporsi alla
+  prima. Le due tessere orizzontali riempiono insieme le prime due colonne, e
+  resta un rettangolo di lunghezza <math|n-2>, con <math|T<rsub|n-2>>
+  coperture.
 
   <figura|<image|assets/domino.pdf|155.0mm|33.8mm||>|Le due partenze
   esauriscono le possibilità e sono incompatibili fra loro. Perciò i loro
   conteggi si sommano.>
 
-  Otteniamo la regola
+  Ogni copertura comincia in uno solo di questi due modi, e quindi i conteggi
+  si sommano:
 
   <\equation*>
     T<rsub|n>=T<rsub|n-1>+T<rsub|n-2><space|2em>(n\<geq\>2).
   </equation*>
 
-  Poniamo <math|T<rsub|0>=1>: c'è un solo modo di coprire il rettangolo
-  vuoto, non mettere tessere. Insieme a <math|T<rsub|1>=1>, questa scelta
-  produce
+  Per far partire la regola conviene porre <math|T<rsub|0>=1>. Il rettangolo
+  vuoto si copre infatti in un solo modo, non mettendo nessuna tessera.
+  Insieme a <math|T<rsub|1>=1>, la regola produce allora
 
   <\equation*>
     T<rsub|0>,T<rsub|1>,T<rsub|2>,T<rsub|3>,T<rsub|4>,T<rsub|5>,\<ldots\>=1,1,2,3,5,8,\<ldots\>
   </equation*>
 
+  e ritroviamo il 5 che avevamo contato a mano.
+
   <section|La regola e i dati iniziali>
 
-  Una <strong|successione> assegna un numero a ogni indice naturale:
-  scriviamo <math|a<rsub|0>,a<rsub|1>,a<rsub|2>,\<ldots\>>. In termini del
-  capitolo precedente, è una funzione che ha come dominio <math|\<bbb-N\>>.
-  Il simbolo <math|a<rsub|n>> indica il termine di indice <math|n>.
+  Abbiamo appena incontrato una <strong|successione>, cioè un numero
+  assegnato a ogni indice naturale, che scriviamo
+  <math|a<rsub|0>,a<rsub|1>,a<rsub|2>,\<ldots\>>. Con il linguaggio del
+  capitolo precedente è semplicemente una funzione con dominio
+  <math|\<bbb-N\>>, e <math|a<rsub|n>> indica il suo valore nell'indice
+  <math|n>.
 
   <\concetto|Ricorrenza del secondo ordine>
     Una regola della forma <math|a<rsub|n+2>=c*a<rsub|n+1>+d*a<rsub|n>>
@@ -966,166 +1063,178 @@
     e <math|a<rsub|1>>. I coefficienti <math|c,d> sono fissati.
   </concetto>
 
-  Per esempio, con
+  Prendiamo per esempio
 
   <\equation*>
-    a<rsub|n+2>=3a<rsub|n+1>-2a<rsub|n>,<space|2em>a<rsub|0>=0,<space|1em>a<rsub|1>=1,
+    a<rsub|n+2>=3a<rsub|n+1>-2a<rsub|n>,<space|2em>a<rsub|0>=0,<space|1em>a<rsub|1>=1.
   </equation*>
 
-  calcoliamo <math|a<rsub|2>=3\<cdot\>1-2\<cdot\>0=3>, poi
-  <math|a<rsub|3>=3\<cdot\>3-2\<cdot\>1=7>, poi 15, 31 e così via. Con dati
-  iniziali diversi otterremmo numeri diversi, pur mantenendo la stessa
-  regola.
+  Il terzo termine è <math|a<rsub|2>=3\<cdot\>1-2\<cdot\>0=3>, il quarto è
+  <math|a<rsub|3>=3\<cdot\>3-2\<cdot\>1=7>, e continuando troviamo 15, 31 e
+  così via. Se partissimo da dati iniziali diversi, con la stessa regola,
+  otterremmo un'altra successione.
 
-  I dati iniziali e la regola determinano una sola successione. Infatti, se
-  due successioni partono dagli stessi primi due termini, la regola produce
-  lo stesso terzo termine; poi lo stesso quarto, e così via. Formalmente è
-  un'induzione sulla coppia di uguaglianze <math|a<rsub|n>=b<rsub|n>> e
-  <math|a<rsub|n+1>=b<rsub|n+1>>: dalle due uguaglianze segue quella al posto
-  <math|n+2>.
+  Regola e dati iniziali, insieme, determinano invece una successione sola.
+  Se due successioni hanno gli stessi primi due termini, la regola dà loro lo
+  stesso terzo termine, poi lo stesso quarto, e così via. Per scriverlo con
+  precisione si fa un'induzione sulla coppia di uguaglianze
+  <math|a<rsub|n>=b<rsub|n>> e <math|a<rsub|n+1>=b<rsub|n+1>>, da cui la
+  regola ricava l'uguaglianza al posto <math|n+2>.
 
-  Questa <strong|unicità> ha una conseguenza pratica: per dimostrare che una
-  formula descrive la successione cercata, basta controllare i primi due
-  termini e la ricorrenza.
+  Questa <strong|unicità> sarà molto comoda. Se abbiamo in mano una formula e
+  vogliamo sapere se descrive la nostra successione, basta controllare che
+  abbia i primi due termini giusti e che rispetti la regola.
 
   <section|Equazione caratteristica: cercare una formula>
 
-  Calcolare tutti i termini precedenti per arrivare al centesimo può essere
-  scomodo. Cerchiamo una <strong|formula esplicita>, che usi direttamente
-  l'indice <math|n>.
+  Calcolare novantotto termini per arrivare al centesimo è scomodo. Vorremmo
+  una <strong|formula esplicita>, che dia <math|a<rsub|n>> usando
+  direttamente l'indice <math|n>.
 
-  Perché provare con le potenze? Una potenza mantiene la stessa forma quando
-  spostiamo l'indice: da <math|\<lambda\><rsup|n>> a
-  <math|\<lambda\><rsup|n+1>> basta moltiplicare per <math|\<lambda\>>.
-  Questo permette di confrontare facilmente termini consecutivi.
+  Per indovinarla proviamo con le potenze. La ragione è che una potenza
+  cambia in modo semplicissimo quando spostiamo l'indice, perché per passare
+  da <math|\<lambda\><rsup|n>> a <math|\<lambda\><rsup|n+1>> basta
+  moltiplicare per <math|\<lambda\>>, e la nostra regola confronta proprio
+  termini con indici consecutivi.
 
-  Proviamo quindi <math|a<rsub|n>=\<lambda\><rsup|n>>, con
-  <math|\<lambda\>\<neq\>0>, nella ricorrenza dell'esempio. Otteniamo
+  Mettiamo dunque <math|a<rsub|n>=\<lambda\><rsup|n>>, con
+  <math|\<lambda\>\<neq\>0>, nella ricorrenza dell'esempio:
 
   <\equation*>
     \<lambda\><rsup|n+2>=3\<lambda\><rsup|n+1>-2\<lambda\><rsup|n>.
   </equation*>
 
-  Dividendo per <math|\<lambda\><rsup|n>> rimane un'equazione che non dipende
-  più da <math|n>:
+  Dividendo per <math|\<lambda\><rsup|n>> l'indice sparisce, e resta
+  un'equazione di secondo grado:
 
   <\equation*>
     \<lambda\><rsup|2>-3\<lambda\>+2=0, <space|2em>(\<lambda\>-1)(\<lambda\>-2)=0.
   </equation*>
 
-  È l'<strong|equazione caratteristica>. Le radici 1 e 2 ci danno due
-  successioni che rispettano la regola: quella costante <math|1<rsup|n>> e
-  quella <math|2<rsup|n>>.
+  Questa è l'<strong|equazione caratteristica> della ricorrenza. Le sue
+  radici 1 e 2 ci danno due successioni che rispettano la regola, quella
+  costante <math|1<rsup|n>> e quella delle potenze <math|2<rsup|n>>. Nessuna
+  delle due, però, parte da 0 e 1.
 
-  La ricorrenza è <strong|lineare e omogenea>: moltiplicare due soluzioni per
-  costanti e sommarle produce ancora una soluzione. Per vederlo, se
-  <math|u<rsub|n>> e <math|v<rsub|n>> rispettano la regola, allora
+  Per sistemare la partenza sfruttiamo il fatto che la ricorrenza è
+  <strong|lineare e omogenea>, cioè che moltiplicando due soluzioni per delle
+  costanti e sommandole si ottiene ancora una soluzione. Se <math|u<rsub|n>>
+  e <math|v<rsub|n>> rispettano la regola, infatti,
 
   <\equation*>
     3(A*u<rsub|n+1>+B*v<rsub|n+1>)-2(A*u<rsub|n>+B*v<rsub|n>)=A*u<rsub|n+2>+B*v<rsub|n+2>.
   </equation*>
 
-  Possiamo dunque cercare la nostra successione nella forma
-  <math|a<rsub|n>=A+B2<rsup|n>>. Per rispettare i dati iniziali chiediamo
+  Possiamo quindi cercare la nostra successione nella forma
+  <math|a<rsub|n>=A+B2<rsup|n>> e scegliere le costanti in modo da rispettare
+  i dati iniziali. Le condizioni sono
 
   <\equation*>
-    A+B=0,<space|2em>A+2B=1.
+    A+B=0,<space|2em>A+2B=1,
   </equation*>
 
-  Sottraendo la prima uguaglianza dalla seconda troviamo <math|B=1>, poi
-  <math|A=-1>. Quindi
+  e sottraendo la prima dalla seconda troviamo <math|B=1>, da cui
+  <math|A=-1>. La formula candidata è quindi
 
   <\equation*>
     a<rsub|n>=2<rsup|n>-1.
   </equation*>
 
   <\anatomia|Perché la formula trovata è proprio quella cercata>
-    Trovare un'espressione plausibile non basta. Dobbiamo collegarla ai dati
-    del problema.
+    Siamo arrivati alla formula per tentativi, e un'espressione plausibile
+    non è ancora una dimostrazione. Dobbiamo collegarla ai dati del problema.
 
-    La formula parte bene: <math|2<rsup|0>-1=0> e <math|2<rsup|1>-1=1>.
-    Rispetta anche la ricorrenza, perché
+    La partenza è giusta, perché <math|2<rsup|0>-1=0> e <math|2<rsup|1>-1=1>.
+    Anche la regola è rispettata, perché
 
     <\equation*>
       3(2<rsup|n+1>-1)-2(2<rsup|n>-1)=2<rsup|n+2>-1.
     </equation*>
 
-    Per l'unicità dimostrata prima, questa successione coincide con quella
-    definita dalla regola. Il metodo non richiede di confrontare un'infinità
-    di valori: basta verificare la partenza e il modo in cui prosegue.
+    Per l'unicità che abbiamo dimostrato, questa successione coincide con
+    quella definita dalla ricorrenza. Non abbiamo dovuto confrontare infiniti
+    valori, ci è bastato controllare da dove parte e come prosegue.
   </anatomia>
 
   <subsection|Per proseguire: il caso generale>
 
-  Per <math|a<rsub|n+2>=c*a<rsub|n+1>+d*a<rsub|n>>, con <math|d\<neq\>0>, il
+  Lo stesso metodo funziona per ogni ricorrenza
+  <math|a<rsub|n+2>=c*a<rsub|n+1>+d*a<rsub|n>> con <math|d\<neq\>0>, il cui
   polinomio caratteristico è <math|\<lambda\><rsup|2>-c\<lambda\>-d>. Qui
-  trattiamo il caso di due radici distinte
-  <math|\<lambda\><rsub|1>,\<lambda\><rsub|2>>. La formula è
+  trattiamo il caso in cui ha due radici distinte
+  <math|\<lambda\><rsub|1>,\<lambda\><rsub|2>>, e la formula cercata ha la
+  forma
 
   <\equation*>
     a<rsub|n>=A\<lambda\><rsub|1><rsup|n>+B\<lambda\><rsub|2><rsup|n>.
   </equation*>
 
-  Perché raggiungiamo ogni possibile coppia di dati iniziali? Le condizioni
-  sono <math|A+B=a<rsub|0>> e <math|A\<lambda\><rsub|1>+B\<lambda\><rsub|2>=a<rsub|1>>.
-  Sostituendo <math|A=a<rsub|0>-B>, la seconda diventa
-  <math|B(\<lambda\><rsub|2>-\<lambda\><rsub|1>)=a<rsub|1>-a<rsub|0>\<lambda\><rsub|1>>.
-  Poiché le radici sono distinte, possiamo sempre trovare un unico <math|B>,
-  poi un unico <math|A>. L'unicità della ricorrenza conclude il ragionamento.
-  Se necessario, le radici e i calcoli si considerano nei numeri complessi,
-  della forma <math|x+i*y> con <math|x,y> reali e <math|i<rsup|2>=-1>.
+  Resta da capire se riusciamo sempre a scegliere le costanti in modo da
+  rispettare qualunque coppia di dati iniziali. Le condizioni sono
+  <math|A+B=a<rsub|0>> e <math|A\<lambda\><rsub|1>+B\<lambda\><rsub|2>=a<rsub|1>>.
+  Sostituendo <math|A=a<rsub|0>-B> nella seconda otteniamo
+  <math|B(\<lambda\><rsub|2>-\<lambda\><rsub|1>)=a<rsub|1>-a<rsub|0>\<lambda\><rsub|1>>,
+  e siccome le radici sono distinte possiamo dividere per
+  <math|\<lambda\><rsub|2>-\<lambda\><rsub|1>> e trovare un unico <math|B>, e
+  poi un unico <math|A>. L'unicità della ricorrenza fa il resto. Quando
+  serve, le radici e i calcoli si prendono nei numeri complessi, della forma
+  <math|x+i*y> con <math|x,y> reali e <math|i<rsup|2>=-1>.
 
   <section|Fibonacci e il ritorno alle tassellazioni>
 
-  La successione di <strong|Fibonacci> è definita da <math|F<rsub|0>=0>,
-  <math|F<rsub|1>=1> e <math|F<rsub|n+2>=F<rsub|n+1>+F<rsub|n>>. I primi
-  termini sono <math|0,1,1,2,3,5,8,\<ldots\>>.
-
-  L'equazione caratteristica è <math|\<lambda\><rsup|2>-\<lambda\>-1=0>. Le
-  radici sono
+  La successione più famosa di questo tipo è quella di <strong|Fibonacci>,
+  definita da <math|F<rsub|0>=0>, <math|F<rsub|1>=1> e
+  <math|F<rsub|n+2>=F<rsub|n+1>+F<rsub|n>>, che comincia con
+  <math|0,1,1,2,3,5,8,\<ldots\>>. La sua equazione caratteristica è
+  <math|\<lambda\><rsup|2>-\<lambda\>-1=0>, con radici
 
   <\equation*>
     \<varphi\>=<frac|1+<sqrt|5>|2>,<space|2em>\<psi\>=<frac|1-<sqrt|5>|2>.
   </equation*>
 
-  Scriviamo <math|F<rsub|n>=A\<varphi\><rsup|n>+B\<psi\><rsup|n>>. La
-  partenza dà <math|A+B=0> e <math|A\<varphi\>+B\<psi\>=1>. Quindi
+  Cerchiamo quindi <math|F<rsub|n>=A\<varphi\><rsup|n>+B\<psi\><rsup|n>>. La
+  partenza chiede <math|A+B=0> e <math|A\<varphi\>+B\<psi\>=1>, dunque
   <math|B=-A> e <math|A(\<varphi\>-\<psi\>)=1>. Poiché
-  <math|\<varphi\>-\<psi\>=<sqrt|5>>, otteniamo la <strong|formula di Binet>:
+  <math|\<varphi\>-\<psi\>=<sqrt|5>>, otteniamo <math|A=1/<sqrt|5>> e la
+  <strong|formula di Binet>:
 
   <\equation*>
     F<rsub|n>=<frac|\<varphi\><rsup|n>-\<psi\><rsup|n>|<sqrt|5>>.
   </equation*>
 
-  Le radici quadrate possono sorprendere, ma l'unicità garantisce che la
-  formula dia proprio gli interi generati dalla ricorrenza.
+  A prima vista è sorprendente che da radici quadrate escano sempre numeri
+  interi. L'unicità però non lascia scampo, perché la formula rispetta
+  partenza e regola e quindi produce esattamente i numeri di Fibonacci.
 
-  Le tassellazioni seguono la stessa regola con partenza 1, 1. Sono quindi
-  Fibonacci spostata di un posto: <math|T<rsub|n>=F<rsub|n+1>>. Controlliamo
-  gli indici: <math|T<rsub|0>=F<rsub|1>=1> e <math|T<rsub|1>=F<rsub|2>=1>.
+  E le nostre tassellazioni? Seguono la stessa regola, ma partono da 1 e 1,
+  cioè sono la successione di Fibonacci spostata di un posto,
+  <math|T<rsub|n>=F<rsub|n+1>>. Controllare gli indici è facile, perché
+  <math|T<rsub|0>=F<rsub|1>=1> e <math|T<rsub|1>=F<rsub|2>=1>.
 
   <subsection|Per proseguire: un secondo conteggio delle tassellazioni>
 
-  Possiamo ritrovare anche un legame con i binomiali. Se una copertura
-  contiene <math|k> coppie orizzontali, queste occupano <math|2k> colonne;
-  rimangono <math|n-2k> tessere verticali. Ci sono dunque <math|n-k> blocchi
-  in tutto e scegliamo quali <math|k> siano coppie orizzontali. Sommando sui
-  valori possibili di <math|k> otteniamo
+  Le tassellazioni si possono contare anche in un altro modo, che le lega ai
+  coefficienti binomiali. Supponiamo che una copertura contenga <math|k>
+  coppie di tessere orizzontali. Queste occupano <math|2k> colonne, e le
+  altre <math|n-2k> colonne sono coperte da tessere verticali. Leggendo la
+  copertura da sinistra a destra vediamo quindi <math|n-k> blocchi, e per
+  descriverla basta dire quali <math|k> di questi blocchi sono coppie
+  orizzontali. Sommando su tutti i valori possibili di <math|k> otteniamo
 
   <\equation*>
-    T<rsub|n>=<big|sum><rsub|k=0><rsup|\<lfloor\>n/2\<rfloor\>><binom|n-k|k>.
+    T<rsub|n>=<big|sum><rsub|k=0><rsup|\<lfloor\>n/2\<rfloor\>><binom|n-k|k>,
   </equation*>
 
-  Il simbolo <math|\<lfloor\>n/2\<rfloor\>> indica il massimo intero non
-  maggiore di <math|n/2>. Per <math|n=4> la somma vale <math|1+3+1=5>: lo
-  stesso conteggio del disegno iniziale.
+  dove <math|\<lfloor\>n/2\<rfloor\>> indica il più grande intero non
+  maggiore di <math|n/2>. Per <math|n=4> la somma vale <math|1+3+1=5>, di
+  nuovo il numero del disegno iniziale.
 
   <subsection|In sintesi>
 
-  La ricorrenza descrive come proseguire; i dati iniziali stabiliscono da
-  dove partire. Il polinomio caratteristico cerca soluzioni adatte alla
-  regola; le costanti adattano queste soluzioni alla partenza. L'unicità
-  spiega perché controllare regola e dati iniziali è sufficiente.
+  Una ricorrenza dice come proseguire, e i dati iniziali dicono da dove
+  partire. L'equazione caratteristica trova le soluzioni che si adattano alla
+  regola, e le costanti le adattano alla partenza. L'unicità spiega perché,
+  alla fine, basta controllare questi due aspetti.
 
   <\verifica|3>
     <strong|1. Con un suggerimento.> Trova la formula esplicita per
@@ -1141,60 +1250,70 @@
   <chapter|Divisione, MCD e algoritmo di Euclide>
 
   <\inbreve>
-    Come troviamo ciò che due interi hanno in comune? Partiamo dalla
-    divisibilità, precisiamo la divisione con resto e arriviamo a un
-    procedimento che calcola il massimo comun divisore. A ogni passaggio
-    distingueremo che cosa stiamo facendo e perché possiamo farlo.
+    Due numeri come 45 e 17 sembrano non avere nulla in comune, mentre 84 e
+    30 condividono parecchi divisori. Per saperlo con certezza, anche quando
+    i numeri sono enormi, non possiamo elencare tutti i divisori. Questo
+    capitolo costruisce passo per passo la divisione con resto e la usa per
+    ottenere un procedimento rapido, l'algoritmo di Euclide, che trova il
+    massimo comun divisore.
   </inbreve>
 
   <section|Divisibilità: riconoscere un multiplo>
 
-  Il numero 18 si può ottenere moltiplicando 6 per un intero:
-  <math|18=6\<cdot\>3>. Diciamo perciò che <strong|6 divide 18>, oppure che
-  18 è un <strong|multiplo> di 6. La scrittura <math|6\<mid\>18> contiene
-  proprio questa informazione.
+  Il numero 18 si ottiene moltiplicando 6 per un intero, perché
+  <math|18=6\<cdot\>3>. Diciamo allora che <strong|6 divide 18>, oppure che
+  18 è un <strong|multiplo> di 6, e scriviamo brevemente <math|6\<mid\>18>.
 
-  In generale, per interi <math|a,b>, scriviamo <math|a\<mid\>b> se esiste un
-  intero <math|k> tale che <math|b=a*k>. L'ordine conta: <math|6\<mid\>18>,
-  mentre <math|18\<nmid\>6>. Il numero a destra è quello che vogliamo
-  ottenere come multiplo.
+  In generale, per due interi <math|a,b>, scriviamo <math|a\<mid\>b> se
+  esiste un intero <math|k> tale che <math|b=a*k>. L'ordine dei due numeri
+  conta, perché <math|6\<mid\>18> mentre <math|18\<nmid\>6>, e conviene
+  ricordare che il numero a destra è quello che vogliamo ottenere come
+  multiplo.
 
-  Sono ammessi anche interi negativi: <math|3\<mid\>(-12)> perché
-  <math|-12=3\<cdot\>(-4)>. Inoltre ogni intero divide 0, dato che
-  <math|0=a\<cdot\>0>. Lo zero divide soltanto 0: un prodotto con 0 non può
-  dare un numero diverso da 0.
+  La definizione ammette anche numeri negativi, e per esempio
+  <math|3\<mid\>(-12)> perché <math|-12=3\<cdot\>(-4)>. Ci sono poi due casi
+  limite da tenere presenti. Ogni intero divide 0, dato che
+  <math|0=a\<cdot\>0>, mentre lo zero divide soltanto 0, perché un prodotto
+  per 0 non può dare altro.
 
-  La divisibilità non è l'ordine usuale. Tra 2 e 3 nessuno divide l'altro.
-  Sui naturali è un <strong|ordine parziale>: è riflessiva, transitiva e
-  antisimmetrica. Riflessiva significa <math|a\<mid\>a>. Transitiva significa
-  che da <math|a\<mid\>b> e <math|b\<mid\>c> segue <math|a\<mid\>c>: infatti,
-  se <math|b=a*k> e <math|c=b\<#2113\>>, allora <math|c=a(k\<#2113\>)>.
-  Antisimmetrica significa che, per naturali, <math|a\<mid\>b> e
-  <math|b\<mid\>a> impongono <math|a=b>. Per numeri positivi segue dalle due
-  disuguaglianze; se uno è zero, l'altro deve esserlo. Sugli interi questa
-  conclusione diventa <math|a=\<pm\>b>.
+  <subsection|Un ordine diverso da quello usuale>
 
-  Una proprietà accompagnerà tutto il percorso. Se <math|d> divide sia
-  <math|a> sia <math|b>, divide anche <math|a+b>, <math|a-b> e, più in
-  generale, ogni <strong|combinazione intera> <math|u*a+v*b>, con
-  <math|u,v\<in\>\<bbb-Z\>>. Per capirne il motivo, scriviamo <math|a=d*h> e
-  <math|b=d*k>. Allora
+  La divisibilità assomiglia a un confronto fra numeri, ma non è il solito
+  \Spiù piccolo di\T. Fra 2 e 3, per esempio, nessuno dei due divide l'altro.
+  Sui naturali è quello che si chiama un <strong|ordine parziale>, perché
+  gode di tre proprietà.
+
+  È riflessiva, perché <math|a\<mid\>a>. È transitiva, perché da
+  <math|a\<mid\>b> e <math|b\<mid\>c> segue <math|a\<mid\>c>, visto che se
+  <math|b=a*k> e <math|c=b\<#2113\>> allora <math|c=a(k\<#2113\>)>. Ed è
+  antisimmetrica, perché per due naturali le condizioni <math|a\<mid\>b> e
+  <math|b\<mid\>a> insieme impongono <math|a=b>. Per numeri positivi questo
+  segue dal fatto che ciascuno è minore o uguale all'altro, e se uno dei due
+  è zero lo deve essere anche l'altro. Sugli interi, invece, la conclusione è
+  soltanto <math|a=\<pm\>b>.
+
+  <subsection|La proprietà che useremo sempre>
+
+  C'è un fatto che ci accompagnerà per tutto il libro. Se <math|d> divide sia
+  <math|a> sia <math|b>, allora divide anche <math|a+b>, <math|a-b> e, più in
+  generale, ogni <strong|combinazione intera> <math|u*a+v*b> con
+  <math|u,v\<in\>\<bbb-Z\>>. Il motivo si vede scrivendo <math|a=d*h> e
+  <math|b=d*k>, perché allora
 
   <\equation*>
-    u*a+v*b=d(u*h+v*k).
+    u*a+v*b=d(u*h+v*k),
   </equation*>
 
-  La parentesi è un intero: abbiamo esposto il fattore <math|d> che
-  cercavamo.
+  e la parentesi è un intero. Il fattore <math|d> che cercavamo è lì, in
+  evidenza.
 
   <section|Divisione euclidea: il resto va scelto bene>
 
-  Dividendo 17 per 5 otteniamo <math|17=3\<cdot\>5+2>. Il quoziente è 3, il
-  resto è 2. Potremmo anche scrivere <math|17=2\<cdot\>5+7>, ma il 7 contiene
-  ancora un intero gruppo di 5: non abbiamo finito la divisione.
-
-  La divisione euclidea chiede un resto non negativo e più piccolo del
-  divisore in valore assoluto.
+  Se dividiamo 17 per 5 scriviamo <math|17=3\<cdot\>5+2>, con quoziente 3 e
+  resto 2. Anche <math|17=2\<cdot\>5+7> è un'uguaglianza vera, ma ci
+  accorgiamo subito che non abbiamo finito di dividere, perché nel 7 c'è
+  ancora un intero gruppo da 5. Quello che rende giusto il resto 2 è che è
+  più piccolo del divisore, e non è negativo.
 
   <\concetto|Divisione euclidea>
     Per ogni <math|a,b\<in\>\<bbb-Z\>>, con <math|b\<neq\>0>, esistono unici
@@ -1207,16 +1326,17 @@
     Chiamiamo <math|q> il quoziente e <math|r> il resto.
   </concetto>
 
-  La condizione sul resto vale anche con numeri negativi. Per esempio,
+  La condizione sul resto va rispettata anche con i numeri negativi, ed è lì
+  che di solito si sbaglia. Dividendo <math|-17> per 5 scriviamo
 
   <\equation*>
-    -17=(-4)\<cdot\>5+3.
+    -17=(-4)\<cdot\>5+3,
   </equation*>
 
-  Il resto è 3. La scrittura <math|-17=(-3)\<cdot\>5-2> dà l'uguaglianza
-  giusta, ma non una divisione euclidea: il resto sarebbe negativo. Se il
-  divisore è <math|-5>, scriviamo invece <math|-17=4\<cdot\>(-5)+3>; il resto
-  rimane 3.
+  e il resto è 3. Anche <math|-17=(-3)\<cdot\>5-2> è un'uguaglianza corretta,
+  ma non è una divisione euclidea, perché il resto sarebbe negativo. Se il
+  divisore è <math|-5> scriviamo invece <math|-17=4\<cdot\>(-5)+3>, e il
+  resto resta 3.
 
   <figura|<image|assets/divisione.pdf|155.0mm|30.0mm||>|Per dividere
   <math|-17> per 5 partiamo dal multiplo <math|-20> e avanziamo di 3. Il
@@ -1224,40 +1344,46 @@
 
   <subsection|Perché esistono quoziente e resto>
 
-  Consideriamo prima <math|b\<gtr\>0>. Cerchiamo numeri non negativi della
-  forma <math|a-q*b>. Ce n'è almeno uno: se <math|a\<geq\>0> basta
-  <math|q=0>; se <math|a\<less\>0>, scegliamo <math|q=a> e otteniamo
-  <math|a-a*b=a(1-b)\<geq\>0>, perché entrambi i fattori sono non positivi.
+  Cominciamo dal caso <math|b\<gtr\>0>. L'idea è togliere da <math|a>
+  multipli di <math|b> finché si può, restando non negativi, e il principio
+  del minimo del capitolo 1 ci permette di dirlo con precisione.
 
-  Per il principio del minimo esiste dunque il più piccolo numero non
-  negativo di questa forma. Chiamiamolo <math|r=a-q*b>. Se fosse
-  <math|r\<geq\>b>, potremmo sottrarre ancora <math|b>: il numero
-  <math|r-b=a-(q+1)b> sarebbe non negativo e più piccolo di <math|r>. Questo
-  contraddice la scelta del minimo. Perciò <math|0\<leq\>r\<less\>b>, come
-  volevamo.
+  Consideriamo i numeri non negativi della forma <math|a-q*b>. Ce n'è almeno
+  uno. Se <math|a\<geq\>0> basta prendere <math|q=0>, mentre se
+  <math|a\<less\>0> possiamo prendere <math|q=a>, che dà
+  <math|a-a*b=a(1-b)\<geq\>0> perché entrambi i fattori sono minori o uguali
+  a zero.
 
-  Se <math|b\<less\>0>, dividiamo prima per <math|\|b\|=-b>. Cambiando segno
-  al quoziente otteniamo poi la divisione per <math|b>, con lo stesso resto.
+  Fra questi numeri c'è quindi un minimo, che chiamiamo <math|r=a-q*b>. Se
+  fosse <math|r\<geq\>b> potremmo togliere ancora <math|b>, e il numero
+  <math|r-b=a-(q+1)b> sarebbe non negativo e più piccolo di <math|r>, contro
+  la scelta del minimo. Perciò <math|0\<leq\>r\<less\>b>, che è proprio la
+  condizione richiesta.
+
+  Se <math|b\<less\>0> dividiamo prima per <math|\|b\|=-b>, e poi cambiamo
+  segno al quoziente per ottenere la divisione per <math|b>, con lo stesso
+  resto.
 
   <subsection|Perché la scelta è unica>
 
-  Supponiamo di avere due divisioni corrette: <math|a=q*b+r=q'b+r'>.
-  Sottraendole troviamo
+  Supponiamo ora di avere due divisioni corrette, <math|a=q*b+r=q'b+r'>.
+  Sottraendo una dall'altra otteniamo
 
   <\equation*>
-    (q-q')b=r'-r.
+    (q-q')b=r'-r,
   </equation*>
 
-  Quindi <math|r'-r> è un multiplo di <math|b>. Ma entrambi i resti stanno
-  fra 0 e <math|\|b\|-1>, perciò <math|\|r'-r\|\<less\>\|b\|>. L'unico
-  multiplo di <math|b> così piccolo in valore assoluto è 0. Segue
-  <math|r'=r>, e poi <math|q'=q> perché <math|b\<neq\>0>.
+  e quindi <math|r'-r> è un multiplo di <math|b>. D'altra parte entrambi i
+  resti stanno fra 0 e <math|\|b\|-1>, e così la loro differenza è più
+  piccola di <math|\|b\|> in valore assoluto. L'unico multiplo di <math|b>
+  così piccolo è 0, quindi <math|r'=r>, e da qui anche <math|q'=q>, perché
+  <math|b\<neq\>0>.
 
   <section|MCD: ciò che i divisori hanno in comune>
 
-  I divisori positivi di 18 sono <math|1,2,3,6,9,18>; quelli di 12 sono
-  <math|1,2,3,4,6,12>. I divisori comuni sono <math|1,2,3,6>. Il più grande è
-  6.
+  Scriviamo i divisori positivi di 18, che sono <math|1,2,3,6,9,18>, e quelli
+  di 12, che sono <math|1,2,3,4,6,12>. I divisori comuni sono <math|1,2,3,6>,
+  e il più grande è 6.
 
   <\concetto|Massimo comun divisore>
     Il <strong|massimo comun divisore>, abbreviato MCD e scritto
@@ -1265,33 +1391,36 @@
     quando i due numeri non sono entrambi nulli.
   </concetto>
 
-  Esiste perché 1 è un divisore comune e i divisori positivi di un numero non
-  nullo sono finiti.
+  Un massimo esiste sempre, perché 1 è un divisore comune e un numero diverso
+  da zero ha solo un numero finito di divisori positivi.
 
-  I segni non cambiano i divisori positivi, dunque
-  <math|gcd(a,b)=gcd(\|a\|,\|b\|)>. Inoltre <math|gcd(a,0)=\|a\|> per
-  <math|a\<neq\>0>: tutti i divisori di <math|a> dividono anche 0. Due interi
-  si chiamano <strong|coprimi> quando il loro MCD è 1.
+  I segni non cambiano i divisori positivi, quindi
+  <math|gcd(a,b)=gcd(\|a\|,\|b\|)>. Se uno dei numeri è zero il calcolo è
+  immediato, perché tutti i divisori di <math|a> dividono anche 0 e dunque
+  <math|gcd(a,0)=\|a\|> per <math|a\<neq\>0>. Due interi il cui MCD vale 1 si
+  dicono <strong|coprimi>.
 
-  <section|Algoritmo di Euclide: conservare i divisori, ridurre i numeri>
+  <section|Algoritmo di Euclide: stessi divisori, numeri più piccoli>
 
-  Elencare i divisori funziona per numeri piccoli. Per numeri grandi conviene
-  cambiare la coppia senza cambiare i suoi divisori comuni.
+  Elencare i divisori funziona finché i numeri sono piccoli. Con numeri
+  grandi conviene un'idea diversa, cioè sostituire la coppia di partenza con
+  una coppia più piccola che abbia esattamente gli stessi divisori comuni.
 
-  Se <math|a=q*b+r>, un divisore di <math|a,b> divide anche <math|r=a-q*b>.
-  Viceversa, un divisore di <math|b,r> divide anche <math|a=q*b+r>. Le coppie
-  <math|(a,b)> e <math|(b,r)> hanno quindi esattamente gli stessi divisori
-  comuni:
+  La divisione con resto ci offre proprio questa sostituzione. Se
+  <math|a=q*b+r>, ogni divisore comune di <math|a> e <math|b> divide anche
+  <math|r=a-q*b>, per la proprietà delle combinazioni intere. Allo stesso
+  modo ogni divisore comune di <math|b> e <math|r> divide <math|a=q*b+r>. Le
+  coppie <math|(a,b)> e <math|(b,r)> hanno quindi gli stessi divisori comuni,
+  e in particolare
 
   <\equation*>
     gcd(a,b)=gcd(b,r).
   </equation*>
 
-  Questa uguaglianza è il motivo per cui funziona l'<strong|algoritmo di
-  Euclide>. Partiamo dai valori assoluti, mettiamo il maggiore per primo e
-  ripetiamo la divisione con resto.
-
-  Per 45 e 17 otteniamo:
+  Su questa uguaglianza si basa l'<strong|algoritmo di Euclide>. Prendiamo i
+  valori assoluti, mettiamo il maggiore per primo e ripetiamo la divisione
+  con resto, ogni volta dividendo il vecchio divisore per il nuovo resto. Con
+  45 e 17 otteniamo
 
   <\equation*>
     45=2\<cdot\>17+11,<space|2em>17=1\<cdot\>11+6,
@@ -1301,17 +1430,18 @@
     11=1\<cdot\>6+5,<space|2em>6=1\<cdot\>5+1,<space|2em>5=5\<cdot\>1+0.
   </equation*>
 
-  Dopo la prima riga cerchiamo il MCD di 17 e 11; poi quello di 11 e 6;
-  infine arriviamo a 1 e 0. I resti positivi diminuiscono:
-  <math|11\<gtr\>6\<gtr\>5\<gtr\>1>. Non possono diminuire per sempre nei
-  naturali, quindi il procedimento termina.
+  Dopo la prima riga cerchiamo il MCD di 17 e 11, poi quello di 11 e 6, e
+  così via, finché arriviamo alla coppia 1 e 0. I resti continuano a
+  scendere, <math|11\<gtr\>6\<gtr\>5\<gtr\>1>, e una successione di naturali
+  non può scendere per sempre, quindi prima o poi compare un resto nullo e il
+  procedimento si ferma.
 
-  Quando compare resto zero, il divisore dell'ultima divisione divide il
-  numero precedente. Il MCD è dunque l'<strong|ultimo resto non nullo>. Qui è
-  1: 45 e 17 sono coprimi. Se la prima divisione dà già resto zero, il MCD è
-  il divisore di quella divisione: per esempio <math|gcd(18,6)=6>. Se uno dei
-  due numeri di partenza è già zero, il MCD è subito il valore assoluto
-  dell'altro.
+  Quando il resto diventa zero, l'ultimo divisore divide il numero
+  precedente, e il MCD della coppia è quel divisore. Per questo diciamo che
+  il MCD è l'<strong|ultimo resto non nullo>, che qui vale 1, e 45 e 17 sono
+  coprimi. Se già la prima divisione dà resto zero il MCD è il divisore di
+  quella divisione, come in <math|gcd(18,6)=6>, e se uno dei due numeri è
+  zero fin dall'inizio il MCD è il valore assoluto dell'altro.
 
   <figura|<image|assets/euclide.pdf|145.0mm|61.0mm||>|Nel rettangolo
   <math|45\<times\>17> togliamo prima due quadrati di lato 17, poi quadrati
@@ -1320,11 +1450,12 @@
 
   <subsection|In sintesi>
 
-  La <strong|divisione euclidea> produce un resto controllato. Il
-  <strong|MCD> descrive il più grande divisore comune. L'<strong|algoritmo di
-  Euclide> lo calcola conservando i divisori comuni e facendo diminuire i
-  resti. Nel prossimo capitolo leggeremo le stesse divisioni al contrario: ne
-  ricaveremo un'informazione nuova.
+  La <strong|divisione euclidea> produce un resto sotto controllo, non
+  negativo e più piccolo del divisore. Il <strong|MCD> è il più grande
+  divisore comune, e l'<strong|algoritmo di Euclide> lo calcola sostituendo
+  la coppia con coppie sempre più piccole che hanno gli stessi divisori
+  comuni. Nel prossimo capitolo leggeremo le stesse divisioni al contrario, e
+  ne ricaveremo un'informazione nuova.
 
   <\verifica|4>
     <strong|1.> Trova quoziente e resto di <math|-29> diviso per 6. Per
@@ -1338,46 +1469,51 @@
   <chapter|Bézout e fattorizzazione in primi>
 
   <\inbreve>
-    Euclide ci ha dato un numero: il MCD. Ora scopriamo che quel numero si
-    può costruire combinando i due interi iniziali. Questa è l'identità di
-    Bézout: ci permetterà di capire perché i primi si comportano in modo
-    speciale e perché la fattorizzazione è unica.
+    L'algoritmo di Euclide ci consegna il massimo comun divisore, ma le sue
+    divisioni contengono più informazioni di quante ne abbiamo usate. Lette
+    al contrario, ci mostrano come costruire il MCD combinando i due numeri
+    di partenza. Da questa osservazione, l'identità di Bézout, discendono la
+    proprietà speciale dei numeri primi e il fatto che ogni intero si
+    scompone in primi in un modo solo.
   </inbreve>
 
   <section|Identità di Bézout: costruire il MCD>
 
-  Nel capitolo precedente abbiamo ottenuto <math|gcd(45,17)=1>. Possiamo
-  ottenere proprio 1 moltiplicando 45 e 17 per coefficienti interi e sommando
-  i risultati?
+  Nel capitolo precedente abbiamo trovato <math|gcd(45,17)=1>. Viene
+  spontaneo chiedersi se possiamo ottenere proprio quell'1 moltiplicando 45 e
+  17 per interi opportuni e sommando i risultati.
 
-  Con coefficienti positivi non ci riusciremmo: i prodotti sarebbero troppo
-  grandi. Ma possiamo sottrarre. Le divisioni di Euclide contengono già le
-  sottrazioni necessarie.
+  Con coefficienti positivi è impossibile, perché i prodotti sarebbero troppo
+  grandi. Possiamo però anche sottrarre, e le sottrazioni giuste sono già
+  nascoste nelle divisioni di Euclide. Il trucco è partire dal fondo,
+  dall'ultima divisione con resto non nullo, e risalire eliminando uno dopo
+  l'altro i resti intermedi 6, 5 e 11, finché restano soltanto 45 e 17.
 
-  Partiamo dall'ultimo resto non nullo: <math|1=6-5>. Vogliamo eliminare, uno
-  dopo l'altro, i numeri intermedi 6, 5 e 11, fino a lasciare solo 45 e 17.
-
-  Dalla divisione <math|11=6+5> ricaviamo <math|5=11-6>. Sostituendo:
+  L'ultima divisione, <math|6=1\<cdot\>5+1>, ci dice che <math|1=6-5>. La
+  divisione precedente, <math|11=6+5>, ci permette di sostituire
+  <math|5=11-6>, e otteniamo
 
   <\equation*>
     1=6-(11-6)=2\<cdot\>6-11.
   </equation*>
 
-  Ora usiamo <math|6=17-11>:
+  Risalendo ancora usiamo <math|6=17-11>, e allora
 
   <\equation*>
     1=2(17-11)-11=2\<cdot\>17-3\<cdot\>11.
   </equation*>
 
-  Infine <math|11=45-2\<cdot\>17>, quindi
+  Infine la prima divisione dà <math|11=45-2\<cdot\>17>, e sostituendo
+  arriviamo a
 
   <\equation*>
     1=2\<cdot\>17-3(45-2\<cdot\>17)=8\<cdot\>17-3\<cdot\>45.
   </equation*>
 
-  Controlliamo: <math|8\<cdot\>17-3\<cdot\>45=136-135=1>. Abbiamo espresso il
-  MCD come <strong|combinazione intera> dei numeri iniziali. Questo
-  procedimento si chiama <strong|risalita di Euclide>.
+  Un controllo diretto conferma il risultato, perché
+  <math|8\<cdot\>17-3\<cdot\>45=136-135=1>. Abbiamo scritto il MCD come
+  <strong|combinazione intera> dei due numeri iniziali, e il procedimento che
+  abbiamo seguito si chiama <strong|risalita di Euclide>.
 
   <\concetto|Identità di Bézout>
     Se <math|a,b> sono interi non entrambi nulli e <math|d=gcd(a,b)>,
@@ -1388,156 +1524,164 @@
     </equation*>
   </concetto>
 
-  Perché la risalita funziona sempre? Il primo resto è <math|a-q*b>, quindi è
-  una combinazione di <math|a,b>. Il resto successivo si ottiene sottraendo
-  un multiplo del primo da <math|b>: è ancora una loro combinazione.
-  Ripetendo il ragionamento, ogni resto è una combinazione dei numeri
-  iniziali. Lo è dunque anche l'ultimo resto non nullo, cioè il MCD. Se uno
-  dei numeri iniziali è zero, l'identità si ottiene direttamente scegliendo
-  un coefficiente uguale a 1 o <math|-1>.
+  Per convincerci che la risalita funziona sempre, possiamo anche guardare le
+  divisioni nell'ordine in cui le eseguiamo. Il primo resto è <math|a-q*b>,
+  quindi è una combinazione di <math|a> e <math|b>. Il secondo si ottiene
+  togliendo da <math|b> un multiplo del primo, e così è ancora una
+  combinazione di <math|a> e <math|b>. Andando avanti, ogni resto resta una
+  combinazione dei numeri iniziali, e in particolare lo è l'ultimo resto non
+  nullo, che è il MCD. Se uno dei due numeri è zero, infine, l'identità si
+  scrive subito scegliendo come coefficiente 1 oppure <math|-1>.
 
   <section|Quali numeri possiamo ottenere combinando due interi?>
 
-  Con <math|a=6> e <math|b=9>, ogni numero <math|6x+9y> è multiplo di 3. Non
-  potremo mai ottenere 4. Possiamo invece ottenere 3, perché <math|3=-6+9>.
-  Moltiplicando questa uguaglianza otteniamo tutti i multipli di 3: per
-  esempio <math|15=-5\<cdot\>6+5\<cdot\>9>.
+  Prendiamo <math|a=6> e <math|b=9>. Ogni numero della forma <math|6x+9y> è
+  un multiplo di 3, e quindi, comunque scegliamo <math|x> e <math|y>, non
+  otterremo mai 4. Possiamo invece ottenere 3, perché <math|3=-6+9>, e
+  moltiplicando questa uguaglianza otteniamo qualsiasi multiplo di 3, come
+  <math|15=-5\<cdot\>6+5\<cdot\>9>.
 
-  La stessa idea vale in generale. Se <math|d=gcd(a,b)>, ogni <math|a*x+b*y>
-  è multiplo di <math|d>, perché <math|d> divide entrambi gli addendi.
-  Viceversa, Bézout scrive <math|d=u*a+v*b>; moltiplicando per qualsiasi
-  intero <math|k> otteniamo <math|k*d=(k*u)a+(k*v)b>.
+  Lo stesso accade in generale. Se <math|d=gcd(a,b)>, ogni combinazione
+  <math|a*x+b*y> è un multiplo di <math|d>, perché <math|d> divide entrambi
+  gli addendi. Viceversa Bézout ci dà <math|d=u*a+v*b>, e moltiplicando per
+  un intero <math|k> qualsiasi otteniamo <math|k*d=(k*u)a+(k*v)b>. Arriviamo
+  così a una descrizione completa: <strong|le combinazioni intere di
+  <math|a,b> sono esattamente i multipli del loro MCD>. È in questa forma che
+  useremo Bézout per le equazioni diofantee.
 
-  Dunque <strong|le combinazioni intere di <math|a,b> sono esattamente i
-  multipli del loro MCD>. È questo il significato di Bézout che useremo nelle
-  equazioni diofantee.
-
-  Un'altra conseguenza precisa il ruolo del MCD: ogni divisore comune di
-  <math|a,b> divide <math|d>. Basta applicare la proprietà delle combinazioni
-  a <math|d=u*a+v*b>. Non sappiamo soltanto che quel divisore è più piccolo
-  del MCD: sappiamo che lo divide.
+  Ne segue anche qualcosa sul ruolo del MCD. Ogni divisore comune di <math|a>
+  e <math|b> divide la combinazione <math|u*a+v*b>, cioè divide <math|d>. Non
+  solo, quindi, i divisori comuni sono più piccoli del MCD, ma ne sono
+  addirittura divisori.
 
   <section|Lemma di Euclide: quando possiamo togliere un fattore>
 
-  Sapere che un numero divide un prodotto non significa che divida uno dei
-  fattori. Per esempio, <math|6\<mid\>4\<cdot\>3>, ma 6 non divide né 4 né 3.
+  Se un numero divide un prodotto, non è detto che divida uno dei fattori.
+  Per esempio <math|6\<mid\>4\<cdot\>3>, ma 6 non divide né 4 né 3, perché il
+  2 viene da un fattore e il 3 dall'altro.
 
-  Vediamo che cosa cambia se i numeri sono coprimi. Supponiamo di sapere che
-  <math|3\<mid\>5t>. Vogliamo arrivare a <math|3\<mid\>t>, eliminando il
-  fattore 5. Osserviamo che <math|1=2\<cdot\>3-5>. Moltiplicando per <math|t>
-  otteniamo
+  Vediamo che cosa cambia quando i numeri in gioco sono coprimi, partendo da
+  un caso concreto. Supponiamo di sapere che <math|3\<mid\>5t> e di voler
+  concludere che <math|3\<mid\>t>, liberandoci del fattore 5. Notiamo che
+  <math|1=2\<cdot\>3-5>, e moltiplicando per <math|t> otteniamo
 
   <\equation*>
     t=2\<cdot\>3t-5t.
   </equation*>
 
-  Il primo termine è multiplo di 3 perché contiene 3. Il secondo lo è per
-  ipotesi. Anche la loro differenza è quindi multipla di 3: quella differenza
-  è proprio <math|t>.
+  Il primo termine è un multiplo di 3, perché contiene il fattore 3, e il
+  secondo lo è per ipotesi. La loro differenza è quindi anch'essa un multiplo
+  di 3, e quella differenza è proprio <math|t>.
 
-  La possibilità di scrivere 1 usando 3 e 5 viene da Bézout, perché
-  <math|gcd(3,5)=1>. Possiamo perciò ripetere questa idea per qualsiasi
-  coppia coprima.
+  L'uguaglianza <math|1=2\<cdot\>3-5> non è stata fortunata. Esiste perché 3
+  e 5 sono coprimi, ed è l'identità di Bézout per quella coppia. Possiamo
+  quindi ripetere lo stesso ragionamento per qualsiasi coppia coprima.
 
   <\anatomia|Perché cercare Bézout>
-    Vogliamo dimostrare <math|r\<mid\>t>. Una strada è scrivere <math|t>
-    usando quantità che sappiamo essere multiple di <math|r>. Conosciamo già
-    due quantità adatte: <math|r*t>, per costruzione, e <math|s*t>, per
-    ipotesi. Per combinarle fino a ottenere <math|t>, ci serve un'uguaglianza
-    che combini <math|r,s> fino a ottenere 1. È esattamente ciò che offre
-    Bézout quando <math|r,s> sono coprimi.
+    Vogliamo dimostrare <math|r\<mid\>t>, e una strada naturale è scrivere
+    <math|t> usando quantità che sappiamo già essere multiple di <math|r>. Ne
+    conosciamo due, cioè <math|r*t>, che lo è per costruzione, e <math|s*t>,
+    che lo è per ipotesi. Per combinarle fino a ottenere <math|t> ci serve un
+    modo di combinare <math|r> e <math|s> fino a ottenere 1, e questo è
+    esattamente ciò che Bézout ci offre quando <math|r> e <math|s> sono
+    coprimi.
   </anatomia>
 
   <strong|Lemma di Euclide.> Se <math|gcd(r,s)=1> e <math|r\<mid\>s*t>,
   allora <math|r\<mid\>t>.
 
   <em|Dimostrazione.> Per Bézout esistono interi <math|u,v> con
-  <math|u*r+v*s=1>. Moltiplichiamo per <math|t>:
+  <math|u*r+v*s=1>. Moltiplicando per <math|t> otteniamo
 
   <\equation*>
     t=u*r*t+v*s*t.
   </equation*>
 
-  Il termine <math|u*r*t=r(u*t)> è multiplo di <math|r>. Anche <math|v*s*t>
-  lo è: l'ipotesi dice <math|s*t=r*k> per un intero <math|k>, quindi
-  <math|v*s*t=r(v*k)>. La somma è multipla di <math|r>, dunque
-  <math|r\<mid\>t>.
+  Il termine <math|u*r*t=r(u*t)> è un multiplo di <math|r>. Lo è anche
+  <math|v*s*t>, perché l'ipotesi dice che <math|s*t=r*k> per qualche intero
+  <math|k>, e quindi <math|v*s*t=r(v*k)>. La somma dei due termini è dunque
+  un multiplo di <math|r>, cioè <math|r\<mid\>t>.
 
   <section|Numeri primi e fattorizzazione unica>
 
-  Un intero <math|p\<geq\>2> è <strong|primo> se i suoi unici divisori
-  positivi sono 1 e <math|p>. Un numero <math|n\<geq\>2> che non è primo è
-  <strong|composto>: possiamo scriverlo <math|n=a*b> con
-  <math|1\<less\>a,b\<less\>n>. Il numero 1 non è primo.
+  Ricordiamo che un intero <math|p\<geq\>2> è <strong|primo> se i suoi unici
+  divisori positivi sono 1 e <math|p>, e che un numero <math|n\<geq\>2> non
+  primo si dice <strong|composto> e si scrive come <math|n=a*b> con
+  <math|1\<less\>a,b\<less\>n>. Il numero 1, per convenzione, non è primo.
 
-  Il lemma appena dimostrato spiega la proprietà decisiva dei primi:
-  <strong|se un primo divide un prodotto, divide almeno uno dei fattori>.
-  Infatti, se <math|p\<mid\>a*b> e <math|p\<nmid\>a>, allora
-  <math|gcd(p,a)=1>: l'unico altro divisore positivo possibile sarebbe
-  <math|p>. Il lemma dà quindi <math|p\<mid\>b>.
+  Il lemma di Euclide spiega che cosa hanno di speciale i primi: <strong|se
+  un primo divide un prodotto, divide almeno uno dei fattori>. Supponiamo
+  infatti che <math|p\<mid\>a*b> e che <math|p> non divida <math|a>. Allora
+  <math|gcd(p,a)=1>, perché l'unico altro divisore positivo di <math|p> è
+  <math|p> stesso, che non divide <math|a>, e il lemma ci dà
+  <math|p\<mid\>b>.
 
   <strong|Teorema fondamentale dell'aritmetica.> Ogni intero <math|n\<geq\>2>
   si scrive come prodotto di primi. I fattori sono unici, salvo il loro
   ordine.
 
-  L'<em|esistenza> è stata dimostrata con l'induzione forte nel capitolo 1:
-  un numero composto si divide in fattori più piccoli, ai quali applichiamo
-  l'ipotesi induttiva. Ora abbiamo gli strumenti per affrontare la seconda
-  domanda: perché due scomposizioni devono dare gli stessi primi?
+  L'<em|esistenza> l'abbiamo già dimostrata nel capitolo 1, con l'induzione
+  forte, spezzando ogni numero composto in fattori più piccoli. Ora abbiamo
+  gli strumenti per la seconda domanda, cioè perché due scomposizioni dello
+  stesso numero debbano contenere gli stessi primi.
 
-  Per l'<em|unicità> dobbiamo confrontare due fattorizzazioni, non
-  semplicemente trovarne una. Supponiamo
+  Per l'<em|unicità> non basta trovare una fattorizzazione, bisogna
+  confrontarne due. Supponiamo allora che
 
   <\equation*>
     p<rsub|1>p<rsub|2>\<cdots\>p<rsub|r>=q<rsub|1>q<rsub|2>\<cdots\>q<rsub|s>.
   </equation*>
 
-  Il primo <math|p<rsub|1>> divide il prodotto a destra. Applicando
-  ripetutamente la proprietà dei primi, divide uno dei <math|q<rsub|j>>. Ma
-  <math|q<rsub|j>> è primo, quindi <math|p<rsub|1>=q<rsub|j>>. Possiamo
-  mettere quei fattori per primi e cancellarli.
+  Il primo <math|p<rsub|1>> divide il prodotto a destra, e applicando più
+  volte la proprietà dei primi scopriamo che divide uno dei fattori
+  <math|q<rsub|j>>. Siccome anche <math|q<rsub|j>> è primo, i suoi soli
+  divisori positivi sono 1 e se stesso, e quindi <math|p<rsub|1>=q<rsub|j>>.
+  Possiamo mettere questi due fattori uguali al primo posto e semplificarli.
 
-  Ripetiamo sulle fattorizzazioni rimaste: ogni volta abbiniamo due primi
-  uguali. Non possono restare primi soltanto da una parte, perché allora il
-  loro prodotto dovrebbe essere 1, mentre ogni primo è almeno 2. Quindi le
-  due liste contengono esattamente gli stessi primi, con le stesse
-  ripetizioni.
+  Ripetendo il ragionamento sulle fattorizzazioni rimaste, abbiniamo ogni
+  volta due primi uguali. Alla fine non possono avanzare primi da una parte
+  sola, perché il loro prodotto dovrebbe valere 1, mentre ogni primo vale
+  almeno 2. Le due liste contengono quindi gli stessi primi, ripetuti lo
+  stesso numero di volte.
 
   <section|Divisori e mcm: leggere gli esponenti>
 
-  La fattorizzazione unica rende i divisori facili da descrivere. Per esempio
-  <math|72=2<rsup|3>3<rsup|2>>. Un divisore positivo deve avere la forma
-  <math|2<rsup|i>3<rsup|j>>, con <math|0\<leq\>i\<leq\>3> e
-  <math|0\<leq\>j\<leq\>2>. Possiamo scegliere <math|i> in quattro modi e
-  <math|j> in tre: i divisori positivi sono <math|4\<cdot\>3=12>.
+  Conoscere la fattorizzazione di un numero rende facile descriverne i
+  divisori. Prendiamo <math|72=2<rsup|3>3<rsup|2>>. Per la fattorizzazione
+  unica, un divisore positivo di 72 può contenere soltanto i primi 2 e 3, e
+  non più volte di quante compaiano in 72, quindi ha la forma
+  <math|2<rsup|i>3<rsup|j>> con <math|0\<leq\>i\<leq\>3> e
+  <math|0\<leq\>j\<leq\>2>. L'esponente <math|i> si sceglie in quattro modi e
+  <math|j> in tre, e i divisori positivi sono <math|4\<cdot\>3=12>.
 
   <figura|<image|assets/divisori72.pdf|117.5mm|62.5mm||>|Ogni punto
   corrisponde a una scelta degli esponenti: andando a destra moltiplichiamo
   per 2, salendo moltiplichiamo per 3. La griglia contiene tutti i dodici
   divisori positivi di 72.>
 
-  In generale, per <math|N=p<rsub|1><rsup|\<alpha\><rsub|1>>\<cdots\>p<rsub|k><rsup|\<alpha\><rsub|k>>>
+  In generale, se <math|N=p<rsub|1><rsup|\<alpha\><rsub|1>>\<cdots\>p<rsub|k><rsup|\<alpha\><rsub|k>>>
   con primi distinti, il numero dei divisori positivi è
   <math|(\<alpha\><rsub|1>+1)\<cdots\>(\<alpha\><rsub|k>+1)>. Per <math|N=1>
-  c'è un solo divisore positivo, 1.
+  il prodotto è vuoto e vale 1, e infatti 1 ha un solo divisore positivo.
 
-  Il <strong|minimo comune multiplo>, scritto <math|<math-up|mcm>(a,b)> per
-  <math|a,b\<gtr\>0>, è il più piccolo intero positivo multiplo di entrambi.
-  Confrontiamo
+  Gli esponenti ci aiutano anche con il <strong|minimo comune multiplo>, che
+  per <math|a,b\<gtr\>0> si scrive <math|<math-up|mcm>(a,b)> ed è il più
+  piccolo intero positivo multiplo di entrambi. Confrontiamo
 
   <\equation*>
     72=2<rsup|3>3<rsup|2>,<space|2em>90=2\<cdot\>3<rsup|2>\<cdot\>5.
   </equation*>
 
-  Un divisore comune può usare soltanto i fattori presenti in entrambi: per
-  ogni primo scegliamo l'esponente <em|minore>. Otteniamo
-  <math|gcd(72,90)=2\<cdot\>3<rsup|2>=18>. Un multiplo comune deve contenere
-  abbastanza fattori per entrambi: scegliamo l'esponente <em|maggiore>.
-  Otteniamo <math|<math-up|mcm>(72,90)=2<rsup|3>3<rsup|2>5=360>.
+  Un divisore comune può usare soltanto i fattori presenti in tutti e due i
+  numeri, e per ogni primo prendiamo quindi l'esponente <em|minore>,
+  ottenendo <math|gcd(72,90)=2\<cdot\>3<rsup|2>=18>. Un multiplo comune deve
+  invece contenere abbastanza fattori per entrambi, e per ogni primo
+  prendiamo l'esponente <em|maggiore>, ottenendo
+  <math|<math-up|mcm>(72,90)=2<rsup|3>3<rsup|2>5=360>.
 
-  Queste regole valgono in generale, inserendo esponente zero per i primi
-  assenti. Poiché minimo e massimo di due esponenti sommano agli esponenti
-  iniziali, segue
+  Le stesse regole valgono sempre, se assegniamo esponente zero ai primi che
+  mancano. Siccome il minimo e il massimo di due esponenti hanno per somma
+  gli esponenti di partenza, ne segue la relazione
 
   <\equation*>
     gcd(a,b)\<cdot\><math-up|mcm>(a,b)=a*b<space|2em>(a,b\<gtr\>0).
@@ -1545,34 +1689,35 @@
 
   <subsection|Per proseguire: i fattori primi in un fattoriale>
 
-  Quante volte compare 2 nella fattorizzazione di <math|19!>? I nove multipli
-  di 2 fra 1 e 19 danno almeno un fattore ciascuno. I quattro multipli di 4
-  ne danno uno ulteriore; i due multipli di 8 un altro; il multiplo di 16
-  ancora uno. Il totale è <math|9+4+2+1=16>.
+  Quante volte compare il fattore 2 nella scomposizione di <math|19!>? Fra 1
+  e 19 ci sono nove multipli di 2, e ciascuno porta almeno un fattore 2. I
+  quattro multipli di 4 ne portano uno in più, i due multipli di 8 un altro
+  ancora e il 16 un ultimo. In tutto i fattori 2 sono <math|9+4+2+1=16>.
 
   <figura|<image|assets/legendre.pdf|155.0mm|50.0mm||>|Ogni colonna conta i
   fattori 2 di un numero; ogni riga conta i multipli di una potenza di 2. Le
   stesse sedici unità vengono contate in due modi.>
 
-  Per un primo <math|p>, lo stesso conteggio dà la <strong|formula di
-  Legendre>:
+  Lo stesso conteggio, per un primo <math|p> qualsiasi, dà la <strong|formula
+  di Legendre>
 
   <\equation*>
-    v<rsub|p>(n!)=<big|sum><rsub|j\<geq\>1><around*|\<lfloor\>|<frac|n|p<rsup|j>>|\<rfloor\>>.
+    v<rsub|p>(n!)=<big|sum><rsub|j\<geq\>1><around*|\<lfloor\>|<frac|n|p<rsup|j>>|\<rfloor\>>,
   </equation*>
 
-  Qui <math|v<rsub|p>> indica l'esponente di <math|p> nella fattorizzazione e
-  <math|\<lfloor\>x\<rfloor\>> il più grande intero non maggiore di <math|x>.
-  La somma si ferma quando <math|p<rsup|j>\<gtr\>n>, perché da lì i termini
-  sono zero.
+  dove <math|v<rsub|p>> indica l'esponente di <math|p> nella fattorizzazione
+  e <math|\<lfloor\>x\<rfloor\>> il più grande intero non maggiore di
+  <math|x>. La somma sembra infinita, ma da quando <math|p<rsup|j>\<gtr\>n>
+  tutti i termini valgono zero.
 
   <subsection|In sintesi>
 
-  <strong|Bézout> descrive quali numeri possiamo costruire come combinazioni
-  intere. Il <strong|lemma di Euclide> ci permette di togliere un fattore
-  coprimo. Applicato ai primi, rende possibile confrontare le fattorizzazioni
-  e dimostrarne l'unicità. Gli esponenti primi diventano poi un modo per
-  leggere divisori, MCD e mcm.
+  L'identità di <strong|Bézout> dice quali numeri si possono costruire come
+  combinazioni intere di due interi, cioè i multipli del loro MCD. Il
+  <strong|lemma di Euclide> ci permette di eliminare un fattore coprimo, e
+  applicato ai primi ci consente di confrontare due fattorizzazioni e
+  dimostrare che sono uguali. Gli esponenti dei primi diventano così un modo
+  semplice di leggere divisori, MCD e mcm.
 
   <\verifica|5>
     <strong|1.> Trova un'identità di Bézout per 30 e 18. Usala per decidere
@@ -1586,39 +1731,47 @@
   <chapter|Equazioni diofantee>
 
   <\inbreve>
-    Ora usiamo MCD e Bézout per risolvere equazioni nelle quali sono ammesse
-    soltanto soluzioni intere. Impareremo a separare tre domande: esistono
-    soluzioni? Come ne troviamo una? Come siamo sicuri di averle trovate
-    tutte?
+    Un'equazione come <math|6x+9y=15> ha infinite soluzioni reali, ma se
+    chiediamo che <math|x> e <math|y> siano interi il problema cambia volto.
+    A volte di soluzioni non ce ne sono affatto, altre volte ce ne sono
+    infinite, disposte con una regolarità precisa. Con il MCD e l'identità di
+    Bézout sapremo dire quando esistono, come trovarne una e come essere
+    sicuri di averle trovate tutte.
   </inbreve>
 
   <section|Che cosa cambia se le soluzioni devono essere intere?>
 
-  Cerchiamo di ottenere 15 combinando gruppi da 6 e gruppi da 9. Scriviamo
+  Vogliamo ottenere 15 mettendo insieme gruppi da 6 e gruppi da 9, cioè
+  risolvere
 
   <\equation*>
     6x+9y=15.
   </equation*>
 
-  La coppia <math|(x,y)=(1,1)> funziona. Anche <math|(4,-1)> funziona:
-  <math|24-9=15>. Il segno negativo è ammesso se stiamo cercando soluzioni
-  intere; se il problema parla di oggetti da acquistare, dovremo invece
-  aggiungere <math|x,y\<geq\>0>.
+  Qualche tentativo porta presto alla coppia <math|(x,y)=(1,1)>, ma anche
+  <math|(4,-1)> funziona, perché <math|24-9=15>. Il segno negativo è
+  accettabile se cerchiamo soltanto soluzioni intere. Se invece <math|x> e
+  <math|y> contano oggetti da comprare, dovremo aggiungere le condizioni
+  <math|x,y\<geq\>0>.
 
-  Una <strong|equazione diofantea> richiede soluzioni intere. Qui studiamo
-  soprattutto le equazioni <strong|lineari in due incognite>, della forma
-  <math|a*x+b*y=c>, con coefficienti interi.
+  Un'equazione in cui si cercano soltanto soluzioni intere si chiama
+  <strong|equazione diofantea>. In questo capitolo ci occupiamo soprattutto
+  di quelle <strong|lineari in due incognite>, della forma <math|a*x+b*y=c>
+  con coefficienti interi.
 
-  La richiesta di interezza cambia il problema. L'equazione <math|6x+9y=14>
-  ha soluzioni reali, per esempio <math|(14/6,0)>, ma non ha soluzioni
-  intere: il membro sinistro è sempre multiplo di 3, il destro no. Conviene
-  verificare questo ostacolo prima di cercare una soluzione.
+  Chiedere soluzioni intere può rendere un'equazione impossibile. L'equazione
+  <math|6x+9y=14> ha soluzioni reali, come <math|(14/6,0)>, ma nessuna
+  soluzione intera. Comunque scegliamo <math|x> e <math|y> interi, infatti,
+  il membro sinistro è un multiplo di 3, mentre 14 non lo è. Prima di
+  metterci a cercare una soluzione conviene quindi controllare che non ci sia
+  un ostacolo di questo tipo.
 
   <section|Esistenza delle soluzioni: il criterio del MCD>
 
-  Poniamo <math|d=gcd(a,b)>, supponendo <math|a,b> non entrambi nulli. Dal
-  capitolo precedente sappiamo esattamente quali numeri si possono scrivere
-  come <math|a*x+b*y>: i multipli di <math|d>.
+  Sia <math|d=gcd(a,b)>, con <math|a,b> non entrambi nulli. Il capitolo
+  precedente ci ha già detto quali numeri si possono scrivere nella forma
+  <math|a*x+b*y>, cioè esattamente i multipli di <math|d>. Tradotto nel
+  linguaggio delle equazioni, questo diventa un criterio.
 
   <\concetto|Criterio per le diofantee lineari>
     L'equazione <math|a*x+b*y=c> ha soluzioni intere se e solo se
@@ -1628,67 +1781,73 @@
     </equation*>
   </concetto>
 
-  Ricostruiamo le due direzioni. Se una soluzione esiste, <math|d> divide
-  <math|a> e <math|b>, quindi divide <math|a*x+b*y=c>. Questa è la
-  <strong|necessità>: una soluzione deve rispettare la condizione.
+  Vale la pena ripercorrere le due direzioni. Se una soluzione esiste,
+  <math|d> divide sia <math|a> sia <math|b>, e quindi divide anche
+  <math|a*x+b*y>, che è uguale a <math|c>. La condizione è dunque
+  <strong|necessaria>.
 
-  Se invece <math|d\<mid\>c>, scriviamo <math|c=k*d>. Bézout fornisce
-  <math|a*u+b*v=d>. Moltiplichiamo per <math|k>:
+  Viceversa, supponiamo che <math|d\<mid\>c> e scriviamo <math|c=k*d>. Bézout
+  ci dà due interi con <math|a*u+b*v=d>, e moltiplicando per <math|k>
+  otteniamo
 
   <\equation*>
     a(k*u)+b(k*v)=k*d=c.
   </equation*>
 
-  Abbiamo costruito una soluzione: <math|x<rsub|0>=k*u>,
-  <math|y<rsub|0>=k*v>. Questa è la <strong|sufficienza>: la condizione basta
-  davvero a garantire l'esistenza.
+  La coppia <math|x<rsub|0>=k*u>, <math|y<rsub|0>=k*v> è una soluzione, e
+  così la condizione è anche <strong|sufficiente>. La dimostrazione, oltre a
+  garantire l'esistenza, ci dice come costruire la soluzione.
 
-  Per <math|6x+9y=15>, il MCD è 3 e <math|15=5\<cdot\>3>. Dall'identità
-  <math|3=-6+9> otteniamo <math|15=-5\<cdot\>6+5\<cdot\>9>: quindi
-  <math|(-5,5)> è una soluzione. La coppia più piccola <math|(1,1)> era
-  visibile per tentativi; Bézout offre un metodo anche quando non la vediamo.
+  Torniamo a <math|6x+9y=15>. Il MCD è 3 e <math|15=5\<cdot\>3>, quindi le
+  soluzioni esistono. Dall'identità <math|3=-6+9>, moltiplicando per 5,
+  otteniamo <math|15=-5\<cdot\>6+5\<cdot\>9>, cioè la soluzione
+  <math|(-5,5)>. È meno elegante di <math|(1,1)>, che avevamo trovato a
+  occhio, ma il metodo funziona anche quando a occhio non vediamo niente.
 
   <section|Da una soluzione a tutte le soluzioni>
 
-  Trovare una coppia non chiude il problema. Vogliamo una descrizione che
-  comprenda tutte le soluzioni e non ne aggiunga di false.
+  Avere una soluzione non chiude il problema. Vogliamo una descrizione che
+  contenga tutte le soluzioni, senza dimenticarne nessuna e senza aggiungerne
+  di false.
 
-  Riprendiamo <math|6x+9y=15> e dividiamo per il MCD 3:
+  Ripartiamo da <math|6x+9y=15> e dividiamo tutto per il MCD 3, ottenendo
+  l'equazione equivalente
 
   <\equation*>
     2x+3y=5.
   </equation*>
 
-  Conosciamo <math|(1,1)>. Se <math|(x,y)> è un'altra soluzione, sottraiamo
-  <math|2\<cdot\>1+3\<cdot\>1=5> dall'equazione:
+  Sappiamo che <math|(1,1)> è una soluzione. Se <math|(x,y)> è un'altra
+  soluzione, possiamo confrontarla con questa sottraendo l'uguaglianza
+  <math|2\<cdot\>1+3\<cdot\>1=5>:
 
   <\equation*>
     2(x-1)+3(y-1)=0,<space|1em><text|cioè><space|1em>2(x-1)=-3(y-1).
   </equation*>
 
-  La parte destra è multipla di 3, quindi 3 divide <math|2(x-1)>. Poiché 3 e
-  2 sono coprimi, il lemma di Euclide dà <math|3\<mid\>(x-1)>. Esiste dunque
-  un intero <math|t> con <math|x-1=3t>.
+  Il membro destro è un multiplo di 3, quindi 3 divide <math|2(x-1)>. Siccome
+  3 e 2 sono coprimi, il lemma di Euclide ci permette di togliere il fattore
+  2 e concludere che <math|3\<mid\>(x-1)>. Esiste dunque un intero <math|t>
+  con <math|x-1=3t>.
 
-  Sostituiamo: <math|2\<cdot\>3t=-3(y-1)>. Dividendo per <math|-3> otteniamo
-  <math|y-1=-2t>. Tutte le soluzioni devono perciò avere la forma
+  Mettendo questa informazione nell'uguaglianza troviamo
+  <math|2\<cdot\>3t=-3(y-1)>, e dividendo per <math|-3> otteniamo
+  <math|y-1=-2t>. Ogni soluzione deve quindi avere la forma
 
   <\equation*>
     x=1+3t,<space|2em>y=1-2t,<space|2em>t\<in\>\<bbb-Z\>.
   </equation*>
 
-  Resta il controllo nella direzione opposta. Sostituendo queste espressioni
-  troviamo <math|2(1+3t)+3(1-2t)=5>: i termini con <math|t> si cancellano.
-  Quindi ogni intero <math|t> dà effettivamente una soluzione. Non abbiamo
-  perso né aggiunto coppie.
+  Per non aver aggiunto coppie false resta da controllare il viceversa, cioè
+  che ogni <math|t> dia davvero una soluzione. Sostituendo,
+  <math|2(1+3t)+3(1-2t)=5>, perché i termini con <math|t> si cancellano. La
+  descrizione è quindi completa ed esatta.
 
-  Il parametro <math|t> conta i passi dalla soluzione iniziale: aumentarlo di
-  1 aumenta <math|x> di 3 e diminuisce <math|y> di 2. Il valore di
-  <math|2x+3y> rimane uguale perché il guadagno <math|2\<cdot\>3> è
-  compensato dalla perdita <math|3\<cdot\>2>.
-
-  La figura mostra lo stesso passo su una retta parallela: il termine noto è
-  9 anziché 5.
+  Il parametro <math|t> ha un significato concreto. Aumentarlo di 1 fa
+  crescere <math|x> di 3 e scendere <math|y> di 2, e il valore di
+  <math|2x+3y> non cambia, perché il guadagno <math|2\<cdot\>3> è compensato
+  esattamente dalla perdita <math|3\<cdot\>2>. Le soluzioni sono punti a
+  passo regolare su una retta.
 
   <figura|<image|assets/reticolo.pdf|140.0mm|75.0mm||>|Qui vediamo
   l'equazione <math|2x+3y=9>: i punti <math|(0,3)>, <math|(3,1)> e
@@ -1696,61 +1855,69 @@
   noto sposta la retta; i coefficienti determinano il passo fra le
   soluzioni.>
 
+  La figura mostra lo stesso fenomeno per la retta parallela <math|2x+3y=9>.
+  Cambiando il termine noto la retta si sposta, ma il passo fra una soluzione
+  e la successiva resta lo stesso, perché dipende soltanto dai coefficienti.
+
   <subsection|La formula generale e il suo motivo>
 
-  Per <math|a*x+b*y=c> poniamo <math|d=gcd(a,b)>, <math|A=a/d> e
-  <math|B=b/d>. I numeri <math|A,B> sono coprimi: un loro divisore comune
-  maggiore di 1 produrrebbe un divisore comune di <math|a,b> maggiore di
-  <math|d>.
+  Il ragionamento si estende a ogni equazione <math|a*x+b*y=c> che abbia
+  soluzioni. Poniamo <math|d=gcd(a,b)>, <math|A=a/d> e <math|B=b/d>. I numeri
+  <math|A> e <math|B> sono coprimi, perché un loro divisore comune maggiore
+  di 1, moltiplicato per <math|d>, darebbe un divisore comune di <math|a> e
+  <math|b> più grande del MCD.
 
-  Fissata una soluzione <math|(x<rsub|0>,y<rsub|0>)>, sottrarre due soluzioni
-  dà
+  Fissiamo una soluzione <math|(x<rsub|0>,y<rsub|0>)>. Sottraendola da
+  un'altra soluzione e dividendo per <math|d> otteniamo
 
   <\equation*>
     A(x-x<rsub|0>)=-B(y-y<rsub|0>).
   </equation*>
 
-  Se <math|B\<neq\>0>, il lemma di Euclide impone
-  <math|B\<mid\>(x-x<rsub|0>)>. Scriviamo <math|x-x<rsub|0>=B*t>; sostituendo
-  e dividendo per <math|B> troviamo <math|y-y<rsub|0>=-A*t>. Come
-  nell'esempio, il controllo per sostituzione dimostra anche il viceversa.
-
-  Otteniamo così tutte le soluzioni:
+  Se <math|B\<neq\>0>, il lemma di Euclide dice che
+  <math|B\<mid\>(x-x<rsub|0>)>. Scrivendo <math|x-x<rsub|0>=B*t> e
+  sostituendo, dopo aver diviso per <math|B> troviamo
+  <math|y-y<rsub|0>=-A*t>. Come nell'esempio, la sostituzione diretta mostra
+  che ogni <math|t> dà una soluzione, e quindi le soluzioni sono tutte e sole
 
   <\equation*>
     x=x<rsub|0>+<frac|b|d>t,<space|2em>y=y<rsub|0>-<frac|a|d>t,<space|2em>t\<in\>\<bbb-Z\>.
   </equation*>
 
-  Se <math|b=0> e <math|a\<neq\>0>, basta risolvere <math|a*x=c>: quando
-  possibile, <math|x> è fissato e <math|y> è un intero qualsiasi. La formula
-  descrive anche questo caso, perché <math|a/d=\<pm\>1>. Se <math|a=b=0>, il
-  MCD non è definito secondo la nostra convenzione: per <math|c=0> ogni
-  coppia funziona, per <math|c\<neq\>0> nessuna.
+  Restano i casi degeneri. Se <math|b=0> e <math|a\<neq\>0> l'equazione è
+  semplicemente <math|a*x=c>. Quando ha soluzione, <math|x> è fissato e
+  <math|y> può essere un intero qualsiasi, e la formula lo descrive
+  correttamente, perché in questo caso <math|a/d=\<pm\>1>. Se infine
+  <math|a=b=0> il MCD non è definito, ma la situazione è chiara: per
+  <math|c=0> ogni coppia va bene, per <math|c\<neq\>0> nessuna.
 
   <section|Aggiungere vincoli: il problema diventa un intervallo>
 
-  Se cerchiamo soluzioni non negative di <math|6x+9y=15>, usiamo la
-  parametrizzazione già trovata. Le condizioni diventano
+  Supponiamo ora di volere soluzioni non negative di <math|6x+9y=15>. Non
+  serve ricominciare da capo, perché la parametrizzazione che abbiamo trovato
+  contiene già tutte le soluzioni, e dobbiamo solo capire per quali <math|t>
+  entrambe le coordinate sono non negative:
 
   <\equation*>
     1+3t\<geq\>0,<space|2em>1-2t\<geq\>0.
   </equation*>
 
-  La prima richiede <math|t\<geq\>-1/3>, quindi <math|t\<geq\>0> perché
-  <math|t> è intero. La seconda richiede <math|t\<leq\>1/2>, quindi
-  <math|t\<leq\>0>. L'unica possibilità è <math|t=0>: l'unica soluzione non
+  La prima condizione dà <math|t\<geq\>-1/3>, e siccome <math|t> è intero
+  questo significa <math|t\<geq\>0>. La seconda dà <math|t\<leq\>1/2>, cioè
+  <math|t\<leq\>0>. Resta soltanto <math|t=0>, e l'unica soluzione non
   negativa è <math|(1,1)>.
 
-  Ogni vincolo su <math|x,y> diventa così un vincolo sullo stesso parametro.
-  Risolviamo le disuguaglianze, prendiamo la loro intersezione e conserviamo
-  soltanto gli interi. Se dividiamo una disuguaglianza per un numero
-  negativo, dobbiamo invertire il verso, come nel passaggio
-  <math|-2t\<geq\>-1> che dà <math|t\<leq\>1/2>.
+  Il metodo è sempre lo stesso. Ogni vincolo su <math|x> e <math|y> diventa
+  un vincolo sul parametro, e basta risolvere le disuguaglianze, intersecarle
+  e tenere gli interi. Bisogna solo ricordare che, dividendo una
+  disuguaglianza per un numero negativo, il verso si inverte, come quando da
+  <math|-2t\<geq\>-1> siamo passati a <math|t\<leq\>1/2>.
 
   <section|Per proseguire: differenze di quadrati>
 
-  La parola \Sdiofantea\T non significa necessariamente \Slineare\T. Per
-  <math|x<rsup|2>-y<rsup|2>=15> serve un'altra idea: usare la scomposizione
+  Le equazioni diofantee non sono tutte lineari. Per
+  <math|x<rsup|2>-y<rsup|2>=15> serve un'idea diversa, e la suggerisce la
+  scomposizione
 
   <\equation*>
     x<rsup|2>-y<rsup|2>=(x+y)(x-y).
@@ -1761,35 +1928,39 @@
   lato <math|y> si ricompone in un rettangolo di lati <math|x+y> e
   <math|x-y>. L'identità algebrica vale per tutti gli interi.>
 
-  Poniamo <math|u=x+y>, <math|v=x-y>. L'equazione diventa <math|u*v=15>, e
-  sommando o sottraendo ricaviamo
+  Se chiamiamo <math|u=x+y> e <math|v=x-y>, l'equazione diventa
+  <math|u*v=15>, e la domanda si sposta sui modi di scrivere 15 come prodotto
+  di due interi. Da <math|u> e <math|v> si torna poi a <math|x> e <math|y>
+  sommando e sottraendo:
 
   <\equation*>
     x=<frac|u+v|2>,<space|2em>y=<frac|u-v|2>.
   </equation*>
 
-  Per ottenere interi, <math|u,v> devono avere la stessa parità. Per 15 tutte
-  le coppie di fattori sono dispari. Le coppie positive
-  <math|(15,1),(5,3),(3,5),(1,15)> danno <math|(8,7),(4,1),(4,-1),(8,-7)>. Le
-  coppie di fattori negativi danno le quattro coppie opposte: in totale otto
-  soluzioni.
+  Perché <math|x> e <math|y> siano interi, <math|u> e <math|v> devono avere
+  la stessa parità. Per 15 questo non è un problema, perché tutti i suoi
+  fattori sono dispari. Le coppie positive <math|(15,1),(5,3),(3,5),(1,15)>
+  danno le soluzioni <math|(8,7),(4,1),(4,-1),(8,-7)>, e le coppie di fattori
+  negativi danno le quattro soluzioni opposte, per un totale di otto.
 
-  Per <math|x<rsup|2>-y<rsup|2>=26>, invece, nessuna coppia di fattori ha la
-  stessa parità: due dispari darebbero un prodotto dispari, due pari un
-  multiplo di 4. Il numero 26 non è né l'uno né l'altro. Non ci sono
+  Con <math|x<rsup|2>-y<rsup|2>=26> la parità blocca tutto. Due fattori
+  dispari darebbero un prodotto dispari, e due fattori pari darebbero un
+  multiplo di 4, ma 26 è pari e non è multiplo di 4. Non ci sono quindi
   soluzioni intere.
 
-  Lo stesso procedimento vale per ogni termine noto non nullo, prendendo
-  tutti i divisori interi, anche negativi. Per termine noto zero si ha
-  direttamente <math|x=y> oppure <math|x=-y>.
+  Lo stesso procedimento funziona per ogni termine noto diverso da zero,
+  purché si considerino tutti i divisori interi, anche quelli negativi. Se il
+  termine noto è zero la scomposizione risponde subito, perché il prodotto si
+  annulla solo per <math|x=y> oppure <math|x=-y>.
 
   <subsection|In sintesi>
 
-  Per una <strong|diofantea lineare>, il MCD decide l'esistenza, Bézout
-  costruisce una soluzione e la differenza fra due soluzioni ci permette di
-  trovarle tutte. I vincoli si applicano soltanto dopo, al parametro. Per
-  altre diofantee cerchiamo invece una trasformazione adatta, come il
-  prodotto di due fattori nella differenza di quadrati.
+  Per una <strong|diofantea lineare> il MCD decide se le soluzioni esistono,
+  Bézout ne costruisce una e il confronto fra due soluzioni le rivela tutte,
+  a passo regolare. Gli eventuali vincoli si impongono soltanto alla fine,
+  sul parametro. Per altri tipi di equazioni conviene cercare una
+  trasformazione adatta, come il prodotto di due fattori nella differenza di
+  quadrati.
 
   <\verifica|6>
     <strong|1.> Risolvi <math|4x+6y=14> negli interi e poi con
@@ -1803,21 +1974,24 @@
   <chapter|Congruenze e classi>
 
   <\inbreve>
-    Con le diofantee cercavamo interi precisi. Ora impariamo a conservare
-    soltanto l'informazione che ci interessa: il resto di una divisione.
-    Dalle congruenze arriveremo alle classi, nuovi oggetti sui quali potremo
-    fare somme e prodotti.
+    Che giorno della settimana sarà fra cento giorni? Per rispondere non
+    serve sapere quante settimane passeranno, basta il resto della divisione
+    per sette. Le congruenze nascono da questa idea di tenere soltanto il
+    resto e dimenticare il resto dell'informazione. Raccogliendo i numeri con
+    lo stesso resto otterremo nuovi oggetti, le classi, con cui potremo fare
+    somme e prodotti.
   </inbreve>
 
   <section|Congruenze: quando due interi hanno lo stesso resto>
 
-  Dividiamo 2, 7, 12 e 17 per 5. I quozienti cambiano, ma il resto è sempre
-  2. Se il nostro problema riguarda soltanto quel resto, possiamo trattare
-  questi quattro numeri nello stesso modo.
+  Dividiamo per 5 i numeri 2, 7, 12 e 17. I quozienti sono tutti diversi, ma
+  il resto è sempre 2. Se il problema che stiamo studiando dipende soltanto
+  da quel resto, questi quattro numeri si comportano allo stesso modo, e
+  possiamo smettere di distinguerli.
 
-  Che cosa hanno in comune? Si ottengono l'uno dall'altro aggiungendo
-  multipli di 5. Per esempio <math|17-2=15=3\<cdot\>5>. Anche <math|-3>
-  appartiene alla stessa famiglia, perché <math|-3=(-1)\<cdot\>5+2>.
+  Quello che li accomuna è che si passa dall'uno all'altro aggiungendo
+  multipli di 5, come in <math|17-2=15=3\<cdot\>5>. Della stessa famiglia fa
+  parte anche <math|-3>, perché <math|-3=(-1)\<cdot\>5+2>.
 
   <\concetto|Congruenza modulo n>
     Fissato un intero <math|n\<geq\>1>, diciamo che <math|a> e <math|b> sono
@@ -1832,29 +2006,32 @@
     </equation*>
   </concetto>
 
-  Se i resti sono uguali, sottrarre le divisioni elimina il resto e lascia un
-  multiplo di <math|n>. Viceversa, scrivendo <math|a=q<rsub|1>n+r<rsub|1>> e
-  <math|b=q<rsub|2>n+r<rsub|2>>, se <math|n\<mid\>(a-b)> allora
-  <math|n\<mid\>(r<rsub|1>-r<rsub|2>)>. La differenza dei resti ha valore
-  assoluto minore di <math|n>: deve essere zero. Questa è la stessa idea
-  usata nell'unicità della divisione euclidea.
+  Le due descrizioni dicono la stessa cosa. Se <math|a> e <math|b> hanno lo
+  stesso resto, sottraendo le due divisioni il resto se ne va e resta un
+  multiplo di <math|n>. Viceversa scriviamo <math|a=q<rsub|1>n+r<rsub|1>> e
+  <math|b=q<rsub|2>n+r<rsub|2>>. Se <math|n> divide <math|a-b>, divide anche
+  <math|r<rsub|1>-r<rsub|2>>, ma questa differenza è più piccola di <math|n>
+  in valore assoluto e quindi deve essere zero. È lo stesso argomento che
+  abbiamo usato per l'unicità della divisione euclidea.
 
-  <strong|Una congruenza conserva un'informazione precisa, non tutte le
-  informazioni.> Scrivere <math|17\<equiv\>2<pmod|5>> non significa
-  <math|17=2>. Significa che dividendo per 5 non distinguiamo i loro resti.
+  Conviene tenere presente che una congruenza ricorda un'informazione
+  precisa, non tutto. Scrivere <math|17\<equiv\>2<pmod|5>> non vuol dire che
+  17 e 2 siano uguali, ma soltanto che, se guardiamo i resti nella divisione
+  per 5, non li distinguiamo.
 
   <section|Classi di congruenza: una famiglia diventa un oggetto>
 
-  Raccogliamo tutti gli interi che hanno resto 2 modulo 5:
+  Raccogliamo ora in un unico insieme tutti gli interi che hanno resto 2
+  modulo 5:
 
   <\equation*>
     [2]<rsub|5>=<around|{|\<ldots\>,-8,-3,2,7,12,17,\<ldots\>|}>.
   </equation*>
 
-  Questo insieme è la <strong|classe di congruenza> di 2 modulo 5. Possiamo
-  indicarlo anche con <math|[7]<rsub|5>> o <math|[17]<rsub|5>>: la famiglia è
-  la stessa. Ciascuno di questi numeri è un <strong|rappresentante> della
-  classe.
+  Questo insieme si chiama <strong|classe di congruenza> di 2 modulo 5.
+  Avremmo potuto chiamarlo anche <math|[7]<rsub|5>> o <math|[17]<rsub|5>>,
+  perché la famiglia è la stessa, e ciascuno dei suoi elementi è un
+  <strong|rappresentante> della classe.
 
   <\concetto|Classe di congruenza>
     La classe di <math|a> modulo <math|n> raccoglie tutti gli interi congrui
@@ -1866,136 +2043,150 @@
   </concetto>
 
   Per la divisione euclidea ogni intero ha esattamente un resto fra
-  <math|0,1,\<ldots\>,n-1>. Ci sono quindi esattamente <math|n> classi:
-  <math|[0]<rsub|n>,[1]<rsub|n>,\<ldots\>,[n-1]<rsub|n>>. Il loro insieme si
-  scrive <math|\<bbb-Z\>/n\<bbb-Z\>>.
+  <math|0,1,\<ldots\>,n-1>, e quindi le classi sono esattamente <math|n>,
+  cioè <math|[0]<rsub|n>,[1]<rsub|n>,\<ldots\>,[n-1]<rsub|n>>. L'insieme di
+  tutte le classi modulo <math|n> si indica con <math|\<bbb-Z\>/n\<bbb-Z\>>.
 
   <figura|<image|assets/spirale5.pdf|99.9mm|97.8mm||>|Gli interi sullo stesso
   raggio hanno lo stesso resto modulo 5. Ogni raggio rappresenta una classe;
   cambiare il numero lungo quel raggio cambia il rappresentante, non la
   classe.>
 
-  La distinzione da conservare è questa: <math|2> è un intero,
-  <math|[2]<rsub|5>> è un insieme di interi, <math|\<bbb-Z\>/5\<bbb-Z\>> è
-  l'insieme delle cinque classi. Ogni classe contiene infiniti interi, ma il
-  numero di classi è finito. Modulo 1 c'è una sola classe, perché tutti gli
-  interi hanno resto 0.
+  Bisogna fare attenzione a tre livelli diversi. Il numero <math|2> è un
+  intero, <math|[2]<rsub|5>> è un insieme infinito di interi, e
+  <math|\<bbb-Z\>/5\<bbb-Z\>> è un insieme che contiene cinque classi. Ogni
+  classe contiene infiniti numeri, ma le classi sono in numero finito. Modulo
+  1, per esempio, c'è una sola classe, perché tutti gli interi hanno resto 0.
 
   <section|Relazioni di equivalenza: l'idea generale dietro le classi>
 
-  Il passaggio appena compiuto si può ripetere anche quando non ci sono
-  resti. Scegliamo una relazione che dica quando due oggetti vengono
-  considerati equivalenti per lo scopo che ci interessa.
+  Quello che abbiamo fatto con i resti si può fare in molte altre situazioni.
+  Basta avere una regola che dica quando due oggetti vanno considerati
+  equivalenti per lo scopo che ci interessa, purché la regola si comporti in
+  modo ragionevole.
 
-  Una relazione <math|\<sim\>> su un insieme <math|X> è una <strong|relazione
-  di equivalenza> se soddisfa tre proprietà: ogni elemento è equivalente a sé
-  stesso (<strong|riflessività>); se <math|x\<sim\>y>, allora
-  <math|y\<sim\>x> (<strong|simmetria>); se <math|x\<sim\>y> e
-  <math|y\<sim\>z>, allora <math|x\<sim\>z> (<strong|transitività>).
+  Precisamente, una relazione <math|\<sim\>> su un insieme <math|X> è una
+  <strong|relazione di equivalenza> se ha tre proprietà. Ogni elemento è
+  equivalente a sé stesso, e questa è la <strong|riflessività>. Se
+  <math|x\<sim\>y> allora anche <math|y\<sim\>x>, e questa è la
+  <strong|simmetria>. Infine, se <math|x\<sim\>y> e <math|y\<sim\>z>, allora
+  <math|x\<sim\>z>, e questa è la <strong|transitività>.
 
-  La congruenza le soddisfa: <math|a-a=0>; cambiare segno a un multiplo
-  lascia un multiplo; sommare <math|a-b> e <math|b-c> dà <math|a-c>. La
-  definizione tramite divisibilità rende quindi verificabili tutte e tre le
-  proprietà.
+  La congruenza modulo <math|n> le ha tutte e tre, e la definizione con la
+  divisibilità lo rende facile da vedere. La differenza <math|a-a=0> è un
+  multiplo di <math|n>, cambiando segno a un multiplo si ottiene ancora un
+  multiplo, e sommando <math|a-b> e <math|b-c> si ottiene <math|a-c>.
 
-  La classe <math|[x]> raccoglie tutti gli elementi equivalenti a <math|x>.
-  Perché queste classi non si sovrappongono in modo confuso? Se <math|z>
-  appartiene sia a <math|[x]> sia a <math|[y]>, abbiamo <math|x\<sim\>z> e
-  <math|z\<sim\>y>, dunque <math|x\<sim\>y>. Ogni elemento equivalente a
-  <math|x> è allora equivalente a <math|y>, e viceversa. Le classi
-  coincidono.
+  Data un'equivalenza, la classe <math|[x]> raccoglie tutti gli elementi
+  equivalenti a <math|x>. Le tre proprietà garantiscono che le classi non si
+  sovrappongano in modo confuso. Se un elemento <math|z> sta sia in
+  <math|[x]> sia in <math|[y]>, allora <math|x\<sim\>z> e <math|z\<sim\>y>,
+  quindi <math|x\<sim\>y>, e ogni elemento equivalente a <math|x> lo è anche
+  a <math|y> e viceversa. Le due classi sono allora la stessa.
 
-  Quindi <strong|due classi o coincidono o sono disgiunte>. Inoltre ogni
-  elemento appartiene alla propria classe. Le classi formano così una
-  <strong|partizione>: pezzi non vuoti, separati, che coprono tutto
-  l'insieme. Viceversa, una partizione definisce un'equivalenza dicendo che
-  due elementi sono equivalenti quando stanno nello stesso pezzo.
+  Abbiamo così scoperto che <strong|due classi o coincidono o sono
+  disgiunte>. Siccome ogni elemento sta nella propria classe, le classi
+  formano una <strong|partizione> dell'insieme, cioè lo dividono in pezzi non
+  vuoti e separati che lo coprono tutto. Vale anche il viceversa, perché ogni
+  partizione definisce un'equivalenza, quella in cui due elementi sono
+  equivalenti quando stanno nello stesso pezzo.
 
   L'insieme delle classi si chiama <strong|insieme quoziente> e si scrive
-  <math|X/\<sim\>>. La funzione <math|x\<mapsto\>[x]> si chiama
-  <strong|proiezione canonica>: manda ogni oggetto nella sua classe.
+  <math|X/\<sim\>>, mentre la funzione <math|x\<mapsto\>[x]>, che manda ogni
+  oggetto nella sua classe, si chiama <strong|proiezione canonica>.
 
   <section|Fare somme e prodotti con le classi>
 
-  Vogliamo poter calcolare usando soltanto le classi. Modulo 5, per esempio,
-  sommare la classe di 7 e quella di 9 dovrebbe dare la classe di
-  <math|7+9=16>, cioè la classe di 1.
-
-  Definiamo perciò
+  Vorremmo poter fare i conti direttamente con le classi. Modulo 5, sommare
+  la classe di 7 e quella di 9 dovrebbe dare la classe di <math|7+9=16>, che
+  è la classe di 1. Viene naturale definire
 
   <\equation*>
     [a]<rsub|n>+[b]<rsub|n>=[a+b]<rsub|n>,<space|2em>[a]<rsub|n>[b]<rsub|n>=[a*b]<rsub|n>.
   </equation*>
 
-  Ma potevamo scegliere 2 al posto di 7 e 4 al posto di 9. La somma sarebbe 6
-  anziché 16. Va bene, perché 6 e 16 appartengono alla stessa classe modulo
-  5. È la <em|classe del risultato> che deve rimanere uguale.
+  C'è però una questione delicata. La classe di 7 si può chiamare anche
+  classe di 2, e quella di 9 anche classe di 4, e con questi nomi la somma
+  sarebbe 6 invece di 16. Per fortuna 6 e 16 stanno nella stessa classe
+  modulo 5, quindi in questo caso la risposta non cambia. Dobbiamo però
+  essere sicuri che vada sempre così.
 
   <\anatomia|Buona definizione: la scelta del nome non deve cambiare
   l'oggetto>
-    Una formula che usa rappresentanti definisce un'operazione sulle classi
-    soltanto se cambiarli non cambia la classe del risultato. Questa
-    proprietà si chiama <strong|buona definizione>.
+    Una formula che usa i rappresentanti definisce davvero un'operazione
+    sulle classi soltanto se, cambiando i rappresentanti, la classe del
+    risultato resta la stessa. Questa proprietà si chiama <strong|buona
+    definizione>.
 
-    Supponiamo <math|a\<equiv\>a'<pmod|n>> e <math|b\<equiv\>b'<pmod|n>>. La
-    differenza fra le due somme è <math|(a-a')+(b-b')>: è multipla di
-    <math|n>, quindi le somme sono congrue.
+    Supponiamo quindi che <math|a\<equiv\>a'<pmod|n>> e
+    <math|b\<equiv\>b'<pmod|n>>. La differenza fra le due somme è
+    <math|(a-a')+(b-b')>, che è un multiplo di <math|n>, e quindi le somme
+    sono congrue.
 
-    Per i prodotti cerchiamo di far comparire le differenze che conosciamo.
-    Aggiungiamo e sottraiamo <math|a'b>:
+    Per i prodotti vogliamo far comparire le differenze <math|a-a'> e
+    <math|b-b'>, che conosciamo. Ci riusciamo aggiungendo e togliendo
+    <math|a'b>:
 
     <\equation*>
       a*b-a'b'=(a-a')b+a'(b-b').
     </equation*>
 
-    Ogni addendo è multiplo di <math|n>. Anche i prodotti appartengono dunque
-    alla stessa classe. Le due operazioni sono ben definite.
+    Entrambi gli addendi sono multipli di <math|n>, e così anche i prodotti
+    stanno nella stessa classe. Le due operazioni sono ben definite.
   </anatomia>
 
-  Questo controllo giustifica una regola pratica: <strong|possiamo ridurre i
-  numeri prima di sommarli o moltiplicarli>. Per esempio,
+  Questa verifica ha una conseguenza molto pratica: <strong|possiamo ridurre
+  i numeri prima di sommarli o moltiplicarli>. Per calcolare
+  <math|85\<cdot\>38> modulo 7, per esempio, sostituiamo 85 con il suo resto
+  1 e 38 con il suo resto 3, e otteniamo
 
   <\equation*>
     85\<cdot\>38\<equiv\>1\<cdot\>3=3<pmod|7>.
   </equation*>
 
-  Vale anche per le potenze intere non negative, che sono prodotti ripetuti.
-  Dato che <math|2<rsup|5>=32\<equiv\>-1<pmod|33>>, segue
-  <math|2<rsup|10>\<equiv\>(-1)<rsup|2>=1<pmod|33>>.
+  Lo stesso vale per le potenze con esponente naturale, che sono prodotti
+  ripetuti. Siccome <math|2<rsup|5>=32\<equiv\>-1<pmod|33>>, ne segue subito
+  <math|2<rsup|10>\<equiv\>(-1)<rsup|2>=1<pmod|33>>, senza dover calcolare
+  1024.
 
   <subsection|Un'applicazione: i criteri di divisibilità>
 
-  Il numero 345 significa <math|3\<cdot\>10<rsup|2>+4\<cdot\>10+5>. Modulo 3
-  e modulo 9 vale <math|10\<equiv\>1>, quindi ogni potenza di 10 può essere
-  sostituita con 1: il numero ha lo stesso resto della somma delle sue cifre.
-  Perciò 345 è divisibile per 3, dato che <math|3+4+5=12> lo è, ma non per 9.
+  I criteri di divisibilità imparati a scuola trovano qui una spiegazione. Il
+  numero 345 vuol dire <math|3\<cdot\>10<rsup|2>+4\<cdot\>10+5>. Modulo 3 e
+  modulo 9 abbiamo <math|10\<equiv\>1>, quindi ogni potenza di 10 si può
+  sostituire con 1, e il numero ha lo stesso resto della somma delle sue
+  cifre. Per questo 345 è divisibile per 3, visto che <math|3+4+5=12> lo è,
+  ma non per 9.
 
-  Modulo 11, invece, <math|10\<equiv\>-1>. Le potenze di 10 alternano 1 e
-  <math|-1>: il criterio usa la somma delle cifre a segni alterni. Per 345
-  otteniamo <math|3-4+5=4>, dunque non è divisibile per 11. Gli stessi
-  ragionamenti funzionano con qualsiasi numero di cifre.
+  Modulo 11 si ha invece <math|10\<equiv\>-1>, e le potenze di 10 valgono
+  alternativamente 1 e <math|-1>. Il criterio usa allora la somma delle cifre
+  con segni alterni a partire dalle unità. Per 345 otteniamo <math|5-4+3=4>,
+  quindi 345 non è divisibile per 11. Lo stesso ragionamento funziona per
+  numeri con quante cifre vogliamo.
 
   <section|Per proseguire: anche i razionali sono classi>
 
-  Le scritture <math|1/2>, <math|2/4> e <math|3/6> rappresentano lo stesso
-  razionale. Possiamo interpretarle come coppie diverse
-  <math|(1,2),(2,4),(3,6)> e identificarle con la relazione
+  Le frazioni <math|1/2>, <math|2/4> e <math|3/6> sono scritte in modo
+  diverso, ma indicano lo stesso numero. Possiamo vederle come coppie diverse
+  <math|(1,2),(2,4),(3,6)> e decidere di identificarle mediante la relazione
 
   <\equation*>
     (a,b)\<sim\>(c,d)<space|1em>\<Leftrightarrow\><space|1em>a*d=b*c,<space|2em>b,d\<neq\>0.
   </equation*>
 
-  È un'equivalenza. Riflessività e simmetria seguono dall'uguaglianza. Per la
-  transitività, da <math|a*d=b*c> e <math|c*f=d*e> otteniamo
-  <math|a*d*f=b*c*f=b*d*e>; cancellando il denominatore non nullo <math|d>,
-  resta <math|a*f=b*e>.
+  Questa è un'equivalenza. Riflessività e simmetria seguono direttamente
+  dalle proprietà dell'uguaglianza. Per la transitività partiamo da
+  <math|a*d=b*c> e <math|c*f=d*e> e otteniamo <math|a*d*f=b*c*f=b*d*e>, e
+  siccome <math|d\<neq\>0> possiamo semplificarlo e arrivare a
+  <math|a*f=b*e>.
 
   <figura|<image|assets/frazioni.pdf|105.8mm|63.0mm||>|Il punto di coordinate
   <math|(b,a)> rappresenta la frazione <math|a/b>. Le coppie equivalenti
   stanno sulla stessa retta per l'origine; consideriamo soltanto i punti con
   <math|b\<neq\>0>.>
 
-  Un razionale è una classe di queste coppie. Le operazioni usuali diventano
+  Un numero razionale è allora una classe di queste coppie, e le operazioni
+  che conosciamo diventano
 
   <\equation*>
     [(a,b)]+[(c,d)]=[(a*d+b*c,b*d)],
@@ -2005,23 +2196,24 @@
     [(a,b)][(c,d)]=[(a*c,b*d)].
   </equation*>
 
-  Anche qui occorre la buona definizione. Se <math|a*b'=a'b> e
-  <math|c*d'=c'd>, allora <math|a*c*b'd'=a'c'b*d>: i prodotti rappresentano
-  la stessa frazione. Per la somma, sviluppando e usando le stesse due
-  uguaglianze otteniamo <math|(a*d+b*c)b'd'=(a'd'+b'c')b*d>. Anche la somma è
-  indipendente dai rappresentanti.
+  Anche qui va controllata la buona definizione. Supponiamo <math|a*b'=a'b> e
+  <math|c*d'=c'd>. Moltiplicando le due uguaglianze troviamo
+  <math|a*c*b'd'=a'c'b*d>, cioè i due prodotti rappresentano la stessa
+  frazione. Per la somma basta sviluppare e usare le stesse due uguaglianze,
+  e si ottiene <math|(a*d+b*c)b'd'=(a'd'+b'c')b*d>, quindi anche la somma non
+  dipende dai rappresentanti.
 
-  Una regola come \Sprendi il numeratore\T, invece, non è una funzione sui
-  razionali: darebbe 1 usando <math|1/2> e 2 usando <math|2/4>. Lo stesso
-  oggetto avrebbe due immagini diverse.
+  Una regola come \Sprendi il numeratore\T, invece, non definisce una
+  funzione sui razionali, perché darebbe 1 partendo da <math|1/2> e 2
+  partendo da <math|2/4>. Lo stesso numero riceverebbe due valori diversi.
 
   <subsection|In sintesi>
 
-  Una <strong|congruenza> confronta i resti. Una <strong|classe> raccoglie
-  gli interi con lo stesso resto; un <strong|quoziente> raccoglie le classi.
-  La <strong|buona definizione> permette di calcolare con questi nuovi
-  oggetti senza dipendere dal rappresentante scelto. Nel prossimo capitolo
-  useremo questi calcoli per risolvere equazioni modulari.
+  Una <strong|congruenza> confronta i resti, una <strong|classe> raccoglie
+  gli interi con lo stesso resto e l'<strong|insieme quoziente> raccoglie le
+  classi. La <strong|buona definizione> ci permette di fare i conti con
+  questi nuovi oggetti senza preoccuparci del rappresentante scelto. Nel
+  prossimo capitolo useremo questi conti per risolvere equazioni modulari.
 
   <\verifica|7>
     <strong|1.> Scrivi tre rappresentanti diversi di <math|[-2]<rsub|7>>,
@@ -2036,47 +2228,52 @@
   <chapter|Congruenze lineari e teorema cinese>
 
   <\inbreve>
-    Sappiamo sommare e moltiplicare le classi. Ma possiamo anche dividere? La
-    risposta ci porterà agli inversi modulari e alle congruenze lineari. Poi
-    combineremo informazioni su resti diversi attraverso il teorema cinese.
+    Con le classi sappiamo già sommare e moltiplicare, e manca la divisione.
+    Scopriremo che modulo <math|n> si può dividere per alcuni numeri ma non
+    per altri, e che a decidere è ancora una volta il MCD. Con gli inversi
+    modulari risolveremo le congruenze lineari, e alla fine metteremo insieme
+    informazioni su resti diversi grazie al teorema cinese.
   </inbreve>
 
   <section|Inversi modulari: che cosa significa dividere?>
 
-  L'equazione <math|3x=1> non ha una soluzione intera. La congruenza
-  <math|3x\<equiv\>1<pmod|7>> invece sì: <math|x=5>, perché
+  Fra gli interi l'equazione <math|3x=1> non ha soluzione. La congruenza
+  <math|3x\<equiv\>1<pmod|7>>, invece, ne ha una, <math|x=5>, perché
   <math|3\<cdot\>5=15=2\<cdot\>7+1>.
 
-  Modulo 7, moltiplicare per 5 annulla l'effetto di moltiplicare per 3: il
-  prodotto dei due fattori è congruo a 1. Diciamo che <math|[5]<rsub|7>> è
-  l'<strong|inverso moltiplicativo> di <math|[3]<rsub|7>>.
+  In altre parole, modulo 7 moltiplicare per 5 annulla l'effetto di
+  moltiplicare per 3, perché il prodotto dei due fattori è congruo a 1.
+  Diciamo allora che <math|[5]<rsub|7>> è l'<strong|inverso moltiplicativo>
+  di <math|[3]<rsub|7>>, e moltiplicare per 5 è il modo di \Sdividere per 3\T
+  modulo 7.
 
-  Per <math|n\<geq\>2>, la classe <math|[a]<rsub|n>> è <strong|invertibile>
-  se esiste una classe <math|[u]<rsub|n>> tale che
-  <math|[a]<rsub|n>[u]<rsub|n>=[1]<rsub|n>>. In termini di congruenze,
-  cerchiamo <math|a*u\<equiv\>1<pmod|n>>.
+  In generale, per <math|n\<geq\>2>, una classe <math|[a]<rsub|n>> si dice
+  <strong|invertibile> se esiste una classe <math|[u]<rsub|n>> tale che
+  <math|[a]<rsub|n>[u]<rsub|n>=[1]<rsub|n>>, cioè se possiamo risolvere
+  <math|a*u\<equiv\>1<pmod|n>>.
 
-  Questa richiesta equivale a scrivere <math|a*u+n*v=1> per qualche intero
-  <math|v>. Ritroviamo Bézout: una classe è invertibile esattamente quando
+  Dire che <math|a*u-1> è un multiplo di <math|n> equivale a scrivere
+  <math|a*u+n*v=1> per qualche intero <math|v>, e così ritroviamo l'identità
+  di Bézout. Ne segue che una classe è invertibile esattamente quando
 
   <\equation*>
     gcd(a,n)=1.
   </equation*>
 
-  Se esiste l'inverso, ogni divisore comune di <math|a,n> divide
-  <math|a*u+n*v=1>, quindi il MCD è 1. Viceversa, se il MCD è 1, Bézout
-  costruisce proprio un'uguaglianza <math|a*u+n*v=1>, e riducendola modulo
-  <math|n> troviamo l'inverso <math|[u]<rsub|n>>.
+  Se l'inverso esiste, ogni divisore comune di <math|a> e <math|n> divide
+  <math|a*u+n*v=1>, e quindi il MCD è 1. Viceversa, se il MCD è 1, Bézout ci
+  dà un'uguaglianza <math|a*u+n*v=1>, e leggendola modulo <math|n> troviamo
+  l'inverso <math|[u]<rsub|n>>.
 
-  L'inverso è unico come classe. Se <math|a*u\<equiv\>1> e
+  L'inverso, quando c'è, è unico come classe. Se <math|a*u\<equiv\>1> e
   <math|a*v\<equiv\>1> nello stesso modulo, allora
-  <math|u\<equiv\>u(a*v)\<equiv\>(u*a)v\<equiv\>v>. Due rappresentanti
-  diversi possono quindi indicare lo stesso inverso, ma non esistono due
-  classi inverse diverse.
+  <math|u\<equiv\>u(a*v)\<equiv\>(u*a)v\<equiv\>v>. Possiamo scriverlo con
+  rappresentanti diversi, ma due classi inverse diverse non esistono.
 
-  Per trovarlo possiamo usare la risalita di Euclide. L'identità già ottenuta
-  <math|8\<cdot\>17-3\<cdot\>45=1> dice che l'inverso di 17 modulo 45 è 8.
-  Per numeri piccoli basta anche cercare un multiplo con resto 1, come
+  Per trovarlo in pratica possiamo usare la risalita di Euclide. L'identità
+  <math|8\<cdot\>17-3\<cdot\>45=1>, ottenuta nel capitolo 5, ci dice per
+  esempio che l'inverso di 17 modulo 45 è 8. Con numeri piccoli basta anche
+  cercare un multiplo che abbia resto 1, come abbiamo fatto con
   <math|3\<cdot\>5=15> modulo 7.
 
   <figura|<image|assets/tabelle.pdf|140.0mm|53.8mm||>|Nelle tabelline modulo
@@ -2085,45 +2282,47 @@
 
   <section|Cancellazione: quando il modulo deve cambiare>
 
-  Negli interi, da <math|2x=2y> possiamo concludere <math|x=y>. Nelle
-  congruenze serve attenzione. Modulo 6 abbiamo
-  <math|2\<cdot\>1\<equiv\>2\<cdot\>4>, perché 2 e 8 hanno lo stesso resto.
-  Ma <math|1\<nequiv\>4<pmod|6>>.
+  Fra gli interi, da <math|2x=2y> possiamo concludere che <math|x=y>. Con le
+  congruenze bisogna stare più attenti. Modulo 6, per esempio,
+  <math|2\<cdot\>1\<equiv\>2\<cdot\>4>, perché 2 e 8 hanno lo stesso resto,
+  eppure <math|1\<nequiv\>4<pmod|6>>.
 
-  Se il fattore è invertibile, possiamo moltiplicare entrambi i membri per il
-  suo inverso e cancellarlo mantenendo il modulo. Se non lo è, la
-  cancellazione conserva meno informazione.
+  Se il fattore da cancellare è invertibile non ci sono problemi, perché
+  basta moltiplicare entrambi i membri per il suo inverso. Quando non lo è,
+  la cancellazione si può ancora fare, ma ci fa perdere un po' di
+  informazione, e vogliamo capire quanta.
 
-  Poniamo <math|d=gcd(c,n)>. Dalla definizione di congruenza:
+  Sia <math|d=gcd(c,n)>. Per definizione di congruenza
 
   <\equation*>
     c*x\<equiv\>c*y<pmod|n><space|1em>\<Leftrightarrow\><space|1em>n\<mid\>c(x-y).
   </equation*>
 
-  Dividendo il divisore e il numero da dividere per <math|d>, la condizione
-  diventa <math|(n/d)\<mid\>(c/d)(x-y)>. I numeri <math|n/d,c/d> sono
-  coprimi; per il lemma di Euclide equivale a <math|(n/d)\<mid\>(x-y)>.
-  Abbiamo dimostrato la regola:
+  Dividendo per <math|d> sia <math|n> sia <math|c>, la condizione diventa
+  <math|(n/d)\<mid\>(c/d)(x-y)>. I numeri <math|n/d> e <math|c/d> sono
+  coprimi, e il lemma di Euclide ci permette di togliere il fattore
+  <math|c/d>, arrivando a <math|(n/d)\<mid\>(x-y)>. Abbiamo così la regola
 
   <\equation*>
     c*x\<equiv\>c*y<pmod|n><space|1em>\<Leftrightarrow\><space|1em>x\<equiv\>y<pmod|n/d>.
   </equation*>
 
-  Nell'esempio, cancellare 2 riduce il modulo da 6 a 3: infatti
-  <math|1\<equiv\>4<pmod|3>>. Il modulo rimane lo stesso soltanto se
-  <math|d=1>.
+  Nel nostro esempio, cancellare il 2 fa scendere il modulo da 6 a 3, e
+  infatti <math|1\<equiv\>4<pmod|3>>. Il modulo resta lo stesso soltanto
+  quando <math|d=1>, cioè quando il fattore è invertibile.
 
   <section|Congruenze lineari: una diofantea sui resti>
 
-  Consideriamo <math|a*x\<equiv\>b<pmod|n>>. Per definizione <math|a*x-b> è
-  multiplo di <math|n>, quindi possiamo riscrivere il problema come
+  Una congruenza della forma <math|a*x\<equiv\>b<pmod|n>> si può tradurre in
+  un problema che conosciamo già. Dire che <math|a*x-b> è un multiplo di
+  <math|n> significa infatti risolvere
 
   <\equation*>
-    a*x+n*y=b,<space|2em>x,y\<in\>\<bbb-Z\>.
+    a*x+n*y=b,<space|2em>x,y\<in\>\<bbb-Z\>,
   </equation*>
 
-  È una diofantea lineare. Il criterio del MCD ci dà subito la risposta
-  sull'esistenza:
+  che è una diofantea lineare. Il criterio del MCD risponde subito alla
+  domanda sull'esistenza.
 
   <\concetto|Congruenza lineare>
     Posto <math|d=gcd(a,n)>, la congruenza <math|a*x\<equiv\>b<pmod|n>> ha
@@ -2132,70 +2331,75 @@
     <math|n>.
   </concetto>
 
-  Vediamo concretamente perché il modulo ridotto compare. Vogliamo risolvere
+  Vediamo su un esempio da dove viene il modulo ridotto. Vogliamo risolvere
 
   <\equation*>
     6x\<equiv\>9<pmod|15>.
   </equation*>
 
-  Il MCD è 3 e divide 9: possiamo procedere. La condizione
-  <math|15\<mid\>(6x-9)> equivale, dividendo tutto per 3, a
-  <math|5\<mid\>(2x-3)>. Otteniamo quindi
+  Il MCD di 6 e 15 è 3, che divide 9, quindi le soluzioni esistono. La
+  condizione <math|15\<mid\>(6x-9)>, divisa per 3, equivale a
+  <math|5\<mid\>(2x-3)>, cioè a
 
   <\equation*>
     2x\<equiv\>3<pmod|5>.
   </equation*>
 
-  Ora 2 è invertibile modulo 5: il suo inverso è 3 perché
-  <math|2\<cdot\>3\<equiv\>1>. Moltiplichiamo entrambi i membri per 3 e
-  troviamo <math|x\<equiv\>9\<equiv\>4<pmod|5>>. Gli interi cercati sono
-  dunque <math|x=4+5t>, <math|t\<in\>\<bbb-Z\>>.
+  Ora 2 è invertibile modulo 5, con inverso 3, perché
+  <math|2\<cdot\>3\<equiv\>1>. Moltiplicando entrambi i membri per 3 troviamo
+  <math|x\<equiv\>9\<equiv\>4<pmod|5>>, e quindi gli interi cercati sono
+  <math|x=4+5t> con <math|t\<in\>\<bbb-Z\>>.
 
-  Se vogliamo elencare le soluzioni modulo il modulo iniziale 15, troviamo
-  tre resti: <math|4,9,14>. Verifichiamo: <math|6\<cdot\>4=24>,
-  <math|6\<cdot\>9=54> e <math|6\<cdot\>14=84> danno tutti resto 9 modulo 15.
-  La congruenza <math|6x\<equiv\>8<pmod|15>>, invece, è impossibile, perché 3
-  non divide 8.
+  Se vogliamo elencare le soluzioni rispetto al modulo iniziale 15, troviamo
+  tre resti, cioè <math|4,9,14>. Possiamo controllarli direttamente, perché
+  <math|6\<cdot\>4=24>, <math|6\<cdot\>9=54> e <math|6\<cdot\>14=84> hanno
+  tutti resto 9 modulo 15. La congruenza <math|6x\<equiv\>8<pmod|15>>, al
+  contrario, non ha soluzioni, perché 3 non divide 8.
 
-  In generale dividiamo <math|a,b,n> per <math|d>. Quando <math|n/d\<geq\>2>,
-  il coefficiente <math|a/d> è invertibile nel nuovo modulo: otteniamo
-  un'unica classe <math|x\<equiv\>x<rsub|0><pmod|n/d>>. Se <math|n/d=1>, la
-  condizione ridotta è automatica e ogni intero è soluzione.
+  Il procedimento generale è lo stesso. Dividiamo <math|a,b,n> per <math|d>.
+  Se <math|n/d\<geq\>2>, il nuovo coefficiente <math|a/d> è invertibile nel
+  nuovo modulo, e otteniamo un'unica classe
+  <math|x\<equiv\>x<rsub|0><pmod|n/d>>. Se invece <math|n/d=1>, la condizione
+  ridotta è sempre vera e ogni intero è soluzione.
 
-  Perché nel modulo iniziale le classi sono esattamente <math|d>? I
-  rappresentanti
+  Rimane da capire perché, nel modulo iniziale, le classi siano esattamente
+  <math|d>. Consideriamo i rappresentanti
 
   <\equation*>
-    x<rsub|0>,<space|0.5em>x<rsub|0>+<frac|n|d>,<space|0.5em>\<ldots\>,<space|0.5em>x<rsub|0>+(d-1)<frac|n|d>
+    x<rsub|0>,<space|0.5em>x<rsub|0>+<frac|n|d>,<space|0.5em>\<ldots\>,<space|0.5em>x<rsub|0>+(d-1)<frac|n|d>.
   </equation*>
 
-  sono distinti modulo <math|n>: due di essi differiscono di meno di <math|d>
-  passi, quindi non di un multiplo non nullo di <math|n>. Dopo <math|d> passi
-  abbiamo aggiunto <math|n> e torniamo alla stessa classe. Ogni altro valore
-  del parametro ripete una di queste possibilità.
+  Sono distinti modulo <math|n>, perché due di loro differiscono di meno di
+  <math|d> passi da <math|n/d>, cioè di meno di <math|n>, e quindi non di un
+  multiplo non nullo di <math|n>. Dopo <math|d> passi, invece, abbiamo
+  aggiunto esattamente <math|n> e torniamo alla classe di partenza. Ogni
+  altro valore del parametro ripete quindi una di queste <math|d>
+  possibilità.
 
   <section|Teorema cinese: combinare due informazioni>
 
-  Cerchiamo ora un intero con resto 2 modulo 3 e resto 3 modulo 5:
+  Cerchiamo adesso un intero che abbia resto 2 nella divisione per 3 e resto
+  3 nella divisione per 5:
 
   <\equation*>
     x\<equiv\>2<pmod|3>,<space|2em>x\<equiv\>3<pmod|5>.
   </equation*>
 
-  La prima condizione descrive tutti i candidati: <math|x=2+3k>. Sostituiamo
-  nella seconda: <math|2+3k\<equiv\>3<pmod|5>>, quindi
-  <math|3k\<equiv\>1<pmod|5>>. Poiché l'inverso di 3 modulo 5 è 2, segue
-  <math|k\<equiv\>2<pmod|5>>.
+  La prima condizione ci dice che i candidati sono i numeri <math|x=2+3k>.
+  Mettiamoli nella seconda condizione, che diventa
+  <math|2+3k\<equiv\>3<pmod|5>>, cioè <math|3k\<equiv\>1<pmod|5>>. L'inverso
+  di 3 modulo 5 è 2, e quindi <math|k\<equiv\>2<pmod|5>>.
 
-  Scriviamo <math|k=2+5t> e torniamo a <math|x>: <math|x=2+3(2+5t)=8+15t>. Le
-  due informazioni insieme descrivono dunque un'unica classe modulo 15:
+  Scriviamo allora <math|k=2+5t> e torniamo a <math|x>, trovando
+  <math|x=2+3(2+5t)=8+15t>. Le due informazioni insieme individuano dunque
+  un'unica classe modulo 15:
 
   <\equation*>
     x\<equiv\>8<pmod|15>.
   </equation*>
 
-  La sostituzione ha trasformato il sistema in una sola congruenza lineare. È
-  un metodo da cui possiamo anche ricavare il teorema generale.
+  La sostituzione ha trasformato il sistema in una sola congruenza lineare, e
+  lo stesso metodo ci darà anche il teorema generale.
 
   <strong|Teorema cinese del resto.> Se <math|m,n\<gtr\>0> sono coprimi, per
   ogni scelta di <math|a,b> il sistema <math|x\<equiv\>a<pmod|m>>,
@@ -2204,33 +2408,35 @@
 
   <subsection|Perché esiste una soluzione>
 
-  Dalla prima congruenza scriviamo <math|x=a+m*k>. La seconda chiede
-  <math|m*k\<equiv\>b-a<pmod|n>>. Siccome <math|m,n> sono coprimi, <math|m> è
-  invertibile modulo <math|n> se <math|n\<geq\>2>: la congruenza per <math|k>
-  ha sempre una soluzione. Se <math|n=1>, la seconda condizione non impone
-  alcun vincolo e basta scegliere <math|x=a>.
+  Dalla prima congruenza scriviamo <math|x=a+m*k>, e la seconda chiede allora
+  che <math|m*k\<equiv\>b-a<pmod|n>>. Se <math|n\<geq\>2>, siccome <math|m> e
+  <math|n> sono coprimi, <math|m> è invertibile modulo <math|n>, e questa
+  congruenza in <math|k> ha sempre soluzione. Se <math|n=1> la seconda
+  condizione non chiede nulla, e basta prendere <math|x=a>.
 
-  Bézout permette anche di costruire direttamente un numero adatto. Scriviamo
-  <math|u*m+v*n=1>. Il termine <math|v*n> è congruo a 1 modulo <math|m> e a 0
-  modulo <math|n>; il termine <math|u*m> fa il contrario. Perciò
+  Bézout permette anche di scrivere direttamente una soluzione. Partiamo da
+  <math|u*m+v*n=1>. Il numero <math|v*n> è congruo a 1 modulo <math|m> e a 0
+  modulo <math|n>, mentre <math|u*m> fa il contrario. Ciascuno dei due
+  termini controlla quindi un resto senza disturbare l'altro, e il numero
 
   <\equation*>
     x=a*v*n+b*u*m
   </equation*>
 
-  è congruo ad <math|a> modulo <math|m> e a <math|b> modulo <math|n>. La
-  formula nasce dal desiderio di controllare i due resti separatamente.
+  è congruo ad <math|a> modulo <math|m> e a <math|b> modulo <math|n>.
 
   <subsection|Perché è unica la classe, non il numero>
 
-  Se <math|x,y> risolvono lo stesso sistema, <math|x-y> è divisibile sia per
-  <math|m> sia per <math|n>. Scriviamo <math|x-y=m*h>. Allora
-  <math|n\<mid\>m*h>; essendo <math|m,n> coprimi, il lemma di Euclide dà
-  <math|n\<mid\>h>. Quindi <math|m*n\<mid\>(x-y)>.
+  Se <math|x> e <math|y> risolvono lo stesso sistema, la differenza
+  <math|x-y> è divisibile sia per <math|m> sia per <math|n>. Scriviamo
+  <math|x-y=m*h>. Allora <math|n\<mid\>m*h>, e siccome <math|m> e <math|n>
+  sono coprimi il lemma di Euclide dà <math|n\<mid\>h>, cioè
+  <math|m*n\<mid\>(x-y)>.
 
-  Le soluzioni hanno tutte lo stesso resto modulo <math|m*n>. Viceversa,
-  aggiungere un multiplo di <math|m*n> a una soluzione conserva entrambe le
-  congruenze. È questo il significato preciso di \Sunica modulo <math|m*n>\T.
+  Tutte le soluzioni hanno quindi lo stesso resto modulo <math|m*n>, e
+  d'altra parte aggiungere a una soluzione un multiplo di <math|m*n> non
+  rovina nessuna delle due congruenze. È questo il senso preciso di \Sunica
+  modulo <math|m*n>\T.
 
   <figura|<image|assets/cinese.pdf|155.0mm|60.0mm||>|A sinistra ogni coppia
   di resti modulo 3 e modulo 5 compare una volta fra 0 e 14. A destra i
@@ -2239,46 +2445,49 @@
 
   <section|Moduli non coprimi: compatibilità e mcm>
 
-  Consideriamo <math|x\<equiv\>1<pmod|4>>, <math|x\<equiv\>3<pmod|6>>.
-  Entrambe le condizioni chiedono un numero dispari, quindi non si
-  contraddicono sulla parità. Scrivendo <math|x=1+4k> otteniamo
-  <math|4k\<equiv\>2<pmod|6>>, che si riduce a <math|2k\<equiv\>1<pmod|3>>.
-  Segue <math|k\<equiv\>2<pmod|3>>, e quindi <math|x=9+12t>.
+  Che cosa succede se i moduli hanno fattori in comune? Prendiamo
+  <math|x\<equiv\>1<pmod|4>> e <math|x\<equiv\>3<pmod|6>>. Entrambe le
+  condizioni chiedono un numero dispari, quindi almeno sulla parità vanno
+  d'accordo. Scrivendo <math|x=1+4k> otteniamo <math|4k\<equiv\>2<pmod|6>>,
+  che cancellando il 2 diventa <math|2k\<equiv\>1<pmod|3>>. Ne segue
+  <math|k\<equiv\>2<pmod|3>>, e quindi <math|x=9+12t>. Con secondo resto 2,
+  invece, la prima condizione chiederebbe un numero dispari e la seconda un
+  numero pari, e il sistema sarebbe impossibile.
 
-  Se il secondo resto fosse 2, avremmo invece un numero dispari dalla prima
-  condizione e pari dalla seconda: il sistema sarebbe impossibile.
+  In generale la sostituzione porta ancora a <math|m*k\<equiv\>b-a<pmod|n>>.
+  Posto <math|d=gcd(m,n)>, questa congruenza ha soluzione se e solo se
+  <math|d\<mid\>(b-a)>. È la condizione di <strong|compatibilità>, che chiede
+  ai due resti di essere congrui modulo il MCD dei moduli, come la parità
+  nell'esempio.
 
-  In generale la sostituzione dà ancora <math|m*k\<equiv\>b-a<pmod|n>>. Posto
-  <math|d=gcd(m,n)>, questa congruenza è risolvibile se e solo se
-  <math|d\<mid\>(b-a)>. Ecco la condizione di <strong|compatibilità>: i due
-  resti devono essere congrui modulo il MCD.
-
-  Quando sono compatibili, <math|k> varia di passi <math|n/d>, quindi
-  <math|x=a+m*k> varia di passi <math|m*n/d>. Quest'ultimo numero è
-  <math|<math-up|mcm>(m,n)>. Le soluzioni formano dunque un'unica classe
-  modulo il <strong|mcm>, non necessariamente modulo il prodotto.
+  Quando i resti sono compatibili, <math|k> varia a passi di <math|n/d>, e
+  quindi <math|x=a+m*k> varia a passi di <math|m*n/d>, che è proprio
+  <math|<math-up|mcm>(m,n)>. Le soluzioni formano allora un'unica classe
+  modulo il <strong|mcm>, che in generale è più piccolo del prodotto.
+  Nell'esempio, infatti, la classe è modulo 12 e non modulo 24.
 
   <subsection|Più di due moduli>
 
-  Per moduli a due a due coprimi ricombiniamo le prime due condizioni, poi il
-  risultato con la terza e così via. A ogni passo il prodotto dei moduli già
-  usati è coprimo con il successivo: un primo che dividesse entrambi dovrebbe
-  dividere uno dei moduli precedenti, contraddicendo la coprimalità a due a
-  due. Ripetendo il teorema per due moduli otteniamo, per induzione,
-  esistenza e unicità modulo il prodotto di tutti i moduli.
-
-  Per moduli non coprimi possiamo ugualmente combinarli due alla volta,
-  controllando la compatibilità e usando ogni volta il mcm come nuovo modulo.
-  Una potenza prima va conservata: sapere il resto modulo 9 contiene più
-  informazione che sapere soltanto quello modulo 3.
+  Con tre o più moduli a due a due coprimi possiamo combinare le prime due
+  condizioni, poi il risultato con la terza, e così via. A ogni passo il
+  prodotto dei moduli già usati è coprimo con il successivo, perché un primo
+  che li dividesse entrambi dovrebbe dividere anche uno dei moduli
+  precedenti, contro l'ipotesi. Per induzione otteniamo così una soluzione
+  unica modulo il prodotto di tutti i moduli. Con moduli non coprimi si
+  procede allo stesso modo, controllando ogni volta la compatibilità e usando
+  il mcm come nuovo modulo. Quando si semplifica un sistema, una potenza di
+  un primo va tenuta intera, perché il resto modulo 9 dice più del resto
+  modulo 3.
 
   <subsection|In sintesi>
 
-  Un <strong|inverso modulare> permette di dividere mantenendo il modulo. Le
-  <strong|congruenze lineari> si risolvono con il MCD e poi con un inverso.
-  Il <strong|teorema cinese> combina informazioni su moduli diversi: con
-  moduli coprimi tutte le coppie di resti sono possibili; nel caso generale
-  serve compatibilità e il periodo è il mcm.
+  Un <strong|inverso modulare> ci permette di dividere senza cambiare il
+  modulo, ed esiste quando il numero è coprimo con il modulo. Le
+  <strong|congruenze lineari> si risolvono controllando il MCD e usando un
+  inverso nel modulo ridotto. Il <strong|teorema cinese> unisce informazioni
+  su moduli diversi: con moduli coprimi ogni coppia di resti determina una
+  classe modulo il prodotto, mentre nel caso generale serve la compatibilità
+  e il periodo è il mcm.
 
   <\verifica|8>
     <strong|1.> Trova l'inverso di 5 modulo 12 e risolvi
@@ -2293,38 +2502,43 @@
   <chapter|Gruppi, anelli e campi>
 
   <\inbreve>
-    Abbiamo fatto conti con interi e classi di resto. Quali regole rimangono
-    valide quando cambiano gli oggetti? Gruppi, anelli e campi danno un nome
-    preciso a queste regole. Partiremo dalle operazioni che conosciamo e
-    capiremo che cosa possiamo chiedere loro.
+    Interi e classi di resto sono oggetti diversi, eppure molti conti si
+    fanno con le stesse regole. Ha senso allora chiedersi quali regole
+    valgano davvero in ciascun caso e quali, invece, dipendano dagli oggetti
+    scelti. Gruppi, anelli e campi sono i nomi che la matematica dà a queste
+    famiglie di regole, e qui li costruiremo a partire dalle operazioni che
+    già conosciamo.
   </inbreve>
 
   <section|Prima domanda: su quali oggetti facciamo i conti?>
 
-  Sommiamo due interi: otteniamo ancora un intero. Sommiamo due classi modulo
-  5: otteniamo ancora una classe modulo 5. Gli oggetti sono diversi, ma in
-  entrambi i casi possiamo sommare, usare uno zero e trovare un opposto.
+  Se sommiamo due interi otteniamo un intero, e se sommiamo due classi modulo
+  5 otteniamo una classe modulo 5. Gli oggetti sono diversi, ma in entrambi i
+  casi abbiamo uno zero, possiamo sommare in qualsiasi ordine e ogni elemento
+  ha un opposto.
 
-  Ora moltiplichiamo due interi. Il prodotto rimane intero, ma una regola
-  cambia: l'equazione <math|2x=1> non ha soluzione intera. Non possiamo
-  sempre annullare una moltiplicazione restando nello stesso insieme.
+  Con il prodotto degli interi, invece, qualcosa cambia. Il prodotto di due
+  interi è ancora un intero, ma l'equazione <math|2x=1> non ha soluzione
+  intera, e quindi non sempre possiamo annullare una moltiplicazione restando
+  fra gli interi.
 
-  Per questo una struttura comprende <strong|sia l'insieme sia le
-  operazioni>. Dire soltanto \Sgli interi\T non ci dice se stiamo studiando
-  la somma o il prodotto.
+  Per questo una struttura algebrica è fatta <strong|sia dall'insieme sia
+  dalle operazioni>. Dire soltanto \Sgli interi\T non basta, perché non
+  sappiamo ancora se stiamo guardando la somma, il prodotto o entrambi.
 
+  La prima richiesta è che l'operazione non ci faccia uscire dall'insieme.
   Un'<strong|operazione binaria interna> su <math|G> è una funzione
-  <math|G\<times\>G\<rightarrow\>G>. Prende due elementi e restituisce un
-  elemento dello stesso insieme. La sottrazione è interna su
-  <math|\<bbb-Z\>>, ma non su <math|\<bbb-N\>>: <math|2-5=-3> esce dai
-  naturali.
+  <math|G\<times\>G\<rightarrow\>G>, che a due elementi di <math|G> associa
+  un elemento di <math|G>. La sottrazione, per esempio, è interna su
+  <math|\<bbb-Z\>> ma non su <math|\<bbb-N\>>, perché <math|2-5=-3> non è un
+  naturale.
 
   <section|Gruppo: un'operazione che possiamo invertire>
 
-  Guardiamo <math|(\<bbb-Z\>,+)>. Possiamo raggruppare le somme senza
-  cambiarne il risultato; sommare zero lascia fermo ogni numero; a ogni
-  intero possiamo sommare il suo opposto per ottenere zero. Queste tre
-  proprietà sono il modello della definizione.
+  Prendiamo come modello <math|(\<bbb-Z\>,+)>. Possiamo raggruppare le somme
+  come vogliamo senza cambiarne il risultato, sommare zero non sposta nessun
+  numero, e a ogni intero possiamo sommare il suo opposto per tornare a zero.
+  La definizione di gruppo raccoglie esattamente queste tre proprietà.
 
   <\concetto|Gruppo>
     Un <strong|gruppo> è un insieme <math|G> con un'operazione interna,
@@ -2345,46 +2559,53 @@
     <strong|abeliano>.
   </concetto>
 
-  Associatività e commutatività chiedono cose diverse. La prima permette di
-  spostare le parentesi; la seconda di scambiare gli elementi. Un gruppo deve
-  avere la prima proprietà; può non avere la seconda. Vedremo un esempio con
-  le permutazioni.
+  Associatività e commutatività sono due richieste diverse, e conviene non
+  confonderle. La prima ci permette di spostare le parentesi, la seconda di
+  scambiare gli elementi. Ogni gruppo deve avere la prima, mentre la seconda
+  può mancare, e nel capitolo sulle permutazioni ne vedremo un esempio.
 
-  Con la somma scriviamo <math|0> al posto di <math|e> e <math|-x> al posto
-  di <math|x<rsup|-1>>. L'inverso additivo di 3 è <math|-3>; l'inverso
-  moltiplicativo sarebbe <math|1/3>. È sempre l'operazione a decidere che
-  cosa significa \Sinverso\T.
+  Quando l'operazione è la somma scriviamo <math|0> al posto di <math|e> e
+  <math|-x> al posto di <math|x<rsup|-1>>. L'inverso di 3 rispetto alla somma
+  è quindi <math|-3>, mentre rispetto al prodotto sarebbe <math|1/3>, e
+  questo ci ricorda che è sempre l'operazione a dare un significato alla
+  parola \Sinverso\T.
 
-  Perciò <math|(\<bbb-Z\>,+)> e <math|(\<bbb-Z\>/n\<bbb-Z\>,+)> sono gruppi
-  abeliani. Invece <math|(\<bbb-N\>,+)> non è un gruppo, perché manca
-  l'opposto di 1. Anche <math|(\<bbb-Z\>,\<cdot\>)> fallisce: manca l'inverso
-  moltiplicativo di 2.
+  Con queste definizioni <math|(\<bbb-Z\>,+)> e
+  <math|(\<bbb-Z\>/n\<bbb-Z\>,+)> sono gruppi abeliani. Non lo è invece
+  <math|(\<bbb-N\>,+)>, perché fra i naturali 1 non ha opposto, e non lo è
+  nemmeno <math|(\<bbb-Z\>,\<cdot\>)>, perché 2 non ha un inverso intero.
 
   <subsection|Perché in un gruppo possiamo cancellare>
 
-  Supponiamo <math|a*x=a*y>. L'ostacolo è il fattore <math|a> davanti alle
-  incognite. La definizione di gruppo ci offre un elemento che lo annulla:
-  <math|a<rsup|-1>>. Moltiplichiamo <em|a sinistra> entrambi i membri:
+  Supponiamo che <math|a*x=a*y> e chiediamoci se possiamo concludere
+  <math|x=y>. L'ostacolo è il fattore <math|a> davanti alle incognite, e la
+  definizione di gruppo ci mette a disposizione esattamente l'elemento che lo
+  annulla, cioè <math|a<rsup|-1>>. Moltiplichiamo allora entrambi i membri
+  <em|a sinistra> per <math|a<rsup|-1>>:
 
   <\equation*>
     a<rsup|-1>(a*x)=a<rsup|-1>(a*y).
   </equation*>
 
-  Per associatività possiamo raggruppare <math|a<rsup|-1>a>. Otteniamo
-  <math|e*x=e*y>, dunque <math|x=y>. Da <math|x*a=y*a> useremmo invece
-  l'inverso a destra. Non abbiamo scambiato nessun fattore.
+  Grazie all'associatività possiamo raggruppare <math|a<rsup|-1>a>, che vale
+  <math|e>, e otteniamo <math|e*x=e*y>, cioè <math|x=y>. Se invece partissimo
+  da <math|x*a=y*a> moltiplicheremmo a destra. In nessun momento abbiamo
+  scambiato l'ordine dei fattori, quindi il ragionamento funziona anche nei
+  gruppi non abeliani.
 
-  Anche il neutro e gli inversi sono unici. Se <math|e,f> fossero due neutri,
-  <math|e*f=e> perché <math|f> è neutro, ma <math|e*f=f> perché lo è
-  <math|e>: quindi <math|e=f>. Se <math|u,v> fossero due inversi di <math|x>,
-  allora <math|u=u(x*v)=(u*x)v=v>. L\<#2019\>inverso di <math|x<rsup|-1>> è
-  quindi <math|x>. Possiamo così parlare di <em|quel> neutro e di
-  <em|quell'>inverso.
+  Lo stesso tipo di argomento mostra che il neutro e gli inversi sono unici.
+  Se <math|e> e <math|f> fossero due neutri, il prodotto <math|e*f> varrebbe
+  <math|e> perché <math|f> è neutro, e varrebbe <math|f> perché <math|e> è
+  neutro, quindi <math|e=f>. Se <math|u> e <math|v> fossero due inversi di
+  <math|x>, avremmo <math|u=u(x*v)=(u*x)v=v>. Ne segue anche che l'inverso di
+  <math|x<rsup|-1>> è <math|x>. Possiamo quindi parlare tranquillamente del
+  neutro e dell'inverso.
 
   <section|Anello: somma e prodotto insieme>
 
-  Un gruppo descrive una sola operazione. Per studiare anche espressioni come
-  <math|a(b+c)> dobbiamo collegare somma e prodotto.
+  Un gruppo descrive una sola operazione. Per ragionare su espressioni come
+  <math|a(b+c)> ci serve una struttura che contenga somma e prodotto e dica
+  come si parlano.
 
   <\concetto|Anello>
     Un <strong|anello> ha due operazioni interne. La somma forma un gruppo
@@ -2398,26 +2619,32 @@
   </concetto>
 
   Gli interi e le classi modulo <math|n> sono anelli di questo tipo. In
-  <math|\<bbb-Z\>/n\<bbb-Z\>> lo zero è <math|[0]> e l'uno è <math|[1]>. Le
-  regole discendono da quelle degli interi, dopo la verifica della buona
-  definizione fatta nel capitolo 7.
+  <math|\<bbb-Z\>/n\<bbb-Z\>> lo zero è <math|[0]> e l'uno è <math|[1]>, e
+  tutte le regole vengono da quelle degli interi, una volta controllata la
+  buona definizione come abbiamo fatto nel capitolo 7.
 
-  Essere un anello non garantisce gli inversi moltiplicativi. Chiamiamo
-  <strong|unità> gli elementi che li hanno. Le unità formano un gruppo con il
-  prodotto: contengono 1; il prodotto di due unità ha inverso dato dal
-  prodotto dei loro inversi; l'inverso di un'unità è a sua volta un'unità.
+  In un anello, però, non tutti gli elementi hanno un inverso per il
+  prodotto. Quelli che ce l'hanno si chiamano <strong|unità>, e insieme
+  formano un gruppo rispetto al prodotto. Contengono infatti 1, il prodotto
+  di due unità ha come inverso il prodotto dei loro inversi, e l'inverso di
+  un'unità è a sua volta un'unità.
 
-  Per le classi di resto conosciamo già il criterio:
+  Per le classi di resto il criterio lo conosciamo già dal capitolo
+  precedente:
 
   <\equation*>
     (\<bbb-Z\>/n\<bbb-Z\>)<rsup|\<times\>>=<around|{|[a]<rsub|n>:gcd(a,n)=1|}>.
   </equation*>
 
-  Modulo 12 le unità sono <math|[1],[5],[7],[11]>. La classe <math|[3]> ha un
-  opposto additivo, <math|[9]>, ma non un inverso moltiplicativo. Sono due
-  domande diverse sullo stesso oggetto.
+  Modulo 12, per esempio, le unità sono <math|[1],[5],[7],[11]>. La classe
+  <math|[3]> ha un opposto per la somma, che è <math|[9]>, ma non ha un
+  inverso per il prodotto. Sono due domande diverse sullo stesso oggetto, e
+  possono avere risposte diverse.
 
   <section|Campo: dividere per ogni elemento non nullo>
+
+  Il caso più comodo è quello in cui si può dividere per qualsiasi elemento
+  diverso da zero, come siamo abituati a fare con le frazioni.
 
   <\concetto|Campo>
     Un <strong|campo> è un anello commutativo con identità, con
@@ -2425,81 +2652,85 @@
     moltiplicativo.
   </concetto>
 
-  Sono campi i razionali <math|\<bbb-Q\>> e i reali <math|\<bbb-R\>>, che
-  comprendono anche numeri come <math|<sqrt|2>>. Gli interi non lo sono.
+  I razionali <math|\<bbb-Q\>> sono un campo, e lo sono anche i reali
+  <math|\<bbb-R\>>, che comprendono numeri come <math|<sqrt|2>>. Gli interi,
+  invece, non lo sono.
 
-  Per <math|n\<geq\>2>, l'anello <math|\<bbb-Z\>/n\<bbb-Z\>> è un campo
+  Fra le classi di resto i campi si riconoscono facilmente: per
+  <math|n\<geq\>2>, l'anello <math|\<bbb-Z\>/n\<bbb-Z\>> è un campo
   <strong|esattamente quando <math|n> è primo>. Se <math|n=p> è primo, ogni
-  rappresentante <math|1,\<ldots\>,p-1> è coprimo con <math|p>, quindi ogni
+  numero fra <math|1> e <math|p-1> è coprimo con <math|p>, e quindi ogni
   classe non nulla è invertibile.
 
   Se invece <math|n=u*v> è composto, con <math|1\<less\>u,v\<less\>n>, le
-  classi <math|[u],[v]> sono non nulle ma il loro prodotto è zero. In un
-  campo questo è impossibile: da <math|[u][v]=[0]> potremmo moltiplicare per
-  l'inverso di <math|[u]> e ottenere <math|[v]=[0]>. Elementi non nulli che
-  danno prodotto zero si chiamano <strong|divisori dello zero>.
+  classi <math|[u]> e <math|[v]> sono diverse da zero ma il loro prodotto è
+  <math|[n]=[0]>. In un campo questo non può succedere, perché da
+  <math|[u][v]=[0]> potremmo moltiplicare per l'inverso di <math|[u]> e
+  ottenere <math|[v]=[0]>. Due elementi non nulli con prodotto zero si
+  chiamano <strong|divisori dello zero>, e la loro presenza basta a escludere
+  che si tratti di un campo.
 
   <figura|<image|assets/strutture.pdf|139.5mm|39.4mm||>|Un gruppo descrive
   una sola operazione. Un anello è un gruppo abeliano per la somma, con un
   prodotto collegato dalla distributività. In un campo ogni elemento non
   nullo ha anche un inverso moltiplicativo.>
 
-  <section|Omomorfismi: cambiare oggetti conservando i conti>
+  <section|Omomorfismi: cambiare oggetti senza cambiare i conti>
 
-  Consideriamo la funzione che manda un intero nella sua classe modulo 5:
-  <math|f(a)=[a]<rsub|5>>. Sommare prima e passare alla classe dopo dà lo
-  stesso risultato che passare prima alle classi e poi sommarle:
+  Consideriamo la funzione che manda ogni intero nella sua classe modulo 5,
+  cioè <math|f(a)=[a]<rsub|5>>. Possiamo sommare due interi e poi prendere la
+  classe, oppure prendere prima le classi e poi sommarle, e il risultato è lo
+  stesso:
 
   <\equation*>
     f(a+b)=f(a)+f(b).
   </equation*>
 
-  Anche <math|f(a*b)=f(a)f(b)> e <math|f(1)=[1]>. Chiamiamo
-  <strong|omomorfismo di anelli unitari> una funzione che conserva somma,
-  prodotto e identità. Per un omomorfismo di gruppi chiediamo la
-  conservazione della sola operazione del gruppo.
+  Lo stesso vale per il prodotto, <math|f(a*b)=f(a)f(b)>, e inoltre
+  <math|f(1)=[1]>. Una funzione fra anelli con queste tre proprietà, che
+  rispetta somma, prodotto e identità, si chiama <strong|omomorfismo di
+  anelli unitari>. Fra gruppi, invece, un omomorfismo deve rispettare
+  soltanto l'operazione del gruppo.
 
-  Un omomorfismo <strong|biiettivo> è un <strong|isomorfismo>. I due oggetti
-  hanno gli stessi conti, espressi con nomi diversi. Una funzione che
-  conserva i conti può invece perdere informazioni: la riduzione
-  <math|\<bbb-Z\>\<rightarrow\>\<bbb-Z\>/5\<bbb-Z\>> manda 2 e 7 nella stessa
-  classe e non è biiettiva.
+  Se un omomorfismo è anche <strong|biiettivo> si chiama
+  <strong|isomorfismo>, e in quel caso le due strutture hanno esattamente gli
+  stessi conti, scritti con nomi diversi. Un omomorfismo qualsiasi può invece
+  perdere informazione. La riduzione <math|\<bbb-Z\>\<rightarrow\>\<bbb-Z\>/5\<bbb-Z\>>,
+  per esempio, manda 2 e 7 nella stessa classe e quindi non è biiettiva.
 
   <subsection|Per proseguire: il teorema cinese come isomorfismo>
 
-  Sul prodotto <math|A\<times\>B> di due anelli si somma e si moltiplica
-  componente per componente: <math|(a,b)+(c,d)=(a+c,b+d)> e
-  <math|(a,b)(c,d)=(a*c,b*d)>.
-
-  La mappa
+  Su un prodotto <math|A\<times\>B> di due anelli si somma e si moltiplica
+  componente per componente, cioè <math|(a,b)+(c,d)=(a+c,b+d)> e
+  <math|(a,b)(c,d)=(a*c,b*d)>. Consideriamo la funzione
 
   <\equation*>
-    F:\<bbb-Z\>/(m*n)\<bbb-Z\>\<rightarrow\>\<bbb-Z\>/m\<bbb-Z\>\<times\>\<bbb-Z\>/n\<bbb-Z\>,<space|2em>[x]<rsub|m*n>\<mapsto\>([x]<rsub|m>,[x]<rsub|n>).
+    F:\<bbb-Z\>/(m*n)\<bbb-Z\>\<rightarrow\>\<bbb-Z\>/m\<bbb-Z\>\<times\>\<bbb-Z\>/n\<bbb-Z\>,<space|2em>[x]<rsub|m*n>\<mapsto\>([x]<rsub|m>,[x]<rsub|n>),
   </equation*>
 
-  è ben definita: cambiare <math|x> di un multiplo di <math|m*n> non cambia
-  nessuno dei due resti. Conserva i conti perché ridurre una somma o un
-  prodotto equivale a operare sui resti.
+  che a una classe modulo <math|m*n> associa i suoi due resti. È ben
+  definita, perché cambiare <math|x> di un multiplo di <math|m*n> non cambia
+  nessuno dei due resti, ed è un omomorfismo, perché ridurre una somma o un
+  prodotto è come operare sui resti.
 
-  Se <math|m,n> sono coprimi, il teorema cinese del capitolo 8 dice
-  esattamente che ogni coppia di classi corrisponde a una e una sola classe
-  modulo <math|m*n>. Dunque <math|F> è un isomorfismo. Viceversa, se fosse
-  suriettiva, la coppia <math|([0]<rsub|m>,[1]<rsub|n>)> avrebbe una
-  preimmagine <math|x>. Ogni divisore comune dei moduli dividerebbe sia
-  <math|x> sia <math|x-1>, quindi dividerebbe 1: i moduli devono essere
-  coprimi.
+  Se <math|m> e <math|n> sono coprimi, il teorema cinese dice che ogni coppia
+  di classi viene da una e una sola classe modulo <math|m*n>, e quindi
+  <math|F> è un isomorfismo. Vale anche il viceversa. Se <math|F> fosse
+  suriettiva, la coppia <math|([0]<rsub|m>,[1]<rsub|n>)> verrebbe da qualche
+  <math|x>, e ogni divisore comune dei due moduli dividerebbe sia <math|x>
+  sia <math|x-1>, quindi dividerebbe 1. I moduli sarebbero allora coprimi.
 
-  <strong|Per proseguire.> L'isomorfismo si restringe alle unità: una classe
-  modulo <math|m*n> è invertibile esattamente quando lo sono entrambe le sue
-  immagini. Infatti <math|gcd(x,m*n)=1> equivale a
-  <math|gcd(x,m)=gcd(x,n)=1>, perché un primo divide un prodotto solo se
-  divide un fattore. Questo dà anche l'isomorfismo fra i rispettivi gruppi
-  moltiplicativi.
+  L'isomorfismo si comporta bene anche con le unità. Una classe modulo
+  <math|m*n> è invertibile esattamente quando lo sono entrambi i suoi resti,
+  perché <math|gcd(x,m*n)=1> equivale a <math|gcd(x,m)=gcd(x,n)=1>, dato che
+  un primo divide un prodotto solo se divide uno dei fattori. Otteniamo così
+  anche un isomorfismo fra i gruppi delle unità.
 
   <subsection|In sintesi>
 
-  Gruppo, anello e campo distinguono quali operazioni e inversi abbiamo. Gli
-  omomorfismi permettono di confrontare strutture conservando i conti.
+  Gruppo, anello e campo distinguono quali operazioni abbiamo a disposizione
+  e quali inversi esistono. Gli omomorfismi ci permettono di confrontare
+  strutture diverse, trasportando i conti dall'una all'altra.
 
   <\verifica|9>
     <strong|1.> Le classi <math|[1],[2],[3],[4]> modulo 5 formano un gruppo
@@ -2507,91 +2738,100 @@
     farebbe fallire una proprietà?
 
     <strong|2.> La funzione <math|f:\<bbb-Z\>/6\<bbb-Z\>\<rightarrow\>\<bbb-Z\>/3\<bbb-Z\>>,
-    <math|[a]<rsub|6>\<mapsto\>[a]<rsub|3>>, è ben definita? Conserva somma,
+    <math|[a]<rsub|6>\<mapsto\>[a]<rsub|3>>, è ben definita? Rispetta somma,
     prodotto e identità? È un isomorfismo?
   </verifica>
 
   <chapter|Sottogruppi, gruppi ciclici e permutazioni>
 
   <\inbreve>
-    Dentro un gruppo possiamo trovare insiemi più piccoli che seguono le
-    stesse regole. Alcuni si ottengono ripetendo una sola operazione.
-    Studieremo sottogruppi, generatori e ordine, poi useremo le permutazioni
-    per vedere un gruppo in cui scambiare i fattori cambia il risultato.
+    Dentro un gruppo si nascondono spesso gruppi più piccoli, che seguono le
+    stesse regole con meno elementi. Alcuni nascono ripetendo all'infinito
+    una sola operazione, come le lancette di un orologio che avanzano sempre
+    dello stesso passo. Studieremo questi sottogruppi, i loro generatori e il
+    numero di passi necessari per tornare al punto di partenza, e infine le
+    permutazioni ci mostreranno un gruppo in cui l'ordine dei fattori cambia
+    il risultato.
   </inbreve>
 
   <section|Sottogruppo: quali elementi possiamo tenere?>
 
-  Gli interi pari sono un sottoinsieme degli interi. Sommandone due otteniamo
-  un pari; lo zero è pari; l'opposto di un pari è pari. Gli interi pari
-  formano quindi un gruppo con la stessa somma degli interi.
+  Gli interi pari sono una parte degli interi con un comportamento molto
+  ordinato. La somma di due pari è pari, lo zero è pari e l'opposto di un
+  pari è ancora pari, e così i pari formano un gruppo con la stessa somma
+  degli interi.
 
-  Gli interi dispari non funzionano: <math|1+3=4> esce dall'insieme. Un
-  sottoinsieme, da solo, non è necessariamente un gruppo.
+  Con i dispari questo non succede, perché <math|1+3=4> non è dispari. Un
+  sottoinsieme di un gruppo, da solo, non è quindi necessariamente un gruppo.
 
   Un <strong|sottogruppo> <math|H> di un gruppo <math|G> è un sottoinsieme
-  che forma un gruppo con l'operazione di <math|G>. Scriviamo
-  <math|H\<leq\>G>. Il neutro deve coincidere con quello di <math|G>: preso
-  <math|h\<in\>H>, da <math|e<rsub|H>h=h>, moltiplicando a destra per
-  <math|h<rsup|-1>> nel gruppo ambiente otteniamo <math|e<rsub|H>=e>. Gli
-  inversi coincidono per unicità.
+  che forma un gruppo con la stessa operazione di <math|G>, e si scrive
+  <math|H\<leq\>G>. Il suo neutro è per forza quello di <math|G>. Se infatti
+  <math|h\<in\>H> e <math|e<rsub|H>h=h>, possiamo moltiplicare a destra per
+  l'inverso di <math|h> in <math|G> e otteniamo <math|e<rsub|H>=e>. Anche gli
+  inversi coincidono, perché in <math|G> l'inverso è unico.
 
-  Per verificarlo basta controllare che contenga il neutro, i prodotti e gli
-  inversi dei suoi elementi. L'associatività è già valida nel gruppo ambiente
-  e continua a valere quando scegliamo elementi di <math|H>.
+  Per riconoscere un sottogruppo basta quindi controllare che contenga il
+  neutro, i prodotti dei suoi elementi e i loro inversi. L'associatività non
+  va ricontrollata, perché vale già per tutti gli elementi di <math|G>, e
+  quindi in particolare per quelli di <math|H>.
 
   <\anatomia|Riconoscere un sottogruppo>
-    L'obiettivo è riunire le tre verifiche in una sola condizione:
-    <math|H\<neq\>\<varnothing\>> e <math|x*y<rsup|-1>\<in\>H> per ogni
+    Vorremmo riassumere le tre verifiche in una sola condizione, cioè che
+    <math|H> non sia vuoto e che <math|x*y<rsup|-1>\<in\>H> per ogni
     <math|x,y\<in\>H>.
 
-    Perché dovrebbe bastare? La stessa espressione può produrre prima il
-    neutro, poi gli inversi, poi i prodotti: scegliamo opportunamente i suoi
-    due argomenti.
+    Una condizione così compatta può bastare perché la stessa espressione
+    <math|x*y<rsup|-1>>, con argomenti scelti bene, produce prima il neutro,
+    poi gli inversi e infine i prodotti.
 
-    Preso <math|a\<in\>H>, scegliamo <math|x=y=a>: otteniamo
-    <math|a*a<rsup|-1>=e\<in\>H>. Ora, per <math|y\<in\>H>, scegliamo
-    <math|x=e>: otteniamo <math|y<rsup|-1>\<in\>H>. Infine, per
-    <math|x,y\<in\>H>, sappiamo già che <math|y<rsup|-1>\<in\>H>. Applichiamo
-    la condizione a <math|x> e <math|y<rsup|-1>>: otteniamo
-    <math|x(y<rsup|-1>)<rsup|-1>=x*y\<in\>H>.
+    Preso un elemento <math|a\<in\>H>, scegliamo <math|x=y=a> e otteniamo
+    <math|a*a<rsup|-1>=e\<in\>H>. Ora che abbiamo il neutro, per ogni
+    <math|y\<in\>H> scegliamo <math|x=e> e otteniamo
+    <math|y<rsup|-1>\<in\>H>. Infine, dati <math|x,y\<in\>H>, sappiamo già
+    che <math|y<rsup|-1>\<in\>H>, e applicando la condizione a <math|x> e
+    <math|y<rsup|-1>> otteniamo <math|x(y<rsup|-1>)<rsup|-1>=x*y\<in\>H>.
 
-    Abbiamo recuperato tutte le proprietà richieste. Viceversa, ogni
-    sottogruppo soddisfa questa condizione, perché contiene gli inversi e i
-    prodotti.
+    Abbiamo ritrovato tutte le proprietà richieste. Il viceversa è immediato,
+    perché un sottogruppo contiene gli inversi e i prodotti dei suoi
+    elementi, e quindi anche <math|x*y<rsup|-1>>.
   </anatomia>
 
-  Con la somma il criterio diventa: <math|H\<neq\>\<varnothing\>> e
-  <math|x-y\<in\>H> per ogni <math|x,y\<in\>H>. Per esempio, per un intero
-  <math|d>, l'insieme <math|d\<bbb-Z\>> dei multipli di <math|d> contiene
-  zero e la differenza <math|d*k-d*h=d(k-h)>. Dunque è un sottogruppo di
-  <math|\<bbb-Z\>>.
+  Quando l'operazione è la somma il criterio diventa:
+  <math|H\<neq\>\<varnothing\>> e <math|x-y\<in\>H> per ogni
+  <math|x,y\<in\>H>. Così, per un intero <math|d>, l'insieme
+  <math|d\<bbb-Z\>> dei multipli di <math|d> è un sottogruppo di
+  <math|\<bbb-Z\>>, perché contiene lo zero e la differenza di due multipli,
+  <math|d*k-d*h=d(k-h)>, è ancora un multiplo.
 
-  L'intersezione di due sottogruppi è un sottogruppo: contiene il neutro e il
-  controllo <math|x*y<rsup|-1>> riesce in entrambi. L'unione può fallire:
-  <math|2\<bbb-Z\>\<cup\>3\<bbb-Z\>> contiene 2 e 3, ma non la loro somma 5.
+  L'intersezione di due sottogruppi è sempre un sottogruppo, perché contiene
+  il neutro e il controllo su <math|x*y<rsup|-1>> riesce in entrambi. Con
+  l'unione, invece, le cose possono andare male. L'insieme
+  <math|2\<bbb-Z\>\<cup\>3\<bbb-Z\>> contiene 2 e 3, ma non la loro somma 5,
+  che non è multipla né di 2 né di 3.
 
   <section|Gruppo ciclico: partire da un solo elemento>
 
-  In <math|\<bbb-Z\>/12\<bbb-Z\>>, partiamo da <math|[3]> e continuiamo a
-  sommarlo:
+  In <math|\<bbb-Z\>/12\<bbb-Z\>> partiamo da <math|[3]> e continuiamo a
+  sommarlo a sé stesso:
 
   <\equation*>
     [0],<space|0.5em>[3],<space|0.5em>[6],<space|0.5em>[9],<space|0.5em>[0],\<ldots\>
   </equation*>
 
-  Raggiungiamo quattro classi, poi il percorso si ripete. Queste classi
-  formano un sottogruppo. Se partiamo invece da <math|[1]>, raggiungiamo
-  tutte le dodici classi.
+  Dopo quattro classi torniamo al punto di partenza, e da lì il percorso si
+  ripete. Le quattro classi raggiunte formano un sottogruppo. Partendo invece
+  da <math|[1]>, con passi di una sola ora, raggiungiamo tutte e dodici le
+  classi.
 
   <figura|<image|assets/orologio12.pdf|82.5mm|75.0mm||>|I passi di 3
   raggiungono <math|[0],[3],[6],[9]>; i passi di 4 raggiungono
   <math|[0],[4],[8]>. I due sottogruppi hanno in comune soltanto <math|[0]>.>
 
-  In un gruppo scritto con il prodotto, ripetere l'operazione significa
-  prendere potenze. Poniamo <math|g<rsup|0>=e>, e per esponenti negativi
-  usiamo l'inverso: <math|g<rsup|-k>=(g<rsup|-1>)<rsup|k>>. Vale
-  <math|g<rsup|r>g<rsup|s>=g<rsup|r+s>> per interi <math|r,s>.
+  In un gruppo scritto con il prodotto, ripetere l'operazione vuol dire
+  prendere potenze. Poniamo <math|g<rsup|0>=e> e, per gli esponenti negativi,
+  <math|g<rsup|-k>=(g<rsup|-1>)<rsup|k>>. Con queste convenzioni vale
+  <math|g<rsup|r>g<rsup|s>=g<rsup|r+s>> per tutti gli interi <math|r,s>.
 
   <\concetto|Generato e gruppo ciclico>
     Il <strong|sottogruppo generato> da <math|g> è
@@ -2605,16 +2845,16 @@
     <math|k*g> al posto delle potenze.
   </concetto>
 
-  È davvero un sottogruppo: contiene <math|e=g<rsup|0>> e
-  <math|g<rsup|r>(g<rsup|s>)<rsup|-1>=g<rsup|r-s>> è ancora una potenza. È
-  anche abeliano, perché <math|r+s=s+r>. Il gruppo ambiente può invece essere
-  non abeliano.
+  Il generato è davvero un sottogruppo, perché contiene <math|e=g<rsup|0>> e
+  <math|g<rsup|r>(g<rsup|s>)<rsup|-1>=g<rsup|r-s>> è ancora una potenza di
+  <math|g>. È anche abeliano, perché <math|r+s=s+r>, anche quando il gruppo
+  che lo contiene non lo è.
 
   <section|Ordine: dopo quanti passi torniamo al neutro?>
 
-  Per <math|[3]> nella somma modulo 12, il primo ritorno a zero avviene dopo
-  quattro passi. Diciamo che <math|[3]> ha <strong|ordine 4>. Non
-  confondiamolo con il numero di elementi del gruppo ambiente, che è 12.
+  Sommando <math|[3]> modulo 12 siamo tornati a zero per la prima volta dopo
+  quattro passi, e diciamo allora che <math|[3]> ha <strong|ordine 4>. Non va
+  confuso con il numero degli elementi del gruppo, che è 12.
 
   <\concetto|Ordine di un elemento>
     In generale, l'<strong|ordine di un elemento> <math|g> è il minimo intero
@@ -2622,39 +2862,38 @@
     positiva torna al neutro, l'ordine è infinito.
   </concetto>
 
-  Negli interi con la somma, per esempio, 3 ha ordine infinito: nessun
+  Negli interi con la somma, per esempio, 3 ha ordine infinito, perché nessun
   multiplo positivo di 3 è zero.
 
-  In un gruppo finito un ritorno deve esistere. La lista
-  <math|e,g,g<rsup|2>,\<ldots\>> non può contenere per sempre elementi
-  distinti. Due potenze coincidono: <math|g<rsup|i>=g<rsup|j>> con
-  <math|i\<gtr\>j>. Moltiplicando per <math|g<rsup|-j>> otteniamo
-  <math|g<rsup|i-j>=e>, con esponente positivo.
-
-  <new-page>
+  In un gruppo finito, al contrario, prima o poi si torna sempre al neutro.
+  La lista <math|e,g,g<rsup|2>,\<ldots\>> non può contenere infiniti elementi
+  diversi, quindi due potenze coincidono, diciamo <math|g<rsup|i>=g<rsup|j>>
+  con <math|i\<gtr\>j>. Moltiplicando per <math|g<rsup|-j>> otteniamo
+  <math|g<rsup|i-j>=e>, con un esponente positivo.
 
   <subsection|Perché tutti i ritorni sono multipli del primo>
 
-  Sia <math|r> l'ordine di <math|g>. I multipli di <math|r> danno il neutro,
-  perché <math|g<rsup|q*r>=(g<rsup|r>)<rsup|q>=e>.
+  Sia <math|r> l'ordine di <math|g>. Dopo <math|2r>, <math|3r> e in generale
+  <math|q*r> passi siamo di nuovo al neutro, perché
+  <math|g<rsup|q*r>=(g<rsup|r>)<rsup|q>=e>. Vogliamo mostrare che questi sono
+  gli unici ritorni.
 
-  Per escludere altri ritorni, prendiamo un intero <math|k> con
-  <math|g<rsup|k>=e> e dividiamolo per <math|r>: <math|k=q*r+s>, con
-  <math|0\<leq\>s\<less\>r>. Allora
+  Prendiamo un intero <math|k> con <math|g<rsup|k>=e> e dividiamolo per
+  <math|r>, scrivendo <math|k=q*r+s> con <math|0\<leq\>s\<less\>r>. Allora
 
   <\equation*>
     e=g<rsup|k>=(g<rsup|r>)<rsup|q>g<rsup|s>=g<rsup|s>.
   </equation*>
 
-  Se <math|s\<gtr\>0>, avremmo un ritorno positivo più piccolo di <math|r>,
-  contro la sua definizione. Quindi <math|s=0> e <math|r\<mid\>k>. Abbiamo
-  dimostrato <math|g<rsup|k>=e\<Leftrightarrow\>r\<mid\>k>.
+  Se fosse <math|s\<gtr\>0>, avremmo un ritorno dopo meno di <math|r> passi,
+  contro la definizione di ordine. Quindi <math|s=0> e <math|r\<mid\>k>. In
+  breve, <math|g<rsup|k>=e> se e solo se <math|r\<mid\>k>.
 
-  La stessa idea mostra che <math|g<rsup|u>=g<rsup|v>\<Leftrightarrow\>u\<equiv\>v<pmod|r>>:
-  basta portare una potenza dall'altra parte usando l'inverso. Il generato
-  contiene quindi esattamente <math|r> elementi distinti,
-  <math|e,g,\<ldots\>,g<rsup|r-1>>. Se l'ordine è infinito, tutte le potenze
-  sono invece distinte.
+  Con la stessa idea, portando una potenza dall'altra parte, si vede che
+  <math|g<rsup|u>=g<rsup|v>> se e solo se <math|u\<equiv\>v<pmod|r>>. Il
+  generato contiene quindi esattamente <math|r> elementi distinti, cioè
+  <math|e,g,\<ldots\>,g<rsup|r-1>>. Se l'ordine è infinito, invece, tutte le
+  potenze sono diverse fra loro.
 
   <\attenzione|Precisare l'operazione>
     La classe <math|[3]> ha ordine 4 nel gruppo
@@ -2665,85 +2904,93 @@
 
   <section|Permutazioni: comporre cambiamenti di posizione>
 
-  Una <strong|permutazione> di un insieme è una biezione dell'insieme in sé.
-  Su <math|<around|{|1,2,3|}>> possiamo, per esempio, mandare 1 in 2, 2 in 3
-  e 3 in 1. Scriviamo questa permutazione come <math|\<sigma\>=(1 2 3)>: è un
-  <strong|ciclo>.
+  Una <strong|permutazione> di un insieme è una biiezione dell'insieme in sé
+  stesso, cioè un modo di rimescolarne gli elementi. Su
+  <math|<around|{|1,2,3|}>> possiamo, per esempio, mandare 1 in 2, 2 in 3 e 3
+  in 1. Questa permutazione si scrive <math|\<sigma\>=(1 2 3)> e si chiama
+  <strong|ciclo>, perché manda ogni elemento nel successivo e l'ultimo di
+  nuovo nel primo.
 
-  Un ciclo manda ogni elemento nel successivo e l'ultimo nel primo. Gli
-  elementi non scritti restano fermi. La permutazione <math|\<tau\>=(1 2)>
-  scambia 1 e 2 e lascia fermo 3.
+  Gli elementi che non compaiono nella scrittura restano fermi. La
+  permutazione <math|\<tau\>=(1 2)>, per esempio, scambia 1 e 2 e lascia 3
+  dov'è.
 
-  L'operazione fra permutazioni è la <strong|composizione>. Per convenzione
-  <math|\<sigma\>\<tau\>=\<sigma\>\<circ\>\<tau\>> significa applicare prima
-  <math|\<tau\>> e poi <math|\<sigma\>>. Leggiamo il fattore di destra per
-  primo.
+  Due permutazioni si combinano eseguendole una dopo l'altra, cioè con la
+  <strong|composizione>. Per convenzione <math|\<sigma\>\<tau\>=\<sigma\>\<circ\>\<tau\>>
+  vuol dire applicare prima <math|\<tau\>> e poi <math|\<sigma\>>, quindi si
+  legge da destra verso sinistra, come per le funzioni.
 
   <\guidato|Due ordini, due risultati>
-    Calcoliamo <math|\<sigma\>\<tau\>>. Il numero 1 passa prima a 2 e poi a
-    3; il 2 passa a 1 e poi a 2; il 3 rimane 3 e poi passa a 1. Quindi
-    <math|\<sigma\>\<tau\>=(1 3)>.
+    Calcoliamo <math|\<sigma\>\<tau\>> seguendo un numero alla volta. Il
+    numero 1 va prima in 2 con <math|\<tau\>>, e poi <math|\<sigma\>> lo
+    porta in 3. Il 2 va in 1 e poi in 2, quindi resta fermo. Il 3 resta 3 con
+    <math|\<tau\>> e poi va in 1. Quindi <math|\<sigma\>\<tau\>=(1 3)>.
 
-    Per <math|\<tau\>\<sigma\>>, il numero 1 passa a 2 e poi torna a 1; il 2
-    passa a 3 e resta 3; il 3 passa a 1 e poi a 2. Quindi
-    <math|\<tau\>\<sigma\>=(2 3)>.
+    Per <math|\<tau\>\<sigma\>> applichiamo prima <math|\<sigma\>>. Il numero
+    1 va in 2 e poi torna in 1, il 2 va in 3 e lì resta, e il 3 va in 1 e poi
+    in 2. Quindi <math|\<tau\>\<sigma\>=(2 3)>.
 
-    Le due permutazioni differiscono: il gruppo delle permutazioni di tre
-    elementi non è abeliano.
+    Le due permutazioni sono diverse, e così il gruppo delle permutazioni di
+    tre elementi non è abeliano.
   </guidato>
 
   <figura|<image|assets/permutazioni.pdf|150.0mm|62.5mm||>|Seguiamo ciascun
   filo dall'alto in basso. Nei due disegni cambia l'ordine delle permutazioni
   e cambiano le destinazioni.>
 
-  Le permutazioni di <math|<around|{|1,\<ldots\>,n|}>> formano il
-  <strong|gruppo simmetrico> <math|S<rsub|n>>. La composizione di biezioni è
-  una biezione; è associativa; il neutro è la funzione identità; ogni
-  biezione ha funzione inversa. Queste sono tutte le verifiche richieste
-  dalla definizione di gruppo. Ci sono <math|n!> permutazioni, per il
-  conteggio delle biezioni del capitolo 2.
+  Tutte le permutazioni di <math|<around|{|1,\<ldots\>,n|}>> formano il
+  <strong|gruppo simmetrico> <math|S<rsub|n>>. Le verifiche sono semplici. La
+  composizione di due biiezioni è una biiezione, la composizione di funzioni
+  è associativa, il neutro è la funzione identità e ogni biiezione ha una
+  funzione inversa. Per il conteggio delle biiezioni del capitolo 2, le
+  permutazioni sono <math|n!>.
 
-  Per scrivere una permutazione come prodotto di <strong|cicli disgiunti>,
-  partiamo da un elemento e seguiamo le sue immagini fino al ritorno.
-  Ripetiamo con un elemento non ancora visitato. I cicli così ottenuti
-  agiscono su insiemi separati e commutano.
+  Ogni permutazione si può scrivere come prodotto di <strong|cicli
+  disgiunti>. Partiamo da un elemento e seguiamo le sue immagini finché
+  torniamo al punto di partenza, poi ripetiamo da un elemento che non abbiamo
+  ancora visitato. I cicli che otteniamo spostano insiemi di elementi
+  separati, e per questo commutano fra loro.
 
-  Per esempio, <math|(1 2 3)(4 5)> torna all'identità quando il numero di
-  ripetizioni è sia multiplo di 3 sia multiplo di 2. Il primo è 6. In
-  generale l'ordine di una permutazione è il <strong|minimo comune multiplo
-  delle lunghezze dei suoi cicli disgiunti>.
+  Questa scrittura rende facile calcolare l'ordine. La permutazione <math|(1
+  2 3)(4 5)> torna all'identità quando il numero di ripetizioni è insieme un
+  multiplo di 3, per il primo ciclo, e un multiplo di 2, per il secondo, e il
+  primo numero con questa proprietà è 6. In generale l'ordine di una
+  permutazione è il <strong|minimo comune multiplo delle lunghezze dei suoi
+  cicli disgiunti>.
 
   <section|Per proseguire: altre immagini dei sottogruppi>
 
-  Per un intero <math|n\<geq\>1>, le <strong|radici <math|n>-esime
-  dell'unità> sono i numeri complessi <math|z> con <math|z<rsup|n>=1>. Per
-  <math|n=4> sono <math|1,i,-1,-i>, con <math|i<rsup|2>=-1>. Moltiplicare per
-  <math|i> percorre in ordine questi quattro punti sul cerchio. È un gruppo
-  ciclico. In generale, con la notazione trigonometrica
-  <math|e<rsup|i\<theta\>>=cos \<theta\>+i sin \<theta\>>, le radici sono
-  <math|e<rsup|2\<pi\>i*k/n>>, per <math|k=0,\<ldots\>,n-1>: il prodotto
-  somma gli angoli.
+  I gruppi ciclici compaiono anche fra i numeri complessi. Per un intero
+  <math|n\<geq\>1>, le <strong|radici <math|n>-esime dell'unità> sono i
+  numeri complessi <math|z> con <math|z<rsup|n>=1>. Per <math|n=4> sono
+  <math|1,i,-1,-i>, dove <math|i<rsup|2>=-1>, e moltiplicare ripetutamente
+  per <math|i> li percorre in ordine sul cerchio, come un orologio con
+  quattro ore. In generale, usando la notazione <math|e<rsup|i\<theta\>>=cos
+  \<theta\>+i sin \<theta\>>, le radici sono <math|e<rsup|2\<pi\>i*k/n>> per
+  <math|k=0,\<ldots\>,n-1>, e moltiplicarle vuol dire sommare gli angoli.
 
-  Il <strong|centro> <math|Z(G)> raccoglie gli elementi che commutano con
-  tutti gli altri. È un sottogruppo: contiene <math|e>; se <math|x,y>
-  commutano con ogni <math|h>, allora <math|(x*y)h=x(h*y)=h(x*y)>; da
-  <math|x*h=h*x>, moltiplicando a sinistra e a destra per <math|x<rsup|-1>>,
-  otteniamo <math|h*x<rsup|-1>=x<rsup|-1>h>. Quindi contiene prodotti e
-  inversi. Un gruppo è abeliano esattamente quando <math|Z(G)=G>.
+  Un altro sottogruppo interessante è il <strong|centro> <math|Z(G)>, formato
+  dagli elementi che commutano con tutti gli altri. Contiene il neutro. Se
+  <math|x> e <math|y> commutano con ogni <math|h>, allora
+  <math|(x*y)h=x(h*y)=h(x*y)>, quindi anche <math|x*y> sta nel centro.
+  Infine, da <math|x*h=h*x>, moltiplicando a sinistra e a destra per
+  <math|x<rsup|-1>>, otteniamo <math|h*x<rsup|-1>=x<rsup|-1>h>, e anche
+  l'inverso sta nel centro. Un gruppo è abeliano esattamente quando il centro
+  è tutto il gruppo.
 
-  Per i multipli interi, <math|d\<bbb-Z\>\<subseteq\>m\<bbb-Z\>> equivale a
-  <math|m\<mid\>d>: basta controllare che <math|d> sia un multiplo di
-  <math|m>. Inoltre, per <math|d,m\<gtr\>0>,
-  <math|d\<bbb-Z\>\<cap\>m\<bbb-Z\>=<math-up|mcm>(d,m)\<bbb-Z\>>, perché gli
-  elementi comuni sono proprio i multipli comuni.
+  Infine, fra i sottogruppi di multipli, l'inclusione
+  <math|d\<bbb-Z\>\<subseteq\>m\<bbb-Z\>> equivale a <math|m\<mid\>d>, perché
+  basta che <math|d> stesso sia un multiplo di <math|m>. Per
+  <math|d,m\<gtr\>0> vale inoltre <math|d\<bbb-Z\>\<cap\>m\<bbb-Z\>=<math-up|mcm>(d,m)\<bbb-Z\>>,
+  perché gli elementi comuni sono esattamente i multipli comuni.
 
   <subsection|In sintesi>
 
-  Un <strong|sottogruppo> conserva l'operazione e le sue regole. Un
-  <strong|generatore> produce tutti gli elementi di un gruppo ciclico.
-  L'<strong|ordine> conta i passi fino al primo ritorno al neutro. Le
-  <strong|permutazioni> mostrano concretamente perché in un gruppo l'ordine
-  dei fattori può contare.
+  Un <strong|sottogruppo> è una parte di un gruppo che resta un gruppo con la
+  stessa operazione. Un <strong|generatore> produce, ripetendo l'operazione,
+  tutti gli elementi di un gruppo ciclico, e l'<strong|ordine> conta i passi
+  fino al primo ritorno al neutro. Le <strong|permutazioni> mostrano in
+  concreto che in un gruppo l'ordine dei fattori può contare.
 
   <\verifica|10>
     <strong|1.> In <math|(\<bbb-Z\>/12\<bbb-Z\>,+)> elenca il sottogruppo
@@ -2758,10 +3005,12 @@
   <chapter|Potenze modulari e sviluppi decimali>
 
   <\inbreve>
-    L'ordine di un elemento descrive quando le sue potenze ricominciano.
-    Useremo questa idea per trovare un esponente incognito. Poi ritroveremo
-    la periodicità in un oggetto familiare: le cifre decimali di una
-    frazione.
+    Le potenze di un numero modulo <math|m> prima o poi ricominciano da capo,
+    e l'ordine ci dice dopo quanti passi. Sapendo questo possiamo risolvere
+    equazioni in cui l'incognita sta all'esponente, cercandola dentro un
+    ciclo finito. Lo stesso fenomeno si nasconde in un oggetto che conosciamo
+    dalla scuola, le cifre decimali di una frazione, e alla fine del capitolo
+    sapremo prevedere dal solo denominatore come sarà fatto il decimale.
   </inbreve>
 
   <section|Potenze modulari: cercare dentro un ciclo>
@@ -2777,14 +3026,19 @@
     4<rsup|3>\<equiv\>-4\<equiv\>13,<space|1em>4<rsup|4>\<equiv\>1<pmod|17>.
   </equation*>
 
-  Il primo ritorno a 1 avviene dopo quattro passi:
-  <math|<math-up|ord><rsub|17>(4)=4>. Dunque l'esponente conta modulo 4. Le
-  potenze assumono soltanto i valori <math|1,4,16,13>.
+  Dopo quattro passi siamo tornati a 1, e quindi
+  <math|<math-up|ord><rsub|17>(4)=4>. Da qui in poi le potenze ripetono
+  sempre gli stessi quattro valori <math|1,4,16,13>, e l'esponente conta
+  soltanto modulo 4.
 
-  La congruenza <math|4<rsup|x>\<equiv\>16<pmod|17>> ha perciò soluzioni
-  <math|x\<equiv\>2<pmod|4>>. Invece <math|4<rsup|x>\<equiv\>2<pmod|17>> non
-  ha soluzione: 2 non compare nel ciclo. Il fatto che 2 sia invertibile
-  modulo 17 non basta.
+  Questo basta a risolvere un'equazione come
+  <math|4<rsup|x>\<equiv\>16<pmod|17>>. Il valore 16 compare nel ciclo
+  all'esponente 2, quindi le soluzioni sono gli esponenti
+  <math|x\<equiv\>2<pmod|4>>. L'equazione
+  <math|4<rsup|x>\<equiv\>2<pmod|17>>, invece, non ha soluzioni, perché 2 non
+  compare mai nel ciclo. Il fatto che 2 sia invertibile modulo 17 non aiuta,
+  perché le potenze di 4 percorrono soltanto quattro delle sedici classi
+  invertibili.
 
   <\concetto|Equazione esponenziale modulare>
     Supponiamo <math|m\<geq\>2> e <math|gcd(a,m)=1>. Sia
@@ -2798,139 +3052,152 @@
     </equation*>
   </concetto>
 
-  Perché il modulo della risposta è <math|r>, mentre quello della domanda è
-  <math|m>? Stiamo descrivendo gli <em|esponenti> che portano allo stesso
-  punto del ciclo, e il ciclo si ripete ogni <math|r> passi.
+  Può sorprendere che la risposta sia modulo <math|r> mentre la domanda era
+  modulo <math|m>. Il motivo è che stiamo descrivendo gli <em|esponenti> che
+  portano allo stesso punto del ciclo, e il ciclo si ripete ogni <math|r>
+  passi.
 
-  La prova usa il capitolo 10. Se due potenze <math|a<rsup|x>> e
-  <math|a<rsup|x<rsub|0>>> coincidono modulo <math|m>, moltiplicando per
-  l'inversa della seconda otteniamo <math|a<rsup|x-x<rsub|0>>\<equiv\>1>.
-  Questo avviene esattamente quando <math|r\<mid\>(x-x<rsub|0>)>. Viceversa
-  aggiungere un multiplo di <math|r> all'esponente non cambia la potenza.
+  La dimostrazione usa quello che abbiamo visto nel capitolo 10. Se
+  <math|a<rsup|x>> e <math|a<rsup|x<rsub|0>>> coincidono modulo <math|m>,
+  moltiplicando per l'inversa della seconda otteniamo
+  <math|a<rsup|x-x<rsub|0>>\<equiv\>1>, e questo accade esattamente quando
+  <math|r\<mid\>(x-x<rsub|0>)>. Viceversa, aggiungere all'esponente un
+  multiplo di <math|r> non cambia la potenza.
 
-  Possiamo cercare <math|x> nei naturali. Se permettiamo esponenti interi
-  negativi, una potenza negativa indica la potenza dell'inversa modulare: il
-  ragionamento rimane lo stesso. Per basi non coprime con il modulo non
-  applichiamo questo criterio dell'ordine.
+  Di solito cerchiamo <math|x> fra i naturali. Se ammettiamo esponenti
+  negativi, una potenza negativa indica una potenza dell'inversa modulare, e
+  il ragionamento resta identico. Quando invece la base non è coprima con il
+  modulo, questo criterio non si applica, perché la base non sta nel gruppo
+  delle unità.
 
   <section|Spezzare il modulo, poi ricomporre gli esponenti>
 
-  Risolviamo <math|3<rsup|x>\<equiv\>61<pmod|91>>. Poiché
-  <math|91=7\<cdot\>13>, il teorema cinese ci permette di studiare
-  separatamente i resti modulo 7 e modulo 13.
+  Proviamo con un modulo più grande e risolviamo
+  <math|3<rsup|x>\<equiv\>61<pmod|91>>. Siccome <math|91=7\<cdot\>13>, il
+  teorema cinese ci permette di guardare separatamente i resti modulo 7 e
+  modulo 13, dove i cicli sono più corti.
 
-  Modulo 7, il termine noto è <math|61\<equiv\>5>. Le potenze, a partire
-  dall'esponente zero, sono
+  Modulo 7 il termine noto diventa <math|61\<equiv\>5>, e le potenze di 3, a
+  partire dall'esponente zero, sono
 
   <\equation*>
     1,3,2,6,4,5,1,\<ldots\>
   </equation*>
 
-  Il primo ritorno a 1 è all'esponente 6; il 5 compare all'esponente 5.
-  Otteniamo <math|x\<equiv\>5<pmod|6>>.
+  Il primo ritorno a 1 avviene all'esponente 6, e il 5 compare all'esponente
+  5, quindi la prima condizione è <math|x\<equiv\>5<pmod|6>>.
 
-  Modulo 13, il termine noto è <math|61\<equiv\>9>. Le potenze sono
-  <math|1,3,9,1,\<ldots\>>: ordine 3, quindi <math|x\<equiv\>2<pmod|3>>.
+  Modulo 13 il termine noto diventa <math|61\<equiv\>9>, e le potenze sono
+  <math|1,3,9,1,\<ldots\>>. Qui l'ordine è 3 e il 9 compare all'esponente 2,
+  quindi la seconda condizione è <math|x\<equiv\>2<pmod|3>>.
 
-  Ora abbiamo due condizioni sull'esponente. I moduli 6 e 3 non sono coprimi,
-  ma non serve forzare il teorema cinese nella forma coprima: ogni numero
-  <math|x=5+6k> dà resto 2 nella divisione per 3. La seconda condizione è già
-  contenuta nella prima.
-
-  Le soluzioni sono dunque <math|x\<equiv\>5<pmod|6>>. Controlliamo un
-  rappresentante: <math|3<rsup|5>=243=2\<cdot\>91+61>.
+  Ora abbiamo due condizioni sull'esponente, con moduli 6 e 3 che non sono
+  coprimi. Non serve però forzare il teorema cinese, perché ogni numero della
+  forma <math|x=5+6k> dà già resto 2 nella divisione per 3, e la seconda
+  condizione è quindi contenuta nella prima. Le soluzioni sono dunque gli
+  esponenti <math|x\<equiv\>5<pmod|6>>, e un controllo diretto lo conferma,
+  perché <math|3<rsup|5>=243=2\<cdot\>91+61>.
 
   <section|Decimali periodici: che cosa si ripete nella divisione?>
 
-  Per trovare le cifre di <math|1/7>, moltiplichiamo il resto corrente per
-  10, dividiamo per 7, scriviamo la cifra ottenuta e conserviamo il nuovo
-  resto. Il primo passo è <math|10=1\<cdot\>7+3>: la cifra è 1 e il nuovo
-  resto è 3. Poi <math|30=4\<cdot\>7+2>: la cifra è 4 e il resto è 2.
+  Facciamo la divisione di 1 per 7 come a scuola. A ogni passo moltiplichiamo
+  per 10 il resto che abbiamo, dividiamo per 7, scriviamo la cifra ottenuta e
+  teniamo il nuovo resto. Al primo passo <math|10=1\<cdot\>7+3>, quindi la
+  cifra è 1 e il nuovo resto è 3. Al secondo <math|30=4\<cdot\>7+2>, quindi
+  la cifra è 4 e il resto è 2.
 
-  I resti successivi sono <math|1,3,2,6,4,5,1>. Quando torna il resto
-  iniziale, torna esattamente la situazione da cui eravamo partiti. Le cifre
-  ricominciano: <math|1/7=0,<wide|142857|\<bar\>>>.
+  Continuando, i resti sono <math|1,3,2,6,4,5,1>. Quando ricompare il resto 1
+  ci ritroviamo esattamente nella situazione da cui eravamo partiti, e le
+  cifre ricominciano identiche. Per questo
+  <math|1/7=0,<wide|142857|\<bar\>>>.
 
   <figura|<image|assets/resti7.pdf|95.0mm|72.5mm||>|Ogni freccia indica una
   divisione: moltiplichiamo il resto per 10, otteniamo la cifra sulla freccia
   e passiamo al nuovo resto. Il ritorno al resto 1 fa ripartire le stesse
   cifre.>
 
-  Per un denominatore positivo <math|b>, i resti possibili sono soltanto
-  <math|0,1,\<ldots\>,b-1>. Se compare zero, la divisione termina.
-  Altrimenti, continuando, un resto deve ripetersi. Dallo stesso resto il
-  procedimento produce sempre la stessa cifra e lo stesso resto successivo:
-  da quel punto le cifre sono periodiche.
+  Lo stesso accade con qualsiasi denominatore positivo <math|b>. I resti
+  possibili sono soltanto <math|0,1,\<ldots\>,b-1>. Se a un certo punto
+  compare lo zero la divisione finisce. Altrimenti, siccome i resti possibili
+  sono finiti, prima o poi uno di essi si ripete, e da quel resto il
+  procedimento produce sempre la stessa cifra e lo stesso resto successivo.
+  Da lì in poi le cifre si ripetono.
 
-  Abbiamo dimostrato che <strong|ogni razionale ha uno sviluppo decimale
-  finito o eventualmente periodico>. \SEventualmente\T significa che può
-  esserci una parte iniziale prima del periodo.
+  Abbiamo così dimostrato che <strong|ogni razionale ha uno sviluppo decimale
+  finito o eventualmente periodico>. La parola \Seventualmente\T ricorda che
+  il periodo può cominciare dopo alcune cifre iniziali.
 
   <section|Dal periodo alla frazione>
 
-  Possiamo percorrere anche la strada inversa. Poniamo
-  <math|x=0,<wide|34|\<bar\>>>. Il periodo ha due cifre, quindi moltiplicare
-  per 100 sposta una copia del periodo prima della virgola:
+  Possiamo anche percorrere la strada al contrario. Prendiamo
+  <math|x=0,<wide|34|\<bar\>>>. Il periodo ha due cifre, e moltiplicando per
+  100 spostiamo una copia del periodo prima della virgola:
 
   <\equation*>
     100x=34,343434\<ldots\>,<space|2em>x=0,343434\<ldots\>
   </equation*>
 
-  Sottraendo, le due parti infinite coincidono e si cancellano:
-  <math|99x=34>. Dunque <math|x=34/99>.
+  Le due code infinite sono identiche, e sottraendo le due righe spariscono,
+  lasciando <math|99x=34>. Quindi <math|x=34/99>.
 
-  Se il periodo comincia più avanti, spostiamo prima la parte iniziale. Per
-  <math|x=0,1<wide|6|\<bar\>>> abbiamo <math|10x=1,666\<ldots\>> e
-  <math|100x=16,666\<ldots\>>. Sottraendo otteniamo <math|90x=15>, quindi
-  <math|x=1/6>.
+  Se il periodo comincia più avanti, prima spostiamo la virgola oltre la
+  parte iniziale. Per <math|x=0,1<wide|6|\<bar\>>> abbiamo
+  <math|10x=1,666\<ldots\>> e <math|100x=16,666\<ldots\>>, e sottraendo
+  otteniamo <math|90x=15>, cioè <math|x=1/6>.
 
-  In generale, se il blocco periodico rappresenta l'intero <math|B> ed è
-  lungo <math|r> cifre, la sua ripetizione pura vale <math|B/(10<rsup|r>-1)>.
-  Una parte iniziale di <math|s> cifre aggiunge un decimale finito e sposta
-  la parte periodica dividendo per <math|10<rsup|s>>. Il risultato è ancora
-  razionale. Perciò vale anche il viceversa: <strong|un decimale
-  eventualmente periodico rappresenta un razionale>.
+  In generale, se il blocco che si ripete è lungo <math|r> cifre e, letto
+  come numero intero, vale <math|B>, la sua ripetizione dopo la virgola vale
+  <math|B/(10<rsup|r>-1)>. Una parte iniziale di <math|s> cifre aggiunge un
+  decimale finito e divide la parte periodica per <math|10<rsup|s>>. In ogni
+  caso il risultato è una frazione, e quindi vale anche il viceversa:
+  <strong|un decimale eventualmente periodico rappresenta un razionale>.
 
   <section|Il denominatore anticipa la forma del decimale>
 
-  Riduciamo la frazione <math|a/b> ai minimi termini, con <math|b\<gtr\>0>, e
-  scriviamo
+  Si può sapere in anticipo se il decimale di una frazione termina, e quanto
+  è lungo il suo periodo? Riduciamo la frazione <math|a/b> ai minimi termini,
+  con <math|b\<gtr\>0>, e scriviamo
 
   <\equation*>
     b=2<rsup|\<alpha\>>5<rsup|\<beta\>>c,<space|2em>gcd(c,10)=1.
   </equation*>
 
-  Separiamo 2 e 5 perché sono i primi contenuti in 10. Una potenza di 10 può
-  assorbirli; non può assorbire i fattori di <math|c>.
+  Separiamo i fattori 2 e 5 perché sono i primi contenuti in 10. Una potenza
+  di 10 abbastanza grande li può assorbire, mentre i fattori di <math|c> non
+  li assorbe mai.
 
-  Se <math|c=1>, il denominatore divide <math|10<rsup|s>>, con
-  <math|s=max(\<alpha\>,\<beta\>)>. Possiamo quindi riscrivere la frazione
-  con denominatore <math|10<rsup|s>>: il decimale termina. Per esempio
+  Se <math|c=1>, il denominatore divide <math|10<rsup|s>> con
+  <math|s=max(\<alpha\>,\<beta\>)>, e possiamo riscrivere la frazione con
+  denominatore <math|10<rsup|s>>. Il decimale allora termina, come in
   <math|3/40=75/1000=0,075>.
 
-  Se <math|c\<gtr\>1>, il periodo non può scomparire. La parte iniziale ha
-  lunghezza <math|s=max(\<alpha\>,\<beta\>)> e la lunghezza minima del
-  periodo è <math|<math-up|ord><rsub|c>(10)>.
+  Se invece <math|c\<gtr\>1>, il periodo non può scomparire. In questo caso
+  la parte iniziale ha lunghezza <math|s=max(\<alpha\>,\<beta\>)>, e la
+  lunghezza minima del periodo è <math|<math-up|ord><rsub|c>(10)>.
 
-  Per capirne il motivo, dopo <math|s> spostamenti della virgola il
-  denominatore rimasto, ridotto, è <math|c>. Un periodo di lunghezza <math|r>
-  significa che spostare altre <math|r> cifre lascia la stessa parte
-  frazionaria: <math|10<rsup|r>a'/c-a'/c> è intero, con <math|gcd(a',c)=1>.
-  Questo equivale a <math|c\<mid\>(10<rsup|r>-1)>. Il primo <math|r>
-  possibile è proprio l'ordine di 10 modulo <math|c>.
+  Vediamo da dove viene questo ordine. Dopo aver spostato la virgola di
+  <math|s> posti, il denominatore che resta, ridotto, è <math|c>, e la
+  frazione ha la forma <math|a'/c> con <math|gcd(a',c)=1>, più eventualmente
+  un intero. Dire che il periodo è lungo <math|r> significa che spostando la
+  virgola di altri <math|r> posti la parte dopo la virgola resta la stessa,
+  cioè che <math|10<rsup|r>a'/c-a'/c> è un intero. Questo succede esattamente
+  quando <math|c\<mid\>(10<rsup|r>-1)>, e il più piccolo <math|r> con questa
+  proprietà è proprio l'ordine di 10 modulo <math|c>.
 
-  La lunghezza iniziale è esattamente <math|s>: prima di allora il
-  denominatore ridotto contiene ancora un fattore 2 o 5, mentre un periodo
-  puro ha denominatore che divide un numero <math|10<rsup|r>-1>, coprimo con
-  10. Per <math|1/6>, <math|6=2\<cdot\>3>: una cifra iniziale e periodo di
-  lunghezza <math|<math-up|ord><rsub|3>(10)=1>.
+  Anche la lunghezza della parte iniziale è esattamente <math|s>. Prima di
+  aver spostato la virgola di <math|s> posti, infatti, il denominatore
+  ridotto contiene ancora un fattore 2 o 5, mentre un decimale che si ripete
+  subito ha un denominatore che divide un numero della forma
+  <math|10<rsup|r>-1>, coprimo con 10. Per <math|1/6>, per esempio,
+  <math|6=2\<cdot\>3>, e infatti c'è una cifra iniziale seguita da un periodo
+  lungo <math|<math-up|ord><rsub|3>(10)=1>.
 
   <subsection|In sintesi>
 
-  Nelle <strong|potenze modulari> si ripete la posizione nel gruppo; nella
-  <strong|divisione decimale> si ripete il resto. In entrambi i casi,
-  conoscere il ritorno permette di descrivere un processo infinito con un
-  numero finito di passi.
+  Nelle <strong|potenze modulari> si ripete la posizione nel ciclo delle
+  potenze, e nella <strong|divisione decimale> si ripete il resto. In
+  entrambi i casi, sapere quando avviene il primo ritorno ci permette di
+  descrivere un processo infinito con un numero finito di passi.
 
   <\verifica|11>
     <strong|1.> Risolvi <math|2<rsup|x>\<equiv\>4<pmod|7>> per
@@ -2945,37 +3212,39 @@
   <chapter|Congruenze quadratiche e potenze prime>
 
   <\inbreve>
-    Le congruenze lineari ci hanno insegnato a cercare un'incognita
-    moltiplicata per un coefficiente. Ora compare un quadrato. Useremo i
-    campi per risolvere modulo un primo, poi vedremo come correggere le
-    soluzioni quando il modulo è una potenza. Il teorema cinese unirà i
-    risultati.
+    Finora l'incognita compariva al primo grado, moltiplicata per un
+    coefficiente. Quando compare un quadrato le cose si fanno più
+    interessanti, perché una congruenza può avere nessuna, una, due o anche
+    più soluzioni. Modulo un primo ci aiuterà il fatto di lavorare in un
+    campo, modulo una potenza di un primo correggeremo le soluzioni un passo
+    alla volta, e il teorema cinese metterà insieme i pezzi.
   </inbreve>
 
   <section|Un quadrato modulo un primo>
 
-  Cerchiamo le soluzioni di <math|x<rsup|2>\<equiv\>1<pmod|5>>. Possiamo
-  provare tutti i resti:
+  Cerchiamo le soluzioni di <math|x<rsup|2>\<equiv\>1<pmod|5>>. Le classi
+  modulo 5 sono soltanto cinque, quindi possiamo provarle tutte:
 
   <\equation*>
     0<rsup|2>\<equiv\>0,<space|1em>1<rsup|2>\<equiv\>1,<space|1em>2<rsup|2>\<equiv\>4,<space|1em>3<rsup|2>\<equiv\>4,<space|1em>4<rsup|2>\<equiv\>1<pmod|5>.
   </equation*>
 
   Le soluzioni sono <math|[1]> e <math|[4]>, cioè
-  <math|x\<equiv\>\<pm\>1<pmod|5>>. Il controllo è completo perché ogni
-  intero appartiene a una di queste cinque classi.
+  <math|x\<equiv\>\<pm\>1<pmod|5>>, e siamo sicuri di non averne perse perché
+  ogni intero sta in una di queste cinque classi.
 
-  Possiamo anche capire la struttura dell'equazione. Scriviamo
-  <math|x<rsup|2>-1=(x-1)(x+1)>. Modulo un primo <math|p>, un prodotto è zero
-  soltanto se almeno un fattore è zero. Infatti, se il primo fattore fosse
-  non nullo, avrebbe un inverso e potremmo cancellarlo. Quindi le soluzioni
-  di <math|x<rsup|2>\<equiv\>1<pmod|p>> sono <math|x\<equiv\>1> oppure
-  <math|x\<equiv\>-1>; per <math|p=2> queste due classi coincidono.
+  C'è anche una spiegazione che non richiede tentativi. Scriviamo
+  <math|x<rsup|2>-1=(x-1)(x+1)>. Modulo un primo <math|p> un prodotto è zero
+  soltanto se lo è uno dei fattori, perché se il primo fattore fosse diverso
+  da zero avrebbe un inverso e potremmo cancellarlo. Le soluzioni di
+  <math|x<rsup|2>\<equiv\>1<pmod|p>> sono quindi <math|x\<equiv\>1> e
+  <math|x\<equiv\>-1>, che per <math|p=2> sono la stessa classe.
 
-  Un numero <math|b> si chiama <strong|quadrato modulo <math|p>> se esiste
-  <math|x> con <math|x<rsup|2>\<equiv\>b<pmod|p>>. Per esempio 4 è un
-  quadrato modulo 5, mentre 2 non lo è. Essere un numero positivo non
-  garantisce di essere un quadrato in un dato modulo.
+  Un numero <math|b> si dice <strong|quadrato modulo <math|p>> se esiste un
+  <math|x> con <math|x<rsup|2>\<equiv\>b<pmod|p>>. Così 4 è un quadrato
+  modulo 5, mentre 2 non lo è, perché nella lista dei quadrati non compare.
+  Essere un numero positivo, o anche un quadrato fra gli interi, non c'entra
+  con l'essere un quadrato in un certo modulo.
 
   <\attenzione|Il modulo cambia le regole>
     Modulo 4, <math|2\<cdot\>2\<equiv\>0>, pur avendo due fattori non nulli.
@@ -2987,68 +3256,79 @@
 
   <section|Per proseguire: il discriminante modulo un primo>
 
-  Per <math|A*x<rsup|2>+B*x+C\<equiv\>0<pmod|p>>, con <math|p> primo dispari
-  e <math|p\<nmid\>A>, possiamo riprendere il completamento del quadrato.
-  L'identità
+  Per una congruenza di secondo grado <math|A*x<rsup|2>+B*x+C\<equiv\>0<pmod|p>>,
+  con <math|p> primo dispari e <math|p\<nmid\>A>, possiamo riprendere il
+  completamento del quadrato che conosciamo dalla scuola. L'identità
 
   <\equation*>
     4A(A*x<rsup|2>+B*x+C)=(2A*x+B)<rsup|2>-(B<rsup|2>-4A*C)
   </equation*>
 
   trasforma la congruenza in <math|(2A*x+B)<rsup|2>\<equiv\>\<Delta\><pmod|p>>,
-  dove <math|\<Delta\>=B<rsup|2>-4A*C>. La trasformazione è equivalente
-  perché <math|4A> è invertibile modulo <math|p>.
+  dove <math|\<Delta\>=B<rsup|2>-4A*C> è il solito discriminante. Il
+  passaggio non fa perdere né aggiungere soluzioni, perché <math|4A> è
+  invertibile modulo <math|p>.
 
-  Prima cerchiamo le radici <math|y> di <math|y<rsup|2>\<equiv\>\<Delta\>>.
-  Poi risolviamo la congruenza lineare <math|2A*x+B\<equiv\>y>: otteniamo
-  <math|x\<equiv\>(2A)<rsup|-1>(y-B)>. Se il discriminante non è un quadrato,
-  non ci sono soluzioni. Se è zero c'è una radice; se è un quadrato non nullo
-  ci sono due radici opposte, perché <math|y<rsup|2>-z<rsup|2>=(y-z)(y+z)> e
-  vale l'annullamento del prodotto.
+  Il problema si spezza così in due parti più semplici. Prima cerchiamo i
+  numeri <math|y> con <math|y<rsup|2>\<equiv\>\<Delta\>>, e poi, per
+  ciascuno, risolviamo la congruenza lineare <math|2A*x+B\<equiv\>y>, che dà
+  <math|x\<equiv\>(2A)<rsup|-1>(y-B)>. Se il discriminante non è un quadrato
+  non ci sono soluzioni, se è zero ce n'è una, e se è un quadrato non nullo
+  ce ne sono due, corrispondenti a due valori opposti di <math|y>. Che non ce
+  ne siano altre lo garantisce di nuovo l'annullamento del prodotto,
+  applicato a <math|y<rsup|2>-z<rsup|2>=(y-z)(y+z)>.
 
-  Per <math|x<rsup|2>+5x+3\<equiv\>0<pmod|11>>,
-  <math|\<Delta\>=25-12=13\<equiv\>2>. I quadrati dei rappresentanti
-  <math|0,1,2,3,4,5> sono <math|0,1,4,9,5,3>. Gli altri ripetono questi
-  risultati, perché il quadrato di <math|-x> è quello di <math|x>. Il 2 non
-  compare: nessuna soluzione.
+  Proviamo con <math|x<rsup|2>+5x+3\<equiv\>0<pmod|11>>. Il discriminante è
+  <math|\<Delta\>=25-12=13\<equiv\>2>. I quadrati di <math|0,1,2,3,4,5>
+  modulo 11 sono <math|0,1,4,9,5,3>, e quelli degli altri resti ripetono gli
+  stessi valori, perché <math|-x> ha lo stesso quadrato di <math|x>. Il 2 non
+  compare, e quindi la congruenza non ha soluzioni.
 
-  Se <math|p=2>, proviamo direttamente 0 e 1. Se <math|p\<mid\>A>, il termine
-  quadratico scompare modulo <math|p> e studiamo la congruenza lineare o
-  costante rimasta.
+  Restano due casi particolari. Se <math|p=2> basta provare direttamente 0 e
+  1. Se <math|p\<mid\>A>, il termine di secondo grado sparisce modulo
+  <math|p>, e resta da studiare una congruenza lineare o costante.
 
   <section|Sollevamento: una soluzione piccola va corretta>
 
-  Vogliamo ora risolvere <math|x<rsup|2>\<equiv\>6<pmod|25>>. Chi risolve
-  modulo 25 risolve anche modulo 5. Poiché <math|6\<equiv\>1<pmod|5>>, le
-  sole classi iniziali possibili sono 1 e 4.
+  Passiamo a un modulo che è una potenza di un primo, e risolviamo
+  <math|x<rsup|2>\<equiv\>6<pmod|25>>. Un numero che risolve la congruenza
+  modulo 25 la risolve anche modulo 5, e siccome <math|6\<equiv\>1<pmod|5>>
+  le sue classi modulo 5 possono essere soltanto 1 o 4. Questo restringe
+  molto la ricerca.
 
-  Ma 1 non è una soluzione modulo 25: <math|1<rsup|2>-6=-5> è divisibile per
-  5, non per 25. Dobbiamo cercare una correzione che conservi il resto 1
-  modulo 5.
+  Il numero 1, però, non va bene modulo 25, perché <math|1<rsup|2>-6=-5> è
+  divisibile per 5 ma non per 25. Dobbiamo correggerlo, restando fra i numeri
+  che hanno resto 1 modulo 5, altrimenti perderemmo la soluzione modulo 5 da
+  cui siamo partiti.
 
-  Tutti i candidati sono <math|x=1+5h>. Per avere classi distinte modulo 25
-  bastano <math|h=0,1,2,3,4>. Sostituiamo:
+  Questi numeri sono quelli della forma <math|x=1+5h>, e per ottenere classi
+  distinte modulo 25 basta far variare <math|h> fra 0 e 4. Sostituendo
+  troviamo
 
   <\equation*>
     (1+5h)<rsup|2>-6=-5+10h+25h<rsup|2>.
   </equation*>
 
-  L'ultimo termine è già multiplo di 25. Gli altri lo sono insieme se
-  <math|5(-1+2h)> è multiplo di 25, cioè se <math|-1+2h\<equiv\>0<pmod|5>>.
-  Otteniamo <math|h\<equiv\>3>, quindi <math|x\<equiv\>16<pmod|25>>.
+  L'ultimo termine è già un multiplo di 25, quindi resta da chiedere che lo
+  sia anche <math|-5+10h=5(-1+2h)>, cioè che <math|-1+2h\<equiv\>0<pmod|5>>.
+  Questa è una congruenza lineare con soluzione <math|h\<equiv\>3>, e
+  otteniamo <math|x\<equiv\>16<pmod|25>>.
 
-  Ripetiamo per il resto 4. Scriviamo <math|x=4+5h> e otteniamo
+  Facciamo lo stesso partendo dal resto 4. Scriviamo <math|x=4+5h> e
+  sostituiamo:
 
   <\equation*>
     (4+5h)<rsup|2>-6=10+40h+25h<rsup|2>.
   </equation*>
 
-  Dobbiamo avere <math|2+8h\<equiv\>0<pmod|5>>, ossia <math|2+3h\<equiv\>0>.
-  Questa volta <math|h\<equiv\>1> e <math|x\<equiv\>9<pmod|25>>.
+  Dividendo per 5 la condizione diventa <math|2+8h\<equiv\>0<pmod|5>>, cioè
+  <math|2+3h\<equiv\>0>, che dà <math|h\<equiv\>1> e quindi
+  <math|x\<equiv\>9<pmod|25>>.
 
-  Abbiamo considerato entrambe le radici modulo 5 e tutti i candidati sopra
-  ciascuna: le soluzioni sono esattamente <math|9,16> modulo 25. Il controllo
-  dà <math|9<rsup|2>=81=3\<cdot\>25+6> e <math|16<rsup|2>=256=10\<cdot\>25+6>.
+  Abbiamo esaminato entrambe le radici modulo 5 e, per ciascuna, tutti i
+  possibili numeri con quel resto, quindi le soluzioni sono esattamente 9 e
+  16 modulo 25. Un controllo finale lo conferma, perché
+  <math|9<rsup|2>=81=3\<cdot\>25+6> e <math|16<rsup|2>=256=10\<cdot\>25+6>.
 
   <\concetto|Sollevare una soluzione>
     Sollevare una soluzione da modulo <math|p> a modulo <math|p<rsup|2>>
@@ -3059,76 +3339,88 @@
 
   <section|Tre possibilità: una, nessuna o più correzioni>
 
-  Per una quadratica <math|f(x)=A*x<rsup|2>+B*x+C>, supponiamo
-  <math|f(x<rsub|0>)=p\<gamma\>>. Sviluppando il quadrato, come nell'esempio,
+  Nell'esempio ogni radice modulo 5 aveva esattamente una correzione, ma non
+  è sempre così. Per capire che cosa può succedere, prendiamo una quadratica
+  qualsiasi <math|f(x)=A*x<rsup|2>+B*x+C> e una soluzione <math|x<rsub|0>>
+  modulo <math|p>, con <math|f(x<rsub|0>)=p\<gamma\>>. Sviluppando come prima
   troviamo
 
   <\equation*>
     f(x<rsub|0>+p*h)=p\<gamma\>+p*h(2A*x<rsub|0>+B)+A*p<rsup|2>h<rsup|2>.
   </equation*>
 
-  La condizione modulo <math|p<rsup|2>> equivale quindi alla congruenza
+  L'ultimo termine è un multiplo di <math|p<rsup|2>>, e dividendo il resto
+  per <math|p> la condizione modulo <math|p<rsup|2>> diventa la congruenza
   lineare
 
   <\equation*>
     \<gamma\>+h(2A*x<rsub|0>+B)\<equiv\>0<pmod|p>.
   </equation*>
 
-  Se il coefficiente di <math|h> è non nullo modulo <math|p>, ha inverso e
-  determina <strong|una sola correzione>. Se invece è zero, la correzione non
-  può influire sul resto: quando <math|\<gamma\>\<nequiv\>0> non funziona
-  nessun <math|h>; quando <math|\<gamma\>\<equiv\>0> funzionano tutti i
-  <math|p> valori di <math|h>.
+  Tutto dipende allora dal coefficiente di <math|h>. Se non è zero modulo
+  <math|p> è invertibile, e c'è <strong|una sola correzione>. Se invece è
+  zero, la scelta di <math|h> non cambia nulla. In quel caso, quando
+  <math|\<gamma\>\<nequiv\>0>, nessuna correzione funziona, e quando
+  <math|\<gamma\>\<equiv\>0> funzionano tutti i <math|p> valori di <math|h>.
 
-  Per vedere la differenza, confrontiamo due esempi. Per
-  <math|x<rsup|2>\<equiv\>0<pmod|9>>, l'unica radice modulo 3 è 0; tutti i
-  candidati <math|0,3,6> hanno quadrato divisibile per 9. Per
-  <math|x<rsup|2>\<equiv\>3<pmod|9>>, partiamo ancora da 0 modulo 3, ma gli
-  stessi tre quadrati danno sempre resto zero, mai 3. Qui non c'è nessun
-  sollevamento.
+  Due esempi mostrano bene la differenza. Per
+  <math|x<rsup|2>\<equiv\>0<pmod|9>> l'unica radice modulo 3 è 0, e tutti i
+  candidati <math|0,3,6> hanno quadrato divisibile per 9, quindi la radice si
+  solleva in tre modi. Per <math|x<rsup|2>\<equiv\>3<pmod|9>> partiamo ancora
+  da 0 modulo 3, ma gli stessi tre quadrati danno sempre resto zero e mai 3,
+  e la radice non si solleva affatto.
 
   <figura|<image|assets/sollevamento.pdf|155.0mm|52.5mm||>|Una soluzione a un
   livello può avere una sola continuazione, <math|p> continuazioni oppure
   nessuna. I rami rappresentano possibilità controllate dall'equazione della
   correzione.>
 
-  Per passare da <math|p<rsup|k>> a <math|p<rsup|k+1>>, usiamo
-  <math|x=x<rsub|k>+p<rsup|k>h>. Sostituendo, il termine con il quadrato
-  della correzione contiene <math|p<rsup|2k>>, dunque è multiplo di
-  <math|p<rsup|k+1>> per <math|k\<geq\>1>. Dopo aver diviso per
-  <math|p<rsup|k>> rimane ancora una congruenza lineare modulo <math|p>. Un
-  ramo senza continuazioni non può produrre soluzioni più in alto.
+  Lo stesso metodo permette di salire ancora, da <math|p<rsup|k>> a
+  <math|p<rsup|k+1>>. Scriviamo <math|x=x<rsub|k>+p<rsup|k>h> e sostituiamo.
+  Il termine con il quadrato della correzione contiene <math|p<rsup|2k>>, che
+  per <math|k\<geq\>1> è un multiplo di <math|p<rsup|k+1>>, e dopo aver
+  diviso per <math|p<rsup|k>> resta ancora una congruenza lineare modulo
+  <math|p>. Si sale così un gradino alla volta, e un ramo che a un certo
+  livello non ha continuazioni non può dare soluzioni ai livelli successivi.
 
   <section|Il teorema cinese ricompone le radici>
 
-  Per risolvere una congruenza modulo <math|N>, scomponiamo <math|N> in
-  potenze di primi distinti. Queste potenze sono a due a due coprime.
-  Troviamo le radici su ogni pezzo; poi ogni scelta di una radice per pezzo
-  dà un'unica classe modulo <math|N>.
+  Per risolvere una congruenza modulo un numero <math|N> qualsiasi,
+  scomponiamo <math|N> in potenze di primi distinti, che sono a due a due
+  coprime. Troviamo le radici modulo ciascuna potenza, e il teorema cinese ci
+  dice che ogni scelta di una radice per ciascun pezzo corrisponde a un'unica
+  classe modulo <math|N>.
 
-  Per esempio, cerchiamo <math|x<rsup|2>\<equiv\>6<pmod|75>>. Modulo 25
-  conosciamo le radici 9 e 16; modulo 3 serve <math|x\<equiv\>0>. Per il
-  primo resto, <math|x=9+25k>: la condizione modulo 3 impone
-  <math|k\<equiv\>0>, quindi <math|x\<equiv\>9<pmod|75>>. Per il secondo,
-  <math|x=16+25k>, serve <math|1+k\<equiv\>0<pmod|3>>: <math|k\<equiv\>2>,
-  quindi <math|x\<equiv\>66<pmod|75>>. Abbiamo esattamente due classi.
+  Cerchiamo per esempio le soluzioni di <math|x<rsup|2>\<equiv\>6<pmod|75>>,
+  con <math|75=3\<cdot\>25>. Modulo 25 conosciamo già le radici 9 e 16,
+  mentre modulo 3 si ha <math|6\<equiv\>0> e serve quindi <math|x\<equiv\>0>.
+  Partendo dalla radice 9 scriviamo <math|x=9+25k>, e la condizione modulo 3
+  impone <math|k\<equiv\>0>, da cui <math|x\<equiv\>9<pmod|75>>. Partendo da
+  16 scriviamo <math|x=16+25k>, e la condizione diventa
+  <math|1+k\<equiv\>0<pmod|3>>, cioè <math|k\<equiv\>2>, da cui
+  <math|x\<equiv\>66<pmod|75>>. Le soluzioni sono quindi esattamente due
+  classi.
 
-  <strong|Per proseguire: contare senza trovare ogni radice.> Consideriamo
-  <math|x(x-1)\<equiv\>0<pmod|N>>, con <math|N\<gtr\>1> e <math|r> primi
-  distinti nella sua fattorizzazione. Modulo ogni potenza <math|p<rsup|e>>, i
-  due fattori consecutivi sono coprimi: tutti i fattori <math|p> devono stare
-  nello stesso fattore. Quindi <math|x\<equiv\>0> oppure
-  <math|x\<equiv\>1<pmod|p<rsup|e>>>. Le due scelte per ciascuno dei <math|r>
-  pezzi producono, attraverso il cinese, esattamente <math|2<rsup|r>>
-  soluzioni distinte modulo <math|N>.
+  <subsection|Per proseguire: contare senza trovare ogni radice>
+
+  A volte basta sapere quante sono le soluzioni, senza calcolarle una per
+  una. Consideriamo <math|x(x-1)\<equiv\>0<pmod|N>>, dove <math|N\<gtr\>1> ha
+  <math|r> primi distinti nella sua fattorizzazione. Modulo ogni potenza
+  <math|p<rsup|e>> che compare in <math|N>, i due fattori consecutivi
+  <math|x> e <math|x-1> sono coprimi, e quindi tutti i fattori <math|p>
+  devono stare nello stesso dei due. Ne segue che <math|x\<equiv\>0> oppure
+  <math|x\<equiv\>1<pmod|p<rsup|e>>>. Ci sono quindi due scelte per ciascuno
+  degli <math|r> pezzi, e grazie al teorema cinese queste scelte danno
+  esattamente <math|2<rsup|r>> soluzioni distinte modulo <math|N>.
 
   <subsection|In sintesi>
 
-  I pilastri lavorano insieme: il <strong|campo> giustifica la cancellazione
-  modulo un primo; le <strong|congruenze lineari> determinano le correzioni;
-  il <strong|teorema cinese> ricompone i risultati. Il metodo conserva tutte
-  le possibilità e controlla ogni volta le ipotesi che permettono il
-  passaggio.
+  Nelle congruenze quadratiche lavorano insieme diversi pilastri del libro.
+  Il fatto che modulo un primo si lavori in un <strong|campo> giustifica la
+  cancellazione, le <strong|congruenze lineari> determinano le correzioni da
+  un livello al successivo e il <strong|teorema cinese> ricompone i
+  risultati. A ogni passo il metodo tiene conto di tutte le possibilità e
+  controlla le ipotesi che rendono lecito il passaggio.
 
   <\verifica|12>
     <strong|1.> Trova tutte le soluzioni di
@@ -3141,227 +3433,262 @@
 
   <appendix|Soluzioni ragionate>
 
-  Ogni sezione richiama un capitolo. Prova prima a impostare il problema; poi
-  confronta il tuo ragionamento con la soluzione. Il numero 4.1, per esempio,
-  indica il primo esercizio del capitolo 4.
+  Le soluzioni seguono l'ordine dei capitoli, e il numero 4.1, per esempio,
+  indica il primo esercizio del capitolo 4. Prima di leggerle prova a
+  impostare il problema da solo, anche solo scegliendo il primo passo.
+  Confrontare il tuo tentativo con il ragionamento scritto qui insegna molto
+  più che leggere la risposta.
 
   <subsection*|Capitolo 1 \<#2014\> Il linguaggio matematico e l'induzione>
 
-  <strong|1.1.> Per <math|n=1> la formula è <math|1=1\<cdot\>2/2>. Supponiamo
-  che valga all'indice <math|n>: <math|1+\<cdots\>+n=n(n+1)/2>. Aggiungendo
-  l'ultimo termine della somma nuova otteniamo
+  <strong|1.1.> La base è <math|n=1>, dove la formula dice
+  <math|1=1\<cdot\>2/2>, che è vero. Per il passo supponiamo che
+  <math|1+\<cdots\>+n=n(n+1)/2> e guardiamo la somma fino a <math|n+1>. Come
+  suggerito, separiamo l'ultimo addendo e usiamo l'ipotesi per gli altri:
 
   <\equation*>
     1+\<cdots\>+n+(n+1)=<frac|n(n+1)|2>+(n+1)=<frac|(n+1)(n+2)|2>.
   </equation*>
 
-  Questa è la formula all'indice <math|n+1>. Base e passo dimostrano la tesi
-  per ogni <math|n\<geq\>1>.
+  L'ultimo passaggio raccoglie il fattore comune <math|n+1>, e il risultato è
+  proprio la formula con <math|n+1> al posto di <math|n>. Base e passo
+  insieme dimostrano la formula per ogni <math|n\<geq\>1>.
 
-  <strong|1.2.> Partendo da 0 e aggiungendo 2 si raggiungono soltanto
-  <math|0,2,4,6,\<ldots\>>. Il passo dimostra la proprietà all'indice
-  <math|n+2>, mentre per l'induzione su tutti i naturali servirebbe passare
-  da <math|n> a <math|n+1>. Si può applicare correttamente l'induzione a
-  <math|Q(k)>: \S<math|2k> è pari\T. La conclusione riguarda tutti gli interi
-  della forma <math|2k>, senza affermare che ogni naturale abbia quella
-  forma.
+  <strong|1.2.> Partendo da 0 e aggiungendo ogni volta 2, il ragionamento
+  raggiunge soltanto <math|0,2,4,6,\<ldots\>>, e dei numeri dispari non dice
+  nulla. Il problema è che il passo porta da <math|n> a <math|n+2>, mentre
+  per coprire tutti i naturali servirebbe un passo da <math|n> a <math|n+1>.
+  Il ragionamento si può comunque salvare cambiando la proprietà, cioè
+  facendo l'induzione su <math|Q(k)>: \S<math|2k> è pari\T. In questo modo
+  dimostriamo correttamente che tutti i numeri della forma <math|2k> sono
+  pari, senza pretendere che ogni naturale abbia quella forma.
 
   <subsection*|Capitolo 2 \<#2014\> Funzioni e conteggio>
 
-  <strong|2.1.> Le funzioni totali sono <math|3<rsup|4>=81>. Per ciascuno dei
-  tre valori di arrivo, le funzioni che lo evitano sono <math|2<rsup|4>=16>:
-  sottraiamo <math|3\<cdot\>16>. Ma una funzione costante evita due valori ed
-  è stata sottratta due volte; aggiungiamo le tre funzioni costanti, una per
-  ogni coppia di valori evitati. Non ci sono funzioni che evitano tutti i
-  valori, perché il dominio non è vuoto. Il totale è
+  <strong|2.1.> Partiamo da tutte le funzioni da quattro elementi a tre, che
+  sono <math|3<rsup|4>=81>. Fissato uno dei tre valori di arrivo, le funzioni
+  che lo evitano sono <math|2<rsup|4>=16>, e le togliamo per ciascun valore,
+  cioè togliamo <math|3\<cdot\>16>. Così però abbiamo esagerato, perché una
+  funzione costante evita due valori e l'abbiamo tolta due volte. Rimettiamo
+  quindi le tre funzioni costanti, una per ogni coppia di valori evitati.
+  Nessuna funzione evita tutti e tre i valori, perché il dominio non è vuoto,
+  e il totale è
 
   <\equation*>
     81-3\<cdot\>16+3\<cdot\>1=36.
   </equation*>
 
-  <strong|2.2.> Assegniamo prima un'unità a ciascuna variabile: poniamo
-  <math|u=x-1>, <math|v=y-1>, <math|w=z-1>. La nuova equazione è
-  <math|u+v+w=4>, con variabili non negative. Stelle e sbarre dà
-  <math|<binom|6|2>=15> soluzioni. Dividere sempre per 6 non funziona perché
-  il numero degli ordinamenti non è uniforme: <math|(1,2,4)> ha sei
-  ordinamenti distinti, mentre <math|(1,1,5)> ne ha soltanto tre. Le due
-  terne non vengono contate lo stesso numero di volte.
+  <strong|2.2.> Per avere variabili positive diamo prima un'unità a ciascuna,
+  ponendo <math|u=x-1>, <math|v=y-1> e <math|w=z-1>. L'equazione diventa
+  <math|u+v+w=4> con variabili non negative, e il metodo delle stelle e
+  sbarre dà <math|<binom|6|2>=15> soluzioni. Dividere per <math|3!=6> per
+  contare le terne senza ordine sarebbe sbagliato, perché non tutte le terne
+  hanno lo stesso numero di ordinamenti. La terna <math|(1,2,4)> si può
+  ordinare in sei modi diversi, mentre <math|(1,1,5)> soltanto in tre, e
+  quindi la divisione per 6 tratterebbe in modo uguale terne che compaiono un
+  numero diverso di volte.
 
   <subsection*|Capitolo 3 \<#2014\> Successioni e ricorrenze>
 
-  <strong|3.1.> Le radici caratteristiche sono 1 e 2. Cerchiamo
-  <math|a<rsub|n>=A+B2<rsup|n>>. I dati iniziali impongono <math|A+B=5> e
-  <math|A+2B=7>. Sottraendo troviamo <math|B=2>, quindi <math|A=3>. La
-  formula è <math|a<rsub|n>=3+2<rsup|n+1>>. Soddisfa la ricorrenza, essendo
-  combinazione delle due soluzioni caratteristiche, e parte da 5, 7; per
-  unicità è la successione richiesta. Il termine successivo è 11, sia dalla
-  formula sia dal calcolo <math|3\<cdot\>7-2\<cdot\>5>.
+  <strong|3.1.> La regola è la stessa del capitolo, quindi le radici
+  caratteristiche sono ancora 1 e 2 e cerchiamo
+  <math|a<rsub|n>=A+B2<rsup|n>>. Cambiano soltanto i dati iniziali, che ora
+  impongono <math|A+B=5> e <math|A+2B=7>. Sottraendo troviamo <math|B=2> e
+  quindi <math|A=3>, cioè <math|a<rsub|n>=3+2<rsup|n+1>>. Questa formula
+  rispetta la ricorrenza, perché combina due soluzioni caratteristiche, e
+  parte da 5 e 7, quindi per l'unicità è la successione cercata. Come
+  ulteriore controllo, il termine successivo vale 11 sia con la formula sia
+  con la regola, <math|3\<cdot\>7-2\<cdot\>5=11>.
 
-  <strong|3.2.> Con <math|T<rsub|0>=T<rsub|1>=1>, la ricorrenza dà
-  <math|T<rsub|2>=2>, <math|T<rsub|3>=3>, <math|T<rsub|4>=5>,
-  <math|T<rsub|5>=8>, <math|T<rsub|6>=13>. Per il secondo conteggio, le
-  coppie orizzontali possono essere 0, 1, 2 o 3. I contributi sono
-  rispettivamente <math|<binom|6|0>=1>, <math|<binom|5|1>=5>,
-  <math|<binom|4|2>=6>, <math|<binom|3|3>=1>. La somma è <math|1+5+6+1=13>.
+  <strong|3.2.> Con la ricorrenza, partendo da <math|T<rsub|0>=T<rsub|1>=1>,
+  troviamo successivamente <math|T<rsub|2>=2>, <math|T<rsub|3>=3>,
+  <math|T<rsub|4>=5>, <math|T<rsub|5>=8> e infine <math|T<rsub|6>=13>. Per il
+  secondo conteggio distinguiamo quante coppie orizzontali compaiono, che
+  possono essere 0, 1, 2 o 3. I contributi sono rispettivamente
+  <math|<binom|6|0>=1>, <math|<binom|5|1>=5>, <math|<binom|4|2>=6> e
+  <math|<binom|3|3>=1>, e la loro somma è di nuovo 13.
 
   <subsection*|Capitolo 4 \<#2014\> Divisione, MCD e algoritmo di Euclide>
 
-  <strong|4.1.> Il multiplo di 6 immediatamente precedente a <math|-29> è
-  <math|-30>. Dunque <math|-29=(-5)\<cdot\>6+1>: quoziente <math|-5>, resto
-  1. Il resto è non negativo e minore di 6, quindi la divisione rispetta
-  entrambe le condizioni.
+  <strong|4.1.> Il numero <math|-29> cade fra <math|-30> e <math|-24>, due
+  multipli consecutivi di 6. Il resto si misura a partire dal multiplo più
+  basso, quindi <math|-29=(-5)\<cdot\>6+1>, con quoziente <math|-5> e resto
+  1. Il resto è non negativo e minore di 6, come richiede la divisione
+  euclidea.
 
-  <strong|4.2.> Le divisioni sono <math|84=2\<cdot\>30+24>,
-  <math|30=1\<cdot\>24+6>, <math|24=4\<cdot\>6+0>. L'ultimo resto non nullo è
-  6, perciò <math|gcd(84,30)=6>. Dopo la prima divisione sappiamo soltanto
-  che il MCD cercato coincide con <math|gcd(30,24)>: il primo resto 24 non
-  divide 30, quindi non è ancora il MCD.
+  <strong|4.2.> Le divisioni sono <math|84=2\<cdot\>30+24>, poi
+  <math|30=1\<cdot\>24+6> e infine <math|24=4\<cdot\>6+0>. L'ultimo resto non
+  nullo è 6, e quindi <math|gcd(84,30)=6>. Fermarsi alla prima divisione non
+  basta, perché ci dice soltanto che il MCD cercato è uguale a
+  <math|gcd(30,24)>. Il resto 24 non divide 30, e quindi non può essere il
+  MCD.
 
   <subsection*|Capitolo 5 \<#2014\> Bézout e fattorizzazione in primi>
 
-  <strong|5.1.> Euclide dà <math|30=18+12>, <math|18=12+6>,
-  <math|12=2\<cdot\>6>. Risalendo, <math|6=18-12=18-(30-18)=2\<cdot\>18-30>.
-  Ogni combinazione intera di 30 e 18 è multipla del MCD 6. Perciò 7 è
-  impossibile; 12 è possibile, e moltiplicando l'identità per 2 troviamo
-  <math|12=4\<cdot\>18-2\<cdot\>30>.
+  <strong|5.1.> Euclide dà <math|30=18+12>, poi <math|18=12+6> e infine
+  <math|12=2\<cdot\>6>, quindi il MCD è 6. Risalendo troviamo
+  <math|6=18-12=18-(30-18)=2\<cdot\>18-30>. Ogni combinazione intera di 30 e
+  18 è un multiplo di 6, e per questo non potrà mai valere 7. Il 12, invece,
+  è un multiplo di 6, e moltiplicando l'identità per 2 lo otteniamo
+  esplicitamente: <math|12=4\<cdot\>18-2\<cdot\>30>.
 
-  <strong|5.2.> La fattorizzazione è <math|180=2<rsup|2>3<rsup|2>5>. I
+  <strong|5.2.> La fattorizzazione è <math|180=2<rsup|2>3<rsup|2>5>, quindi i
   divisori positivi sono <math|(2+1)(2+1)(1+1)=18>. Scriviamo anche
-  <math|48=2<rsup|4>3>. Per il MCD scegliamo gli esponenti minori, includendo
-  esponente zero per 5: otteniamo <math|2<rsup|2>3=12>. Per il mcm scegliamo
-  i maggiori: <math|2<rsup|4>3<rsup|2>5=720>. Il controllo
-  <math|12\<cdot\>720=180\<cdot\>48> conferma il risultato.
+  <math|48=2<rsup|4>3>. Per il MCD prendiamo per ogni primo l'esponente
+  minore, dando esponente zero al 5 che in 48 manca, e otteniamo
+  <math|2<rsup|2>3=12>. Per il mcm prendiamo invece gli esponenti maggiori, e
+  otteniamo <math|2<rsup|4>3<rsup|2>5=720>. La relazione fra MCD e mcm ci
+  offre un controllo, perché <math|12\<cdot\>720=8640=180\<cdot\>48>.
 
   <subsection*|Capitolo 6 \<#2014\> Equazioni diofantee>
 
-  <strong|6.1.> Il MCD di 4 e 6 è 2 e divide 14. Dividiamo per 2:
-  <math|2x+3y=7>. Dalla soluzione <math|(2,1)> otteniamo tutte le altre con
-  il passo <math|(3,-2)>:
+  <strong|6.1.> Il MCD di 4 e 6 è 2, che divide 14, quindi le soluzioni
+  esistono. Dividendo per 2 otteniamo <math|2x+3y=7>, e a partire dalla
+  soluzione <math|(2,1)> troviamo tutte le altre spostandoci a passi di
+  <math|(3,-2)>:
 
   <\equation*>
     x=2+3t,<space|2em>y=1-2t,<space|2em>t\<in\>\<bbb-Z\>.
   </equation*>
 
-  La non negatività chiede <math|t\<geq\>-2/3> e <math|t\<leq\>1/2>. L'unico
-  intero nell'intervallo è 0, quindi l'unica soluzione non negativa è
-  <math|(2,1)>.
+  Chiedere <math|x,y\<geq\>0> significa chiedere <math|t\<geq\>-2/3> e
+  <math|t\<leq\>1/2>. L'unico intero fra questi due limiti è 0, e quindi
+  l'unica soluzione non negativa è <math|(2,1)>.
 
-  <strong|6.2.> Poniamo <math|u=x+y>, <math|v=x-y>. Serve <math|u*v=8>, con
-  <math|u,v> della stessa parità. Le coppie <math|(1,8)> e <math|(8,1)> non
-  vanno bene; quelle positive ammesse sono <math|(2,4),(4,2)>. Danno
-  rispettivamente <math|(x,y)=(3,-1),(3,1)>. Le coppie negative
-  <math|(-2,-4),(-4,-2)> danno <math|(-3,1),(-3,-1)>. Queste sono tutte le
-  quattro soluzioni. Senza il controllo di parità avremmo incluso coordinate
-  non intere.
+  <strong|6.2.> Poniamo <math|u=x+y> e <math|v=x-y>, così che l'equazione
+  diventi <math|u*v=8>, con <math|u> e <math|v> della stessa parità perché
+  <math|x> e <math|y> siano interi. Le coppie <math|(1,8)> e <math|(8,1)>
+  vanno quindi scartate, e fra quelle positive restano <math|(2,4)> e
+  <math|(4,2)>, che danno <math|(x,y)=(3,-1)> e <math|(3,1)>. Le coppie
+  negative <math|(-2,-4)> e <math|(-4,-2)> danno <math|(-3,1)> e
+  <math|(-3,-1)>, e queste quattro sono tutte le soluzioni. Senza il
+  controllo della parità, con <math|(1,8)> avremmo ottenuto <math|x=9/2>, che
+  non è intero.
 
   <subsection*|Capitolo 7 \<#2014\> Congruenze e classi>
 
-  <strong|7.1.> Tre rappresentanti sono <math|-2,5,12>. Il rappresentante fra
-  0 e 6 è 5, dato che <math|-2=(-1)\<cdot\>7+5>. Per le operazioni riduciamo
-  prima: <math|[12]<rsub|7>=[5]<rsub|7>> e <math|[17]<rsub|7>=[3]<rsub|7>>.
-  Quindi la somma è <math|[8]<rsub|7>=[1]<rsub|7>> e il prodotto è
-  <math|[15]<rsub|7>=[1]<rsub|7>>. Somma e prodotto danno qui la stessa
-  classe, pur essendo operazioni diverse.
+  <strong|7.1.> Tre rappresentanti di <math|[-2]<rsub|7>> sono <math|-2>,
+  <math|5> e <math|12>, e quello fra 0 e 6 è 5, perché
+  <math|-2=(-1)\<cdot\>7+5>. Per fare i conti conviene ridurre subito,
+  scrivendo <math|[12]<rsub|7>=[5]<rsub|7>> e
+  <math|[17]<rsub|7>=[3]<rsub|7>>. La somma è allora
+  <math|[8]<rsub|7>=[1]<rsub|7>> e il prodotto è
+  <math|[15]<rsub|7>=[1]<rsub|7>>. Che somma e prodotto diano la stessa
+  classe è soltanto una coincidenza di questo esempio.
 
-  <strong|7.2.> La prima regola è ben definita: se
+  <strong|7.2.> La prima regola è ben definita. Se
   <math|a\<equiv\>b<pmod|5>>, anche <math|a+1\<equiv\>b+1<pmod|5>>, perché la
-  differenza resta <math|a-b>. La seconda non lo è: i rappresentanti 0 e 5
-  indicano la stessa classe, ma produrrebbero gli interi distinti 1 e 6. Il
-  codominio conta: nel primo caso il risultato è una classe, nel secondo è un
-  intero.
+  differenza è ancora <math|a-b>, e quindi rappresentanti diversi della
+  stessa classe danno la stessa classe come risultato. La seconda regola,
+  invece, non è ben definita, perché 0 e 5 rappresentano la stessa classe ma
+  produrrebbero gli interi 1 e 6, che sono diversi. La differenza sta tutta
+  nel risultato. Nel primo caso è una classe, che non distingue 1 da 6,
+  mentre nel secondo è un intero, che li distingue.
 
   <subsection*|Capitolo 8 \<#2014\> Congruenze lineari e teorema cinese>
 
-  <strong|8.1.> Il numero 5 è inverso di sé stesso modulo 12, perché
+  <strong|8.1.> Il numero 5 è l'inverso di sé stesso modulo 12, perché
   <math|5\<cdot\>5=25\<equiv\>1<pmod|12>>. Per <math|8x\<equiv\>4<pmod|12>>
-  il MCD è 4 e divide il termine noto. Dividendo coefficiente, termine noto e
-  modulo per 4 otteniamo <math|2x\<equiv\>1<pmod|3>>. L'inverso di 2 modulo 3
-  è 2, dunque <math|x\<equiv\>2<pmod|3>>. Nel modulo iniziale 12 le quattro
-  classi sono quelle di <math|2,5,8,11>.
+  il MCD di 8 e 12 è 4, che divide il termine noto, quindi le soluzioni
+  esistono. Dividendo coefficiente, termine noto e modulo per 4 otteniamo
+  <math|2x\<equiv\>1<pmod|3>>, e siccome l'inverso di 2 modulo 3 è 2 troviamo
+  <math|x\<equiv\>2<pmod|3>>. Questa è un'unica classe nel modulo ridotto,
+  che nel modulo iniziale 12 corrisponde alle quattro classi di
+  <math|2,5,8,11>.
 
-  <strong|8.2.> Il MCD dei moduli è 3 e divide <math|5-2=3>, quindi il
-  sistema è compatibile. Scriviamo <math|x=2+6k> e sostituiamo:
-  <math|6k\<equiv\>3<pmod|9>>. Dividendo per 3 otteniamo
-  <math|2k\<equiv\>1<pmod|3>>, quindi <math|k\<equiv\>2<pmod|3>>. Ne segue
-  <math|x=14+18t>, cioè <math|x\<equiv\>14<pmod|18>>. Il periodo è
-  <math|<math-up|mcm>(6,9)=18>. Con secondo resto 4, il MCD 3 non divide
-  <math|4-2=2>: nessuna soluzione.
+  <strong|8.2.> Il MCD dei moduli è 3 e divide la differenza dei resti
+  <math|5-2=3>, quindi il sistema è compatibile. Scriviamo <math|x=2+6k> e
+  sostituiamo nella seconda condizione, ottenendo
+  <math|6k\<equiv\>3<pmod|9>>. Dividendo per 3 arriviamo a
+  <math|2k\<equiv\>1<pmod|3>>, cioè <math|k\<equiv\>2<pmod|3>>, e quindi
+  <math|x=14+18t>, ovvero <math|x\<equiv\>14<pmod|18>>. Il periodo è
+  <math|<math-up|mcm>(6,9)=18>, come previsto. Se il secondo resto fosse 4,
+  il MCD 3 non dividerebbe <math|4-2=2>, e il sistema non avrebbe soluzioni.
 
   <subsection*|Capitolo 9 \<#2014\> Gruppi, anelli e campi>
 
-  <strong|9.1.> L'insieme delle classi non nulle modulo 5 forma un gruppo con
-  il prodotto. Sono tutte unità perché 5 è primo. Il neutro è <math|[1]>; gli
-  inversi sono <math|[1]<rsup|-1>=[1]>, <math|[2]<rsup|-1>=[3]>,
-  <math|[3]<rsup|-1>=[2]> e <math|[4]<rsup|-1>=[4]>. Controlliamo i prodotti:
-  <math|2\<cdot\>3=6\<equiv\>1> e <math|4\<cdot\>4=16\<equiv\>1<pmod|5>>. La
-  chiusura segue anche dall'annullamento del prodotto: due classi non nulle
-  non possono dare zero in un campo. Aggiungendo <math|[0]> mancherebbe il
-  suo inverso: nessun prodotto con zero può dare <math|[1]>.
+  <strong|9.1.> Le classi non nulle modulo 5 formano un gruppo con il
+  prodotto, perché 5 è primo e quindi sono tutte unità. Il neutro è
+  <math|[1]>, e gli inversi sono <math|[1]<rsup|-1>=[1]>,
+  <math|[2]<rsup|-1>=[3]>, <math|[3]<rsup|-1>=[2]> e <math|[4]<rsup|-1>=[4]>,
+  come confermano i prodotti <math|2\<cdot\>3=6\<equiv\>1> e
+  <math|4\<cdot\>4=16\<equiv\>1<pmod|5>>. Il prodotto non ci fa uscire
+  dall'insieme, perché in un campo due classi non nulle non possono avere
+  prodotto zero. Aggiungendo <math|[0]> il gruppo si romperebbe, perché
+  nessun prodotto per zero può dare <math|[1]>, e quindi <math|[0]>
+  resterebbe senza inverso.
 
   <strong|9.2.> Se <math|[a]<rsub|6>=[b]<rsub|6>>, la differenza <math|a-b> è
-  un multiplo di 6 e quindi di 3: <math|[a]<rsub|3>=[b]<rsub|3>>. La funzione
-  è ben definita. Inoltre <math|f([a]+[b])=[a+b]<rsub|3>=f([a])+f([b])>;
-  analogamente <math|f([a][b])=[a*b]<rsub|3>=f([a])f([b])>, e
-  <math|f([1]<rsub|6>)=[1]<rsub|3>>. È un omomorfismo unitario. Non è un
-  isomorfismo: <math|[0]<rsub|6>> e <math|[3]<rsub|6>> sono distinte, ma
-  hanno la stessa immagine <math|[0]<rsub|3>>. Dunque non è iniettiva.
+  un multiplo di 6, e quindi anche di 3, cioè <math|[a]<rsub|3>=[b]<rsub|3>>,
+  e la funzione è ben definita. Rispetta la somma, perché
+  <math|f([a]+[b])=[a+b]<rsub|3>=f([a])+f([b])>, e allo stesso modo il
+  prodotto, <math|f([a][b])=[a*b]<rsub|3>=f([a])f([b])>, e manda
+  <math|[1]<rsub|6>> in <math|[1]<rsub|3>>. È quindi un omomorfismo di anelli
+  unitari. Non è però un isomorfismo, perché le classi distinte
+  <math|[0]<rsub|6>> e <math|[3]<rsub|6>> hanno la stessa immagine
+  <math|[0]<rsub|3>>, e la funzione non è iniettiva.
 
   <subsection*|Capitolo 10 \<#2014\> Sottogruppi e cicli>
 
-  <strong|10.1.> I multipli successivi di <math|[8]> sono
-  <math|[0],[8],[4],[0],\<ldots\>>. Il generato è
-  <math|<around|{|[0],[4],[8]|}>> e l'ordine di <math|[8]> è 3: né uno né due
-  passi danno zero, mentre <math|3\<cdot\>8=24\<equiv\>0<pmod|12>>. La
-  differenza di due multipli di <math|[8]> è ancora un multiplo di
-  <math|[8]>: <math|r[8]-s[8]=(r-s)[8]>. Questo verifica il criterio additivo
-  del sottogruppo per tutti gli elementi, senza dover provare separatamente
-  ogni coppia.
+  <strong|10.1.> Sommando ripetutamente <math|[8]> troviamo
+  <math|[0],[8],[4],[0],\<ldots\>>, quindi il generato è
+  <math|<around|{|[0],[4],[8]|}>>. L'ordine di <math|[8]> è 3, perché uno o
+  due passi non riportano a zero, mentre <math|3\<cdot\>8=24\<equiv\>0<pmod|12>>.
+  Il generato è chiuso rispetto alla sottrazione perché la differenza di due
+  multipli di <math|[8]> è ancora un multiplo, <math|r[8]-s[8]=(r-s)[8]>.
+  Questo verifica il criterio additivo del sottogruppo per tutte le coppie in
+  una volta sola.
 
-  <strong|10.2.> I cicli sono disgiunti, quindi possiamo calcolare le potenze
-  separatamente. Il quadrato di <math|(1 2 3)> è <math|(1 3 2)>, quello di
-  <math|(4 5)> è l'identità. Dunque <math|\<rho\><rsup|2>=(1 3 2)>. Per
-  invertire ciascun ciclo percorriamo le frecce al contrario:
-  <math|\<rho\><rsup|-1>=(1 3 2)(4 5)>. Una potenza di <math|\<rho\>> è
-  l'identità se e solo se entrambi i cicli sono tornati alla partenza:
-  l'esponente deve essere multiplo di 3 e di 2. Il minimo positivo è
-  <math|<math-up|mcm>(3,2)=6>, che è l'ordine cercato.
+  <strong|10.2.> I due cicli sono disgiunti, quindi commutano e possiamo
+  calcolare le potenze separatamente. Il quadrato di <math|(1 2 3)> è
+  <math|(1 3 2)>, mentre il quadrato di <math|(4 5)> è l'identità, e quindi
+  <math|\<rho\><rsup|2>=(1 3 2)>. Per l'inverso basta percorrere ogni ciclo
+  al contrario, e si ottiene <math|\<rho\><rsup|-1>=(1 3 2)(4 5)>. Una
+  potenza di <math|\<rho\>> è l'identità soltanto se entrambi i cicli sono
+  tornati al punto di partenza, cioè se l'esponente è un multiplo sia di 3
+  sia di 2. Il più piccolo esponente positivo con questa proprietà è
+  <math|<math-up|mcm>(3,2)=6>, che è l'ordine di <math|\<rho\>>.
 
   <subsection*|Capitolo 11 \<#2014\> Potenze e decimali>
 
-  <strong|11.1.> Le potenze di 2 modulo 7 sono <math|1,2,4,1,\<ldots\>>. Il
-  primo ritorno a 1 ha esponente 3. Il resto 4 compare all'esponente 2,
-  perciò <math|x\<equiv\>2<pmod|3>>. Per <math|x\<in\>\<bbb-N\>> possiamo
-  scrivere <math|x=2+3k> con <math|k\<geq\>0>. Non ci sono altri esponenti
-  perché ogni esponente ha uno dei tre resti 0,1,2 modulo l'ordine, e solo il
-  resto 2 produce 4.
+  <strong|11.1.> Le potenze di 2 modulo 7 sono <math|1,2,4,1,\<ldots\>>,
+  quindi il primo ritorno a 1 avviene all'esponente 3 e l'ordine è 3. Il
+  valore 4 compare all'esponente 2, e le soluzioni sono quindi gli esponenti
+  <math|x\<equiv\>2<pmod|3>>, cioè, fra i naturali, <math|x=2+3k> con
+  <math|k\<geq\>0>. Non ce ne sono altre, perché ogni esponente ha resto 0, 1
+  o 2 nella divisione per l'ordine, e soltanto il resto 2 dà 4.
 
-  <strong|11.2.> La frazione <math|7/80> è ridotta, e
-  <math|80=2<rsup|4>\<cdot\>5>. Non rimangono fattori diversi da 2 e 5,
-  quindi il decimale termina dopo quattro cifre:
-  <math|7/80=875/10000=0,0875>. Per <math|x=0,2<wide|7|\<bar\>>> abbiamo
-  <math|10x=2,777\<ldots\>> e <math|100x=27,777\<ldots\>>. Sottraendo,
-  <math|90x=25>, dunque <math|x=25/90=5/18>. La moltiplicazione per 10
-  elimina la cifra iniziale; quella per 100 sposta anche una copia del
-  periodo.
+  <strong|11.2.> La frazione <math|7/80> è già ridotta, e
+  <math|80=2<rsup|4>\<cdot\>5>. Nel denominatore compaiono soltanto i fattori
+  2 e 5, quindi il decimale termina, e la lunghezza è il massimo degli
+  esponenti, cioè quattro cifre: infatti <math|7/80=875/10000=0,0875>. Per
+  <math|x=0,2<wide|7|\<bar\>>> scriviamo <math|10x=2,777\<ldots\>> e
+  <math|100x=27,777\<ldots\>>. Moltiplicando per 10 abbiamo superato la cifra
+  iniziale, e moltiplicando per 100 abbiamo spostato anche una copia del
+  periodo. Sottraendo, le code si cancellano e resta <math|90x=25>, cioè
+  <math|x=25/90=5/18>.
 
   <subsection*|Capitolo 12 \<#2014\> Quadratiche e potenze prime>
 
-  <strong|12.1.> Modulo 5, <math|x<rsup|2>\<equiv\>4> ha le radici 2 e 3.
-  Sopra 2 scriviamo <math|x=2+5h>: <math|x<rsup|2>-4=20h+25h<rsup|2>>. La
-  divisibilità per 25 richiede <math|4h\<equiv\>0<pmod|5>>, dunque
-  <math|h\<equiv\>0> e <math|x\<equiv\>2<pmod|25>>. Sopra 3, <math|x=3+5h> dà
-  <math|x<rsup|2>-4=5+30h+25h<rsup|2>>. La condizione è
-  <math|1+h\<equiv\>0<pmod|5>>, dunque <math|h\<equiv\>4> e
-  <math|x\<equiv\>23<pmod|25>>. Queste sono tutte le radici; il controllo dà
+  <strong|12.1.> Modulo 5 la congruenza <math|x<rsup|2>\<equiv\>4> ha le
+  radici 2 e 3. Partendo da 2 scriviamo <math|x=2+5h>, e allora
+  <math|x<rsup|2>-4=20h+25h<rsup|2>>. Perché questo sia multiplo di 25 serve
+  <math|4h\<equiv\>0<pmod|5>>, cioè <math|h\<equiv\>0>, e la radice resta
+  <math|x\<equiv\>2<pmod|25>>. Partendo da 3 scriviamo <math|x=3+5h>, e
+  allora <math|x<rsup|2>-4=5+30h+25h<rsup|2>>. Dividendo per 5 la condizione
+  diventa <math|1+h\<equiv\>0<pmod|5>>, cioè <math|h\<equiv\>4>, e la radice
+  è <math|x\<equiv\>23<pmod|25>>. Abbiamo esaminato tutte le radici modulo 5,
+  quindi le soluzioni sono esattamente 2 e 23, e il controllo dà
   <math|23<rsup|2>=529=21\<cdot\>25+4>.
 
-  <strong|12.2.> Modulo 3 le radici sono 1 e 2; modulo 4 sono 1 e 3, come si
-  controlla sui quattro resti. Le quattro combinazioni di condizioni
-  corrispondono, per il teorema cinese, a quattro classi distinte modulo 12.
-  Tra i resti <math|0,\<ldots\>,11>, le radici sono <math|1,5,7,11>. Infatti
-  sono i quattro numeri dispari non divisibili per 3; ciascuno ha quadrato
-  congruo a 1 sia modulo 4 sia modulo 3. Le quattro radici sono possibili
-  perché il modulo è composto: non stiamo lavorando in un campo.
+  <strong|12.2.> Modulo 3 le radici di <math|x<rsup|2>\<equiv\>1> sono 1 e 2,
+  e modulo 4, provando i quattro resti, sono 1 e 3. Per il teorema cinese,
+  ciascuna delle quattro combinazioni di una radice modulo 3 e una modulo 4
+  corrisponde a una classe diversa modulo 12, e fra i resti da 0 a 11 queste
+  classi sono <math|1,5,7,11>. Sono i quattro numeri dispari non divisibili
+  per 3, e ciascuno ha quadrato congruo a 1 sia modulo 4 sia modulo 3.
+  Quattro radici per un quadrato sono possibili perché 12 è composto, e
+  modulo 12 non lavoriamo in un campo.
 </body>
 
 <\initial>
@@ -3390,74 +3717,74 @@
     <associate|auto-10|<tuple|2.3|10>>
     <associate|auto-11|<tuple|2.4|11>>
     <associate|auto-12|<tuple|2.5|12>>
-    <associate|auto-13|<tuple|2.6|12>>
-    <associate|auto-14|<tuple|3|14>>
-    <associate|auto-15|<tuple|3.1|14>>
-    <associate|auto-16|<tuple|3.2|15>>
-    <associate|auto-17|<tuple|3.3|15>>
-    <associate|auto-18|<tuple|3.4|16>>
-    <associate|auto-19|<tuple|4|18>>
+    <associate|auto-13|<tuple|2.6|13>>
+    <associate|auto-14|<tuple|3|15>>
+    <associate|auto-15|<tuple|3.1|15>>
+    <associate|auto-16|<tuple|3.2|16>>
+    <associate|auto-17|<tuple|3.3|16>>
+    <associate|auto-18|<tuple|3.4|17>>
+    <associate|auto-19|<tuple|4|19>>
     <associate|auto-2|<tuple|1|5>>
-    <associate|auto-20|<tuple|4.1|18>>
-    <associate|auto-21|<tuple|4.2|18>>
-    <associate|auto-22|<tuple|4.3|19>>
-    <associate|auto-23|<tuple|4.4|19>>
-    <associate|auto-24|<tuple|5|21>>
-    <associate|auto-25|<tuple|5.1|21>>
-    <associate|auto-26|<tuple|5.2|21>>
-    <associate|auto-27|<tuple|5.3|22>>
-    <associate|auto-28|<tuple|5.4|22>>
-    <associate|auto-29|<tuple|5.5|23>>
+    <associate|auto-20|<tuple|4.1|19>>
+    <associate|auto-21|<tuple|4.2|19>>
+    <associate|auto-22|<tuple|4.3|20>>
+    <associate|auto-23|<tuple|4.4|21>>
+    <associate|auto-24|<tuple|5|23>>
+    <associate|auto-25|<tuple|5.1|23>>
+    <associate|auto-26|<tuple|5.2|24>>
+    <associate|auto-27|<tuple|5.3|24>>
+    <associate|auto-28|<tuple|5.4|24>>
+    <associate|auto-29|<tuple|5.5|25>>
     <associate|auto-3|<tuple|1.1|5>>
-    <associate|auto-30|<tuple|6|25>>
-    <associate|auto-31|<tuple|6.1|25>>
-    <associate|auto-32|<tuple|6.2|25>>
-    <associate|auto-33|<tuple|6.3|26>>
-    <associate|auto-34|<tuple|6.4|27>>
-    <associate|auto-35|<tuple|6.5|27>>
-    <associate|auto-36|<tuple|7|29>>
-    <associate|auto-37|<tuple|7.1|29>>
-    <associate|auto-38|<tuple|7.2|29>>
-    <associate|auto-39|<tuple|7.3|30>>
-    <associate|auto-4|<tuple|1.2|5>>
-    <associate|auto-40|<tuple|7.4|31>>
-    <associate|auto-41|<tuple|7.5|31>>
-    <associate|auto-42|<tuple|8|33>>
-    <associate|auto-43|<tuple|8.1|33>>
-    <associate|auto-44|<tuple|8.2|33>>
-    <associate|auto-45|<tuple|8.3|34>>
-    <associate|auto-46|<tuple|8.4|35>>
-    <associate|auto-47|<tuple|8.5|36>>
-    <associate|auto-48|<tuple|9|37>>
-    <associate|auto-49|<tuple|9.1|37>>
+    <associate|auto-30|<tuple|6|27>>
+    <associate|auto-31|<tuple|6.1|27>>
+    <associate|auto-32|<tuple|6.2|27>>
+    <associate|auto-33|<tuple|6.3|28>>
+    <associate|auto-34|<tuple|6.4|29>>
+    <associate|auto-35|<tuple|6.5|29>>
+    <associate|auto-36|<tuple|7|31>>
+    <associate|auto-37|<tuple|7.1|31>>
+    <associate|auto-38|<tuple|7.2|31>>
+    <associate|auto-39|<tuple|7.3|32>>
+    <associate|auto-4|<tuple|1.2|6>>
+    <associate|auto-40|<tuple|7.4|33>>
+    <associate|auto-41|<tuple|7.5|33>>
+    <associate|auto-42|<tuple|8|35>>
+    <associate|auto-43|<tuple|8.1|35>>
+    <associate|auto-44|<tuple|8.2|36>>
+    <associate|auto-45|<tuple|8.3|36>>
+    <associate|auto-46|<tuple|8.4|37>>
+    <associate|auto-47|<tuple|8.5|38>>
+    <associate|auto-48|<tuple|9|39>>
+    <associate|auto-49|<tuple|9.1|39>>
     <associate|auto-5|<tuple|1.3|7>>
-    <associate|auto-50|<tuple|9.2|37>>
-    <associate|auto-51|<tuple|9.3|38>>
-    <associate|auto-52|<tuple|9.4|38>>
-    <associate|auto-53|<tuple|9.5|39>>
-    <associate|auto-54|<tuple|10|40>>
-    <associate|auto-55|<tuple|10.1|40>>
-    <associate|auto-56|<tuple|10.2|40>>
-    <associate|auto-57|<tuple|10.3|41>>
-    <associate|auto-58|<tuple|10.4|42>>
-    <associate|auto-59|<tuple|10.5|43>>
+    <associate|auto-50|<tuple|9.2|39>>
+    <associate|auto-51|<tuple|9.3|40>>
+    <associate|auto-52|<tuple|9.4|40>>
+    <associate|auto-53|<tuple|9.5|41>>
+    <associate|auto-54|<tuple|10|43>>
+    <associate|auto-55|<tuple|10.1|43>>
+    <associate|auto-56|<tuple|10.2|43>>
+    <associate|auto-57|<tuple|10.3|44>>
+    <associate|auto-58|<tuple|10.4|45>>
+    <associate|auto-59|<tuple|10.5|46>>
     <associate|auto-6|<tuple|1.4|7>>
-    <associate|auto-60|<tuple|11|44>>
-    <associate|auto-61|<tuple|11.1|44>>
-    <associate|auto-62|<tuple|11.2|44>>
-    <associate|auto-63|<tuple|11.3|45>>
-    <associate|auto-64|<tuple|11.4|45>>
-    <associate|auto-65|<tuple|11.5|46>>
-    <associate|auto-66|<tuple|12|47>>
-    <associate|auto-67|<tuple|12.1|47>>
-    <associate|auto-68|<tuple|12.2|47>>
-    <associate|auto-69|<tuple|12.3|48>>
+    <associate|auto-60|<tuple|11|47>>
+    <associate|auto-61|<tuple|11.1|47>>
+    <associate|auto-62|<tuple|11.2|47>>
+    <associate|auto-63|<tuple|11.3|48>>
+    <associate|auto-64|<tuple|11.4|48>>
+    <associate|auto-65|<tuple|11.5|49>>
+    <associate|auto-66|<tuple|12|50>>
+    <associate|auto-67|<tuple|12.1|50>>
+    <associate|auto-68|<tuple|12.2|50>>
+    <associate|auto-69|<tuple|12.3|51>>
     <associate|auto-7|<tuple|2|9>>
-    <associate|auto-70|<tuple|12.4|48>>
-    <associate|auto-71|<tuple|12.5|49>>
-    <associate|auto-72|<tuple|A|50>>
+    <associate|auto-70|<tuple|12.4|51>>
+    <associate|auto-71|<tuple|12.5|52>>
+    <associate|auto-72|<tuple|A|53>>
     <associate|auto-8|<tuple|2.1|9>>
-    <associate|auto-9|<tuple|2.2|10>>
+    <associate|auto-9|<tuple|2.2|9>>
   </collection>
 </references>
 
@@ -3553,8 +3880,8 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-22>
 
-      4.4<space|2spc>Algoritmo di Euclide: conservare i divisori, ridurre i
-      numeri <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      4.4<space|2spc>Algoritmo di Euclide: stessi divisori, numeri più
+      piccoli <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-23>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Bézout
@@ -3673,7 +4000,7 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-52>
 
-      9.5<space|2spc>Omomorfismi: cambiare oggetti conservando i conti
+      9.5<space|2spc>Omomorfismi: cambiare oggetti senza cambiare i conti
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-53>
 

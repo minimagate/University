@@ -1,8 +1,8 @@
 # Geometria 1 — volume 1 Spark
 
-**51 pagine, 10 capitoli, 20 figure e 20 esercizi con soluzioni ragionate.**
+**54 pagine, 10 capitoli, 20 figure e 20 esercizi con soluzioni ragionate.**
 
-Edizione di ottobre 2026, dalla prima lezione disponibile del 23 settembre fino al 31 ottobre. L'ultima fonte nel periodo è del 27 ottobre. Il volume rielabora 12 note e 12 trascrizioni; le fonti e il vecchio libro sono conservati.
+Edizione di ottobre 2026: raccoglie le lezioni del corso fino al 31 ottobre 2026 (date esatte delle fonti in [coverage.md](coverage.md)). Il volume rielabora 12 note e 12 trascrizioni; le fonti e il vecchio libro sono conservati.
 
 - [Libro PDF](geometria-1-spark.pdf) e [documento nativo TeXmacs](geometria-1-spark.tm).
 - `source/`: capitoli modificabili in UTF-8 e soluzioni; `templates/`: preambolo e impaginazione.
@@ -51,5 +51,7 @@ Gli strumenti facoltativi di controllo pagina sono compilabili con `sh scripts/t
 ## Revisione del 2 novembre 2026
 
 Tutti i capitoli, le didascalie e le soluzioni sono stati rivisti per lingua e progressione. Ogni capitolo si apre con un «In breve» riscritto. I paragrafi sviluppano un passaggio alla volta; gli esempi concreti preparano le prove generali. I dettagli del lavoro e i controlli effettivi sono in [validation.md](validation.md).
+
+Una seconda revisione dello stesso giorno ha riscritto tutta la prosa in forma narrativa, con frasi collegate e scelte motivate; i dettagli sono in [editorial-notes.md](editorial-notes.md).
 
 Il build controlla anche la presenza delle aperture con `scripts/check-editorial.py`; gli avvisi sulla lunghezza della prosa richiedono una lettura umana e non misurano da soli la semplicità. `scripts/verify_sources.py` verifica le fonti delle lezioni. L'opzione `--references` include le impronte dei riferimenti storici, che potrebbero essere stati archiviati o rimossi separatamente; questi file non servono a rigenerare il libro.

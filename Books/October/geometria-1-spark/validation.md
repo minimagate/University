@@ -1,12 +1,26 @@
 # Geometria 1 Spark — verifica della revisione
 
-2 novembre 2026. **PDF finale esportato, rigenerato dalla cartella definitiva e controllato.**
+2 novembre 2026, dopo la revisione narrativa. **PDF finale esportato dalla cartella definitiva e controllato pagina per pagina.**
 
 ## Consegna
 
-51 pagine; 10 capitoli; 20 figure vettoriali utilizzate; 20 esercizi con soluzioni ragionate. PDF di 1,160,391 byte. Sorgenti dei capitoli, documento nativo TeXmacs, template, figure, script di build e documenti di copertura inclusi.
+54 pagine; 10 capitoli; 20 figure vettoriali utilizzate; 20 esercizi con soluzioni ragionate. PDF di 1,205,822 byte. Sorgenti dei capitoli, documento nativo TeXmacs, template, figure, script di build e documenti di copertura inclusi.
 
-## Revisione didattica e matematica
+## Revisione narrativa del 2 novembre 2026
+
+Riscritti in prosa narrativa l'introduzione, tutti i dieci capitoli, gli «In breve» e le venti soluzioni, secondo `spark-standard.md` e `prose-example.md`. Nessun concetto, enunciato, ipotesi, prova, figura o esercizio è stato tolto; numerazione degli esercizi invariata.
+
+Controlli effettivamente eseguiti in questo passaggio:
+
+- ricontrollo a mano di ogni calcolo riscritto (associatività del prodotto complesso, radici seste e quarte, scambi in R², basi di W₀, W₁, W₀,₁, prodotti PQ e QP, riduzioni di Gauss dei capitoli 9 e 10, esercizi 2.1, 3.2, 8.2, 9.1, 9.2, 10.2);
+- `checks/deep-pass.py`, `foundations.py`, `foundations-independent.py`, `vector-spaces.py`, `systems.py`, `independent.py` e `scripts/check_assets.py`: tutti con uscita 0;
+- `sources.py verify assets/fonti.json`: 24 fonti intatte, 0 modificate;
+- `sh build.sh` dalla cartella definitiva: sintassi, controllo editoriale (10 aperture presenti) ed esportazione riusciti;
+- tutte le 54 pagine renderizzate e guardate in quattro fogli di contatto; a scala di lettura (1,3) ispezionate le pagine 2, 9, 26, 48 e 53 per formule, riquadri, figure e soluzioni. Nessun taglio, sovrapposizione, titolo isolato o pagina quasi vuota oltre alle normali chiusure di capitolo (pagine 30, 35, 50).
+
+Statistiche del sorgente (frasi con formule contate come una parola): lunghezza media 12,9 → 16,2 parole, frasi di al più 8 parole 27% → 16%, due punti 177 → 45 ogni 10.000 parole. Parole del sorgente 15.923 → 21.105 (+33%), pagine 51 → 54.
+
+## Revisione didattica e matematica (passaggio precedente)
 
 L’autore della revisione ha riletto tutti i capitoli, l’introduzione, le didascalie e tutte le soluzioni. Tutte le aperture «In breve» sono state riscritte. Il lavoro interviene su motivazione delle mosse, esempi prima della prova generale, termini spiegati e veri capoversi TeXmacs; non consiste soltanto nell’aggiunta di a capo.
 
@@ -18,7 +32,7 @@ Tutti i verificatori matematici precedenti e il nuovo `checks/deep-pass.py` sono
 
 Build con Python e GNU TeXmacs 2.1.5; aggiornati indice e riferimenti, salvato il documento nativo e stampato il PDF bianco. `sh build.sh` eseguito anche da `Books/October/geometria-1-spark/`.
 
-Tutte le **51 pagine** sono state renderizzate. L’integratore ha ispezionato l’intera sequenza e le pagine cambiate nelle esportazioni successive. Confronto a scala di lettura con Aritmetica Spark, pagine 5 e 21: stesso preambolo classico, Computer Modern, 11 pt, A4 e margini canonici. Ingrandimenti delle pagine 13, 18, 19, 20, 25, 26, 31, 35, 37, 45 per verificare formule, tabelle, figure, riquadri e passaggi difficili. Le pagine della copia ricompilata sono state confrontate con le immagini già controllate; tutte le differenze sono state ispezionate.
+Nel passaggio precedente tutte le **51 pagine** sono state renderizzate. L’integratore ha ispezionato l’intera sequenza e le pagine cambiate nelle esportazioni successive. Confronto a scala di lettura con Aritmetica Spark, pagine 5 e 21: stesso preambolo classico, Computer Modern, 11 pt, A4 e margini canonici. Ingrandimenti delle pagine 13, 18, 19, 20, 25, 26, 31, 35, 37, 45 per verificare formule, tabelle, figure, riquadri e passaggi difficili. Le pagine della copia ricompilata sono state confrontate con le immagini già controllate; tutte le differenze sono state ispezionate.
 
 Controllati titolo, indice, aperture, proporzioni delle figure, didascalie, formule, listati e chiusure di capitolo. Riparate le pagine con esercizi isolati. Alcune chiusure sono naturalmente più brevi; il ragionamento conclusivo e gli esercizi restano insieme. Non sono stati ridotti caratteri o margini. Nessun difetto di taglio, sovrapposizione o asset mancante rilevato.
 
@@ -34,13 +48,13 @@ Il teorema fondamentale dell’algebra, il confronto generale delle basi infinit
 
 ## Impronte
 
-PDF SHA-256: `fb43cd7aba49ed624d7ef2ab6e38e4ae4002cc1fd45713c61f0cbf4fee25322d`.
+PDF SHA-256: `d37f82e428cb14bec277ccf35b3240ec9783222c0c12765e595dd0d2d8b19fda`.
 
-TeXmacs SHA-256: `4a500127f8c2fbcf37318296952e9c542a4ada2b0e9bc84f8762edbd919a4d19`.
+TeXmacs SHA-256: `f5464d10781f92f433abce70f40fda8edf2e7d69c6e04e122ab281cb638ff326`.
 
 Aperture dei capitoli e dati della consegna: [final-validation.json](reviews/deep-pass/final-validation.json). La validazione precedente è conservata in `reviews/validation-before-deep-pass.md`.
 
 
 ## Copia per lo studio
 
-Copiato, senza spostare il progetto, in `/Users/michelangelogubinelli/Documents/Notebooks/geometria-1-spark.pdf`. Confronto SHA-256 fra originale e copia superato.
+La copia in `~/Documents/Notebooks/geometria-1-spark.pdf` viene aggiornata alla consegna finale con il PDF qui descritto.

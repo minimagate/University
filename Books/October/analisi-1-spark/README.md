@@ -1,8 +1,8 @@
 # Analisi 1 — volume 1 Spark
 
-Periodo: dalla prima lezione disponibile, **23 settembre 2026**, al **31 ottobre 2026**, settembre incluso. Ultima lezione presente: 29 ottobre.
+Edizione di **ottobre 2026**: tutte le lezioni disponibili fino al 31 ottobre (ultima lezione presente: 29 ottobre). Le date esatte delle fonti sono in [coverage.md](coverage.md).
 
-**73 pagine, 14 capitoli, 23 figure vettoriali e 30 esercizi con soluzioni ragionate.**
+**76 pagine, 14 capitoli, 23 figure vettoriali e 30 esercizi con soluzioni ragionate.**
 
 - [Libro PDF](analisi-1-spark.pdf)
 - [Documento nativo GNU TeXmacs](analisi-1-spark.tm)
@@ -22,7 +22,11 @@ Le figure vettoriali sono fornite in SVG e PDF in `assets/`. Una ricostruzione n
 
 `checks/` contiene verifiche indipendenti dei conti; `reviews/` conserva le revisioni matematiche ed editoriali. Questi materiali non sono appendici del libro di lettura. Le fonti del corso e la versione Spark anteriore alla revisione, nel relativo snapshot in `Books/Archive/`, sono conservate.
 
-## Revisione del 2 novembre 2026
+## Revisione narrativa del 2 novembre 2026
+
+Tutta la prosa (introduzione, capitoli, didascalie e soluzioni) è stata riscritta nella voce narrativa approvata: un problema concreto, l'ostacolo, la via d'uscita e la definizione come risposta, con frasi collegate e meno due punti. Contenuti, teoremi, figure ed esercizi sono invariati. Dettagli in [editorial-notes.md](editorial-notes.md) e [validation.md](validation.md).
+
+## Revisione profonda precedente (2 novembre 2026)
 
 Tutti i capitoli, le didascalie e le soluzioni sono stati rivisti per lingua e progressione. Ogni capitolo si apre con un «In breve» riscritto. I paragrafi sviluppano un passaggio alla volta; gli esempi concreti preparano le prove generali. I dettagli del lavoro e i controlli effettivi sono in [validation.md](validation.md).
 

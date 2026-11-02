@@ -1,215 +1,189 @@
 <chapter|Radici, rapporti e gerarchia degli infiniti>
 
 <\inbreve>
-Le successioni <math|n<rsup|5>>, <math|2<rsup|n>> e <math|n!> tendono tutte a <math|+∞>: come capiamo quale cresce più rapidamente? Studieremo i loro quozienti. Una radice o il rapporto fra termini consecutivi ci aiuterà spesso a semplificare il confronto.
+Le successioni <math|n<rsup|5>>, <math|2<rsup|n>> e <math|n!> tendono tutte a <math|+∞>, ma con velocità molto diverse, e in un quoziente è proprio la velocità a decidere il risultato. Per confrontarle studiamo come cambia un termine rispetto al precedente, oppure quanto vale la sua radice <math|n>-esima. Questi due strumenti ci daranno una vera classifica degli infiniti, che useremo come una scorciatoia in moltissimi limiti.
 </inbreve>
 
 <section|Potenze e radici senza circolarità>
 
-Per dimostrare <math|2<rsup|n>→+∞> potremmo essere tentati di risolvere <math|2<rsup|n>≥M> con un logaritmo. Ma la possibilità di raggiungere ogni quota serve proprio a giustificare il dominio del logaritmo. Bernoulli evita questo circolo:
+Per dimostrare che <math|2<rsup|n>→+∞> verrebbe naturale risolvere <math|2<rsup|n>≥M> con un logaritmo. Ma c'è un problema nascosto. Per sapere che il logaritmo è definito su tutti i positivi dobbiamo già sapere che le potenze raggiungono ogni quota, cioè ciò che vogliamo dimostrare. Bernoulli ci permette di uscire da questo circolo vizioso, perché per <math|a›1>
 
 <\equation*>
-a<rsup|n>=(1+(a-1))<rsup|n>≥1+n(a-1)→+∞<space|1em>(a›1).
+a<rsup|n>=(1+(a-1))<rsup|n>≥1+n(a-1)→+∞.
 </equation*>
 
-Per <math|0‹a‹1> passiamo al reciproco: <math|a<rsup|n>=1/(1/a)<rsup|n>→0>. Per <math|a=1> il limite è 1; per <math|a=0>, con <math|n≥1>, è zero.
+Gli altri casi seguono da questo. Per <math|0‹a‹1> passiamo al reciproco, <math|a<rsup|n>=1/(1/a)<rsup|n>>, e il denominatore tende a <math|+∞>, quindi <math|a<rsup|n>→0>. Per <math|a=1> la successione è costante, e per <math|a=0>, con <math|n≥1>, vale sempre zero. Se la base è negativa ma con valore assoluto minore di 1, i valori assoluti dei termini tendono a zero e quindi anche i termini. Una base minore o uguale a <math|-1> produce invece comportamenti diversi sugli indici pari e su quelli dispari, e il limite non esiste.
 
-Se la base è negativa e di valore assoluto minore di 1, il valore assoluto dei termini tende a zero e quindi anche i termini tendono a zero. Una base <math|≤-1> produce invece due comportamenti diversi sui pari e sui dispari.
-
-Per una radice a indice variabile il fenomeno è diverso: per ogni numero fisso <math|a›0> vale
+Con una radice il cui indice cresce succede qualcosa di molto diverso. Per ogni numero fisso <math|a›0>
 
 <\equation*>
 <sqrt|a|n>→1.
 </equation*>
 
-Se <math|a≥1>, Bernoulli con <math|t=(a-1)/n> dà <math|(1+(a-1)/n)<rsup|n>≥a>. Prendendo la radice, che conserva l'ordine dei numeri non negativi,
+Per capire perché, supponiamo <math|a≥1> e applichiamo Bernoulli con <math|t=(a-1)/n>. Otteniamo <math|(1+(a-1)/n)<rsup|n>≥1+(a-1)=a>, e prendendo la radice <math|n>-esima, che rispetta l'ordine fra numeri non negativi, troviamo
 
 <\equation*>
 1≤<sqrt|a|n>≤1+<frac|a-1|n>.
 </equation*>
 
-I carabinieri concludono. Se <math|0‹a‹1>, usiamo il reciproco della radice di <math|1/a>.
+Il teorema dei carabinieri conclude. Se <math|0‹a‹1> basta scrivere <math|<sqrt|a|n>> come il reciproco di <math|<sqrt|1/a|n>>, che tende a 1 per il caso appena visto. Notiamo che non abbiamo scritto <math|a<rsup|1/n>→a<rsup|0>=1>, perché quel ragionamento usa la continuità dell'esponenziale, che giustificheremo proprio a partire da questo risultato.
 
-Non abbiamo scritto <math|a<rsup|1/n>→a<rsup|0>>: la continuità dell'esponenziale verrà giustificata proprio usando questo risultato.
-
-Anche <math|<sqrt|n|n>→1>, ma qui il radicando non è fisso. La stima lineare di Bernoulli darebbe soltanto <math|<sqrt|n|n>≤2-1/n>, troppo lontano da 1. Proviamo allora a conservare il termine quadratico del binomio di Newton. Per <math|t≥0> e <math|n≥2>,
+Anche <math|<sqrt|n|n>→1>, ma qui il caso è più delicato, perché il radicando cresce insieme all'indice. La stima lineare di Bernoulli darebbe soltanto <math|<sqrt|n|n>≤2-1/n>, che resta lontana da 1. Proviamo allora a tenere il termine quadratico del binomio di Newton, che è più forte. Per <math|t≥0> e <math|n≥2>
 
 <\equation*>
 (1+t)<rsup|n>≥<binom|n|2>t<rsup|2>=<frac|n(n-1)|2>t<rsup|2>.
 </equation*>
 
-Vogliamo che l'ultimo membro sia almeno <math|n>, perché allora <math|(1+t)<rsup|n>≥n> e quindi <math|1+t≥<sqrt|n|n>>. Risolviamo <math|n(n-1)t<rsup|2>/2=n>: otteniamo <math|t=<sqrt|2/(n-1)>>. Questa scelta tende a zero, proprio ciò che ci serve.
-
-Troviamo così
+Vorremmo che l'ultimo membro fosse almeno <math|n>, perché allora <math|(1+t)<rsup|n>≥n> e quindi <math|1+t≥<sqrt|n|n>>. Risolvendo <math|n(n-1)t<rsup|2>/2=n> troviamo <math|t=<sqrt|2/(n-1)>>, e questa scelta tende a zero, cioè è esattamente ciò che ci serve. Otteniamo
 
 <\equation*>
-1≤<sqrt|n|n>≤1+<sqrt|<frac|2|n-1>>→1.
+1≤<sqrt|n|n>≤1+<sqrt|<frac|2|n-1>>→1,
 </equation*>
 
-L'ultima radice tende a zero direttamente dalla definizione: per renderla <math|≤ε> basta <math|n≥1+2/ε<rsup|2>>.
+dove l'ultima radice tende a zero perché, per renderla al massimo <math|ε>, basta prendere <math|n≥1+2/ε<rsup|2>>.
 
 <section|Criteri della radice e del rapporto>
 
-Per la successione geometrica <math|a<rsub|n>=(3/4)<rsup|n>> la radice <math|n>-esima vale sempre <math|3/4>, e i termini tendono a zero. Per <math|a<rsub|n>=(5/4)<rsup|n>> la radice vale <math|5/4>, e i termini tendono a <math|+∞>.
-
-Questo suggerisce di confrontare con 1 il limite <math|ℓ> di <math|<sqrt|a<rsub|n>|n>>, quando i termini sono definitivamente non negativi. Una radice stabilmente sopra 1 significa che <math|a<rsub|n>> contiene almeno una crescita geometrica; stabilmente sotto 1 significa che è schiacciata da una geometrica che si annulla.
+Partiamo da due successioni geometriche. Per <math|a<rsub|n>=(3/4)<rsup|n>> la radice <math|n>-esima vale sempre <math|3/4> e i termini tendono a zero, mentre per <math|a<rsub|n>=(5/4)<rsup|n>> la radice vale sempre <math|5/4> e i termini tendono a <math|+∞>. In generale, se la radice <math|n>-esima di una successione si stabilizza sopra 1, la successione cresce almeno come una geometrica che esplode, e se si stabilizza sotto 1 è schiacciata da una geometrica che si spegne. Questo suggerisce di confrontare con 1 il limite della radice.
 
 <\concetto|Criterio della radice per successioni>
 Supponiamo <math|a<rsub|n>≥0> definitivamente e <math|<sqrt|a<rsub|n>|n>→ℓ∈[0,+∞]>. Se <math|ℓ‹1>, allora <math|a<rsub|n>→0>. Se <math|ℓ›1>, incluso <math|ℓ=+∞>, allora <math|a<rsub|n>→+∞>. Se <math|ℓ=1>, il criterio non determina il limite di <math|(a<rsub|n>)>.
 </concetto>
 
-Per la prova, se <math|ℓ‹1>, scegliamo un numero <math|q> strettamente fra <math|ℓ> e 1. Definitivamente <math|0≤<sqrt|a<rsub|n>|n>≤q>, dunque <math|0≤a<rsub|n>≤q<rsup|n>→0>.
-
-Se <math|1‹ℓ‹+∞>, scegliamo <math|1‹q‹ℓ>; definitivamente <math|a<rsub|n>≥q<rsup|n>→+∞>. Per <math|ℓ=+∞> funziona qualunque <math|q›1>.
+La dimostrazione rende precisa l'idea della geometrica. Se <math|ℓ‹1>, scegliamo un numero <math|q> strettamente compreso fra <math|ℓ> e 1. Poiché la radice tende a <math|ℓ>, che è minore di <math|q>, definitivamente <math|0≤<sqrt|a<rsub|n>|n>≤q>, e quindi <math|0≤a<rsub|n>≤q<rsup|n>→0>. Se <math|1‹ℓ‹+∞>, scegliamo invece <math|q> con <math|1‹q‹ℓ>, e otteniamo definitivamente <math|a<rsub|n>≥q<rsup|n>→+∞>. Se <math|ℓ=+∞> va bene qualunque <math|q›1>.
 
 <figura|@IMG(geometrica)|La scelta di un numero fisso <math|q> fra il limite della radice e 1 produce una geometrica che controlla i termini da un certo indice in poi.>
 
-Il <strong|criterio del rapporto> ha la stessa conclusione se <math|a<rsub|n>›0> definitivamente e <math|a<rsub|n+1>/a<rsub|n>→ℓ∈[0,+∞]>. La positività serve a dividere e a ripetere le disuguaglianze senza cambiarne il verso.
-
-Se, per esempio, il rapporto è <math|≥q›1> per <math|n≥N>, allora
+Il <strong|criterio del rapporto> arriva alle stesse conclusioni guardando il rapporto fra termini consecutivi. Supponiamo <math|a<rsub|n>›0> definitivamente e <math|a<rsub|n+1>/a<rsub|n>→ℓ∈[0,+∞]>. La positività serve sia per poter dividere sia per moltiplicare le disuguaglianze senza cambiarne il verso. Se per esempio da un indice <math|N> in poi il rapporto è almeno <math|q›1>, allora ogni termine è almeno <math|q> volte il precedente, e ripetendo questo passo troviamo
 
 <\equation*>
-a<rsub|N+1>≥qa<rsub|N>,<space|1em>a<rsub|N+2>≥q<rsup|2>a<rsub|N>,<space|1em>a<rsub|n>≥a<rsub|N>q<rsup|n-N>.
+a<rsub|N+1>≥qa<rsub|N>,<space|1em>a<rsub|N+2>≥q<rsup|2>a<rsub|N>,<space|1em>a<rsub|n>≥a<rsub|N>q<rsup|n-N>,
 </equation*>
 
-L'ultimo membro tende a <math|+∞>. Se il rapporto è invece <math|≤q‹1>, con <math|q›0>, l'iterazione dà <math|0‹a<rsub|n>≤a<rsub|N>q<rsup|n-N>→0>.
+e l'ultimo membro tende a <math|+∞>. Se invece il rapporto è al massimo <math|q‹1>, con <math|q›0>, lo stesso ragionamento dà <math|0‹a<rsub|n>≤a<rsub|N>q<rsup|n-N>→0>. Il numero <math|q> si sceglie a partire dal limite del rapporto esattamente come per la radice. In realtà, per concludere, basta il confronto definitivo con <math|q>, e non serve nemmeno sapere che il rapporto ha limite.
 
-Dal limite del rapporto scegliamo un <math|q> opportuno esattamente come per la radice. In realtà basta il confronto definitivo con <math|q>: conoscere l'intero limite non è necessario.
-
-Per <math|ℓ=1> troviamo esempi molto diversi: <math|a<rsub|n>=n>, <math|a<rsub|n>=1/n> e <math|a<rsub|n>=1> hanno tutti rapporto e radice <math|n>-esima tendenti a 1, ma i termini tendono rispettivamente a <math|+∞>, a zero e a 1. Questi sono criteri per successioni; non stiamo ancora studiando la convergenza di serie.
+Quando <math|ℓ=1> entrambi i criteri tacciono, e per una buona ragione. Le successioni <math|n>, <math|1/n> e <math|1> hanno tutte rapporto e radice <math|n>-esima che tendono a 1, eppure tendono rispettivamente a <math|+∞>, a zero e a 1. Ricordiamo anche che questi sono criteri per successioni, e che non stiamo ancora parlando di serie.
 
 <section|Dal rapporto alla radice>
 
-Il rapporto offre anche un'informazione più precisa: se <math|a<rsub|n>›0> definitivamente e <math|a<rsub|n+1>/a<rsub|n>→ℓ∈[0,+∞]>, allora
+Il rapporto contiene in realtà un'informazione più precisa di quella che abbiamo usato. Se <math|a<rsub|n>›0> definitivamente e <math|a<rsub|n+1>/a<rsub|n>→ℓ∈[0,+∞]>, allora anche
 
 <\equation*>
 <sqrt|a<rsub|n>|n>→ℓ.
 </equation*>
 
-Per <math|0‹ℓ‹+∞>, prendiamo due numeri positivi <math|p‹ℓ‹q>. Definitivamente <math|p≤a<rsub|n+1>/a<rsub|n>≤q>. Iterando a partire da un opportuno <math|N>, troviamo
+L'idea è che, se ogni termine è circa <math|ℓ> volte il precedente, il termine <math|n>-esimo è circa <math|ℓ<rsup|n>>, e la sua radice <math|n>-esima è circa <math|ℓ>. Per rendere preciso questo «circa», supponiamo prima <math|0‹ℓ‹+∞> e prendiamo due numeri positivi <math|p‹ℓ‹q>. Definitivamente il rapporto sta fra <math|p> e <math|q>, e ripetendo il confronto da un opportuno indice <math|N> in poi otteniamo
 
 <\equation*>
 a<rsub|N>p<rsup|n-N>≤a<rsub|n>≤a<rsub|N>q<rsup|n-N>.
 </equation*>
 
-Prendiamo le radici:
+Prendendo le radici <math|n>-esime arriviamo a
 
 <\equation*>
 p<sqrt|a<rsub|N>p<rsup|-N>|n>≤<sqrt|a<rsub|n>|n>≤q<sqrt|a<rsub|N>q<rsup|-N>|n>.
 </equation*>
 
-I radicandi ai lati sono costanti positive, perciò le loro radici tendono a 1. I due estremi tendono a <math|p> e a <math|q>.
+I radicandi ai due lati sono costanti positive, quindi le loro radici tendono a 1, e i due estremi tendono a <math|p> e a <math|q>. Dato <math|ε›0> abbastanza piccolo rispetto a <math|ℓ>, scegliamo <math|p=ℓ-ε/2> e <math|q=ℓ+ε/2>. Definitivamente il membro di sinistra supera <math|ℓ-ε> e quello di destra resta sotto <math|ℓ+ε>, e questa è la definizione di <math|<sqrt|a<rsub|n>|n>→ℓ>.
 
-Dato un <math|ε›0> piccolo rispetto a <math|ℓ>, scegliamo <math|p=ℓ-ε/2>, <math|q=ℓ+ε/2>. Definitivamente il membro sinistro supera <math|ℓ-ε> e il destro è minore di <math|ℓ+ε>: è la definizione del limite della radice.
+I casi estremi si trattano con metà della stima. Se <math|ℓ=0>, per ogni <math|ε›0> usiamo soltanto la stima superiore con <math|q=ε/2>, il cui membro destro tende a <math|ε/2> e quindi resta definitivamente sotto <math|ε>. Se <math|ℓ=+∞>, per ogni quota <math|M›0> usiamo la stima inferiore con <math|p=2M>, il cui membro sinistro tende a <math|2M> e quindi supera definitivamente <math|M>.
 
-Se <math|ℓ=0>, per ogni <math|ε›0> usiamo soltanto la stima superiore con <math|q=ε/2>; il suo membro tende a <math|ε/2>, dunque è definitivamente <math|‹ε>.
-
-Se <math|ℓ=+∞>, per ogni soglia <math|M›0> usiamo la stima inferiore con <math|p=2M>; il suo membro tende a <math|2M> e supera definitivamente <math|M>. Questo completa anche i casi estremi.
-
-Il teorema vale per <math|ℓ=1>, mentre i due criteri precedenti lì non decidevano il limite dei termini.
-
-Il viceversa non vale: per la successione <math|1,2,1,2,…> le radici tendono a 1, strette fra 1 e <math|<sqrt|2|n>>, ma i rapporti alternano 2 e <math|1/2>.
+Questo teorema funziona anche quando <math|ℓ=1>, cioè dove i criteri precedenti non decidevano nulla, perché qui non ci interessa il limite dei termini ma quello delle radici. Il viceversa invece è falso. Per la successione <math|1,2,1,2,…> le radici <math|n>-esime tendono a 1, perché stanno fra 1 e <math|<sqrt|2|n>>, ma i rapporti alternano 2 e <math|1/2> e non hanno limite.
 
 <section|La gerarchia degli infiniti>
 
-Confrontiamo ora <math|3<rsup|n>> con <math|n<rsup|5>>. Per <math|a<rsub|n>=3<rsup|n>/n<rsup|5>> il rapporto vale
+Ora possiamo stilare la classifica promessa. Confrontiamo <math|3<rsup|n>> con <math|n<rsup|5>> studiando <math|a<rsub|n>=3<rsup|n>/n<rsup|5>>. Il rapporto fra termini consecutivi è
 
 <\equation*>
-<frac|a<rsub|n+1>|a<rsub|n>>=3<around*|(|<frac|n|n+1>|)><rsup|5>→3›1.
+<frac|a<rsub|n+1>|a<rsub|n>>=3<around*|(|<frac|n|n+1>|)><rsup|5>→3›1,
 </equation*>
 
-Quindi <math|3<rsup|n>/n<rsup|5>→+∞>: l'esponenziale cresce più rapidamente della potenza.
+e quindi <math|3<rsup|n>/n<rsup|5>→+∞>. L'esponenziale vince sulla potenza, per quanto alto sia l'esponente. Lo stesso calcolo funziona con qualsiasi base <math|a›1> e qualsiasi esponente intero fissato, e anche con un esponente reale <math|α›0>, perché basta scegliere un intero <math|m≥α> e usare <math|n<rsup|α>≤n<rsup|m>> per <math|n≥1>.
 
-Lo stesso conto vale per una base <math|a›1> e un esponente intero fissato. Vale anche per ogni esponente reale <math|α›0>: basta scegliere un intero <math|m≥α> e confrontare <math|n<rsup|α>≤n<rsup|m>> per <math|n≥1>.
-
-Per <math|b<rsub|n>=n!/3<rsup|n>> il rapporto è <math|(n+1)/3→+∞>, dunque il fattoriale cresce più rapidamente dell'esponenziale.
-
-Per <math|c<rsub|n>=n<rsup|n>/n!> troviamo invece
+Il fattoriale cresce ancora più in fretta. Per <math|b<rsub|n>=n!/3<rsup|n>> il rapporto è <math|(n+1)/3>, che tende a <math|+∞>. E più in alto ancora c'è <math|n<rsup|n>>, perché per <math|c<rsub|n>=n<rsup|n>/n!> troviamo
 
 <\equation*>
 <frac|c<rsub|n+1>|c<rsub|n>>=<around*|(|1+<frac|1|n>|)><rsup|n>→e›1.
 </equation*>
 
-Perciò <math|n<rsup|n>> cresce più rapidamente del fattoriale. In forma compatta, per <math|a›1> e <math|α›0>,
+Possiamo riassumere la classifica dicendo che, per <math|a›1> e <math|α›0>,
 
 <\equation*>
 <frac|n<rsup|α>|a<rsup|n>>→0,<space|2em><frac|a<rsup|n>|n!>→0,<space|2em><frac|n!|n<rsup|n>>→0.
 </equation*>
 
-Il rapporto del reciproco dell'ultima successione tende a <math|e>; quello di <math|d<rsub|n>=n!/n<rsup|n>> tende a <math|1/e>. Il teorema rapporto-radice dà quindi il risultato più preciso
+Il teorema che collega rapporto e radice permette di dire anche di più. Il rapporto di <math|d<rsub|n>=n!/n<rsup|n>> tende a <math|1/e>, essendo il reciproco di quello di <math|c<rsub|n>>, e quindi
 
 <\equation*>
 <frac|<sqrt|n!|n>|n>=<sqrt|<frac|n!|n<rsup|n>>|n>→<frac|1|e>.
 </equation*>
 
-Per un polinomio <math|P(n)> di grado <math|m≥0> con coefficiente dominante <math|c›0>, la radice <math|n>-esima tende a 1.
+In altre parole, la «media geometrica» dei numeri da 1 a <math|n> cresce come <math|n/e>.
 
-Separiamo il termine di grado massimo scrivendo <math|P(n)=cn<rsup|m>(1+r<rsub|n>)>, con <math|r<rsub|n>→0>. Il fattore <math|<sqrt|c|n>> tende a 1 e <math|(<sqrt|n|n>)<rsup|m>> tende a 1.
+All'estremo opposto ci sono i polinomi, che dal punto di vista delle radici <math|n>-esime sono tutti uguali. Se <math|P(n)> ha grado <math|m≥0> e coefficiente dominante <math|c›0>, allora <math|<sqrt|P(n)|n>→1>. Per vederlo separiamo il termine di grado massimo, scrivendo <math|P(n)=cn<rsup|m>(1+r<rsub|n>)> con <math|r<rsub|n>→0>. La radice <math|n>-esima di <math|c> tende a 1, e anche <math|(<sqrt|n|n>)<rsup|m>> tende a 1. Quanto all'ultimo fattore, definitivamente <math|1/2≤1+r<rsub|n>≤2>, e quindi la sua radice <math|n>-esima sta fra le radici di queste due costanti, che tendono a 1. In particolare il radicando è definitivamente positivo, e moltiplicando i tre fattori otteniamo il risultato.
 
-Definitivamente <math|1/2≤1+r<rsub|n>≤2>, quindi anche la radice dell'ultimo fattore tende a 1 per confronto fra le radici delle due costanti. Il radicando è positivo definitivamente; moltiplicando i tre fattori otteniamo il limite cercato.
-
-Le gerarchie aiutano anche dentro una radice. Per esempio
+La classifica aiuta anche dentro una radice. Per esempio
 
 <\equation*>
 <sqrt|7<rsup|n>-n<rsup|7>+n<rsup|5>cos(n!)|n>=7<sqrt|1-<frac|n<rsup|7>|7<rsup|n>>+<frac|n<rsup|5>cos(n!)|7<rsup|n>>|n>→7.
 </equation*>
 
-Il radicando finale tende a 1 perché entrambe le correzioni tendono a zero, la seconda anche in valore assoluto. È dunque definitivamente fra <math|1/2> e 2; la sua radice <math|n>-esima è fra <math|<sqrt|1/2|n>> e <math|<sqrt|2|n>>, che tendono a 1. Questo passaggio controlla anche che la radice sia definita definitivamente.
+Dopo aver raccolto <math|7<rsup|n>>, entrambe le correzioni dentro la radice tendono a zero, la seconda anche in valore assoluto, quindi il radicando tende a 1. In particolare sta definitivamente fra <math|1/2> e 2, e la sua radice <math|n>-esima sta fra <math|<sqrt|1/2|n>> e <math|<sqrt|2|n>>, che tendono entrambe a 1. Lo stesso confronto ci assicura che il radicando è positivo, e quindi che la radice è definita.
 
 <section|Cancellazioni e somme con molti termini>
 
-Le gerarchie non autorizzano a perdere un termine prima di una sottrazione. In <math|<sqrt|n<rsup|2>+7n+4>-n> la parte di ordine <math|n> si cancella: proprio la correzione apparentemente piccola determina il limite. Usiamo l'identità <math|(u-v)(u+v)=u<rsup|2>-v<rsup|2>>:
+La classifica degli infiniti ha però un limite importante, perché non ci autorizza a buttare via un termine prima di una sottrazione. In <math|<sqrt|n<rsup|2>+7n+4>-n> i due pezzi crescono entrambi come <math|n>, e questa parte principale si cancella, così che a decidere il limite è proprio la correzione che sembrava trascurabile. Per far emergere la correzione usiamo l'identità <math|(u-v)(u+v)=u<rsup|2>-v<rsup|2>>:
 
 <\equation*>
 <sqrt|n<rsup|2>+7n+4>-n=<frac|7n+4|<sqrt|n<rsup|2>+7n+4>+n>=<frac|7+4/n|<sqrt|1+7/n+4/n<rsup|2>>+1>→<frac|7|2>.
 </equation*>
 
-Per giustificare il limite della radice basta osservare che, per <math|t≥-1>,
+Per giustificare che la radice al denominatore tende a 1, osserviamo che per <math|t≥-1>
 
 <\equation*>
-\|<sqrt|1+t>-1\|=<frac|\|t\||<sqrt|1+t>+1>≤\|t\|.
+\|<sqrt|1+t>-1\|=<frac|\|t\||<sqrt|1+t>+1>≤\|t\|,
 </equation*>
 
-Con <math|t=7/n+4/n<rsup|2>> il membro destro tende a zero.
+e con <math|t=7/n+4/n<rsup|2>> il membro destro tende a zero.
 
 <subsection|La stessa idea per una radice cubica>
 
-Per radici cubiche si usa <math|u<rsup|3>-v<rsup|3>=(u-v)(u<rsup|2>+uv+v<rsup|2>)>. Poniamo <math|u<rsub|n>=<sqrt|n<rsup|3>+7n<rsup|2>+4|3>>. La differenza diventa
+Con le radici cubiche l'identità giusta è <math|u<rsup|3>-v<rsup|3>=(u-v)(u<rsup|2>+uv+v<rsup|2>)>. Poniamo <math|u<rsub|n>=<sqrt|n<rsup|3>+7n<rsup|2>+4|3>>, così la differenza diventa
 
 <\equation*>
 u<rsub|n>-n=<frac|7n<rsup|2>+4|u<rsub|n><rsup|2>+nu<rsub|n>+n<rsup|2>>=<frac|7+4/n<rsup|2>|(u<rsub|n>/n)<rsup|2>+u<rsub|n>/n+1>.
 </equation*>
 
-Basta quindi provare <math|u<rsub|n>/n→1> per ottenere il limite <math|7/3>. Questo rapporto è <math|<sqrt|1+7/n+4/n<rsup|3>|3>>. Per controllarlo, ponendo <math|u=<sqrt|1+t|3>≥0> otteniamo <math|\|u-1\|=\|t\|/(u<rsup|2>+u+1)≤\|t\|>. Quindi anche la radice cubica tende a 1 quando <math|t→0>.
+Basta allora dimostrare che <math|u<rsub|n>/n→1> per ottenere il limite <math|7/3>. Questo rapporto è <math|<sqrt|1+7/n+4/n<rsup|3>|3>>, e possiamo controllarlo come prima. Se <math|u=<sqrt|1+t|3>≥0>, l'identità dà <math|\|u-1\|=\|t\|/(u<rsup|2>+u+1)≤\|t\|>, quindi anche la radice cubica tende a 1 quando <math|t→0>.
 
 <subsection|Quanti addendi stiamo sommando?>
 
-Un altro pericolo è applicare il teorema della somma quando il numero degli addendi cresce. Per <math|s<rsub|n>=<big|sum><rsub|k=n><rsup|2n>1/k<rsup|2>> ci sono <math|n+1> termini, ciascuno al più <math|1/n<rsup|2>>. Pertanto
+Un altro tranello è applicare il teorema della somma quando il numero di addendi cresce con <math|n>. Il teorema parla di due successioni, o di un numero fisso di successioni, e non dice nulla su una somma che si allunga. Prendiamo <math|s<rsub|n>=<big|sum><rsub|k=n><rsup|2n>1/k<rsup|2>>. Ci sono <math|n+1> addendi, ciascuno al massimo <math|1/n<rsup|2>>, quindi
 
 <\equation*>
 0≤s<rsub|n>≤<frac|n+1|n<rsup|2>>→0.
 </equation*>
 
-Invece <math|<big|sum><rsub|k=n><rsup|2n>1/<sqrt|k>≥(n+1)/<sqrt|2n>→+∞>, benché ogni addendo sia piccolo. Occorre controllare insieme la grandezza dei termini e il loro numero.
+Qui gli addendi sono così piccoli da compensare il loro numero. Con <math|<big|sum><rsub|k=n><rsup|2n>1/<sqrt|k>> succede il contrario, perché ogni addendo è almeno <math|1/<sqrt|2n>> e la somma è almeno <math|(n+1)/<sqrt|2n>>, che tende a <math|+∞>, anche se ogni singolo addendo tende a zero. Bisogna sempre tenere d'occhio insieme la grandezza dei termini e il loro numero.
 
 <subsection|Per proseguire: una somma che richiede monotonia>
 
-Per <math|h<rsub|n>=<big|sum><rsub|k=n><rsup|2n>1/k> le stime estreme danno
+C'è anche un caso intermedio. Per <math|h<rsub|n>=<big|sum><rsub|k=n><rsup|2n>1/k> le stime più semplici, ottenute sostituendo ogni addendo con il più piccolo o con il più grande, danno
 
 <\equation*>
 <frac|n+1|2n>≤h<rsub|n>≤<frac|n+1|n>.
 </equation*>
 
-I limiti dei due estremi sono diversi, <math|1/2> e 1: non possiamo applicare i carabinieri. Ma nel passaggio da <math|h<rsub|n>> a <math|h<rsub|n+1>> perdiamo <math|1/n> e acquistiamo due termini:
+Gli estremi tendono a <math|1/2> e a 1, che sono diversi, e quindi i carabinieri non bastano. Possiamo però guardare come cambia la somma passando da <math|n> a <math|n+1>. Perdiamo il primo addendo <math|1/n> e ne guadagniamo due in fondo:
 
 <\equation*>
 h<rsub|n+1>-h<rsub|n>=<frac|1|2n+1>+<frac|1|2n+2>-<frac|1|n>≤0.
 </equation*>
 
-La successione è decrescente e limitata inferiormente, quindi converge. Le stime collocano il limite in <math|[1/2,1]>. Determinarne il valore esatto richiede un ulteriore argomento, che qui non serve.
+La successione è dunque decrescente e limitata inferiormente, e per il teorema delle successioni monotone converge, con un limite compreso fra <math|1/2> e 1. Per trovarne il valore esatto servirebbe un argomento in più, di cui qui non abbiamo bisogno.
 
 <\verifica|9>
 <strong|1.> Calcola il limite di <math|<sqrt|<binom|3n|n>|n>>. Scrivi <math|a<rsub|n>=(3n)!/(n!(2n)!)> e studia <math|a<rsub|n+1>/a<rsub|n>>. Nel rapporto lascia scritti soltanto i fattori nuovi: tre al numeratore, uno e due al denominatore. Poi usa il legame fra rapporto e radice.
 
-<strong|2.> Calcola <math|lim<rsub|n→+∞>(<sqrt|n<rsup|2>-7n+2>-n)>. Controlla che il radicando sia positivo definitivamente e confronta la radice con <math|n> per prevedere il segno del risultato.
+<strong|2.> Calcola <math|lim<rsub|n→+∞>(<sqrt|n<rsup|2>-7n+2>-n)>. Controlla che il radicando sia positivo definitivamente e confronta la radice con <math|n>. Che segno ti aspetti per il risultato?
 </verifica>

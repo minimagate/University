@@ -1,8 +1,8 @@
 # Fondamenti di Programmazione — volume 1 Spark
 
-**51 pagine, 9 capitoli, 12 figure e 18 esercizi con soluzioni ragionate.**
+**55 pagine, 9 capitoli, 12 figure e 18 esercizi con soluzioni ragionate.**
 
-Settembre–ottobre 2026, dalla prima nota disponibile (19 settembre) al 31 ottobre; ultima lezione presente: 29 ottobre.
+Edizione di ottobre 2026: raccoglie le lezioni del corso fino al 31 ottobre (date esatte delle fonti in [coverage.md](coverage.md)).
 
 - [Libro PDF](fondamenti-di-programmazione-1-spark.pdf)
 - [Documento nativo TeXmacs](fondamenti-di-programmazione-1-spark.tm)
@@ -32,6 +32,7 @@ python3 checks/check-hoare.py
 python3 checks/check-arrays.py
 python3 checks/review-foundations-logic-checks.py
 python3 checks/review-independent.py
+python3 checks/narrative-pass.py
 python3 scripts/verify_sources.py
 ```
 
@@ -42,3 +43,7 @@ L'ultimo comando cerca il vault fra le cartelle ascendenti; per una copia estern
 Tutti i capitoli, le didascalie e le soluzioni sono stati rivisti per lingua e progressione. Ogni capitolo si apre con un «In breve» riscritto. I paragrafi sviluppano un passaggio alla volta; gli esempi concreti preparano le prove generali. I dettagli del lavoro e i controlli effettivi sono in [validation.md](validation.md).
 
 Il build controlla anche la presenza delle aperture con `scripts/check-editorial.py`; gli avvisi sulla lunghezza della prosa richiedono una lettura umana e non misurano da soli la semplicità. `scripts/verify_sources.py` verifica le fonti delle lezioni. L'opzione `--references` include le impronte dei riferimenti storici, che potrebbero essere stati archiviati o rimossi separatamente; questi file non servono a rigenerare il libro.
+
+## Revisione narrativa del 2 novembre 2026
+
+Tutta la prosa, compresi introduzione, «In breve», didascalie ed esercizi, è stata riscritta in forma narrativa secondo lo standard Spark aggiornato: frasi collegate, scelte motivate, meno due punti e nessuna nota rivolta al revisore. I contenuti sono gli stessi; i dettagli sono in [editorial-notes.md](editorial-notes.md) e i controlli in [validation.md](validation.md).

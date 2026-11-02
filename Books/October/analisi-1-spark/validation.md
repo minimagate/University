@@ -1,8 +1,28 @@
 # Analisi 1 Spark — verifica della revisione
 
-2 novembre 2026. **PDF finale esportato, rigenerato dalla cartella definitiva e controllato.**
+## Revisione narrativa del 2 novembre 2026
 
-## Consegna
+**Consegna.** 76 pagine; 14 capitoli; 23 figure; 30 esercizi con 30 soluzioni. PDF di 1.142.149 byte, compilato con `sh build.sh` dalla cartella del pacchetto (GNU TeXmacs 2.1.5).
+
+**Controlli eseguiti in questa revisione.**
+
+- Sintassi TeXmacs di tutti i 16 frammenti (`scripts/check.py`, anche dentro `checks/deep-pass.py`): superata.
+- `checks/verify_structure.py`: 14 capitoli, 30 esercizi con 30 soluzioni, 23 figure complete, 16 note e 5 trascrizioni mappate: PASS.
+- `checks/deep-pass.py`: 2636 controlli esatti superati, comprese le 14 aperture «In breve» subito dopo il titolo.
+- `checks/check_review_a.py`, `check_review_c.py`, `verify_math.py`, `checks-limiti.py`, `exact_series.py`: tutti superati.
+- `scripts/check-editorial.py`: nessuna apertura mancante; tre capoversi sopra 80 parole (6.5, 10.6.1, 4.1), riletti e lasciati interi perché sviluppano un solo ragionamento.
+- `sources.py verify assets/fonti.json`: 21 fonti intatte, 0 modificate. Le destinazioni dei capitoli non cambiano.
+- I passaggi matematici riformulati sono stati ricontrollati a mano (elenco in `editorial-notes.md`); i calcoli finiti restano coperti dai verificatori.
+
+**Revisione visiva.** Tutte le 76 pagine sono state renderizzate a 0,6 e ispezionate in fogli di provini; le pagine 2, 23 e 66 anche a scala di lettura (1,3). Trovate e corrette due pagine mezze vuote (fine capitolo 6 e fine capitolo 14) dovute a salti pagina forzati non più necessari. Dopo la correzione finale l'unica pagina cambiata (la 2) è stata ricontrollata. Nessun taglio, sovrapposizione, riquadro rotto o figura deformata; indice aggiornato.
+
+**Impronte.** PDF SHA-256 `a7d5c6d8e3c156f0fb33398eb45efe0ba4c1261d73ce51935b7801efde29428c`; TeXmacs SHA-256 `efeef540440adfd65b9c764dcb98e18b2c8cbb25a0ec51a2f25b2d5c208350b2`.
+
+**Limiti.** Non è stata fatta una nuova revisione matematica indipendente delle prove: la matematica è invariata e i passaggi riscritti sono stati verificati dall'autore della revisione. La copia per lo studio in `~/Documents/Notebooks` è gestita fuori da questo pacchetto.
+
+Le sezioni seguenti descrivono la revisione precedente della stessa giornata e restano come documentazione storica.
+
+## Revisione precedente — consegna
 
 73 pagine; 14 capitoli; 23 figure vettoriali utilizzate; 30 esercizi con soluzioni ragionate. PDF di 1,078,647 byte. Sorgenti dei capitoli, documento nativo TeXmacs, template, figure, script di build e documenti di copertura inclusi.
 

@@ -59,3 +59,24 @@ Questa sezione registra lo stato dei sorgenti. Il numero di pagine, le impronte 
 ## Chiusura della revisione editoriale
 
 Le aperture di tutti i capitoli sono state rilette e riscritte per dare una domanda e un percorso in poche frasi naturali. Verificata la densità del PDF, con il preambolo di Aritmetica e senza ridurre caratteri o margini. Il respiro aggiunto serve ai passaggi e alle decisioni spiegate; il numero di pagine non è un obiettivo. I dati correnti e i limiti effettivi sono in validation.md.
+
+## Revisione narrativa del 2 novembre 2026
+
+La revisione precedente aveva reso la lettura meno densa ma aveva lasciato una prosa a frasi brevi e isolate: in media 13,6 parole per frase, un periodo su cinque sotto le 9 parole, circa un «:» ogni 43 parole e 46 occorrenze di «conservare». Seguendo lo standard Spark aggiornato e l'esempio approvato (`.agents/skills/monthly-book/references/prose-example.md`), tutto il testo è stato riscritto come narrazione: introduzione, nove capitoli, didascalie toccate, testi degli esercizi e diciotto soluzioni.
+
+Che cosa è cambiato:
+
+- Ogni «In breve» è un breve paragrafo narrativo con apertura diversa da capitolo a capitolo, al posto dello schema domanda → «Partiamo da» → «Impareremo».
+- Le frasi sono collegate da connettivi e motivano le scelte: perché la specifica non nomina gli strumenti, perché il «se» esclude un solo caso, perché la cattura cambia il significato, perché lo scambio richiede una variabile d'appoggio, perché si ragiona all'indietro sulle sequenze, perché il conteggio degli incroci non funziona come misura.
+- «Conservare» è sostituito, dove serviva, da tenere, mantenere, restare vero, non cambiare; eliminate personificazioni («l'uguaglianza racconta»), riempitivi e alcune ripetizioni di «proprio» e «davvero».
+- Rimossi i commenti rivolti al revisore (per esempio la nota sulla semantica del C, l'elenco dei modelli «soltanto richiamati»); le ipotesi necessarie restano, dette nel punto in cui servono.
+- Nuovi sottotitoli dove il discorso cambia argomento: «Come si costruisce una formula», «Dare un valore alle formule», «Usare le leggi con una meta» (cap. 2); «Termini e formule», «Sostituire senza catturare» (cap. 3); «Un esempio con due quantificatori», «Formule valide» (cap. 4); «Espressioni e tipi», «Calcolare il valore», «Quando un programma non arriva a un risultato» (cap. 5); «Quando un'espressione ha valore» (cap. 6); «Trasportare ciò che il comando non tocca» (cap. 7). Alcuni titoli dei capitoli 8 e 9 sostituiscono «conservare» con «mantenere» o «tenere».
+- Le sezioni «Per proseguire» dei capitoli 2, 4, 7, 8 e 9 sono ora sezioni vere e proprie, quindi compaiono nell'indice e si possono saltare a colpo d'occhio. Le sottosezioni interne della bandiera a tre colori sono state fuse in un'unica esposizione continua.
+
+Che cosa è stato asciugato, senza togliere concetti: la ripetizione fra testo e riquadri nella definizione di algoritmo, le frasi di raccordo duplicate nella sezione sui modelli di calcolo, la doppia spiegazione del filtro nella quantificazione ristretta, la ripetizione della prova di progresso nella bandiera a tre colori. Tutte le definizioni, regole, invarianti, tracce, figure ed esercizi sono presenti.
+
+Una sola modifica di contenuto: l'esercizio 2.2 chiedeva le polarità della stessa formula ¬(P⇒Q)∧R già svolta nel testo; ora usa (P∨¬Q)⇒¬R, con soluzione nuova (P negativa, Q positiva, R negativa) controllata in `checks/narrative-pass.py`. Il testo dell'esercizio 1.2 dice «senza modificare gli ingressi» invece di «conservando gli ingressi». Nella divisione con y=0 si precisa che la guardia diventa r≥0, sempre vera. Non sono state trovate altre inesattezze matematiche.
+
+L'aumento di lunghezza è di circa un quarto delle parole dei sorgenti (da 16.973 a 21.469, markup incluso) e di quattro pagine (da 51 a 55). Dopo la revisione la frase media è di 17,2 parole, i periodi sotto le 9 parole sono il 12% e i due punti sono scesi a circa uno ogni 140 parole. Sono indicatori, non obiettivi: la valutazione è stata fatta rileggendo.
+
+Il frontespizio indica l'edizione «ottobre 2026 · volume 1»; la prefazione dice soltanto che il volume raccoglie le lezioni fino al 31 ottobre. Le date esatte delle fonti restano in `coverage.md` e `source-audit.md`.

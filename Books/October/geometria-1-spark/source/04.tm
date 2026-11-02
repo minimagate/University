@@ -1,16 +1,16 @@
 <chapter|Spazi vettoriali e sottospazi>
 
 <\inbreve>
-Che cosa hanno in comune frecce, polinomi e matrici? Sappiamo sommarli e moltiplicarli per numeri. Raccoglieremo le regole comuni nella definizione di spazio vettoriale e impareremo a riconoscerne i sottospazi.
+Le frecce del piano, i polinomi e le tabelle di numeri sono oggetti diversissimi, ma con tutti sappiamo fare le stesse due operazioni: sommarli fra loro e moltiplicarli per un numero. In questo capitolo raccogliamo le regole che queste operazioni rispettano nella definizione di spazio vettoriale. Poi guarderemo dentro uno spazio e cercheremo le sue parti che sono a loro volta spazi, i sottospazi, che saranno i protagonisti dei capitoli successivi.
 </inbreve>
 
 <section|Spazio vettoriale: le regole di somma e scalari>
 
-Con <math|u=(1,2)> e <math|v=(3,-1)> otteniamo <math|u+v=(4,1)> e <math|2u=(2,4)>. Per le frecce la somma segue il parallelogramma; un multiplo cambia lunghezza e, se negativo, verso. Zero dà la freccia nulla. Conserveremo queste regole anche per oggetti diversi.
+Cominciamo dalle frecce del piano. Con <math|u=(1,2)> e <math|v=(3,-1)> otteniamo <math|u+v=(4,1)> e <math|2u=(2,4)>. Geometricamente la somma segue la regola del parallelogramma, mentre moltiplicare per un numero allunga o accorcia la freccia, e se il numero è negativo ne inverte anche il verso. Moltiplicare per zero dà la freccia nulla. Vogliamo isolare le regole che rendono possibili questi calcoli, per poterle usare anche con oggetti che non sono frecce.
 
-Sia <math|K> un campo, come <math|ℝ> o <math|ℂ>. I suoi elementi saranno gli <strong|scalari>.
+I numeri per cui moltiplichiamo vengono da un campo <math|K>, di solito <math|ℝ> oppure <math|ℂ>, e li chiamiamo <strong|scalari>.
 
-Uno <strong|spazio vettoriale su <math|K>> è un insieme <math|V>, i cui elementi chiamiamo vettori, con una somma <math|V×V→V> e un prodotto per scalare <math|K×V→V>. Le operazioni devono restituire vettori di <math|V>. Per ogni <math|u,v,w∈V> e <math|α,β∈K> richiediamo:
+Uno <strong|spazio vettoriale su <math|K>> è un insieme <math|V>, i cui elementi chiamiamo vettori, dotato di una somma <math|V×V→V> e di un prodotto per scalare <math|K×V→V>. Entrambe le operazioni devono dare come risultato vettori di <math|V>. Inoltre, per ogni <math|u,v,w∈V> e <math|α,β∈K>, chiediamo che valgano queste regole:
 
 <\itemize>
 
@@ -25,13 +25,13 @@ Uno <strong|spazio vettoriale su <math|K>> è un insieme <math|V>, i cui element
 <item><math|(αβ)v=α(βv)> e <math|1<rsub|K>v=v>.
 </itemize>
 
-Non richiediamo un prodotto di due vettori. In <math|αβ> moltiplichiamo due scalari; in <math|αv> uno scalare e un vettore. Anche i due segni di somma in <math|(α+β)v=αv+βv> agiscono su insiemi diversi.
+Notiamo che non chiediamo di saper moltiplicare due vettori fra loro. In <math|αβ> moltiplichiamo due scalari, mentre in <math|αv> moltiplichiamo uno scalare per un vettore, e sono due operazioni diverse. Lo stesso accade nella regola <math|(α+β)v=αv+βv>, dove il primo segno di somma unisce due scalari e il secondo due vettori.
 
 <\concetto|Spazio vettoriale>
 Il punto comune fra frecce, polinomi, funzioni e matrici è poter fare somme e prodotti per scalari con queste regole. Dire su quale campo lavoriamo è parte della definizione.
 </concetto>
 
-In <math|K<rsup|n>> definiamo le operazioni componente per componente:
+L'esempio più importante è <math|K<rsup|n>>, l'insieme delle liste di <math|n> scalari, in cui le operazioni si fanno componente per componente:
 
 <\equation*>
 x+y=(x<rsub|1>+y<rsub|1>,…,x<rsub|n>+y<rsub|n>),
@@ -41,97 +41,83 @@ x+y=(x<rsub|1>+y<rsub|1>,…,x<rsub|n>+y<rsub|n>),
 αx=(αx<rsub|1>,…,αx<rsub|n>).
 </equation*>
 
-Per capire una verifica, guardiamo l'associatività. La componente <math|i> di <math|(x+y)+z> è <math|(x<rsub|i>+y<rsub|i>)+z<rsub|i>>. Nel campo questa vale <math|x<rsub|i>+(y<rsub|i>+z<rsub|i>)>, componente di <math|x+(y+z)>. Tutte le componenti coincidono, dunque coincidono i vettori.
-
-Le due distributività, la compatibilità e l'azione dell'unità si verificano applicando la corrispondente regola del campo a ciascuna componente. Zero e opposto sono <math|(0,…,0)> e <math|(-x<rsub|1>,…,-x<rsub|n>)>.
+Per vedere come si verifica una regola, prendiamo l'associatività. La componente di posto <math|i> di <math|(x+y)+z> è <math|(x<rsub|i>+y<rsub|i>)+z<rsub|i>>. Nel campo questo numero è uguale a <math|x<rsub|i>+(y<rsub|i>+z<rsub|i>)>, che è la componente di posto <math|i> di <math|x+(y+z)>. Poiché tutte le componenti coincidono, coincidono anche i vettori. Le altre regole si verificano nello stesso modo, applicando a ogni componente la regola corrispondente del campo. Il vettore nullo è <math|(0,…,0)> e l'opposto di <math|x> è <math|(-x<rsub|1>,…,-x<rsub|n>)>.
 
 <subsection|Che cosa significa moltiplicare per zero>
 
-Lo zero del campo e il vettore nullo sono oggetti diversi. Gli assiomi collegano i loro ruoli. Da <math|0<rsub|K>v=(0<rsub|K>+0<rsub|K>)v=0<rsub|K>v+0<rsub|K>v>, sottraendo <math|0<rsub|K>v> ai due membri, segue <math|0<rsub|K>v=0<rsub|V>>.
+In uno spazio vettoriale ci sono due zeri, lo zero <math|0<rsub|K>> del campo e il vettore nullo <math|0<rsub|V>>. Sono oggetti diversi, ma gli assiomi li collegano in un modo che ci aspettiamo. Poiché <math|0<rsub|K>=0<rsub|K>+0<rsub|K>>, la distributività dà <math|0<rsub|K>v=0<rsub|K>v+0<rsub|K>v>. Sottraendo <math|0<rsub|K>v> a entrambi i membri otteniamo <math|0<rsub|K>v=0<rsub|V>>.
 
-Da <math|α0<rsub|V>=α(0<rsub|V>+0<rsub|V>)=α0<rsub|V>+α0<rsub|V>> segue nello stesso modo <math|α0<rsub|V>=0<rsub|V>>.
+Con lo stesso ragionamento, partendo da <math|0<rsub|V>=0<rsub|V>+0<rsub|V>>, troviamo <math|α0<rsub|V>=0<rsub|V>> per ogni scalare <math|α>. Infine <math|v+(-1<rsub|K>)v=(1<rsub|K>-1<rsub|K>)v=0<rsub|V>>, e quindi <math|(-1<rsub|K>)v> è proprio l'opposto <math|-v>.
 
-Infine <math|v+(-1<rsub|K>)v=(1<rsub|K>-1<rsub|K>)v=0<rsub|V>>, quindi <math|(-1<rsub|K>)v=-v>.
-
-Nel seguito scriveremo spesso soltanto 0: il contesto dirà se è uno scalare oppure un vettore.
+D'ora in poi scriveremo spesso soltanto 0, lasciando al contesto il compito di dire se si tratta di uno scalare o di un vettore.
 
 <section|Polinomi, funzioni e matrici come vettori>
 
 <subsection|Polinomi: lavorare sui coefficienti>
 
-Per <strong|polinomi formali> <math|K[X]> sommiamo i coefficienti della stessa potenza e moltiplichiamo tutti i coefficienti per lo scalare. Per esempio <math|(1+2X)+(3-X)=4+X>. Il vettore nullo ha tutti i coefficienti zero. Le regole del campo valgono coefficiente per coefficiente. Il simbolo <math|X> è formale: due polinomi sono uguali quando hanno gli stessi coefficienti.
+Due <strong|polinomi formali> di <math|K[X]> si sommano sommando i coefficienti delle stesse potenze, e un polinomio si moltiplica per uno scalare moltiplicando tutti i suoi coefficienti. Per esempio <math|(1+2X)+(3-X)=4+X>. Il vettore nullo è il polinomio con tutti i coefficienti nulli, e le regole del campo valgono coefficiente per coefficiente. La lettera <math|X> è soltanto un segnaposto, e due polinomi sono uguali quando hanno gli stessi coefficienti.
 
-I polinomi di grado al più <math|d>, incluso il polinomio nullo, formano <math|K<rsub|d>[X]>. Le operazioni non alzano il grado oltre <math|d>. Il grado può invece abbassarsi: <math|(X<rsup|2>+X)+(-X<rsup|2>+1)=X+1>. Perciò i polinomi di grado <em|esattamente> 2 non formano uno spazio con queste operazioni; manca anche il polinomio nullo.
+Fissato un numero <math|d>, i polinomi di grado al più <math|d>, insieme al polinomio nullo, formano lo spazio <math|K<rsub|d>[X]>. Le operazioni non possono far salire il grado oltre <math|d>, ma possono farlo scendere. Per esempio <math|(X<rsup|2>+X)+(-X<rsup|2>+1)=X+1>. È per questo che i polinomi di grado <em|esattamente> 2 non formano uno spazio: la somma di due di loro può avere grado più basso, e inoltre fra loro manca il polinomio nullo.
 
 <subsection|Funzioni: lavorare punto per punto>
 
-Per le <strong|funzioni> <math|f,g:D→K>, con dominio fissato <math|D>, le operazioni sono punto per punto:
+Anche le <strong|funzioni> <math|f,g:D→K> definite su uno stesso insieme <math|D> formano uno spazio vettoriale, con le operazioni fatte punto per punto:
 
 <\equation*>
 (f+g)(t)=f(t)+g(t),<space|2em>(αf)(t)=αf(t).
 </equation*>
 
-Se <math|f(3)=5> e <math|g(3)=7>, la funzione <math|f+g> vale 12 nel punto 3. Il vettore nullo è la funzione sempre nulla.
-
-Verificare un assioma significa verificarlo per ogni <math|t>: per esempio le due funzioni <math|(f+g)+h> e <math|f+(g+h)> hanno valori <math|(f(t)+g(t))+h(t)> e <math|f(t)+(g(t)+h(t))>, uguali nel campo.
+Se <math|f(3)=5> e <math|g(3)=7>, la funzione <math|f+g> nel punto 3 vale 12. Il vettore nullo è la funzione che vale zero ovunque. Per verificare una regola dobbiamo controllarla in ogni punto <math|t>. Le funzioni <math|(f+g)+h> e <math|f+(g+h)>, per esempio, valgono in <math|t> rispettivamente <math|(f(t)+g(t))+h(t)> e <math|f(t)+(g(t)+h(t))>, due numeri uguali nel campo.
 
 <subsection|Matrici: lavorare casella per casella>
 
-Una <strong|matrice> <math|A=(a<rsub|ij>)> di tipo <math|m×n> è una tabella con <math|m> righe e <math|n> colonne. Il primo indice indica la riga, il secondo la colonna.
-
-In <math|M<rsub|m,n>(K)> poniamo <math|(A+B)<rsub|ij>=a<rsub|ij>+b<rsub|ij>> e <math|(αA)<rsub|ij>=αa<rsub|ij>>. Zero è la tabella di tutti zeri.
-
-Gli assiomi si verificano casella per casella; le matrici da sommare devono avere lo stesso tipo. Il prodotto tra matrici sarà un'altra operazione, introdotta più avanti.
+Una <strong|matrice> <math|A=(a<rsub|ij>)> di tipo <math|m×n> è una tabella di scalari con <math|m> righe e <math|n> colonne, in cui il primo indice indica la riga e il secondo la colonna. Le matrici dello stesso tipo formano lo spazio <math|M<rsub|m,n>(K)>, con le operazioni fatte casella per casella: <math|(A+B)<rsub|ij>=a<rsub|ij>+b<rsub|ij>> e <math|(αA)<rsub|ij>=αa<rsub|ij>>. Lo zero è la tabella piena di zeri. Si possono sommare soltanto matrici dello stesso tipo, e il prodotto fra matrici, che incontreremo più avanti, è un'operazione completamente diversa.
 
 <subsection|Lo stesso insieme su campi diversi>
 
-Infine <math|ℂ> è uno spazio su <math|ℂ> con il prodotto usuale come prodotto per scalare. Possiamo anche ammettere soltanto scalari reali e considerarlo su <math|ℝ>.
-
-Entrambe le strutture rispettano gli assiomi, ma le combinazioni consentite cambiano: <math|i·1> è lecito nella prima, mentre nella seconda il coefficiente <math|i> non è ammesso. Ritroveremo questa differenza studiando basi e dimensione.
+L'insieme <math|ℂ> è uno spazio vettoriale su <math|ℂ>, con il prodotto usuale come prodotto per scalare. Possiamo però decidere di ammettere come scalari soltanto i numeri reali, e allora <math|ℂ> diventa uno spazio vettoriale su <math|ℝ>. Entrambe le strutture rispettano gli assiomi, ma le combinazioni che possiamo formare sono diverse. Nella prima possiamo scrivere <math|i·1>, nella seconda no, perché <math|i> non è uno scalare ammesso. Questa differenza tornerà quando parleremo di basi e di dimensione.
 
 <section|Sottospazi: quando le operazioni restano dentro>
 
-Dentro <math|ℝ<rsup|2>> consideriamo la retta <math|L={t(1,2):t∈ℝ}>. Sommare due suoi vettori dà <math|s(1,2)+t(1,2)=(s+t)(1,2)>, ancora sulla retta. Anche moltiplicare per <math|α> dà <math|(αs)(1,2)>. La retta conserva le due operazioni.
+Dentro <math|ℝ<rsup|2>> consideriamo la retta <math|L={t(1,2):t∈ℝ}>. Se sommiamo due suoi vettori otteniamo <math|s(1,2)+t(1,2)=(s+t)(1,2)>, che sta ancora sulla retta, e lo stesso accade moltiplicando per uno scalare, perché <math|α(t(1,2))=(αt)(1,2)>. Le due operazioni non ci fanno mai uscire dalla retta, e quindi la retta è a sua volta uno spazio vettoriale.
 
-Un <strong|sottospazio> <math|W> di <math|V> è un sottoinsieme che è uno spazio vettoriale con le stesse operazioni e lo stesso campo di <math|V>. Gli assiomi di uguaglianza, come associatività e distributività, sono già veri nello spazio ambiente. Dobbiamo garantire che i risultati restino in <math|W> e che vi siano zero e opposti.
+In generale chiamiamo <strong|sottospazio> di <math|V> un sottoinsieme <math|W> che è uno spazio vettoriale con le stesse operazioni e lo stesso campo di <math|V>. Per riconoscerlo non dobbiamo ricontrollare tutti gli assiomi. Le regole che sono uguaglianze, come l'associatività o la distributività, valgono già in <math|V> e quindi anche in <math|W>. Dobbiamo solo assicurarci che le operazioni non portino fuori da <math|W> e che in <math|W> ci siano lo zero e gli opposti.
 
 <\concetto|Criterio di sottospazio>
 Un sottoinsieme <math|W⊆V> è un sottospazio se e solo se contiene <math|0<rsub|V>>, è chiuso per somma ed è chiuso per prodotto con ogni scalare di <math|K>.
 </concetto>
 
-La necessità segue dalla definizione; in particolare, preso <math|w∈W>, anche <math|0<rsub|K>w=0<rsub|V>> deve stare in <math|W>. Viceversa, le tre condizioni garantiscono operazioni interne, il vettore nullo e gli opposti, perché <math|-w=(-1)w∈W>. Gli altri assiomi sono ereditati da <math|V>. Abbiamo così dimostrato la sufficienza.
+Le tre condizioni sono necessarie, perché un sottospazio deve contenere lo zero e deve essere chiuso per le operazioni. Sono anche sufficienti. Le due chiusure garantiscono che le operazioni restino interne, lo zero è presente per ipotesi e l'opposto di ogni <math|w∈W> è <math|(-1)w>, che sta in <math|W> per la chiusura rispetto agli scalari. Tutte le altre regole sono ereditate da <math|V>.
 
-Al posto di chiedere <math|0∈W> possiamo chiedere <math|W≠∅>: con la chiusura per scalari, un qualunque elemento produce zero. La sola chiusura non basta: l'insieme vuoto la soddisfa senza essere uno spazio.
+Al posto di chiedere <math|0∈W> potremmo chiedere soltanto che <math|W> non sia vuoto. Se contiene un vettore <math|w>, infatti, contiene anche <math|0<rsub|K>w=0<rsub|V>>. Le sole chiusure, senza nessuna delle due richieste, non basterebbero, perché l'insieme vuoto è chiuso per entrambe le operazioni senza essere uno spazio.
 
-<figura|@IMG(rette,0.9)|Una retta per l'origine conserva somme e multipli. Una retta che non contiene l'origine non è un sottospazio: manca il vettore nullo.>
+<figura|@IMG(rette,0.9)|Una retta per l'origine resta chiusa per somme e multipli. Una retta che non contiene l'origine non è un sottospazio: manca il vettore nullo.>
 
-Il piano <math|{(x,y,0):x,y∈ℝ}> è un sottospazio di <math|ℝ<rsup|3>>. È una copia di <math|ℝ<rsup|2>>, ma i suoi elementi sono terne: non bisogna confondere la coppia <math|(x,y)> con la terna <math|(x,y,0)>.
+Il piano <math|{(x,y,0):x,y∈ℝ}> è un sottospazio di <math|ℝ<rsup|3>>. Somiglia moltissimo a <math|ℝ<rsup|2>>, ma i suoi elementi sono terne, e conviene non confondere la coppia <math|(x,y)> con la terna <math|(x,y,0)>.
 
-Un esempio più utile è <math|W={(x,y,z)∈ℝ<rsup|3>:2x-y+3z=0}>. Se <math|u=(x,y,z)> e <math|u'=(x',y',z')> stanno in <math|W>, allora
+Un esempio più interessante è <math|W={(x,y,z)∈ℝ<rsup|3>:2x-y+3z=0}>. Se <math|u=(x,y,z)> e <math|u'=(x',y',z')> soddisfano l'equazione, anche la loro somma la soddisfa, perché
 
 <\equation*>
 2(x+x')-(y+y')+3(z+z')=(2x-y+3z)+(2x'-y'+3z')=0.
 </equation*>
 
-Per un multiplo l'espressione diventa <math|α(2x-y+3z)=0>. Zero soddisfa l'equazione. È dunque un sottospazio. Lo stesso argomento vale per qualunque sistema di equazioni lineari omogenee. Con termine noto 1 lo zero non soddisfa l'equazione, quindi il criterio fallisce.
+Per un multiplo l'espressione diventa <math|α(2x-y+3z)=α·0=0>, e lo zero soddisfa chiaramente l'equazione. Dunque <math|W> è un sottospazio, e lo stesso argomento funziona per qualsiasi sistema di equazioni lineari omogenee, cioè con termini noti nulli. Se invece l'equazione fosse <math|2x-y+3z=1>, lo zero non la soddisferebbe e il criterio fallirebbe subito.
 
-Possiamo anche costruire tutti i vettori di <math|W>. Isoliamo <math|y=2x+3z> e lasciamo liberi <math|x=s,z=t>. Otteniamo
+Oltre a riconoscere i vettori di <math|W>, possiamo anche costruirli tutti. Ricaviamo <math|y=2x+3z> e lasciamo liberi <math|x=s> e <math|z=t>. I vettori di <math|W> sono allora tutti e soli quelli della forma
 
 <\equation*>
 (s,2s+3t,t)=s(1,2,0)+t(0,3,1).
 </equation*>
 
-Le equazioni indicano quali vettori sono ammessi; i parametri mostrano come ottenerli. Nel prossimo capitolo daremo un nome all'insieme di queste combinazioni.
+L'equazione ci dice quali vettori sono ammessi, mentre i parametri ci dicono come ottenerli a partire da due vettori fissati. Nel prossimo capitolo daremo un nome a questo modo di costruire un sottospazio.
 
 <section|Intersezione e unione di sottospazi>
 
-Se <math|U,W> sono sottospazi dello stesso <math|V>, la loro <strong|intersezione> è sempre un sottospazio. Contiene zero. Due vettori nell'intersezione stanno in entrambi i sottospazi; la loro somma e ogni multiplo stanno ancora in entrambi, dunque nell'intersezione. La dimostrazione vale anche per una famiglia arbitraria di sottospazi.
+Se <math|U> e <math|W> sono sottospazi dello stesso spazio <math|V>, la loro <strong|intersezione> è sempre un sottospazio. Contiene lo zero, perché lo contengono entrambi. Se due vettori stanno nell'intersezione, stanno sia in <math|U> sia in <math|W>, e quindi anche la loro somma e i loro multipli stanno in entrambi. Lo stesso ragionamento funziona per l'intersezione di quanti sottospazi vogliamo.
 
-Per l'<strong|unione> la situazione cambia. Nell'unione dei due assi di <math|ℝ<rsup|2>> troviamo <math|(1,0)> e <math|(0,1)>, ma non <math|(1,1)>: la chiusura per somma fallisce.
+Con l'<strong|unione> le cose vanno diversamente. Nell'unione dei due assi di <math|ℝ<rsup|2>> troviamo <math|(1,0)> e <math|(0,1)>, ma non la loro somma <math|(1,1)>, che non sta su nessuno dei due assi. La chiusura per somma fallisce, e l'unione non è un sottospazio.
 
-Precisamente, <math|U∪W> è un sottospazio se e solo se <math|U⊆W> oppure <math|W⊆U>. Se uno contiene l'altro, l'unione coincide col più grande.
-
-Se nessuno contiene l'altro, scegliamo <math|u∈U> fuori da <math|W> e <math|w∈W> fuori da <math|U>. La somma <math|u+w> non può stare nell'unione: se stesse in <math|U>, avremmo <math|w=(u+w)-u∈U>; se stesse in <math|W>, avremmo <math|u=(u+w)-w∈W>. Entrambi i casi contraddicono la scelta. Manca dunque la chiusura per somma.
+Si può dire esattamente quando l'unione funziona: <math|U∪W> è un sottospazio se e solo se uno dei due è contenuto nell'altro. In quel caso, infatti, l'unione coincide con il più grande dei due. Se invece nessuno dei due contiene l'altro, scegliamo <math|u∈U> che non sta in <math|W> e <math|w∈W> che non sta in <math|U>, e guardiamo la somma <math|u+w>. Se stesse in <math|U>, anche <math|w=(u+w)-u> starebbe in <math|U>. Se stesse in <math|W>, anche <math|u=(u+w)-w> starebbe in <math|W>. Entrambe le possibilità contraddicono la nostra scelta, quindi <math|u+w> non sta nell'unione e la chiusura per somma fallisce.
 
 <\verifica|4>
 <strong|4.1.> L'insieme dei polinomi <math|p∈ℝ<rsub|3>[X]> con <math|p(1)=0> è un sottospazio? E quello con <math|p(1)=2>? Usa il comportamento della valutazione rispetto alle due operazioni.

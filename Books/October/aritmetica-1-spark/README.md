@@ -1,6 +1,6 @@
 # Aritmetica 1 Spark
 
-Libro di settembre e ottobre 2026: **52 pagine, 12 capitoli, 23 figure vettoriali e 24 esercizi con soluzioni ragionate**.
+Libro di ottobre 2026: **56 pagine, 12 capitoli, 23 figure vettoriali e 24 esercizi con soluzioni ragionate**, in prosa narrativa dalla revisione del 2 novembre 2026.
 
 - `aritmetica-1-spark.pdf`: volume da leggere e stampare.
 - `aritmetica-1-spark.tm`: documento completo nativo GNU TeXmacs, modificabile.
@@ -49,4 +49,4 @@ La conversione SVG→PDF richiede macOS e Swift/WebKit. Le figure mantengono lo 
 
 ## Edizione principale e archivio
 
-Spark è ora il formato predefinito dei libri: l'[indice principale](../../README.md) mostra le edizioni disponibili. Il volume precedente è conservato in `Books/Archive/October/aritmetica-1.*` con la sua cartella asset. Le impronte storiche rimangono invariate; `scripts/verify_sources.py` risolve i percorsi attraverso `Books/Archive/relocations.json`.
+Spark è il formato predefinito dei libri: l'[indice principale](../../README.md) mostra le edizioni disponibili. Le impronte del volume precedente restano in `assets/original-hashes.json` come riferimento storico; quei file non sono più nel vault, perciò `scripts/verify_sources.py` li controlla solo con `--references`.

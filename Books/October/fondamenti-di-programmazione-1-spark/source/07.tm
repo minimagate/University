@@ -1,14 +1,14 @@
 <chapter|Correttezza totale e funzioni di terminazione>
 
 <\inbreve>
-Come dimostriamo che un ciclo arriva all’uscita? Nella divisione abbiamo visto che il resto diminuisce. Cercheremo una quantità naturale che scenda a ogni giro e useremo questa idea per completare le prove di correttezza.
+Un invariante ci dice che cosa otteniamo se il ciclo finisce, ma tace sul fatto che finisca davvero. Per colmare questa lacuna basta un'idea semplice: trovare una quantità che parte da un numero naturale e scende a ogni giro, e che quindi non può scendere per sempre. Con questa idea completeremo la prova della divisione, impareremo a costruire un invariante per una somma e chiuderemo con un problema geometrico in cui la quantità giusta è tutt'altro che ovvia.
 </inbreve>
 
-Nella divisione ogni sottrazione riduce il resto. Questo fatto suggerisce perché il ciclo debba finire, ma dobbiamo precisare che cosa diminuisce e perché non può diminuire per sempre. L'invariante descrive la relazione che vogliamo conservare; una funzione di terminazione descrive il progresso verso l'uscita.
+Nella divisione per sottrazioni ogni giro toglie qualcosa al resto, e già questo ci fa intuire che il ciclo prima o poi debba fermarsi. Per trasformare l'intuizione in una prova dobbiamo dire con precisione che cosa diminuisce e perché non può diminuire all'infinito. L'invariante descrive la relazione che rimane vera durante il calcolo, mentre la quantità che cerchiamo ora, la funzione di terminazione, misura il cammino che resta verso l'uscita.
 
 <section|Una quantità naturale che diminuisce>
 
-Con <math|x=17,y=5>, il resto ai controlli è <math|17,12,7,2>. È sempre un intero non negativo e diminuisce strettamente a ogni giro eseguito. Una sequenza di questo genere non può essere infinita: partendo da un naturale <math|k>, dopo ogni diminuzione intera si perde almeno uno, quindi non si possono compiere più di <math|k> diminuzioni senza scendere sotto zero.
+Con <math|x=17> e <math|y=5> il resto vale <math|17,12,7,2> ai successivi controlli della guardia. È sempre un intero non negativo, e diminuisce strettamente a ogni giro eseguito. Una sequenza di questo tipo non può essere infinita, perché partendo da un naturale <math|k> ogni diminuzione fra interi toglie almeno 1, e dopo <math|k> diminuzioni non ci sarebbe più spazio senza scendere sotto zero.
 
 <\concetto|Funzione di terminazione>
 Una funzione di terminazione associa agli stati considerati una quantità <math|t> intera, definita e non negativa. Se ogni iterazione completata la fa diminuire strettamente, e ogni iterazione termina con successo, il ciclo non può eseguire infinite iterazioni.
@@ -16,21 +16,21 @@ Una funzione di terminazione associa agli stati considerati una quantità <math|
 
 <subsection|Perché chiediamo un numero naturale>
 
-La sola diminuzione non basta. La successione di interi <math|0,-1,-2,…> diminuisce senza fermarsi; serve il limite inferiore. Neppure essere reale e positivo basta: <math|1,1/2,1/4,…> è una successione infinita strettamente decrescente. La scelta dei naturali contiene quindi una parte essenziale dell'argomento.
+La sola diminuzione non basterebbe. La successione di interi <math|0,-1,-2,…> diminuisce a ogni passo senza fermarsi mai, perché manca un limite inferiore. Nemmeno chiedere un numero reale positivo sarebbe sufficiente, dato che <math|1,1/2,1/4,…> è una successione infinita e strettamente decrescente di numeri positivi. Il fatto di lavorare con i naturali, dove i passi hanno almeno ampiezza 1 e c'è un fondo, è quindi una parte essenziale dell'argomento.
 
 <subsection|Confrontare il valore vecchio e quello nuovo>
 
-Per confrontare il valore prima e dopo il corpo usiamo una variabile di specifica fresca <math|V>. Nella premessa <math|t=V> essa memorizza il valore di partenza; nessun comando può modificarla. Il progresso si scrive
+Per dire che <math|t> diminuisce dobbiamo confrontare il suo valore prima del corpo con quello dopo, e i programmi non ricordano i valori vecchi. La soluzione è la stessa che abbiamo usato per gli ingressi, cioè una variabile di specifica nuova <math|V>, che fotografa il valore di partenza e che nessun comando può modificare. Il progresso si scrive allora
 
 <\equation*>
 {I∧E∧t=V}<space|0.5em>C<space|0.5em>{t‹V}.
 </equation*>
 
-Non significa che il programma debba conservare <math|t>. Significa che la prova può confrontare il nuovo valore di <math|t> con il suo valore vecchio, rimasto fissato in <math|V>.
+La tripla non chiede al programma di mantenere <math|t>. Permette soltanto alla prova di confrontare il nuovo valore di <math|t> con quello vecchio, rimasto fissato in <math|V>.
 
 <section|La regola del while in correttezza totale>
 
-Una prova totale deve garantire tre fatti: ogni controllo della guardia ha valore; ogni corpo che viene iniziato termina con successo; il numero di iterazioni è finito. Ecco gli obblighi per <math|{P}<space|0.4em>W<space|0.4em>{Q}>, dove <math|W> è <tt|while E do C endw>:
+Una prova di correttezza totale deve garantire tre cose, cioè che ogni controllo della guardia abbia un valore, che ogni esecuzione del corpo termini senza errori e che le iterazioni siano in numero finito. Per un ciclo <math|W> della forma <tt|while E do C endw> e una specifica <math|{P}<space|0.4em>W<space|0.4em>{Q}>, queste garanzie diventano cinque obblighi di prova.
 
 <\enumerate>
 <item><strong|Ingresso.> <math|P⇒I∧<math-up|def>(E)>: prima del primo controllo valgono l'invariante e la definitezza della guardia.
@@ -44,41 +44,41 @@ Una prova totale deve garantire tre fatti: ogni controllo della guardia ha valor
 <item><strong|Uscita.> <math|I∧¬E⇒Q>: quando il ciclo si ferma, le informazioni rimaste danno il risultato richiesto.
 </enumerate>
 
-La preservazione garantisce che il ragionamento possa continuare a ogni controllo. Se la guardia rimanesse sempre vera, otterremmo infinite diminuzioni fra naturali, impossibili. Dunque incontriamo un controllo falso; l'invariante e l'uscita danno <math|Q>. 
+Gli obblighi si incastrano fra loro in modo naturale. La preservazione assicura che il ragionamento possa ripartire a ogni controllo, con l'invariante vero e la guardia definita. Se la guardia restasse vera per sempre otterremmo infinite diminuzioni strette fra numeri naturali, il che è impossibile, quindi prima o poi incontriamo un controllo falso. A quel punto l'invariante e l'obbligo di uscita ci danno <math|Q>.
 
-Quando un’inizializzazione precede il ciclo, il primo obbligo è una tripla sul comando iniziale, anziché un'implicazione diretta.
+Quando il ciclo è preceduto da un'inizializzazione, come quasi sempre accade, il primo obbligo diventa una tripla sul comando iniziale invece di un'implicazione diretta.
 
 <section|Divisione intera: completare la prova>
 
-Riprendiamo <tt|q := 0; r := x> e il corpo <tt|q := q + 1; r := r - y>, con guardia <math|r≥y>. L'invariante è <math|I≡(x=qy+r∧r≥0∧y›0)> e scegliamo <math|t=r>. La positività di <math|y> compare nell'invariante perché la useremo per dimostrare il progresso a ogni giro.
+Riprendiamo la divisione, con l'inizializzazione <tt|q := 0; r := x>, la guardia <math|r≥y> e il corpo <tt|q := q + 1; r := r - y>. L'invariante è <math|I≡(x=qy+r∧r≥0∧y›0)>, e come funzione di terminazione scegliamo il resto, <math|t=r>. La condizione <math|y›0> fa parte dell'invariante perché ci servirà a ogni giro per dimostrare il progresso.
 
-<subsection|Inizializzazione e conservazione>
+<subsection|Inizializzazione e preservazione>
 
-L’inizializzazione stabilisce <math|x=0·y+x> e <math|r=x≥0>. La guardia contiene solo un confronto fra variabili e quindi è definita. 
+Dopo l'inizializzazione abbiamo <math|x=0·y+x> e <math|r=x≥0>, quindi l'invariante vale. La guardia confronta soltanto due variabili ed è sempre definita.
 
-Per verificare che l’invariante si conservi, indichiamo con <math|q,r> i valori prima del corpo e con <math|q',r'> quelli dopo. La sequenza produce <math|q'=q+1> e <math|r'=r-y>. Perciò
+Per la preservazione chiamiamo <math|q,r> i valori prima del corpo e <math|q',r'> quelli dopo. Il corpo produce <math|q'=q+1> e <math|r'=r-y>, e quindi
 
 <\equation*>
 q'y+r'=(q+1)y+(r-y)=qy+r=x.
 </equation*>
 
-La guardia <math|r≥y> assicura <math|r'≥0>. Il corpo non assegna a <math|y>, quindi <math|y›0> resta vera. Somma e sottrazione sono definite e terminano: abbiamo provato la conservazione dell’invariante con un’esecuzione che termina con successo.
+La guardia <math|r≥y> ci assicura che <math|r'> non sia negativo, e siccome il corpo non assegna mai <math|y>, anche <math|y›0> rimane vera. Le somme e le sottrazioni sono sempre definite, quindi il corpo termina senza errori e ristabilisce l'invariante.
 
 <subsection|Progresso e risultato>
 
-Dall’invariante abbiamo <math|t=r≥0>. Se prima del corpo <math|r=V>, dopo vale <math|r'=V-y‹V>, perché <math|y›0>. Abbiamo così la diminuzione stretta. All'uscita la guardia falsa dà <math|r‹y>; insieme all'invariante otteniamo
+L'invariante ci dà <math|t=r≥0>, cioè il limite inferiore. Se prima del corpo <math|r=V>, dopo il corpo <math|r'=V-y>, che è strettamente minore di <math|V> proprio perché <math|y›0>. All'uscita la guardia è falsa, quindi <math|r‹y>, e insieme all'invariante otteniamo
 
 <\equation*>
 x=qy+r∧0≤r‹y.
 </equation*>
 
-Questa è precisamente la caratterizzazione del quoziente e del resto della divisione di <math|x> per <math|y>. Il programma termina e li calcola per ogni <math|x≥0,y›0>. Con <math|y=0>, invece, la guardia sarebbe sempre vera e la sottrazione non cambierebbe <math|r>: fallirebbe il progresso. L'ipotesi sul divisore ha dunque un motivo concreto.
+È esattamente la caratterizzazione del quoziente e del resto della divisione di <math|x> per <math|y>. Il programma termina e li calcola per ogni <math|x≥0> e <math|y›0>. Vale la pena guardare che cosa succederebbe con <math|y=0>. La guardia diventerebbe <math|r≥0>, che è sempre vera, la sottrazione lascerebbe <math|r> invariato e il ciclo girerebbe per sempre. È l'obbligo di progresso a fallire, e questo spiega concretamente perché l'ipotesi sul divisore è necessaria.
 
 <figura|@IMG(scala)|Per <math|x=17,y=5> il resto scende da 17 a 2. Il limite inferiore e la diminuzione intera spiegano la terminazione; l'invariante spiega il significato del risultato.>
 
 <section|Somma dei primi interi: scegliere l'invariante>
 
-Vogliamo sommare gli interi da 0 a <math|n-1>, con <math|n≥0> non modificato. Invece di memorizzare tutti gli addendi, teniamo la somma degli addendi già attraversati e l'indice del prossimo:
+Nel caso della divisione l'invariante si leggeva quasi direttamente nella traccia. Vediamo ora un esempio in cui conviene costruirlo con un po' più di metodo. Vogliamo sommare gli interi da 0 a <math|n-1>, con <math|n≥0> che il programma non modifica. Invece di ricordare tutti gli addendi, teniamo soltanto la somma di quelli già visti e l'indice del prossimo.
 
 <\verbatim>
 x := 0; s := 0;<no-page-break>
@@ -92,83 +92,79 @@ while x ‹ n do<no-page-break>
 endw
 </verbatim>
 
-Prima del controllo, <math|x> è il prossimo intero da aggiungere. Gli addendi già inclusi sono dunque <math|0,1,…,x-1>. Questa lettura suggerisce
+A ogni controllo della guardia, <math|x> è il prossimo intero da aggiungere, e quindi gli addendi già sommati sono <math|0,1,…,x-1>. Questa lettura del programma suggerisce l'invariante
 
 <\equation*>
 I≡s=<big|sum><rsub|i=0><rsup|x-1>i∧0≤x≤n.
 </equation*>
 
-La somma è vuota e vale zero quando <math|x=0>. L'inizializzazione è quindi corretta. I limiti su <math|x> servono sia a interpretare la parte già percorsa sia a riconoscere il punto finale.
+Quando <math|x=0> la somma è vuota e vale zero, quindi l'inizializzazione stabilisce l'invariante. I limiti su <math|x> hanno due compiti, perché ci permettono di interpretare la parte già percorsa e di riconoscere quando siamo arrivati in fondo.
 
 <subsection|Preparare il giro successivo>
 
-Per conservare l’invariante chiediamoci che cosa deve valere prima dell'ultimo comando <tt|x := x + 1>. Sostituendo <math|x+1> a <math|x> nell'invariante otteniamo
+Per verificare la preservazione ragioniamo all'indietro, come abbiamo imparato con le sequenze. Che cosa deve valere prima dell'ultimo comando, <tt|x := x + 1>, perché dopo valga l'invariante? Sostituendo <math|x+1> al posto di <math|x> otteniamo
 
 <\equation*>
 s=<big|sum><rsub|i=0><rsup|x>i∧0≤x+1≤n.
 </equation*>
 
-Prima di <tt|s := s + x> serve quindi
+Risalendo ancora attraverso <tt|s := s + x>, prima del corpo deve valere
 
 <\equation*>
 s+x=<big|sum><rsub|i=0><rsup|x>i∧0≤x+1≤n.
 </equation*>
 
-La prima uguaglianza viene dall'invariante e dall'identità
+La prima parte segue dall'invariante, grazie all'identità
 
 <\equation*>
 <big|sum><rsub|i=0><rsup|x>i=<big|sum><rsub|i=0><rsup|x-1>i+x.
 </equation*>
 
-La guardia <math|x‹n>, insieme a <math|0≤x> e al fatto che <math|x,n> sono interi, dà <math|0≤x+1≤n>. Abbiamo verificato entrambe le richieste; tutte le espressioni sono definite.
+La seconda parte segue dalla guardia, perché <math|x‹n> e <math|0≤x>, con <math|x> e <math|n> interi, danno <math|0≤x+1≤n>. Entrambe le richieste sono soddisfatte, e tutte le espressioni coinvolte sono definite.
 
 <subsection|Quanto lavoro rimane?>
 
-Per la terminazione prendiamo <math|t=n-x>, il numero di addendi ancora da attraversare. Da <math|x≤n> segue <math|t≥0>. Un giro aumenta <math|x> di uno e lascia <math|n> fisso, quindi il nuovo valore è <math|V-1‹V>. All'uscita <math|x≥n> e <math|x≤n> danno <math|x=n>: l'invariante diventa la somma richiesta. Per <math|n=0> non eseguiamo alcun giro e otteniamo correttamente zero.
+Per la terminazione scegliamo <math|t=n-x>, cioè il numero di addendi ancora da aggiungere. Il limite inferiore viene da <math|x≤n>, che dà <math|t≥0>. Ogni giro aumenta <math|x> di uno e lascia fisso <math|n>, quindi se <math|t> valeva <math|V> ora vale <math|V-1>. All'uscita abbiamo sia <math|x≥n>, dalla guardia falsa, sia <math|x≤n>, dall'invariante, e quindi <math|x=n>, che trasforma l'invariante nella somma richiesta. Se <math|n=0> non si esegue nessun giro e il risultato è correttamente zero.
 
-È essenziale l'ordine degli assegnamenti: aggiungiamo il vecchio <math|x>, poi lo incrementiamo. Scambiandoli sommeremmo gli interi da 1 a <math|n>, risolvendo un problema diverso.
+L'ordine dei due assegnamenti nel corpo è essenziale. Aggiungiamo il vecchio valore di <math|x> e solo dopo lo incrementiamo. Se li scambiassimo sommeremmo gli interi da 1 a <math|n>, che è un problema diverso.
 
 <section|Programmi annotati e proprietà non modificate>
 
-Annotare un programma significa scrivere asserzioni nei punti utili alla prova. Per la somma possiamo indicare <math|I> e <math|t=n-x> prima del <tt|while>, <math|I∧x‹n> all'ingresso del corpo, l'asserzione intermedia appena ricavata fra i due assegnamenti e <math|I∧x≥n> dopo il ciclo. Queste scritte non vengono eseguite: dichiarano gli obblighi che il lettore deve giustificare.
+Una prova come quella della somma si può scrivere direttamente sul programma, come una serie di annotazioni nei punti importanti. Prima del <tt|while> indichiamo <math|I> e <math|t=n-x>, all'inizio del corpo <math|I∧x‹n>, fra i due assegnamenti l'asserzione intermedia appena ricavata e dopo il ciclo <math|I∧x≥n>. Queste annotazioni non vengono eseguite, ma dichiarano gli obblighi che chi legge deve poter giustificare.
 
-Spesso serve trasportare un'informazione che il comando non tocca. Sia <math|<math-up|change>(C)> l'insieme dei nomi che compaiono come destinazione di un assegnamento in <math|C>. Sono nomi che il comando potrebbe modificare, anche se un particolare ramo non viene eseguito.
+<subsection|Trasportare ciò che il comando non tocca>
 
-Con <math|<math-up|free>(R)> indichiamo le variabili libere dell’asserzione <math|R>. Se
+Capita spesso di dover portare attraverso un comando un'informazione che il comando non modifica. Indichiamo con <math|<math-up|change>(C)> l'insieme dei nomi che compaiono come destinazione di un assegnamento in <math|C>. Sono i nomi che il comando potrebbe modificare, anche se in una particolare esecuzione un ramo non viene eseguito. Con <math|<math-up|free>(R)> indichiamo invece le variabili libere dell'asserzione <math|R>. Se
 
 <\equation*>
 <math-up|free>(R)∩<math-up|change>(C)=∅,
 </equation*>
 
-la verità di <math|R> non cambia durante un'esecuzione con successo di <math|C>. Dalla tripla <math|{P} C {Q}> possiamo dunque ricavare <math|{R∧P} C {R∧Q}>. La condizione sulle variabili è ciò che giustifica il passaggio. Nella divisione il corpo assegna solo a <math|q,r>, quindi conserva <math|y›0>.
+il comando non tocca nessuna delle variabili di cui <math|R> parla, e quindi la verità di <math|R> non cambia durante un'esecuzione di <math|C> che va a buon fine. Dalla tripla <math|{P} C {Q}> possiamo allora ricavare <math|{R∧P} C {R∧Q}>. Nella divisione, per esempio, il corpo assegna soltanto <math|q> e <math|r>, e per questo <math|y›0> passa intatta da un giro all'altro.
 
 <subsection|Combinare due garanzie>
 
-Possiamo anche combinare prove dello stesso comando. Da <math|{P<rsub|1>} C {Q<rsub|1>}> e <math|{P<rsub|2>} C {Q<rsub|2>}> ricaviamo <math|{P<rsub|1>∧P<rsub|2>} C {Q<rsub|1>∧Q<rsub|2>}>: uno stato che soddisfa entrambi gli ingressi gode di entrambe le garanzie sul risultato.
+Due prove dello stesso comando si possono anche combinare. Da <math|{P<rsub|1>} C {Q<rsub|1>}> e <math|{P<rsub|2>} C {Q<rsub|2>}> ricaviamo <math|{P<rsub|1>∧P<rsub|2>} C {Q<rsub|1>∧Q<rsub|2>}>, perché uno stato che soddisfa entrambi gli ingressi gode di entrambe le garanzie sul risultato. Nel nostro linguaggio deterministico c'è una sola esecuzione, e quindi le due conclusioni valgono nello stesso stato finale.
 
-Da <math|{P} C {Q}> e <math|{R} C {Q}> ricaviamo <math|{P∨R} C {Q}>: distinguiamo quale ingresso vale e applichiamo la prova corrispondente. In questo linguaggio deterministico la stessa esecuzione finale permette di congiungere le conclusioni.
+Allo stesso modo, da <math|{P} C {Q}> e <math|{R} C {Q}> ricaviamo <math|{P∨R} C {Q}>. Basta distinguere quale dei due ingressi vale e applicare la prova corrispondente.
 
-<subsection|Per proseguire: eliminare gli incroci>
+<section|Per proseguire: eliminare gli incroci>
 
-Un esempio geometrico mostra che la funzione di terminazione va scelta pensando al problema, non soltanto al codice. Sono fissati <math|N> punti blu e <math|N> punti rossi distinti, senza tre punti allineati. Vogliamo abbinarli con segmenti fra colori diversi, senza incroci. 
+Un esempio geometrico mostra che la funzione di terminazione va cercata pensando al problema, e non soltanto guardando il codice. Sul piano ci sono <math|N> punti blu e <math|N> punti rossi, tutti distinti e senza tre punti allineati. Vogliamo abbinare ogni punto blu a un punto rosso con dei segmenti, in modo che nessuna coppia di segmenti si incroci. Il procedimento è semplice. Partiamo da un abbinamento qualsiasi, e finché due segmenti si incrociano li sostituiamo con i due collegamenti che non si incrociano e rispettano i colori.
 
-Partiamo da un abbinamento qualsiasi; finché due segmenti si incrociano, sostituiamoli con i due collegamenti non incrociati che rispettano i colori.
+L'invariante dice che ogni punto appartiene esattamente a un segmento e che ogni segmento unisce colori diversi. Lo scambio lo mantiene, perché ricollega gli stessi quattro estremi, ciascuno una sola volta. Quando il procedimento si ferma non ci sono più incroci, quindi l'obiettivo è raggiunto. Resta da capire perché il procedimento debba fermarsi.
 
-L'invariante afferma che ogni punto appartiene esattamente a un segmento e ogni segmento unisce colori diversi. Lo scambio lo conserva: ricongiunge gli stessi quattro estremi, ciascuno una sola volta. All'uscita non ci sono incroci, quindi l'obiettivo è raggiunto, se il procedimento termina.
-
-Contare gli incroci non offre direttamente una prova di progresso: togliere l'incrocio scelto può crearne con altri segmenti. Consideriamo invece la somma delle lunghezze. Se <math|AB> e <math|CD> si incontrano in <math|E> e i colori consentono i nuovi segmenti <math|AD,CB>, la disuguaglianza triangolare dà
+Contare gli incroci sembra la scelta naturale, ma non funziona, perché eliminare l'incrocio scelto può crearne di nuovi con altri segmenti. Proviamo allora con la somma delle lunghezze di tutti i segmenti. Supponiamo che <math|AB> e <math|CD> si incontrino nel punto <math|E> e che i colori permettano i nuovi segmenti <math|AD> e <math|CB>. La disuguaglianza triangolare dà
 
 <\equation*>
 ℓ(AD)‹ℓ(AE)+ℓ(ED),<space|1em>ℓ(CB)‹ℓ(CE)+ℓ(EB).
 </equation*>
 
-Le disuguaglianze sono strette: i triangoli coinvolti non sono degeneri, per l'ipotesi di non allineamento. Sommando, la nuova lunghezza totale è strettamente minore di quella vecchia. Gli altri segmenti restano invariati.
+Le disuguaglianze sono strette perché i triangoli coinvolti non sono degeneri, grazie all'ipotesi che non ci siano tre punti allineati. Sommandole troviamo che la nuova lunghezza totale è strettamente minore della vecchia, dato che <math|ℓ(AE)+ℓ(EB)=ℓ(AB)> e <math|ℓ(CE)+ℓ(ED)=ℓ(CD)>, mentre tutti gli altri segmenti restano come erano.
 
 <figura|@IMG(incroci)|I percorsi spezzati che passano per <math|E> sono più lunghi dei nuovi collegamenti rettilinei. Il risparmio riguarda la lunghezza totale.>
 
-Le lunghezze sono reali, quindi la sola positività non basterebbe. Qui però i punti sono fissati e gli abbinamenti possibili sono finiti: <math|N!>, perché a ciascun blu associamo un diverso rosso. Anche i valori della lunghezza totale sono finiti in numero.
-
-Una diminuzione stretta impedisce di tornare a un valore precedente e quindi non può continuare all'infinito. Questa è una prova completa di terminazione basata sulla finitezza dello spazio degli stati possibili.
+C'è però un ostacolo. Le lunghezze sono numeri reali, e abbiamo visto che una quantità reale positiva può diminuire per sempre. Qui ci salva il fatto che i punti sono fissati e gli abbinamenti possibili sono finiti, esattamente <math|N!>, perché a ogni punto blu associamo un punto rosso diverso. Anche i valori che la lunghezza totale può assumere sono quindi in numero finito. Una diminuzione stretta impedisce di tornare a un abbinamento già visto, e perciò non può continuare all'infinito. Abbiamo ottenuto una prova completa di terminazione, basata sulla finitezza degli stati possibili invece che su un numero naturale.
 
 <\verifica|7>
 <strong|1.> Per <tt|while i ‹ n do i := i + 1 endw>, con <math|I≡0≤i≤n> e <math|n> fisso, proponi una funzione di terminazione e verifica limite inferiore, progresso e uscita.

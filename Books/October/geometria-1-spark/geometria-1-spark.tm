@@ -47,63 +47,71 @@
   <chapter*|Dalle coordinate alle strutture>
 
   Una freccia nel piano, un polinomio e una lista di numeri sembrano oggetti
-  diversi. Eppure possiamo sommarli e moltiplicarli per numeri seguendo le
-  stesse regole. Questa somiglianza ci permetterà di studiarli insieme.
+  che non hanno nulla in comune. Eppure con tutti e tre facciamo le stesse
+  due cose, li sommiamo e li moltiplichiamo per un numero, e le regole che
+  seguiamo sono identiche. Questo libro nasce da quella somiglianza: se le
+  regole sono le stesse, possiamo studiare tutti questi oggetti in una volta
+  sola.
 
-  Le coordinate saranno il nostro strumento per calcolare. Impareremo anche a
-  distinguere il vettore dai numeri con cui lo descriviamo: cambiando base,
-  cambiano le coordinate, ma il vettore resta lo stesso.
+  Per fare i conti useremo le coordinate, ma impareremo presto a non
+  confonderle con il vettore che descrivono. Se cambiamo il sistema di
+  riferimento cambiano i numeri, mentre il vettore resta esattamente quello
+  di prima. Tenere separate queste due cose è una delle abitudini più utili
+  dell'algebra lineare.
 
-  Il libro presuppone frazioni, equazioni elementari e la trigonometria del
-  triangolo e della circonferenza. Introduce il linguaggio universitario e
-  spiega le mosse delle dimostrazioni. Quando una prova è impegnativa,
-  conviene rileggere prima l'esempio che la prepara e poi chiedersi quale
-  ostacolo risolve ciascun passaggio.
+  Per cominciare bastano le frazioni, le equazioni elementari e un po' di
+  trigonometria del triangolo e della circonferenza. Il linguaggio
+  universitario viene introdotto man mano, e le dimostrazioni sono
+  accompagnate dal motivo di ogni mossa. Quando una prova ti sembra
+  impegnativa, conviene tornare all'esempio che la prepara e chiederti quale
+  difficoltà risolve ciascun passaggio.
 
   <section*|Mappa del percorso>
 
-  I primi tre capitoli costruiscono il linguaggio degli <strong|insiemi e
-  delle applicazioni>, i <strong|campi>, i <strong|numeri complessi> e la
-  <strong|fattorizzazione dei polinomi>. I complessi insegnano anche una
-  prima distinzione decisiva: la stessa operazione si capisce meglio
-  cambiando rappresentazione.
+  I primi tre capitoli preparano il terreno. Costruiamo il linguaggio degli
+  <strong|insiemi e delle applicazioni>, scopriamo che cosa rende un insieme
+  di numeri un <strong|campo>, incontriamo i <strong|numeri complessi> e
+  arriviamo alla <strong|fattorizzazione dei polinomi>. Con i complessi
+  vedremo anche, per la prima volta, che la stessa operazione può diventare
+  molto più chiara se cambiamo il modo di rappresentarla.
 
-  I capitoli 4 e 5 introducono <strong|spazi e sottospazi vettoriali>,
-  <strong|span>, <strong|indipendenza lineare>, <strong|basi e coordinate>.
-  La domanda è: con quali vettori possiamo costruire tutti gli altri, senza
-  introdurre ambiguità?
+  Nei capitoli 4 e 5 entrano in scena gli <strong|spazi e i sottospazi
+  vettoriali>, lo <strong|span>, l'<strong|indipendenza lineare>, le
+  <strong|basi e le coordinate>. Tutti questi concetti rispondono a una
+  domanda sola, cioè quali vettori ci bastano per costruire tutti gli altri
+  senza ambiguità.
 
-  Nel capitolo 6 la <strong|dimensione> misura quanti vettori servono; nel 7
-  la <strong|somma diretta> e la <strong|formula di Grassmann> spiegano come
-  combinare sottospazi senza contare due volte la parte comune.
+  Il capitolo 6 introduce la <strong|dimensione>, che misura quanti vettori
+  servono davvero. Il capitolo 7 mostra come si combinano due sottospazi con
+  la <strong|somma diretta> e la <strong|formula di Grassmann>, facendo
+  attenzione a non contare due volte la parte che hanno in comune.
 
   Gli ultimi tre capitoli collegano <strong|matrici e applicazioni lineari>,
-  <strong|nucleo e immagine>, <strong|eliminazione di Gauss>, <strong|rango e
-  sistemi lineari>. Qui le idee astratte diventano strumenti per calcolare, e
-  i calcoli aiutano a vedere le idee.
+  <strong|nucleo e immagine>, l'<strong|eliminazione di Gauss>, il
+  <strong|rango e i sistemi lineari>. Qui le idee astratte diventano
+  strumenti di calcolo, e a loro volta i calcoli ci aiutano a vedere le idee.
 
-  Le definizioni essenziali sono raccolte in riquadri \SConcetto chiave\T.
-  Gli esempi spiegano le scelte oltre ai conti. Gli esercizi finali
-  permettono di provare in autonomia: ogni domanda ha una soluzione ragionata
-  in appendice. Le parti \SPer proseguire\T raccolgono dettagli secondari che
-  puoi riprendere dopo il primo studio.
+  Le definizioni essenziali sono raccolte nei riquadri \SConcetto chiave\T, e
+  gli esempi spiegano le scelte oltre ai conti. Alla fine di ogni capitolo
+  trovi qualche esercizio da provare da solo, con una soluzione ragionata in
+  appendice. Le parti intitolate \SPer proseguire\T contengono sviluppi
+  secondari, che puoi riprendere dopo una prima lettura.
 
-  <strong|Convenzioni.> <math|K> indica un campo, con <math|0\<neq\>1>.
+  <strong|Convenzioni.> Con <math|K> indichiamo sempre un campo, in cui
+  <math|0\<neq\>1>. Una tupla di numeri, quando compare in un prodotto con
+  una matrice, va letta come una colonna. Scriviamo <math|K<rsub|d>[X]> per i
+  polinomi di grado al più <math|d>, polinomio nullo compreso. Quando il
+  campo cambia una conclusione lo diciamo esplicitamente, e una combinazione
+  lineare ha sempre un numero finito di termini.
 
-  I vettori scritti come tuple sono letti come colonne quando compaiono in un
-  prodotto matriciale. <math|K<rsub|d>[X]> indica i polinomi di grado al più
-  <math|d>, compreso il polinomio nullo. Quando il campo influenza una
-  conclusione, lo indichiamo espressamente. Una combinazione lineare contiene
-  sempre un numero finito di termini.
+  <section*|Le fonti>
 
-  <section*|Il periodo e le fonti>
-
-  Il periodo coperto va dal 23 settembre, prima lezione disponibile, al 31
-  ottobre 2026; l'ultima registrazione nel periodo è del 27 ottobre. Le fonti
-  disponibili sono dodici note e dodici trascrizioni. Novembre appartiene al
-  volume successivo. Le motivazioni, le figure e gli esercizi aggiunti sono
-  rielaborazioni didattiche, non citazioni del docente. La documentazione
-  delle fonti accompagna il libro in file separati.
+  Il volume raccoglie le lezioni del corso fino al 31 ottobre 2026, a partire
+  da dodici note e dodici trascrizioni; le lezioni di novembre appartengono
+  al volume successivo. Le motivazioni, le figure e gli esercizi aggiunti
+  sono rielaborazioni didattiche e non citazioni del docente. La
+  documentazione dettagliata delle fonti accompagna il libro in file
+  separati.
 
   <\table-of-contents|toc>
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Dalle
@@ -113,7 +121,7 @@
     Mappa del percorso <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-2>
 
-    Il periodo e le fonti <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    Le fonti <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-3>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Insiemi,
@@ -303,7 +311,7 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-49>
 
-    9.2<space|2spc>Operazioni di riga: cambiare la forma conservando le
+    9.2<space|2spc>Operazioni di riga: cambiare la forma senza cambiare le
     soluzioni <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-50>
 
@@ -389,74 +397,88 @@
   <chapter|Insiemi, applicazioni e campi>
 
   <\inbreve>
-    Come si descrive con precisione una funzione? Partiamo da insiemi e
-    semplici equazioni, poi distinguiamo dominio, codominio e valori
-    raggiunti. Alla fine vedremo quali regole di calcolo definiscono un
-    campo.
+    Prima di parlare di vettori ci serve un linguaggio preciso per dire che
+    cosa contiene un insieme e come un oggetto viene associato a un altro.
+    Gli insiemi e le applicazioni ci danno questo, insieme a un modo
+    affidabile di riconoscere quando una funzione si può invertire.
+    Nell'ultima parte ci chiederemo quali regole deve rispettare un insieme
+    di numeri perché si possa sommare, moltiplicare e dividere senza
+    sorprese, e arriveremo così all'idea di campo.
   </inbreve>
 
   <section|Insiemi e uguaglianza: guardare gli elementi>
 
-  Prendiamo <math|X={1,2,3}> e <math|Y={2,3,4}>. Il simbolo <math|2\<in\>X>
-  significa che 2 appartiene a <math|X>; <math|4\<nin\>X> dice che 4 non vi
-  appartiene.
+  Prendiamo <math|X={1,2,3}> e <math|Y={2,3,4}>. Scriviamo <math|2\<in\>X>
+  per dire che 2 appartiene a <math|X>, e <math|4\<nin\>X> per dire che 4
+  invece non gli appartiene. Un insieme è determinato soltanto dai suoi
+  elementi, quindi tutto ciò che diremo sugli insiemi si riduce, alla fine, a
+  domande su quali elementi ci sono e quali no.
 
-  L'<strong|intersezione> <math|X\<cap\>Y={2,3}> raccoglie gli elementi
-  comuni; l'<strong|unione> <math|X\<cup\>Y={1,2,3,4}> quelli presenti in
-  almeno uno dei due insiemi. \SOppure\T comprende anche il caso in cui un
-  elemento stia in entrambi. L'insieme senza elementi si indica con
+  Gli elementi che <math|X> e <math|Y> hanno in comune formano
+  l'<strong|intersezione> <math|X\<cap\>Y={2,3}>. Quelli che stanno in almeno
+  uno dei due formano l'<strong|unione> <math|X\<cup\>Y={1,2,3,4}>. In
+  matematica \Soppure\T comprende anche il caso in cui un elemento stia in
+  entrambi gli insiemi, ed è per questo che 2 e 3 compaiono nell'unione.
+  L'insieme che non ha alcun elemento si chiama insieme vuoto e si indica con
   <math|\<varnothing\>>.
 
-  Scriviamo <math|A\<subseteq\>B> quando ogni elemento di <math|A> appartiene
-  a <math|B>. L'inclusione permette l'uguaglianza.
+  Diciamo che <math|A> è contenuto in <math|B>, e scriviamo
+  <math|A\<subseteq\>B>, quando ogni elemento di <math|A> appartiene anche a
+  <math|B>. La definizione non esclude che i due insiemi coincidano, perciò
+  ogni insieme è contenuto in sé stesso.
 
-  Per mostrare <math|A\<subseteq\>B> non basta controllare alcuni esempi:
-  prendiamo un elemento qualsiasi di <math|A> e mostriamo che appartiene a
-  <math|B>. Per provare <math|A=B> facciamo questo lavoro nelle due
-  direzioni.
+  Per dimostrare un'inclusione non basta provare qualche esempio, perché gli
+  esempi non coprono mai tutti i casi. Prendiamo allora un elemento qualsiasi
+  di <math|A>, senza sapere nulla su di lui tranne che sta in <math|A>, e
+  mostriamo che deve stare in <math|B>. Per provare che due insiemi sono
+  uguali facciamo lo stesso lavoro nelle due direzioni.
 
-  Per esempio, per tre insiemi vale
+  Vediamo come funziona su un'uguaglianza che vale per tre insiemi qualsiasi:
 
   <\equation*>
     X\<cap\>(Y\<cup\>Z)=(X\<cap\>Y)\<cup\>(X\<cap\>Z).
   </equation*>
 
-  Perché? A sinistra chiediamo di stare in <math|X> e, inoltre, in <math|Y>
-  oppure in <math|Z>. Se un elemento soddisfa queste richieste, sta in
-  <math|X\<cap\>Y> oppure in <math|X\<cap\>Z>: appartiene al membro destro.
+  A sinistra chiediamo a un elemento di stare in <math|X> e, in più, in
+  <math|Y> oppure in <math|Z>. Se sta in <math|X> e in <math|Y>, appartiene a
+  <math|X\<cap\>Y>; se sta in <math|X> e in <math|Z>, appartiene a
+  <math|X\<cap\>Z>. In ogni caso sta nel membro destro.
 
-  Viceversa, un elemento del membro destro sta in una di queste due
-  intersezioni; in entrambi i casi sta in <math|X> e in almeno uno fra
-  <math|Y,Z>. Appartiene quindi al membro sinistro. Abbiamo provato entrambe
-  le inclusioni.
+  Il ragionamento si rovescia senza fatica. Un elemento del membro destro sta
+  in una delle due intersezioni, e quindi in entrambi i casi sta in <math|X>
+  e in almeno uno fra <math|Y> e <math|Z>. Appartiene così al membro
+  sinistro, e con le due inclusioni abbiamo provato l'uguaglianza.
 
   <figura|<image|assets/distributiva.pdf|150.0mm|50.0mm||>|Le due espressioni
   descrivono la stessa zona. La dimostrazione spiega perché questo accade per
   qualsiasi insieme, anche quando non possiamo disegnarlo.>
 
-  Vale anche <math|X\<cup\>(Y\<cap\>Z)=(X\<cup\>Y)\<cap\>(X\<cup\>Z)>. Se un
-  elemento sta in <math|X>, soddisfa entrambi i requisiti a destra. Se non
-  sta in <math|X>, a sinistra deve stare sia in <math|Y> sia in <math|Z>,
-  esattamente come a destra.
+  Allo stesso modo vale <math|X\<cup\>(Y\<cap\>Z)=(X\<cup\>Y)\<cap\>(X\<cup\>Z)>.
+  Qui conviene distinguere due casi. Se un elemento sta in <math|X>, soddisfa
+  entrambe le richieste del membro destro e sta anche a sinistra. Se non sta
+  in <math|X>, per stare a sinistra deve trovarsi sia in <math|Y> sia in
+  <math|Z>, e per stare a destra gli si chiede esattamente la stessa cosa.
 
-  Il <strong|prodotto cartesiano> <math|X\<times\>Y> contiene le coppie
-  ordinate <math|(x,y)> con <math|x\<in\>X> e <math|y\<in\>Y>. L'ordine
-  conta: <math|(1,2)\<neq\>(2,1)>. Il piano
+  Un'ultima costruzione ci servirà spesso. Il <strong|prodotto cartesiano>
+  <math|X\<times\>Y> è l'insieme delle coppie ordinate <math|(x,y)> con
+  <math|x\<in\>X> e <math|y\<in\>Y>. L'ordine conta, perché <math|(1,2)> e
+  <math|(2,1)> sono coppie diverse. Il piano
   <math|\<bbb-R\><rsup|2>=\<bbb-R\>\<times\>\<bbb-R\>> è l'insieme delle
-  coppie reali; lo spazio <math|\<bbb-R\><rsup|3>> quello delle terne.
-
-  La coppia <math|((x,y),z)> e la terna <math|(x,y,z)> hanno forme diverse,
-  ma le identifichiamo mediante la corrispondenza che toglie le parentesi
+  coppie di numeri reali, e lo spazio <math|\<bbb-R\><rsup|3>> quello delle
+  terne. A rigore la coppia <math|((x,y),z)> e la terna <math|(x,y,z)> hanno
+  forme diverse, ma le identifichiamo tranquillamente togliendo le parentesi
   interne.
 
   <section|Applicazioni, iniettività e suriettività>
 
-  Consideriamo <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>>,
-  <math|f(x)=x<rsup|2>>. A ogni reale assegna un unico reale. L'insieme di
-  partenza è il <strong|dominio>, quello dichiarato all'arrivo è il
-  <strong|codominio>. I valori effettivamente raggiunti formano
-  l'<strong|immagine>, qui <math|[0,+\<infty\>)>. Codominio e immagine
-  possono dunque essere diversi.
+  Consideriamo la funzione <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>> definita
+  da <math|f(x)=x<rsup|2>>, che a ogni numero reale associa il suo quadrato.
+  L'insieme da cui partiamo si chiama <strong|dominio>, quello che
+  dichiariamo come arrivo si chiama <strong|codominio>. I valori che la
+  funzione raggiunge davvero formano l'<strong|immagine>, che qui è
+  <math|[0,+\<infty\>)> perché un quadrato non è mai negativo. Il codominio è
+  dunque una scelta che facciamo noi, mentre l'immagine dipende da come è
+  fatta la funzione, e le due cose possono essere diverse.
 
   <\concetto|Applicazione>
     Un'applicazione <math|f:X\<rightarrow\>Y> assegna a ogni <math|x\<in\>X>
@@ -464,29 +486,34 @@
     assegnazione fanno parte della definizione.
   </concetto>
 
-  Il <strong|grafico> è l'insieme delle coppie <math|(x,f(x))> nel prodotto
-  <math|X\<times\>Y>. Una relazione <math|\<Gamma\>\<subseteq\>X\<times\>Y> è
-  il grafico di una funzione precisamente quando contiene, per ogni
-  <math|x\<in\>X>, una sola coppia con prima voce <math|x>.
-
-  Il simbolo <math|\<forall\>> significa \Sper ogni\T, <math|\<exists\>>
-  \Sesiste\T, <math|\<exists\>!> \Sesiste uno e un solo\T: la richiesta è
+  Possiamo anche descrivere una funzione con il suo <strong|grafico>, cioè
+  l'insieme delle coppie <math|(x,f(x))> dentro <math|X\<times\>Y>. Questo
+  punto di vista ci dice quando una qualsiasi relazione
+  <math|\<Gamma\>\<subseteq\>X\<times\>Y> è il grafico di una funzione. Deve
+  succedere che per ogni <math|x\<in\>X> ci sia una e una sola coppia di
+  <math|\<Gamma\>> con prima voce <math|x>. Con i simboli <math|\<forall\>>
+  (\Sper ogni\T), <math|\<exists\>> (\Sesiste\T) e <math|\<exists\>!>
+  (\Sesiste uno e un solo\T) la richiesta si scrive
   <math|\<forall\>x\<in\>X<space|0.5em>\<exists\>!y\<in\>Y> con
   <math|(x,y)\<in\>\<Gamma\>>.
 
-  Una funzione è <strong|iniettiva> quando non confonde elementi diversi:
-  <math|f(x)=f(x')> implica <math|x=x'>. Non lo è se troviamo due elementi
-  distinti con la stessa immagine. Il quadrato su <math|\<bbb-R\>> non è
-  iniettivo, perché <math|f(1)=f(-1)>.
+  Due domande accompagneranno ogni funzione che incontreremo. La prima è se
+  la funzione distingue elementi diversi. Diciamo che <math|f> è
+  <strong|iniettiva> quando da <math|f(x)=f(x')> segue sempre <math|x=x'>,
+  cioè quando due elementi distinti non finiscono mai sullo stesso valore. Il
+  quadrato su <math|\<bbb-R\>> non è iniettivo, perché <math|f(1)=f(-1)=1>.
 
-  È <strong|suriettiva> quando raggiunge ogni elemento del codominio: per
-  ogni <math|y\<in\>Y> esiste almeno un <math|x\<in\>X> con <math|f(x)=y>. Il
-  quadrato <math|\<bbb-R\>\<rightarrow\>\<bbb-R\>> non è suriettivo: non
-  raggiunge <math|-1>.
+  La seconda domanda è se la funzione raggiunge tutto il codominio. Diciamo
+  che <math|f> è <strong|suriettiva> quando per ogni <math|y\<in\>Y> esiste
+  almeno un <math|x\<in\>X> con <math|f(x)=y>. Il quadrato visto come
+  funzione da <math|\<bbb-R\>> a <math|\<bbb-R\>> non lo è, perché nessun
+  numero reale ha quadrato <math|-1>.
 
-  Se cambiamo il codominio in <math|[0,+\<infty\>)>, diventa suriettivo;
-  restringendo anche il dominio a <math|[0,+\<infty\>)>, diventa iniettivo.
-  Una funzione insieme iniettiva e suriettiva si dice <strong|biiettiva>.
+  Entrambi i difetti si possono correggere cambiando gli insiemi. Se
+  prendiamo <math|[0,+\<infty\>)> come codominio, il quadrato diventa
+  suriettivo; se restringiamo anche il dominio a <math|[0,+\<infty\>)>,
+  diventa pure iniettivo. Una funzione che è insieme iniettiva e suriettiva
+  si dice <strong|biiettiva>.
 
   <figura|<image|assets/funzioni.pdf|154.4mm|44.2mm||>|Ogni elemento del
   dominio deve avere una sola freccia in uscita. L'iniettività riguarda le
@@ -495,45 +522,56 @@
 
   <section|Composizione e inversa: tornare al punto di partenza>
 
-  Se <math|f:X\<rightarrow\>Y> e <math|g:Y\<rightarrow\>Z>, la
-  <strong|composizione> <math|g\<circ\>f> applica prima <math|f>, poi
-  <math|g>: <math|(g\<circ\>f)(x)=g(f(x))>.
+  Se abbiamo <math|f:X\<rightarrow\>Y> e <math|g:Y\<rightarrow\>Z>, possiamo
+  applicare prima <math|f> e poi <math|g>. Otteniamo la <strong|composizione>
+  <math|g\<circ\>f>, definita da <math|(g\<circ\>f)(x)=g(f(x))>. Con tre
+  funzioni compatibili il modo di mettere le parentesi non cambia nulla,
+  perché in entrambi i casi arriviamo a <math|h(g(f(x)))>. Fra tutte le
+  funzioni da un insieme in sé stesso ce n'è una particolarmente semplice,
+  l'<strong|identità> <math|<math-up|id><rsub|X>>, che lascia fermo ogni
+  elemento.
 
-  Le parentesi non cambiano il risultato di tre applicazioni compatibili,
-  perché entrambe le composizioni danno <math|h(g(f(x)))>.
-  L'<strong|identità> <math|<math-up|id><rsub|X>> lascia fermo ogni elemento
-  di <math|X>.
+  Prendiamo ora <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>> con
+  <math|f(x)=2x+1>. Se qualcuno ci dice il risultato <math|y>, possiamo
+  risalire al numero di partenza sottraendo 1 e dividendo per 2. La funzione
+  <math|g(y)=(y-1)/2> fa esattamente questo, e infatti <math|g(f(x))=x> per
+  ogni <math|x> e <math|f(g(y))=y> per ogni <math|y>. Una funzione così si
+  chiama <strong|inversa> di <math|f> e si indica con <math|f<rsup|-1>>.
+  L'esponente qui non indica il reciproco del valore, ma il fatto che
+  <math|f<rsup|-1>> annulla l'effetto di <math|f>.
 
-  Per <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>>, <math|f(x)=2x+1>, possiamo
-  recuperare <math|x> da <math|y>: sottraiamo 1 e dividiamo per 2. La
-  funzione <math|g(y)=(y-1)/2> soddisfa <math|g(f(x))=x> e <math|f(g(y))=y>.
-  Si chiama <strong|inversa> di <math|f> e si indica con <math|f<rsup|-1>>:
-  qui l'esponente non significa reciproco del valore.
-
-  In generale, se <math|f> è biiettiva, per definire <math|f<rsup|-1>(y)>
-  cerchiamo l'elemento <math|x> con <math|f(x)=y>. La suriettività assicura
-  che esista; l'iniettività che sia unico. Questa scelta definisce una
-  funzione e dà le due identità
+  Quando esiste un'inversa? Se <math|f> è biiettiva, per definire
+  <math|f<rsup|-1>(y)> cerchiamo un elemento <math|x> con <math|f(x)=y>. La
+  suriettività garantisce che un tale <math|x> esista, e l'iniettività
+  garantisce che sia uno solo, quindi la scelta è ben definita. Per
+  costruzione valgono le due identità
 
   <\equation*>
     f<rsup|-1>\<circ\>f=<math-up|id><rsub|X>,<space|2em>f\<circ\>f<rsup|-1>=<math-up|id><rsub|Y>.
   </equation*>
 
-  Viceversa, se una funzione <math|g> soddisfa entrambe le identità,
-  <math|f(x)=f(x')> dà <math|g(f(x))=g(f(x'))>, dunque <math|x=x'>; inoltre
-  ogni <math|y> è <math|f(g(y))>, dunque è raggiunto. Le due identità
-  caratterizzano quindi l'invertibilità.
+  Anche il viceversa è vero. Supponiamo che una funzione <math|g> soddisfi
+  entrambe le identità. Se <math|f(x)=f(x')>, applicando <math|g> otteniamo
+  <math|x=x'>, quindi <math|f> è iniettiva. Ogni <math|y> poi si scrive come
+  <math|f(g(y))>, quindi è raggiunto e <math|f> è suriettiva. Le due identità
+  caratterizzano dunque esattamente le funzioni invertibili.
 
-  L'inversa è unica: se anche <math|h> è inversa,
-  <math|g=g\<circ\>(f\<circ\>h)=(g\<circ\>f)\<circ\>h=h>.
+  Infine l'inversa, quando c'è, è una sola. Se anche <math|h> soddisfa le due
+  identità, possiamo scrivere <math|g=g\<circ\>(f\<circ\>h)=(g\<circ\>f)\<circ\>h=h>.
 
   <section|Campi: quali regole servono per calcolare?>
 
-  L'equazione <math|2x=1> ha soluzione nei razionali, ma non negli interi. La
-  possibilità di dividere dipende dunque dall'insieme in cui lavoriamo.
-  Un'<strong|operazione interna> su <math|K> è una funzione
-  <math|K\<times\>K\<rightarrow\>K>: combina due elementi e rimane in
-  <math|K>.
+  L'equazione <math|2x=1> ha la soluzione <math|1/2> fra i razionali, ma
+  nessuna soluzione fra gli interi. Il fatto di poter dividere non dipende
+  quindi dall'equazione, ma dall'insieme di numeri in cui lavoriamo. Vogliamo
+  capire quali regole deve avere un insieme perché i calcoli dell'algebra
+  elementare funzionino sempre.
+
+  Il primo ingrediente è un'<strong|operazione interna> su <math|K>, cioè una
+  funzione <math|K\<times\>K\<rightarrow\>K> che combina due elementi e dà
+  come risultato ancora un elemento di <math|K>. Ci servono due operazioni di
+  questo tipo, la somma e il prodotto, legate dalle regole che usiamo da
+  sempre con i numeri.
 
   <\concetto|Campo>
     Un campo <math|K> possiede due operazioni interne, somma e prodotto, con
@@ -555,62 +593,72 @@
     </itemize>
   </concetto>
 
-  Sono campi <math|\<bbb-Q\>> e <math|\<bbb-R\>>; <math|\<bbb-Z\>> non lo è
-  perché manca, per esempio, l'inverso di 2. Nel prossimo capitolo
-  costruiremo <math|\<bbb-C\>>.
+  I razionali <math|\<bbb-Q\>> e i reali <math|\<bbb-R\>> sono campi. Gli
+  interi <math|\<bbb-Z\>> invece non lo sono, perché manca per esempio
+  l'inverso di 2, ed è questo che impediva di risolvere <math|2x=1>. Nel
+  prossimo capitolo costruiremo un campo nuovo, quello dei numeri complessi.
 
-  Queste regole permettono di dimostrare le proprietà del calcolo, senza
-  dipendere da come sono fatti gli elementi. Per esempio, da <math|a+b=a+c>
-  sommiamo <math|-a> ai due membri e otteniamo <math|b=c>: è la cancellazione
-  nella somma.
+  Il vantaggio di questa definizione è che le proprietà del calcolo si
+  possono dimostrare una volta per tutte partendo dalle regole, senza sapere
+  come sono fatti gli elementi. Per esempio, se <math|a+b=a+c>, sommiamo
+  <math|-a> a entrambi i membri e otteniamo <math|b=c>. Questa è la
+  cancellazione nella somma, e la useremo subito.
 
   <subsection|Perché zero, opposto e inverso sono unici>
 
-  Gli assiomi chiedono che questi elementi esistano. Vediamo perché non
-  possiamo sceglierli in due modi diversi. Se <math|e,e'> sono entrambi
-  neutri della somma, la somma <math|e+e'> vale <math|e'> perché <math|e> è
-  neutro e vale <math|e> perché <math|e'> è neutro: perciò coincidono.
+  Gli assiomi chiedono che zero, opposti e inversi esistano, ma non dicono
+  che siano unici. Conviene controllarlo, perché altrimenti scrivere
+  \S<math|-a>\T o \S<math|a<rsup|-1>>\T sarebbe ambiguo. Supponiamo che
+  <math|e> ed <math|e'> siano entrambi neutri per la somma e guardiamo
+  <math|e+e'>. Poiché <math|e> è neutro, la somma vale <math|e'>; poiché
+  anche <math|e'> è neutro, la stessa somma vale <math|e>. Dunque
+  <math|e=e'>.
 
-  Se <math|a+b=a+c=0>, la cancellazione dà <math|b=c>, dunque l'opposto è
-  unico.
+  Per l'opposto basta la cancellazione. Se <math|a+b=0> e anche <math|a+c=0>,
+  allora <math|a+b=a+c>, e quindi <math|b=c>.
 
-  Se <math|a*b=a*c=1>, abbiamo
+  Per l'inverso usiamo le regole del prodotto. Se <math|a*b=1> e
+  <math|a*c=1>, allora
 
   <\equation*>
-    b=b\<cdot\>1=b(a*c)=(b*a)c=1\<cdot\>c=c:
+    b=b\<cdot\>1=b(a*c)=(b*a)c=1\<cdot\>c=c,
   </equation*>
 
-  anche l'inverso è unico. L'unità moltiplicativa è unica con lo stesso
-  ragionamento usato per il neutro additivo.
+  e anche l'inverso è unico. Lo stesso ragionamento usato per lo zero mostra
+  che l'unità moltiplicativa è una sola.
 
   <subsection|Moltiplicare per zero e cancellare un fattore>
 
-  Per risolvere <math|3x=0> nei reali dividiamo per 3. In un campo possiamo
-  ripetere questo passo con ogni fattore non nullo. Prima serve sapere che
-  cosa produce la moltiplicazione per zero.
+  Per risolvere <math|3x=0> fra i reali dividiamo per 3 e otteniamo
+  <math|x=0>. In un campo possiamo fare la stessa cosa con qualsiasi fattore
+  non nullo, ma prima dobbiamo sapere che cosa succede quando si moltiplica
+  per zero.
 
-  Dimostriamo <math|a\<cdot\>0=0>. La distributività dà
-  <math|a\<cdot\>0=a(0+0)=a\<cdot\>0+a\<cdot\>0>; cancellando un addendo
-  otteniamo il risultato.
+  Dimostriamo che <math|a\<cdot\>0=0> per ogni <math|a>. Poiché <math|0=0+0>,
+  la distributività dà <math|a\<cdot\>0=a(0+0)=a\<cdot\>0+a\<cdot\>0>.
+  Cancellando uno dei due addendi uguali resta <math|0=a\<cdot\>0>. Ne segue
+  anche che lo zero non può avere un inverso, perché moltiplicandolo per
+  qualsiasi cosa otteniamo 0 e mai 1.
 
-  Lo zero non può avere inverso perché ogni suo prodotto è zero e
-  <math|0\<neq\>1>.
+  Ora possiamo cancellare un fattore. Se <math|a*b=0> e <math|a\<neq\>0>,
+  moltiplichiamo entrambi i membri per <math|a<rsup|-1>> e otteniamo
+  <math|b=0>. È la <strong|legge di annullamento del prodotto>, secondo cui
+  un prodotto nullo ha sempre almeno un fattore nullo.
 
-  Se <math|a*b=0> e <math|a\<neq\>0>, moltiplicando per <math|a<rsup|-1>>
-  ricaviamo <math|b=0>. È la <strong|legge di annullamento del prodotto>: un
-  prodotto nullo ha almeno un fattore nullo.
-
-  Il nome <strong|gruppo abeliano> riassume le regole della somma:
-  associatività, commutatività, neutro e opposti. Anche gli elementi non
-  nulli formano un gruppo abeliano con il prodotto. Useremo soprattutto le
-  singole regole, appena messe alla prova.
+  Le regole della somma (associatività, commutatività, esistenza del neutro e
+  degli opposti) si riassumono dicendo che <math|K> è un <strong|gruppo
+  abeliano> rispetto alla somma. Anche gli elementi non nulli formano un
+  gruppo abeliano rispetto al prodotto. Il nome è utile da conoscere, ma nel
+  seguito useremo soprattutto le singole regole.
 
   <section|Un campo piccolo: due elementi>
 
-  Separiamo i numeri interi in pari e dispari. La somma di due dispari è
-  pari; il prodotto di due dispari è dispari. Indichiamo queste due
-  possibilità con 0 e 1. Otteniamo il campo <math|<math-up|F><rsub|2>={0,1}>,
-  con
+  I campi non sono soltanto insiemi infiniti di numeri. Dividiamo gli interi
+  in pari e dispari e osserviamo che la parità di una somma o di un prodotto
+  dipende solo dalla parità dei fattori. Due dispari, per esempio, danno una
+  somma pari e un prodotto dispari. Se scriviamo 0 per \Spari\T e 1 per
+  \Sdispari\T, otteniamo un insieme di due elementi
+  <math|<math-up|F><rsub|2>={0,1}> con queste tabelle:
 
   <\equation*>
     0+0=0,<space|1em>0+1=1+0=1,<space|1em>1+1=0,
@@ -620,14 +668,16 @@
     0\<cdot\>0=0\<cdot\>1=1\<cdot\>0=0,<space|2em>1\<cdot\>1=1.
   </equation*>
 
-  Le proprietà associative e distributive discendono da quelle delle
-  operazioni sugli interi, passando alla parità. Entrambi gli elementi hanno
-  un opposto (ognuno è opposto di sé stesso); l'unico elemento non nullo è 1,
-  inverso di sé stesso. Sono soddisfatti tutti gli assiomi.
+  Le proprietà associative, commutative e distributive vengono direttamente
+  da quelle degli interi, perché passare alla parità rispetta le operazioni.
+  Ogni elemento ha un opposto, dato che ciascuno è l'opposto di sé stesso, e
+  l'unico elemento non nullo, cioè 1, è inverso di sé stesso. Tutti gli
+  assiomi sono soddisfatti, e <math|<math-up|F><rsub|2>> è un campo.
 
-  In questo campo <math|2=1+1=0>. Perciò da <math|2a=0> non possiamo
-  concludere <math|a=0>, né dividere per 2. Negli spazi vettoriali il campo
-  degli scalari andrà sempre dichiarato.
+  In questo campo però <math|2=1+1=0>. Da <math|2a=0> non possiamo quindi
+  concludere <math|a=0>, e dividere per 2 non ha senso. È un buon motivo per
+  cui, quando lavoreremo con gli spazi vettoriali, dichiareremo sempre il
+  campo degli scalari.
 
   <\verifica|1>
     <strong|1.1.> Studia iniettività e suriettività di
@@ -643,38 +693,43 @@
   <chapter|Numeri complessi: operazioni, forma polare e radici>
 
   <\inbreve>
-    Come possiamo risolvere un'equazione come <math|z<rsup|2>=-1>? Costruiamo
-    i numeri complessi a partire da coppie reali. Impareremo poi a leggere
-    prodotti e radici nel piano.
+    Fra i numeri reali l'equazione <math|z<rsup|2>=-1> non ha soluzioni,
+    perché nessun quadrato è negativo. In questo capitolo costruiamo un campo
+    più grande, quello dei numeri complessi, in cui la soluzione c'è. Lo
+    faremo con coppie di reali, e scopriremo che guardare queste coppie come
+    punti del piano rende il prodotto e le radici sorprendentemente facili da
+    capire.
   </inbreve>
 
   <section|Da una coppia reale a un numero complesso>
 
-  Un numero complesso è una coppia di reali <math|(a,b)>, scritta
-  <math|a+i*b>. Si pone <math|i=(0,1)> e si identifica il reale <math|a> con
-  <math|(a,0)>.
+  Un numero complesso è semplicemente una coppia di reali <math|(a,b)>, che
+  scriviamo nella forma <math|a+i*b>. Il simbolo <math|i> indica la coppia
+  <math|(0,1)>, e ogni reale <math|a> viene identificato con la coppia
+  <math|(a,0)>. Il numero <math|a> si chiama <strong|parte reale> e il numero
+  <math|b> <strong|parte immaginaria>. Notiamo che anche la parte immaginaria
+  è un numero reale, senza il fattore <math|i>. Due complessi sono uguali
+  quando hanno uguali sia la parte reale sia quella immaginaria.
 
-  Le parti <strong|reale> e <strong|immaginaria> sono rispettivamente
-  <math|a> e <math|b>; la parte immaginaria è dunque un numero reale, senza
-  il fattore <math|i>. Due complessi sono uguali quando coincidono entrambe
-  le parti.
-
-  Per sommare, operiamo separatamente sulle due componenti:
+  La somma si fa componente per componente:
 
   <\equation*>
     (a+i*b)+(c+i*d)=(a+c)+i(b+d).
   </equation*>
 
-  Per moltiplicare vogliamo poter sviluppare le parentesi e sostituire
-  <math|i<rsup|2>> con <math|-1>. Questo suggerisce la definizione
+  Per il prodotto ci lasciamo guidare da ciò che vorremmo ottenere. Vorremmo
+  poter sviluppare le parentesi come al solito e poi sostituire
+  <math|i<rsup|2>> con <math|-1>. Facendo così troveremmo
+  <math|a*c+i*a*d+i*b*c+i<rsup|2>b*d>, e questo suggerisce di definire
 
   <\equation*>
     (a+i*b)(c+i*d)=(a*c-b*d)+i(a*d+b*c).
   </equation*>
 
-  La definizione usa solo operazioni reali e produce ancora una coppia reale.
-  Con <math|a=c=0> e <math|b=d=1> dà proprio <math|i<rsup|2>=-1>. Per
-  esempio,
+  La definizione usa soltanto operazioni fra reali e dà come risultato
+  un'altra coppia di reali, quindi non c'è nulla di misterioso. Se poniamo
+  <math|a=c=0> e <math|b=d=1> otteniamo <math|i\<cdot\>i=-1>, cioè il numero
+  che cercavamo. Ecco un esempio di entrambe le operazioni:
 
   <\equation*>
     (2+i)+(3-2i)=5-i,
@@ -684,59 +739,66 @@
     (2+i)(3-2i)=6-4i+3i-2i<rsup|2>=8-i.
   </equation*>
 
-  Le operazioni coincidono con quelle usuali quando <math|b=d=0>, perciò
-  possiamo considerare <math|\<bbb-R\>> dentro <math|\<bbb-C\>>. La somma ha
-  zero <math|0+i0> e opposto <math|-a-i*b>; il prodotto ha unità <math|1+i0>.
-  Associatività e commutatività della somma si verificano sulle singole
-  componenti reali.
+  Quando <math|b=d=0> le due operazioni diventano quelle usuali fra reali, e
+  per questo possiamo pensare <math|\<bbb-R\>> come una parte di
+  <math|\<bbb-C\>>. Il numero <math|0+i0> fa da zero, l'opposto di
+  <math|a+i*b> è <math|-a-i*b>, e <math|1+i0> fa da unità per il prodotto.
 
-  Anche il prodotto è commutativo: scambiando le due coppie, <math|a*c-b*d> e
-  <math|a*d+b*c> rimangono uguali.
+  Vogliamo ora mostrare che <math|\<bbb-C\>> è un campo. Per la somma le
+  proprietà associativa e commutativa si controllano su ciascuna componente,
+  dove valgono perché valgono in <math|\<bbb-R\>>. Anche il prodotto è
+  commutativo, perché scambiando le due coppie le espressioni <math|a*c-b*d>
+  e <math|a*d+b*c> non cambiano.
 
-  Per l'associatività, prendiamo un terzo numero <math|e+i*f>. Sviluppando
-  sia <math|((a+i*b)(c+i*d))(e+i*f)> sia <math|(a+i*b)((c+i*d)(e+i*f))> si
-  trovano la stessa parte reale <math|a*c*e-b*d*e-a*d*f-b*c*f> e la stessa
-  parte immaginaria <math|a*c*f-b*d*f+a*d*e+b*c*e>.
-
-  La distributività si verifica sviluppando il prodotto con una somma: ogni
-  componente si distribuisce con le regole reali. Resta da costruire
-  l'inverso di ogni complesso non nullo.
+  L'associatività del prodotto richiede un conto un po' più lungo. Prendiamo
+  un terzo numero <math|e+i*f> e sviluppiamo sia
+  <math|((a+i*b)(c+i*d))(e+i*f)> sia <math|(a+i*b)((c+i*d)(e+i*f))>. In
+  entrambi i casi la parte reale risulta <math|a*c*e-b*d*e-a*d*f-b*c*f> e la
+  parte immaginaria <math|a*c*f-b*d*f+a*d*e+b*c*e>. La distributività si
+  verifica allo stesso modo, sviluppando un prodotto con una somma e usando
+  le regole dei reali. L'unico ingrediente che ancora manca è l'inverso di un
+  complesso non nullo, e per trovarlo ci conviene guardare il piano.
 
   <section|Modulo e coniugato: costruire l'inverso>
 
-  Rappresentiamo <math|z=a+i*b> come punto <math|(a,b)> del piano. La
-  distanza dall'origine è il <strong|modulo>:
+  Rappresentiamo <math|z=a+i*b> come il punto <math|(a,b)> del piano. La sua
+  distanza dall'origine si chiama <strong|modulo>:
 
   <\equation*>
     \|z\|=<sqrt|a<rsup|2>+b<rsup|2>>.
   </equation*>
 
-  È un reale non negativo. È zero soltanto per <math|z=0>, perché una somma
-  di quadrati reali può essere zero solo se entrambi sono nulli. Sui numeri
-  reali il modulo coincide con il valore assoluto.
+  Il modulo è un reale non negativo, e vale zero soltanto quando <math|z=0>,
+  perché una somma di due quadrati reali si annulla solo se entrambi sono
+  nulli. Su un numero reale il modulo coincide con il valore assoluto.
 
-  Il <strong|coniugato> <math|<wide|z|\<bar\>>=a-i*b> è il punto riflesso
-  rispetto all'asse reale. Coniugare due volte restituisce <math|z>; inoltre
-  <math|z=<wide|z|\<bar\>>> esattamente quando <math|b=0>, cioè quando
-  <math|z> è reale.
+  Il <strong|coniugato> di <math|z> è <math|<wide|z|\<bar\>>=a-i*b>, e nel
+  piano corrisponde alla riflessione rispetto all'asse reale. Se riflettiamo
+  due volte torniamo al punto di partenza, quindi coniugando due volte
+  ritroviamo <math|z>. Un numero coincide con il proprio coniugato
+  esattamente quando <math|b=0>, cioè quando è reale.
 
-  Il coniugio rispetta somme e prodotti:
+  Il coniugio va d'accordo con le operazioni, nel senso che
 
   <\equation*>
     <wide|z+w|\<bar\>>=<wide|z|\<bar\>>+<wide|w|\<bar\>>,<space|2em><wide|z*w|\<bar\>>=<wide|z|\<bar\>><wide|w|\<bar\>>.
   </equation*>
 
-  Per la somma, entrambi i membri sono <math|(a+c)-i(b+d)>. Per il prodotto,
-  entrambi sono <math|(a*c-b*d)-i(a*d+b*c)>: basta applicare le due
-  definizioni. La combinazione più utile è
+  Per verificarlo basta applicare le definizioni con <math|w=c+i*d>. Per la
+  somma entrambi i membri valgono <math|(a+c)-i(b+d)>, e per il prodotto
+  entrambi valgono <math|(a*c-b*d)-i(a*d+b*c)>.
+
+  Il fatto davvero utile è che cosa succede moltiplicando un numero per il
+  suo coniugato:
 
   <\equation*>
     z<wide|z|\<bar\>>=(a+i*b)(a-i*b)=a<rsup|2>+b<rsup|2>=\|z\|<rsup|2>.
   </equation*>
 
-  I termini immaginari si cancellano. Se vogliamo ottenere 1, questo prodotto
-  ci porta già a un numero reale positivo: basta dividere il coniugato per
-  quel numero.
+  I termini immaginari si cancellano e resta un numero reale positivo, se
+  <math|z\<neq\>0>. Ci troviamo quindi a un passo da 1, perché basta dividere
+  per questo numero reale. In altre parole, il coniugato diviso per
+  <math|\|z\|<rsup|2>> moltiplicato per <math|z> dà esattamente 1.
 
   <\concetto|Inverso complesso>
     Per <math|z\<neq\>0>,
@@ -745,110 +807,123 @@
       z<rsup|-1>=<frac|<wide|z|\<bar\>>|\|z\|<rsup|2>>=<frac|a-i*b|a<rsup|2>+b<rsup|2>>.
     </equation*>
 
-    Moltiplicando per <math|z> otteniamo <math|\|z\|<rsup|2>/\|z\|<rsup|2>=1>.
-    Il denominatore è non nullo proprio perché <math|z\<neq\>0>. Questo
-    completa la verifica che <math|\<bbb-C\>> è un campo.
+    Moltiplicando per <math|z> otteniamo <math|\|z\|<rsup|2>/\|z\|<rsup|2>=1>,
+    e il denominatore non è nullo perché <math|z\<neq\>0>. Con l'inverso
+    abbiamo tutte le regole: <math|\<bbb-C\>> è un campo.
   </concetto>
 
-  Per dividere <math|3-2i> per <math|1-i>, moltiplichiamo per l'inverso del
-  denominatore, cioè <math|(1+i)/2>:
+  In pratica, per dividere <math|3-2i> per <math|1-i> moltiplichiamo per
+  l'inverso del denominatore, che è <math|(1+i)/2>:
 
   <\equation*>
     <frac|3-2i|1-i>=<frac|(3-2i)(1+i)|2>=<frac|3+i-2i<rsup|2>|2>=<frac|5+i|2>.
   </equation*>
 
-  Il controllo consiste nel moltiplicare il risultato per <math|1-i>:
-  ritroviamo <math|3-2i>.
+  Per controllare il risultato lo moltiplichiamo per <math|1-i>. Si ottiene
+  <math|(5+i)(1-i)/2=(5-5i+i+1)/2=3-2i>, che è proprio il numero di partenza.
 
   <section|Forma polare e significato del prodotto>
 
-  Per indicare un punto diverso dall'origine possiamo dare la distanza
-  <math|\<rho\>=\|z\|> e un angolo <math|\<theta\>> dal semiasse reale
-  positivo, misurato in senso antiorario. L'angolo si chiama
-  <strong|argomento>. Le coordinate del punto sono
-  <math|a=\<rho\>cos\<theta\>> e <math|b=\<rho\>sin\<theta\>>, quindi
+  Un punto del piano diverso dall'origine si può indicare anche in un altro
+  modo, dicendo quanto dista dall'origine e in quale direzione si trova.
+  Chiamiamo <math|\<rho\>=\|z\|> la distanza e <math|\<theta\>> l'angolo
+  formato con il semiasse reale positivo, misurato in senso antiorario.
+  Questo angolo si chiama <strong|argomento> di <math|z>. Le coordinate del
+  punto sono <math|a=\<rho\>cos\<theta\>> e <math|b=\<rho\>sin\<theta\>>, e
+  quindi
 
   <\equation*>
     z=\<rho\>(cos\<theta\>+i\<cdot\>sin\<theta\>).
   </equation*>
 
-  Angoli che differiscono di <math|2k\<pi\>>, con <math|k\<in\>\<bbb-Z\>>,
-  rappresentano lo stesso punto. L'argomento di zero non è definito: il punto
-  nell'origine non sceglie alcuna direzione.
+  Angoli che differiscono di un numero intero di giri, cioè di
+  <math|2k\<pi\>> con <math|k\<in\>\<bbb-Z\>>, indicano la stessa direzione e
+  quindi lo stesso punto. Per lo zero invece l'argomento non è definito,
+  perché l'origine non sta in nessuna direzione particolare.
 
   <figura|<image|assets/piano-complesso.pdf|150.0mm|65.0mm||>|Lo stesso
   numero si descrive con due coordinate oppure con modulo e argomento. Il
   coniugato cambia il segno della coordinata verticale.>
 
-  Per <math|z=-1-i>, il modulo è <math|<sqrt|2>>. Le due coordinate sono
-  negative, dunque scegliamo <math|\<theta\>=5\<pi\>/4>, oppure
-  <math|-3\<pi\>/4>. La sola uguaglianza <math|tan\<theta\>=b/a=1> non
-  distinguerebbe questo punto da <math|1+i>, che ha argomento
-  <math|\<pi\>/4>.
+  Trovare l'argomento richiede un po' di attenzione. Per <math|z=-1-i> il
+  modulo è <math|<sqrt|2>>, ed entrambe le coordinate sono negative, quindi
+  il punto sta nel terzo quadrante e un argomento è
+  <math|\<theta\>=5\<pi\>/4> (oppure, equivalentemente, <math|-3\<pi\>/4>).
+  Se ci fossimo fidati soltanto di <math|tan\<theta\>=b/a=1>, avremmo potuto
+  confonderlo con <math|1+i>, che ha argomento <math|\<pi\>/4> e la stessa
+  tangente. Per questo, quando usiamo <math|arctan(b/a)>, controlliamo sempre
+  il quadrante. Se <math|a=0> la tangente non è definita, e l'argomento è
+  <math|\<pi\>/2> per <math|b\<gtr\>0> e <math|-\<pi\>/2> per
+  <math|b\<less\>0>.
 
-  Se usiamo <math|arctan(b/a)> dobbiamo controllare il quadrante; se
-  <math|a=0> usiamo direttamente <math|\<pi\>/2> per <math|b\<gtr\>0> e
-  <math|-\<pi\>/2> per <math|b\<less\>0>.
+  La forma polare mostra tutta la sua forza nel prodotto. Prendiamo due
+  numeri non nulli, <math|z=\<rho\>(cos\<theta\>+i\<cdot\>sin\<theta\>)> e
+  <math|w=\<lambda\>(cos\<varphi\>+i\<cdot\>sin\<varphi\>)>, con
+  <math|\<rho\>,\<lambda\>\<gtr\>0>. Applicando la definizione del prodotto,
+  la parte reale di <math|z*w/(\<rho\>\<lambda\>)> risulta
+  <math|cos\<theta\>cos\<varphi\>-sin\<theta\>sin\<varphi\>> e quella
+  immaginaria <math|cos\<theta\>sin\<varphi\>+sin\<theta\>cos\<varphi\>>.
 
-  Per ricavare la formula supponiamo <math|z,w\<neq\>0>, così
-  <math|\<rho\>,\<lambda\>\<gtr\>0>. Scriviamo ora
-  <math|w=\<lambda\>(cos\<varphi\>+i\<cdot\>sin\<varphi\>)>.
-
-  Applicando la definizione del prodotto, la parte reale di
-  <math|z*w/(\<rho\>\<lambda\>)> è <math|cos\<theta\>cos\<varphi\>-sin\<theta\>sin\<varphi\>>;
-  quella immaginaria è <math|cos\<theta\>sin\<varphi\>+sin\<theta\>cos\<varphi\>>.
-
-  Le formule di addizione della trigonometria riconoscono queste espressioni
-  come <math|cos(\<theta\>+\<varphi\>)> e <math|sin(\<theta\>+\<varphi\>)>.
-  Perciò
+  Queste due espressioni sono vecchie conoscenze, perché le formule di
+  addizione della trigonometria le riconoscono come
+  <math|cos(\<theta\>+\<varphi\>)> e <math|sin(\<theta\>+\<varphi\>)>. Perciò
 
   <\equation*>
     z*w=\<rho\>\<lambda\>(cos(\<theta\>+\<varphi\>)+i\<cdot\>sin(\<theta\>+\<varphi\>)).
   </equation*>
 
-  <strong|I moduli si moltiplicano, gli angoli si sommano.> In particolare
-  <math|\|z*w\|=\|z\|\|w\|>, anche quando un fattore è zero. Moltiplicare per
-  <math|i> ruota di <math|\<pi\>/2> senza cambiare lunghezza; moltiplicare
-  per 2 raddoppia la lunghezza senza ruotare.
+  Il risultato si ricorda in una frase: <strong|i moduli si moltiplicano e
+  gli angoli si sommano.> In particolare <math|\|z*w\|=\|z\|\|w\|>, e questo
+  vale anche quando un fattore è zero. Moltiplicare per <math|i>, che ha
+  modulo 1 e argomento <math|\<pi\>/2>, significa ruotare di un quarto di
+  giro senza cambiare la lunghezza, mentre moltiplicare per 2 raddoppia la
+  lunghezza senza ruotare.
 
-  Ripetendo il prodotto <math|n> volte, con <math|n\<geq\>1> intero,
-  otteniamo la <strong|formula di De Moivre>:
+  Se moltiplichiamo <math|z> per sé stesso <math|n> volte, con
+  <math|n\<geq\>1>, il modulo viene moltiplicato per <math|\<rho\>> a ogni
+  passo e l'angolo cresce ogni volta di <math|\<theta\>>. Otteniamo così la
+  <strong|formula di De Moivre>:
 
   <\equation*>
     z<rsup|n>=\<rho\><rsup|n>(cos(n\<theta\>)+i\<cdot\>sin(n\<theta\>)).
   </equation*>
 
-  La giustificazione è anche una piccola induzione: la formula vale per
-  <math|n=1>; moltiplicando il caso <math|n> per <math|z> si moltiplica il
-  modulo per <math|\<rho\>> e si aggiunge un altro <math|\<theta\>>.
-
-  Talvolta scriveremo <math|e<rsup|i\<theta\>>> come abbreviazione di
-  <math|cos\<theta\>+i\<cdot\>sin\<theta\>>; qui questa notazione non
-  richiede di studiare la funzione esponenziale complessa.
+  Questo ragionamento è in effetti una piccola induzione, perché la formula
+  vale per <math|n=1> e ogni nuovo fattore <math|z> la fa passare da <math|n>
+  a <math|n+1>. Talvolta scriveremo <math|e<rsup|i\<theta\>>> come
+  abbreviazione di <math|cos\<theta\>+i\<cdot\>sin\<theta\>>. Per noi sarà
+  solo una notazione comoda, che non richiede di studiare l'esponenziale
+  complesso.
 
   <section|Radici ennesime: perché sono più di una?>
 
-  Cerchiamo prima le soluzioni di <math|z<rsup|3>=-8>. Il modulo deve
-  soddisfare <math|\<rho\><rsup|3>=8>, quindi <math|\<rho\>=2>. Un argomento
-  di <math|-8> è <math|\<pi\>>, ma possiamo usare anche
-  <math|\<pi\>+2k\<pi\>>. Perciò l'angolo di una radice deve soddisfare
-  <math|3\<theta\>=\<pi\>+2k\<pi\>>:
+  Proviamo a risolvere <math|z<rsup|3>=-8>. Fra i reali troveremmo soltanto
+  <math|-2>, ma fra i complessi le soluzioni sono di più, e la forma polare
+  ci dice quante e dove sono. Scriviamo <math|z=\<rho\>(cos\<theta\>+i\<cdot\>sin\<theta\>)>.
+  Per De Moivre <math|z<rsup|3>> ha modulo <math|\<rho\><rsup|3>>, che deve
+  essere uguale a 8, quindi <math|\<rho\>=2>.
+
+  Per l'angolo dobbiamo essere più accorti. Un argomento di <math|-8> è
+  <math|\<pi\>>, ma vanno bene anche <math|\<pi\>+2\<pi\>>,
+  <math|\<pi\>+4\<pi\>> e in generale <math|\<pi\>+2k\<pi\>>. Imponiamo
+  quindi <math|3\<theta\>=\<pi\>+2k\<pi\>>, che dà
 
   <\equation*>
     \<theta\>=<frac|\<pi\>|3>+<frac|2k\<pi\>|3>.
   </equation*>
 
-  Per <math|k=0,1,2> troviamo <math|\<pi\>/3,\<pi\>,5\<pi\>/3>. Da <math|k=3>
-  in poi ripassiamo sugli stessi angoli, perché abbiamo aggiunto un giro
-  completo. Le soluzioni sono
+  Per <math|k=0,1,2> troviamo tre angoli diversi, <math|\<pi\>/3>,
+  <math|\<pi\>> e <math|5\<pi\>/3>. Da <math|k=3> in poi ripassiamo sugli
+  stessi angoli, perché abbiamo aggiunto un giro intero. Le soluzioni sono
+  dunque
 
   <\equation*>
     1+i<sqrt|3>,<space|2em>-2,<space|2em>1-i<sqrt|3>.
   </equation*>
 
-  Il passaggio decisivo è avere conservato <math|2k\<pi\>> <em|prima> di
-  dividere per 3: quel giro completo diventa un terzo di giro e produce
-  radici diverse.
+  Il passaggio decisivo è stato tenere conto di <math|2k\<pi\>> <em|prima> di
+  dividere per 3. Un giro completo, diviso per 3, diventa un terzo di giro, e
+  sono questi terzi di giro a produrre le radici nuove.
 
   <\concetto|Radici ennesime di un complesso>
     Sia <math|n\<geq\>1> intero. Se <math|w=R(cos\<varphi\>+i\<cdot\>sin\<varphi\>)\<neq\>0>,
@@ -863,31 +938,33 @@
     Se <math|w=0>, l'unica soluzione è <math|z=0>.
   </concetto>
 
-  La formula si ricava confrontando il modulo e l'angolo nella formula di De
-  Moivre, come abbiamo appena fatto.
+  La formula si ottiene confrontando modulo e angolo in De Moivre,
+  esattamente come abbiamo fatto per <math|-8>. Resta da capire perché la
+  lista non contiene ripetizioni e perché non manca nulla. Due indici fra 0 e
+  <math|n-1> danno lo stesso punto solo se i loro angoli differiscono di un
+  numero intero di giri, cioè solo se la loro differenza è multipla di
+  <math|n>, e questo accade solo quando sono uguali. D'altra parte, qualsiasi
+  indice intero si riporta a uno fra 0 e <math|n-1> togliendo multipli di
+  <math|n>, quindi la lista è completa.
 
-  Due indici fra 0 e <math|n-1> danno lo stesso punto solo se la loro
-  differenza è multipla di <math|n>, e quindi solo se sono uguali. Ogni
-  indice intero si riporta a uno di questi sottraendo multipli di <math|n>:
-  la lista è completa.
-
-  Per <math|w=1> otteniamo le <strong|radici dell'unità>, con modulo 1 e
-  angoli <math|2k\<pi\>/n>.
-
-  Le radici seste hanno angoli <math|0,\<pi\>/3,2\<pi\>/3,\<pi\>,4\<pi\>/3,5\<pi\>/3>.
-  I loro valori sono <math|1,-1> e i quattro numeri
-  <math|\<pm\>1/2\<pm\>i<sqrt|3>/2>, scegliendo indipendentemente i due
-  segni.
+  Il caso <math|w=1> merita un nome. Le soluzioni di <math|z<rsup|n>=1> si
+  chiamano <strong|radici dell'unità>, hanno modulo 1 e angoli
+  <math|2k\<pi\>/n>. Le radici seste, per esempio, hanno angoli
+  <math|0,\<pi\>/3,2\<pi\>/3,\<pi\>,4\<pi\>/3,5\<pi\>/3>, e i loro valori
+  sono <math|1>, <math|-1> e i quattro numeri
+  <math|\<pm\>1/2\<pm\>i<sqrt|3>/2>, con i due segni scelti in modo
+  indipendente.
 
   <figura|<image|assets/radici.pdf|150.0mm|62.5mm||>|A sinistra le radici
   cubiche di <math|-8>; a destra le radici seste di 1. Scelta la prima
   radice, troviamo le altre avanzando di <math|2\<pi\>/n>.>
 
-  Se conosciamo una radice <math|z<rsub|0>> di un complesso non nullo,
-  otteniamo tutte le altre moltiplicandola per le radici ennesime dell'unità:
-  il prodotto ha la stessa potenza, perché
-  <math|(z<rsub|0>u)<rsup|n>=z<rsub|0><rsup|n>u<rsup|n>=w>. La formula polare
-  mostra che queste sono tutte le possibilità.
+  La figura suggerisce un modo rapido di trovare tutte le radici. Se
+  conosciamo una sola radice <math|z<rsub|0>> di un complesso non nullo
+  <math|w>, ogni prodotto <math|z<rsub|0>u> con <math|u> radice ennesima
+  dell'unità è ancora una radice, perché <math|(z<rsub|0>u)<rsup|n>=z<rsub|0><rsup|n>u<rsup|n>=w\<cdot\>1=w>.
+  Questi prodotti sono <math|n> numeri distinti, e la formula polare ci dice
+  che le radici sono esattamente <math|n>, quindi li abbiamo trovati tutti.
 
   <\verifica|2>
     <strong|2.1.> Calcola <math|(2+i)/(1+i)> e verifica il risultato
@@ -901,47 +978,51 @@
   <chapter|Polinomi: fattorizzazione e molteplicità delle radici>
 
   <\inbreve>
-    Che cosa ci dice una radice su un polinomio? Dalla divisione per un
-    fattore lineare arriveremo alla fattorizzazione. Capiremo anche come
-    contare le radici ripetute e che cosa cambia quando i coefficienti sono
-    reali.
+    Sapere che un numero annulla un polinomio sembra un'informazione piccola,
+    ma in realtà permette di spezzare il polinomio in un prodotto di pezzi
+    più semplici. Seguendo questa idea fino in fondo, con l'aiuto del teorema
+    fondamentale dell'algebra, arriveremo a scrivere ogni polinomio complesso
+    come prodotto di fattori di primo grado. Lungo la strada impareremo a
+    contare le radici che si ripetono e vedremo quale simmetria compare
+    quando i coefficienti sono reali.
   </inbreve>
 
   <section|Una radice permette di estrarre un fattore>
 
-  Partiamo da <math|P(z)=z<rsup|2>-3z+2>. Sostituendo <math|z=1> otteniamo
-  <math|1-3+2=0>: diciamo che 1 è una <strong|radice>. Che cosa ci permette
-  di fare questa informazione?
+  Prendiamo <math|P(z)=z<rsup|2>-3z+2> e proviamo a sostituire <math|z=1>.
+  Otteniamo <math|1-3+2=0>, e diciamo che 1 è una <strong|radice> di
+  <math|P>. Vediamo che cosa ci permette di fare questa scoperta.
 
-  Per dividere per <math|z-1>, togliamo prima <math|z(z-1)=z<rsup|2>-z>:
-  rimane <math|-2z+2>.
+  Proviamo a dividere <math|P> per <math|z-1>. Per eliminare il termine
+  <math|z<rsup|2>> togliamo <math|z(z-1)=z<rsup|2>-z>, e rimane <math|-2z+2>.
+  Per eliminare anche questo togliamo <math|-2(z-1)=-2z+2>, e il resto è
+  zero. I due termini che abbiamo usato formano il quoziente <math|z-2>,
+  quindi <math|P(z)=(z-1)(z-2)>.
 
-  Togliamo poi <math|-2(z-1)=-2z+2>: il resto è zero. Il quoziente raccoglie
-  i due termini scelti, <math|z-2>, quindi <math|P(z)=(z-1)(z-2)>.
+  Il prodotto ci mostra subito anche l'altra radice. Per la legge di
+  annullamento del prodotto, <math|P(z)=0> esattamente quando <math|z=1>
+  oppure <math|z=2>. Partendo da una sola radice abbiamo dunque trasformato
+  un'equazione di secondo grado in due equazioni di primo grado.
 
-  Questo prodotto mostra entrambe le radici: per l'annullamento del prodotto,
-  <math|P(z)=0> esattamente per <math|z=1> oppure <math|z=2>.
+  Fissiamo un po' di vocabolario prima di generalizzare. Un polinomio
+  <math|P(z)=a<rsub|n>z<rsup|n>+\<cdots\>+a<rsub|1>z+a<rsub|0>> con
+  <math|a<rsub|n>\<neq\>0> ha <strong|grado> <math|n>, e il numero
+  <math|a<rsub|n>> si chiama coefficiente direttivo. Quando il coefficiente
+  direttivo vale 1 il polinomio si dice <strong|monico>. I polinomi con
+  coefficienti in un campo <math|K> formano l'insieme <math|K[z]>, e una
+  radice è un valore <math|r> per cui <math|P(r)=0>.
 
-  Un polinomio <math|P(z)=a<rsub|n>z<rsup|n>+\<cdots\>+a<rsub|1>z+a<rsub|0>>,
-  con <math|a<rsub|n>\<neq\>0>, ha <strong|grado> <math|n>.
-
-  Il numero <math|a<rsub|n>> è il coefficiente direttivo; se vale 1, il
-  polinomio si dice <strong|monico>.
-
-  I polinomi a coefficienti in un campo <math|K> formano l'insieme
-  <math|K[z]>. Una <strong|radice> è un valore <math|r> per cui
-  <math|P(r)=0>.
-
-  Perché possiamo sempre trasformare una radice in un fattore? Dividendo un
-  polinomio per <math|z-r> otteniamo
+  Perché una radice si trasforma sempre in un fattore? Se dividiamo un
+  polinomio qualsiasi per <math|z-r>, otteniamo
 
   <\equation*>
     P(z)=(z-r)Q(z)+c,
   </equation*>
 
-  dove il resto <math|c> è costante, perché deve avere grado minore di 1.
-  Ponendo <math|z=r>, il prodotto si annulla e rimane <math|P(r)=c>. Dunque
-  il resto è zero precisamente quando <math|r> è radice.
+  dove il resto <math|c> è una costante, perché deve avere grado minore del
+  divisore. Ora poniamo <math|z=r>. Il prodotto si annulla e resta
+  <math|P(r)=c>. Il resto della divisione è quindi esattamente il valore del
+  polinomio in <math|r>, ed è zero precisamente quando <math|r> è una radice.
 
   <\concetto|Teorema del fattore>
     Siano <math|K> un campo, <math|P\<in\>K[z]> e <math|r\<in\>K>. Allora
@@ -951,78 +1032,86 @@
     ha grado <math|n-1>.
   </concetto>
 
-  Una divisione con resto non nullo non è una fattorizzazione: c'è ancora un
-  addendo. Il vantaggio del resto zero è proprio poter usare l'annullamento
-  del prodotto e ridurre il problema a un polinomio di grado minore.
+  Il resto zero è ciò che fa la differenza. Con un resto non nullo avremmo
+  ancora un addendo, e non potremmo usare l'annullamento del prodotto. Con il
+  resto zero, invece, il problema si riduce a un polinomio di grado più
+  basso.
 
   <section|Teorema fondamentale dell'algebra e induzione>
 
-  Nei reali, un polinomio non costante può non avere radici:
-  <math|x<rsup|2>+1> ne è un esempio. Nei complessi vale invece il seguente
-  risultato.
+  Fra i reali un polinomio non costante può non avere nessuna radice, come
+  succede a <math|x<rsup|2>+1>. Fra i complessi questo non accade mai.
 
   <\concetto|Teorema fondamentale dell'algebra>
     Ogni polinomio non costante a coefficienti complessi ha almeno una radice
     complessa.
   </concetto>
 
-  Accettiamo qui il teorema senza dimostrarlo: la sua prova richiede
-  strumenti ulteriori rispetto a quelli del volume. Possiamo però dimostrarne
-  la conseguenza che useremo. Ogni polinomio complesso di grado
-  <math|n\<geq\>1>, con coefficiente direttivo <math|a>, si scrive
+  Useremo questo teorema senza dimostrarlo, perché la sua prova richiede
+  strumenti che vanno oltre questo volume. Possiamo invece dimostrare la
+  conseguenza che ci interessa davvero. Ogni polinomio complesso di grado
+  <math|n\<geq\>1> con coefficiente direttivo <math|a> si scrive come
 
   <\equation*>
     P(z)=a(z-z<rsub|1>)\<cdots\>(z-z<rsub|n>).
   </equation*>
 
-  L'idea è cercare una radice, estrarre il fattore corrispondente e
-  ricominciare sul quoziente. Il grado scende ogni volta di uno: questo
-  suggerisce una <strong|dimostrazione per induzione sul grado>.
+  L'idea è semplice. Troviamo una radice grazie al teorema fondamentale,
+  estraiamo il fattore corrispondente e ricominciamo con il quoziente. Il
+  grado scende di uno a ogni passo, e questo suggerisce di procedere per
+  <strong|induzione sul grado>.
 
-  Nel caso iniziale <math|n=1>, abbiamo <math|P(z)=a*z+b=a(z+b/a)>, con
-  radice <math|-b/a>.
+  Per <math|n=1> il polinomio è <math|a*z+b>, che possiamo scrivere come
+  <math|a(z+b/a)>. La sua unica radice è <math|-b/a>, e la fattorizzazione
+  c'è già.
 
   Supponiamo ora di saper fattorizzare <em|ogni> polinomio complesso di grado
-  <math|n>, e prendiamone uno di grado <math|n+1>. Il teorema fondamentale
-  fornisce una radice <math|z<rsub|1>>; il teorema del fattore dà
+  <math|n>, e prendiamone uno di grado <math|n+1>. Il teorema fondamentale ci
+  dà una radice <math|z<rsub|1>>, e il teorema del fattore ci permette di
+  scrivere
 
   <\equation*>
     P(z)=(z-z<rsub|1>)Q(z).
   </equation*>
 
-  Il quoziente ha grado <math|n> e lo stesso coefficiente direttivo <math|a>,
-  perché il fattore estratto ha coefficiente direttivo 1. Per l'ipotesi
-  induttiva, <math|Q(z)=a(z-z<rsub|2>)\<cdots\>(z-z<rsub|n+1>)>. Sostituendo
-  questa espressione ritroviamo la fattorizzazione richiesta per il grado
-  <math|n+1>.
+  Il quoziente <math|Q> ha grado <math|n> e lo stesso coefficiente direttivo
+  <math|a>, perché il fattore che abbiamo estratto ha coefficiente direttivo
+  1. Per l'ipotesi induttiva <math|Q(z)=a(z-z<rsub|2>)\<cdots\>(z-z<rsub|n+1>)>,
+  e sostituendo questa espressione otteniamo la fattorizzazione cercata per
+  il grado <math|n+1>.
 
-  Abbiamo così verificato il primo caso e il passaggio da ogni caso al
-  successivo. L'induzione conclude che la proprietà vale per tutti i gradi
-  positivi: dal caso 1 segue il 2, dal 2 il 3, e così via. L'ipotesi sul
-  grado <math|n> non presume già vera l'intera conclusione: è ciò da cui
-  dimostriamo il caso successivo.
+  Abbiamo verificato il primo caso e mostrato come si passa da ciascun caso
+  al successivo. L'induzione ci permette allora di concludere per tutti i
+  gradi, perché dal caso 1 segue il 2, dal 2 il 3, e così via senza fine. Non
+  c'è nulla di circolare. L'ipotesi sul grado <math|n> non è la conclusione
+  presa per buona, ma il punto d'appoggio da cui dimostriamo il caso
+  <math|n+1>.
 
   <figura|<image|assets/fattori.pdf|155.0mm|27.5mm||>|Ogni radice estratta
   abbassa il grado. Il teorema fondamentale assicura che possiamo continuare
   finché il quoziente è non costante.>
 
-  Si può formulare l'induzione anche assumendo, nel passo, tutti i casi
-  precedenti. Le due forme sono equivalenti: basta applicare l'induzione
-  ordinaria alla proprietà cumulativa \Svalgono tutti i casi fino a
-  <math|n>\T. In questa prova ci è bastato il grado immediatamente
-  precedente.
+  Esiste anche una versione dell'induzione in cui, nel passo, si possono
+  usare tutti i casi precedenti e non soltanto l'ultimo. Le due versioni sono
+  equivalenti, perché basta applicare l'induzione ordinaria alla proprietà
+  \Svalgono tutti i casi fino a <math|n>\T. In questa prova ci è bastato il
+  grado immediatamente precedente.
 
-  Il teorema fondamentale garantisce l'esistenza delle radici, senza darne
-  una formula generale di calcolo. Le sue ipotesi contano: un'espressione che
-  contiene il modulo, come <math|\|z\|<rsup|2>+1>, non è un polinomio nella
-  variabile complessa <math|z>. Questa espressione non si annulla mai; il
-  teorema non le si applica.
+  Il teorema fondamentale ci assicura che le radici esistono, ma non ci dà
+  una formula per calcolarle. Inoltre le sue ipotesi vanno prese sul serio.
+  L'espressione <math|\|z\|<rsup|2>+1>, per esempio, non si annulla mai, ma
+  non contraddice il teorema, perché il modulo non è un'operazione
+  polinomiale e quindi quell'espressione non è un polinomio nella variabile
+  <math|z>.
 
   <section|Molteplicità e numero massimo di radici>
 
   Il polinomio <math|(z-1)<rsup|3>> ha grado 3 ma una sola radice distinta,
-  1. Il fattore <math|z-1> compare tre volte. La fattorizzazione non promette
-  che i valori <math|z<rsub|1>,\<ldots\>,z<rsub|n>> siano diversi.
+  cioè 1, perché lo stesso fattore <math|z-1> compare tre volte. La
+  fattorizzazione dimostrata sopra non promette quindi che i numeri
+  <math|z<rsub|1>,\<ldots\>,z<rsub|n>> siano tutti diversi. Per contare le
+  radici in modo onesto dobbiamo tenere conto di quante volte compare
+  ciascuna.
 
   <\concetto|Molteplicità di una radice>
     Per un polinomio non nullo, <math|r> ha molteplicità <math|m\<geq\>1>
@@ -1036,135 +1125,141 @@
     volte.
   </concetto>
 
-  Per <math|P(z)=(z-1)<rsup|2>(z-3)<rsup|4>(z-5)<rsup|3>>, le radici distinte
-  sono tre, con molteplicità 2, 4 e 3. La somma è 9, uguale al grado.
-
-  In generale, raggruppando i fattori uguali nella fattorizzazione complessa,
-  le molteplicità sommano al grado: un polinomio complesso di grado <math|n>
+  Nel polinomio <math|P(z)=(z-1)<rsup|2>(z-3)<rsup|4>(z-5)<rsup|3>>, per
+  esempio, le radici distinte sono tre, con molteplicità 2, 4 e 3. La loro
+  somma è 9, che è esattamente il grado. Questo non è un caso. Se nella
+  fattorizzazione complessa raggruppiamo i fattori uguali, le molteplicità
+  sommano sempre al grado, e quindi un polinomio complesso di grado <math|n>
   ha <strong|esattamente <math|n> radici contate con molteplicità>.
 
-  In un campo qualunque abbiamo invece un limite superiore: un polinomio non
-  nullo di grado <math|n> ha al più <math|n> radici, anche contando le
-  molteplicità delle radici che appartengono al campo. Non serve il teorema
-  fondamentale per dimostrarlo.
+  In un campo qualsiasi non possiamo sperare tanto, perché le radici
+  potrebbero mancare. Possiamo però dimostrare un limite superiore senza
+  usare il teorema fondamentale: un polinomio non nullo di grado <math|n> ha
+  al più <math|n> radici nel campo, anche contandole con la loro
+  molteplicità.
 
-  Prima guardiamo <math|P(z)=(z-1)(z-2)<rsup|2>>. Togliere <math|z-1> lascia
-  <math|Q(z)=(z-2)<rsup|2>>: la radice 2 è ancora doppia. Il fattore tolto
-  vale 1 nel punto 2, perciò non contribuiva ad annullare il prodotto in quel
-  punto.
+  Il cuore dell'argomento si vede già su un esempio. In
+  <math|P(z)=(z-1)(z-2)<rsup|2>>, se togliamo il fattore <math|z-1> resta
+  <math|(z-2)<rsup|2>>, e la radice 2 è ancora doppia. Il fattore tolto,
+  infatti, nel punto 2 vale 1 e non contribuiva affatto ad annullare il
+  prodotto.
 
-  Estraiamo ora il fattore di una prima radice in generale: <math|P=(z-r)Q>.
-  Ogni altra radice <math|s\<neq\>r> rimane una radice di <math|Q>, perché
-  <math|0=P(s)=(s-r)Q(s)> e <math|s-r\<neq\>0>.
+  In generale, estraiamo il fattore di una prima radice e scriviamo
+  <math|P=(z-r)Q>. Ogni altra radice <math|s\<neq\>r> resta una radice di
+  <math|Q>, perché <math|0=P(s)=(s-r)Q(s)> e il numero <math|s-r> non è
+  nullo. Anche la molteplicità resta la stessa. Se <math|Q=(z-s)<rsup|m>H>
+  con <math|H(s)\<neq\>0>, allora <math|P=(z-s)<rsup|m>((z-r)H)>, e il
+  fattore <math|(z-r)H> nel punto <math|s> vale <math|(s-r)H(s)\<neq\>0>.
 
-  Per tener conto delle molteplicità, se <math|Q=(z-s)<rsup|m>H> con
-  <math|H(s)\<neq\>0>, allora <math|P=(z-s)<rsup|m>((z-r)H)> e
-  <math|(s-r)H(s)\<neq\>0>: la molteplicità di <math|s> è rimasta <math|m>.
-
-  Possiamo quindi estrarre, una per volta, tutte le radici con le loro
-  ripetizioni. Ogni estrazione abbassa il grado di uno; dopo <math|n>
-  estrazioni rimane una costante non nulla, che non ha radici. Più di
-  <math|n> estrazioni sono impossibili. Questo argomento non suppone in
-  partenza che le radici siano già tutte state trovate.
-
-  Il polinomio nullo è escluso: si annulla in ogni punto e non ha un grado
-  finito come quelli considerati qui.
+  Possiamo quindi estrarre le radici una alla volta, ciascuna tante volte
+  quanto è la sua molteplicità. Ogni estrazione abbassa il grado di uno, e
+  dopo <math|n> estrazioni rimane una costante non nulla, che non ha radici.
+  Più di <math|n> estrazioni sono dunque impossibili. Il polinomio nullo
+  resta escluso da tutto questo discorso, perché si annulla in ogni punto e
+  non ha un grado come gli altri.
 
   <section|Coefficienti reali e coppie coniugate>
 
-  Un polinomio reale è anche complesso, ma le sue radici non devono essere
-  reali. Ha però una simmetria. Se <math|P(z)=a<rsub|n>z<rsup|n>+\<cdots\>+a<rsub|0>>
-  e i coefficienti sono reali, le proprietà del coniugio danno
+  Un polinomio a coefficienti reali è anche un polinomio complesso, e le sue
+  radici non sono obbligate a essere reali. Hanno però una simmetria che vale
+  la pena scoprire. Se <math|P(z)=a<rsub|n>z<rsup|n>+\<cdots\>+a<rsub|0>> ha
+  coefficienti reali, le regole del coniugio danno
 
   <\equation*>
     P(<wide|z|\<bar\>>)=a<rsub|n><wide|z|\<bar\>><rsup|n>+\<cdots\>+a<rsub|0>=<wide|P(z)|\<bar\>>.
   </equation*>
 
-  Il punto essenziale è che coniugare i coefficienti non li cambia. Se
-  <math|P(r)=0>, la stessa uguaglianza dà <math|P(<wide|r|\<bar\>>)=0>. Ogni
-  radice non reale è accompagnata dalla sua coniugata.
+  Tutto si basa sul fatto che coniugare un coefficiente reale non lo cambia.
+  Ora, se <math|P(r)=0>, la stessa uguaglianza dà
+  <math|P(<wide|r|\<bar\>>)=<wide|0|\<bar\>>=0>. Ogni radice non reale porta
+  quindi con sé la sua coniugata.
 
-  Per esempio, nel polinomio reale <math|(z<rsup|2>+1)<rsup|2>=(z-i)<rsup|2>(z+i)<rsup|2>>,
-  sia <math|i> sia <math|-i> sono radici doppie. La simmetria conserva dunque
-  anche quante volte compare una radice.
-
-  Dimostriamolo. Se <math|P(z)=(z-r)<rsup|m>Q(z)> con <math|Q(r)\<neq\>0>,
+  La simmetria rispetta anche le ripetizioni. Nel polinomio reale
+  <math|(z<rsup|2>+1)<rsup|2>=(z-i)<rsup|2>(z+i)<rsup|2>>, per esempio, sia
+  <math|i> sia <math|-i> sono radici doppie. Per dimostrarlo in generale
+  partiamo da <math|P(z)=(z-r)<rsup|m>Q(z)> con <math|Q(r)\<neq\>0>, e
   coniughiamo tutti i coefficienti dell'identità, lasciando ferma la
-  variabile formale <math|z>. Il polinomio <math|P> rimane uguale, e
-  otteniamo
+  variabile <math|z>. Il polinomio <math|P> non cambia, perché ha
+  coefficienti reali, e otteniamo
 
   <\equation*>
-    P(z)=(z-<wide|r|\<bar\>>)<rsup|m><wide|Q|\<bar\>>(z).
+    P(z)=(z-<wide|r|\<bar\>>)<rsup|m><wide|Q|\<bar\>>(z),
   </equation*>
 
-  Qui <math|<wide|Q|\<bar\>>> indica il polinomio dai coefficienti coniugati.
-  Nel punto <math|<wide|r|\<bar\>>> esso vale
-  <math|<wide|Q(r)|\<bar\>>\<neq\>0>. Dunque la molteplicità è proprio
-  <math|m>, non soltanto almeno <math|m>.
+  dove <math|<wide|Q|\<bar\>>> è il polinomio con i coefficienti coniugati.
+  Nel punto <math|<wide|r|\<bar\>>> questo polinomio vale
+  <math|<wide|Q(r)|\<bar\>>>, che non è zero. La molteplicità di
+  <math|<wide|r|\<bar\>>> è quindi esattamente <math|m>, non soltanto almeno
+  <math|m>.
 
   <figura|<image|assets/coniugate.pdf|90.0mm|62.5mm||>|Un esempio di radici
   reali e coppie non reali coniugate. I numeri indicano le molteplicità: 1 è
   doppia, <math|-2> semplice, <math|-1\<pm\>2i> triple e <math|2\<pm\>i>
   semplici. Il grado è <math|2+1+3+3+1+1=11>.>
 
-  Una coppia <math|r=a+i*b>, <math|<wide|r|\<bar\>>=a-i*b>, con
-  <math|b\<neq\>0>, produce il fattore reale
+  Una coppia di radici coniugate produce un fattore che ha coefficienti
+  reali. Se <math|r=a+i*b> con <math|b\<neq\>0>, abbiamo
 
   <\equation*>
     (z-r)(z-<wide|r|\<bar\>>)=z<rsup|2>-2a*z+a<rsup|2>+b<rsup|2>.
   </equation*>
 
-  Per esempio <math|r=-1+2i> dà <math|z<rsup|2>+2z+5>. Questo fattore non ha
-  radici reali, perché per <math|z=x\<in\>\<bbb-R\>> vale
-  <math|(x-a)<rsup|2>+b<rsup|2>\<gtr\>0>.
+  Per <math|r=-1+2i>, per esempio, otteniamo <math|z<rsup|2>+2z+5>. Un
+  fattore di questo tipo non ha radici reali, perché per ogni
+  <math|x\<in\>\<bbb-R\>> vale <math|(x-a)<rsup|2>+b<rsup|2>\<gtr\>0>.
 
-  Raggruppando tutte le coppie coniugate, <strong|ogni polinomio reale non
-  nullo è una costante reale per fattori lineari reali e fattori quadratici
-  reali senza radici reali>. I fattori ripetuti mantengono le rispettive
-  molteplicità. Per le costanti il prodotto è vuoto.
+  Mettendo insieme tutte le coppie coniugate arriviamo a una conclusione che
+  riguarda solo i reali: <strong|ogni polinomio reale non nullo è il prodotto
+  di una costante reale, di fattori lineari reali e di fattori quadratici
+  reali senza radici reali>. I fattori ripetuti compaiono con le loro
+  molteplicità, e per una costante il prodotto dei fattori è semplicemente
+  vuoto.
 
   <section|Equazioni quadratiche complesse>
 
-  Per <math|a*z<rsup|2>+b*z+c=0>, con <math|a\<neq\>0>, completiamo il
-  quadrato moltiplicando per <math|4a>:
+  La formula per le equazioni di secondo grado funziona anche fra i
+  complessi, con un'avvertenza sulle radici quadrate. Partiamo da
+  <math|a*z<rsup|2>+b*z+c=0> con <math|a\<neq\>0>, moltiplichiamo per
+  <math|4a> e completiamo il quadrato:
 
   <\equation*>
     (2a*z+b)<rsup|2>=b<rsup|2>-4a*c=\<Delta\>.
   </equation*>
 
-  Se scegliamo un numero <math|u> con <math|u<rsup|2>=\<Delta\>>, le due
-  possibilità sono <math|2a*z+b=\<pm\>u>, quindi
+  Se troviamo un numero <math|u> con <math|u<rsup|2>=\<Delta\>>, le
+  possibilità sono <math|2a*z+b=u> oppure <math|2a*z+b=-u>, e quindi
 
   <\equation*>
     z=<frac|-b\<pm\>u|2a>.
   </equation*>
 
-  Per <math|\<Delta\>\<neq\>0> le radici quadrate <math|u,-u> sono distinte e
-  opposte; per <math|\<Delta\>=0> coincidono in zero e danno una radice
-  doppia. La scrittura <math|\<pm\><sqrt|\<Delta\>>> significa scegliere
-  entrambe le radici quadrate, senza una preferenza naturale per una di esse
-  nei complessi.
+  Quando <math|\<Delta\>\<neq\>0> i numeri <math|u> e <math|-u> sono distinti
+  e danno due radici diverse, mentre quando <math|\<Delta\>=0> coincidono con
+  zero e danno una radice doppia. Fra i complessi nessuna delle due radici
+  quadrate di <math|\<Delta\>> è privilegiata, e la scrittura
+  <math|\<pm\><sqrt|\<Delta\>>> significa semplicemente che le prendiamo
+  entrambe.
 
-  Per <math|z<rsup|2>+(1-i)z-i=0>, abbiamo <math|a=1>, <math|b=1-i>,
-  <math|c=-i>.
-
-  Calcoliamo prima <math|(1-i)<rsup|2>=-2i>; perciò
-  <math|\<Delta\>=-2i+4i=2i>. Una radice quadrata di <math|2i> è <math|1+i>,
-  come si controlla elevando al quadrato. La formula dà
+  Risolviamo per esempio <math|z<rsup|2>+(1-i)z-i=0>, dove <math|a=1>,
+  <math|b=1-i> e <math|c=-i>. Poiché <math|(1-i)<rsup|2>=1-2i+i<rsup|2>=-2i>,
+  il discriminante è <math|\<Delta\>=-2i+4i=2i>. Una radice quadrata di
+  <math|2i> è <math|1+i>, come si vede elevando al quadrato. La formula dà
+  allora
 
   <\equation*>
     z=<frac|-1+i\<pm\>(1+i)|2>.
   </equation*>
 
-  Con il segno più otteniamo <math|i>, con il meno otteniamo <math|-1>. Il
-  controllo è la fattorizzazione <math|(z-i)(z+1)=z<rsup|2>+(1-i)z-i>. I
-  coefficienti non sono tutti reali: non c'è motivo di aspettarsi due radici
-  coniugate.
+  Con il segno più troviamo <math|i>, con il segno meno troviamo <math|-1>.
+  Possiamo controllare il risultato moltiplicando i fattori, perché
+  <math|(z-i)(z+1)=z<rsup|2>+(1-i)z-i>. Le due radici non sono coniugate, e
+  non c'è motivo che lo siano, dato che i coefficienti non sono tutti reali.
 
   <subsection|Per proseguire: due letture delle radici seste>
 
-  Il capitolo precedente ha trovato le radici di <math|z<rsup|6>=1> con la
-  forma polare. Ritroviamole usando i fattori:
+  Nel capitolo precedente abbiamo trovato le radici di <math|z<rsup|6>=1> con
+  la forma polare. Possiamo ritrovarle anche spezzando il polinomio in
+  fattori:
 
   <\equation*>
     z<rsup|6>-1=(z<rsup|3>-1)(z<rsup|3>+1)
@@ -1174,10 +1269,12 @@
     =(z-1)(z+1)(z<rsup|2>+z+1)(z<rsup|2>-z+1).
   </equation*>
 
-  I fattori lineari danno <math|1,-1>; i due quadratici danno rispettivamente
-  <math|(-1\<pm\>i<sqrt|3>)/2> e <math|(1\<pm\>i<sqrt|3>)/2>. È la stessa
-  lista. Forma polare e fattorizzazione sono due modi di usare la struttura
-  del problema: scegliamo quello che rende trasparenti i passaggi.
+  I fattori lineari danno <math|1> e <math|-1>, mentre i due fattori
+  quadratici danno rispettivamente <math|(-1\<pm\>i<sqrt|3>)/2> e
+  <math|(1\<pm\>i<sqrt|3>)/2>. È esattamente la stessa lista. La forma polare
+  e la fattorizzazione sono due modi diversi di sfruttare la struttura dello
+  stesso problema, e conviene scegliere di volta in volta quello che rende
+  più chiari i passaggi.
 
   <\verifica|3>
     <strong|3.1.> Trova le radici distinte e le molteplicità di
@@ -1192,27 +1289,34 @@
   <chapter|Spazi vettoriali e sottospazi>
 
   <\inbreve>
-    Che cosa hanno in comune frecce, polinomi e matrici? Sappiamo sommarli e
-    moltiplicarli per numeri. Raccoglieremo le regole comuni nella
-    definizione di spazio vettoriale e impareremo a riconoscerne i
-    sottospazi.
+    Le frecce del piano, i polinomi e le tabelle di numeri sono oggetti
+    diversissimi, ma con tutti sappiamo fare le stesse due operazioni:
+    sommarli fra loro e moltiplicarli per un numero. In questo capitolo
+    raccogliamo le regole che queste operazioni rispettano nella definizione
+    di spazio vettoriale. Poi guarderemo dentro uno spazio e cercheremo le
+    sue parti che sono a loro volta spazi, i sottospazi, che saranno i
+    protagonisti dei capitoli successivi.
   </inbreve>
 
   <section|Spazio vettoriale: le regole di somma e scalari>
 
-  Con <math|u=(1,2)> e <math|v=(3,-1)> otteniamo <math|u+v=(4,1)> e
-  <math|2u=(2,4)>. Per le frecce la somma segue il parallelogramma; un
-  multiplo cambia lunghezza e, se negativo, verso. Zero dà la freccia nulla.
-  Conserveremo queste regole anche per oggetti diversi.
+  Cominciamo dalle frecce del piano. Con <math|u=(1,2)> e <math|v=(3,-1)>
+  otteniamo <math|u+v=(4,1)> e <math|2u=(2,4)>. Geometricamente la somma
+  segue la regola del parallelogramma, mentre moltiplicare per un numero
+  allunga o accorcia la freccia, e se il numero è negativo ne inverte anche
+  il verso. Moltiplicare per zero dà la freccia nulla. Vogliamo isolare le
+  regole che rendono possibili questi calcoli, per poterle usare anche con
+  oggetti che non sono frecce.
 
-  Sia <math|K> un campo, come <math|\<bbb-R\>> o <math|\<bbb-C\>>. I suoi
-  elementi saranno gli <strong|scalari>.
+  I numeri per cui moltiplichiamo vengono da un campo <math|K>, di solito
+  <math|\<bbb-R\>> oppure <math|\<bbb-C\>>, e li chiamiamo <strong|scalari>.
 
   Uno <strong|spazio vettoriale su <math|K>> è un insieme <math|V>, i cui
-  elementi chiamiamo vettori, con una somma <math|V\<times\>V\<rightarrow\>V>
-  e un prodotto per scalare <math|K\<times\>V\<rightarrow\>V>. Le operazioni
-  devono restituire vettori di <math|V>. Per ogni <math|u,v,w\<in\>V> e
-  <math|\<alpha\>,\<beta\>\<in\>K> richiediamo:
+  elementi chiamiamo vettori, dotato di una somma
+  <math|V\<times\>V\<rightarrow\>V> e di un prodotto per scalare
+  <math|K\<times\>V\<rightarrow\>V>. Entrambe le operazioni devono dare come
+  risultato vettori di <math|V>. Inoltre, per ogni <math|u,v,w\<in\>V> e
+  <math|\<alpha\>,\<beta\>\<in\>K>, chiediamo che valgano queste regole:
 
   <\itemize>
     <item><math|(u+v)+w=u+(v+w)> e <math|u+v=v+u>;
@@ -1228,10 +1332,12 @@
     <math|1<rsub|K>v=v>.
   </itemize>
 
-  Non richiediamo un prodotto di due vettori. In <math|\<alpha\>\<beta\>>
-  moltiplichiamo due scalari; in <math|\<alpha\>v> uno scalare e un vettore.
-  Anche i due segni di somma in <math|(\<alpha\>+\<beta\>)v=\<alpha\>v+\<beta\>v>
-  agiscono su insiemi diversi.
+  Notiamo che non chiediamo di saper moltiplicare due vettori fra loro. In
+  <math|\<alpha\>\<beta\>> moltiplichiamo due scalari, mentre in
+  <math|\<alpha\>v> moltiplichiamo uno scalare per un vettore, e sono due
+  operazioni diverse. Lo stesso accade nella regola
+  <math|(\<alpha\>+\<beta\>)v=\<alpha\>v+\<beta\>v>, dove il primo segno di
+  somma unisce due scalari e il secondo due vettori.
 
   <\concetto|Spazio vettoriale>
     Il punto comune fra frecce, polinomi, funzioni e matrici è poter fare
@@ -1239,7 +1345,8 @@
     lavoriamo è parte della definizione.
   </concetto>
 
-  In <math|K<rsup|n>> definiamo le operazioni componente per componente:
+  L'esempio più importante è <math|K<rsup|n>>, l'insieme delle liste di
+  <math|n> scalari, in cui le operazioni si fanno componente per componente:
 
   <\equation*>
     x+y=(x<rsub|1>+y<rsub|1>,\<ldots\>,x<rsub|n>+y<rsub|n>),
@@ -1249,103 +1356,111 @@
     \<alpha\>x=(\<alpha\>x<rsub|1>,\<ldots\>,\<alpha\>x<rsub|n>).
   </equation*>
 
-  Per capire una verifica, guardiamo l'associatività. La componente <math|i>
-  di <math|(x+y)+z> è <math|(x<rsub|i>+y<rsub|i>)+z<rsub|i>>. Nel campo
-  questa vale <math|x<rsub|i>+(y<rsub|i>+z<rsub|i>)>, componente di
-  <math|x+(y+z)>. Tutte le componenti coincidono, dunque coincidono i
-  vettori.
-
-  Le due distributività, la compatibilità e l'azione dell'unità si verificano
-  applicando la corrispondente regola del campo a ciascuna componente. Zero e
-  opposto sono <math|(0,\<ldots\>,0)> e <math|(-x<rsub|1>,\<ldots\>,-x<rsub|n>)>.
+  Per vedere come si verifica una regola, prendiamo l'associatività. La
+  componente di posto <math|i> di <math|(x+y)+z> è
+  <math|(x<rsub|i>+y<rsub|i>)+z<rsub|i>>. Nel campo questo numero è uguale a
+  <math|x<rsub|i>+(y<rsub|i>+z<rsub|i>)>, che è la componente di posto
+  <math|i> di <math|x+(y+z)>. Poiché tutte le componenti coincidono,
+  coincidono anche i vettori. Le altre regole si verificano nello stesso
+  modo, applicando a ogni componente la regola corrispondente del campo. Il
+  vettore nullo è <math|(0,\<ldots\>,0)> e l'opposto di <math|x> è
+  <math|(-x<rsub|1>,\<ldots\>,-x<rsub|n>)>.
 
   <subsection|Che cosa significa moltiplicare per zero>
 
-  Lo zero del campo e il vettore nullo sono oggetti diversi. Gli assiomi
-  collegano i loro ruoli. Da <math|0<rsub|K>v=(0<rsub|K>+0<rsub|K>)v=0<rsub|K>v+0<rsub|K>v>,
-  sottraendo <math|0<rsub|K>v> ai due membri, segue
-  <math|0<rsub|K>v=0<rsub|V>>.
+  In uno spazio vettoriale ci sono due zeri, lo zero <math|0<rsub|K>> del
+  campo e il vettore nullo <math|0<rsub|V>>. Sono oggetti diversi, ma gli
+  assiomi li collegano in un modo che ci aspettiamo. Poiché
+  <math|0<rsub|K>=0<rsub|K>+0<rsub|K>>, la distributività dà
+  <math|0<rsub|K>v=0<rsub|K>v+0<rsub|K>v>. Sottraendo <math|0<rsub|K>v> a
+  entrambi i membri otteniamo <math|0<rsub|K>v=0<rsub|V>>.
 
-  Da <math|\<alpha\>0<rsub|V>=\<alpha\>(0<rsub|V>+0<rsub|V>)=\<alpha\>0<rsub|V>+\<alpha\>0<rsub|V>>
-  segue nello stesso modo <math|\<alpha\>0<rsub|V>=0<rsub|V>>.
+  Con lo stesso ragionamento, partendo da
+  <math|0<rsub|V>=0<rsub|V>+0<rsub|V>>, troviamo
+  <math|\<alpha\>0<rsub|V>=0<rsub|V>> per ogni scalare <math|\<alpha\>>.
+  Infine <math|v+(-1<rsub|K>)v=(1<rsub|K>-1<rsub|K>)v=0<rsub|V>>, e quindi
+  <math|(-1<rsub|K>)v> è proprio l'opposto <math|-v>.
 
-  Infine <math|v+(-1<rsub|K>)v=(1<rsub|K>-1<rsub|K>)v=0<rsub|V>>, quindi
-  <math|(-1<rsub|K>)v=-v>.
-
-  Nel seguito scriveremo spesso soltanto 0: il contesto dirà se è uno scalare
-  oppure un vettore.
+  D'ora in poi scriveremo spesso soltanto 0, lasciando al contesto il compito
+  di dire se si tratta di uno scalare o di un vettore.
 
   <section|Polinomi, funzioni e matrici come vettori>
 
   <subsection|Polinomi: lavorare sui coefficienti>
 
-  Per <strong|polinomi formali> <math|K[X]> sommiamo i coefficienti della
-  stessa potenza e moltiplichiamo tutti i coefficienti per lo scalare. Per
-  esempio <math|(1+2X)+(3-X)=4+X>. Il vettore nullo ha tutti i coefficienti
-  zero. Le regole del campo valgono coefficiente per coefficiente. Il simbolo
-  <math|X> è formale: due polinomi sono uguali quando hanno gli stessi
-  coefficienti.
+  Due <strong|polinomi formali> di <math|K[X]> si sommano sommando i
+  coefficienti delle stesse potenze, e un polinomio si moltiplica per uno
+  scalare moltiplicando tutti i suoi coefficienti. Per esempio
+  <math|(1+2X)+(3-X)=4+X>. Il vettore nullo è il polinomio con tutti i
+  coefficienti nulli, e le regole del campo valgono coefficiente per
+  coefficiente. La lettera <math|X> è soltanto un segnaposto, e due polinomi
+  sono uguali quando hanno gli stessi coefficienti.
 
-  I polinomi di grado al più <math|d>, incluso il polinomio nullo, formano
-  <math|K<rsub|d>[X]>. Le operazioni non alzano il grado oltre <math|d>. Il
-  grado può invece abbassarsi: <math|(X<rsup|2>+X)+(-X<rsup|2>+1)=X+1>.
-  Perciò i polinomi di grado <em|esattamente> 2 non formano uno spazio con
-  queste operazioni; manca anche il polinomio nullo.
+  Fissato un numero <math|d>, i polinomi di grado al più <math|d>, insieme al
+  polinomio nullo, formano lo spazio <math|K<rsub|d>[X]>. Le operazioni non
+  possono far salire il grado oltre <math|d>, ma possono farlo scendere. Per
+  esempio <math|(X<rsup|2>+X)+(-X<rsup|2>+1)=X+1>. È per questo che i
+  polinomi di grado <em|esattamente> 2 non formano uno spazio: la somma di
+  due di loro può avere grado più basso, e inoltre fra loro manca il
+  polinomio nullo.
 
   <subsection|Funzioni: lavorare punto per punto>
 
-  Per le <strong|funzioni> <math|f,g:D\<rightarrow\>K>, con dominio fissato
-  <math|D>, le operazioni sono punto per punto:
+  Anche le <strong|funzioni> <math|f,g:D\<rightarrow\>K> definite su uno
+  stesso insieme <math|D> formano uno spazio vettoriale, con le operazioni
+  fatte punto per punto:
 
   <\equation*>
     (f+g)(t)=f(t)+g(t),<space|2em>(\<alpha\>f)(t)=\<alpha\>f(t).
   </equation*>
 
-  Se <math|f(3)=5> e <math|g(3)=7>, la funzione <math|f+g> vale 12 nel punto
-  3. Il vettore nullo è la funzione sempre nulla.
-
-  Verificare un assioma significa verificarlo per ogni <math|t>: per esempio
-  le due funzioni <math|(f+g)+h> e <math|f+(g+h)> hanno valori
-  <math|(f(t)+g(t))+h(t)> e <math|f(t)+(g(t)+h(t))>, uguali nel campo.
+  Se <math|f(3)=5> e <math|g(3)=7>, la funzione <math|f+g> nel punto 3 vale
+  12. Il vettore nullo è la funzione che vale zero ovunque. Per verificare
+  una regola dobbiamo controllarla in ogni punto <math|t>. Le funzioni
+  <math|(f+g)+h> e <math|f+(g+h)>, per esempio, valgono in <math|t>
+  rispettivamente <math|(f(t)+g(t))+h(t)> e <math|f(t)+(g(t)+h(t))>, due
+  numeri uguali nel campo.
 
   <subsection|Matrici: lavorare casella per casella>
 
   Una <strong|matrice> <math|A=(a<rsub|i*j>)> di tipo <math|m\<times\>n> è
-  una tabella con <math|m> righe e <math|n> colonne. Il primo indice indica
-  la riga, il secondo la colonna.
-
-  In <math|M<rsub|m,n>(K)> poniamo <math|(A+B)<rsub|i*j>=a<rsub|i*j>+b<rsub|i*j>>
-  e <math|(\<alpha\>A)<rsub|i*j>=\<alpha\>a<rsub|i*j>>. Zero è la tabella di
-  tutti zeri.
-
-  Gli assiomi si verificano casella per casella; le matrici da sommare devono
-  avere lo stesso tipo. Il prodotto tra matrici sarà un'altra operazione,
-  introdotta più avanti.
+  una tabella di scalari con <math|m> righe e <math|n> colonne, in cui il
+  primo indice indica la riga e il secondo la colonna. Le matrici dello
+  stesso tipo formano lo spazio <math|M<rsub|m,n>(K)>, con le operazioni
+  fatte casella per casella: <math|(A+B)<rsub|i*j>=a<rsub|i*j>+b<rsub|i*j>> e
+  <math|(\<alpha\>A)<rsub|i*j>=\<alpha\>a<rsub|i*j>>. Lo zero è la tabella
+  piena di zeri. Si possono sommare soltanto matrici dello stesso tipo, e il
+  prodotto fra matrici, che incontreremo più avanti, è un'operazione
+  completamente diversa.
 
   <subsection|Lo stesso insieme su campi diversi>
 
-  Infine <math|\<bbb-C\>> è uno spazio su <math|\<bbb-C\>> con il prodotto
-  usuale come prodotto per scalare. Possiamo anche ammettere soltanto scalari
-  reali e considerarlo su <math|\<bbb-R\>>.
-
-  Entrambe le strutture rispettano gli assiomi, ma le combinazioni consentite
-  cambiano: <math|i\<cdot\>1> è lecito nella prima, mentre nella seconda il
-  coefficiente <math|i> non è ammesso. Ritroveremo questa differenza
-  studiando basi e dimensione.
+  L'insieme <math|\<bbb-C\>> è uno spazio vettoriale su <math|\<bbb-C\>>, con
+  il prodotto usuale come prodotto per scalare. Possiamo però decidere di
+  ammettere come scalari soltanto i numeri reali, e allora <math|\<bbb-C\>>
+  diventa uno spazio vettoriale su <math|\<bbb-R\>>. Entrambe le strutture
+  rispettano gli assiomi, ma le combinazioni che possiamo formare sono
+  diverse. Nella prima possiamo scrivere <math|i\<cdot\>1>, nella seconda no,
+  perché <math|i> non è uno scalare ammesso. Questa differenza tornerà quando
+  parleremo di basi e di dimensione.
 
   <section|Sottospazi: quando le operazioni restano dentro>
 
   Dentro <math|\<bbb-R\><rsup|2>> consideriamo la retta
-  <math|L={t(1,2):t\<in\>\<bbb-R\>}>. Sommare due suoi vettori dà
-  <math|s(1,2)+t(1,2)=(s+t)(1,2)>, ancora sulla retta. Anche moltiplicare per
-  <math|\<alpha\>> dà <math|(\<alpha\>s)(1,2)>. La retta conserva le due
-  operazioni.
+  <math|L={t(1,2):t\<in\>\<bbb-R\>}>. Se sommiamo due suoi vettori otteniamo
+  <math|s(1,2)+t(1,2)=(s+t)(1,2)>, che sta ancora sulla retta, e lo stesso
+  accade moltiplicando per uno scalare, perché
+  <math|\<alpha\>(t(1,2))=(\<alpha\>t)(1,2)>. Le due operazioni non ci fanno
+  mai uscire dalla retta, e quindi la retta è a sua volta uno spazio
+  vettoriale.
 
-  Un <strong|sottospazio> <math|W> di <math|V> è un sottoinsieme che è uno
-  spazio vettoriale con le stesse operazioni e lo stesso campo di <math|V>.
-  Gli assiomi di uguaglianza, come associatività e distributività, sono già
-  veri nello spazio ambiente. Dobbiamo garantire che i risultati restino in
-  <math|W> e che vi siano zero e opposti.
+  In generale chiamiamo <strong|sottospazio> di <math|V> un sottoinsieme
+  <math|W> che è uno spazio vettoriale con le stesse operazioni e lo stesso
+  campo di <math|V>. Per riconoscerlo non dobbiamo ricontrollare tutti gli
+  assiomi. Le regole che sono uguaglianze, come l'associatività o la
+  distributività, valgono già in <math|V> e quindi anche in <math|W>.
+  Dobbiamo solo assicurarci che le operazioni non portino fuori da <math|W> e
+  che in <math|W> ci siano lo zero e gli opposti.
 
   <\concetto|Criterio di sottospazio>
     Un sottoinsieme <math|W\<subseteq\>V> è un sottospazio se e solo se
@@ -1353,70 +1468,78 @@
     con ogni scalare di <math|K>.
   </concetto>
 
-  La necessità segue dalla definizione; in particolare, preso
-  <math|w\<in\>W>, anche <math|0<rsub|K>w=0<rsub|V>> deve stare in <math|W>.
-  Viceversa, le tre condizioni garantiscono operazioni interne, il vettore
-  nullo e gli opposti, perché <math|-w=(-1)w\<in\>W>. Gli altri assiomi sono
-  ereditati da <math|V>. Abbiamo così dimostrato la sufficienza.
+  Le tre condizioni sono necessarie, perché un sottospazio deve contenere lo
+  zero e deve essere chiuso per le operazioni. Sono anche sufficienti. Le due
+  chiusure garantiscono che le operazioni restino interne, lo zero è presente
+  per ipotesi e l'opposto di ogni <math|w\<in\>W> è <math|(-1)w>, che sta in
+  <math|W> per la chiusura rispetto agli scalari. Tutte le altre regole sono
+  ereditate da <math|V>.
 
-  Al posto di chiedere <math|0\<in\>W> possiamo chiedere
-  <math|W\<neq\>\<varnothing\>>: con la chiusura per scalari, un qualunque
-  elemento produce zero. La sola chiusura non basta: l'insieme vuoto la
-  soddisfa senza essere uno spazio.
+  Al posto di chiedere <math|0\<in\>W> potremmo chiedere soltanto che
+  <math|W> non sia vuoto. Se contiene un vettore <math|w>, infatti, contiene
+  anche <math|0<rsub|K>w=0<rsub|V>>. Le sole chiusure, senza nessuna delle
+  due richieste, non basterebbero, perché l'insieme vuoto è chiuso per
+  entrambe le operazioni senza essere uno spazio.
 
   <figura|<image|assets/rette.pdf|135.0mm|51.8mm||>|Una retta per l'origine
-  conserva somme e multipli. Una retta che non contiene l'origine non è un
-  sottospazio: manca il vettore nullo.>
+  resta chiusa per somme e multipli. Una retta che non contiene l'origine non
+  è un sottospazio: manca il vettore nullo.>
 
   Il piano <math|{(x,y,0):x,y\<in\>\<bbb-R\>}> è un sottospazio di
-  <math|\<bbb-R\><rsup|3>>. È una copia di <math|\<bbb-R\><rsup|2>>, ma i
-  suoi elementi sono terne: non bisogna confondere la coppia <math|(x,y)> con
-  la terna <math|(x,y,0)>.
+  <math|\<bbb-R\><rsup|3>>. Somiglia moltissimo a <math|\<bbb-R\><rsup|2>>,
+  ma i suoi elementi sono terne, e conviene non confondere la coppia
+  <math|(x,y)> con la terna <math|(x,y,0)>.
 
-  Un esempio più utile è <math|W={(x,y,z)\<in\>\<bbb-R\><rsup|3>:2x-y+3z=0}>.
-  Se <math|u=(x,y,z)> e <math|u'=(x',y',z')> stanno in <math|W>, allora
+  Un esempio più interessante è <math|W={(x,y,z)\<in\>\<bbb-R\><rsup|3>:2x-y+3z=0}>.
+  Se <math|u=(x,y,z)> e <math|u'=(x',y',z')> soddisfano l'equazione, anche la
+  loro somma la soddisfa, perché
 
   <\equation*>
     2(x+x')-(y+y')+3(z+z')=(2x-y+3z)+(2x'-y'+3z')=0.
   </equation*>
 
-  Per un multiplo l'espressione diventa <math|\<alpha\>(2x-y+3z)=0>. Zero
-  soddisfa l'equazione. È dunque un sottospazio. Lo stesso argomento vale per
-  qualunque sistema di equazioni lineari omogenee. Con termine noto 1 lo zero
-  non soddisfa l'equazione, quindi il criterio fallisce.
+  Per un multiplo l'espressione diventa <math|\<alpha\>(2x-y+3z)=\<alpha\>\<cdot\>0=0>,
+  e lo zero soddisfa chiaramente l'equazione. Dunque <math|W> è un
+  sottospazio, e lo stesso argomento funziona per qualsiasi sistema di
+  equazioni lineari omogenee, cioè con termini noti nulli. Se invece
+  l'equazione fosse <math|2x-y+3z=1>, lo zero non la soddisferebbe e il
+  criterio fallirebbe subito.
 
-  Possiamo anche costruire tutti i vettori di <math|W>. Isoliamo
-  <math|y=2x+3z> e lasciamo liberi <math|x=s,z=t>. Otteniamo
+  Oltre a riconoscere i vettori di <math|W>, possiamo anche costruirli tutti.
+  Ricaviamo <math|y=2x+3z> e lasciamo liberi <math|x=s> e <math|z=t>. I
+  vettori di <math|W> sono allora tutti e soli quelli della forma
 
   <\equation*>
     (s,2s+3t,t)=s(1,2,0)+t(0,3,1).
   </equation*>
 
-  Le equazioni indicano quali vettori sono ammessi; i parametri mostrano come
-  ottenerli. Nel prossimo capitolo daremo un nome all'insieme di queste
-  combinazioni.
+  L'equazione ci dice quali vettori sono ammessi, mentre i parametri ci
+  dicono come ottenerli a partire da due vettori fissati. Nel prossimo
+  capitolo daremo un nome a questo modo di costruire un sottospazio.
 
   <section|Intersezione e unione di sottospazi>
 
-  Se <math|U,W> sono sottospazi dello stesso <math|V>, la loro
-  <strong|intersezione> è sempre un sottospazio. Contiene zero. Due vettori
-  nell'intersezione stanno in entrambi i sottospazi; la loro somma e ogni
-  multiplo stanno ancora in entrambi, dunque nell'intersezione. La
-  dimostrazione vale anche per una famiglia arbitraria di sottospazi.
+  Se <math|U> e <math|W> sono sottospazi dello stesso spazio <math|V>, la
+  loro <strong|intersezione> è sempre un sottospazio. Contiene lo zero,
+  perché lo contengono entrambi. Se due vettori stanno nell'intersezione,
+  stanno sia in <math|U> sia in <math|W>, e quindi anche la loro somma e i
+  loro multipli stanno in entrambi. Lo stesso ragionamento funziona per
+  l'intersezione di quanti sottospazi vogliamo.
 
-  Per l'<strong|unione> la situazione cambia. Nell'unione dei due assi di
-  <math|\<bbb-R\><rsup|2>> troviamo <math|(1,0)> e <math|(0,1)>, ma non
-  <math|(1,1)>: la chiusura per somma fallisce.
+  Con l'<strong|unione> le cose vanno diversamente. Nell'unione dei due assi
+  di <math|\<bbb-R\><rsup|2>> troviamo <math|(1,0)> e <math|(0,1)>, ma non la
+  loro somma <math|(1,1)>, che non sta su nessuno dei due assi. La chiusura
+  per somma fallisce, e l'unione non è un sottospazio.
 
-  Precisamente, <math|U\<cup\>W> è un sottospazio se e solo se
-  <math|U\<subseteq\>W> oppure <math|W\<subseteq\>U>. Se uno contiene
-  l'altro, l'unione coincide col più grande.
-
-  Se nessuno contiene l'altro, scegliamo <math|u\<in\>U> fuori da <math|W> e
-  <math|w\<in\>W> fuori da <math|U>. La somma <math|u+w> non può stare
-  nell'unione: se stesse in <math|U>, avremmo <math|w=(u+w)-u\<in\>U>; se
-  stesse in <math|W>, avremmo <math|u=(u+w)-w\<in\>W>. Entrambi i casi
-  contraddicono la scelta. Manca dunque la chiusura per somma.
+  Si può dire esattamente quando l'unione funziona: <math|U\<cup\>W> è un
+  sottospazio se e solo se uno dei due è contenuto nell'altro. In quel caso,
+  infatti, l'unione coincide con il più grande dei due. Se invece nessuno dei
+  due contiene l'altro, scegliamo <math|u\<in\>U> che non sta in <math|W> e
+  <math|w\<in\>W> che non sta in <math|U>, e guardiamo la somma <math|u+w>.
+  Se stesse in <math|U>, anche <math|w=(u+w)-u> starebbe in <math|U>. Se
+  stesse in <math|W>, anche <math|u=(u+w)-w> starebbe in <math|W>. Entrambe
+  le possibilità contraddicono la nostra scelta, quindi <math|u+w> non sta
+  nell'unione e la chiusura per somma fallisce.
 
   <\verifica|4>
     <strong|4.1.> L'insieme dei polinomi <math|p\<in\>\<bbb-R\><rsub|3>[X]>
@@ -1432,40 +1555,44 @@
   <chapter|Span, indipendenza lineare e basi>
 
   <\inbreve>
-    Quali vettori possiamo costruire partendo da quelli che conosciamo? Le
-    combinazioni lineari descriveranno tutte le possibilità. Separando
-    esistenza e unicità della scrittura arriveremo alle basi e alle
-    coordinate.
+    Se abbiamo in mano alcuni vettori, possiamo sommarli e moltiplicarli per
+    numeri a piacere e ottenere tanti vettori nuovi. Qui ci chiediamo quali
+    vettori riusciamo davvero a costruire così, e se ogni vettore costruito
+    si ottiene in un modo solo. Le due domande, esistenza e unicità, portano
+    a due concetti distinti, generatori e indipendenza, che insieme danno le
+    basi e le coordinate.
   </inbreve>
 
   <section|Combinazioni lineari, span e generatori>
 
-  Prendiamo <math|u=(1,2)> e <math|v=(2,4)>. Possiamo moltiplicarli per
-  coefficienti reali e sommare:
+  Prendiamo <math|u=(1,2)> e <math|v=(2,4)> e proviamo a costruire altri
+  vettori moltiplicandoli per numeri reali e sommandoli:
 
   <\equation*>
     \<alpha\>(1,2)+\<beta\>(2,4)=(\<alpha\>+2\<beta\>,2\<alpha\>+4\<beta\>)=(\<alpha\>+2\<beta\>)(1,2).
   </equation*>
 
-  Ogni risultato è dunque un multiplo di <math|(1,2)>. Possiamo ottenere
-  <math|(3,6)>: per esempio scegliendo <math|\<alpha\>=\<beta\>=1>, oppure
-  <math|\<alpha\>=3,\<beta\>=0>. La scrittura non è unica.
+  Qualunque coefficiente scegliamo, otteniamo sempre un multiplo di
+  <math|(1,2)>. Il vettore <math|(3,6)> si può costruire, per esempio con
+  <math|\<alpha\>=\<beta\>=1>, ma anche con <math|\<alpha\>=3> e
+  <math|\<beta\>=0>, quindi la scrittura non è unica. Il vettore
+  <math|(1,0)>, invece, non si può costruire in nessun modo, perché ogni
+  risultato ha la seconda componente doppia della prima e <math|(1,0)> non
+  rispetta questa condizione. In questo esempio abbiamo quindi capito sia che
+  cosa si raggiunge sia che cosa resta fuori.
 
-  Possiamo ottenere anche <math|(1,0)>? No: ogni risultato ha la seconda
-  componente doppia della prima, mentre <math|(1,0)> non rispetta questa
-  condizione. Abbiamo descritto sia ciò che possiamo raggiungere sia ciò che
-  rimane fuori.
+  Con <math|(1,0)> e <math|(0,1)> la situazione è molto diversa. Poiché
+  <math|\<alpha\>(1,0)+\<beta\>(0,1)=(\<alpha\>,\<beta\>)>, ogni vettore del
+  piano si ottiene scegliendo come coefficienti le sue due componenti, e in
+  un modo solo.
 
-  Con <math|(1,0)> e <math|(0,1)> la situazione cambia:
-  <math|\<alpha\>(1,0)+\<beta\>(0,1)=(\<alpha\>,\<beta\>)>. Ogni vettore del
-  piano si ottiene scegliendo le sue due componenti come coefficienti.
-
-  Fissati <math|v<rsub|1>,\<ldots\>,v<rsub|r>\<in\>V>, una
-  <strong|combinazione lineare> è un vettore
-  <math|\<alpha\><rsub|1>v<rsub|1>+\<cdots\>+\<alpha\><rsub|r>v<rsub|r>>, con
-  coefficienti <math|\<alpha\><rsub|j>\<in\>K>. I vettori sono fissati;
-  cambiano i coefficienti. Lo <strong|span>, o sottospazio generato, è
-  l'insieme di tutte le combinazioni:
+  Diamo un nome a queste costruzioni. Fissati dei vettori
+  <math|v<rsub|1>,\<ldots\>,v<rsub|r>\<in\>V>, una <strong|combinazione
+  lineare> è un vettore della forma <math|\<alpha\><rsub|1>v<rsub|1>+\<cdots\>+\<alpha\><rsub|r>v<rsub|r>>
+  con coefficienti <math|\<alpha\><rsub|j>\<in\>K>. I vettori restano
+  fissati, mentre i coefficienti possono variare liberamente. L'insieme di
+  tutte le combinazioni possibili si chiama <strong|span>, o sottospazio
+  generato:
 
   <\equation*>
     <math-up|span>(v<rsub|1>,\<ldots\>,v<rsub|r>)={\<alpha\><rsub|1>v<rsub|1>+\<cdots\>+\<alpha\><rsub|r>v<rsub|r>:\<alpha\><rsub|j>\<in\>K}.
@@ -1477,46 +1604,52 @@
     lo span coincide con tutto <math|V>.
   </concetto>
 
-  La somma di due combinazioni si ottiene sommando i coefficienti dello
-  stesso vettore; un multiplo moltiplica tutti i coefficienti. In
-  particolare,
+  Il nome \Ssottospazio generato\T è giustificato, perché lo span è davvero
+  un sottospazio. La somma di due combinazioni si ottiene sommando i
+  coefficienti dello stesso vettore,
 
   <\equation*>
-    <big|sum><rsub|j=1><rsup|r>\<alpha\><rsub|j>v<rsub|j>+<big|sum><rsub|j=1><rsup|r>\<beta\><rsub|j>v<rsub|j>=<big|sum><rsub|j=1><rsup|r>(\<alpha\><rsub|j>+\<beta\><rsub|j>)v<rsub|j>.
+    <big|sum><rsub|j=1><rsup|r>\<alpha\><rsub|j>v<rsub|j>+<big|sum><rsub|j=1><rsup|r>\<beta\><rsub|j>v<rsub|j>=<big|sum><rsub|j=1><rsup|r>(\<alpha\><rsub|j>+\<beta\><rsub|j>)v<rsub|j>,
   </equation*>
 
-  Scegliendo tutti i coefficienti zero otteniamo zero. Il criterio del
-  capitolo precedente dimostra quindi che lo span è un sottospazio.
+  e un multiplo di una combinazione si ottiene moltiplicando tutti i
+  coefficienti. In entrambi i casi otteniamo ancora una combinazione.
+  Scegliendo tutti i coefficienti nulli otteniamo lo zero, e il criterio del
+  capitolo precedente ci permette di concludere.
 
   <figura|<image|assets/span.pdf|160.0mm|50.0mm||>|I multipli di un vettore
   non nullo formano una retta. Due direzioni non parallele generano un piano.
   Tre vettori che restano in un piano non possono produrre vettori fuori da
   esso.>
 
-  Per un insieme <math|A> anche infinito, <math|<math-up|span>(A)> comprende
-  tutte le combinazioni di un numero <em|finito> di vettori di <math|A>. Non
-  sono ammesse somme infinite. Se sommiamo due combinazioni finite, usiamo al
-  più l'unione dei due insiemi finiti di vettori: la dimostrazione della
-  chiusura resta valida. Poniamo <math|<math-up|span>(\<varnothing\>)={0}>,
-  usando la somma vuota.
+  Possiamo parlare di span anche per un insieme <math|A> infinito, con una
+  precisazione importante. Lo span <math|<math-up|span>(A)> contiene tutte le
+  combinazioni di un numero <em|finito> di vettori di <math|A>, perché somme
+  infinite non hanno senso in uno spazio vettoriale. La dimostrazione della
+  chiusura funziona ancora, dato che sommando due combinazioni finite usiamo
+  al più i vettori di entrambe, che sono ancora in numero finito. Per
+  l'insieme vuoto poniamo <math|<math-up|span>(\<varnothing\>)={0}>, pensando
+  allo zero come a una somma senza addendi.
 
-  Ogni <math|a\<in\>A> sta nello span perché <math|a=1a>. Inoltre un
-  sottospazio che contiene <math|A> contiene ogni sua combinazione finita.
-  Dunque lo span è il <strong|più piccolo sottospazio che contiene <math|A>>.
-  Equivalentemente è l'intersezione di tutti i sottospazi che contengono
-  <math|A>. Fare lo span una seconda volta non aggiunge nulla:
+  Lo span ha una caratterizzazione che useremo spesso. Ogni <math|a\<in\>A>
+  ci sta dentro, perché <math|a=1\<cdot\>a>. D'altra parte, un sottospazio
+  che contiene <math|A> deve contenere anche tutte le sue combinazioni
+  finite, perché è chiuso per somma e per prodotto. Lo span è dunque il
+  <strong|più piccolo sottospazio che contiene <math|A>>, o equivalentemente
+  l'intersezione di tutti i sottospazi che contengono <math|A>. Ne segue
+  anche che fare lo span due volte non aggiunge nulla:
   <math|<math-up|span>(<math-up|span>(A))=<math-up|span>(A)>.
 
-  La condizione <math|<math-up|span>(A)=V> garantisce che ogni vettore sia
-  raggiungibile. Non garantisce che i coefficienti siano unici: <math|(3,6)>
-  ci ha già dato due scritture diverse.
+  Sapere che dei vettori generano <math|V> ci assicura che ogni vettore si
+  può raggiungere. Non ci dice però che i coefficienti siano unici, come
+  abbiamo visto con le due scritture di <math|(3,6)>.
 
   <section|Indipendenza lineare: rendere unica la scrittura>
 
-  Per <math|u=(1,2)> e <math|v=(2,4)> la combinazione <math|2u-v=0> ha
-  coefficienti non tutti nulli. Questa relazione permette di modificare i
-  coefficienti di una rappresentazione senza cambiare il risultato. È
-  l'ostacolo all'unicità.
+  Torniamo a <math|u=(1,2)> e <math|v=(2,4)>. La combinazione <math|2u-v>
+  vale zero, anche se i suoi coefficienti non sono nulli. Una relazione di
+  questo tipo è ciò che rovina l'unicità. Se aggiungiamo <math|2u-v> a una
+  qualsiasi scrittura, il risultato non cambia ma i coefficienti sì.
 
   <\concetto|Indipendenza lineare>
     I vettori <math|v<rsub|1>,\<ldots\>,v<rsub|r>> sono linearmente
@@ -1531,74 +1664,81 @@
     sottofamiglia finita.
   </concetto>
 
-  Perché basta controllare le rappresentazioni di zero? Supponiamo che
-  <math|v=<big|sum>\<alpha\><rsub|j>v<rsub|j>=<big|sum>\<beta\><rsub|j>v<rsub|j>>.
-  Sottraendo otteniamo <math|<big|sum>(\<alpha\><rsub|j>-\<beta\><rsub|j>)v<rsub|j>=0>.
-  Se i vettori sono indipendenti, tutti i coefficienti della differenza sono
-  zero: <math|\<alpha\><rsub|j>=\<beta\><rsub|j>>. Viceversa, se le
-  rappresentazioni sono uniche per i vettori dello span, lo sono per zero,
-  che ha già la rappresentazione con tutti i coefficienti nulli. Le due
-  proprietà sono equivalenti.
+  La definizione guarda soltanto alle scritture dello zero, eppure garantisce
+  l'unicità per tutti i vettori. Supponiamo che un vettore si scriva in due
+  modi, <math|v=<big|sum>\<alpha\><rsub|j>v<rsub|j>=<big|sum>\<beta\><rsub|j>v<rsub|j>>.
+  Sottraendo le due scritture otteniamo <math|<big|sum>(\<alpha\><rsub|j>-\<beta\><rsub|j>)v<rsub|j>=0>,
+  cioè una scrittura dello zero. Se i vettori sono indipendenti, tutti i
+  coefficienti <math|\<alpha\><rsub|j>-\<beta\><rsub|j>> sono nulli, e le due
+  scritture coincidono. Viceversa, se ogni vettore dello span si scrive in un
+  modo solo, questo vale anche per lo zero, che ha già la scrittura con tutti
+  i coefficienti nulli. Le due proprietà sono quindi equivalenti.
 
-  L'indipendenza assicura <em|al più> una scrittura; l'esistenza dipende
-  dalla generazione.
+  Conviene tenere distinte le due questioni. L'indipendenza garantisce che
+  esista <em|al più> una scrittura, mentre l'esistenza di almeno una
+  scrittura dipende dalla generazione.
 
-  Un solo vettore è indipendente esattamente quando è non nullo. Infatti, se
-  <math|\<alpha\>v=0> con <math|\<alpha\>\<neq\>0>, moltiplicare per
-  <math|\<alpha\><rsup|-1>> darebbe <math|v=0>. Il vettore nullo invece ha la
-  relazione non banale <math|1\<cdot\>0=0>.
+  Vediamo che cosa dice l'indipendenza nei casi più piccoli. Un solo vettore
+  è indipendente esattamente quando non è nullo. Se <math|\<alpha\>v=0> con
+  <math|\<alpha\>\<neq\>0>, infatti, moltiplicando per
+  <math|\<alpha\><rsup|-1>> troviamo <math|v=0>, mentre il vettore nullo ha
+  la relazione non banale <math|1\<cdot\>0=0>. Due vettori, invece, sono
+  dipendenti esattamente quando uno dei due è multiplo dell'altro. In una
+  relazione <math|\<alpha\>u+\<beta\>v=0> con un coefficiente non nullo basta
+  isolare il vettore che ha quel coefficiente.
 
-  Due vettori sono dipendenti esattamente quando almeno uno è multiplo
-  dell'altro: basta isolare un vettore il cui coefficiente è non nullo in una
-  relazione <math|\<alpha\>u+\<beta\>v=0>.
-
-  La stessa idea vale per più vettori. Da una relazione
-  <math|<big|sum>\<alpha\><rsub|j>v<rsub|j>=0> con
-  <math|\<alpha\><rsub|i>\<neq\>0> si ricava
+  La stessa idea funziona con più vettori. Se in una relazione
+  <math|<big|sum>\<alpha\><rsub|j>v<rsub|j>=0> il coefficiente
+  <math|\<alpha\><rsub|i>> non è nullo, possiamo ricavare
 
   <\equation*>
-    v<rsub|i>=-<big|sum><rsub|j\<neq\>i><frac|\<alpha\><rsub|j>|\<alpha\><rsub|i>>v<rsub|j>.
+    v<rsub|i>=-<big|sum><rsub|j\<neq\>i><frac|\<alpha\><rsub|j>|\<alpha\><rsub|i>>v<rsub|j>,
   </equation*>
 
-  Quel vettore si può ottenere dagli altri: eliminarlo non cambia lo span.
-
-  Viceversa, portando a sinistra una sua espressione mediante gli altri, il
-  coefficiente di <math|v<rsub|i>> è 1, e abbiamo una relazione non banale.
-  <strong|Dipendenza significa dunque presenza di un vettore superfluo.> Un
-  sottoinsieme di indipendenti rimane indipendente; aggiungere vettori a
-  dipendenti conserva la relazione già presente e quindi la dipendenza.
+  e quindi <math|v<rsub|i>> si costruisce con gli altri. Toglierlo non cambia
+  lo span. Al contrario, se un vettore si può scrivere come combinazione
+  degli altri, portando tutto da una parte otteniamo una relazione in cui il
+  suo coefficiente vale 1, quindi non banale. <strong|Essere dipendenti
+  significa dunque avere almeno un vettore superfluo.> Da qui seguono due
+  osservazioni semplici. Se togliamo vettori da una famiglia indipendente
+  resta indipendente, e se aggiungiamo vettori a una famiglia dipendente la
+  relazione che c'era resta valida.
 
   <\guidato|Leggere prima una coordinata utile>
-    Consideriamo <math|v<rsub|1>=(-1,1,0)> e <math|v<rsub|2>=(-2,1,1)>. Nella
-    terza posizione soltanto il secondo vettore contribuisce. È utile
-    cominciare lì:
+    Consideriamo <math|v<rsub|1>=(-1,1,0)> e <math|v<rsub|2>=(-2,1,1)> e
+    chiediamoci se sono indipendenti. Nella terza posizione soltanto il
+    secondo vettore ha un'entrata non nulla, quindi conviene cominciare da
+    lì:
 
     <\equation*>
       \<alpha\>v<rsub|1>+\<beta\>v<rsub|2>=(-\<alpha\>-2\<beta\>,\<alpha\>+\<beta\>,\<beta\>)=(0,0,0).
     </equation*>
 
-    La terza componente impone <math|\<beta\>=0>; poi la seconda impone
-    <math|\<alpha\>=0>. Abbiamo esaurito tutte le possibilità: i due vettori
-    sono indipendenti. Non occorre che ogni vettore abbia una sola entrata
-    non nulla.
+    La terza componente obbliga <math|\<beta\>=0>, e a quel punto la seconda
+    obbliga <math|\<alpha\>=0>. L'unica relazione possibile è quella banale,
+    quindi i due vettori sono indipendenti. Notiamo che non è servito che
+    ogni vettore avesse una sola entrata non nulla, ma solo trovare una
+    posizione da cui cominciare.
   </guidato>
 
   <section|Basi e coordinate rispetto a una base>
 
-  Nel piano prendiamo <math|b<rsub|1>=(1,1)> e <math|b<rsub|2>=(1,-1)>. Per
-  ottenere <math|(3,1)> cerchiamo <math|\<alpha\>b<rsub|1>+\<beta\>b<rsub|2>=(3,1)>.
-  Le componenti danno <math|\<alpha\>+\<beta\>=3> e
-  <math|\<alpha\>-\<beta\>=1>. Sommando le uguaglianze otteniamo
-  <math|2\<alpha\>=4>, quindi <math|\<alpha\>=2> e <math|\<beta\>=1>.
+  Nel piano prendiamo <math|b<rsub|1>=(1,1)> e <math|b<rsub|2>=(1,-1)> e
+  chiediamoci come ottenere <math|(3,1)>. Cerchiamo <math|\<alpha\>> e
+  <math|\<beta\>> con <math|\<alpha\>b<rsub|1>+\<beta\>b<rsub|2>=(3,1)>, cioè
+  <math|\<alpha\>+\<beta\>=3> e <math|\<alpha\>-\<beta\>=1>. Sommando le due
+  equazioni otteniamo <math|2\<alpha\>=4>, quindi <math|\<alpha\>=2> e
+  <math|\<beta\>=1>.
 
-  Per un vettore qualunque <math|(p,q)> troviamo allo stesso modo
+  Lo stesso conto funziona per qualsiasi vettore <math|(p,q)> e dà
 
   <\equation*>
     \<alpha\>=<frac|p+q|2>,<space|2em>\<beta\>=<frac|p-q|2>.
   </equation*>
 
-  Le formule forniscono una e una sola coppia per ogni vettore: abbiamo sia
-  generazione sia indipendenza.
+  Queste formule producono una coppia di coefficienti per ogni vettore, e una
+  sola. I due vettori quindi generano il piano e sono indipendenti, cioè
+  hanno entrambe le proprietà che cercavamo.
 
   <\concetto|Base e coordinate>
     Una base di <math|V> è una famiglia che genera <math|V> ed è linearmente
@@ -1610,69 +1750,78 @@
     colonna.
   </concetto>
 
-  Non è necessario che le direzioni di una base siano perpendicolari. Per
-  esempio anche <math|((1,0),(1,1))> è una base: ogni <math|(p,q)> si scrive
-  in modo unico come <math|(p-q)(1,0)+q(1,1)>. In questo riferimento obliquo
-  <math|(3,1)=2(1,0)+(1,1)>.
+  I vettori di una base non devono essere perpendicolari. Anche
+  <math|((1,0),(1,1))> è una base del piano, perché ogni <math|(p,q)> si
+  scrive in un modo solo come <math|(p-q)(1,0)+q(1,1)>. In questo riferimento
+  obliquo, per esempio, <math|(3,1)=2(1,0)+(1,1)>.
 
-  L'ordine è necessario: scambiare i due vettori di base scambia le due
-  coordinate. Per la base appena studiata, <math|[(3,1)]<rsub|B>=(2,1)>.
-  Nella base canonica <math|E=((1,0),(0,1))> lo stesso vettore ha coordinate
-  <math|(3,1)>.
+  L'ordine dei vettori invece conta, perché scambiandoli si scambiano anche
+  le coordinate. Nella base <math|B=(b<rsub|1>,b<rsub|2>)> di prima abbiamo
+  <math|[(3,1)]<rsub|B>=(2,1)>, mentre nella base canonica
+  <math|E=((1,0),(0,1))> lo stesso vettore ha coordinate <math|(3,1)>. Il
+  vettore è sempre lo stesso, e cambiano soltanto i numeri che usiamo per
+  descriverlo.
 
   <figura|<image|assets/coordinate-basi.pdf|110.0mm|42.5mm||>|Il vettore
   geometrico è lo stesso. Cambiando le direzioni di riferimento cambiano i
   coefficienti necessari per ricostruirlo.>
 
-  In <math|K<rsup|n>> la base canonica è <math|e<rsub|1>,\<ldots\>,e<rsub|n>>,
-  dove <math|e<rsub|j>> ha 1 nella posizione <math|j> e zero nelle altre.
-  Ogni <math|x> si scrive <math|<big|sum>x<rsub|j>e<rsub|j>>. In una
-  combinazione nulla la componente <math|j> è proprio il coefficiente di
-  <math|e<rsub|j>>, che deve quindi essere zero. Questo dimostra entrambe le
-  proprietà della base.
+  In <math|K<rsup|n>> la base più naturale è la <strong|base canonica>
+  <math|e<rsub|1>,\<ldots\>,e<rsub|n>>, dove <math|e<rsub|j>> ha 1 nella
+  posizione <math|j> e zero altrove. Ogni <math|x> si scrive come
+  <math|<big|sum>x<rsub|j>e<rsub|j>>, quindi questi vettori generano. Sono
+  anche indipendenti, perché in una combinazione dei vettori canonici la
+  componente di posto <math|j> è il coefficiente di <math|e<rsub|j>>, e se la
+  combinazione è nulla tutti i coefficienti devono essere zero.
 
-  Per i polinomi, <math|1,X,X<rsup|2>,\<ldots\>> è una base di <math|K[X]>:
-  genera per la forma di ogni polinomio; è indipendente perché una
-  combinazione finita è il polinomio nullo solo se tutti i coefficienti sono
-  zero. Per <math|K<rsub|d>[X]> bastano <math|1,X,\<ldots\>,X<rsup|d>>. Lo
-  span dei soli monomi di esponente pari contiene esattamente i polinomi con
-  sole potenze pari; non raggiunge, per esempio, <math|X>.
+  Per i polinomi i monomi <math|1,X,X<rsup|2>,\<ldots\>> formano una base di
+  <math|K[X]>. Generano, perché ogni polinomio è per definizione una loro
+  combinazione finita, e sono indipendenti, perché una combinazione finita di
+  monomi è il polinomio nullo solo quando tutti i coefficienti sono zero. Per
+  <math|K<rsub|d>[X]> bastano <math|1,X,\<ldots\>,X<rsup|d>>. Se invece
+  prendiamo soltanto i monomi di esponente pari, il loro span contiene
+  esattamente i polinomi con sole potenze pari, e non raggiunge per esempio
+  <math|X>.
 
-  Nessun insieme finito di polinomi genera <math|K[X]>: se non sono tutti
-  nulli, i loro gradi hanno un massimo <math|d>, e nessuna combinazione può
-  dare <math|X<rsup|d+1>>. Se sono tutti nulli, generano soltanto zero.
+  Nessun insieme finito di polinomi genera tutto <math|K[X]>. Se i polinomi
+  non sono tutti nulli, i loro gradi hanno un massimo <math|d>, e nessuna
+  combinazione può avere grado più alto, quindi <math|X<rsup|d+1>> resta
+  fuori. Se sono tutti nulli, generano soltanto lo zero.
 
   <subsection|Per proseguire: coordinate in una base infinita>
 
-  Nella base infinita dei monomi, <math|2-X<rsup|3>> ha coordinate 2 davanti
-  a 1, <math|-1> davanti a <math|X<rsup|3>> e zero altrove. Il
-  <strong|supporto>, ossia l'insieme delle posizioni con coordinata non
-  nulla, è finito.
-
-  In generale le coordinate in una base infinita <math|B> sono funzioni
-  <math|B\<rightarrow\>K> a supporto finito: non tutte le funzioni
-  <math|B\<rightarrow\>K> possono essere coordinate.
+  Nella base infinita dei monomi il polinomio <math|2-X<rsup|3>> ha
+  coordinata 2 davanti a 1, coordinata <math|-1> davanti a <math|X<rsup|3>> e
+  zero davanti a tutti gli altri monomi. Le posizioni con coordinata non
+  nulla formano il <strong|supporto>, che è finito. In generale, le
+  coordinate rispetto a una base infinita <math|B> sono funzioni
+  <math|B\<rightarrow\>K> a supporto finito, e non ogni funzione
+  <math|B\<rightarrow\>K> può fare da sistema di coordinate.
 
   <section|Il campo cambia le combinazioni ammesse>
 
   In <math|\<bbb-C\><rsup|2>> consideriamo <math|v=(1,i)> e <math|w=(i,-1)>.
-  Su <math|\<bbb-C\>> sono dipendenti, perché <math|w=i*v>. Con coefficienti
-  reali, invece, dalla prima coordinata di <math|\<alpha\>v+\<beta\>w=0>
-  otteniamo <math|\<alpha\>+i\<beta\>=0>. Parte reale e parte immaginaria
-  impongono <math|\<alpha\>=\<beta\>=0>: su <math|\<bbb-R\>> sono
-  indipendenti.
+  Su <math|\<bbb-C\>> sono dipendenti, perché <math|w=i*v>. Ma se ammettiamo
+  soltanto coefficienti reali la risposta cambia. Dalla prima coordinata di
+  <math|\<alpha\>v+\<beta\>w=0> otteniamo <math|\<alpha\>+i\<beta\>=0>, e
+  poiché <math|\<alpha\>> e <math|\<beta\>> sono reali, confrontando parte
+  reale e parte immaginaria troviamo <math|\<alpha\>=\<beta\>=0>. Su
+  <math|\<bbb-R\>> i due vettori sono indipendenti.
 
-  Passando da scalari reali a complessi aumentano le relazioni consentite.
-  Una relazione reale rimane complessa; dunque una famiglia indipendente sui
-  complessi è anche indipendente sui reali. Il contrario può fallire, come
-  nell'esempio. Non può accadere che gli stessi vettori siano dipendenti sui
-  reali e indipendenti sui complessi.
+  Il motivo è che con scalari complessi abbiamo più combinazioni a
+  disposizione, e quindi più possibilità di trovare una relazione. Ogni
+  relazione a coefficienti reali è anche una relazione complessa, quindi una
+  famiglia indipendente su <math|\<bbb-C\>> è indipendente anche su
+  <math|\<bbb-R\>>. Il contrario può fallire, come abbiamo appena visto, ma
+  non può mai succedere che gli stessi vettori siano dipendenti su
+  <math|\<bbb-R\>> e indipendenti su <math|\<bbb-C\>>.
 
-  Anche dividere per 2 dipende dal campo. La base <math|(1,1),(1,-1)> usata
-  sopra funziona su <math|\<bbb-R\>> e su <math|\<bbb-C\>>. In
-  <math|<math-up|F><rsub|2>> vale <math|-1=1>: i due vettori coincidono e non
-  sono indipendenti. In un campo scriviamo <math|2=1<rsub|K>+1<rsub|K>>;
-  possiamo dividere per 2 soltanto se questo elemento è non nullo.
+  Anche la possibilità di dividere per 2 dipende dal campo. La base
+  <math|(1,1),(1,-1)> che abbiamo usato funziona su <math|\<bbb-R\>> e su
+  <math|\<bbb-C\>>, ma in <math|<math-up|F><rsub|2>> vale <math|-1=1>, i due
+  vettori coincidono e non sono più indipendenti. In un campo qualsiasi
+  scriviamo <math|2=1<rsub|K>+1<rsub|K>>, e possiamo dividere per 2 soltanto
+  quando questo elemento non è nullo.
 
   <\verifica|5>
     <strong|5.1.> In <math|\<bbb-R\><rsup|2>>, che cosa generano <math|(1,2)>
@@ -1687,147 +1836,161 @@
   <chapter|Dimensione e lemma di scambio>
 
   <\inbreve>
-    Perché tutte le basi del piano hanno due vettori? Sappiamo riconoscere
-    una base, ma dobbiamo ancora confrontare basi diverse. Impareremo a
-    togliere, aggiungere e scambiare vettori per dare un significato preciso
-    alla dimensione.
+    Tutte le basi del piano che abbiamo incontrato avevano due vettori, e
+    viene il sospetto che non sia una coincidenza. Per trasformare il
+    sospetto in un teorema impareremo a modificare una famiglia di vettori
+    togliendone, aggiungendone e soprattutto scambiandone uno alla volta,
+    senza mai perdere ciò che la famiglia sa fare. Il risultato è la
+    dimensione, un numero che appartiene allo spazio e non alla base scelta
+    per descriverlo.
   </inbreve>
 
   <section|Estrarre una base e completare una famiglia indipendente>
 
-  Nel piano, la famiglia <math|(e<rsub|1>,e<rsub|2>,e<rsub|1>+e<rsub|2>)>
-  genera tutto, ma contiene un vettore di troppo. Togliamo
-  <math|e<rsub|1>+e<rsub|2>>: i due vettori rimasti lo ricostruiscono. Rimane
-  la base canonica. Questo è un esempio di <strong|estrazione di una base> da
-  generatori.
+  Nel piano la famiglia <math|(e<rsub|1>,e<rsub|2>,e<rsub|1>+e<rsub|2>)>
+  genera tutto, ma ha un vettore di troppo. Se togliamo
+  <math|e<rsub|1>+e<rsub|2>> non perdiamo nulla, perché gli altri due lo
+  ricostruiscono, e quello che resta è la base canonica. Questo è un esempio
+  di <strong|estrazione di una base> da una famiglia di generatori.
 
-  Possiamo anche partire da troppo poco. Il solo <math|e<rsub|1>> è
-  indipendente, ma genera soltanto l'asse orizzontale. Aggiungendo
-  <math|e<rsub|2>>, che non sta su quell'asse, otteniamo una base. È un
-  <strong|completamento>.
+  Si può anche partire dal problema opposto, cioè da troppo poco. Il solo
+  vettore <math|e<rsub|1>> è indipendente, ma genera soltanto l'asse
+  orizzontale. Se aggiungiamo <math|e<rsub|2>>, che non sta su quell'asse,
+  otteniamo una base. In questo caso parliamo di <strong|completamento>.
 
-  Perché aggiungere un vettore fuori dallo span conserva l'indipendenza? Se
-  <math|b<rsub|1>,\<ldots\>,b<rsub|r>> sono indipendenti e <math|v> è fuori
-  dal loro span, consideriamo
+  Il completamento funziona perché aggiungere un vettore che sta fuori dallo
+  span non rovina l'indipendenza. Supponiamo che
+  <math|b<rsub|1>,\<ldots\>,b<rsub|r>> siano indipendenti e che <math|v> non
+  stia nel loro span, e prendiamo una relazione
 
   <\equation*>
     \<alpha\><rsub|1>b<rsub|1>+\<cdots\>+\<alpha\><rsub|r>b<rsub|r>+\<beta\>v=0.
   </equation*>
 
-  Un coefficiente <math|\<beta\>\<neq\>0> permetterebbe di isolare <math|v> e
-  scriverlo nello span, contro la scelta. Dunque <math|\<beta\>=0>;
-  l'indipendenza iniziale annulla anche gli altri coefficienti.
+  Se fosse <math|\<beta\>\<neq\>0>, potremmo isolare <math|v> e scriverlo
+  come combinazione dei <math|b<rsub|j>>, mentre l'abbiamo scelto fuori dal
+  loro span. Quindi <math|\<beta\>=0>, e a quel punto l'indipendenza dei
+  <math|b<rsub|j>> annulla anche tutti gli altri coefficienti.
 
-  Torniamo ora a una famiglia finita che genera <math|V>. Se è dipendente, il
-  capitolo precedente permette di eliminare un vettore senza cambiare lo
-  span. Ripetiamo finché la famiglia è indipendente. A ogni passo il numero
-  di vettori diminuisce: il procedimento termina e lascia una base. Per
-  <math|V={0}> la base è la famiglia vuota. Dunque <strong|ogni famiglia
-  finita di generatori contiene una base>.
+  L'estrazione si giustifica in modo altrettanto semplice. Se una famiglia
+  finita genera <math|V> ma è dipendente, il capitolo precedente ci dice che
+  uno dei suoi vettori è superfluo e si può togliere senza cambiare lo span.
+  Ripetiamo l'operazione finché la famiglia diventa indipendente. Poiché a
+  ogni passo i vettori diminuiscono, prima o poi ci fermiamo, e quello che
+  resta è una base. Per lo spazio <math|{0}> la base è la famiglia vuota.
+  Abbiamo così dimostrato che <strong|ogni famiglia finita di generatori
+  contiene una base>.
 
   <section|Lemma di scambio: sostituire senza perdere informazioni>
 
-  Nella base canonica del piano, <math|w=(2,1)> si scrive
-  <math|w=2e<rsub|1>+e<rsub|2>>. Possiamo sostituire <math|e<rsub|1>> con
-  <math|w>? Sì: l'identità <math|e<rsub|1>=(w-e<rsub|2>)/2> ci permette di
-  recuperare il vettore tolto. Non abbiamo perso la possibilità di generare
-  il piano.
-
-  La nuova coppia <math|(w,e<rsub|2>)> è anche indipendente: da
+  Ora vogliamo confrontare due basi diverse, e lo strumento giusto è lo
+  scambio. Nella base canonica del piano il vettore <math|w=(2,1)> si scrive
+  <math|w=2e<rsub|1>+e<rsub|2>>. Proviamo a mettere <math|w> al posto di
+  <math|e<rsub|1>>. Non perdiamo nulla, perché dall'uguaglianza precedente
+  ricaviamo <math|e<rsub|1>=(w-e<rsub|2>)/2>, e quindi il vettore tolto si
+  può ancora ricostruire. La nuova coppia <math|(w,e<rsub|2>)> genera dunque
+  il piano. È anche indipendente, perché da
   <math|\<alpha\>w+\<beta\>e<rsub|2>=(2\<alpha\>,\<alpha\>+\<beta\>)=0> segue
-  prima <math|\<alpha\>=0>, poi <math|\<beta\>=0>.
+  prima <math|\<alpha\>=0> e poi <math|\<beta\>=0>.
 
   Facciamo entrare un secondo vettore, <math|z=(1,1)>. La coppia <math|(w,z)>
-  è indipendente: le equazioni <math|2\<alpha\>+\<beta\>=0> e
+  è indipendente, perché le equazioni <math|2\<alpha\>+\<beta\>=0> e
   <math|\<alpha\>+\<beta\>=0> danno <math|\<alpha\>=\<beta\>=0>. Vogliamo
-  inserire <math|z> senza togliere <math|w>, già inserito.
-
-  Scriviamo <math|z> nella base attuale:
+  inserire <math|z> senza togliere <math|w>, che è già entrato. Scriviamo
+  allora <math|z> nella base attuale <math|(w,e<rsub|2>)>:
 
   <\equation*>
     z=<frac|1|2>w+<frac|1|2>e<rsub|2>.
   </equation*>
 
-  Il coefficiente di <math|e<rsub|2>> è non nullo. Possiamo perciò
-  recuperarlo come <math|e<rsub|2>=2z-w> e sostituirlo con <math|z>. Abbiamo
-  eseguito due scambi:
+  Il coefficiente di <math|e<rsub|2>> non è nullo, e questo ci permette di
+  ricavare <math|e<rsub|2>=2z-w> e di mettere <math|z> al suo posto. In tutto
+  abbiamo fatto due scambi:
 
   <\equation*>
     (e<rsub|1>,e<rsub|2>)<space|1em>\<rightarrow\><space|1em>(w,e<rsub|2>)<space|1em>\<rightarrow\><space|1em>(w,z).
   </equation*>
 
-  Nel secondo passo abbiamo tolto il vecchio vettore rimasto, conservando il
-  nuovo già inserito. È questa la scelta che dovremo giustificare quando gli
-  scambi saranno molti.
+  Nel secondo passo abbiamo tolto il vecchio vettore rimasto e abbiamo
+  lasciato al suo posto quello nuovo già inserito. Quando gli scambi saranno
+  molti, dovremo giustificare proprio questa scelta.
 
   <subsection|Il singolo scambio in generale>
 
-  Questo recupero spiega la condizione generale. Siano
-  <math|u<rsub|1>,\<ldots\>,u<rsub|r>> indipendenti e
+  Che cosa ha reso possibile ogni scambio? Il fatto che il vettore da
+  togliere comparisse con un coefficiente non nullo. In generale, siano
+  <math|u<rsub|1>,\<ldots\>,u<rsub|r>> indipendenti e sia
 
   <\equation*>
     w=a<rsub|1>u<rsub|1>+\<cdots\>+a<rsub|r>u<rsub|r>,<space|2em>a<rsub|1>\<neq\>0.
   </equation*>
 
-  Allora <math|w,u<rsub|2>,\<ldots\>,u<rsub|r>> sono indipendenti e hanno lo
-  stesso span dei vecchi vettori. Per lo span, basta isolare
+  Allora i vettori <math|w,u<rsub|2>,\<ldots\>,u<rsub|r>> sono ancora
+  indipendenti e generano lo stesso spazio dei vecchi. Per lo span basta
+  ricavare il vettore tolto,
 
   <\equation*>
     u<rsub|1>=<frac|1|a<rsub|1>>(w-a<rsub|2>u<rsub|2>-\<cdots\>-a<rsub|r>u<rsub|r>).
   </equation*>
 
-  Ogni nuovo vettore era combinazione dei vecchi e ogni vecchio vettore è
-  combinazione dei nuovi: i due span coincidono.
+  Ogni vettore nuovo è combinazione dei vecchi, e ora sappiamo che ogni
+  vettore vecchio è combinazione dei nuovi, quindi i due span coincidono.
 
-  Per l'indipendenza, partiamo da una relazione nulla fra i nuovi vettori:
+  Per l'indipendenza partiamo da una relazione nulla fra i vettori nuovi,
 
   <\equation*>
-    \<beta\>w+<big|sum><rsub|j=2><rsup|r>\<beta\><rsub|j>u<rsub|j>=0.
+    \<beta\>w+<big|sum><rsub|j=2><rsup|r>\<beta\><rsub|j>u<rsub|j>=0,
   </equation*>
 
-  Sostituiamo l'espressione di <math|w>. Il coefficiente di <math|u<rsub|1>>
-  diventa <math|\<beta\>a<rsub|1>>; quello di <math|u<rsub|j>> per
-  <math|j\<geq\>2> è <math|\<beta\>a<rsub|j>+\<beta\><rsub|j>>.
-
-  L'indipendenza dei vecchi vettori impone <math|\<beta\>a<rsub|1>=0>. Poiché
-  <math|a<rsub|1>\<neq\>0>, segue <math|\<beta\>=0>, e poi
-  <math|\<beta\><rsub|j>=0> per ogni <math|j>. La nuova famiglia è
-  indipendente. Se il coefficiente non nullo era in un'altra posizione, si
+  e sostituiamo al posto di <math|w> la sua espressione. Otteniamo una
+  relazione fra i vecchi vettori in cui <math|u<rsub|1>> ha coefficiente
+  <math|\<beta\>a<rsub|1>> e ogni <math|u<rsub|j>> con <math|j\<geq\>2> ha
+  coefficiente <math|\<beta\>a<rsub|j>+\<beta\><rsub|j>>. Poiché i vecchi
+  vettori sono indipendenti, tutti questi coefficienti sono nulli. In
+  particolare <math|\<beta\>a<rsub|1>=0>, e siccome <math|a<rsub|1>\<neq\>0>
+  abbiamo <math|\<beta\>=0>. Ne segue <math|\<beta\><rsub|j>=0> per ogni
+  <math|j>, quindi la nuova famiglia è indipendente. Se il coefficiente non
+  nullo si trova in un'altra posizione, il ragionamento è identico e si
   scambia quel vettore.
 
   <subsection|Più scambi: il lemma di Steinitz>
 
-  Ora partiamo da una base <math|u<rsub|1>,\<ldots\>,u<rsub|n>> e da vettori
-  indipendenti <math|w<rsub|1>,\<ldots\>,w<rsub|m>> di <math|V>. Vogliamo far
-  entrare tutti i <math|w> nella base. Scriviamo <math|w<rsub|1>> nella base:
-  è non nullo, quindi qualche coefficiente è non nullo e permette il primo
-  scambio.
+  Ora possiamo fare entrare molti vettori. Partiamo da una base
+  <math|u<rsub|1>,\<ldots\>,u<rsub|n>> di <math|V> e da vettori indipendenti
+  <math|w<rsub|1>,\<ldots\>,w<rsub|m>>, che vogliamo far entrare tutti nella
+  base. Il primo passo è facile. Scriviamo <math|w<rsub|1>> nella base, e
+  poiché <math|w<rsub|1>> non è nullo qualche coefficiente è diverso da zero,
+  il che permette il primo scambio.
 
-  Al passo <math|k> abbiamo una base con <math|w<rsub|1>,\<ldots\>,w<rsub|k-1>>
-  e alcuni <math|u> originari. Scriviamo <math|w<rsub|k>> in questa base.
-  <strong|Almeno un coefficiente su un <math|u> rimasto è non nullo.>
-
-  Se non lo fosse, <math|w<rsub|k>> sarebbe combinazione soltanto dei
-  <math|w> precedenti, contraddicendo l'indipendenza. Possiamo quindi
-  scambiare un <math|u>, senza togliere nessun <math|w> già inserito.
+  Supponiamo di essere arrivati al passo <math|k>, con una base che contiene
+  già <math|w<rsub|1>,\<ldots\>,w<rsub|k-1>> e alcuni dei vettori <math|u>
+  originali. Scriviamo <math|w<rsub|k>> in questa base. Il punto delicato è
+  che <strong|almeno un coefficiente su un <math|u> rimasto deve essere non
+  nullo.> Se così non fosse, <math|w<rsub|k>> sarebbe combinazione soltanto
+  dei <math|w> precedenti, e questo contraddirebbe l'indipendenza dei
+  <math|w>. Possiamo quindi scambiare uno dei <math|u>, senza mai togliere un
+  <math|w> già inserito.
 
   <figura|<image|assets/scambio.pdf|140.0mm|50.0mm||>|Ogni scambio fa entrare
   un vettore indipendente <math|w> e sostituisce un vecchio vettore <math|u>.
   La famiglia continua a essere una base.>
 
-  Non possiamo avere <math|m\<gtr\>n>. Dopo <math|n> scambi la base
-  conterrebbe soltanto i primi <math|n> vettori <math|w>; il successivo
-  sarebbe loro combinazione, contro l'indipendenza. Abbiamo provato il
-  <strong|lemma di scambio di Steinitz>: <math|m\<leq\>n>, e l'insieme
-  indipendente si completa a una base con alcuni vettori della base iniziale.
+  Questo procedimento ci dice anche che i <math|w> non possono essere più
+  degli <math|u>. Se fosse <math|m\<gtr\>n>, dopo <math|n> scambi la base
+  sarebbe fatta soltanto dai primi <math|n> vettori <math|w>, e il vettore
+  <math|w<rsub|n+1>> sarebbe loro combinazione, ancora contro l'indipendenza.
+  Abbiamo così dimostrato il <strong|lemma di scambio di Steinitz>. Esso dice
+  che <math|m\<leq\>n> e che l'insieme indipendente si completa a una base
+  aggiungendo opportuni vettori della base iniziale.
 
   <section|Dimensione: un numero che non dipende dalla base>
 
-  Se due basi finite hanno <math|n> e <math|m> vettori, lo scambio applicato
-  nei due sensi dà <math|m\<leq\>n> e <math|n\<leq\>m>. Quindi <math|m=n>.
-  Inoltre, in uno spazio con una base di <math|n> vettori non esiste una base
-  infinita: scegliendone <math|n+1> elementi avremmo una famiglia
-  indipendente troppo lunga.
+  Ora il sospetto iniziale diventa un teorema. Se uno spazio ha due basi
+  finite, con <math|n> e <math|m> vettori, possiamo applicare lo scambio in
+  un senso e nell'altro, ottenendo <math|m\<leq\>n> e <math|n\<leq\>m>.
+  Quindi <math|m=n>. In uno spazio con una base di <math|n> vettori non può
+  esistere nemmeno una base infinita, perché <math|n+1> dei suoi vettori
+  formerebbero una famiglia indipendente troppo lunga.
 
   <\concetto|Dimensione>
     La dimensione <math|dim<rsub|K>V> di uno spazio finitamente generato è il
@@ -1836,219 +1999,224 @@
     zero.
   </concetto>
 
-  Abbiamo <math|dim<rsub|K>K<rsup|n>=n> e <math|dim<rsub|K>K<rsub|d>[X]=d+1>.
-  Per le matrici, <math|E<rsub|i*j>> indica quella con 1 nella casella
-  <math|(i,j)> e zero nelle altre. Ogni matrice si scrive
-  <math|A=<big|sum><rsub|i,j>a<rsub|i*j>E<rsub|i*j>>. In una combinazione
-  nulla la casella <math|(i,j)> dà il coefficiente di <math|E<rsub|i*j>>, che
-  deve essere zero.
-
-  Queste <math|m*n> matrici sono quindi una base e
+  Gli spazi che conosciamo hanno dimensioni facili da leggere. La base
+  canonica mostra che <math|dim<rsub|K>K<rsup|n>=n>, e i monomi
+  <math|1,X,\<ldots\>,X<rsup|d>> mostrano che
+  <math|dim<rsub|K>K<rsub|d>[X]=d+1>. Per le matrici chiamiamo
+  <math|E<rsub|i*j>> quella che ha 1 nella casella <math|(i,j)> e zero
+  altrove. Ogni matrice si scrive come <math|A=<big|sum><rsub|i,j>a<rsub|i*j>E<rsub|i*j>>,
+  e in una combinazione nulla la casella <math|(i,j)> mostra il coefficiente
+  di <math|E<rsub|i*j>>, che deve quindi essere zero. Le <math|m*n> matrici
+  <math|E<rsub|i*j>> formano dunque una base, e
   <math|dim<rsub|K>M<rsub|m,n>(K)=m*n>.
 
   <subsection|La dimensione dipende dal campo>
 
-  Per <math|\<bbb-C\>> su <math|\<bbb-C\>> basta la base <math|(1)>: la
-  dimensione è 1. Su <math|\<bbb-R\>> ogni <math|a+i*b> ha coefficienti reali
-  unici rispetto a <math|(1,i)>: la dimensione è 2.
-
-  Più in generale <math|\<bbb-C\><rsup|n>> ha dimensione <math|n> sui
-  complessi e <math|2n> sui reali: una base reale è data da
+  Come spazio su sé stesso, <math|\<bbb-C\>> ha la base <math|(1)>, perché
+  ogni numero complesso è un multiplo complesso di 1, e quindi ha dimensione
+  1. Se però ammettiamo soltanto scalari reali, ogni <math|a+i*b> si scrive
+  in un unico modo come combinazione reale di 1 e <math|i>, e la dimensione
+  diventa 2. Allo stesso modo <math|\<bbb-C\><rsup|n>> ha dimensione <math|n>
+  su <math|\<bbb-C\>> e <math|2n> su <math|\<bbb-R\>>, con la base reale
   <math|e<rsub|1>,i*e<rsub|1>,\<ldots\>,e<rsub|n>,i*e<rsub|n>>. Ogni entrata
-  complessa richiede due coordinate reali.
+  complessa richiede infatti due numeri reali per essere descritta.
 
-  <subsection|Le coordinate conservano le operazioni>
+  <subsection|Le coordinate rispettano le operazioni>
 
-  La mappa delle coordinate <math|\<Phi\><rsub|B>:V\<rightarrow\>K<rsup|n>>,
-  <math|v\<mapsto\>[v]<rsub|B>>, è una biiezione: l'esistenza e l'unicità
-  dello sviluppo lo dimostrano.
+  Scelta una base <math|B> di uno spazio di dimensione <math|n>, possiamo
+  associare a ogni vettore le sue coordinate, ottenendo una funzione
+  <math|\<Phi\><rsub|B>:V\<rightarrow\>K<rsup|n>>,
+  <math|v\<mapsto\>[v]<rsub|B>>. Questa funzione è biiettiva, perché ogni
+  vettore ha una scrittura nella base, che è anche unica.
 
-  Rispetta anche le operazioni. Se <math|v=<big|sum>x<rsub|j>b<rsub|j>> e
+  Ma c'è di più. Se <math|v=<big|sum>x<rsub|j>b<rsub|j>> e
   <math|w=<big|sum>y<rsub|j>b<rsub|j>>, i coefficienti di <math|v+w> sono
-  <math|x<rsub|j>+y<rsub|j>>, e quelli di <math|\<alpha\>v> sono
+  <math|x<rsub|j>+y<rsub|j>> e quelli di <math|\<alpha\>v> sono
   <math|\<alpha\>x<rsub|j>>. Quindi
 
   <\equation*>
     [v+w]<rsub|B>=[v]<rsub|B>+[w]<rsub|B>,<space|2em>[\<alpha\>v]<rsub|B>=\<alpha\>[v]<rsub|B>.
   </equation*>
 
-  Un'applicazione che rispetta queste due operazioni si chiama
-  <strong|lineare>; se è anche biiettiva, è un <strong|isomorfismo>.
-
-  Dunque, scelta una base, <math|V\<cong\>K<rsup|n>>: le coordinate
-  conservano tutta la struttura di spazio vettoriale, non soltanto i suoi
-  elementi.
+  Un'applicazione che rispetta in questo modo la somma e il prodotto per
+  scalare si chiama <strong|lineare>, e se è anche biiettiva si chiama
+  <strong|isomorfismo>. Le coordinate ci danno quindi un isomorfismo
+  <math|V\<cong\>K<rsup|n>>. Scelta una base, ogni spazio di dimensione
+  <math|n> si comporta esattamente come <math|K<rsup|n>>, non solo nei suoi
+  elementi ma anche nelle operazioni.
 
   <section|Completamento, sottospazi e criteri per una base>
 
-  Sia <math|dim V=n>. Dal lemma di scambio un insieme indipendente ha al più
-  <math|n> elementi e si completa a una base. Un insieme finito di generatori
-  contiene una base e ha quindi almeno <math|n> elementi.
+  Mettiamo insieme ciò che abbiamo ottenuto, in uno spazio <math|V> di
+  dimensione <math|n>. Per il lemma di scambio, un insieme indipendente ha al
+  più <math|n> elementi e si può completare a una base. Un insieme finito di
+  generatori, invece, contiene una base, e quindi ha almeno <math|n>
+  elementi.
 
-  Se i generatori sono infiniti, ne possiamo comunque estrarre un numero
-  finito che genera: scriviamo ciascun vettore di una base finita mediante
-  essi e raccogliamo tutti i vettori usati.
+  Anche da un insieme infinito di generatori possiamo estrarne un numero
+  finito che genera ancora. Prendiamo una base finita di <math|V> e scriviamo
+  ciascuno dei suoi <math|n> vettori come combinazione dei generatori. Ogni
+  scrittura usa un numero finito di generatori, e le scritture sono <math|n>,
+  quindi in tutto ne usiamo un numero finito. Questi generano ancora
+  <math|V>, e da loro possiamo estrarre una base.
 
-  Ogni scrittura è finita, e le scritture sono <math|n>; la loro unione è
-  finita. Da lì estraiamo una base.
+  Da qui seguono due criteri molto comodi. Se in <math|V> abbiamo <math|n>
+  vettori indipendenti, essi formano già una base, perché nel completamento
+  non resta nessun posto da riempire. Se abbiamo <math|n> generatori, anche
+  questi formano una base, perché la base che ne estraiamo ha già <math|n>
+  vettori e quindi non abbiamo tolto nulla. Il numero giusto da solo, però,
+  non basta. Due vettori paralleli del piano sono due, ma non generano il
+  piano e non sono indipendenti.
 
-  Perciò <strong|<math|n> vettori indipendenti in <math|V> formano una base>;
-  nel completamento non rimane alcun posto da riempire. Anche
-  <strong|<math|n> generatori formano una base>, perché la base estratta ha
-  già <math|n> vettori.
+  Che dire dei sottospazi? Se <math|W\<subseteq\>V> è un sottospazio, non
+  sappiamo ancora che abbia una base finita, e dobbiamo dimostrarlo prima di
+  parlare della sua dimensione. Partiamo dalla famiglia vuota e aggiungiamo,
+  finché possiamo, un vettore di <math|W> che stia fuori dallo span di quelli
+  già scelti. Ogni aggiunta mantiene l'indipendenza, come abbiamo visto
+  all'inizio del capitolo. Poiché in <math|V> non esistono più di <math|n>
+  vettori indipendenti, dopo al più <math|n> aggiunte siamo costretti a
+  fermarci. A quel punto nessun vettore di <math|W> sta fuori dallo span
+  della famiglia, e quindi abbiamo trovato una base finita di <math|W>.
 
-  Il numero corretto, da solo, non basta: due vettori paralleli nel piano
-  continuano a fallire entrambe le proprietà.
+  Questa base è un insieme indipendente anche dentro <math|V>, e quindi
+  <math|dim W\<leq\>dim V>. Se le due dimensioni sono uguali, la base di
+  <math|W> è fatta di <math|n> vettori indipendenti di <math|V>, quindi è una
+  base di <math|V>, e <math|W=V>. D'altra parte, per ogni <math|k> fra 0 e
+  <math|n> lo span di <math|k> vettori di una base di <math|V> ha dimensione
+  <math|k>, quindi tutte queste dimensioni si presentano davvero.
 
-  E per un sottospazio <math|W\<subseteq\>V>, che non sappiamo ancora essere
-  finitamente generato? Partiamo dalla famiglia vuota e aggiungiamo un
-  vettore di <math|W> fuori dallo span dei precedenti, finché è possibile.
-  Ogni aggiunta mantiene l'indipendenza, come abbiamo dimostrato all'inizio
-  del capitolo.
-
-  Non possiamo fare più di <math|n> aggiunte. Quando ci fermiamo, non c'è più
-  alcun vettore di <math|W> fuori dallo span: abbiamo una base finita di
-  <math|W>. Così giustifichiamo anche la sua esistenza, prima di usarne la
-  dimensione.
-
-  La base di <math|W> è indipendente in <math|V>; quindi <math|dim
-  W\<leq\>dim V>. Se le dimensioni coincidono, quella base è anche base di
-  <math|V> e <math|W=V>. Viceversa, per ogni <math|0\<leq\>k\<leq\>n>, lo
-  span di <math|k> elementi di una base di <math|V> ha dimensione <math|k>.
-
-  Ora possiamo classificare i sottospazi geometrici. In
-  <math|\<bbb-R\><rsup|2>> le dimensioni sono 0, 1, 2: rispettivamente il
-  solo zero, una retta per l'origine e tutto il piano. In
+  Ora possiamo classificare i sottospazi che conosciamo dalla geometria. In
+  <math|\<bbb-R\><rsup|2>> le dimensioni possibili sono 0, 1 e 2, e
+  corrispondono al solo zero, alle rette per l'origine e al piano intero. In
   <math|\<bbb-R\><rsup|3>> si aggiungono i piani per l'origine, di dimensione
-  2, mentre la dimensione 3 dà tutto lo spazio. Non ci sono altre
-  possibilità.
+  2, e la dimensione 3 dà tutto lo spazio. Non esistono altre possibilità.
 
   <subsection|Una sola equazione: prima un esempio>
 
-  In <math|\<bbb-R\><rsup|3>>, l'equazione <math|2x-y+3z=0> lascia liberi
-  <math|y,z>. Isoliamo <math|x=y/2-3z/2>:
+  In <math|\<bbb-R\><rsup|3>> l'equazione <math|2x-y+3z=0> lascia liberi
+  <math|y> e <math|z> e determina <math|x=y/2-3z/2>. Ogni soluzione si scrive
+  allora come
 
   <\equation*>
     (x,y,z)=y(1/2,1,0)+z(-3/2,0,1).
   </equation*>
 
-  I due vettori generano tutte le soluzioni. Sono indipendenti: la seconda
-  componente di una loro combinazione nulla annulla il primo coefficiente, la
-  terza annulla il secondo. Quindi lo spazio delle soluzioni ha dimensione 2.
-  Non stiamo soltanto contando parametri: abbiamo verificato una base.
+  I due vettori che compaiono generano tutte le soluzioni. Sono anche
+  indipendenti, perché in una loro combinazione nulla la seconda componente
+  mostra il primo coefficiente e la terza componente mostra il secondo. Lo
+  spazio delle soluzioni ha quindi dimensione 2. Notiamo che non ci siamo
+  limitati a contare i parametri liberi, ma abbiamo verificato di avere una
+  base.
 
-  Una singola equazione <math|a<rsub|1>x<rsub|1>+\<cdots\>+a<rsub|n>x<rsub|n>=0>
-  con <math|a<rsub|1>\<neq\>0> ha come base i <math|n-1> vettori
+  Lo stesso ragionamento funziona per una singola equazione
+  <math|a<rsub|1>x<rsub|1>+\<cdots\>+a<rsub|n>x<rsub|n>=0> con
+  <math|a<rsub|1>\<neq\>0>. L'equazione determina <math|x<rsub|1>> e lascia
+  libere le altre variabili, e i vettori
 
   <\equation*>
-    f<rsub|j>=e<rsub|j>-<frac|a<rsub|j>|a<rsub|1>>e<rsub|1>,<space|2em>j=2,\<ldots\>,n.
+    f<rsub|j>=e<rsub|j>-<frac|a<rsub|j>|a<rsub|1>>e<rsub|1>,<space|2em>j=2,\<ldots\>,n,
   </equation*>
 
-  Se il primo coefficiente è zero ma un altro è non nullo, rinominiamo le
-  coordinate portando quello in prima posizione.
-
-  Infatti l'equazione determina <math|x<rsub|1>> e lascia libere
-  <math|x<rsub|2>,\<ldots\>,x<rsub|n>>, così ogni soluzione è
-  <math|<big|sum><rsub|j=2><rsup|n>x<rsub|j>f<rsub|j>>. Nella componente
-  <math|j\<geq\>2> una combinazione dei <math|f> mostra soltanto il proprio
-  coefficiente: se è nulla, tutti i coefficienti sono zero. La dimensione è
-  <math|n-1>.
-
-  Se tutti gli <math|a<rsub|j>> sono nulli, invece, l'equazione è <math|0=0>
-  e non pone vincoli: la dimensione rimane <math|n>.
+  formano una base delle soluzioni. Ogni soluzione si scrive infatti come
+  <math|<big|sum><rsub|j=2><rsup|n>x<rsub|j>f<rsub|j>>, e in una combinazione
+  dei <math|f<rsub|j>> la componente di posto <math|j\<geq\>2> mostra
+  soltanto il coefficiente di <math|f<rsub|j>>, che quindi deve essere zero
+  se la combinazione è nulla. La dimensione è <math|n-1>. Se il primo
+  coefficiente è zero ma un altro non lo è, basta rinominare le coordinate
+  per portare quello al primo posto. Se invece tutti i coefficienti sono
+  nulli, l'equazione si riduce a <math|0=0>, non impone alcun vincolo e lo
+  spazio delle soluzioni ha dimensione <math|n>.
 
   <section|Basi di sottospazi di polinomi>
 
-  Torniamo a <math|\<bbb-R\><rsub|3>[X]>, che ha dimensione 4. Una condizione
-  come <math|p(0)=0> è facile da leggere sui coefficienti: se
-  <math|p=a<rsub|0>+a<rsub|1>X+a<rsub|2>X<rsup|2>+a<rsub|3>X<rsup|3>>, impone
-  <math|a<rsub|0>=0>. Quindi <math|W<rsub|0>={p:p(0)=0}> ha base
-  <math|(X,X<rsup|2>,X<rsup|3>)> e dimensione 3.
+  Le stesse idee funzionano anche lontano da <math|K<rsup|n>>. Torniamo a
+  <math|\<bbb-R\><rsub|3>[X]>, che ha dimensione 4, e imponiamo qualche
+  condizione. La condizione <math|p(0)=0> è facile da leggere sui
+  coefficienti, perché se <math|p=a<rsub|0>+a<rsub|1>X+a<rsub|2>X<rsup|2>+a<rsub|3>X<rsup|3>>
+  allora <math|p(0)=a<rsub|0>>. Lo spazio <math|W<rsub|0>={p:p(0)=0}> ha
+  quindi la base <math|(X,X<rsup|2>,X<rsup|3>)> e dimensione 3.
 
-  Per <math|W<rsub|1>={p:p(1)=0}> il teorema del fattore dà <math|p=(X-1)q>,
-  con <math|q\<in\>\<bbb-R\><rsub|2>[X]>. Una base è
-  <math|(X-1,X(X-1),X<rsup|2>(X-1))>. Genera perché sviluppiamo <math|q> in
-  <math|1,X,X<rsup|2>>.
+  La condizione <math|p(1)=0> non si legge altrettanto direttamente, ma il
+  teorema del fattore ci viene in aiuto. Essa equivale a scrivere
+  <math|p=(X-1)q> con <math|q\<in\>\<bbb-R\><rsub|2>[X]>. Sviluppando
+  <math|q> nei monomi <math|1,X,X<rsup|2>>, vediamo che i polinomi
+  <math|X-1>, <math|X(X-1)> e <math|X<rsup|2>(X-1)> generano
+  <math|W<rsub|1>={p:p(1)=0}>.
 
-  È indipendente perché i tre polinomi hanno gradi distinti: in una relazione
-  nulla il termine di grado massimo può provenire da un solo polinomio, il
-  cui coefficiente deve essere zero. Eliminato quello, si ripete sui
-  restanti.
+  Sono anche indipendenti, e il motivo è che hanno gradi diversi. In una loro
+  relazione nulla il termine di grado più alto può venire da un solo
+  polinomio, quindi il suo coefficiente deve essere zero. Tolto quel
+  polinomio, ripetiamo lo stesso ragionamento sui rimanenti. Questo argomento
+  funziona per qualsiasi famiglia finita di polinomi non nulli con gradi
+  tutti diversi, e lo useremo ancora.
 
-  Questo argomento vale per qualunque famiglia finita di polinomi non nulli
-  con gradi distinti.
-
-  Per l'intersezione <math|W<rsub|0,1>> chiediamo entrambe le condizioni.
-  Scriviamo <math|p=X*q> grazie a <math|p(0)=0>; valutando in 1 ricaviamo
-  <math|q(1)=0>. Allora <math|q=(X-1)r> e
+  Se chiediamo entrambe le condizioni otteniamo l'intersezione
+  <math|W<rsub|0,1>>. Poiché <math|p(0)=0>, possiamo scrivere <math|p=X*q>, e
+  valutando in 1 troviamo <math|q(1)=0>. Allora <math|q=(X-1)r> con <math|r>
+  di grado al più 1, e quindi
 
   <\equation*>
     p=X(X-1)(a+b*X).
   </equation*>
 
-  Il quoziente ha grado al più 1. Una base è <math|(X(X-1),X<rsup|2>(X-1))> e
-  la dimensione è 2, con generazione data dalla formula e indipendenza dai
-  gradi 2 e 3.
+  La formula mostra che <math|X(X-1)> e <math|X<rsup|2>(X-1)> generano, e i
+  loro gradi 2 e 3 mostrano che sono indipendenti. La dimensione è 2.
 
   <figura|<image|assets/polinomi01.pdf|82.5mm|30.5mm||>|I due polinomi della
   base di <math|W<rsub|0,1>> si annullano in 0 e in 1. Nel disegno la curva
   continua è <math|X(X-1)>, quella tratteggiata è <math|X<rsup|2>(X-1)>.>
 
-  Infine chiediamo soltanto <math|p(0)=p(1)>. I polinomi costanti sono
-  ammessi. Per riusare l'intersezione precedente, sottraiamo la costante
-  <math|p(0)>: il polinomio <math|q=p-p(0)> si annulla in entrambi i punti.
-  Otteniamo quindi
+  Infine chiediamo soltanto che <math|p(0)=p(1)>. Questa volta i polinomi
+  costanti sono ammessi, e per sfruttare il caso precedente togliamo la
+  costante <math|p(0)>. Il polinomio <math|p-p(0)> si annulla sia in 0 sia in
+  1, quindi sta in <math|W<rsub|0,1>>, e otteniamo
 
   <\equation*>
     p=p(0)\<cdot\>1+a*X(X-1)+b*X<rsup|2>(X-1).
   </equation*>
 
-  Questa formula dà la generazione; i gradi distinti 0, 2, 3 danno
+  La formula dà la generazione, e i gradi diversi 0, 2 e 3 danno
   l'indipendenza. La base è <math|(1,X(X-1),X<rsup|2>(X-1))> e la dimensione
-  è 3. Le condizioni considerate definiscono sottospazi perché la valutazione
-  rispetta somme e multipli, come nell'esercizio 4.1.
+  è 3. Tutte le condizioni che abbiamo considerato definiscono davvero
+  sottospazi, perché la valutazione in un punto rispetta somme e multipli,
+  come nell'esercizio 4.1.
 
   <subsection|Per proseguire: basi massimali e generatori minimali>
 
-  Due altri modi di riconoscere una base sono utili per capire che cosa
-  abbiamo raggiunto. Un insieme indipendente è <strong|massimale per
-  inclusione> quando non possiamo aggiungere altri vettori mantenendo
-  l'indipendenza.
+  Ci sono altri due modi di riconoscere una base, che aiutano a capire che
+  cosa abbiamo ottenuto. Un insieme indipendente si dice <strong|massimale
+  per inclusione> quando non possiamo aggiungergli nessun vettore senza
+  perdere l'indipendenza. Un sistema di generatori si dice <strong|minimale
+  per inclusione> quando non possiamo togliergli nessun vettore senza perdere
+  la generazione. Entrambe le definizioni parlano di aggiungere o togliere,
+  non di contare.
 
-  Un sistema di generatori è <strong|minimale per inclusione> quando non
-  possiamo togliere vettori mantenendo la generazione. Non sono definizioni
-  basate sul numero di elementi.
+  Una base è un insieme indipendente massimale. Se le aggiungiamo un vettore
+  <math|v>, possiamo scrivere <math|v> come combinazione dei vettori della
+  base, e questa scrittura dà una relazione non banale. Viceversa, un insieme
+  indipendente massimale genera tutto lo spazio. Se un vettore <math|v>
+  stesse fuori dal suo span, potremmo aggiungerlo mantenendo l'indipendenza,
+  come abbiamo visto all'inizio del capitolo, e questo contraddirebbe la
+  massimalità.
 
-  Una base è indipendente massimale: se aggiungiamo <math|v> fuori dalla
-  base, il fatto che essa generi scrive <math|v> mediante i suoi vettori e
-  produce una relazione non banale.
-
-  Viceversa, un insieme indipendente massimale genera. Infatti, se <math|v>
-  fosse fuori dal suo span, una relazione
-  <math|\<beta\>v+<big|sum>\<alpha\><rsub|j>b<rsub|j>=0> non potrebbe avere
-  <math|\<beta\>\<neq\>0>, altrimenti esprimerebbe <math|v> nello span. Con
-  <math|\<beta\>=0> anche gli altri coefficienti sarebbero zero per
-  l'indipendenza. Potremmo quindi aggiungere <math|v>, contro la massimalità.
-
-  Una base è anche generatore minimale: togliere un vettore renderebbe
-  impossibile ricostruire proprio quel vettore, per l'indipendenza.
-
-  Viceversa, un sistema minimale di generatori non può essere dipendente: una
-  relazione non banale offrirebbe un vettore eliminabile, contro la
-  minimalità.
-
-  Le tre caratterizzazioni coincidono. Le prove funzionano anche per famiglie
-  infinite, perché ogni relazione usa soltanto un numero finito di vettori;
-  qui useremo soprattutto il caso finito.
+  Una base è anche un sistema minimale di generatori, perché se togliamo un
+  suo vettore non possiamo più ricostruirlo con gli altri, per
+  l'indipendenza. Viceversa, un sistema minimale di generatori non può essere
+  dipendente, perché una relazione non banale indicherebbe un vettore
+  superfluo, che si potrebbe togliere. Le tre descrizioni coincidono quindi.
+  Le dimostrazioni funzionano anche per famiglie infinite, perché ogni
+  relazione coinvolge soltanto un numero finito di vettori, anche se qui ci
+  interesserà soprattutto il caso finito.
 
   <subsection|Per proseguire: basi infinite>
 
   La base dei monomi mostra che <math|K[X]> non è finitamente generato. Anche
-  per basi infinite si può parlare di dimensione come cardinalità, ed è vero
-  che due basi dello stesso spazio sono equipotenti. Il confronto generale
-  richiede argomenti ulteriori: il lemma finito dimostrato qui non ne
-  costituisce una prova. Nel resto del volume i teoremi di dimensione si
-  applicano a spazi finiti.
+  per gli spazi con basi infinite si può parlare di dimensione, intesa come
+  cardinalità di una base, ed è vero che due basi dello stesso spazio hanno
+  sempre la stessa cardinalità. Il confronto richiede però argomenti diversi
+  da quelli di questo capitolo, perché il lemma di scambio funziona con un
+  numero finito di passi. Nel resto del volume useremo i teoremi sulla
+  dimensione soltanto per spazi di dimensione finita.
 
   <\verifica|6>
     <strong|6.1.> Trova una base e la dimensione di
@@ -2064,43 +2232,51 @@
   <chapter|Somme, somma diretta e formula di Grassmann>
 
   <\inbreve>
-    Come possiamo unire due sottospazi? Partiamo dalle somme dei loro vettori
-    e chiediamoci quando la decomposizione è unica. La formula di Grassmann
-    ci insegnerà a contare le dimensioni senza contare due volte la parte
-    comune.
+    Abbiamo visto che l'unione di due sottospazi di solito non è un
+    sottospazio, perché le somme dei loro vettori ne escono. Qui prendiamo
+    sul serio quelle somme e costruiamo il sottospazio che esse formano. Ci
+    chiederemo quando ogni vettore si scompone in un solo modo, e scopriremo
+    una formula che conta le dimensioni come si contano gli elementi di due
+    insiemi, togliendo una volta la parte in comune.
   </inbreve>
 
   <section|Somma di sottospazi e somma diretta>
 
   Con l'asse orizzontale e quello verticale del piano possiamo ottenere
-  <math|(3,2)> sommando <math|(3,0)> e <math|(0,2)>. Quel vettore non
-  appartiene all'unione dei due assi. Se vogliamo un sottospazio che li
-  contenga entrambi, dobbiamo includere anche queste somme.
+  <math|(3,2)>, sommando <math|(3,0)> e <math|(0,2)>. Eppure <math|(3,2)> non
+  sta in nessuno dei due assi, e quindi non sta nella loro unione. Se
+  vogliamo un sottospazio che contenga entrambi gli assi, dobbiamo metterci
+  dentro anche tutte queste somme.
 
-  Per sottospazi <math|U,W\<subseteq\>V> definiamo
+  Per due sottospazi <math|U,W\<subseteq\>V> definiamo allora la
+  <strong|somma dei sottospazi>
 
   <\equation*>
     U+W={u+w:u\<in\>U,w\<in\>W}.
   </equation*>
 
-  Questa è la <strong|somma dei sottospazi>. Contiene zero, scritto
-  <math|0+0>. Se <math|x=u<rsub|1>+w<rsub|1>> e <math|y=u<rsub|2>+w<rsub|2>>,
-  allora <math|x+y=(u<rsub|1>+u<rsub|2>)+(w<rsub|1>+w<rsub|2>)> è ancora
-  nella somma. Anche <math|\<alpha\>x=\<alpha\>u<rsub|1>+\<alpha\>w<rsub|1>>
-  vi appartiene. È quindi un sottospazio.
+  Si tratta davvero di un sottospazio. Contiene lo zero, che si scrive come
+  <math|0+0>. Se <math|x=u<rsub|1>+w<rsub|1>> e <math|y=u<rsub|2>+w<rsub|2>>
+  stanno nella somma, anche <math|x+y=(u<rsub|1>+u<rsub|2>)+(w<rsub|1>+w<rsub|2>)>
+  ci sta, perché i due addendi raggruppati appartengono ancora a <math|U> e a
+  <math|W>. Lo stesso accade per <math|\<alpha\>x=\<alpha\>u<rsub|1>+\<alpha\>w<rsub|1>>.
 
-  Contiene <math|U> perché <math|u=u+0>, e contiene <math|W> perché
-  <math|w=0+w>. Qualunque sottospazio che contiene entrambi contiene ogni
-  <math|u+w>. Dunque <math|U+W> è il più piccolo sottospazio che li contiene:
-  <math|U+W=<math-up|span>(U\<cup\>W)>. Unire generatori di <math|U> e
-  <math|W> fornisce generatori della somma; può però introdurre dipendenze.
+  La somma contiene <math|U>, perché ogni <math|u> si scrive come <math|u+0>,
+  e contiene <math|W> per la stessa ragione. D'altra parte, ogni sottospazio
+  che contiene sia <math|U> sia <math|W> deve contenere anche tutte le somme
+  <math|u+w>. Quindi <math|U+W> è il più piccolo sottospazio che contiene
+  entrambi, cioè <math|U+W=<math-up|span>(U\<cup\>W)>. In pratica, se
+  mettiamo insieme dei generatori di <math|U> e dei generatori di <math|W>
+  otteniamo dei generatori della somma, anche se fra loro possono comparire
+  delle dipendenze.
 
-  Per esempio, i due assi nel piano hanno solo zero in comune. Ogni
-  <math|(x,y)> si scrive <math|(x,0)+(0,y)>, in un solo modo.
-
-  Se invece <math|U=W> è l'asse orizzontale, il vettore <math|(1,0)> si
-  scrive sia <math|(1,0)+(0,0)> sia <math|(2,0)+(-1,0)>. Una direzione comune
-  permette di spostare un contributo da un addendo all'altro.
+  Ora guardiamo all'unicità della scomposizione. I due assi del piano hanno
+  in comune soltanto lo zero, e ogni <math|(x,y)> si scrive come
+  <math|(x,0)+(0,y)> in un modo solo. Se invece prendiamo due volte l'asse
+  orizzontale, cioè <math|U=W>, il vettore <math|(1,0)> si scrive sia come
+  <math|(1,0)+(0,0)> sia come <math|(2,0)+(-1,0)>. Una direzione in comune
+  permette di spostare una parte del contributo da un addendo all'altro, e
+  così la scomposizione smette di essere unica.
 
   <\concetto|Somma diretta>
     La somma <math|U+W> si chiama diretta, e si indica <math|U\<#2295\>W>,
@@ -2109,25 +2285,27 @@
     <math|w\<in\>W>.
   </concetto>
 
-  Dimostriamo l'equivalenza. Se <math|u+w=u'+w'>, separiamo i contributi dei
-  due sottospazi:
+  Vediamo perché le due condizioni sono equivalenti. Supponiamo che un
+  vettore abbia due scomposizioni, <math|u+w=u'+w'>, e separiamo i contributi
+  dei due sottospazi:
 
   <\equation*>
     u-u'=w'-w.
   </equation*>
 
-  Il vettore a sinistra appartiene a <math|U>, quello a destra a <math|W>.
-  Essendo uguali, sono un vettore dell'intersezione. Se l'intersezione è
-  zero, entrambi sono zero: <math|u=u'> e <math|w=w'>.
+  Il vettore a sinistra sta in <math|U> e quello a destra sta in <math|W>.
+  Poiché sono uguali, si tratta di un vettore dell'intersezione. Se
+  l'intersezione contiene soltanto lo zero, entrambi i membri sono nulli, e
+  quindi <math|u=u'> e <math|w=w'>. Viceversa, se nell'intersezione ci fosse
+  un vettore <math|t\<neq\>0>, avremmo le due scomposizioni diverse
+  <math|t=t+0=0+t>, e l'unicità fallirebbe.
 
-  Viceversa, un vettore non nullo <math|t\<in\>U\<cap\>W> darebbe le due
-  decomposizioni diverse <math|t=t+0=0+t>. L'unicità impedisce che esista.
-
-  Più precisamente, da una decomposizione <math|z=u+w> e da un qualsiasi
-  <math|t\<in\>U\<cap\>W> otteniamo <math|z=(u+t)+(w-t)>. Tutte le
-  decomposizioni si ottengono così, perché la differenza di due primi addendi
-  è nell'intersezione. Su un campo infinito un'intersezione non nulla produce
-  quindi infinite decomposizioni.
+  Il ragionamento dice anche qualcosa di più preciso. Data una scomposizione
+  <math|z=u+w> e un qualsiasi <math|t\<in\>U\<cap\>W>, anche
+  <math|z=(u+t)+(w-t)> è una scomposizione, e tutte le scomposizioni si
+  ottengono in questo modo, perché la differenza fra due primi addendi sta
+  sempre nell'intersezione. Su un campo infinito, quindi, un'intersezione non
+  nulla produce infinite scomposizioni.
 
   <figura|<image|assets/somma-diretta.pdf|155.0mm|55.0mm||>|Un piano e una
   retta non contenuta nel piano in <math|\<bbb-R\><rsup|3>> sono in somma
@@ -2136,73 +2314,77 @@
 
   <section|Basi della somma diretta e supplementari>
 
-  Supponiamo in questa sezione che i sottospazi abbiano dimensione finita. Se
-  <math|U\<cap\>W={0}>, uniamo una base <math|u<rsub|1>,\<ldots\>,u<rsub|r>>
-  di <math|U> e una base <math|w<rsub|1>,\<ldots\>,w<rsub|s>> di <math|W>. La
-  famiglia genera la somma: sviluppiamo separatamente i due addendi di
-  <math|z=u+w> e poi sommiamo.
+  In questa sezione supponiamo che i sottospazi abbiano dimensione finita, e
+  cerchiamo una base della somma diretta. Se <math|U\<cap\>W={0}>, l'idea più
+  naturale funziona: prendiamo una base <math|u<rsub|1>,\<ldots\>,u<rsub|r>>
+  di <math|U> e una base <math|w<rsub|1>,\<ldots\>,w<rsub|s>> di <math|W> e
+  le mettiamo insieme. La famiglia ottenuta genera la somma, perché in
+  <math|z=u+w> possiamo sviluppare separatamente i due addendi nelle
+  rispettive basi.
 
-  Per l'indipendenza, da <math|<big|sum>\<alpha\><rsub|i>u<rsub|i>+<big|sum>\<beta\><rsub|j>w<rsub|j>=0>
-  ricaviamo <math|<big|sum>\<alpha\><rsub|i>u<rsub|i>=-<big|sum>\<beta\><rsub|j>w<rsub|j>>.
-  Il vettore comune appartiene a <math|U\<cap\>W={0}>. Le due somme sono
-  quindi nulle, e l'indipendenza di ciascuna base impone tutti i coefficienti
-  zero. È una base di <math|U\<#2295\>W>, perciò
+  Per l'indipendenza partiamo da una relazione
+  <math|<big|sum>\<alpha\><rsub|i>u<rsub|i>+<big|sum>\<beta\><rsub|j>w<rsub|j>=0>
+  e la riscriviamo come <math|<big|sum>\<alpha\><rsub|i>u<rsub|i>=-<big|sum>\<beta\><rsub|j>w<rsub|j>>.
+  Il vettore a sinistra sta in <math|U>, quello a destra in <math|W>, e
+  quindi entrambi stanno nell'intersezione, che è zero. Le due somme sono
+  dunque nulle separatamente, e l'indipendenza di ciascuna base annulla tutti
+  i coefficienti. Abbiamo trovato una base di <math|U\<#2295\>W>, e contando
+  i suoi vettori otteniamo
 
   <\equation*>
     dim(U\<#2295\>W)=dim U+dim W.
   </equation*>
 
-  Leggiamo lo stesso fatto al contrario. Se dividiamo una famiglia
-  indipendente in due gruppi e chiamiamo <math|U,W> i loro span, ogni
-  combinazione si separa nei due gruppi, quindi lo span totale è <math|U+W>.
-
-  Se un vettore fosse in entrambi gli span, avremmo due espressioni, una per
-  gruppo. Sottraendole otterremmo una relazione nella famiglia indipendente:
-  tutti i coefficienti sarebbero zero. Dunque l'intersezione è <math|{0}> e
-  la somma è diretta.
+  Lo stesso fatto si può leggere al contrario. Se dividiamo una famiglia
+  indipendente in due gruppi e chiamiamo <math|U> e <math|W> i loro span,
+  ogni combinazione della famiglia si separa nelle due parti, quindi lo span
+  totale è <math|U+W>. Inoltre un vettore che stesse in entrambi gli span
+  avrebbe due espressioni, una per gruppo, e sottraendole otterremmo una
+  relazione nella famiglia indipendente. Tutti i coefficienti sarebbero zero,
+  quindi l'intersezione è <math|{0}> e la somma è diretta.
 
   Un sottospazio <math|W> si dice <strong|supplementare> di <math|U> in
-  <math|V> quando <math|V=U\<#2295\>W>. In dimensione finita ne costruiamo
-  uno completando una base di <math|U> a una base di <math|V>: i vettori
-  aggiunti generano <math|W>, e il risultato appena dimostrato assicura la
-  somma diretta.
-
-  Il supplementare non è in generale unico. All'asse orizzontale di
-  <math|\<bbb-R\><rsup|2>> possiamo aggiungere l'asse verticale oppure
-  qualunque retta per l'origine diversa dall'asse orizzontale.
+  <math|V> quando <math|V=U\<#2295\>W>. In dimensione finita un supplementare
+  esiste sempre, e il modo di costruirlo è completare una base di <math|U> a
+  una base di <math|V>. I vettori aggiunti generano un sottospazio <math|W>,
+  e l'osservazione appena fatta assicura che la somma è diretta. Il
+  supplementare però non è unico. All'asse orizzontale di
+  <math|\<bbb-R\><rsup|2>> possiamo affiancare l'asse verticale, ma anche
+  qualsiasi altra retta per l'origine diversa dall'asse orizzontale.
 
   <section|Formula di Grassmann: contare la parte comune una volta>
 
-  Prendiamo <math|U={(x,y,0)}> e <math|W={(x,0,z)}> in
-  <math|\<bbb-R\><rsup|3>>. Un vettore che appartiene a entrambi deve avere
-  sia terza sia seconda componente nulla. Dunque
+  Che cosa succede quando l'intersezione non è nulla? Prendiamo in
+  <math|\<bbb-R\><rsup|3>> i due piani <math|U={(x,y,0)}> e
+  <math|W={(x,0,z)}>. Un vettore che sta in entrambi deve avere nulle sia la
+  terza sia la seconda componente, e quindi
 
   <\equation*>
     U\<cap\>W={(x,0,0)}=<math-up|span>(e<rsub|1>).
   </equation*>
 
-  La somma è invece tutto lo spazio: ogni <math|(x,y,z)> si scrive
-  <math|(x,y,0)+(0,0,z)>, con il primo addendo in <math|U> e il secondo in
-  <math|W>.
+  La somma invece è tutto lo spazio, perché ogni <math|(x,y,z)> si scrive
+  come <math|(x,y,0)+(0,0,z)>, con il primo addendo in <math|U> e il secondo
+  in <math|W>.
 
-  Le basi <math|(e<rsub|1>,e<rsub|2>)> e <math|(e<rsub|1>,e<rsub|3>)> hanno
-  una direzione in comune. Conservandone una sola copia otteniamo
-  <math|(e<rsub|1>,e<rsub|2>,e<rsub|3>)>, base della somma. Per questo la
-  dimensione è <math|2+2-1=3>, anziché 4.
+  Le basi <math|(e<rsub|1>,e<rsub|2>)> di <math|U> e
+  <math|(e<rsub|1>,e<rsub|3>)> di <math|W> hanno in comune la direzione
+  <math|e<rsub|1>>. Se di questa direzione teniamo una sola copia, otteniamo
+  <math|(e<rsub|1>,e<rsub|2>,e<rsub|3>)>, che è una base della somma. Per
+  questo la dimensione della somma è <math|2+2-1=3> e non 4.
 
-  Proviamo sullo stesso esempio la mossa che servirà nella dimostrazione. Se
-  <math|\<gamma\>e<rsub|1>+\<alpha\>e<rsub|2>+\<beta\>e<rsub|3>=0>, isoliamo
-  <math|t=\<beta\>e<rsub|3>>. È in <math|W>, ma è anche uguale a
-  <math|-\<gamma\>e<rsub|1>-\<alpha\>e<rsub|2>>, quindi sta in <math|U>.
-
-  Essendo comune, <math|t> deve stare sull'asse <math|x>. Ma
-  <math|\<beta\>e<rsub|3>=(0,0,\<beta\>)> sta anche sull'asse <math|z>:
-  l'unico caso possibile è <math|\<beta\>=0>. Rimane
-  <math|\<gamma\>e<rsub|1>+\<alpha\>e<rsub|2>=0>, che annulla gli altri
-  coefficienti.
-
-  Nella prova generale non potremo leggere tre componenti così facilmente. Al
-  loro posto useremo le coordinate nelle basi dei due sottospazi.
+  Proviamo su questo esempio la mossa che ci servirà nella dimostrazione
+  generale. Supponiamo che <math|\<gamma\>e<rsub|1>+\<alpha\>e<rsub|2>+\<beta\>e<rsub|3>=0>
+  e isoliamo il contributo che viene solo da <math|W>, cioè
+  <math|t=\<beta\>e<rsub|3>>. Questo vettore sta in <math|W>, ma è anche
+  uguale a <math|-\<gamma\>e<rsub|1>-\<alpha\>e<rsub|2>>, quindi sta in
+  <math|U>. Essendo nell'intersezione, deve stare sull'asse <math|x>. D'altra
+  parte <math|\<beta\>e<rsub|3>=(0,0,\<beta\>)> sta sull'asse <math|z>, e
+  l'unica possibilità è <math|\<beta\>=0>. Resta
+  <math|\<gamma\>e<rsub|1>+\<alpha\>e<rsub|2>=0>, che annulla anche gli altri
+  due coefficienti. Nel caso generale non potremo leggere le componenti così
+  facilmente, ma useremo al loro posto le coordinate nelle basi dei
+  sottospazi.
 
   <\concetto|Formula di Grassmann>
     Per due sottospazi di dimensione finita vale
@@ -2212,53 +2394,56 @@
     </equation*>
   </concetto>
 
-  La correzione sottrae una volta le dimensioni comuni. Per provarla non
-  basta l'analogia con gli insiemi finiti: dobbiamo costruire una base della
-  somma senza ridondanze.
+  La formula ricorda quella che conta gli elementi dell'unione di due insiemi
+  finiti, ma l'analogia non è una dimostrazione. Dobbiamo costruire davvero
+  una base della somma senza ripetizioni. Poniamo <math|dim U=n>, <math|dim
+  W=p> e <math|dim(U\<cap\>W)=q>.
 
-  Poniamo <math|dim U=n>, <math|dim W=p>, <math|dim(U\<cap\>W)=q>.
-
-  Partiamo da una base <math|v<rsub|1>,\<ldots\>,v<rsub|q>> dell'intersezione
-  e completiamola due volte: a una base <math|(v<rsub|1>,\<ldots\>,v<rsub|q>,u<rsub|q+1>,\<ldots\>,u<rsub|n>)>
-  di <math|U>, e a una base <math|(v<rsub|1>,\<ldots\>,v<rsub|q>,w<rsub|q+1>,\<ldots\>,w<rsub|p>)>
-  di <math|W>. Il completamento è disponibile dal capitolo 6.
-
-  Prendiamo ora una sola copia dei vettori comuni e tutti quelli aggiunti:
+  Il trucco è partire dalla parte comune. Prendiamo una base
+  <math|v<rsub|1>,\<ldots\>,v<rsub|q>> dell'intersezione e completiamola due
+  volte, come abbiamo imparato nel capitolo 6. Una volta la completiamo a una
+  base <math|(v<rsub|1>,\<ldots\>,v<rsub|q>,u<rsub|q+1>,\<ldots\>,u<rsub|n>)>
+  di <math|U>, e l'altra a una base <math|(v<rsub|1>,\<ldots\>,v<rsub|q>,w<rsub|q+1>,\<ldots\>,w<rsub|p>)>
+  di <math|W>. Poi prendiamo una sola copia dei vettori comuni e tutti i
+  vettori aggiunti:
 
   <\equation*>
     B=(v<rsub|1>,\<ldots\>,v<rsub|q>,u<rsub|q+1>,\<ldots\>,u<rsub|n>,w<rsub|q+1>,\<ldots\>,w<rsub|p>).
   </equation*>
 
-  La famiglia genera <math|U+W>, perché ogni <math|z=u+w> si sviluppa nelle
-  due basi: i coefficienti dei <math|v<rsub|i>> si sommano, gli altri
-  rimangono separati.
+  Questa famiglia genera <math|U+W>. Ogni <math|z=u+w> si ottiene sviluppando
+  <math|u> e <math|w> nelle rispettive basi e sommando, e in questa somma i
+  coefficienti dei <math|v<rsub|i>> si sommano fra loro mentre gli altri
+  restano separati.
 
-  Il passo delicato è l'indipendenza. Supponiamo
+  Il passo delicato è l'indipendenza. Supponiamo che
 
   <\equation*>
-    <big|sum><rsub|i=1><rsup|q>\<gamma\><rsub|i>v<rsub|i>+<big|sum><rsub|i=q+1><rsup|n>\<alpha\><rsub|i>u<rsub|i>+<big|sum><rsub|j=q+1><rsup|p>\<beta\><rsub|j>w<rsub|j>=0.
+    <big|sum><rsub|i=1><rsup|q>\<gamma\><rsub|i>v<rsub|i>+<big|sum><rsub|i=q+1><rsup|n>\<alpha\><rsub|i>u<rsub|i>+<big|sum><rsub|j=q+1><rsup|p>\<beta\><rsub|j>w<rsub|j>=0,
   </equation*>
 
-  Chiamiamo <math|t> l'ultima somma. È in <math|W>; dall'uguaglianza è anche
-  l'opposto delle prime due somme, quindi è in <math|U>. Dunque
-  <math|t\<in\>U\<cap\>W>. Possiamo scriverlo
+  e chiamiamo <math|t> l'ultima somma, come nell'esempio. Il vettore <math|t>
+  sta in <math|W>, e l'uguaglianza dice che è l'opposto delle prime due
+  somme, che stanno in <math|U>. Quindi <math|t\<in\>U\<cap\>W>, e possiamo
+  scriverlo nella base dell'intersezione come
   <math|t=<big|sum><rsub|i=1><rsup|q>\<delta\><rsub|i>v<rsub|i>>.
-  Confrontiamo questa scrittura con quella iniziale di <math|t>:
+  Confrontando questa scrittura con la definizione di <math|t> otteniamo
 
   <\equation*>
     <big|sum><rsub|i=1><rsup|q>\<delta\><rsub|i>v<rsub|i>-<big|sum><rsub|j=q+1><rsup|p>\<beta\><rsub|j>w<rsub|j>=0.
   </equation*>
 
-  È una relazione fra vettori della base di <math|W>. Perciò tutti i
-  <math|\<beta\><rsub|j>> sono zero, e anche tutti i
-  <math|\<delta\><rsub|i>>. Nell'uguaglianza originale restano soltanto i
-  vettori della base di <math|U>: anche <math|\<gamma\><rsub|i>> e
-  <math|\<alpha\><rsub|i>> sono zero. Abbiamo provato l'indipendenza di
-  <math|B>.
+  Questa è una relazione fra i vettori della base di <math|W>, quindi tutti i
+  <math|\<beta\><rsub|j>> sono zero, e così pure i <math|\<delta\><rsub|i>>.
+  Nella relazione di partenza restano allora soltanto i vettori della base di
+  <math|U>, e anche i coefficienti <math|\<gamma\><rsub|i>> e
+  <math|\<alpha\><rsub|i>> devono essere zero. La famiglia <math|B> è
+  indipendente.
 
-  La base costruita ha <math|q+(n-q)+(p-q)=n+p-q> vettori: è la formula
-  cercata. Se un blocco è vuoto, le sue somme valgono zero e la dimostrazione
-  resta valida.
+  Ci resta solo da contare. La base costruita ha <math|q+(n-q)+(p-q)=n+p-q>
+  vettori, che è esattamente la formula di Grassmann. Se qualche blocco è
+  vuoto, le somme corrispondenti valgono zero e la dimostrazione funziona lo
+  stesso.
 
   <figura|<image|assets/grassmann.pdf|130.0mm|50.0mm||>|Partiamo dalla base
   dell'intersezione e la completiamo prima in un sottospazio, poi nell'altro.
@@ -2266,44 +2451,49 @@
 
   <subsection|Due piani e un piano con una retta>
 
-  Per due piani distinti in <math|\<bbb-R\><rsup|3>>, l'intersezione ha
-  dimensione almeno 1: Grassmann e <math|dim(U+W)\<leq\>3> danno
-  <math|dim(U\<cap\>W)\<geq\>1>. Non può avere dimensione 2, perché allora
-  coinciderebbe con entrambi i piani. È quindi una retta e la somma ha
+  La formula permette di ragionare sulla geometria senza fare conti.
+  Prendiamo due piani distinti in <math|\<bbb-R\><rsup|3>>. La loro somma ha
+  dimensione al più 3, e Grassmann dà <math|dim(U\<cap\>W)=2+2-dim(U+W)\<geq\>1>.
+  L'intersezione non può avere dimensione 2, perché allora coinciderebbe con
+  ciascuno dei due piani, che invece sono distinti. Due piani distinti per
+  l'origine si incontrano quindi sempre in una retta, e la loro somma ha
   dimensione <math|2+2-1=3>.
 
-  Per un piano e una retta non contenuta nel piano l'intersezione è invece
-  zero: la somma ha dimensione <math|2+1=3> ed è diretta.
+  Per un piano e una retta non contenuta nel piano l'intersezione è soltanto
+  lo zero. La somma ha allora dimensione <math|2+1=3> ed è diretta.
 
   <section|Matrici simmetriche e antisimmetriche>
 
-  La <strong|trasposta> di <math|M=(m<rsub|i*j>)\<in\>M<rsub|m,n>(K)> è la
+  Chiudiamo con un esempio di somma diretta che viene dalle matrici. La
+  <strong|trasposta> di <math|M=(m<rsub|i*j>)\<in\>M<rsub|m,n>(K)> è la
   matrice <math|M<rsup|T>\<in\>M<rsub|n,m>(K)> con
-  <math|(M<rsup|T>)<rsub|i*j>=m<rsub|j*i>>: le righe diventano colonne.
+  <math|(M<rsup|T>)<rsub|i*j>=m<rsub|j*i>>, ottenuta scambiando righe e
+  colonne. Una matrice quadrata <math|M> si dice <strong|simmetrica> se
+  <math|M<rsup|T>=M> e <strong|antisimmetrica> se <math|M<rsup|T>=-M>. Poiché
+  la trasposizione rispetta somme e multipli, le matrici di ciascun tipo
+  formano un sottospazio, che indichiamo con <math|S<rsub|n>> e
+  <math|A<rsub|n>>.
 
-  Per matrici quadrate, <math|M> è <strong|simmetrica> se <math|M<rsup|T>=M>
-  e <strong|antisimmetrica> se <math|M<rsup|T>=-M>. Poiché la trasposizione
-  rispetta somme e multipli, le matrici dei due tipi formano sottospazi, che
-  indichiamo <math|S<rsub|n>> e <math|A<rsub|n>>.
+  Lavoriamo in un campo in cui <math|2\<neq\>0>, come <math|\<bbb-R\>> o
+  <math|\<bbb-C\>>. Una matrice che sia insieme simmetrica e antisimmetrica
+  soddisfa <math|M=-M>, quindi <math|2M=0>, e poiché possiamo dividere per 2
+  otteniamo <math|M=0>. L'intersezione dei due sottospazi è dunque nulla. Lo
+  stesso ragionamento, applicato a una singola casella, mostra che
+  un'antisimmetrica ha la diagonale nulla, perché
+  <math|m<rsub|i*i>=-m<rsub|i*i>>.
 
-  Lavoriamo su un campo in cui <math|2\<neq\>0>, per esempio <math|\<bbb-R\>>
-  o <math|\<bbb-C\>>. Se una matrice è sia simmetrica sia antisimmetrica,
-  vale <math|M=-M>, quindi <math|2M=0> e <math|M=0>. L'intersezione dei due
-  sottospazi è nulla. Sulla diagonale di un'antisimmetrica, allo stesso modo,
-  <math|m<rsub|i*i>=-m<rsub|i*i>> impone <math|m<rsub|i*i>=0>.
-
-  Resta da scomporre una matrice qualsiasi. L'espressione <math|M+M<rsup|T>>
-  è simmetrica; <math|M-M<rsup|T>> è antisimmetrica. Sommandole troviamo
-  <math|2M>, quindi dividiamo ciascuna per 2:
+  Resta da scomporre una matrice qualsiasi nelle due parti. Osserviamo che
+  <math|M+M<rsup|T>> è simmetrica e <math|M-M<rsup|T>> è antisimmetrica, e
+  che la loro somma è <math|2M>. Dividendo ciascuna per 2 otteniamo
 
   <\equation*>
     M=<frac|M+M<rsup|T>|2>+<frac|M-M<rsup|T>|2>.
   </equation*>
 
   La trasposta del primo addendo è <math|(M<rsup|T>+M)/2>, cioè il primo
-  addendo stesso. Quella del secondo è <math|(M<rsup|T>-M)/2>, il suo
-  opposto. Questo dimostra <math|M<rsub|n>(K)=S<rsub|n>\<#2295\>A<rsub|n>>.
-  La scomposizione è unica per la proprietà della somma diretta.
+  addendo stesso, e quella del secondo è <math|(M<rsup|T>-M)/2>, cioè il suo
+  opposto. Abbiamo così dimostrato che <math|M<rsub|n>(K)=S<rsub|n>\<#2295\>A<rsub|n>>,
+  e per la proprietà della somma diretta la scomposizione è unica.
 
   Per esempio, per <math|M=<matrix|<tformat|<table|<row|<cell|1>|<cell|2>>|<row|<cell|4>|<cell|3>>>>>>
   otteniamo
@@ -2312,15 +2502,16 @@
     S=<matrix|<tformat|<table|<row|<cell|1>|<cell|3>>|<row|<cell|3>|<cell|3>>>>>,<space|2em>A=<matrix|<tformat|<table|<row|<cell|0>|<cell|-1>>|<row|<cell|1>|<cell|0>>>>>.
   </equation*>
 
-  Infatti, fuori dalla diagonale la media <math|(2+4)/2=3> fornisce la parte
-  simmetrica; lo scarto <math|(2-4)/2=-1> e il suo opposto forniscono la
-  parte antisimmetrica. La somma ricostruisce le quattro entrate di <math|M>.
+  Il conto ha un significato semplice. Fuori dalla diagonale la parte
+  simmetrica è la media <math|(2+4)/2=3> delle due entrate, mentre la parte
+  antisimmetrica è lo scarto <math|(2-4)/2=-1> con il suo opposto. Sommando
+  le due matrici ritroviamo le quattro entrate di <math|M>.
 
   <\attenzione|Perché l'ipotesi sul campo è necessaria>
-    Se <math|2=0> nel campo, non possiamo usare <math|1/2>. Inoltre
-    <math|-M=M>, così simmetrica e antisimmetrica significano la stessa cosa.
-    L'intersezione non è più necessariamente nulla: la conclusione sulla
-    somma diretta richiede proprio <math|2\<neq\>0>.
+    Se nel campo vale <math|2=0>, non possiamo usare <math|1/2>. Inoltre in
+    quel caso <math|-M=M>, e simmetrica e antisimmetrica diventano la stessa
+    cosa, quindi l'intersezione non è più nulla. La conclusione sulla somma
+    diretta richiede davvero <math|2\<neq\>0>.
   </attenzione>
 
   <\verifica|7>
@@ -2337,57 +2528,67 @@
   <chapter|Matrici, applicazioni lineari e nucleo>
 
   <\inbreve>
-    Come si collega un sistema di equazioni a una trasformazione di vettori?
-    Sappiamo costruire vettori mediante combinazioni lineari. Le matrici ci
-    aiuteranno a descrivere i risultati raggiungibili, le direzioni mandate a
-    zero e tutte le soluzioni di un sistema.
+    Un sistema di equazioni lineari e una trasformazione che manda vettori in
+    vettori sembrano due argomenti diversi, ma sono la stessa cosa vista da
+    due lati. In questo capitolo le matrici faranno da ponte fra i due.
+    Leggendo una matrice per colonne capiremo quali risultati si possono
+    raggiungere, e il nucleo ci dirà quali vettori vengono mandati a zero.
+    Mettendo insieme le due cose arriveremo a descrivere tutte le soluzioni
+    di un sistema e a un teorema che conta le dimensioni di ciò che scompare
+    e di ciò che resta.
   </inbreve>
 
   <section|Il prodotto di matrici: righe per colonne>
 
   Consideriamo le due espressioni <math|x<rsub|1>+x<rsub|2>> e
-  <math|x<rsub|2>+x<rsub|3>>. Possiamo raccogliere i loro coefficienti nella
-  matrice
+  <math|x<rsub|2>+x<rsub|3>>. Possiamo raccogliere i loro coefficienti in una
+  tabella, e le incognite in una colonna:
 
   <\equation*>
     A=<matrix|<tformat|<table|<row|<cell|1>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|1>>>>>,<space|2em>x=<matrix|<tformat|<table|<row|<cell|x<rsub|1>>>|<row|<cell|x<rsub|2>>>|<row|<cell|x<rsub|3>>>>>>.
   </equation*>
 
-  La prima riga legge <math|1\<cdot\>x<rsub|1>+1\<cdot\>x<rsub|2>+0\<cdot\>x<rsub|3>>;
-  la seconda legge <math|0\<cdot\>x<rsub|1>+1\<cdot\>x<rsub|2>+1\<cdot\>x<rsub|3>>.
-  Definiamo quindi
+  La prima riga di <math|A> si legge come
+  <math|1\<cdot\>x<rsub|1>+1\<cdot\>x<rsub|2>+0\<cdot\>x<rsub|3>>, e la
+  seconda come <math|0\<cdot\>x<rsub|1>+1\<cdot\>x<rsub|2>+1\<cdot\>x<rsub|3>>.
+  È naturale allora definire il prodotto della matrice per la colonna come la
+  colonna di queste due espressioni:
 
   <\equation*>
     A*x=<matrix|<tformat|<table|<row|<cell|x<rsub|1>+x<rsub|2>>>|<row|<cell|x<rsub|2>+x<rsub|3>>>>>>.
   </equation*>
 
-  Per esempio, con <math|x=(2,-1,3)<rsup|T>> otteniamo
-  <math|A*x=(1,2)<rsup|T>>. La lettera <math|T> significa \Strasposto\T: una
-  lista scritta in orizzontale viene pensata come colonna.
+  Con <math|x=(2,-1,3)<rsup|T>>, per esempio, otteniamo
+  <math|A*x=(1,2)<rsup|T>>. La lettera <math|T> sta per \Strasposto\T e ci
+  ricorda che una lista scritta in orizzontale va pensata come colonna.
 
-  In generale <math|A=(a<rsub|i*j>)\<in\>M<rsub|m,n>(K)> può moltiplicare una
-  colonna di <math|n> componenti. Il risultato ha <math|m> componenti e la
-  componente <math|i> è
+  In generale una matrice <math|A=(a<rsub|i*j>)\<in\>M<rsub|m,n>(K)> può
+  moltiplicare una colonna di <math|n> componenti, e il risultato è una
+  colonna di <math|m> componenti. La componente di posto <math|i> si ottiene
+  dalla riga <math|i> di <math|A>:
 
   <\equation*>
     (A*x)<rsub|i>=<big|sum><rsub|j=1><rsup|n>a<rsub|i*j>x<rsub|j>.
   </equation*>
 
-  Non moltiplichiamo soltanto elementi che occupano la stessa posizione in
-  due matrici. Prendiamo una <em|riga intera> e una <em|colonna intera>,
-  moltiplichiamo le entrate corrispondenti e sommiamo.
+  Come si vede, non moltiplichiamo fra loro entrate che occupano la stessa
+  posizione. Prendiamo una <em|riga intera> e una <em|colonna intera>,
+  moltiplichiamo le entrate corrispondenti e sommiamo i risultati.
 
-  Se al posto di una sola colonna mettiamo una matrice
-  <math|B\<in\>M<rsub|n,p>(K)>, facciamo lo stesso conto per ciascuna sua
-  colonna. Otteniamo <math|A*B\<in\>M<rsub|m,p>(K)>, con
+  Se al posto di una colonna mettiamo un'intera matrice
+  <math|B\<in\>M<rsub|n,p>(K)>, facciamo lo stesso conto per ciascuna delle
+  sue colonne. Otteniamo una matrice <math|A*B\<in\>M<rsub|m,p>(K)>, con
+  entrate
 
   <\equation*>
     (A*B)<rsub|i*j>=<big|sum><rsub|k=1><rsup|n>a<rsub|i*k>b<rsub|k*j>.
   </equation*>
 
-  Le dimensioni interne devono coincidere: <math|(m\<times\>n)(n\<times\>p)>
-  dà <math|m\<times\>p>. Quando i prodotti sono definiti valgono
-  associatività e distributività:
+  Perché il prodotto abbia senso, il numero di colonne di <math|A> deve
+  essere uguale al numero di righe di <math|B>, e da
+  <math|(m\<times\>n)(n\<times\>p)> nasce una matrice <math|m\<times\>p>.
+  Quando i prodotti sono definiti valgono le proprietà associativa e
+  distributiva:
 
   <\equation*>
     (A*B)C=A(B*C),<space|1em>A(B+C)=A*B+A*C,
@@ -2397,48 +2598,52 @@
     (A+B)C=A*C+B*C.
   </equation*>
 
-  L'associatività si vede anche dalla formula: l'entrata <math|(i,j)> di
-  entrambi i membri è la somma di <math|a<rsub|i*k>b<rsub|k*h>c<rsub|h*j>> su
-  tutti gli indici interni <math|k,h>. Cambia il raggruppamento, non i
-  termini sommati. Le distributività si ottengono distribuendo i prodotti in
+  L'associatività si vede bene dalla formula. In entrambi i membri l'entrata
+  <math|(i,j)> è la somma dei termini <math|a<rsub|i*k>b<rsub|k*h>c<rsub|h*j>>
+  su tutti gli indici interni <math|k> e <math|h>, e cambia soltanto il modo
+  di raggrupparli. Le distributività si ottengono distribuendo i prodotti in
   ogni entrata.
 
-  L'ordine dei fattori conta. Per esempio, ponendo
+  C'è invece una proprietà dei numeri che le matrici non hanno. Prendiamo
 
   <\equation*>
-    P=<matrix|<tformat|<table|<row|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|1>>>>>,<space|2em>Q=<matrix|<tformat|<table|<row|<cell|0>|<cell|1>>|<row|<cell|1>|<cell|0>>>>>,
+    P=<matrix|<tformat|<table|<row|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|1>>>>>,<space|2em>Q=<matrix|<tformat|<table|<row|<cell|0>|<cell|1>>|<row|<cell|1>|<cell|0>>>>>.
   </equation*>
 
-  si trova <math|P*Q=<matrix|<tformat|<table|<row|<cell|1>|<cell|1>>|<row|<cell|1>|<cell|0>>>>>>
-  e <math|Q*P=<matrix|<tformat|<table|<row|<cell|0>|<cell|1>>|<row|<cell|1>|<cell|1>>>>>>:
-  sono diversi. Il prodotto matriciale <strong|non è commutativo>.
+  Facendo i conti troviamo <math|P*Q=<matrix|<tformat|<table|<row|<cell|1>|<cell|1>>|<row|<cell|1>|<cell|0>>>>>>
+  e <math|Q*P=<matrix|<tformat|<table|<row|<cell|0>|<cell|1>>|<row|<cell|1>|<cell|1>>>>>>,
+  che sono diverse. Il prodotto matriciale <strong|non è commutativo>, e
+  l'ordine dei fattori va sempre rispettato.
 
   <section|Sistemi lineari e combinazioni delle colonne>
 
-  Un sistema lineare in <math|n> incognite ha equazioni della forma
-  <math|a<rsub|i1>x<rsub|1>+\<cdots\>+a<rsub|i*n>x<rsub|n>=b<rsub|i>>. I
-  coefficienti sono dati; le incognite non vengono moltiplicate tra loro.
-  Imporre il sistema significa chiedere che tutte le equazioni siano vere
-  contemporaneamente.
+  Un sistema lineare in <math|n> incognite è fatto di equazioni della forma
+  <math|a<rsub|i1>x<rsub|1>+\<cdots\>+a<rsub|i*n>x<rsub|n>=b<rsub|i>>, in cui
+  i coefficienti sono numeri dati e le incognite non vengono mai moltiplicate
+  fra loro. Risolvere il sistema significa trovare i valori che rendono vere
+  tutte le equazioni contemporaneamente.
 
-  Raccogliendo i coefficienti in <math|A> e i termini noti nella colonna
-  <math|b>, il sistema diventa <math|A*x=b>. La <strong|matrice completa>
-  <math|(A\|b)> affianca a <math|A> la colonna <math|b>. La sbarretta è
-  soltanto un separatore.
+  Se raccogliamo i coefficienti nella matrice <math|A> e i termini noti nella
+  colonna <math|b>, tutto il sistema si scrive in modo compatto come
+  <math|A*x=b>. Affiancando ad <math|A> la colonna <math|b> otteniamo la
+  <strong|matrice completa> <math|(A\|b)>, in cui la sbarretta serve solo a
+  separare le due parti. Quando <math|b=0> il sistema si dice
+  <strong|omogeneo>, e ha sempre almeno la soluzione <math|x=0>.
 
-  Se <math|b=0>, il sistema si dice <strong|omogeneo> e ammette sempre almeno
-  la soluzione <math|x=0>.
-
-  Nel nostro esempio le colonne sono <math|A<rsub|1>=(1,0)<rsup|T>>,
-  <math|A<rsub|2>=(1,1)<rsup|T>>, <math|A<rsub|3>=(0,1)<rsup|T>>. Possiamo
+  Ora proviamo a leggere il prodotto in un altro modo. Nel nostro esempio le
+  colonne di <math|A> sono <math|A<rsub|1>=(1,0)<rsup|T>>,
+  <math|A<rsub|2>=(1,1)<rsup|T>> e <math|A<rsub|3>=(0,1)<rsup|T>>, e possiamo
   riscrivere il prodotto come
 
   <\equation*>
     A*x=x<rsub|1>A<rsub|1>+x<rsub|2>A<rsub|2>+x<rsub|3>A<rsub|3>.
   </equation*>
 
-  Vale lo stesso per ogni matrice: <math|A*x> è la combinazione delle colonne
-  con coefficienti <math|x<rsub|j>>. Perciò
+  Questa lettura vale per ogni matrice. Il prodotto <math|A*x> è la
+  combinazione delle colonne di <math|A> con coefficienti
+  <math|x<rsub|1>,\<ldots\>,x<rsub|n>>. Risolvere un sistema significa quindi
+  cercare i coefficienti con cui le colonne producono <math|b>, e la domanda
+  se il sistema abbia soluzioni diventa una domanda sullo span.
 
   <\concetto|La domanda di compatibilità>
     Il sistema <math|A*x=b> è <strong|compatibile>, cioè ha almeno una
@@ -2446,29 +2651,32 @@
     <math|A>.
   </concetto>
 
-  Nel nostro esempio qualunque <math|b=(s,t)<rsup|T>> è raggiungibile: basta
-  scegliere <math|x=(s,0,t)<rsup|T>>. Se le colonne sono tutte multipli di
-  uno stesso vettore non nullo e almeno una è non nulla, si raggiunge
-  soltanto una retta. Se sono tutte nulle, si raggiunge soltanto il vettore
-  zero.
+  Nel nostro esempio ogni <math|b=(s,t)<rsup|T>> si raggiunge, per esempio
+  scegliendo <math|x=(s,0,t)<rsup|T>>. Le cose vanno diversamente se le
+  colonne sono tutte multiple di uno stesso vettore non nullo, perché allora
+  si raggiunge soltanto una retta. Se le colonne sono tutte nulle, si
+  raggiunge soltanto il vettore zero.
 
   <figura|<image|assets/colonne.pdf|139.5mm|51.8mm||>|Leggere per colonne
   significa cercare una combinazione che dia <math|b>. Nel piano, due colonne
   indipendenti raggiungono ogni vettore; due colonne parallele, con almeno
   una non nulla, raggiungono soltanto la loro retta.>
 
-  Esiste anche la lettura per righe: in <math|\<bbb-R\><rsup|2>> ogni
-  equazione non degenere descrive una retta e le soluzioni sono i punti
-  comuni alle rette. Le due letture descrivono la stessa domanda: una guarda
-  le condizioni imposte alle incognite, l'altra gli oggetti che possiamo
-  costruire.
+  Esiste anche una lettura per righe, che conosciamo dalla scuola. In
+  <math|\<bbb-R\><rsup|2>> ogni equazione non degenere descrive una retta, e
+  le soluzioni sono i punti che stanno su tutte le rette. Le due letture
+  affrontano lo stesso problema da lati opposti. Le righe guardano alle
+  condizioni imposte alle incognite, mentre le colonne guardano agli oggetti
+  che riusciamo a costruire.
 
   <section|Applicazioni lineari, nucleo e immagine>
 
-  La matrice dell'esempio trasforma ogni vettore di <math|K<rsup|3>> in uno
-  di <math|K<rsup|2>>. La trasformazione <math|F<rsub|A>(x)=A*x> conserva le
-  combinazioni lineari. Infatti, calcolando componente per componente,
-  <math|A(x+y)=A*x+A*y> e <math|A(\<alpha\>x)=\<alpha\>A*x>.
+  La matrice del nostro esempio trasforma ogni vettore di <math|K<rsup|3>> in
+  un vettore di <math|K<rsup|2>>. Chiamiamo <math|F<rsub|A>(x)=A*x> questa
+  trasformazione e notiamo che rispetta le combinazioni lineari. Facendo il
+  conto componente per componente si vede infatti che <math|A(x+y)=A*x+A*y> e
+  <math|A(\<alpha\>x)=\<alpha\>A*x>. Questa proprietà merita un nome, perché
+  la incontreremo anche lontano dalle matrici.
 
   <\concetto|Applicazione lineare>
     Se <math|V,W> sono spazi sullo stesso campo <math|K>, una funzione
@@ -2483,72 +2691,73 @@
     L'<strong|immagine> è <math|<math-up|Im> F=<around|{|F(v):v\<in\>V|}>>.
   </concetto>
 
-  Il nucleo vive nello spazio di partenza; l'immagine nello spazio di arrivo.
-  Per una matrice <math|A> sono, rispettivamente, le soluzioni di
-  <math|A*x=0> e lo span delle colonne. Un nucleo non nullo indica che
-  informazioni diverse possono dare lo stesso risultato.
+  Il nucleo vive nello spazio di partenza e l'immagine in quello di arrivo.
+  Per una matrice <math|A>, il nucleo è l'insieme delle soluzioni di
+  <math|A*x=0> e l'immagine è lo span delle colonne. Un nucleo diverso da
+  zero ci dice che vettori diversi possono dare lo stesso risultato, cioè che
+  l'applicazione perde qualche informazione.
 
-  Prima di verificare che sono sottospazi, osserviamo che <math|F(0)=0>:
-  dalla linearità <math|F(0)=F(0+0)=F(0)+F(0)> e sottraiamo <math|F(0)>.
+  Nucleo e immagine sono sottospazi. Per vederlo, osserviamo prima che
+  <math|F(0)=0>, perché la linearità dà <math|F(0)=F(0+0)=F(0)+F(0)>, e
+  sottraendo <math|F(0)> resta <math|0=F(0)>. Se <math|F(u)=F(v)=0>, allora
+  anche <math|F(u+v)=0> e <math|F(\<alpha\>u)=0>, quindi il nucleo è chiuso
+  per le operazioni. Se <math|w=F(u)> e <math|z=F(v)> stanno nell'immagine,
+  anche <math|w+z=F(u+v)> e <math|\<alpha\>w=F(\<alpha\>u)> ci stanno.
+  Entrambi contengono lo zero, e il criterio di sottospazio è soddisfatto.
 
-  Nel nucleo, se <math|F(u)=F(v)=0>, allora <math|F(u+v)=0> e
-  <math|F(\<alpha\>u)=0>.
+  Nel nostro esempio, trovare il nucleo significa risolvere
+  <math|x<rsub|1>+x<rsub|2>=0> e <math|x<rsub|2>+x<rsub|3>=0>. Se poniamo
+  <math|x<rsub|2>=-t>, le altre due componenti devono valere <math|t>, e
+  quindi <math|ker F<rsub|A>=<math-up|span>((1,-1,1)<rsup|T>)>. L'immagine
+  invece è tutto <math|K<rsup|2>>, perché la prima e la terza colonna sono
+  proprio i vettori della base canonica.
 
-  Nell'immagine, se <math|w=F(u)> e <math|z=F(v)>, allora <math|w+z=F(u+v)> e
-  <math|\<alpha\>w=F(\<alpha\>u)>. Entrambi contengono zero e soddisfano il
-  criterio di sottospazio.
-
-  Nel nostro esempio, risolvere <math|F<rsub|A>(x)=0> significa imporre
-  <math|x<rsub|1>+x<rsub|2>=0> e <math|x<rsub|2>+x<rsub|3>=0>. Scelto
-  <math|x<rsub|2>=-t>, le altre due componenti devono valere <math|t>. Dunque
-  <math|ker F<rsub|A>=<math-up|span>((1,-1,1)<rsup|T>)>.
-
-  L'immagine è tutto <math|K<rsup|2>>, perché la prima e la terza colonna
-  sono la base canonica.
-
-  <strong|Quando è iniettiva una funzione lineare?> Basta controllare se
-  <math|ker F=<around|{|0|}>>. Se <math|F> è iniettiva, da <math|F(v)=0=F(0)>
-  segue <math|v=0>.
-
-  Per l'altra direzione immaginiamo <math|F(u)=F(v)>: il problema è
-  confrontare due vettori. La linearità permette di riunirli in uno solo,
-  perché <math|F(u-v)=0>. Se il nucleo contiene soltanto zero, allora
-  <math|u-v=0>, dunque <math|u=v>. Questa sottrazione sarà utile anche per i
-  sistemi.
+  Il nucleo risponde anche a una domanda importante, cioè quando una funzione
+  lineare è iniettiva. Basta controllare che <math|ker F={0}>. Se <math|F> è
+  iniettiva, da <math|F(v)=0=F(0)> segue subito <math|v=0>. Per l'altra
+  direzione supponiamo che <math|F(u)=F(v)>. Dovremmo confrontare due
+  vettori, ma la linearità ci permette di ridurci a uno solo, perché
+  <math|F(u-v)=F(u)-F(v)=0>. Se il nucleo contiene soltanto lo zero, allora
+  <math|u-v=0>, cioè <math|u=v>. Questa piccola sottrazione ci servirà subito
+  anche per i sistemi.
 
   <section|Tutte le soluzioni: una particolare più il nucleo>
 
-  Torniamo a <math|x<rsub|1>+x<rsub|2>=s>, <math|x<rsub|2>+x<rsub|3>=t>.
-  Abbiamo già una soluzione <math|\<xi\>=(s,0,t)<rsup|T>>. Se aggiungiamo
-  <math|h(1,-1,1)<rsup|T>>, le due somme non cambiano: aggiungiamo <math|h> a
-  una componente e lo togliamo all'altra. Le soluzioni sono quindi
+  Torniamo al sistema <math|x<rsub|1>+x<rsub|2>=s>,
+  <math|x<rsub|2>+x<rsub|3>=t>, di cui conosciamo già la soluzione
+  <math|\<xi\>=(s,0,t)<rsup|T>>. Se le aggiungiamo un multiplo
+  <math|h(1,-1,1)<rsup|T>> del vettore del nucleo, le due somme non cambiano,
+  perché in ciascuna aggiungiamo <math|h> a una componente e lo togliamo
+  all'altra. Otteniamo così tutta una famiglia di soluzioni,
 
   <\equation*>
     x=(s,0,t)<rsup|T>+h(1,-1,1)<rsup|T>,<space|1em>h\<in\>K.
   </equation*>
 
-  Non è una coincidenza del nostro esempio. Supponiamo che <math|A\<xi\>=b>.
-  Per sapere che cosa può cambiare da una soluzione all'altra, prendiamo una
-  seconda soluzione <math|x> e sottraiamo le equazioni:
+  Non è una particolarità di questo esempio. Supponiamo che <math|A\<xi\>=b>
+  e prendiamo un'altra soluzione qualsiasi <math|x>. Per capire in che cosa
+  differisce da <math|\<xi\>>, sottraiamo le due equazioni:
 
   <\equation*>
     A(x-\<xi\>)=A*x-A\<xi\>=b-b=0.
   </equation*>
 
-  La differenza appartiene al nucleo. Viceversa, se <math|A*z=0>, allora
-  <math|A(\<xi\>+z)=b+0=b>. Abbiamo dimostrato entrambe le inclusioni e
-  quindi
+  La differenza fra due soluzioni sta dunque sempre nel nucleo. Viceversa, se
+  <math|A*z=0>, allora <math|A(\<xi\>+z)=b+0=b>, e aggiungendo a
+  <math|\<xi\>> un vettore del nucleo otteniamo ancora una soluzione. Le due
+  inclusioni insieme danno una descrizione completa.
 
   <\concetto|Struttura delle soluzioni>
     Se <math|A*x=b> è compatibile e <math|\<xi\>> è una sua soluzione,
     l'insieme di tutte le soluzioni è <math|\<xi\>+ker F<rsub|A>>.
   </concetto>
 
-  È un <strong|traslato> di un sottospazio, chiamato anche sottospazio
-  affine. Se <math|b\<neq\>0>, non contiene l'origine e non è un sottospazio
-  vettoriale. Se il nucleo è nullo, ogni sistema compatibile ha una sola
-  soluzione. Per descrivere un sistema in generale ci servono quindi una
-  soluzione particolare e una base del nucleo.
+  Un insieme di questa forma si chiama <strong|traslato> di un sottospazio, o
+  anche sottospazio affine. Se <math|b\<neq\>0> non contiene l'origine, e
+  quindi non è un sottospazio vettoriale. Se il nucleo è nullo, ogni sistema
+  compatibile ha una e una sola soluzione. Per descrivere tutte le soluzioni
+  di un sistema ci servono quindi due ingredienti, una soluzione particolare
+  e una base del nucleo.
 
   <figura|<image|assets/traslato.pdf|80.8mm|37.5mm||>|Nell'esempio geometrico
   il nucleo è una retta per l'origine. Le soluzioni del sistema non omogeneo
@@ -2557,39 +2766,40 @@
   <section|Rango e teorema rango\<#2013\>nullità>
 
   La nostra applicazione parte da tre coordinate e ne produce due. Una
-  direzione, <math|(1,-1,1)<rsup|T>>, viene mandata a zero; restano due
-  direzioni indipendenti nell'immagine. Il teorema delle dimensioni rende
-  preciso questo conteggio. Prima vediamo come scegliere le tre direzioni.
+  direzione, quella di <math|(1,-1,1)<rsup|T>>, viene mandata a zero, e
+  nell'immagine restano due direzioni indipendenti. Sembra che le tre
+  dimensioni di partenza si siano divise fra ciò che scompare e ciò che
+  resta. Prima di dimostrarlo in generale, vediamo come scegliere bene le tre
+  direzioni.
 
   <subsection|Una base che separa il nucleo dal resto>
 
-  Lavoriamo ancora con <math|F(x<rsub|1>,x<rsub|2>,x<rsub|3>)=(x<rsub|1>+x<rsub|2>,x<rsub|2>+x<rsub|3>)>.
-  Il nucleo ha base <math|k=(1,-1,1)>. Proviamo a completarla con
-  <math|e<rsub|1>> ed <math|e<rsub|3>>.
-
-  Per controllare l'indipendenza scriviamo
+  Lavoriamo ancora con <math|F(x<rsub|1>,x<rsub|2>,x<rsub|3>)=(x<rsub|1>+x<rsub|2>,x<rsub|2>+x<rsub|3>)>,
+  il cui nucleo ha base <math|k=(1,-1,1)>. Proviamo a completare <math|k> con
+  <math|e<rsub|1>> ed <math|e<rsub|3>>. Per controllare l'indipendenza
+  scriviamo
 
   <\equation*>
     \<alpha\>k+\<beta\>e<rsub|1>+\<gamma\>e<rsub|3>=(\<alpha\>+\<beta\>,-\<alpha\>,\<alpha\>+\<gamma\>)=0.
   </equation*>
 
-  La seconda componente dà <math|\<alpha\>=0>; la prima e la terza danno poi
-  <math|\<beta\>=\<gamma\>=0>. I tre vettori indipendenti formano una base di
-  <math|K<rsup|3>>.
+  La seconda componente dà <math|\<alpha\>=0>, e poi la prima e la terza
+  danno <math|\<beta\>=\<gamma\>=0>. I tre vettori sono indipendenti e quindi
+  formano una base di <math|K<rsup|3>>.
 
-  Le loro immagini sono <math|F(k)=0>, <math|F(e<rsub|1>)=(1,0)> e
-  <math|F(e<rsub|3>)=(0,1)>. Il primo vettore scompare, gli altri due danno
-  una base dell'immagine. Ecco perché in questo caso <math|3=1+2>.
-
-  Per esempio <math|(2,-1,3)=k+e<rsub|1>+2e<rsub|3>>. Applicando <math|F>, il
-  termine <math|k> scompare e rimane <math|(1,2)>. La stessa scelta di base
-  permette di leggere il comportamento di ogni vettore.
+  Guardiamo che cosa fa <math|F> su questa base. Abbiamo <math|F(k)=0>,
+  <math|F(e<rsub|1>)=(1,0)> e <math|F(e<rsub|3>)=(0,1)>. Il primo vettore
+  scompare, e gli altri due vanno in una base dell'immagine, ed è per questo
+  che qui <math|3=1+2>. La base ci permette anche di seguire ogni singolo
+  vettore. Per esempio <math|(2,-1,3)=k+e<rsub|1>+2e<rsub|3>>, e applicando
+  <math|F> il termine <math|k> sparisce e resta <math|(1,2)>.
 
   <subsection|Il conteggio in generale>
 
-  Il <strong|rango> di <math|A> è <math|<math-up|rank>(A)=dim<space|0.2em><math-up|Im>
-  F<rsub|A>>: la dimensione dello span delle colonne. La <strong|nullità> è
-  la dimensione del nucleo.
+  Per enunciare il risultato ci servono due nomi. Il <strong|rango> di
+  <math|A> è <math|<math-up|rank>(A)=dim<space|0.2em><math-up|Im> F<rsub|A>>,
+  cioè la dimensione dello span delle colonne. La <strong|nullità> è la
+  dimensione del nucleo.
 
   <\concetto|Teorema rango\<#2013\>nullità>
     Se <math|F:V\<rightarrow\>W> è lineare e <math|V> ha dimensione finita,
@@ -2600,46 +2810,48 @@
     </equation*>
   </concetto>
 
-  Per dimostrarlo vogliamo scegliere una base che faccia vedere separatamente
-  ciò che scompare e ciò che resta.
+  La dimostrazione ripete in generale ciò che abbiamo fatto nell'esempio,
+  cioè sceglie una base che mostri separatamente ciò che scompare e ciò che
+  resta. Prendiamo una base <math|v<rsub|1>,\<ldots\>,v<rsub|k>> del nucleo e
+  completiamola, come sappiamo fare dal capitolo 6, a una base
+  <math|v<rsub|1>,\<ldots\>,v<rsub|n>> di <math|V>. Vogliamo dimostrare che
+  le immagini dei vettori aggiunti, <math|F(v<rsub|k+1>),\<ldots\>,F(v<rsub|n>)>,
+  formano una base dell'immagine.
 
-  Prendiamo una base <math|v<rsub|1>,\<ldots\>,v<rsub|k>> del nucleo e
-  completiamola a una base <math|v<rsub|1>,\<ldots\>,v<rsub|n>> di <math|V>.
-  Il completamento è possibile per il capitolo 6. Mostriamo che
-  <math|F(v<rsub|k+1>),\<ldots\>,F(v<rsub|n>)> è una base dell'immagine.
-
-  <strong|Generazione.> Ogni elemento dell'immagine è <math|F(v)> per qualche
-  <math|v>. Scriviamo <math|v=\<alpha\><rsub|1>v<rsub|1>+\<cdots\>+\<alpha\><rsub|n>v<rsub|n>>.
-  Applicando <math|F>, i primi <math|k> termini diventano zero e rimane
+  <strong|Generazione.> Ogni elemento dell'immagine è della forma <math|F(v)>
+  per qualche <math|v>. Se scriviamo <math|v=\<alpha\><rsub|1>v<rsub|1>+\<cdots\>+\<alpha\><rsub|n>v<rsub|n>>
+  e applichiamo <math|F>, i primi <math|k> termini diventano zero, perché
+  quei vettori stanno nel nucleo. Resta
 
   <\equation*>
     F(v)=\<alpha\><rsub|k+1>F(v<rsub|k+1>)+\<cdots\>+\<alpha\><rsub|n>F(v<rsub|n>).
   </equation*>
 
-  <strong|Indipendenza.> Supponiamo che la combinazione a destra valga zero.
-  Per linearità il vettore <math|u=\<alpha\><rsub|k+1>v<rsub|k+1>+\<cdots\>+\<alpha\><rsub|n>v<rsub|n>>
-  appartiene al nucleo. Possiamo allora scriverlo anche come
-  <math|u=\<beta\><rsub|1>v<rsub|1>+\<cdots\>+\<beta\><rsub|k>v<rsub|k>>.
+  <strong|Indipendenza.> Supponiamo che una combinazione
+  <math|\<alpha\><rsub|k+1>F(v<rsub|k+1>)+\<cdots\>+\<alpha\><rsub|n>F(v<rsub|n>)>
+  valga zero. Per linearità il vettore <math|u=\<alpha\><rsub|k+1>v<rsub|k+1>+\<cdots\>+\<alpha\><rsub|n>v<rsub|n>>
+  viene mandato a zero, quindi sta nel nucleo, e possiamo scriverlo anche
+  come <math|u=\<beta\><rsub|1>v<rsub|1>+\<cdots\>+\<beta\><rsub|k>v<rsub|k>>.
+  Portando tutto dalla stessa parte otteniamo una relazione nulla fra i
+  vettori della base di <math|V>. L'indipendenza di quella base annulla tutti
+  i coefficienti, compresi gli <math|\<alpha\><rsub|k+1>,\<ldots\>,\<alpha\><rsub|n>>
+  che volevamo controllare.
 
-  Portando tutto allo stesso membro otteniamo una relazione nulla tra i
-  vettori della base di <math|V>. L'indipendenza di quella base impone che
-  tutti i coefficienti siano zero, compresi gli
-  <math|\<alpha\><rsub|k+1>,\<ldots\>,\<alpha\><rsub|n>> che volevamo
-  controllare.
-
-  La base dell'immagine ha dunque <math|n-k> elementi. Sommando le dimensioni
-  otteniamo <math|k+(n-k)=n>, come richiesto. Il ragionamento comprende anche
-  nucleo nullo o immagine nulla: il relativo blocco della base è vuoto.
+  La base dell'immagine ha dunque <math|n-k> vettori, e sommando le
+  dimensioni troviamo <math|k+(n-k)=n>. Il ragionamento comprende anche i
+  casi estremi di nucleo nullo o immagine nulla, nei quali il blocco
+  corrispondente della base è semplicemente vuoto.
 
   <figura|<image|assets/rango-nullita.pdf|99.0mm|36.0mm||>|Scegliamo prima
   una base del nucleo, poi la completiamo. Le immagini dei vettori aggiunti
   formano una base dell'immagine. La scelta iniziale dei vettori del nucleo
   rende possibile questo conteggio.>
 
-  Per <math|A\<in\>M<rsub|m,n>(K)> il dominio è <math|K<rsup|n>>, quindi
-  <math|dim ker F<rsub|A>=n-<math-up|rank>(A)>. Conta il numero di
-  <em|incognite>, cioè le colonne, non quello delle equazioni. Nei prossimi
-  capitoli vedremo come calcolare il rango e una base del nucleo con Gauss.
+  Per una matrice <math|A\<in\>M<rsub|m,n>(K)> lo spazio di partenza è
+  <math|K<rsup|n>>, e quindi <math|dim ker F<rsub|A>=n-<math-up|rank>(A)>.
+  Nel conto entra il numero delle <em|incognite>, cioè delle colonne, e non
+  quello delle equazioni. Nei prossimi capitoli vedremo come calcolare in
+  pratica il rango e una base del nucleo con il metodo di Gauss.
 
   <\verifica|8>
     <strong|8.1.> Una matrice reale di dimensioni <math|3\<times\>5> ha rango
@@ -2659,31 +2871,35 @@
   <chapter|Eliminazione di Gauss e sistemi a scala>
 
   <\inbreve>
-    Come possiamo risolvere un sistema senza indovinare i valori delle
-    incognite? Partiamo da sistemi nei quali le equazioni si leggono una dopo
-    l'altra. Con operazioni reversibili impareremo a portare anche gli altri
-    sistemi in questa forma.
+    Alcuni sistemi lineari si risolvono quasi da soli, perché le equazioni si
+    possono leggere una dopo l'altra, dal basso verso l'alto. Questo capitolo
+    parte da quei sistemi e mostra come portarci anche tutti gli altri, con
+    poche operazioni che non perdono e non aggiungono soluzioni. Il metodo
+    che ne nasce, l'eliminazione di Gauss, ci darà sia le soluzioni dei
+    sistemi sia un modo per passare dalle equazioni di un sottospazio ai suoi
+    generatori e viceversa.
   </inbreve>
 
   <section|Pivot e variabili libere>
 
-  Partiamo da un sistema già semplice:
+  Lavoriamo su <math|\<bbb-R\>> e cominciamo da un sistema già semplice:
 
   <\equation*>
     <choice|<tformat|<table|<row|<cell|2x<rsub|1>+x<rsub|2>-2x<rsub|3>=2>>|<row|<cell|x<rsub|2>-2x<rsub|3>=3>>>>>.
   </equation*>
 
-  Qui lavoriamo su <math|\<bbb-R\>>. L'ultima equazione permette di scrivere
-  <math|x<rsub|2>=3+2x<rsub|3>>. Sostituendo nella prima si ottiene
-  <math|2x<rsub|1>+3=2>, quindi <math|x<rsub|1>=-1/2>.
+  L'ultima equazione ci permette di scrivere <math|x<rsub|2>=3+2x<rsub|3>>.
+  Sostituendo nella prima otteniamo <math|2x<rsub|1>+(3+2x<rsub|3>)-2x<rsub|3>=2>,
+  cioè <math|2x<rsub|1>+3=2>, e quindi <math|x<rsub|1>=-1/2>. Nessuna
+  equazione impone invece il valore di <math|x<rsub|3>>. Se lo scegliamo
+  uguale a un parametro <math|t>, tutte le soluzioni sono
+  <math|(-1/2,3+2t,t)<rsup|T>>.
 
-  Il valore di <math|x<rsub|3>> non è imposto da altre equazioni: scelto
-  <math|x<rsub|3>=t>, tutte le soluzioni sono <math|(-1/2,3+2t,t)<rsup|T>>.
-
-  Perché abbiamo potuto risolvere così? La prima equazione comincia con
-  <math|x<rsub|1>>, la seconda con <math|x<rsub|2>>. Ogni nuova equazione
-  comincia più a destra: non reintroduce l'incognita che ci siamo lasciati
-  alle spalle.
+  Il sistema si è lasciato risolvere così facilmente per via della sua forma.
+  La prima equazione comincia con <math|x<rsub|1>> e la seconda con
+  <math|x<rsub|2>>, e in generale ogni nuova equazione comincia più a destra
+  della precedente. Così, risalendo dal basso, ogni equazione introduce al
+  più un'incognita nuova da ricavare.
 
   <\concetto|Matrice a scala e pivot>
     Una matrice è <strong|a scala> se le righe nulle sono in fondo e,
@@ -2697,29 +2913,31 @@
   possono avere qualsiasi valore, anche zero. Le righe completamente nulle
   sono in fondo.>
 
-  Le colonne delle incognite con pivot individuano le <strong|variabili
-  pivot>; le altre individuano le <strong|variabili libere>. Assegniamo
-  valori alle libere e ricaviamo le pivot a ritroso. Questa scelta dei
-  parametri viene dalla forma a scala adottata; la famiglia di soluzioni può
-  essere riscritta anche con altri parametri, purché descriva esattamente gli
-  stessi vettori.
+  Le incognite che corrispondono a colonne con un pivot si chiamano
+  <strong|variabili pivot>, le altre <strong|variabili libere>. Il metodo di
+  soluzione è quello dell'esempio. Assegniamo valori arbitrari alle variabili
+  libere e ricaviamo le variabili pivot risalendo dal basso. La scelta dei
+  parametri dipende dalla forma a scala che abbiamo ottenuto, e la stessa
+  famiglia di soluzioni si potrebbe descrivere anche con parametri diversi,
+  purché si ottengano esattamente gli stessi vettori.
 
-  Occorre guardare anche i termini noti. Se nella matrice completa compare
-  una riga <math|(0,\<ldots\>,0\|c)> con <math|c\<neq\>0>, essa impone
-  <math|0=c>: il sistema è incompatibile. È un pivot nell'ultima colonna,
-  quella che non corrisponde a un'incognita.
+  Bisogna però guardare anche i termini noti. Se nella matrice completa
+  compare una riga <math|(0,\<ldots\>,0\|c)> con <math|c\<neq\>0>, quella
+  riga dice <math|0=c>, cosa impossibile, e il sistema non ha soluzioni. In
+  termini di pivot, questo accade quando un pivot cade nell'ultima colonna,
+  quella dei termini noti, che non corrisponde a nessuna incognita. In una
+  matrice completa a scala è l'unico ostacolo possibile. Se non c'è, la
+  risalita dal basso trova sempre le variabili pivot, perché a ogni passo
+  dividiamo per un pivot, che non è nullo.
 
-  In una matrice completa a scala questa è l'unica possibile ostruzione: se
-  non compare, la sostituzione dal basso trova sempre le variabili pivot,
-  dividendo per pivot non nulli.
+  <section|Operazioni di riga: cambiare la forma senza cambiare le soluzioni>
 
-  <section|Operazioni di riga: cambiare la forma conservando le soluzioni>
-
-  Se una prima equazione contiene <math|x+2y> e una seconda contiene
-  <math|2x+3y>, sottrarre due volte la prima dalla seconda elimina <math|x>.
-  Vogliamo usare questa idea senza perdere o aggiungere soluzioni.
-
-  Le tre <strong|operazioni elementari di riga> sulla matrice completa sono:
+  Supponiamo che una prima equazione contenga <math|x+2y> e una seconda
+  contenga <math|2x+3y>. Se sottraiamo due volte la prima dalla seconda, la
+  <math|x> sparisce dalla seconda equazione. È il tipo di mossa che ci serve
+  per arrivare a una forma a scala, ma dobbiamo essere sicuri che non cambi
+  l'insieme delle soluzioni. Sulla matrice completa usiamo tre
+  <strong|operazioni elementari di riga>:
 
   <\enumerate>
     <item>scambiare due righe;
@@ -2730,18 +2948,23 @@
     <math|R<rsub|i>+\<lambda\>R<rsub|j>>, per <math|i\<neq\>j>.
   </enumerate>
 
-  Ogni operazione ha un'inversa: ripetere lo scambio; moltiplicare per
-  <math|\<lambda\><rsup|-1>>; sottrarre lo stesso multiplo.
+  Ognuna di queste operazioni si può annullare con un'operazione dello stesso
+  tipo. Uno scambio si annulla ripetendolo, una moltiplicazione per
+  <math|\<lambda\>> si annulla moltiplicando per <math|\<lambda\><rsup|-1>>,
+  e l'aggiunta di <math|\<lambda\>R<rsub|j>> si annulla sottraendo lo stesso
+  multiplo. È questa reversibilità a garantire che le soluzioni non cambino.
+  Prendiamo la terza operazione. Chi soddisfa entrambe le equazioni di
+  partenza soddisfa anche la loro combinazione, quindi nessuna soluzione si
+  perde. Viceversa, dalla nuova equazione e dalla riga <math|R<rsub|j>>, che
+  non abbiamo toccato, ricostruiamo la vecchia equazione, quindi nessuna
+  soluzione si aggiunge. Per le altre due operazioni il ragionamento è ancora
+  più semplice. In ogni caso, <strong|l'insieme delle soluzioni resta
+  esattamente lo stesso>.
 
-  Per la terza, chi soddisfa entrambe le equazioni iniziali soddisfa la loro
-  combinazione; viceversa recuperiamo la vecchia equazione sottraendo
-  <math|\<lambda\>> volte la riga che abbiamo conservato. Quindi
-  <strong|l'insieme delle soluzioni resta identico in entrambe le direzioni>.
-
-  La condizione <math|\<lambda\>\<neq\>0> evita di trasformare un'equazione
-  informativa in <math|0=0>. Nella terza operazione la riga di appoggio deve
-  essere un'altra: aggiungere alla stessa riga il suo opposto la
-  cancellerebbe.
+  Le condizioni nelle definizioni hanno un motivo. Se moltiplicassimo una
+  riga per zero, trasformeremmo un'equazione che contiene informazioni in
+  <math|0=0>, e perderemmo vincoli. Se nella terza operazione usassimo la
+  riga stessa come appoggio, potremmo cancellarla sommandole il suo opposto.
 
   <\attenzione|Trasformare anche i termini noti>
     L'operazione si applica alla riga <em|intera> di <math|(A\|b)>. Se
@@ -2750,24 +2973,24 @@
     Cambiare soltanto i coefficienti produce un altro problema.
   </attenzione>
 
-  Le mosse conservano anche lo span delle righe: ogni nuova riga è
-  combinazione delle vecchie e la reversibilità dà l'inclusione opposta.
-
-  Per le colonne, invece, lo span può cambiare. La colonna
-  <math|(1,1)<rsup|T>> diventa <math|(1,0)<rsup|T>> dopo
-  <math|R<rsub|2>\<leftarrow\>R<rsub|2>-R<rsub|1>>: prima generava una retta
-  obliqua, poi un asse. Nel capitolo 10 vedremo perché la <em|dimensione>
-  dello spazio delle colonne rimane comunque la stessa.
+  Le operazioni di riga lasciano invariato anche lo span delle righe, perché
+  ogni riga nuova è combinazione delle vecchie e, per la reversibilità, vale
+  anche il contrario. Lo span delle colonne invece può cambiare. Con
+  l'operazione <math|R<rsub|2>\<leftarrow\>R<rsub|2>-R<rsub|1>> la colonna
+  <math|(1,1)<rsup|T>> diventa <math|(1,0)<rsup|T>>, e la retta obliqua che
+  generava diventa un asse. Nel capitolo 10 vedremo che, nonostante questo,
+  la <em|dimensione> dello span delle colonne non cambia.
 
   <section|L'algoritmo e una riduzione completa>
 
-  Supponiamo che nella colonna scelta il pivot sia <math|p\<neq\>0> e che
-  sotto di esso compaia <math|a>. Quale multiplo della riga pivot dobbiamo
-  sottrarre? Vogliamo <math|a-\<lambda\>p=0>, quindi scegliamo
-  <math|\<lambda\>=a/p>. Questa divisione è consentita perché lavoriamo su un
-  campo e il pivot non è zero.
-
-  Gauss ripete questa decisione su rettangoli sempre più piccoli:
+  Il cuore del metodo è una sola decisione, che si ripete. Supponiamo che
+  nella colonna su cui lavoriamo ci sia un pivot <math|p\<neq\>0> e che sotto
+  di esso ci sia un'entrata <math|a> che vogliamo annullare. Sottraendo
+  <math|\<lambda\>> volte la riga del pivot, quell'entrata diventa
+  <math|a-\<lambda\>p>, e per farla diventare zero scegliamo
+  <math|\<lambda\>=a/p>. Possiamo dividere perché lavoriamo in un campo e il
+  pivot non è nullo. Il metodo di Gauss ripete questa decisione su rettangoli
+  sempre più piccoli:
 
   <\enumerate>
     <item>Nel rettangolo ancora da sistemare, cerca la prima colonna non
@@ -2784,12 +3007,12 @@
     colonna.
   </enumerate>
 
-  Le righe già sistemate restano scritte; non si cancellano. A ogni pivot il
-  rettangolo perde una riga e almeno una colonna. Ci sono soltanto un numero
-  finito di righe e colonne: il procedimento termina.
-
-  Gli zeri creati a sinistra dei nuovi pivot restano zero, perché le righe
-  usate nei passi successivi hanno zero in quelle posizioni.
+  Le righe già sistemate restano al loro posto e non vengono più toccate. A
+  ogni nuovo pivot il rettangolo da sistemare perde una riga e almeno una
+  colonna, e poiché righe e colonne sono in numero finito il procedimento
+  prima o poi termina. Inoltre gli zeri già ottenuti non vengono rovinati,
+  perché le righe usate nei passi successivi hanno zeri in tutte le posizioni
+  a sinistra del rettangolo.
 
   <figura|<image|assets/gauss-passi.pdf|139.5mm|33.8mm||>|Il rettangolo
   grigio è la parte ancora da sistemare. Ogni nuovo pivot riduce il lavoro
@@ -2797,33 +3020,34 @@
 
   <subsection|Una riduzione svolta>
 
-  Vediamo tutte le scelte su un esempio reale:
+  Vediamo il metodo all'opera su un sistema reale, seguendo ogni scelta:
 
   <\equation*>
     (A\|b)=<matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|2>|<cell|3>|<cell|1>|<cell|3>>>>>.
   </equation*>
 
-  La prima entrata è zero, ma nella prima colonna ci sono elementi non nulli.
-  Scambiamo <math|R<rsub|1>> e <math|R<rsub|2>>, scegliendo il pivot 1.
-  Otteniamo
+  La prima entrata è zero, ma nella prima colonna ci sono elementi non nulli,
+  quindi possiamo procurarci un pivot con uno scambio. Scambiamo le prime due
+  righe e scegliamo come pivot l'1 che arriva in cima:
 
   <\equation*>
     <matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|2>|<cell|3>|<cell|1>|<cell|3>>>>>.
   </equation*>
 
-  Sotto il pivot la seconda riga ha già zero; la terza ha 2. Facciamo
-  <math|R<rsub|3>\<leftarrow\>R<rsub|3>-2R<rsub|1>>.
-
-  Poi nel rettangolo rimasto il pivot è l'1 della seconda riga. Per eliminare
-  il <math|-1> sotto di esso sommiamo la seconda riga alla terza:
+  Sotto il pivot la seconda riga ha già uno zero, mentre la terza ha un 2,
+  che eliminiamo con <math|R<rsub|3>\<leftarrow\>R<rsub|3>-2R<rsub|1>>. Nel
+  rettangolo che resta il nuovo pivot è l'1 della seconda riga, e per
+  eliminare il <math|-1> che compare sotto di esso sommiamo la seconda riga
+  alla terza:
 
   <\equation*>
     <matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|-1>|<cell|-1>|<cell|-1>>>>><space|1em>\<rightarrow\><space|1em><matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|0>>>>>.
   </equation*>
 
-  La terza riga dice <math|0=0>, quindi non impone altri vincoli. Poniamo
-  <math|x<rsub|3>=t>. La seconda riga dà <math|x<rsub|2>=1-t>; la prima dà
-  <math|x<rsub|1>=2-2(1-t)-t=t>. Tutte le soluzioni sono
+  La terza riga è diventata <math|0=0> e non impone più nulla. La variabile
+  <math|x<rsub|3>> è libera, e poniamo <math|x<rsub|3>=t>. La seconda riga dà
+  <math|x<rsub|2>=1-t>, e la prima dà <math|x<rsub|1>=2-2(1-t)-t=t>. Tutte le
+  soluzioni sono quindi
 
   <\equation*>
     x=(0,1,0)<rsup|T>+t(1,-1,1)<rsup|T>,<space|1em>t\<in\>\<bbb-R\>.
@@ -2831,91 +3055,97 @@
 
   <subsection|Leggere e controllare le soluzioni>
 
-  Controlliamo nel sistema originale: <math|x<rsub|2>+x<rsub|3>=1>,
-  <math|x<rsub|1>+2x<rsub|2>+x<rsub|3>=2>,
-  <math|2x<rsub|1>+3x<rsub|2>+x<rsub|3>=3>. Sostituendo la formula, il
-  parametro si cancella in ciascuna equazione. Vediamo anche la struttura del
-  capitolo precedente: una soluzione particolare più un multiplo di un
-  vettore del nucleo.
+  Conviene sempre controllare il risultato nel sistema di partenza, che è
+  <math|x<rsub|2>+x<rsub|3>=1>, <math|x<rsub|1>+2x<rsub|2>+x<rsub|3>=2> e
+  <math|2x<rsub|1>+3x<rsub|2>+x<rsub|3>=3>. Sostituendo la formula, in ogni
+  equazione il parametro <math|t> si cancella e restano uguaglianze vere. La
+  risposta ha la forma che ci aspettavamo dal capitolo precedente, cioè una
+  soluzione particolare più i multipli di un vettore del nucleo.
 
   <section|Contare i parametri e costruire una base del nucleo>
 
   Se un sistema a scala compatibile ha <math|n> incognite e <math|k> pivot
-  nella parte dei coefficienti, ci sono <math|n-k> variabili libere. Ogni
-  scelta di quei valori determina una e una sola soluzione: l'esistenza viene
-  dalla sostituzione all'indietro e l'unicità dal fatto che a ogni passo si
-  divide per un pivot non nullo.
+  nella parte dei coefficienti, le variabili libere sono <math|n-k>. Ogni
+  scelta dei loro valori determina una e una sola soluzione. L'esistenza
+  viene dalla risalita dal basso, e l'unicità dal fatto che a ogni passo
+  ricaviamo una variabile pivot dividendo per un pivot non nullo, senza
+  nessuna scelta. Su un campo infinito basta quindi una variabile libera per
+  avere infinite soluzioni. Su un campo con <math|q> elementi le soluzioni
+  sono esattamente <math|q<rsup|n-k>>. Quando <math|k=n> non ci sono
+  parametri da scegliere, e la soluzione è unica.
 
-  Su un campo infinito, almeno una variabile libera dà infinite soluzioni. Su
-  un campo con <math|q> elementi, le scelte sono esattamente
-  <math|q<rsup|n-k>>. Quando <math|k=n>, l'unica scelta è quella senza
-  parametri e la soluzione è unica.
-
-  Un esempio con due parametri, tratto dalla lezione del 22 ottobre, è
+  Vediamo un esempio con due parametri:
 
   <\equation*>
     x<rsub|1>+x<rsub|2>-x<rsub|3>+2x<rsub|4>=2,<space|1em>x<rsub|3>+x<rsub|4>=-1.
   </equation*>
 
-  I pivot sono nelle colonne 1 e 3. Scegliamo <math|x<rsub|2>=s>,
-  <math|x<rsub|4>=t>. L'ultima equazione dà <math|x<rsub|3>=-1-t>; la prima
-  dà <math|x<rsub|1>=2-s+(-1-t)-2t=1-s-3t>. Raccogliendo:
+  I pivot sono nelle colonne 1 e 3, quindi le variabili libere sono
+  <math|x<rsub|2>=s> e <math|x<rsub|4>=t>. L'ultima equazione dà
+  <math|x<rsub|3>=-1-t>, e la prima dà <math|x<rsub|1>=2-s+(-1-t)-2t=1-s-3t>.
+  Raccogliendo i termini con lo stesso parametro troviamo
 
   <\equation*>
     x=(1,0,-1,0)<rsup|T>+s(-1,1,0,0)<rsup|T>+t(-3,0,-1,1)<rsup|T>.
   </equation*>
 
-  Togliendo la soluzione particolare, i due vettori che moltiplicano
-  <math|s,t> formano una base del nucleo.
+  Il primo vettore è una soluzione particolare, e i due vettori che
+  moltiplicano <math|s> e <math|t> generano il nucleo. Sono anche
+  indipendenti, e il motivo si legge nelle componenti libere. Nella
+  componente 2 soltanto il primo dei due vettori ha un 1, e nella componente
+  4 soltanto il secondo. In una combinazione nulla queste due componenti
+  obbligano quindi entrambi i coefficienti a essere zero.
 
-  Perché sono indipendenti? Nella componente 2 soltanto il primo ha un 1;
-  nella componente 4 soltanto il secondo ha un 1. Una combinazione nulla
-  obbliga quindi entrambi i coefficienti a essere zero.
-
-  La stessa giustificazione vale in generale. Nel sistema omogeneo assegniamo
-  a turno il valore 1 a una variabile libera e 0 alle altre; ricaviamo le
-  pivot. I vettori ottenuti generano tutte le soluzioni e, guardando le
-  componenti libere, sono indipendenti. Otteniamo così una base, non soltanto
-  una lista di generatori.
+  Lo stesso ragionamento funziona sempre. Nel sistema omogeneo diamo a turno
+  il valore 1 a una variabile libera e il valore 0 a tutte le altre, e
+  ricaviamo le variabili pivot. I vettori così ottenuti generano tutte le
+  soluzioni, e guardando le componenti libere si vede che sono indipendenti.
+  Otteniamo dunque una base del nucleo, e non soltanto un insieme di
+  generatori.
 
   <section|Dalle equazioni ai generatori, e viceversa>
 
+  Un sottospazio si può descrivere con delle equazioni, che dicono quali
+  vettori sono ammessi, oppure con dei generatori, che dicono come
+  costruirli. Gauss permette di passare da una descrizione all'altra.
   Consideriamo <math|W\<subseteq\>\<bbb-R\><rsup|4>> definito dalle equazioni
   <math|x<rsub|1>+x<rsub|2>+x<rsub|3>+x<rsub|4>=0> e
-  <math|x<rsub|3>-x<rsub|4>=0>. Sono già a scala. Con <math|x<rsub|2>=s> e
-  <math|x<rsub|4>=t> otteniamo <math|x<rsub|3>=t>, <math|x<rsub|1>=-s-2t>.
-  Dunque
+  <math|x<rsub|3>-x<rsub|4>=0>, che sono già a scala. Con <math|x<rsub|2>=s>
+  e <math|x<rsub|4>=t> otteniamo <math|x<rsub|3>=t> e <math|x<rsub|1>=-s-2t>,
+  e quindi
 
   <\equation*>
     W=<math-up|span>((-1,1,0,0)<rsup|T>,(-2,0,1,1)<rsup|T>).
   </equation*>
 
-  I due vettori sono indipendenti guardando le componenti libere, perciò sono
-  una base e <math|dim W=2>. Abbiamo tradotto condizioni in possibilità di
-  costruzione.
+  Le componenti libere mostrano che i due vettori sono indipendenti, quindi
+  formano una base e <math|dim W=2>. Abbiamo così trasformato delle
+  condizioni in istruzioni di costruzione.
 
   <subsection|Dai generatori a un'equazione>
 
-  Per fare il percorso inverso, supponiamo di conoscere i generatori
-  <math|v<rsub|1>=(1,-1,0)<rsup|T>> e <math|v<rsub|2>=(0,1,-1)<rsup|T>>. Un
-  vettore generico <math|w=(x,y,z)<rsup|T>> sta nel loro span se esistono
-  coefficienti <math|a,b> con <math|a*v<rsub|1>+b*v<rsub|2>=w>. La matrice
-  completa è
+  Ora facciamo il percorso inverso. Supponiamo di conoscere i generatori
+  <math|v<rsub|1>=(1,-1,0)<rsup|T>> e <math|v<rsub|2>=(0,1,-1)<rsup|T>> e di
+  voler trovare un'equazione del loro span. Un vettore generico
+  <math|w=(x,y,z)<rsup|T>> sta nello span quando esistono coefficienti
+  <math|a,b> con <math|a*v<rsub|1>+b*v<rsub|2>=w>. Questo è un sistema nelle
+  incognite <math|a,b>, con matrice completa
 
   <\equation*>
     <matrix|<tformat|<cwith|1|-1|3|3|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|0>|<cell|x>>|<row|<cell|-1>|<cell|1>|<cell|y>>|<row|<cell|0>|<cell|-1>|<cell|z>>>>>.
   </equation*>
 
-  Sommiamo la prima riga alla seconda; poi sommiamo la nuova seconda riga
-  alla terza. Otteniamo
+  Sommiamo la prima riga alla seconda, e poi la nuova seconda riga alla
+  terza. Otteniamo
 
   <\equation*>
     <matrix|<tformat|<cwith|1|-1|3|3|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|0>|<cell|x>>|<row|<cell|0>|<cell|1>|<cell|x+y>>|<row|<cell|0>|<cell|0>|<cell|x+y+z>>>>>.
   </equation*>
 
-  L'ultima equazione impone <math|x+y+z=0>. Se vale, le prime due determinano
-  <math|a=x>, <math|b=x+y>; quindi la condizione è anche sufficiente. Abbiamo
-  trovato esattamente il piano
+  L'ultima riga dice che il sistema è compatibile soltanto se <math|x+y+z=0>.
+  Questa condizione è anche sufficiente, perché quando vale le prime due
+  righe determinano <math|a=x> e <math|b=x+y>. Abbiamo quindi trovato
+  esattamente il piano
 
   <\equation*>
     <math-up|span>(v<rsub|1>,v<rsub|2>)=<around|{|(x,y,z)<rsup|T>:x+y+z=0|}>.
@@ -2925,15 +3155,15 @@
   descritto da due generatori indipendenti oppure dall'equazione
   <math|x+y+z=0>. Gauss permette di passare da una descrizione all'altra.>
 
-  Questo collega anche le operazioni sui sottospazi. Per trovare
-  un'intersezione, imponiamo insieme le equazioni dei due sottospazi e
-  risolviamo il sistema omogeneo.
-
-  Per trovare una somma, riuniamo i generatori. Se serve una base della
-  somma, eliminiamo i generatori superflui: possiamo verificarli uno alla
-  volta risolvendo un sistema di appartenenza allo span dei precedenti. La
-  scelta degli indici pivot, giustificata nel capitolo successivo, rende più
-  rapido questo passaggio.
+  Poter passare da una descrizione all'altra rende semplici anche le
+  operazioni sui sottospazi, purché si scelga la descrizione giusta. Per
+  un'intersezione conviene avere le equazioni, perché basta imporre insieme
+  quelle dei due sottospazi e risolvere il sistema omogeneo. Per una somma
+  conviene avere i generatori, perché basta metterli insieme. Se poi della
+  somma serve una base, togliamo i generatori superflui. Possiamo
+  controllarli uno alla volta, chiedendoci con un sistema se ciascuno stia
+  nello span dei precedenti, oppure usare la scorciatoia delle colonne pivot,
+  che giustificheremo nel prossimo capitolo.
 
   <\verifica|9>
     <strong|9.1.> Risolvi il sistema reale con matrice completa
@@ -2951,23 +3181,29 @@
   <chapter|Rango, Rouché\<#2013\>Capelli e matrici elementari>
 
   <\inbreve>
-    Quali informazioni conserva Gauss mentre cambia le righe? Dal nucleo e
-    dall'immagine sappiamo già che cosa misura il rango. Ora lo leggeremo nei
-    pivot e collegheremo compatibilità, righe, colonne e invertibilità.
+    Il metodo di Gauss cambia continuamente le righe di una matrice, eppure
+    qualcosa resta sempre uguale, ed è quel qualcosa che ci interessa. In
+    quest'ultimo capitolo scopriamo che il rango si legge contando i pivot, e
+    che con lui si decide se un sistema ha soluzioni, quante ne ha e se una
+    matrice si può invertire. Alla fine vedremo che ogni mossa di Gauss è a
+    sua volta una moltiplicazione per una matrice, e questo chiuderà il
+    cerchio fra calcoli e struttura.
   </inbreve>
 
   <section|Rouché\<#2013\>Capelli: quando esistono soluzioni>
 
-  Prendiamo due colonne che generano un piano. Se aggiungiamo un vettore del
-  piano, non otteniamo nuove direzioni; se ne aggiungiamo uno fuori, lo
-  spazio generato cresce. È la domanda già incontrata per <math|A*x=b>:
-  possiamo costruire <math|b> con le colonne che abbiamo?
+  Prendiamo due colonne che generano un piano e aggiungiamone una terza. Se
+  la nuova colonna sta nel piano non porta direzioni nuove, e lo span resta
+  lo stesso. Se invece esce dal piano, lo span cresce. Questa osservazione
+  risponde alla domanda che ci accompagna da due capitoli, cioè se si possa
+  costruire <math|b> con le colonne di <math|A>.
 
-  Per esempio, le colonne <math|(1,0,0)<rsup|T>> e <math|(0,1,0)<rsup|T>>
-  generano il piano <math|z=0>. Aggiungere <math|b=(2,3,0)<rsup|T>> lascia il
-  rango uguale a 2: i coefficienti 2 e 3 risolvono il sistema. Aggiungere
-  <math|b=(0,0,1)<rsup|T>> porta invece il rango a 3: nessuna combinazione
-  delle colonne iniziali può produrre la terza componente 1.
+  Le colonne <math|(1,0,0)<rsup|T>> e <math|(0,1,0)<rsup|T>>, per esempio,
+  generano il piano <math|z=0>. Se aggiungiamo <math|b=(2,3,0)<rsup|T>> il
+  rango resta 2, e infatti i coefficienti 2 e 3 risolvono il sistema. Se
+  aggiungiamo <math|b=(0,0,1)<rsup|T>> il rango sale a 3, e nessuna
+  combinazione delle colonne di partenza può produrre una terza componente
+  uguale a 1.
 
   <\concetto|Teorema di Rouché\<#2013\>Capelli>
     Per <math|A\<in\>M<rsub|m,n>(K)> e <math|b\<in\>K<rsup|m>>, il sistema
@@ -2978,164 +3214,162 @@
     </equation*>
   </concetto>
 
-  Scriviamo <math|U> per lo span delle colonne di <math|A> e <math|U'> per
-  quello delle colonne di <math|(A\|b)>. Abbiamo sempre
-  <math|U\<subseteq\>U'>.
+  Chiamiamo <math|U> lo span delle colonne di <math|A> e <math|U'> lo span
+  delle colonne di <math|(A\|b)>. Poiché <math|U'> ha una colonna in più,
+  vale sempre <math|U\<subseteq\>U'>. Se il sistema è compatibile, <math|b>
+  sta in <math|U>. In ogni combinazione di colonne di <math|(A\|b)> possiamo
+  allora sostituire <math|b> con la sua espressione in termini delle colonne
+  di <math|A>, e otteniamo una combinazione delle sole colonne di <math|A>.
+  Quindi <math|U'=U> e i due ranghi coincidono.
 
-  Se il sistema è compatibile, <math|b\<in\>U>: sostituendo a <math|b> una
-  sua combinazione delle colonne, ogni combinazione in <math|U'> diventa una
-  combinazione in <math|U>. Quindi <math|U'=U> e i ranghi coincidono.
-
-  Viceversa, se i ranghi coincidono, <math|U,U'> sono sottospazi di
-  dimensione finita uguale, con <math|U\<subseteq\>U'>. Per il risultato del
-  capitolo 6, sono uguali. In particolare <math|b\<in\>U'> appartiene a
-  <math|U>, quindi è una combinazione delle colonne di <math|A>. Il sistema è
-  compatibile.
+  Viceversa, supponiamo che i ranghi siano uguali. Allora <math|U> e
+  <math|U'> sono sottospazi della stessa dimensione finita, uno contenuto
+  nell'altro, e il capitolo 6 ci dice che in questo caso coincidono. In
+  particolare <math|b>, che sta in <math|U'>, sta anche in <math|U>, cioè è
+  una combinazione delle colonne di <math|A>, e il sistema è compatibile.
 
   <figura|<image|assets/rouche.pdf|135.0mm|47.2mm||>|Il sistema è compatibile
   quando aggiungere <math|b> lascia invariata la dimensione dello spazio
   delle colonne. Nel caso illustrato il rango resta 2 se <math|b> è nel
   piano; sale a 3 se ne esce.>
 
-  Il criterio decide l'esistenza. Per l'unicità serve anche il nucleo: se il
-  rango comune è <math|r>, un sistema compatibile ha <math|n-r> parametri
-  liberi, perché <math|dim ker F<rsub|A>=n-r>. Le informazioni lavorano
-  insieme: prima confrontiamo i ranghi, poi sottraiamo dal numero delle
-  incognite.
+  Il teorema ci dice se le soluzioni esistono, ma non quante sono. Per questo
+  serve il nucleo. Se il rango comune è <math|r>, il nucleo ha dimensione
+  <math|n-r>, e un sistema compatibile ha quindi <math|n-r> parametri liberi.
+  In pratica procediamo in due tempi. Prima confrontiamo i due ranghi per
+  sapere se ci sono soluzioni, poi sottraiamo il rango dal numero delle
+  incognite per sapere quante dimensioni ha la famiglia delle soluzioni.
 
   <section|Perché il rango è il numero di pivot>
 
-  Cominciamo con una riduzione concreta. Le mosse
+  Il teorema è utile solo se sappiamo calcolare il rango, e Gauss ce lo
+  permette. Cominciamo da un esempio. Con le mosse
   <math|R<rsub|2>\<leftarrow\>R<rsub|2>-2R<rsub|1>>,
   <math|R<rsub|3>\<leftarrow\>R<rsub|3>-R<rsub|1>> e poi
-  <math|R<rsub|3>\<leftarrow\>R<rsub|3>-R<rsub|2>> portano da <math|A> a
-  <math|S>:
+  <math|R<rsub|3>\<leftarrow\>R<rsub|3>-R<rsub|2>> passiamo da <math|A> alla
+  forma a scala <math|S>:
 
   <\equation*>
     A=<matrix|<tformat|<table|<row|<cell|1>|<cell|2>|<cell|3>>|<row|<cell|2>|<cell|5>|<cell|7>>|<row|<cell|1>|<cell|3>|<cell|4>>>>>,<space|2em>S=<matrix|<tformat|<table|<row|<cell|1>|<cell|2>|<cell|3>>|<row|<cell|0>|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|0>>>>>.
   </equation*>
 
-  In <math|S> i pivot sono nelle colonne 1 e 2. Le due colonne
+  In <math|S> i pivot stanno nelle colonne 1 e 2. Le colonne
   <math|S<rsub|1>=(1,0,0)<rsup|T>> e <math|S<rsub|2>=(2,1,0)<rsup|T>> sono
-  indipendenti. Nella relazione <math|\<alpha\>S<rsub|1>+\<beta\>S<rsub|2>=0>
-  leggiamo prima la seconda componente: dà <math|\<beta\>=0>. La prima dà poi
-  <math|\<alpha\>=0>.
-
-  La terza colonna è <math|S<rsub|3>=S<rsub|1>+S<rsub|2>>. Le prime due
-  formano dunque una base dello spazio delle colonne: il rango è 2, come il
-  numero dei pivot.
+  indipendenti, perché in una relazione <math|\<alpha\>S<rsub|1>+\<beta\>S<rsub|2>=0>
+  la seconda componente dà <math|\<beta\>=0> e poi la prima dà
+  <math|\<alpha\>=0>. La terza colonna è <math|S<rsub|3>=S<rsub|1>+S<rsub|2>>,
+  quindi le prime due bastano a generare tutte le colonne. Il rango di
+  <math|S> è 2, come il numero dei suoi pivot.
 
   <subsection|Perché le colonne pivot sono indipendenti>
 
-  Prendiamo ora una matrice <math|S> già a scala, con <math|k> righe non
-  nulle e pivot nelle colonne <math|j<rsub|1>\<less\>\<cdots\>\<less\>j<rsub|k>>.
-  Le sue colonne pivot sono indipendenti. Ripetiamo la lettura dal basso
-  fatta nell'esempio.
+  Vediamo che lo stesso accade per ogni matrice a scala <math|S>, con
+  <math|k> righe non nulle e pivot nelle colonne
+  <math|j<rsub|1>\<less\>\<cdots\>\<less\>j<rsub|k>>. Come nell'esempio,
+  leggiamo dal basso. Supponiamo che una combinazione delle colonne pivot
+  valga zero e guardiamo la riga <math|k>. Lì le prime <math|k-1> colonne
+  pivot hanno uno zero, mentre l'ultima ha il pivot <math|p<rsub|k>\<neq\>0>,
+  e quindi il coefficiente dell'ultima colonna deve essere zero. Nella riga
+  <math|k-1> resta allora soltanto il penultimo coefficiente moltiplicato per
+  il suo pivot, che quindi è anch'esso zero. Risalendo riga per riga
+  annulliamo tutti i coefficienti.
 
-  Per vederlo, supponiamo una loro combinazione nulla e guardiamo la riga
-  <math|k>: le prime <math|k-1> colonne pivot hanno lì zero, mentre l'ultima
-  ha il pivot <math|p<rsub|k>\<neq\>0>. Il coefficiente dell'ultima colonna
-  deve essere zero. Nella riga <math|k-1> resta allora soltanto il penultimo
-  coefficiente moltiplicato per il suo pivot: anch'esso è zero. Risalendo li
-  annulliamo tutti.
+  <subsection|Perché bastano e perché il rango non cambia>
 
-  <subsection|Perché bastano e perché il rango si conserva>
+  Le colonne pivot sono anche abbastanza. Tutte le colonne di <math|S> hanno
+  zeri dalla componente <math|k+1> in poi, quindi stanno nel sottospazio
+  <math|<math-up|span>(e<rsub|1>,\<ldots\>,e<rsub|k>)>, che ha dimensione
+  <math|k>. Le <math|k> colonne pivot sono indipendenti in questo spazio e
+  quindi ne formano una base, e in particolare generano tutte le altre
+  colonne. Abbiamo dimostrato che <math|<math-up|rank>(S)=k>. Se <math|S=0>,
+  lo span delle colonne è nullo e il risultato vale con <math|k=0>.
 
-  Tutte le colonne di <math|S> hanno zero nelle componenti dalla <math|k+1>
-  in poi. Stanno quindi nel sottospazio <math|<math-up|span>(e<rsub|1>,\<ldots\>,e<rsub|k>)>,
-  di dimensione <math|k>.
-
-  Le <math|k> colonne pivot, indipendenti in quello spazio, ne formano una
-  base. Generano perciò tutte le altre colonne. Abbiamo dimostrato
-  <math|<math-up|rank>(S)=k>. Se <math|S=0>, lo spazio delle colonne è nullo
-  e il risultato vale con <math|k=0>.
-
-  Rimane il punto delicato: perché il rango della matrice iniziale <math|A> è
-  lo stesso? Le operazioni di riga possono cambiare lo span delle colonne;
-  non possiamo dire che gli spazi siano uguali.
-
-  Possiamo però usare qualcosa che sappiamo restare uguale: le soluzioni del
-  sistema omogeneo. Se Gauss porta <math|A> in <math|S>, allora <math|ker
-  F<rsub|A>=ker F<rsub|S>>. Il teorema rango\<#2013\>nullità dà
+  Resta il punto più delicato. Perché la matrice di partenza <math|A> ha lo
+  stesso rango di <math|S>? Non possiamo dire che i due span delle colonne
+  coincidano, perché abbiamo visto che le operazioni di riga possono
+  cambiarli. C'è però qualcosa che sappiamo restare uguale, cioè le soluzioni
+  del sistema omogeneo. Se Gauss porta <math|A> in <math|S>, allora <math|ker
+  F<rsub|A>=ker F<rsub|S>>, e il teorema rango\<#2013\>nullità dà
 
   <\equation*>
     n-<math-up|rank>(A)=dim ker F<rsub|A>=dim ker
     F<rsub|S>=n-<math-up|rank>(S).
   </equation*>
 
-  Sottraendo, i ranghi coincidono. Dunque <strong|il rango di una matrice è
-  il numero dei pivot di qualunque sua forma a scala>. La dimostrazione non
-  ha usato l'uguaglianza tra rango per righe e per colonne: la dimostreremo
-  adesso.
+  Quindi i due ranghi coincidono, e possiamo concludere che <strong|il rango
+  di una matrice è il numero dei pivot di una qualsiasi sua forma a scala>.
+  Nella dimostrazione non abbiamo usato il fatto che righe e colonne abbiano
+  lo stesso rango, un fatto che dimostriamo adesso.
 
   <section|Rango per righe e rango per colonne>
 
-  In una matrice <math|m\<times\>n> le righe sono vettori di
-  <math|K<rsup|n>>, le colonne di <math|K<rsup|m>>. I loro span possono
-  vivere in spazi diversi. Eppure hanno la stessa dimensione.
+  In una matrice <math|m\<times\>n> le righe sono vettori di <math|K<rsup|n>>
+  e le colonne sono vettori di <math|K<rsup|m>>. I loro span vivono quindi in
+  spazi diversi, ed è sorprendente che abbiano sempre la stessa dimensione.
 
-  Riguardiamo la matrice <math|S> appena calcolata. Le righe non nulle sono
+  Guardiamo di nuovo la matrice <math|S>. Le sue righe non nulle sono
   <math|r<rsub|1>=(1,2,3)> e <math|r<rsub|2>=(0,1,1)>. Se
   <math|\<alpha\>r<rsub|1>+\<beta\>r<rsub|2>=0>, la prima componente dà
-  <math|\<alpha\>=0>; la seconda dà poi <math|\<beta\>=0>.
+  <math|\<alpha\>=0> e poi la seconda dà <math|\<beta\>=0>. Per le colonne
+  avevamo letto dal basso, per le righe leggiamo da sinistra, e in entrambi i
+  casi troviamo due vettori indipendenti.
 
-  Per le colonne avevamo letto dal basso; per le righe cominciamo da
-  sinistra. Otteniamo in entrambi i casi due vettori indipendenti.
+  Lo stesso accade in ogni forma a scala <math|S>. Sappiamo già che lo span
+  delle colonne ha dimensione <math|k>. Anche le <math|k> righe non nulle
+  sono indipendenti. In una loro combinazione nulla, la colonna del primo
+  pivot obbliga il coefficiente della prima riga a essere zero, perché sotto
+  quel pivot ci sono solo zeri. Tolto questo contributo, nella colonna del
+  secondo pivot deve annullarsi il secondo coefficiente, e proseguendo così
+  si annullano tutti. Le righe non nulle generano ovviamente lo span delle
+  righe, quindi anche il rango per righe di <math|S> è <math|k>.
 
-  Passiamo ora a una qualunque forma a scala <math|S>. Abbiamo appena
-  dimostrato che lo spazio delle colonne ha dimensione <math|k>.
+  Ora torniamo ad <math|A>. Le operazioni di riga non cambiano lo span delle
+  righe, come abbiamo visto nel capitolo 9, e non cambiano il rango per
+  colonne, come abbiamo appena dimostrato con il nucleo. Per <math|A>
+  entrambi i ranghi valgono quindi ancora <math|k>, e l'uguaglianza è
+  dimostrata.
 
-  Anche le <math|k> righe non nulle sono indipendenti: in una combinazione
-  nulla, la colonna del primo pivot obbliga il coefficiente della prima riga
-  a essere zero. Nella colonna del secondo pivot, tolto quel primo
-  contributo, deve annullarsi il secondo coefficiente. Proseguendo si
-  annullano tutti.
+  Ne seguono due conseguenze utili. La prima è che
+  <math|<math-up|rank>(A)\<leq\>min(m,n)>, perché il rango per colonne non
+  supera la dimensione <math|m> dello spazio in cui vivono le colonne, e il
+  rango per righe non supera <math|n>. La seconda è che
+  <math|<math-up|rank>(A<rsup|T>)=<math-up|rank>(A)>, perché trasporre
+  scambia righe e colonne.
 
-  Queste righe generano lo spazio delle righe, quindi anche il rango per
-  righe di <math|S> è <math|k>.
+  <subsection|Quali colonne scegliere nella matrice iniziale?>
 
-  Le operazioni di riga conservano lo span delle righe, come dimostrato nel
-  capitolo 9; conservano il rango per colonne, come appena dimostrato
-  mediante il nucleo. Tornando ad <math|A>, entrambi i ranghi rimangono
-  <math|k>. È provata l'uguaglianza.
+  Spesso vogliamo una base dello span delle colonne fatta di colonne della
+  matrice originale, e non della sua forma a scala. Nel nostro esempio vale
+  <math|A<rsub|3>=A<rsub|1>+A<rsub|2>>, esattamente come per <math|S>. Le
+  colonne <math|A<rsub|1>=(1,2,1)<rsup|T>> e <math|A<rsub|2>=(2,5,3)<rsup|T>>
+  sono indipendenti, perché le prime due componenti di una relazione nulla
+  danno <math|\<alpha\>+2\<beta\>=0> e <math|2\<alpha\>+5\<beta\>=0>, da cui
+  <math|\<beta\>=0> e <math|\<alpha\>=0>. Formano quindi una base dello span
+  delle colonne di <math|A>.
 
-  Ne seguono due fatti utili: <math|<math-up|rank>(A)\<leq\>min(m,n)> e
-  <math|<math-up|rank>(A<rsup|T>)=<math-up|rank>(A)>. Il primo viene dal
-  numero massimo di vettori indipendenti e dalla dimensione degli ambienti;
-  il secondo perché trasporre scambia righe e colonne.
-
-  <subsection|Quali colonne conservare nella matrice iniziale?>
-
-  Nel nostro esempio <math|A<rsub|3>=A<rsub|1>+A<rsub|2>>, esattamente come
-  per <math|S>. Le due colonne iniziali <math|A<rsub|1>=(1,2,1)<rsup|T>> e
-  <math|A<rsub|2>=(2,5,3)<rsup|T>> sono indipendenti: le prime due componenti
-  di una relazione nulla danno <math|\<alpha\>+2\<beta\>=0> e
-  <math|2\<alpha\>+5\<beta\>=0>, da cui <math|\<beta\>=\<alpha\>=0>. Sono
-  quindi una base dello spazio delle colonne di <math|A>.
-
-  Abbiamo scelto le colonne 1 e 2 in <math|S>, poi abbiamo preso le colonne
-  con gli stessi indici in <math|A>. Ecco la giustificazione generale. Gli
-  indici delle colonne pivot della forma a scala scelgono una base fra le
-  colonne <em|originali>.
-
-  Infatti <math|A*c=0\<Leftrightarrow\>S*c=0> per ogni colonna di
-  coefficienti <math|c>: tutte le relazioni lineari tra le colonne si
-  conservano. Le colonne pivot di <math|S> sono indipendenti e ogni altra
-  colonna è una loro combinazione.
-
-  Queste relazioni conservate giustificano la scelta delle corrispondenti
-  colonne di <math|A> come base.
+  Abbiamo scelto le colonne 1 e 2 guardando <math|S>, e poi abbiamo preso le
+  colonne con gli stessi indici in <math|A>. Il procedimento funziona sempre,
+  cioè gli indici delle colonne pivot della forma a scala individuano una
+  base fra le colonne <em|originali>. Il motivo è che per ogni colonna di
+  coefficienti <math|c> vale <math|A*c=0> se e solo se <math|S*c=0>, perché i
+  due sistemi omogenei hanno le stesse soluzioni. Ogni relazione lineare fra
+  le colonne di <math|A> vale quindi anche fra le colonne di <math|S> con gli
+  stessi coefficienti, e viceversa. In <math|S> le colonne pivot sono
+  indipendenti e ogni altra colonna è una loro combinazione, e queste stesse
+  relazioni valgono fra le colonne di <math|A>.
 
   <section|Matrici elementari: scrivere le mosse come prodotti>
 
-  Per combinare le righe di una matrice possiamo usare un'altra matrice a
-  sinistra. La riga <math|i> di <math|P*A> è la combinazione delle righe di
-  <math|A> con coefficienti dati dalla riga <math|i> di <math|P>. In
-  particolare <math|e<rsub|i><rsup|T>A> seleziona la riga <math|i>.
+  Le operazioni di riga si possono scrivere come moltiplicazioni. Quando
+  moltiplichiamo una matrice <math|A> a sinistra per una matrice <math|P>, la
+  riga <math|i> di <math|P*A> è la combinazione delle righe di <math|A> con i
+  coefficienti scritti nella riga <math|i> di <math|P>. Per esempio
+  <math|e<rsub|i><rsup|T>A> è proprio la riga <math|i> di <math|A>.
 
-  L'identità <math|I<rsub|m>> ha 1 sulla diagonale e zero altrove, quindi
-  lascia ferme tutte le righe. Cambiandone una o due otteniamo le tre
-  <strong|matrici elementari>:
+  La matrice identità <math|I<rsub|m>> ha 1 sulla diagonale e zero altrove, e
+  lascia ferme tutte le righe. Se la modifichiamo in una o due posizioni
+  otteniamo le tre <strong|matrici elementari>, una per ciascuna operazione
+  di riga:
 
   <\itemize>
     <item><math|P<rsub|i*j>> è l'identità con le righe <math|i,j> scambiate.
@@ -3154,97 +3388,109 @@
     <math|T<rsub|i*j>(-\<lambda\>)>.
   </itemize>
 
-  Usiamo <math|T<rsub|i*j>(\<lambda\>)> per distinguere la matrice che esegue
-  la mossa dalla matrice canonica <math|E<rsub|i*j>>. Per esempio
+  Scriviamo <math|T<rsub|i*j>(\<lambda\>)> per non confondere la matrice che
+  esegue la mossa con la matrice <math|E<rsub|i*j>> della base canonica. Ecco
+  un esempio:
 
   <\equation*>
     <matrix|<tformat|<table|<row|<cell|1>|<cell|0>>|<row|<cell|-4>|<cell|1>>>>><matrix|<tformat|<table|<row|<cell|1>|<cell|2>>|<row|<cell|4>|<cell|5>>>>>=<matrix|<tformat|<table|<row|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|-3>>>>>.
   </equation*>
 
-  La seconda riga è diventata la seconda meno quattro volte la prima.
-  Cambiando <math|-4> in 4 nella matrice a sinistra annulliamo la mossa.
+  La seconda riga è diventata la seconda meno quattro volte la prima, cioè
+  esattamente un passo di Gauss. Se nella matrice a sinistra mettiamo 4 al
+  posto di <math|-4>, otteniamo la mossa inversa.
 
-  Una matrice diagonale è invertibile se tutti gli elementi diagonali sono
-  non nulli: basta invertirli. Se uno è zero, il corrispondente vettore
-  canonico va a zero, impedendo l'invertibilità.
+  Le matrici <math|D<rsub|i>(\<lambda\>)> sono casi particolari di matrici
+  diagonali. Una matrice diagonale è invertibile quando tutti i suoi elementi
+  diagonali sono non nulli, perché basta invertirli uno per uno. Se invece un
+  elemento diagonale è zero, il vettore canonico corrispondente viene mandato
+  a zero e la matrice non può essere invertibile.
 
   <section|Invertibilità e gruppo lineare generale>
 
-  Una matrice quadrata <math|A> è <strong|invertibile> se esiste <math|B> con
-  <math|A*B=B*A=I>. Scriviamo <math|B=A<rsup|-1>>.
+  Una matrice quadrata <math|A> si dice <strong|invertibile> se esiste una
+  matrice <math|B> con <math|A*B=B*A=I>, e in questo caso scriviamo
+  <math|B=A<rsup|-1>>. L'inversa, se c'è, è una sola, perché se <math|B> e
+  <math|C> sono entrambe inverse di <math|A> allora <math|B=B(A*C)=(B*A)C=C>.
 
-  Il <strong|gruppo lineare generale> <math|<math-up|GL><rsub|m>(K)>
-  raccoglie le invertibili di ordine <math|m>. Il prodotto è associativo, ha
-  l'identità come neutro e rimane invertibile, perché
+  Le matrici invertibili di ordine <math|m> formano il <strong|gruppo lineare
+  generale> <math|<math-up|GL><rsub|m>(K)>. Il prodotto è associativo e ha
+  l'identità come elemento neutro. Inoltre il prodotto di due invertibili è
+  ancora invertibile, con
 
   <\equation*>
     (P*Q)<rsup|-1>=Q<rsup|-1>P<rsup|-1>.
   </equation*>
 
-  Infatti <math|(P*Q)(Q<rsup|-1>P<rsup|-1>)=P(Q*Q<rsup|-1>)P<rsup|-1>=I>; lo
-  stesso conto nell'altro ordine dà <math|I>.
+  Infatti <math|(P*Q)(Q<rsup|-1>P<rsup|-1>)=P(Q*Q<rsup|-1>)P<rsup|-1>=P*P<rsup|-1>=I>,
+  e lo stesso conto nell'altro ordine dà ancora <math|I>. L'ordine dei
+  fattori si inverte, perché per annullare due mosse dobbiamo disfare per
+  prima l'ultima. Per <math|m=1> il gruppo è semplicemente l'insieme degli
+  scalari non nulli. Per <math|m\<geq\>2> il prodotto non è commutativo, come
+  mostrano le matrici <math|P> e <math|Q> del capitolo 8, completate con
+  l'identità sulle eventuali altre coordinate.
 
-  L'inversa è unica: se <math|B,C> sono inverse di <math|A>, allora
-  <math|B=B(A*C)=(B*A)C=C>.
-
-  Per <math|m=1> otteniamo gli scalari non nulli. Per <math|m\<geq\>2> il
-  prodotto non è commutativo: usiamo le invertibili <math|P,Q> del capitolo
-  8, lasciando ferme le eventuali altre coordinate.
-
-  Se Gauss esegue prima la mossa <math|E<rsub|1>>, poi <math|E<rsub|2>>, fino
-  a <math|E<rsub|r>>, il risultato è
+  Ora possiamo tradurre Gauss in un prodotto. Se eseguiamo prima la mossa
+  <math|E<rsub|1>>, poi <math|E<rsub|2>> e così via fino a <math|E<rsub|r>>,
+  arriviamo a
 
   <\equation*>
     S=E<rsub|r>\<cdots\>E<rsub|2>E<rsub|1>A.
   </equation*>
 
-  La prima mossa è il fattore più vicino ad <math|A>. Il prodotto delle
-  elementari è invertibile, perché ogni fattore lo è.
+  La prima mossa è il fattore più vicino ad <math|A>, e il prodotto di tutte
+  le matrici elementari è invertibile perché ciascun fattore lo è.
 
   <strong|Criterio di invertibilità.> Per una matrice quadrata di ordine
   <math|m>, essere invertibile equivale ad avere rango <math|m>.
 
-  Se è invertibile, <math|A*x=0> implica <math|x=A<rsup|-1>0=0>;
-  rango\<#2013\>nullità dà rango <math|m>.
+  Se <math|A> è invertibile, da <math|A*x=0> segue <math|x=A<rsup|-1>0=0>. Il
+  nucleo è nullo, e per rango\<#2013\>nullità il rango è <math|m>.
 
-  Per l'altra direzione, se il rango è <math|m>, la forma a scala ha un pivot
-  in ogni riga e in ogni colonna. Possiamo dividere ogni riga per il pivot e,
-  risalendo dal basso, annullare anche gli elementi sopra i pivot. Arriviamo
-  a <math|I<rsub|m>>.
+  Per l'altra direzione, supponiamo che il rango sia <math|m>. Allora la
+  forma a scala ha un pivot in ogni riga e in ogni colonna. Possiamo dividere
+  ogni riga per il suo pivot e poi, risalendo dal basso, annullare anche le
+  entrate che stanno sopra i pivot, fino ad arrivare a <math|I<rsub|m>>. In
+  termini di prodotti abbiamo trovato un prodotto invertibile <math|E> di
+  matrici elementari con <math|E*A=I<rsub|m>>. Moltiplicando a sinistra per
+  <math|E<rsup|-1>> otteniamo <math|A=E<rsup|-1>>, che è invertibile, con
+  inversa <math|A<rsup|-1>=E>.
 
-  Dunque <math|E*A=I<rsub|m>> per un prodotto invertibile <math|E> di
-  elementari. Moltiplicando per <math|E<rsup|-1>> otteniamo
-  <math|A=E<rsup|-1>>: anche <math|A> è invertibile e <math|A<rsup|-1>=E>.
-
-  Lo stesso ragionamento mostra che <strong|ogni matrice invertibile è
-  prodotto di matrici elementari>: se <math|E<rsub|r>\<cdots\>E<rsub|1>A=I>,
-  allora <math|A=E<rsub|1><rsup|-1>\<cdots\>E<rsub|r><rsup|-1>>, e anche le
-  inverse sono elementari. \SGenerare\T qui significa ottenere per
-  <em|prodotti>, non per combinazioni lineari.
+  Lo stesso ragionamento dice qualcosa di più, cioè che <strong|ogni matrice
+  invertibile è prodotto di matrici elementari>. Se
+  <math|E<rsub|r>\<cdots\>E<rsub|1>A=I>, allora
+  <math|A=E<rsub|1><rsup|-1>\<cdots\>E<rsub|r><rsup|-1>>, e le inverse delle
+  elementari sono ancora elementari. Qui \Sgenerare\T significa ottenere
+  mediante <em|prodotti>, e non mediante combinazioni lineari.
 
   <subsection|Per proseguire: equivalenza e forma completamente ridotta>
 
-  Due matrici <math|A,B\<in\>M<rsub|m,n>(K)> sono <strong|equivalenti a
-  sinistra> se <math|B=P*A> con <math|P> invertibile. L'identità,
-  <math|A=P<rsup|-1>B> e <math|C=Q*B=Q*P*A> danno riflessività, simmetria e
-  transitività. Poiché le invertibili sono prodotti di elementari, equivale a
-  passare da <math|A> a <math|B> con mosse di riga.
+  Due matrici <math|A,B\<in\>M<rsub|m,n>(K)> si dicono <strong|equivalenti a
+  sinistra> se <math|B=P*A> per qualche matrice invertibile <math|P>. Si
+  tratta di una vera relazione di equivalenza. Ogni matrice è equivalente a
+  sé stessa tramite l'identità, da <math|B=P*A> segue <math|A=P<rsup|-1>B>, e
+  da <math|B=P*A> e <math|C=Q*B> segue <math|C=(Q*P)A>. Poiché le matrici
+  invertibili sono prodotti di elementari, due matrici sono equivalenti a
+  sinistra esattamente quando si passa dall'una all'altra con operazioni di
+  riga.
 
-  Una matrice a scala è <strong|completamente ridotta> se ogni pivot è 1 e le
-  altre entrate della sua colonna sono nulle. Dividiamo per i pivot e
-  annulliamo sopra di essi, dal basso: questo ne prova l'esistenza. In ogni
-  classe di equivalenza a sinistra questa forma è unica; riportiamo l'unicità
-  senza prova, come nel corso.
+  Una matrice a scala si dice <strong|completamente ridotta> se ogni pivot
+  vale 1 e tutte le altre entrate della sua colonna sono nulle. Per ottenerla
+  basta dividere ogni riga per il suo pivot e annullare le entrate sopra i
+  pivot risalendo dal basso, quindi una forma completamente ridotta esiste
+  sempre. In ogni classe di equivalenza a sinistra questa forma è anche
+  unica, un fatto che accettiamo senza dimostrazione.
 
-  L'<strong|equivalenza a destra> richiede <math|B=A*Q> con <math|Q>
-  invertibile. Corrisponde alle tre mosse sulle colonne: scambio, prodotto
-  per uno scalare non nullo, aggiunta di un multiplo di un'altra colonna. Per
-  esempio <math|A(I+\<lambda\>E<rsub|i*j>)> aggiunge <math|\<lambda\>> volte
-  la colonna <math|i> alla <math|j>. Identità, inversa e prodotto verificano
-  le tre proprietà come a sinistra.
-
-  Per mantenere le stesse incognite usiamo mosse di <em|riga> sulla matrice
-  completa. Le mosse di colonna richiedono un cambiamento di variabili.
+  In modo simile si definisce l'<strong|equivalenza a destra>, con
+  <math|B=A*Q> e <math|Q> invertibile. Moltiplicare a destra corrisponde alle
+  tre mosse sulle colonne, cioè scambiare due colonne, moltiplicarne una per
+  uno scalare non nullo e aggiungere a una colonna un multiplo di un'altra.
+  Per esempio <math|A(I+\<lambda\>E<rsub|i*j>)> aggiunge alla colonna
+  <math|j> la colonna <math|i> moltiplicata per <math|\<lambda\>>. Le tre
+  proprietà di relazione di equivalenza si verificano come nel caso a
+  sinistra. Quando risolviamo un sistema usiamo però sempre mosse di
+  <em|riga> sulla matrice completa, perché le mosse di colonna mescolerebbero
+  le incognite e richiederebbero un cambiamento di variabili.
 
   <\verifica|10>
     <strong|10.1.> Per quali <math|h\<in\>\<bbb-R\>> il sistema <math|x+y=1>,
@@ -3259,323 +3505,320 @@
 
   <appendix|Soluzioni ragionate>
 
-  Prova a scegliere un primo passo prima di leggere. Le soluzioni motivano le
-  scelte, svolgono i passaggi e controllano il risultato. I numeri richiamano
-  il capitolo e l'esercizio.
+  Prima di leggere una soluzione, prova almeno a scegliere il primo passo e a
+  chiederti perché proprio quello. Le soluzioni che seguono spiegano le
+  scelte, svolgono i passaggi e controllano sempre il risultato. Ogni numero
+  richiama il capitolo e l'esercizio corrispondenti.
 
   <section|Insiemi, applicazioni e campi>
 
-  <strong|1.1.> Il quadrato manda sia 1 sia <math|-1> in 1: non è iniettivo
-  su <math|\<bbb-R\>>.
+  <strong|1.1.> Il quadrato manda sia 1 sia <math|-1> nello stesso valore 1,
+  quindi su <math|\<bbb-R\>> non è iniettivo. È invece suriettivo sul
+  codominio <math|[0,+\<infty\>)>, perché per ogni <math|y\<geq\>0> il numero
+  <math|x=<sqrt|y>> soddisfa <math|x<rsup|2>=y>.
 
-  È invece suriettivo sul codominio <math|[0,+\<infty\>)>: dato
-  <math|y\<geq\>0>, il reale <math|x=<sqrt|y>> soddisfa <math|x<rsup|2>=y>.
-
-  Restringiamo il dominio a <math|[0,+\<infty\>)>. Se
+  Per renderlo iniettivo restringiamo il dominio a <math|[0,+\<infty\>)>. Se
   <math|x<rsup|2>=x'<rsup|2>> con <math|x,x'\<geq\>0>, allora
-  <math|(x-x')(x+x')=0>. Se <math|x+x'=0>, entrambi sono zero; altrimenti
-  <math|x-x'=0>. In entrambi i casi <math|x=x'>.
+  <math|(x-x')(x+x')=0>. Se <math|x+x'=0>, due numeri non negativi con somma
+  nulla sono entrambi zero; altrimenti deve essere <math|x-x'=0>. In tutti e
+  due i casi <math|x=x'>.
 
-  La restrizione è dunque biiettiva e la sua inversa è <math|g(y)=<sqrt|y>>.
-  Controlliamo le due composizioni: <math|(<sqrt|y>)<rsup|2>=y> per
-  <math|y\<geq\>0>, e <math|<sqrt|x<rsup|2>>=x> per <math|x\<geq\>0>. La
-  seconda uguaglianza spiega perché abbiamo ristretto il dominio.
+  La restrizione è quindi biiettiva, e la sua inversa è <math|g(y)=<sqrt|y>>.
+  Controlliamo le due composizioni. Da una parte <math|(<sqrt|y>)<rsup|2>=y>
+  per ogni <math|y\<geq\>0>, dall'altra <math|<sqrt|x<rsup|2>>=x> per ogni
+  <math|x\<geq\>0>. Questa seconda uguaglianza sarebbe falsa per
+  <math|x\<less\>0>, ed è il motivo per cui abbiamo ristretto il dominio.
 
-  <strong|1.2.> Da <math|a=-a> sommiamo <math|a> ai due membri e otteniamo
-  <math|2a=0>. Nei reali, 2 è non nullo: moltiplicando per <math|1/2> segue
-  <math|a=0>.
+  <strong|1.2.> Partendo da <math|a=-a> sommiamo <math|a> a entrambi i membri
+  e otteniamo <math|2a=0>. Nei reali il numero 2 non è nullo, quindi possiamo
+  moltiplicare per <math|1/2> e concludere <math|a=0>.
 
-  In <math|<math-up|F><rsub|2>> invece <math|1=-1>, perché <math|1+1=0>.
-  Quindi <math|a=1> è un controesempio alla conclusione. Il passaggio che
-  fallisce è la divisione per 2, che in questo campo è zero.
+  In <math|<math-up|F><rsub|2>> la conclusione non vale. Lì <math|1+1=0>,
+  cioè <math|1=-1>, e quindi <math|a=1> soddisfa <math|a=-a> senza essere
+  zero. Il passaggio che si rompe è la divisione per 2, perché in questo
+  campo 2 è uguale a zero.
 
   <section|Numeri complessi>
 
-  <strong|2.1.> Per rendere reale il denominatore usiamo il coniugato
-  <math|1-i>:
+  <strong|2.1.> Per rendere reale il denominatore moltiplichiamo numeratore e
+  denominatore per il coniugato <math|1-i>:
 
   <\equation*>
     <frac|2+i|1+i>=<frac|(2+i)(1-i)|2>=<frac|2-2i+i-i<rsup|2>|2>=<frac|3-i|2>.
   </equation*>
 
-  Verifichiamo nella direzione inversa: <math|((3-i)/2)(1+i)=(3+3i-i-i<rsup|2>)/2=(4+2i)/2=2+i>.
-  Non basta cambiare il segno nel denominatore: il coniugato moltiplica anche
-  il numeratore.
+  Per verificare moltiplichiamo il risultato per il denominatore, ottenendo
+  <math|((3-i)/2)(1+i)=(3+3i-i-i<rsup|2>)/2=(4+2i)/2=2+i>, che è il
+  numeratore di partenza. Notiamo che non basta cambiare il segno di <math|i>
+  nel denominatore, perché il coniugato va moltiplicato anche per il
+  numeratore.
 
-  <strong|2.2.> Per <math|z<rsup|4>=1> il modulo è 1 e gli argomenti sono
-  <math|k\<pi\>/2>, con <math|k=0,1,2,3>. Otteniamo <math|1,i,-1,-i>, vertici
-  di un quadrato sugli assi.
+  <strong|2.2.> Per <math|z<rsup|4>=1> le radici hanno modulo 1 e argomenti
+  <math|k\<pi\>/2>, con <math|k=0,1,2,3>. Sono quindi <math|1,i,-1,-i>, i
+  vertici di un quadrato con i vertici sugli assi.
 
-  Per <math|z<rsup|4>=-1> gli argomenti sono
-  <math|(\<pi\>+2k\<pi\>)/4=\<pi\>/4+k\<pi\>/2>. Il nuovo quadrato è ruotato
-  di <math|\<pi\>/4>, non di <math|\<pi\>>: l'angolo del termine noto è stato
-  diviso per 4.
+  Per <math|z<rsup|4>=-1> il modulo è ancora 1, ma l'argomento di partenza è
+  <math|\<pi\>>, e gli argomenti delle radici sono
+  <math|(\<pi\>+2k\<pi\>)/4=\<pi\>/4+k\<pi\>/2>. Il quadrato è lo stesso di
+  prima ruotato di <math|\<pi\>/4>, e non di <math|\<pi\>>, perché l'angolo
+  del termine noto viene diviso per 4.
 
-  Le radici sono i quattro numeri <math|(\<pm\>1\<pm\>i)/<sqrt|2>>, con segni
-  indipendenti. Il quadrato di ciascuno è <math|i> oppure <math|-i>, quindi
-  la quarta potenza è <math|-1>. La formula generale assicura che la lista è
-  completa.
+  Le radici sono i quattro numeri <math|(\<pm\>1\<pm\>i)/<sqrt|2>>, con i due
+  segni scelti in modo indipendente. Per controllarle basta osservare che il
+  quadrato di ciascuno è <math|i> oppure <math|-i>, e quindi la quarta
+  potenza è <math|-1>. La formula generale ci assicura che non ce ne sono
+  altre.
 
   <section|Polinomi e radici>
 
-  <strong|3.1.> Fattorizziamo il pezzo interno:
-  <math|z<rsup|2>+1=(z-i)(z+i)>. Quindi il polinomio dato è
-  <math|(z-i)<rsup|3>(z+i)<rsup|3>>. Ha due radici distinte, <math|i> e
-  <math|-i>, entrambe di molteplicità 3; la somma delle molteplicità è 6,
-  uguale al grado.
+  <strong|3.1.> Cominciamo fattorizzando il polinomio dentro la parentesi,
+  <math|z<rsup|2>+1=(z-i)(z+i)>. Il polinomio dato è allora
+  <math|(z-i)<rsup|3>(z+i)<rsup|3>>, che ha due radici distinte, <math|i> e
+  <math|-i>, entrambe di molteplicità 3. La somma delle molteplicità è 6,
+  uguale al grado, come deve essere.
 
-  Un polinomio reale che avesse radici <math|i>, <math|2i>, 1 dovrebbe avere
-  anche <math|-i> e <math|-2i>. Sono cinque valori distinti, troppi per un
-  polinomio di grado 3. La richiesta è impossibile.
+  Per la seconda domanda usiamo la simmetria dei polinomi reali. Se un
+  polinomio reale avesse le radici <math|i>, <math|2i> e 1, dovrebbe avere
+  anche le coniugate <math|-i> e <math|-2i>. Avrebbe quindi almeno cinque
+  radici distinte, troppe per un polinomio di grado 3, e la richiesta è
+  impossibile.
 
-  <strong|3.2.> Poiché i coefficienti sono reali, a <math|2+i> deve
-  accompagnarsi <math|2-i> con la stessa molteplicità 2. Le due radici
-  esauriscono già il grado 4.
-
-  Il prodotto dei loro fattori è <math|(z-(2+i))(z-(2-i))=z<rsup|2>-4z+5>.
-  Dunque il polinomio cercato è
+  <strong|3.2.> Poiché i coefficienti devono essere reali, insieme a
+  <math|2+i> deve comparire la coniugata <math|2-i>, con la stessa
+  molteplicità 2. Queste due radici doppie occupano già tutto il grado 4,
+  quindi non c'è posto per altre radici. Il prodotto dei due fattori lineari
+  è <math|(z-(2+i))(z-(2-i))=z<rsup|2>-4z+5>, e il polinomio cercato è
 
   <\equation*>
     P(z)=(z<rsup|2>-4z+5)<rsup|2>=z<rsup|4>-8z<rsup|3>+26z<rsup|2>-40z+25.
   </equation*>
 
-  È monico (coefficiente direttivo 1), reale e di grado 4. La fattorizzazione
-  mostra le due radici doppie; non resta spazio per altri fattori. Il
-  requisito \Smonico\T fissa il coefficiente e rende unico il polinomio.
+  È reale, ha grado 4 e coefficiente direttivo 1. Le radici sono determinate,
+  e la richiesta che il polinomio sia monico fissa anche la costante davanti,
+  quindi il polinomio è unico.
 
   <section|Spazi vettoriali e sottospazi>
 
-  <strong|4.1.> La valutazione nel punto 1 rispetta le due operazioni:
-  <math|(p+q)(1)=p(1)+q(1)> e <math|(\<alpha\>p)(1)=\<alpha\>p(1)>. Se
-  <math|p(1)=q(1)=0>, anche la somma vale zero in 1; così ogni multiplo. Il
-  polinomio nullo appartiene all'insieme. I tre controlli dimostrano che è un
-  sottospazio.
+  <strong|4.1.> La valutazione nel punto 1 rispetta entrambe le operazioni,
+  perché <math|(p+q)(1)=p(1)+q(1)> e <math|(\<alpha\>p)(1)=\<alpha\>p(1)>. Se
+  <math|p(1)=q(1)=0>, anche la somma vale zero in 1, e lo stesso vale per
+  ogni multiplo. Il polinomio nullo appartiene all'insieme, quindi i tre
+  controlli del criterio sono superati e l'insieme è un sottospazio.
 
-  L'insieme con <math|p(1)=2> non contiene il polinomio nullo, quindi non è
-  un sottospazio. Per esempio contiene il polinomio costante 2, ma non il suo
-  multiplo per zero.
+  L'insieme dei polinomi con <math|p(1)=2> invece non contiene il polinomio
+  nullo, e quindi non è un sottospazio. Contiene per esempio il polinomio
+  costante 2, ma non il suo multiplo per zero.
 
-  <strong|4.2.> Isoliamo <math|z=-x-y> e lasciamo liberi <math|x=s,y=t>. Ogni
-  soluzione si scrive
+  <strong|4.2.> L'equazione ci permette di ricavare <math|z=-x-y>, lasciando
+  liberi <math|x=s> e <math|y=t>. Ogni vettore di <math|H> si scrive allora
+  come
 
   <\equation*>
     (s,t,-s-t)=s(1,0,-1)+t(0,1,-1).
   </equation*>
 
-  Viceversa, questa espressione ha sempre somma delle tre componenti zero,
-  quindi non produce vettori estranei a <math|H>. Per <math|s=t=1> otteniamo
-  <math|(1,1,-2)>, che appartiene a <math|H>. Il controllo diretto
-  <math|1+1-2=0> conferma il risultato.
+  Questa formula non produce vettori estranei, perché la somma delle tre
+  componenti è sempre zero. Con <math|s=t=1> otteniamo <math|(1,1,-2)>, che
+  quindi appartiene a <math|H>, e il controllo diretto <math|1+1-2=0> lo
+  conferma.
 
   <section|Span, indipendenza e basi>
 
-  <strong|5.1.> Il secondo vettore è il doppio del primo. Ogni combinazione è
+  <strong|5.1.> Il secondo vettore è il doppio del primo, quindi ogni
+  combinazione è un multiplo di <math|(1,2)>:
 
   <\equation*>
     \<alpha\>(1,2)+\<beta\>(2,4)=(\<alpha\>+2\<beta\>)(1,2).
   </equation*>
 
-  Lo span è quindi la retta <math|{t(1,2):t\<in\>\<bbb-R\>}>.
-
-  La relazione <math|2(1,2)-(2,4)=0> è non banale, dunque i vettori sono
-  dipendenti.
-
-  Per il vettore richiesto abbiamo, per esempio, <math|(3,6)=3(1,2)+0(2,4)> e
-  <math|(3,6)=1(1,2)+1(2,4)>. La dipendenza permette proprio queste scritture
-  diverse.
+  Lo span è la retta <math|{t(1,2):t\<in\>\<bbb-R\>}>. I due vettori sono
+  dipendenti, perché la relazione <math|2(1,2)-(2,4)=0> ha coefficienti non
+  nulli. È questa dipendenza a permettere scritture diverse dello stesso
+  vettore, per esempio <math|(3,6)=3(1,2)+0(2,4)> e
+  <math|(3,6)=1(1,2)+1(2,4)>.
 
   <strong|5.2.> Cerchiamo <math|\<alpha\>,\<beta\>> con
-  <math|\<alpha\>(1,1)+\<beta\>(1,-1)=(5,-1)>. Le componenti impongono
-  <math|\<alpha\>+\<beta\>=5> e <math|\<alpha\>-\<beta\>=-1>. Sommandole
-  troviamo <math|2\<alpha\>=4>, quindi <math|\<alpha\>=2> e
-  <math|\<beta\>=3>.
-
-  Le coordinate sono <math|(2,3)>; ricostruendo,
+  <math|\<alpha\>(1,1)+\<beta\>(1,-1)=(5,-1)>, cioè
+  <math|\<alpha\>+\<beta\>=5> e <math|\<alpha\>-\<beta\>=-1>. Sommando le due
+  equazioni troviamo <math|2\<alpha\>=4>, quindi <math|\<alpha\>=2> e
+  <math|\<beta\>=3>. Le coordinate sono <math|(2,3)>, e infatti
   <math|2(1,1)+3(1,-1)=(5,-1)>.
 
-  Una famiglia contenente zero ha la relazione <math|1\<cdot\>0=0>, con
-  coefficienti nulli sugli altri vettori: non è indipendente, e quindi non è
-  una base.
+  Una famiglia che contiene il vettore nullo non può mai essere una base.
+  Basta prendere coefficiente 1 per lo zero e coefficiente 0 per tutti gli
+  altri vettori per ottenere una relazione non banale, quindi la famiglia non
+  è indipendente.
 
   <section|Dimensione e completamento>
 
-  <strong|6.1.> Dal teorema del fattore <math|p(2)=0> equivale a
-  <math|p=(X-2)q>, con <math|q> di grado al più 1, incluso zero. Scriviamo
-  <math|q=a+b*X>. Allora
+  <strong|6.1.> Per il teorema del fattore, la condizione <math|p(2)=0>
+  equivale a scrivere <math|p=(X-2)q> con <math|q> di grado al più 1, zero
+  compreso. Se poniamo <math|q=a+b*X>, otteniamo
 
   <\equation*>
-    p=a(X-2)+b*X(X-2).
+    p=a(X-2)+b*X(X-2),
   </equation*>
 
-  Quindi <math|(X-2,X(X-2))> genera <math|W>.
+  e quindi <math|X-2> e <math|X(X-2)> generano <math|W>. Sono anche
+  indipendenti. In una relazione <math|a(X-2)+b*X(X-2)=0> il coefficiente di
+  <math|X<rsup|2>> è <math|b>, che deve quindi essere zero, e poi in
+  <math|a(X-2)=0> il coefficiente di <math|X> è <math|a>, che deve essere
+  zero anch'esso. La famiglia è una base con due elementi, e <math|dim W=2>.
 
-  Per l'indipendenza, nella relazione <math|a(X-2)+b*X(X-2)=0> il
-  coefficiente di <math|X<rsup|2>> è <math|b>, che deve essere zero. Rimane
-  <math|a(X-2)=0>, il cui coefficiente di <math|X> è <math|a>, dunque
-  anch'esso è zero. La famiglia è una base di due elementi: <math|dim W=2>.
-
-  <strong|6.2.> Possiamo aggiungere <math|e<rsub|2>=(0,1)>. Da
-  <math|\<alpha\>(2,3)+\<beta\>(0,1)=(0,0)> la prima componente dà
-  <math|2\<alpha\>=0>, quindi <math|\<alpha\>=0>. La seconda dà allora
-  <math|\<beta\>=0>. I due vettori sono indipendenti e sono tanti quanti la
-  dimensione 2 del piano, quindi formano una base.
+  <strong|6.2.> Proviamo ad aggiungere <math|e<rsub|2>=(0,1)>. In una
+  relazione <math|\<alpha\>(2,3)+\<beta\>(0,1)=(0,0)> la prima componente dà
+  <math|2\<alpha\>=0>, cioè <math|\<alpha\>=0>, e la seconda dà allora
+  <math|\<beta\>=0>. I due vettori sono indipendenti e sono tanti quanto la
+  dimensione del piano, quindi formano una base.
 
   Quattro vettori di <math|\<bbb-R\><rsup|3>> sono invece più della
-  dimensione: se fossero indipendenti, il lemma di scambio imporrebbe
-  <math|4\<leq\>3>, impossibile. Dunque sono sempre dipendenti.
+  dimensione. Se fossero indipendenti, il lemma di scambio darebbe
+  <math|4\<leq\>3>, il che è impossibile, quindi sono sempre dipendenti.
 
   <section|Somme e formula di Grassmann>
 
-  <strong|7.1.> Scegliamo <math|W=<math-up|span>((1,-1))>. Le due rette sono
-  distinte e il sistema <math|\<alpha\>(1,1)=\<beta\>(1,-1)> dà
-  <math|\<alpha\>=\<beta\>> e <math|\<alpha\>=-\<beta\>>, quindi
-  <math|\<alpha\>=\<beta\>=0>: l'intersezione è nulla.
-
-  I due vettori formano la base studiata nel capitolo 5 e generano il piano.
-  Abbiamo quindi <math|\<bbb-R\><rsup|2>=U\<#2295\>W>. La scomposizione è
+  <strong|7.1.> Come supplementare scegliamo <math|W=<math-up|span>((1,-1))>.
+  Le due rette sono distinte, e il sistema
+  <math|\<alpha\>(1,1)=\<beta\>(1,-1)> impone sia <math|\<alpha\>=\<beta\>>
+  sia <math|\<alpha\>=-\<beta\>>, quindi <math|\<alpha\>=\<beta\>=0> e
+  l'intersezione è nulla. I due vettori formano inoltre la base già studiata
+  nel capitolo 5, quindi generano il piano e
+  <math|\<bbb-R\><rsup|2>=U\<#2295\>W>. La scomposizione richiesta è
 
   <\equation*>
     (3,1)=2(1,1)+1(1,-1)=(2,2)+(1,-1).
   </equation*>
 
-  È unica perché la differenza fra due primi addendi dovrebbe stare
-  nell'intersezione, che contiene soltanto zero.
+  È unica perché la differenza fra due possibili primi addendi dovrebbe stare
+  nell'intersezione, che contiene soltanto lo zero.
 
-  <strong|7.2.> Poniamo <math|q=dim(U\<cap\>W)>. Grassmann dà
-  <math|dim(U+W)=6-q>. La somma è contenuta in <math|\<bbb-R\><rsup|4>>,
-  perciò <math|6-q\<leq\>4> e <math|q\<geq\>2>. L'intersezione è contenuta in
-  ciascuno spazio di dimensione 3, quindi <math|q\<leq\>3>. I soli valori
-  possibili sono 2 e 3.
-
-  Per 2 scegliamo <math|U=<math-up|span>(e<rsub|1>,e<rsub|2>,e<rsub|3>)> e
-  <math|W=<math-up|span>(e<rsub|1>,e<rsub|2>,e<rsub|4>)>: l'intersezione è
-  <math|<math-up|span>(e<rsub|1>,e<rsub|2>)>.
-
-  Per 3 basta scegliere <math|U=W=<math-up|span>(e<rsub|1>,e<rsub|2>,e<rsub|3>)>.
-  I due esempi realizzano tutti i valori consentiti.
+  <strong|7.2.> Chiamiamo <math|q> la dimensione dell'intersezione. Grassmann
+  dà <math|dim(U+W)=3+3-q=6-q>. La somma sta dentro <math|\<bbb-R\><rsup|4>>,
+  quindi <math|6-q\<leq\>4>, cioè <math|q\<geq\>2>. D'altra parte
+  l'intersezione è contenuta in ciascuno dei due sottospazi, che hanno
+  dimensione 3, quindi <math|q\<leq\>3>. I soli valori possibili sono 2 e 3,
+  e si presentano entrambi. Per avere <math|q=2> scegliamo
+  <math|U=<math-up|span>(e<rsub|1>,e<rsub|2>,e<rsub|3>)> e
+  <math|W=<math-up|span>(e<rsub|1>,e<rsub|2>,e<rsub|4>)>, la cui intersezione
+  è <math|<math-up|span>(e<rsub|1>,e<rsub|2>)>. Per avere <math|q=3> basta
+  prendere <math|U=W=<math-up|span>(e<rsub|1>,e<rsub|2>,e<rsub|3>)>.
 
   <section|Matrici, nucleo e immagine>
 
-  <strong|8.1.> Il rango è la dimensione dell'immagine. Un sottospazio di
-  <math|\<bbb-R\><rsup|3>> di dimensione 3 coincide con tutto
-  <math|\<bbb-R\><rsup|3>>, quindi ogni <math|b> è raggiunto: tutti i sistemi
-  <math|A*x=b> sono compatibili.
+  <strong|8.1.> Il rango è la dimensione dell'immagine, che è un sottospazio
+  di <math|\<bbb-R\><rsup|3>>. Un sottospazio di dimensione 3 di
+  <math|\<bbb-R\><rsup|3>> è tutto lo spazio, quindi ogni <math|b> viene
+  raggiunto e tutti i sistemi <math|A*x=b> sono compatibili.
 
-  Il dominio ha dimensione 5; rango\<#2013\>nullità dà <math|dim ker
-  F<rsub|A>=5-3=2>. Il nucleo contiene vettori non nulli, perciò
-  l'applicazione non è iniettiva. Ogni sistema ha una soluzione particolare
-  più due parametri di libertà.
+  Lo spazio di partenza ha dimensione 5, e rango\<#2013\>nullità dà <math|dim
+  ker F<rsub|A>=5-3=2>. Il nucleo contiene quindi vettori non nulli, e
+  l'applicazione non è iniettiva. Ogni sistema ha una soluzione particolare a
+  cui si aggiungono due parametri liberi.
 
-  <strong|8.2.> Per trovare il nucleo scriviamo le tre equazioni di
-  <math|A*x=0>. Sottraiamo quattro volte la prima dalla seconda: otteniamo
-  <math|-3x<rsub|2>-6x<rsub|3>=0>, dunque <math|x<rsub|2>=-2x<rsub|3>>. La
-  prima diventa <math|x<rsub|1>=x<rsub|3>>.
-
-  La terza riga della matrice è due volte la seconda meno la prima, quindi
-  non aggiunge un vincolo. Ne segue
+  <strong|8.2.> Per il nucleo scriviamo le tre equazioni di <math|A*x=0> e
+  seguiamo il suggerimento. Sottraendo quattro volte la prima dalla seconda
+  otteniamo <math|-3x<rsub|2>-6x<rsub|3>=0>, cioè
+  <math|x<rsub|2>=-2x<rsub|3>>. Sostituendo nella prima,
+  <math|x<rsub|1>=-2x<rsub|2>-3x<rsub|3>=x<rsub|3>>. La terza riga della
+  matrice è due volte la seconda meno la prima, quindi la terza equazione è
+  conseguenza delle altre due e non aggiunge vincoli. Ne segue
 
   <\equation*>
     ker F<rsub|A>=<math-up|span>((1,-2,1)<rsup|T>).
   </equation*>
 
-  La terza colonna è due volte la seconda meno la prima.
+  Per l'immagine guardiamo le colonne. La terza è due volte la seconda meno
+  la prima, mentre le prime due, <math|c<rsub|1>=(1,4,7)<rsup|T>> e
+  <math|c<rsub|2>=(2,5,8)<rsup|T>>, sono indipendenti. Se
+  <math|a*c<rsub|1>+b*c<rsub|2>=0>, le prime due componenti danno
+  <math|a+2b=0> e <math|4a+5b=0>, e sostituendo <math|a=-2b> nella seconda
+  troviamo <math|-3b=0>, quindi <math|b=0> e poi <math|a=0>. Le due colonne
+  formano una base dell'immagine, che ha dimensione 2. Entrambe soddisfano
+  <math|x-2y+z=0>, e poiché l'immagine è un sottospazio di dimensione 2
+  contenuto in questo piano, coincide con esso. Le dimensioni di nucleo e
+  immagine sommano a <math|1+2=3>, come prevede il teorema.
 
-  Le prime due, <math|c<rsub|1>=(1,4,7)<rsup|T>> e
-  <math|c<rsub|2>=(2,5,8)<rsup|T>>, sono indipendenti: se
-  <math|a*c<rsub|1>+b*c<rsub|2>=0>, le prime due componenti impongono
-  <math|a+2b=0>, <math|4a+5b=0>; sostituendo <math|a=-2b> ricaviamo
-  <math|-3b=0>, poi <math|a=0>.
-
-  Sono una base dell'immagine, che ha dimensione 2.
-
-  Entrambe soddisfano <math|x-2y+z=0>: l'immagine coincide con quel piano,
-  perché è un sottospazio di dimensione 2 contenuto in un piano di dimensione
-  2.
-
-  Le dimensioni sommano a <math|1+2=3>. Infine
-  <math|A(1,0,0)<rsup|T>=c<rsub|1>>. Ogni soluzione cercata è quindi
+  Infine <math|A(1,0,0)<rsup|T>=c<rsub|1>=(1,4,7)<rsup|T>>, quindi
+  <math|\<xi\>> è davvero una soluzione particolare, e tutte le soluzioni
+  sono
 
   <\equation*>
     x=(1,0,0)<rsup|T>+t(1,-2,1)<rsup|T>,<space|1em>t\<in\>\<bbb-R\>.
   </equation*>
 
-  Il controllo consiste in <math|A(1,-2,1)<rsup|T>=c<rsub|1>-2c<rsub|2>+c<rsub|3>=0>:
-  il termine con il parametro non cambia il risultato.
+  Per controllare basta vedere che <math|A(1,-2,1)<rsup|T>=c<rsub|1>-2c<rsub|2>+c<rsub|3>=0>,
+  cioè che il termine con il parametro non cambia il risultato.
 
   <section|Gauss e sottospazi>
 
-  <strong|9.1.> In prima posizione compare zero. Scambiamo le prime due
-  righe: il sistema diventa <math|x<rsub|1>+x<rsub|2>=1>,
-  <math|x<rsub|2>+x<rsub|3>=2>, <math|2x<rsub|1>+2x<rsub|2>=2>.
+  <strong|9.1.> La prima entrata della matrice è zero, quindi conviene
+  scambiare le prime due righe. Il sistema diventa
+  <math|x<rsub|1>+x<rsub|2>=1>, <math|x<rsub|2>+x<rsub|3>=2> e
+  <math|2x<rsub|1>+2x<rsub|2>=2>. Sottraendo due volte la prima equazione
+  dalla terza otteniamo <math|0=0>. Restano due pivot per tre incognite,
+  quindi una variabile libera.
 
-  Sottraendo due volte la prima dalla terza otteniamo <math|0=0>. Ci sono due
-  pivot e tre incognite, quindi una variabile libera.
-
-  Poniamo <math|x<rsub|3>=t>: la seconda dà <math|x<rsub|2>=2-t>, la prima
-  <math|x<rsub|1>=t-1>. Pertanto
+  Poniamo <math|x<rsub|3>=t>. La seconda equazione dà <math|x<rsub|2>=2-t>, e
+  la prima <math|x<rsub|1>=1-x<rsub|2>=t-1>. Tutte le soluzioni sono quindi
 
   <\equation*>
-    x=(-1,2,0)<rsup|T>+t(1,-1,1)<rsup|T>,<space|1em>t\<in\>\<bbb-R\>.
+    x=(-1,2,0)<rsup|T>+t(1,-1,1)<rsup|T>,<space|1em>t\<in\>\<bbb-R\>,
   </equation*>
 
-  Il primo vettore è una soluzione particolare; il secondo genera il nucleo.
-  Nel sistema originale le tre espressioni diventano, rispettivamente,
-  <math|(2-t)+t=2>, <math|(t-1)+(2-t)=1> e <math|2(t-1)+2(2-t)=2>.
+  dove il primo vettore è una soluzione particolare e il secondo genera il
+  nucleo. Nel sistema originale le tre espressioni diventano
+  <math|(2-t)+t=2>, <math|(t-1)+(2-t)=1> e <math|2(t-1)+2(2-t)=2>, tutte
+  corrette.
 
-  <strong|9.2.> Per l'intersezione conviene usare equazioni: dal capitolo
-  sappiamo che <math|U> ha equazione <math|x+y+z=0>. Aggiungiamo <math|x=z>,
-  che descrive <math|W>. Ponendo <math|z=t>, otteniamo <math|x=t>,
-  <math|y=-2t>. Dunque una base di <math|U\<cap\>W> è il solo vettore
-  <math|(1,-2,1)<rsup|T>>.
+  <strong|9.2.> Per l'intersezione conviene avere le equazioni di entrambi
+  gli spazi. Dal capitolo sappiamo che <math|U> è il piano <math|x+y+z=0>, e
+  <math|W> è descritto da <math|x=z>. Imponendo le due equazioni insieme e
+  ponendo <math|z=t> troviamo <math|x=t> e <math|y=-2t>, quindi
+  l'intersezione è la retta con base <math|(1,-2,1)<rsup|T>>.
 
-  Entrambi gli spazi sono piani: <math|U> ha i due generatori indipendenti
-  dati, mentre <math|W=<math-up|span>((1,0,1)<rsup|T>,(0,1,0)<rsup|T>)>.
-
-  Grassmann dà <math|dim(U+W)=2+2-1=3>, quindi <math|U+W=\<bbb-R\><rsup|3>>.
-
-  Possiamo anche vederne una base: ai due generatori di <math|U> aggiungiamo
-  <math|(0,1,0)<rsup|T>\<in\>W>. Questo vettore non sta in <math|U>, perché
-  la somma delle sue componenti è 1, e quindi completa i due generatori a una
-  base dello spazio.
+  Per la somma conviene invece ragionare sulle dimensioni. Entrambi gli spazi
+  sono piani, perché <math|U> ha due generatori indipendenti e
+  <math|W=<math-up|span>((1,0,1)<rsup|T>,(0,1,0)<rsup|T>)>. Grassmann dà
+  <math|dim(U+W)=2+2-1=3>, quindi <math|U+W=\<bbb-R\><rsup|3>>. Possiamo
+  anche costruirne una base esplicita. Ai due generatori di <math|U>
+  aggiungiamo <math|(0,1,0)<rsup|T>\<in\>W>, che non sta in <math|U> perché
+  la somma delle sue componenti è 1, e così completiamo una base di tutto lo
+  spazio.
 
   <section|Rango e invertibilità>
 
-  <strong|10.1.> La matrice dei coefficienti ha due righe proporzionali non
-  nulle, quindi rango 1.
+  <strong|10.1.> Le due righe della matrice dei coefficienti sono
+  proporzionali e non nulle, quindi il suo rango è 1. Nella matrice completa,
+  sottraendo due volte la prima riga dalla seconda otteniamo la riga
+  <math|(0,0\|h-2)>. Se <math|h\<neq\>2> questa riga ha un pivot nell'ultima
+  colonna, la matrice completa ha rango 2 e il sistema è incompatibile.
 
-  Nella matrice completa sottrarre due volte la prima riga dalla seconda dà
-  la riga <math|(0,0\|h-2)>. Se <math|h\<neq\>2>, la matrice completa ha
-  rango 2 e il sistema è incompatibile.
+  Se <math|h=2> i due ranghi valgono entrambi 1, e resta soltanto l'equazione
+  <math|x+y=1>. Ponendo <math|y=t>, tutte le soluzioni sono
+  <math|(x,y)=(1-t,t)> con <math|t\<in\>\<bbb-R\>>. C'è un parametro,
+  esattamente come prevede il conto <math|2-<math-up|rank>(A)=1>.
 
-  Se <math|h=2>, i ranghi sono entrambi 1 e rimane soltanto <math|x+y=1>.
-  Ponendo <math|y=t>, tutte le soluzioni sono <math|(x,y)=(1-t,t)>,
-  <math|t\<in\>\<bbb-R\>>. C'è un parametro, come prevede
-  <math|2-<math-up|rank>(A)=1>.
-
-  <strong|10.2.> Per eliminare l'1 sotto il primo pivot, sottraiamo la prima
-  riga dalla seconda. Rimane la matrice con righe <math|(1,1)> e
-  <math|(0,1)>.
-
-  Ora sottraiamo la seconda dalla prima e arriviamo all'identità. Le due
-  mosse sono
+  <strong|10.2.> Per eliminare l'1 sotto il primo pivot sottraiamo la prima
+  riga dalla seconda, e otteniamo la matrice con righe <math|(1,1)> e
+  <math|(0,1)>. Poi sottraiamo la seconda riga dalla prima e arriviamo
+  all'identità. Le due mosse corrispondono alle matrici elementari
 
   <\equation*>
     E<rsub|1>=<matrix|<tformat|<table|<row|<cell|1>|<cell|0>>|<row|<cell|-1>|<cell|1>>>>>,<space|2em>E<rsub|2>=<matrix|<tformat|<table|<row|<cell|1>|<cell|-1>>|<row|<cell|0>|<cell|1>>>>>.
   </equation*>
 
-  Abbiamo <math|E<rsub|2>E<rsub|1>A=I>, perciò
-  <math|A<rsup|-1>=E<rsub|2>E<rsub|1>>. Il prodotto dà
+  Poiché <math|E<rsub|2>E<rsub|1>A=I>, l'inversa è
+  <math|A<rsup|-1>=E<rsub|2>E<rsub|1>>, e facendo il prodotto troviamo
 
   <\equation*>
     A<rsup|-1>=<matrix|<tformat|<table|<row|<cell|2>|<cell|-1>>|<row|<cell|-1>|<cell|1>>>>>.
   </equation*>
 
-  Nel prodotto <math|A*A<rsup|-1>> le quattro entrate sono <math|2-1=1>,
-  <math|-1+1=0>, <math|2-2=0>, <math|-1+2=1>.
-
-  Nel prodotto <math|A<rsup|-1>A> sono <math|2-1=1>, <math|2-2=0>,
-  <math|-1+1=0>, <math|-1+2=1>. Otteniamo l'identità in entrambi gli ordini,
-  come richiede la definizione.
+  Verifichiamo in entrambi gli ordini. Nel prodotto <math|A*A<rsup|-1>> le
+  quattro entrate sono <math|2-1=1>, <math|-1+1=0>, <math|2-2=0> e
+  <math|-1+2=1>. Nel prodotto <math|A<rsup|-1>A> sono <math|2-1=1>,
+  <math|2-2=0>, <math|-1+1=0> e <math|-1+2=1>. In entrambi i casi otteniamo
+  l'identità, come richiede la definizione di inversa.
 </body>
 
 <\initial>
@@ -3603,7 +3846,7 @@
     <associate|auto-1|<tuple|?|2>>
     <associate|auto-10|<tuple|2|9>>
     <associate|auto-11|<tuple|2.1|9>>
-    <associate|auto-12|<tuple|2.2|9>>
+    <associate|auto-12|<tuple|2.2|10>>
     <associate|auto-13|<tuple|2.3|10>>
     <associate|auto-14|<tuple|2.4|11>>
     <associate|auto-15|<tuple|3|13>>
@@ -3630,44 +3873,44 @@
     <associate|auto-34|<tuple|6.3|27>>
     <associate|auto-35|<tuple|6.4|27>>
     <associate|auto-36|<tuple|6.5|28>>
-    <associate|auto-37|<tuple|7|30>>
-    <associate|auto-38|<tuple|7.1|30>>
-    <associate|auto-39|<tuple|7.2|31>>
+    <associate|auto-37|<tuple|7|31>>
+    <associate|auto-38|<tuple|7.1|31>>
+    <associate|auto-39|<tuple|7.2|32>>
     <associate|auto-4|<tuple|1|5>>
-    <associate|auto-40|<tuple|7.3|31>>
-    <associate|auto-41|<tuple|7.4|33>>
-    <associate|auto-42|<tuple|8|34>>
-    <associate|auto-43|<tuple|8.1|34>>
-    <associate|auto-44|<tuple|8.2|35>>
-    <associate|auto-45|<tuple|8.3|35>>
-    <associate|auto-46|<tuple|8.4|36>>
-    <associate|auto-47|<tuple|8.5|37>>
-    <associate|auto-48|<tuple|9|39>>
-    <associate|auto-49|<tuple|9.1|39>>
+    <associate|auto-40|<tuple|7.3|32>>
+    <associate|auto-41|<tuple|7.4|34>>
+    <associate|auto-42|<tuple|8|36>>
+    <associate|auto-43|<tuple|8.1|36>>
+    <associate|auto-44|<tuple|8.2|37>>
+    <associate|auto-45|<tuple|8.3|38>>
+    <associate|auto-46|<tuple|8.4|38>>
+    <associate|auto-47|<tuple|8.5|39>>
+    <associate|auto-48|<tuple|9|41>>
+    <associate|auto-49|<tuple|9.1|41>>
     <associate|auto-5|<tuple|1.1|5>>
-    <associate|auto-50|<tuple|9.2|40>>
-    <associate|auto-51|<tuple|9.3|40>>
-    <associate|auto-52|<tuple|9.4|41>>
-    <associate|auto-53|<tuple|9.5|42>>
-    <associate|auto-54|<tuple|10|44>>
-    <associate|auto-55|<tuple|10.1|44>>
-    <associate|auto-56|<tuple|10.2|45>>
-    <associate|auto-57|<tuple|10.3|45>>
-    <associate|auto-58|<tuple|10.4|46>>
-    <associate|auto-59|<tuple|10.5|47>>
+    <associate|auto-50|<tuple|9.2|42>>
+    <associate|auto-51|<tuple|9.3|42>>
+    <associate|auto-52|<tuple|9.4|44>>
+    <associate|auto-53|<tuple|9.5|44>>
+    <associate|auto-54|<tuple|10|46>>
+    <associate|auto-55|<tuple|10.1|46>>
+    <associate|auto-56|<tuple|10.2|47>>
+    <associate|auto-57|<tuple|10.3|47>>
+    <associate|auto-58|<tuple|10.4|48>>
+    <associate|auto-59|<tuple|10.5|49>>
     <associate|auto-6|<tuple|1.2|6>>
-    <associate|auto-60|<tuple|A|48>>
-    <associate|auto-61|<tuple|A.1|48>>
-    <associate|auto-62|<tuple|A.2|48>>
-    <associate|auto-63|<tuple|A.3|48>>
-    <associate|auto-64|<tuple|A.4|49>>
-    <associate|auto-65|<tuple|A.5|49>>
-    <associate|auto-66|<tuple|A.6|49>>
-    <associate|auto-67|<tuple|A.7|50>>
-    <associate|auto-68|<tuple|A.8|50>>
-    <associate|auto-69|<tuple|A.9|50>>
-    <associate|auto-7|<tuple|1.3|6>>
-    <associate|auto-70|<tuple|A.10|51>>
+    <associate|auto-60|<tuple|A|51>>
+    <associate|auto-61|<tuple|A.1|51>>
+    <associate|auto-62|<tuple|A.2|51>>
+    <associate|auto-63|<tuple|A.3|51>>
+    <associate|auto-64|<tuple|A.4|52>>
+    <associate|auto-65|<tuple|A.5|52>>
+    <associate|auto-66|<tuple|A.6|52>>
+    <associate|auto-67|<tuple|A.7|53>>
+    <associate|auto-68|<tuple|A.8|53>>
+    <associate|auto-69|<tuple|A.9|54>>
+    <associate|auto-7|<tuple|1.3|7>>
+    <associate|auto-70|<tuple|A.10|54>>
     <associate|auto-8|<tuple|1.4|7>>
     <associate|auto-9|<tuple|1.5|8>>
   </collection>
@@ -3683,7 +3926,7 @@
       Mappa del percorso <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>
 
-      Il periodo e le fonti <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      Le fonti <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Insiemi,
@@ -3873,7 +4116,7 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-49>
 
-      9.2<space|2spc>Operazioni di riga: cambiare la forma conservando le
+      9.2<space|2spc>Operazioni di riga: cambiare la forma senza cambiare le
       soluzioni <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-50>
 

@@ -94,7 +94,7 @@ Il volume sviluppa tutti i pilastri principali e seleziona varianti ed esercizi.
 | 22/10 nucleo e 27/10: rango, rango–nullità e base adattata | 8 «Rango e teorema rango–nullità», principale; generazione e indipendenza delle immagini dimostrate separatamente, compresi blocchi vuoti. Figura rango-nullita. |
 | 22/10 Gauss: scala, pivot, libere, sostituzione all'indietro e contraddizione 0=c | 9 «Pivot e variabili libere», principale. |
 | 22/10 Gauss: matrice completa, pivot nei termini noti | 8 definizione e 9 prima sezione; principale. |
-| 22/10 Gauss: tre operazioni e invarianza delle soluzioni, span righe invariato/colonne no | 9 «Operazioni di riga: cambiare la forma conservando le soluzioni», principale; tutte le inverse indicate, controesempio 1×colonna. |
+| 22/10 Gauss: tre operazioni e invarianza delle soluzioni, span righe invariato/colonne no | 9 «Operazioni di riga: cambiare la forma senza cambiare le soluzioni», principale; tutte le inverse indicate, controesempio 1×colonna. |
 | 22/10 Gauss: algoritmo ricorsivo, colonne nulle, scelta pivot, quoziente per annullare, indici | 9 «L'algoritmo e una riduzione completa», principale; termini spiegati senza rinominare gli indici globali, terminazione e conservazione zeri motivate. Figure scala, gauss-passi. |
 | 22/10 Gauss: esempio numerico con scambio | 9 stessa sezione: esempio aggiunto già nell'archivio, tutti passaggi di matrice e verifica nel sistema iniziale. L'esempio ASR frammentario non ricostruito letteralmente. |
 | 22/10 Gauss: compatibilità scala, unicità/parametri, campo finito | 9 «Contare i parametri e costruire una base del nucleo», principale, inclusa giustificazione della biiezione tra valori liberi e soluzioni. |

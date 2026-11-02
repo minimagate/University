@@ -1,206 +1,172 @@
 <chapter|Dimensione e lemma di scambio>
 
 <\inbreve>
-Perché tutte le basi del piano hanno due vettori? Sappiamo riconoscere una base, ma dobbiamo ancora confrontare basi diverse. Impareremo a togliere, aggiungere e scambiare vettori per dare un significato preciso alla dimensione.
+Tutte le basi del piano che abbiamo incontrato avevano due vettori, e viene il sospetto che non sia una coincidenza. Per trasformare il sospetto in un teorema impareremo a modificare una famiglia di vettori togliendone, aggiungendone e soprattutto scambiandone uno alla volta, senza mai perdere ciò che la famiglia sa fare. Il risultato è la dimensione, un numero che appartiene allo spazio e non alla base scelta per descriverlo.
 </inbreve>
 
 <section|Estrarre una base e completare una famiglia indipendente>
 
-Nel piano, la famiglia <math|(e<rsub|1>,e<rsub|2>,e<rsub|1>+e<rsub|2>)> genera tutto, ma contiene un vettore di troppo. Togliamo <math|e<rsub|1>+e<rsub|2>>: i due vettori rimasti lo ricostruiscono. Rimane la base canonica. Questo è un esempio di <strong|estrazione di una base> da generatori.
+Nel piano la famiglia <math|(e<rsub|1>,e<rsub|2>,e<rsub|1>+e<rsub|2>)> genera tutto, ma ha un vettore di troppo. Se togliamo <math|e<rsub|1>+e<rsub|2>> non perdiamo nulla, perché gli altri due lo ricostruiscono, e quello che resta è la base canonica. Questo è un esempio di <strong|estrazione di una base> da una famiglia di generatori.
 
-Possiamo anche partire da troppo poco. Il solo <math|e<rsub|1>> è indipendente, ma genera soltanto l'asse orizzontale. Aggiungendo <math|e<rsub|2>>, che non sta su quell'asse, otteniamo una base. È un <strong|completamento>.
+Si può anche partire dal problema opposto, cioè da troppo poco. Il solo vettore <math|e<rsub|1>> è indipendente, ma genera soltanto l'asse orizzontale. Se aggiungiamo <math|e<rsub|2>>, che non sta su quell'asse, otteniamo una base. In questo caso parliamo di <strong|completamento>.
 
-Perché aggiungere un vettore fuori dallo span conserva l'indipendenza? Se <math|b<rsub|1>,…,b<rsub|r>> sono indipendenti e <math|v> è fuori dal loro span, consideriamo
+Il completamento funziona perché aggiungere un vettore che sta fuori dallo span non rovina l'indipendenza. Supponiamo che <math|b<rsub|1>,…,b<rsub|r>> siano indipendenti e che <math|v> non stia nel loro span, e prendiamo una relazione
 
 <\equation*>
 α<rsub|1>b<rsub|1>+⋯+α<rsub|r>b<rsub|r>+βv=0.
 </equation*>
 
-Un coefficiente <math|β≠0> permetterebbe di isolare <math|v> e scriverlo nello span, contro la scelta. Dunque <math|β=0>; l'indipendenza iniziale annulla anche gli altri coefficienti.
+Se fosse <math|β≠0>, potremmo isolare <math|v> e scriverlo come combinazione dei <math|b<rsub|j>>, mentre l'abbiamo scelto fuori dal loro span. Quindi <math|β=0>, e a quel punto l'indipendenza dei <math|b<rsub|j>> annulla anche tutti gli altri coefficienti.
 
-Torniamo ora a una famiglia finita che genera <math|V>. Se è dipendente, il capitolo precedente permette di eliminare un vettore senza cambiare lo span. Ripetiamo finché la famiglia è indipendente. A ogni passo il numero di vettori diminuisce: il procedimento termina e lascia una base. Per <math|V={0}> la base è la famiglia vuota. Dunque <strong|ogni famiglia finita di generatori contiene una base>.
+L'estrazione si giustifica in modo altrettanto semplice. Se una famiglia finita genera <math|V> ma è dipendente, il capitolo precedente ci dice che uno dei suoi vettori è superfluo e si può togliere senza cambiare lo span. Ripetiamo l'operazione finché la famiglia diventa indipendente. Poiché a ogni passo i vettori diminuiscono, prima o poi ci fermiamo, e quello che resta è una base. Per lo spazio <math|{0}> la base è la famiglia vuota. Abbiamo così dimostrato che <strong|ogni famiglia finita di generatori contiene una base>.
 
 <section|Lemma di scambio: sostituire senza perdere informazioni>
 
-Nella base canonica del piano, <math|w=(2,1)> si scrive <math|w=2e<rsub|1>+e<rsub|2>>. Possiamo sostituire <math|e<rsub|1>> con <math|w>? Sì: l'identità <math|e<rsub|1>=(w-e<rsub|2>)/2> ci permette di recuperare il vettore tolto. Non abbiamo perso la possibilità di generare il piano.
+Ora vogliamo confrontare due basi diverse, e lo strumento giusto è lo scambio. Nella base canonica del piano il vettore <math|w=(2,1)> si scrive <math|w=2e<rsub|1>+e<rsub|2>>. Proviamo a mettere <math|w> al posto di <math|e<rsub|1>>. Non perdiamo nulla, perché dall'uguaglianza precedente ricaviamo <math|e<rsub|1>=(w-e<rsub|2>)/2>, e quindi il vettore tolto si può ancora ricostruire. La nuova coppia <math|(w,e<rsub|2>)> genera dunque il piano. È anche indipendente, perché da <math|αw+βe<rsub|2>=(2α,α+β)=0> segue prima <math|α=0> e poi <math|β=0>.
 
-La nuova coppia <math|(w,e<rsub|2>)> è anche indipendente: da <math|αw+βe<rsub|2>=(2α,α+β)=0> segue prima <math|α=0>, poi <math|β=0>.
-
-Facciamo entrare un secondo vettore, <math|z=(1,1)>. La coppia <math|(w,z)> è indipendente: le equazioni <math|2α+β=0> e <math|α+β=0> danno <math|α=β=0>. Vogliamo inserire <math|z> senza togliere <math|w>, già inserito.
-
-Scriviamo <math|z> nella base attuale:
+Facciamo entrare un secondo vettore, <math|z=(1,1)>. La coppia <math|(w,z)> è indipendente, perché le equazioni <math|2α+β=0> e <math|α+β=0> danno <math|α=β=0>. Vogliamo inserire <math|z> senza togliere <math|w>, che è già entrato. Scriviamo allora <math|z> nella base attuale <math|(w,e<rsub|2>)>:
 
 <\equation*>
 z=<frac|1|2>w+<frac|1|2>e<rsub|2>.
 </equation*>
 
-Il coefficiente di <math|e<rsub|2>> è non nullo. Possiamo perciò recuperarlo come <math|e<rsub|2>=2z-w> e sostituirlo con <math|z>. Abbiamo eseguito due scambi:
+Il coefficiente di <math|e<rsub|2>> non è nullo, e questo ci permette di ricavare <math|e<rsub|2>=2z-w> e di mettere <math|z> al suo posto. In tutto abbiamo fatto due scambi:
 
 <\equation*>
 (e<rsub|1>,e<rsub|2>)<space|1em>→<space|1em>(w,e<rsub|2>)<space|1em>→<space|1em>(w,z).
 </equation*>
 
-Nel secondo passo abbiamo tolto il vecchio vettore rimasto, conservando il nuovo già inserito. È questa la scelta che dovremo giustificare quando gli scambi saranno molti.
+Nel secondo passo abbiamo tolto il vecchio vettore rimasto e abbiamo lasciato al suo posto quello nuovo già inserito. Quando gli scambi saranno molti, dovremo giustificare proprio questa scelta.
 
 <subsection|Il singolo scambio in generale>
 
-Questo recupero spiega la condizione generale. Siano <math|u<rsub|1>,…,u<rsub|r>> indipendenti e
+Che cosa ha reso possibile ogni scambio? Il fatto che il vettore da togliere comparisse con un coefficiente non nullo. In generale, siano <math|u<rsub|1>,…,u<rsub|r>> indipendenti e sia
 
 <\equation*>
 w=a<rsub|1>u<rsub|1>+⋯+a<rsub|r>u<rsub|r>,<space|2em>a<rsub|1>≠0.
 </equation*>
 
-Allora <math|w,u<rsub|2>,…,u<rsub|r>> sono indipendenti e hanno lo stesso span dei vecchi vettori. Per lo span, basta isolare
+Allora i vettori <math|w,u<rsub|2>,…,u<rsub|r>> sono ancora indipendenti e generano lo stesso spazio dei vecchi. Per lo span basta ricavare il vettore tolto,
 
 <\equation*>
 u<rsub|1>=<frac|1|a<rsub|1>>(w-a<rsub|2>u<rsub|2>-⋯-a<rsub|r>u<rsub|r>).
 </equation*>
 
-Ogni nuovo vettore era combinazione dei vecchi e ogni vecchio vettore è combinazione dei nuovi: i due span coincidono.
+Ogni vettore nuovo è combinazione dei vecchi, e ora sappiamo che ogni vettore vecchio è combinazione dei nuovi, quindi i due span coincidono.
 
-Per l'indipendenza, partiamo da una relazione nulla fra i nuovi vettori:
+Per l'indipendenza partiamo da una relazione nulla fra i vettori nuovi,
 
 <\equation*>
-βw+<big|sum><rsub|j=2><rsup|r>β<rsub|j>u<rsub|j>=0.
+βw+<big|sum><rsub|j=2><rsup|r>β<rsub|j>u<rsub|j>=0,
 </equation*>
 
-Sostituiamo l'espressione di <math|w>. Il coefficiente di <math|u<rsub|1>> diventa <math|βa<rsub|1>>; quello di <math|u<rsub|j>> per <math|j≥2> è <math|βa<rsub|j>+β<rsub|j>>.
-
-L'indipendenza dei vecchi vettori impone <math|βa<rsub|1>=0>. Poiché <math|a<rsub|1>≠0>, segue <math|β=0>, e poi <math|β<rsub|j>=0> per ogni <math|j>. La nuova famiglia è indipendente. Se il coefficiente non nullo era in un'altra posizione, si scambia quel vettore.
+e sostituiamo al posto di <math|w> la sua espressione. Otteniamo una relazione fra i vecchi vettori in cui <math|u<rsub|1>> ha coefficiente <math|βa<rsub|1>> e ogni <math|u<rsub|j>> con <math|j≥2> ha coefficiente <math|βa<rsub|j>+β<rsub|j>>. Poiché i vecchi vettori sono indipendenti, tutti questi coefficienti sono nulli. In particolare <math|βa<rsub|1>=0>, e siccome <math|a<rsub|1>≠0> abbiamo <math|β=0>. Ne segue <math|β<rsub|j>=0> per ogni <math|j>, quindi la nuova famiglia è indipendente. Se il coefficiente non nullo si trova in un'altra posizione, il ragionamento è identico e si scambia quel vettore.
 
 <subsection|Più scambi: il lemma di Steinitz>
 
-Ora partiamo da una base <math|u<rsub|1>,…,u<rsub|n>> e da vettori indipendenti <math|w<rsub|1>,…,w<rsub|m>> di <math|V>. Vogliamo far entrare tutti i <math|w> nella base. Scriviamo <math|w<rsub|1>> nella base: è non nullo, quindi qualche coefficiente è non nullo e permette il primo scambio.
+Ora possiamo fare entrare molti vettori. Partiamo da una base <math|u<rsub|1>,…,u<rsub|n>> di <math|V> e da vettori indipendenti <math|w<rsub|1>,…,w<rsub|m>>, che vogliamo far entrare tutti nella base. Il primo passo è facile. Scriviamo <math|w<rsub|1>> nella base, e poiché <math|w<rsub|1>> non è nullo qualche coefficiente è diverso da zero, il che permette il primo scambio.
 
-Al passo <math|k> abbiamo una base con <math|w<rsub|1>,…,w<rsub|k-1>> e alcuni <math|u> originari. Scriviamo <math|w<rsub|k>> in questa base. <strong|Almeno un coefficiente su un <math|u> rimasto è non nullo.>
-
-Se non lo fosse, <math|w<rsub|k>> sarebbe combinazione soltanto dei <math|w> precedenti, contraddicendo l'indipendenza. Possiamo quindi scambiare un <math|u>, senza togliere nessun <math|w> già inserito.
+Supponiamo di essere arrivati al passo <math|k>, con una base che contiene già <math|w<rsub|1>,…,w<rsub|k-1>> e alcuni dei vettori <math|u> originali. Scriviamo <math|w<rsub|k>> in questa base. Il punto delicato è che <strong|almeno un coefficiente su un <math|u> rimasto deve essere non nullo.> Se così non fosse, <math|w<rsub|k>> sarebbe combinazione soltanto dei <math|w> precedenti, e questo contraddirebbe l'indipendenza dei <math|w>. Possiamo quindi scambiare uno dei <math|u>, senza mai togliere un <math|w> già inserito.
 
 <figura|@IMG(scambio)|Ogni scambio fa entrare un vettore indipendente <math|w> e sostituisce un vecchio vettore <math|u>. La famiglia continua a essere una base.>
 
-Non possiamo avere <math|m›n>. Dopo <math|n> scambi la base conterrebbe soltanto i primi <math|n> vettori <math|w>; il successivo sarebbe loro combinazione, contro l'indipendenza. Abbiamo provato il <strong|lemma di scambio di Steinitz>: <math|m≤n>, e l'insieme indipendente si completa a una base con alcuni vettori della base iniziale.
+Questo procedimento ci dice anche che i <math|w> non possono essere più degli <math|u>. Se fosse <math|m›n>, dopo <math|n> scambi la base sarebbe fatta soltanto dai primi <math|n> vettori <math|w>, e il vettore <math|w<rsub|n+1>> sarebbe loro combinazione, ancora contro l'indipendenza. Abbiamo così dimostrato il <strong|lemma di scambio di Steinitz>. Esso dice che <math|m≤n> e che l'insieme indipendente si completa a una base aggiungendo opportuni vettori della base iniziale.
 
 <section|Dimensione: un numero che non dipende dalla base>
 
-Se due basi finite hanno <math|n> e <math|m> vettori, lo scambio applicato nei due sensi dà <math|m≤n> e <math|n≤m>. Quindi <math|m=n>. Inoltre, in uno spazio con una base di <math|n> vettori non esiste una base infinita: scegliendone <math|n+1> elementi avremmo una famiglia indipendente troppo lunga.
+Ora il sospetto iniziale diventa un teorema. Se uno spazio ha due basi finite, con <math|n> e <math|m> vettori, possiamo applicare lo scambio in un senso e nell'altro, ottenendo <math|m≤n> e <math|n≤m>. Quindi <math|m=n>. In uno spazio con una base di <math|n> vettori non può esistere nemmeno una base infinita, perché <math|n+1> dei suoi vettori formerebbero una famiglia indipendente troppo lunga.
 
 <\concetto|Dimensione>
 La dimensione <math|dim<rsub|K>V> di uno spazio finitamente generato è il numero di vettori di una sua base. Lo scambio assicura che la scelta della base non cambia questo numero. Lo spazio <math|{0}> ha dimensione zero.
 </concetto>
 
-Abbiamo <math|dim<rsub|K>K<rsup|n>=n> e <math|dim<rsub|K>K<rsub|d>[X]=d+1>. Per le matrici, <math|E<rsub|ij>> indica quella con 1 nella casella <math|(i,j)> e zero nelle altre. Ogni matrice si scrive <math|A=<big|sum><rsub|i,j>a<rsub|ij>E<rsub|ij>>. In una combinazione nulla la casella <math|(i,j)> dà il coefficiente di <math|E<rsub|ij>>, che deve essere zero.
-
-Queste <math|mn> matrici sono quindi una base e <math|dim<rsub|K>M<rsub|m,n>(K)=mn>.
+Gli spazi che conosciamo hanno dimensioni facili da leggere. La base canonica mostra che <math|dim<rsub|K>K<rsup|n>=n>, e i monomi <math|1,X,…,X<rsup|d>> mostrano che <math|dim<rsub|K>K<rsub|d>[X]=d+1>. Per le matrici chiamiamo <math|E<rsub|ij>> quella che ha 1 nella casella <math|(i,j)> e zero altrove. Ogni matrice si scrive come <math|A=<big|sum><rsub|i,j>a<rsub|ij>E<rsub|ij>>, e in una combinazione nulla la casella <math|(i,j)> mostra il coefficiente di <math|E<rsub|ij>>, che deve quindi essere zero. Le <math|mn> matrici <math|E<rsub|ij>> formano dunque una base, e <math|dim<rsub|K>M<rsub|m,n>(K)=mn>.
 
 <subsection|La dimensione dipende dal campo>
 
-Per <math|ℂ> su <math|ℂ> basta la base <math|(1)>: la dimensione è 1. Su <math|ℝ> ogni <math|a+ib> ha coefficienti reali unici rispetto a <math|(1,i)>: la dimensione è 2.
+Come spazio su sé stesso, <math|ℂ> ha la base <math|(1)>, perché ogni numero complesso è un multiplo complesso di 1, e quindi ha dimensione 1. Se però ammettiamo soltanto scalari reali, ogni <math|a+ib> si scrive in un unico modo come combinazione reale di 1 e <math|i>, e la dimensione diventa 2. Allo stesso modo <math|ℂ<rsup|n>> ha dimensione <math|n> su <math|ℂ> e <math|2n> su <math|ℝ>, con la base reale <math|e<rsub|1>,ie<rsub|1>,…,e<rsub|n>,ie<rsub|n>>. Ogni entrata complessa richiede infatti due numeri reali per essere descritta.
 
-Più in generale <math|ℂ<rsup|n>> ha dimensione <math|n> sui complessi e <math|2n> sui reali: una base reale è data da <math|e<rsub|1>,ie<rsub|1>,…,e<rsub|n>,ie<rsub|n>>. Ogni entrata complessa richiede due coordinate reali.
+<subsection|Le coordinate rispettano le operazioni>
 
-<subsection|Le coordinate conservano le operazioni>
+Scelta una base <math|B> di uno spazio di dimensione <math|n>, possiamo associare a ogni vettore le sue coordinate, ottenendo una funzione <math|Φ<rsub|B>:V→K<rsup|n>>, <math|v↦[v]<rsub|B>>. Questa funzione è biiettiva, perché ogni vettore ha una scrittura nella base, che è anche unica.
 
-La mappa delle coordinate <math|Φ<rsub|B>:V→K<rsup|n>>, <math|v↦[v]<rsub|B>>, è una biiezione: l'esistenza e l'unicità dello sviluppo lo dimostrano.
-
-Rispetta anche le operazioni. Se <math|v=<big|sum>x<rsub|j>b<rsub|j>> e <math|w=<big|sum>y<rsub|j>b<rsub|j>>, i coefficienti di <math|v+w> sono <math|x<rsub|j>+y<rsub|j>>, e quelli di <math|αv> sono <math|αx<rsub|j>>. Quindi
+Ma c'è di più. Se <math|v=<big|sum>x<rsub|j>b<rsub|j>> e <math|w=<big|sum>y<rsub|j>b<rsub|j>>, i coefficienti di <math|v+w> sono <math|x<rsub|j>+y<rsub|j>> e quelli di <math|αv> sono <math|αx<rsub|j>>. Quindi
 
 <\equation*>
 [v+w]<rsub|B>=[v]<rsub|B>+[w]<rsub|B>,<space|2em>[αv]<rsub|B>=α[v]<rsub|B>.
 </equation*>
 
-Un'applicazione che rispetta queste due operazioni si chiama <strong|lineare>; se è anche biiettiva, è un <strong|isomorfismo>.
-
-Dunque, scelta una base, <math|V≅K<rsup|n>>: le coordinate conservano tutta la struttura di spazio vettoriale, non soltanto i suoi elementi.
+Un'applicazione che rispetta in questo modo la somma e il prodotto per scalare si chiama <strong|lineare>, e se è anche biiettiva si chiama <strong|isomorfismo>. Le coordinate ci danno quindi un isomorfismo <math|V≅K<rsup|n>>. Scelta una base, ogni spazio di dimensione <math|n> si comporta esattamente come <math|K<rsup|n>>, non solo nei suoi elementi ma anche nelle operazioni.
 
 <section|Completamento, sottospazi e criteri per una base>
 
-Sia <math|dim V=n>. Dal lemma di scambio un insieme indipendente ha al più <math|n> elementi e si completa a una base. Un insieme finito di generatori contiene una base e ha quindi almeno <math|n> elementi.
+Mettiamo insieme ciò che abbiamo ottenuto, in uno spazio <math|V> di dimensione <math|n>. Per il lemma di scambio, un insieme indipendente ha al più <math|n> elementi e si può completare a una base. Un insieme finito di generatori, invece, contiene una base, e quindi ha almeno <math|n> elementi.
 
-Se i generatori sono infiniti, ne possiamo comunque estrarre un numero finito che genera: scriviamo ciascun vettore di una base finita mediante essi e raccogliamo tutti i vettori usati.
+Anche da un insieme infinito di generatori possiamo estrarne un numero finito che genera ancora. Prendiamo una base finita di <math|V> e scriviamo ciascuno dei suoi <math|n> vettori come combinazione dei generatori. Ogni scrittura usa un numero finito di generatori, e le scritture sono <math|n>, quindi in tutto ne usiamo un numero finito. Questi generano ancora <math|V>, e da loro possiamo estrarre una base.
 
-Ogni scrittura è finita, e le scritture sono <math|n>; la loro unione è finita. Da lì estraiamo una base.
+Da qui seguono due criteri molto comodi. Se in <math|V> abbiamo <math|n> vettori indipendenti, essi formano già una base, perché nel completamento non resta nessun posto da riempire. Se abbiamo <math|n> generatori, anche questi formano una base, perché la base che ne estraiamo ha già <math|n> vettori e quindi non abbiamo tolto nulla. Il numero giusto da solo, però, non basta. Due vettori paralleli del piano sono due, ma non generano il piano e non sono indipendenti.
 
-Perciò <strong|<math|n> vettori indipendenti in <math|V> formano una base>; nel completamento non rimane alcun posto da riempire. Anche <strong|<math|n> generatori formano una base>, perché la base estratta ha già <math|n> vettori.
+Che dire dei sottospazi? Se <math|W⊆V> è un sottospazio, non sappiamo ancora che abbia una base finita, e dobbiamo dimostrarlo prima di parlare della sua dimensione. Partiamo dalla famiglia vuota e aggiungiamo, finché possiamo, un vettore di <math|W> che stia fuori dallo span di quelli già scelti. Ogni aggiunta mantiene l'indipendenza, come abbiamo visto all'inizio del capitolo. Poiché in <math|V> non esistono più di <math|n> vettori indipendenti, dopo al più <math|n> aggiunte siamo costretti a fermarci. A quel punto nessun vettore di <math|W> sta fuori dallo span della famiglia, e quindi abbiamo trovato una base finita di <math|W>.
 
-Il numero corretto, da solo, non basta: due vettori paralleli nel piano continuano a fallire entrambe le proprietà.
+Questa base è un insieme indipendente anche dentro <math|V>, e quindi <math|dim W≤dim V>. Se le due dimensioni sono uguali, la base di <math|W> è fatta di <math|n> vettori indipendenti di <math|V>, quindi è una base di <math|V>, e <math|W=V>. D'altra parte, per ogni <math|k> fra 0 e <math|n> lo span di <math|k> vettori di una base di <math|V> ha dimensione <math|k>, quindi tutte queste dimensioni si presentano davvero.
 
-E per un sottospazio <math|W⊆V>, che non sappiamo ancora essere finitamente generato? Partiamo dalla famiglia vuota e aggiungiamo un vettore di <math|W> fuori dallo span dei precedenti, finché è possibile. Ogni aggiunta mantiene l'indipendenza, come abbiamo dimostrato all'inizio del capitolo.
-
-Non possiamo fare più di <math|n> aggiunte. Quando ci fermiamo, non c'è più alcun vettore di <math|W> fuori dallo span: abbiamo una base finita di <math|W>. Così giustifichiamo anche la sua esistenza, prima di usarne la dimensione.
-
-La base di <math|W> è indipendente in <math|V>; quindi <math|dim W≤dim V>. Se le dimensioni coincidono, quella base è anche base di <math|V> e <math|W=V>. Viceversa, per ogni <math|0≤k≤n>, lo span di <math|k> elementi di una base di <math|V> ha dimensione <math|k>.
-
-Ora possiamo classificare i sottospazi geometrici. In <math|ℝ<rsup|2>> le dimensioni sono 0, 1, 2: rispettivamente il solo zero, una retta per l'origine e tutto il piano. In <math|ℝ<rsup|3>> si aggiungono i piani per l'origine, di dimensione 2, mentre la dimensione 3 dà tutto lo spazio. Non ci sono altre possibilità.
+Ora possiamo classificare i sottospazi che conosciamo dalla geometria. In <math|ℝ<rsup|2>> le dimensioni possibili sono 0, 1 e 2, e corrispondono al solo zero, alle rette per l'origine e al piano intero. In <math|ℝ<rsup|3>> si aggiungono i piani per l'origine, di dimensione 2, e la dimensione 3 dà tutto lo spazio. Non esistono altre possibilità.
 
 <subsection|Una sola equazione: prima un esempio>
 
-In <math|ℝ<rsup|3>>, l'equazione <math|2x-y+3z=0> lascia liberi <math|y,z>. Isoliamo <math|x=y/2-3z/2>:
+In <math|ℝ<rsup|3>> l'equazione <math|2x-y+3z=0> lascia liberi <math|y> e <math|z> e determina <math|x=y/2-3z/2>. Ogni soluzione si scrive allora come
 
 <\equation*>
 (x,y,z)=y(1/2,1,0)+z(-3/2,0,1).
 </equation*>
 
-I due vettori generano tutte le soluzioni. Sono indipendenti: la seconda componente di una loro combinazione nulla annulla il primo coefficiente, la terza annulla il secondo. Quindi lo spazio delle soluzioni ha dimensione 2. Non stiamo soltanto contando parametri: abbiamo verificato una base.
+I due vettori che compaiono generano tutte le soluzioni. Sono anche indipendenti, perché in una loro combinazione nulla la seconda componente mostra il primo coefficiente e la terza componente mostra il secondo. Lo spazio delle soluzioni ha quindi dimensione 2. Notiamo che non ci siamo limitati a contare i parametri liberi, ma abbiamo verificato di avere una base.
 
-Una singola equazione <math|a<rsub|1>x<rsub|1>+⋯+a<rsub|n>x<rsub|n>=0> con <math|a<rsub|1>≠0> ha come base i <math|n-1> vettori
+Lo stesso ragionamento funziona per una singola equazione <math|a<rsub|1>x<rsub|1>+⋯+a<rsub|n>x<rsub|n>=0> con <math|a<rsub|1>≠0>. L'equazione determina <math|x<rsub|1>> e lascia libere le altre variabili, e i vettori
 
 <\equation*>
-f<rsub|j>=e<rsub|j>-<frac|a<rsub|j>|a<rsub|1>>e<rsub|1>,<space|2em>j=2,…,n.
+f<rsub|j>=e<rsub|j>-<frac|a<rsub|j>|a<rsub|1>>e<rsub|1>,<space|2em>j=2,…,n,
 </equation*>
 
-Se il primo coefficiente è zero ma un altro è non nullo, rinominiamo le coordinate portando quello in prima posizione.
-
-Infatti l'equazione determina <math|x<rsub|1>> e lascia libere <math|x<rsub|2>,…,x<rsub|n>>, così ogni soluzione è <math|<big|sum><rsub|j=2><rsup|n>x<rsub|j>f<rsub|j>>. Nella componente <math|j≥2> una combinazione dei <math|f> mostra soltanto il proprio coefficiente: se è nulla, tutti i coefficienti sono zero. La dimensione è <math|n-1>.
-
-Se tutti gli <math|a<rsub|j>> sono nulli, invece, l'equazione è <math|0=0> e non pone vincoli: la dimensione rimane <math|n>.
+formano una base delle soluzioni. Ogni soluzione si scrive infatti come <math|<big|sum><rsub|j=2><rsup|n>x<rsub|j>f<rsub|j>>, e in una combinazione dei <math|f<rsub|j>> la componente di posto <math|j≥2> mostra soltanto il coefficiente di <math|f<rsub|j>>, che quindi deve essere zero se la combinazione è nulla. La dimensione è <math|n-1>. Se il primo coefficiente è zero ma un altro non lo è, basta rinominare le coordinate per portare quello al primo posto. Se invece tutti i coefficienti sono nulli, l'equazione si riduce a <math|0=0>, non impone alcun vincolo e lo spazio delle soluzioni ha dimensione <math|n>.
 
 <section|Basi di sottospazi di polinomi>
 
-Torniamo a <math|ℝ<rsub|3>[X]>, che ha dimensione 4. Una condizione come <math|p(0)=0> è facile da leggere sui coefficienti: se <math|p=a<rsub|0>+a<rsub|1>X+a<rsub|2>X<rsup|2>+a<rsub|3>X<rsup|3>>, impone <math|a<rsub|0>=0>. Quindi <math|W<rsub|0>={p:p(0)=0}> ha base <math|(X,X<rsup|2>,X<rsup|3>)> e dimensione 3.
+Le stesse idee funzionano anche lontano da <math|K<rsup|n>>. Torniamo a <math|ℝ<rsub|3>[X]>, che ha dimensione 4, e imponiamo qualche condizione. La condizione <math|p(0)=0> è facile da leggere sui coefficienti, perché se <math|p=a<rsub|0>+a<rsub|1>X+a<rsub|2>X<rsup|2>+a<rsub|3>X<rsup|3>> allora <math|p(0)=a<rsub|0>>. Lo spazio <math|W<rsub|0>={p:p(0)=0}> ha quindi la base <math|(X,X<rsup|2>,X<rsup|3>)> e dimensione 3.
 
-Per <math|W<rsub|1>={p:p(1)=0}> il teorema del fattore dà <math|p=(X-1)q>, con <math|q∈ℝ<rsub|2>[X]>. Una base è <math|(X-1,X(X-1),X<rsup|2>(X-1))>. Genera perché sviluppiamo <math|q> in <math|1,X,X<rsup|2>>.
+La condizione <math|p(1)=0> non si legge altrettanto direttamente, ma il teorema del fattore ci viene in aiuto. Essa equivale a scrivere <math|p=(X-1)q> con <math|q∈ℝ<rsub|2>[X]>. Sviluppando <math|q> nei monomi <math|1,X,X<rsup|2>>, vediamo che i polinomi <math|X-1>, <math|X(X-1)> e <math|X<rsup|2>(X-1)> generano <math|W<rsub|1>={p:p(1)=0}>.
 
-È indipendente perché i tre polinomi hanno gradi distinti: in una relazione nulla il termine di grado massimo può provenire da un solo polinomio, il cui coefficiente deve essere zero. Eliminato quello, si ripete sui restanti.
+Sono anche indipendenti, e il motivo è che hanno gradi diversi. In una loro relazione nulla il termine di grado più alto può venire da un solo polinomio, quindi il suo coefficiente deve essere zero. Tolto quel polinomio, ripetiamo lo stesso ragionamento sui rimanenti. Questo argomento funziona per qualsiasi famiglia finita di polinomi non nulli con gradi tutti diversi, e lo useremo ancora.
 
-Questo argomento vale per qualunque famiglia finita di polinomi non nulli con gradi distinti.
-
-Per l'intersezione <math|W<rsub|0,1>> chiediamo entrambe le condizioni. Scriviamo <math|p=Xq> grazie a <math|p(0)=0>; valutando in 1 ricaviamo <math|q(1)=0>. Allora <math|q=(X-1)r> e
+Se chiediamo entrambe le condizioni otteniamo l'intersezione <math|W<rsub|0,1>>. Poiché <math|p(0)=0>, possiamo scrivere <math|p=Xq>, e valutando in 1 troviamo <math|q(1)=0>. Allora <math|q=(X-1)r> con <math|r> di grado al più 1, e quindi
 
 <\equation*>
 p=X(X-1)(a+bX).
 </equation*>
 
-Il quoziente ha grado al più 1. Una base è <math|(X(X-1),X<rsup|2>(X-1))> e la dimensione è 2, con generazione data dalla formula e indipendenza dai gradi 2 e 3.
+La formula mostra che <math|X(X-1)> e <math|X<rsup|2>(X-1)> generano, e i loro gradi 2 e 3 mostrano che sono indipendenti. La dimensione è 2.
 
 <figura|@IMG(polinomi01)|I due polinomi della base di <math|W<rsub|0,1>> si annullano in 0 e in 1. Nel disegno la curva continua è <math|X(X-1)>, quella tratteggiata è <math|X<rsup|2>(X-1)>.>
 
-Infine chiediamo soltanto <math|p(0)=p(1)>. I polinomi costanti sono ammessi. Per riusare l'intersezione precedente, sottraiamo la costante <math|p(0)>: il polinomio <math|q=p-p(0)> si annulla in entrambi i punti. Otteniamo quindi
+Infine chiediamo soltanto che <math|p(0)=p(1)>. Questa volta i polinomi costanti sono ammessi, e per sfruttare il caso precedente togliamo la costante <math|p(0)>. Il polinomio <math|p-p(0)> si annulla sia in 0 sia in 1, quindi sta in <math|W<rsub|0,1>>, e otteniamo
 
 <\equation*>
 p=p(0)·1+aX(X-1)+bX<rsup|2>(X-1).
 </equation*>
 
-Questa formula dà la generazione; i gradi distinti 0, 2, 3 danno l'indipendenza. La base è <math|(1,X(X-1),X<rsup|2>(X-1))> e la dimensione è 3. Le condizioni considerate definiscono sottospazi perché la valutazione rispetta somme e multipli, come nell'esercizio 4.1.
+La formula dà la generazione, e i gradi diversi 0, 2 e 3 danno l'indipendenza. La base è <math|(1,X(X-1),X<rsup|2>(X-1))> e la dimensione è 3. Tutte le condizioni che abbiamo considerato definiscono davvero sottospazi, perché la valutazione in un punto rispetta somme e multipli, come nell'esercizio 4.1.
 
 <subsection|Per proseguire: basi massimali e generatori minimali>
 
-Due altri modi di riconoscere una base sono utili per capire che cosa abbiamo raggiunto. Un insieme indipendente è <strong|massimale per inclusione> quando non possiamo aggiungere altri vettori mantenendo l'indipendenza.
+Ci sono altri due modi di riconoscere una base, che aiutano a capire che cosa abbiamo ottenuto. Un insieme indipendente si dice <strong|massimale per inclusione> quando non possiamo aggiungergli nessun vettore senza perdere l'indipendenza. Un sistema di generatori si dice <strong|minimale per inclusione> quando non possiamo togliergli nessun vettore senza perdere la generazione. Entrambe le definizioni parlano di aggiungere o togliere, non di contare.
 
-Un sistema di generatori è <strong|minimale per inclusione> quando non possiamo togliere vettori mantenendo la generazione. Non sono definizioni basate sul numero di elementi.
+Una base è un insieme indipendente massimale. Se le aggiungiamo un vettore <math|v>, possiamo scrivere <math|v> come combinazione dei vettori della base, e questa scrittura dà una relazione non banale. Viceversa, un insieme indipendente massimale genera tutto lo spazio. Se un vettore <math|v> stesse fuori dal suo span, potremmo aggiungerlo mantenendo l'indipendenza, come abbiamo visto all'inizio del capitolo, e questo contraddirebbe la massimalità.
 
-Una base è indipendente massimale: se aggiungiamo <math|v> fuori dalla base, il fatto che essa generi scrive <math|v> mediante i suoi vettori e produce una relazione non banale.
-
-Viceversa, un insieme indipendente massimale genera. Infatti, se <math|v> fosse fuori dal suo span, una relazione <math|βv+<big|sum>α<rsub|j>b<rsub|j>=0> non potrebbe avere <math|β≠0>, altrimenti esprimerebbe <math|v> nello span. Con <math|β=0> anche gli altri coefficienti sarebbero zero per l'indipendenza. Potremmo quindi aggiungere <math|v>, contro la massimalità.
-
-Una base è anche generatore minimale: togliere un vettore renderebbe impossibile ricostruire proprio quel vettore, per l'indipendenza.
-
-Viceversa, un sistema minimale di generatori non può essere dipendente: una relazione non banale offrirebbe un vettore eliminabile, contro la minimalità.
-
-Le tre caratterizzazioni coincidono. Le prove funzionano anche per famiglie infinite, perché ogni relazione usa soltanto un numero finito di vettori; qui useremo soprattutto il caso finito.
+Una base è anche un sistema minimale di generatori, perché se togliamo un suo vettore non possiamo più ricostruirlo con gli altri, per l'indipendenza. Viceversa, un sistema minimale di generatori non può essere dipendente, perché una relazione non banale indicherebbe un vettore superfluo, che si potrebbe togliere. Le tre descrizioni coincidono quindi. Le dimostrazioni funzionano anche per famiglie infinite, perché ogni relazione coinvolge soltanto un numero finito di vettori, anche se qui ci interesserà soprattutto il caso finito.
 
 <subsection|Per proseguire: basi infinite>
 
-La base dei monomi mostra che <math|K[X]> non è finitamente generato. Anche per basi infinite si può parlare di dimensione come cardinalità, ed è vero che due basi dello stesso spazio sono equipotenti. Il confronto generale richiede argomenti ulteriori: il lemma finito dimostrato qui non ne costituisce una prova. Nel resto del volume i teoremi di dimensione si applicano a spazi finiti.
+La base dei monomi mostra che <math|K[X]> non è finitamente generato. Anche per gli spazi con basi infinite si può parlare di dimensione, intesa come cardinalità di una base, ed è vero che due basi dello stesso spazio hanno sempre la stessa cardinalità. Il confronto richiede però argomenti diversi da quelli di questo capitolo, perché il lemma di scambio funziona con un numero finito di passi. Nel resto del volume useremo i teoremi sulla dimensione soltanto per spazi di dimensione finita.
 
 <\verifica|6>
 <strong|6.1.> Trova una base e la dimensione di <math|W={p∈ℝ<rsub|2>[X]:p(2)=0}>. Controlla sia la generazione sia l'indipendenza.

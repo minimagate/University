@@ -11,36 +11,30 @@
 
 <vspace|1.4fn>
 
-<with|font-shape|small-caps|font-size|1.15|settembre e ottobre 2026>
+<with|font-shape|small-caps|font-size|1.15|ottobre 2026>
 </with>
 
 <chapter*|Dalle domande ai limiti, dai limiti agli sviluppi>
 
-Una successione può avvicinarsi sempre di più a un numero senza mai raggiungerlo. Un grafico curvo può assomigliare a una retta quando lo osserviamo vicino a un punto. L'analisi rende precise queste due idee: avvicinamento e approssimazione. In questo volume impareremo a usarle e a giustificare quello che un disegno può suggerire.
+Una successione può avvicinarsi sempre di più a un numero senza raggiungerlo mai, e un grafico curvo, guardato abbastanza da vicino, può sembrare quasi una retta. Sono due esperienze che ognuno di noi ha già fatto disegnando o calcolando. L'analisi parte da qui e rende precise queste due idee, l'avvicinamento e l'approssimazione, in modo da poter giustificare ciò che un disegno si limita a suggerire.
 
-Il punto di partenza sono le operazioni con numeri, frazioni ed equazioni elementari. Le nozioni universitarie vengono introdotte nel testo.
+Per leggere il libro bastano le operazioni con i numeri e le frazioni e le equazioni elementari. Tutto ciò che appartiene già al linguaggio universitario viene introdotto lungo la strada, con esempi prima delle definizioni.
 
-Prima impariamo a leggere un enunciato e a riconoscere dominio, immagine e inversa di una funzione. L'induzione ci insegna a controllare affermazioni su tutti i naturali. La completezza dei reali ci darà poi uno strumento per dimostrare l'esistenza di numeri che non sappiamo ancora calcolare.
+Nei primi capitoli impariamo a leggere con cura un enunciato e a riconoscere dominio, immagine e inversa di una funzione. Con l'induzione scopriamo come controllare un'affermazione su tutti i naturali senza esaminarli uno per uno. La completezza dei reali ci darà poi uno strumento sorprendente, perché permette di dimostrare che un numero esiste anche quando non sappiamo ancora calcolarlo.
 
-I limiti sono il centro del percorso. Cominciamo dalle successioni, nelle quali la variabile è un indice intero; passiamo alle funzioni, nelle quali la variabile si muove lungo la retta.
+Il cuore del percorso sono i limiti. Li incontriamo prima nelle successioni, dove la variabile è un indice intero che cresce, e poi nelle funzioni, dove la variabile si muove con continuità lungo la retta. Le definizioni con <math|ε> e <math|δ> trasformano la parola «vicino» in una richiesta precisa, e i confronti, la monotonia e i limiti notevoli ci danno gli strumenti per soddisfarla.
 
-Le definizioni con <math|ε> e <math|δ> traducono la parola «vicino» in richieste precise. Confronti, monotonia e limiti notevoli forniscono strumenti per rispondere a quelle richieste.
+Nella parte finale cambia la domanda. Non ci basta più sapere a che cosa tende un'espressione, vogliamo sapere <em|quanto è piccolo l'errore> che commettiamo sostituendola con qualcosa di più semplice. I simboli di Landau servono a tenere traccia di quell'errore. La derivata fornisce l'approssimazione migliore con una retta, e gli sviluppi di Taylor la estendono ai polinomi di grado più alto. Gli ultimi esempi mostrano come decidere quanti termini tenere quando alcuni si cancellano.
 
-Nella parte finale una domanda cambia il modo di calcolare: <em|quanto è piccolo l'errore?> I simboli di Landau permettono di conservarne l'ordine. La derivata offre un'approssimazione lineare; Taylor la estende a polinomi di grado più alto. Gli ultimi esempi insegnano a scegliere quanti termini servono quando alcuni si cancellano.
+Ogni capitolo si apre con un breve paragrafo, «In breve», che racconta il problema del capitolo e la strada che seguiremo. I titoli di capitoli e sezioni nominano i concetti fondamentali, e i riquadri «Concetto chiave» permettono di ritrovarne rapidamente le definizioni. Nelle dimostrazioni più importanti cerchiamo sempre di spiegare perché una mossa è sensata prima di scrivere i passaggi.
 
-Ogni capitolo comincia con «In breve»: poche frasi per capire la domanda, il punto di partenza e il passo che faremo. I titoli dei capitoli e delle sezioni nominano i concetti fondamentali. I riquadri «Concetto chiave» aiutano a ritrovarne le definizioni. Le dimostrazioni spiegano le scelte prima di mettere in fila i passaggi.
+Gli esercizi proposti hanno tutti una soluzione ragionata nell'ultima parte del libro. Conviene provare prima a scegliere una strada da soli e solo dopo confrontarla con la soluzione. Le sezioni «Per proseguire» raccolgono varianti e sviluppi secondari, che si possono rimandare a una seconda lettura senza perdere il filo.
 
-Per gli esercizi proposti trovi soluzioni ragionate nell'ultima parte: prova prima a scegliere una strada, poi confrontala con la soluzione.
+Non occorre memorizzare ogni conto. Occorre invece capire quali ipotesi rendono valido un passaggio, perché è lì che si nascondono quasi tutti gli errori.
 
-Le parti «Per proseguire» raccolgono varianti secondarie. Il percorso conserva gli argomenti principali del periodo e sceglie gli esempi in modo che ciascuno insegni un passaggio utile. Non occorre memorizzare ogni conto: occorre capire quali ipotesi rendono valido un passaggio.
+Il volume raccoglie le lezioni del corso fino al 31 ottobre 2026. Spiegazioni aggiuntive, figure ed esercizi di consolidamento sono integrazioni didattiche; la corrispondenza con le fonti è documentata nei file che accompagnano il libro.
 
-Il volume 1 rielabora le fonti disponibili dal <strong|23 settembre al 31 ottobre 2026>; l'ultima lezione presente è del 29 ottobre. Settembre è incluso.
-
-Le spiegazioni aggiuntive, le figure e gli esercizi di consolidamento sono integrazioni didattiche. La corrispondenza con le fonti e le correzioni matematiche sono documentate nei file che accompagnano il libro.
-
-<strong|Convenzioni.> Scriviamo ℕ per i naturali comprendendo lo zero; quando compaiono 1/n o n!, indichiamo gli indici ammessi.
-
-Tutte le funzioni sono reali salvo avviso. Gli angoli si misurano in radianti. «log» indica il logaritmo naturale. Il simbolo ∞ descrive un comportamento, non un numero reale con cui eseguire liberamente le operazioni.
+<strong|Convenzioni.> Scriviamo ℕ per i naturali, compreso lo zero, e quando compaiono espressioni come <math|1/n> o <math|n!> indichiamo quali indici sono ammessi. Le funzioni sono reali salvo avviso contrario, gli angoli si misurano in radianti e «log» indica il logaritmo naturale. Il simbolo ∞ descrive un comportamento e non è un numero reale con cui fare liberamente i conti.
 
 <\table-of-contents|toc>
 </table-of-contents>

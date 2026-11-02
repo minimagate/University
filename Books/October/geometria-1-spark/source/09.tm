@@ -1,22 +1,20 @@
 <chapter|Eliminazione di Gauss e sistemi a scala>
 
 <\inbreve>
-Come possiamo risolvere un sistema senza indovinare i valori delle incognite? Partiamo da sistemi nei quali le equazioni si leggono una dopo l'altra. Con operazioni reversibili impareremo a portare anche gli altri sistemi in questa forma.
+Alcuni sistemi lineari si risolvono quasi da soli, perché le equazioni si possono leggere una dopo l'altra, dal basso verso l'alto. Questo capitolo parte da quei sistemi e mostra come portarci anche tutti gli altri, con poche operazioni che non perdono e non aggiungono soluzioni. Il metodo che ne nasce, l'eliminazione di Gauss, ci darà sia le soluzioni dei sistemi sia un modo per passare dalle equazioni di un sottospazio ai suoi generatori e viceversa.
 </inbreve>
 
 <section|Pivot e variabili libere>
 
-Partiamo da un sistema già semplice:
+Lavoriamo su <math|ℝ> e cominciamo da un sistema già semplice:
 
 <\equation*>
 <choice|<tformat|<table|<row|<cell|2x<rsub|1>+x<rsub|2>-2x<rsub|3>=2>>|<row|<cell|x<rsub|2>-2x<rsub|3>=3>>>>>.
 </equation*>
 
-Qui lavoriamo su <math|ℝ>. L'ultima equazione permette di scrivere <math|x<rsub|2>=3+2x<rsub|3>>. Sostituendo nella prima si ottiene <math|2x<rsub|1>+3=2>, quindi <math|x<rsub|1>=-1/2>.
+L'ultima equazione ci permette di scrivere <math|x<rsub|2>=3+2x<rsub|3>>. Sostituendo nella prima otteniamo <math|2x<rsub|1>+(3+2x<rsub|3>)-2x<rsub|3>=2>, cioè <math|2x<rsub|1>+3=2>, e quindi <math|x<rsub|1>=-1/2>. Nessuna equazione impone invece il valore di <math|x<rsub|3>>. Se lo scegliamo uguale a un parametro <math|t>, tutte le soluzioni sono <math|(-1/2,3+2t,t)<rsup|T>>.
 
-Il valore di <math|x<rsub|3>> non è imposto da altre equazioni: scelto <math|x<rsub|3>=t>, tutte le soluzioni sono <math|(-1/2,3+2t,t)<rsup|T>>.
-
-Perché abbiamo potuto risolvere così? La prima equazione comincia con <math|x<rsub|1>>, la seconda con <math|x<rsub|2>>. Ogni nuova equazione comincia più a destra: non reintroduce l'incognita che ci siamo lasciati alle spalle.
+Il sistema si è lasciato risolvere così facilmente per via della sua forma. La prima equazione comincia con <math|x<rsub|1>> e la seconda con <math|x<rsub|2>>, e in generale ogni nuova equazione comincia più a destra della precedente. Così, risalendo dal basso, ogni equazione introduce al più un'incognita nuova da ricavare.
 
 <\concetto|Matrice a scala e pivot>
 Una matrice è <strong|a scala> se le righe nulle sono in fondo e, passando da una riga non nulla alla successiva, la prima entrata non nulla si sposta strettamente a destra. Quella prima entrata si chiama <strong|pivot>. Sotto ogni pivot ci sono zeri.
@@ -24,17 +22,13 @@ Una matrice è <strong|a scala> se le righe nulle sono in fondo e, passando da u
 
 <figura|@IMG(scala,0.9)|I pivot, indicati con <math|p≠0>, avanzano verso destra. Le stelle indicano entrate che possono avere qualsiasi valore, anche zero. Le righe completamente nulle sono in fondo.>
 
-Le colonne delle incognite con pivot individuano le <strong|variabili pivot>; le altre individuano le <strong|variabili libere>. Assegniamo valori alle libere e ricaviamo le pivot a ritroso. Questa scelta dei parametri viene dalla forma a scala adottata; la famiglia di soluzioni può essere riscritta anche con altri parametri, purché descriva esattamente gli stessi vettori.
+Le incognite che corrispondono a colonne con un pivot si chiamano <strong|variabili pivot>, le altre <strong|variabili libere>. Il metodo di soluzione è quello dell'esempio. Assegniamo valori arbitrari alle variabili libere e ricaviamo le variabili pivot risalendo dal basso. La scelta dei parametri dipende dalla forma a scala che abbiamo ottenuto, e la stessa famiglia di soluzioni si potrebbe descrivere anche con parametri diversi, purché si ottengano esattamente gli stessi vettori.
 
-Occorre guardare anche i termini noti. Se nella matrice completa compare una riga <math|(0,…,0\|c)> con <math|c≠0>, essa impone <math|0=c>: il sistema è incompatibile. È un pivot nell'ultima colonna, quella che non corrisponde a un'incognita.
+Bisogna però guardare anche i termini noti. Se nella matrice completa compare una riga <math|(0,…,0\|c)> con <math|c≠0>, quella riga dice <math|0=c>, cosa impossibile, e il sistema non ha soluzioni. In termini di pivot, questo accade quando un pivot cade nell'ultima colonna, quella dei termini noti, che non corrisponde a nessuna incognita. In una matrice completa a scala è l'unico ostacolo possibile. Se non c'è, la risalita dal basso trova sempre le variabili pivot, perché a ogni passo dividiamo per un pivot, che non è nullo.
 
-In una matrice completa a scala questa è l'unica possibile ostruzione: se non compare, la sostituzione dal basso trova sempre le variabili pivot, dividendo per pivot non nulli.
+<section|Operazioni di riga: cambiare la forma senza cambiare le soluzioni>
 
-<section|Operazioni di riga: cambiare la forma conservando le soluzioni>
-
-Se una prima equazione contiene <math|x+2y> e una seconda contiene <math|2x+3y>, sottrarre due volte la prima dalla seconda elimina <math|x>. Vogliamo usare questa idea senza perdere o aggiungere soluzioni.
-
-Le tre <strong|operazioni elementari di riga> sulla matrice completa sono:
+Supponiamo che una prima equazione contenga <math|x+2y> e una seconda contenga <math|2x+3y>. Se sottraiamo due volte la prima dalla seconda, la <math|x> sparisce dalla seconda equazione. È il tipo di mossa che ci serve per arrivare a una forma a scala, ma dobbiamo essere sicuri che non cambi l'insieme delle soluzioni. Sulla matrice completa usiamo tre <strong|operazioni elementari di riga>:
 
 <\enumerate>
 
@@ -45,25 +39,19 @@ Le tre <strong|operazioni elementari di riga> sulla matrice completa sono:
 <item>sostituire <math|R<rsub|i>> con <math|R<rsub|i>+λR<rsub|j>>, per <math|i≠j>.
 </enumerate>
 
-Ogni operazione ha un'inversa: ripetere lo scambio; moltiplicare per <math|λ<rsup|-1>>; sottrarre lo stesso multiplo.
+Ognuna di queste operazioni si può annullare con un'operazione dello stesso tipo. Uno scambio si annulla ripetendolo, una moltiplicazione per <math|λ> si annulla moltiplicando per <math|λ<rsup|-1>>, e l'aggiunta di <math|λR<rsub|j>> si annulla sottraendo lo stesso multiplo. È questa reversibilità a garantire che le soluzioni non cambino. Prendiamo la terza operazione. Chi soddisfa entrambe le equazioni di partenza soddisfa anche la loro combinazione, quindi nessuna soluzione si perde. Viceversa, dalla nuova equazione e dalla riga <math|R<rsub|j>>, che non abbiamo toccato, ricostruiamo la vecchia equazione, quindi nessuna soluzione si aggiunge. Per le altre due operazioni il ragionamento è ancora più semplice. In ogni caso, <strong|l'insieme delle soluzioni resta esattamente lo stesso>.
 
-Per la terza, chi soddisfa entrambe le equazioni iniziali soddisfa la loro combinazione; viceversa recuperiamo la vecchia equazione sottraendo <math|λ> volte la riga che abbiamo conservato. Quindi <strong|l'insieme delle soluzioni resta identico in entrambe le direzioni>.
-
-La condizione <math|λ≠0> evita di trasformare un'equazione informativa in <math|0=0>. Nella terza operazione la riga di appoggio deve essere un'altra: aggiungere alla stessa riga il suo opposto la cancellerebbe.
+Le condizioni nelle definizioni hanno un motivo. Se moltiplicassimo una riga per zero, trasformeremmo un'equazione che contiene informazioni in <math|0=0>, e perderemmo vincoli. Se nella terza operazione usassimo la riga stessa come appoggio, potremmo cancellarla sommandole il suo opposto.
 
 <\attenzione|Trasformare anche i termini noti>
 L'operazione si applica alla riga <em|intera> di <math|(A\|b)>. Se sostituiamo la seconda equazione con la seconda meno il doppio della prima, dobbiamo fare la stessa sottrazione anche sui termini noti. Cambiare soltanto i coefficienti produce un altro problema.
 </attenzione>
 
-Le mosse conservano anche lo span delle righe: ogni nuova riga è combinazione delle vecchie e la reversibilità dà l'inclusione opposta.
-
-Per le colonne, invece, lo span può cambiare. La colonna <math|(1,1)<rsup|T>> diventa <math|(1,0)<rsup|T>> dopo <math|R<rsub|2>←R<rsub|2>-R<rsub|1>>: prima generava una retta obliqua, poi un asse. Nel capitolo 10 vedremo perché la <em|dimensione> dello spazio delle colonne rimane comunque la stessa.
+Le operazioni di riga lasciano invariato anche lo span delle righe, perché ogni riga nuova è combinazione delle vecchie e, per la reversibilità, vale anche il contrario. Lo span delle colonne invece può cambiare. Con l'operazione <math|R<rsub|2>←R<rsub|2>-R<rsub|1>> la colonna <math|(1,1)<rsup|T>> diventa <math|(1,0)<rsup|T>>, e la retta obliqua che generava diventa un asse. Nel capitolo 10 vedremo che, nonostante questo, la <em|dimensione> dello span delle colonne non cambia.
 
 <section|L'algoritmo e una riduzione completa>
 
-Supponiamo che nella colonna scelta il pivot sia <math|p≠0> e che sotto di esso compaia <math|a>. Quale multiplo della riga pivot dobbiamo sottrarre? Vogliamo <math|a-λp=0>, quindi scegliamo <math|λ=a/p>. Questa divisione è consentita perché lavoriamo su un campo e il pivot non è zero.
-
-Gauss ripete questa decisione su rettangoli sempre più piccoli:
+Il cuore del metodo è una sola decisione, che si ripete. Supponiamo che nella colonna su cui lavoriamo ci sia un pivot <math|p≠0> e che sotto di esso ci sia un'entrata <math|a> che vogliamo annullare. Sottraendo <math|λ> volte la riga del pivot, quell'entrata diventa <math|a-λp>, e per farla diventare zero scegliamo <math|λ=a/p>. Possiamo dividere perché lavoriamo in un campo e il pivot non è nullo. Il metodo di Gauss ripete questa decisione su rettangoli sempre più piccoli:
 
 <\enumerate>
 
@@ -76,35 +64,31 @@ Gauss ripete questa decisione su rettangoli sempre più piccoli:
 <item>Ripeti nel rettangolo sotto la riga pivot e a destra della sua colonna.
 </enumerate>
 
-Le righe già sistemate restano scritte; non si cancellano. A ogni pivot il rettangolo perde una riga e almeno una colonna. Ci sono soltanto un numero finito di righe e colonne: il procedimento termina.
-
-Gli zeri creati a sinistra dei nuovi pivot restano zero, perché le righe usate nei passi successivi hanno zero in quelle posizioni.
+Le righe già sistemate restano al loro posto e non vengono più toccate. A ogni nuovo pivot il rettangolo da sistemare perde una riga e almeno una colonna, e poiché righe e colonne sono in numero finito il procedimento prima o poi termina. Inoltre gli zeri già ottenuti non vengono rovinati, perché le righe usate nei passi successivi hanno zeri in tutte le posizioni a sinistra del rettangolo.
 
 <figura|@IMG(gauss-passi,0.9)|Il rettangolo grigio è la parte ancora da sistemare. Ogni nuovo pivot riduce il lavoro rimanente, lasciando intatti gli zeri già ottenuti.>
 
 <subsection|Una riduzione svolta>
 
-Vediamo tutte le scelte su un esempio reale:
+Vediamo il metodo all'opera su un sistema reale, seguendo ogni scelta:
 
 <\equation*>
 (A\|b)=<matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|2>|<cell|3>|<cell|1>|<cell|3>>>>>.
 </equation*>
 
-La prima entrata è zero, ma nella prima colonna ci sono elementi non nulli. Scambiamo <math|R<rsub|1>> e <math|R<rsub|2>>, scegliendo il pivot 1. Otteniamo
+La prima entrata è zero, ma nella prima colonna ci sono elementi non nulli, quindi possiamo procurarci un pivot con uno scambio. Scambiamo le prime due righe e scegliamo come pivot l'1 che arriva in cima:
 
 <\equation*>
 <matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|2>|<cell|3>|<cell|1>|<cell|3>>>>>.
 </equation*>
 
-Sotto il pivot la seconda riga ha già zero; la terza ha 2. Facciamo <math|R<rsub|3>←R<rsub|3>-2R<rsub|1>>.
-
-Poi nel rettangolo rimasto il pivot è l'1 della seconda riga. Per eliminare il <math|-1> sotto di esso sommiamo la seconda riga alla terza:
+Sotto il pivot la seconda riga ha già uno zero, mentre la terza ha un 2, che eliminiamo con <math|R<rsub|3>←R<rsub|3>-2R<rsub|1>>. Nel rettangolo che resta il nuovo pivot è l'1 della seconda riga, e per eliminare il <math|-1> che compare sotto di esso sommiamo la seconda riga alla terza:
 
 <\equation*>
 <matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|-1>|<cell|-1>|<cell|-1>>>>><space|1em>→<space|1em><matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|2>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|0>>>>>.
 </equation*>
 
-La terza riga dice <math|0=0>, quindi non impone altri vincoli. Poniamo <math|x<rsub|3>=t>. La seconda riga dà <math|x<rsub|2>=1-t>; la prima dà <math|x<rsub|1>=2-2(1-t)-t=t>. Tutte le soluzioni sono
+La terza riga è diventata <math|0=0> e non impone più nulla. La variabile <math|x<rsub|3>> è libera, e poniamo <math|x<rsub|3>=t>. La seconda riga dà <math|x<rsub|2>=1-t>, e la prima dà <math|x<rsub|1>=2-2(1-t)-t=t>. Tutte le soluzioni sono quindi
 
 <\equation*>
 x=(0,1,0)<rsup|T>+t(1,-1,1)<rsup|T>,<space|1em>t∈ℝ.
@@ -112,57 +96,53 @@ x=(0,1,0)<rsup|T>+t(1,-1,1)<rsup|T>,<space|1em>t∈ℝ.
 
 <subsection|Leggere e controllare le soluzioni>
 
-Controlliamo nel sistema originale: <math|x<rsub|2>+x<rsub|3>=1>, <math|x<rsub|1>+2x<rsub|2>+x<rsub|3>=2>, <math|2x<rsub|1>+3x<rsub|2>+x<rsub|3>=3>. Sostituendo la formula, il parametro si cancella in ciascuna equazione. Vediamo anche la struttura del capitolo precedente: una soluzione particolare più un multiplo di un vettore del nucleo.
+Conviene sempre controllare il risultato nel sistema di partenza, che è <math|x<rsub|2>+x<rsub|3>=1>, <math|x<rsub|1>+2x<rsub|2>+x<rsub|3>=2> e <math|2x<rsub|1>+3x<rsub|2>+x<rsub|3>=3>. Sostituendo la formula, in ogni equazione il parametro <math|t> si cancella e restano uguaglianze vere. La risposta ha la forma che ci aspettavamo dal capitolo precedente, cioè una soluzione particolare più i multipli di un vettore del nucleo.
 
 <section|Contare i parametri e costruire una base del nucleo>
 
-Se un sistema a scala compatibile ha <math|n> incognite e <math|k> pivot nella parte dei coefficienti, ci sono <math|n-k> variabili libere. Ogni scelta di quei valori determina una e una sola soluzione: l'esistenza viene dalla sostituzione all'indietro e l'unicità dal fatto che a ogni passo si divide per un pivot non nullo.
+Se un sistema a scala compatibile ha <math|n> incognite e <math|k> pivot nella parte dei coefficienti, le variabili libere sono <math|n-k>. Ogni scelta dei loro valori determina una e una sola soluzione. L'esistenza viene dalla risalita dal basso, e l'unicità dal fatto che a ogni passo ricaviamo una variabile pivot dividendo per un pivot non nullo, senza nessuna scelta. Su un campo infinito basta quindi una variabile libera per avere infinite soluzioni. Su un campo con <math|q> elementi le soluzioni sono esattamente <math|q<rsup|n-k>>. Quando <math|k=n> non ci sono parametri da scegliere, e la soluzione è unica.
 
-Su un campo infinito, almeno una variabile libera dà infinite soluzioni. Su un campo con <math|q> elementi, le scelte sono esattamente <math|q<rsup|n-k>>. Quando <math|k=n>, l'unica scelta è quella senza parametri e la soluzione è unica.
-
-Un esempio con due parametri, tratto dalla lezione del 22 ottobre, è
+Vediamo un esempio con due parametri:
 
 <\equation*>
 x<rsub|1>+x<rsub|2>-x<rsub|3>+2x<rsub|4>=2,<space|1em>x<rsub|3>+x<rsub|4>=-1.
 </equation*>
 
-I pivot sono nelle colonne 1 e 3. Scegliamo <math|x<rsub|2>=s>, <math|x<rsub|4>=t>. L'ultima equazione dà <math|x<rsub|3>=-1-t>; la prima dà <math|x<rsub|1>=2-s+(-1-t)-2t=1-s-3t>. Raccogliendo:
+I pivot sono nelle colonne 1 e 3, quindi le variabili libere sono <math|x<rsub|2>=s> e <math|x<rsub|4>=t>. L'ultima equazione dà <math|x<rsub|3>=-1-t>, e la prima dà <math|x<rsub|1>=2-s+(-1-t)-2t=1-s-3t>. Raccogliendo i termini con lo stesso parametro troviamo
 
 <\equation*>
 x=(1,0,-1,0)<rsup|T>+s(-1,1,0,0)<rsup|T>+t(-3,0,-1,1)<rsup|T>.
 </equation*>
 
-Togliendo la soluzione particolare, i due vettori che moltiplicano <math|s,t> formano una base del nucleo.
+Il primo vettore è una soluzione particolare, e i due vettori che moltiplicano <math|s> e <math|t> generano il nucleo. Sono anche indipendenti, e il motivo si legge nelle componenti libere. Nella componente 2 soltanto il primo dei due vettori ha un 1, e nella componente 4 soltanto il secondo. In una combinazione nulla queste due componenti obbligano quindi entrambi i coefficienti a essere zero.
 
-Perché sono indipendenti? Nella componente 2 soltanto il primo ha un 1; nella componente 4 soltanto il secondo ha un 1. Una combinazione nulla obbliga quindi entrambi i coefficienti a essere zero.
-
-La stessa giustificazione vale in generale. Nel sistema omogeneo assegniamo a turno il valore 1 a una variabile libera e 0 alle altre; ricaviamo le pivot. I vettori ottenuti generano tutte le soluzioni e, guardando le componenti libere, sono indipendenti. Otteniamo così una base, non soltanto una lista di generatori.
+Lo stesso ragionamento funziona sempre. Nel sistema omogeneo diamo a turno il valore 1 a una variabile libera e il valore 0 a tutte le altre, e ricaviamo le variabili pivot. I vettori così ottenuti generano tutte le soluzioni, e guardando le componenti libere si vede che sono indipendenti. Otteniamo dunque una base del nucleo, e non soltanto un insieme di generatori.
 
 <section|Dalle equazioni ai generatori, e viceversa>
 
-Consideriamo <math|W⊆ℝ<rsup|4>> definito dalle equazioni <math|x<rsub|1>+x<rsub|2>+x<rsub|3>+x<rsub|4>=0> e <math|x<rsub|3>-x<rsub|4>=0>. Sono già a scala. Con <math|x<rsub|2>=s> e <math|x<rsub|4>=t> otteniamo <math|x<rsub|3>=t>, <math|x<rsub|1>=-s-2t>. Dunque
+Un sottospazio si può descrivere con delle equazioni, che dicono quali vettori sono ammessi, oppure con dei generatori, che dicono come costruirli. Gauss permette di passare da una descrizione all'altra. Consideriamo <math|W⊆ℝ<rsup|4>> definito dalle equazioni <math|x<rsub|1>+x<rsub|2>+x<rsub|3>+x<rsub|4>=0> e <math|x<rsub|3>-x<rsub|4>=0>, che sono già a scala. Con <math|x<rsub|2>=s> e <math|x<rsub|4>=t> otteniamo <math|x<rsub|3>=t> e <math|x<rsub|1>=-s-2t>, e quindi
 
 <\equation*>
 W=<math-up|span>((-1,1,0,0)<rsup|T>,(-2,0,1,1)<rsup|T>).
 </equation*>
 
-I due vettori sono indipendenti guardando le componenti libere, perciò sono una base e <math|dim W=2>. Abbiamo tradotto condizioni in possibilità di costruzione.
+Le componenti libere mostrano che i due vettori sono indipendenti, quindi formano una base e <math|dim W=2>. Abbiamo così trasformato delle condizioni in istruzioni di costruzione.
 
 <subsection|Dai generatori a un'equazione>
 
-Per fare il percorso inverso, supponiamo di conoscere i generatori <math|v<rsub|1>=(1,-1,0)<rsup|T>> e <math|v<rsub|2>=(0,1,-1)<rsup|T>>. Un vettore generico <math|w=(x,y,z)<rsup|T>> sta nel loro span se esistono coefficienti <math|a,b> con <math|av<rsub|1>+bv<rsub|2>=w>. La matrice completa è
+Ora facciamo il percorso inverso. Supponiamo di conoscere i generatori <math|v<rsub|1>=(1,-1,0)<rsup|T>> e <math|v<rsub|2>=(0,1,-1)<rsup|T>> e di voler trovare un'equazione del loro span. Un vettore generico <math|w=(x,y,z)<rsup|T>> sta nello span quando esistono coefficienti <math|a,b> con <math|av<rsub|1>+bv<rsub|2>=w>. Questo è un sistema nelle incognite <math|a,b>, con matrice completa
 
 <\equation*>
 <matrix|<tformat|<cwith|1|-1|3|3|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|0>|<cell|x>>|<row|<cell|-1>|<cell|1>|<cell|y>>|<row|<cell|0>|<cell|-1>|<cell|z>>>>>.
 </equation*>
 
-Sommiamo la prima riga alla seconda; poi sommiamo la nuova seconda riga alla terza. Otteniamo
+Sommiamo la prima riga alla seconda, e poi la nuova seconda riga alla terza. Otteniamo
 
 <\equation*>
 <matrix|<tformat|<cwith|1|-1|3|3|cell-lborder|0.5pt>|<table|<row|<cell|1>|<cell|0>|<cell|x>>|<row|<cell|0>|<cell|1>|<cell|x+y>>|<row|<cell|0>|<cell|0>|<cell|x+y+z>>>>>.
 </equation*>
 
-L'ultima equazione impone <math|x+y+z=0>. Se vale, le prime due determinano <math|a=x>, <math|b=x+y>; quindi la condizione è anche sufficiente. Abbiamo trovato esattamente il piano
+L'ultima riga dice che il sistema è compatibile soltanto se <math|x+y+z=0>. Questa condizione è anche sufficiente, perché quando vale le prime due righe determinano <math|a=x> e <math|b=x+y>. Abbiamo quindi trovato esattamente il piano
 
 <\equation*>
 <math-up|span>(v<rsub|1>,v<rsub|2>)=<around|{|(x,y,z)<rsup|T>:x+y+z=0|}>.
@@ -170,9 +150,7 @@ L'ultima equazione impone <math|x+y+z=0>. Se vale, le prime due determinano <mat
 
 <figura|@IMG(piano-span,0.9)|Lo stesso piano è descritto da due generatori indipendenti oppure dall'equazione <math|x+y+z=0>. Gauss permette di passare da una descrizione all'altra.>
 
-Questo collega anche le operazioni sui sottospazi. Per trovare un'intersezione, imponiamo insieme le equazioni dei due sottospazi e risolviamo il sistema omogeneo.
-
-Per trovare una somma, riuniamo i generatori. Se serve una base della somma, eliminiamo i generatori superflui: possiamo verificarli uno alla volta risolvendo un sistema di appartenenza allo span dei precedenti. La scelta degli indici pivot, giustificata nel capitolo successivo, rende più rapido questo passaggio.
+Poter passare da una descrizione all'altra rende semplici anche le operazioni sui sottospazi, purché si scelga la descrizione giusta. Per un'intersezione conviene avere le equazioni, perché basta imporre insieme quelle dei due sottospazi e risolvere il sistema omogeneo. Per una somma conviene avere i generatori, perché basta metterli insieme. Se poi della somma serve una base, togliamo i generatori superflui. Possiamo controllarli uno alla volta, chiedendoci con un sistema se ciascuno stia nello span dei precedenti, oppure usare la scorciatoia delle colonne pivot, che giustificheremo nel prossimo capitolo.
 
 <\verifica|9>
 <strong|9.1.> Risolvi il sistema reale con matrice completa <math|<matrix|<tformat|<cwith|1|-1|4|4|cell-lborder|0.5pt>|<table|<row|<cell|0>|<cell|1>|<cell|1>|<cell|2>>|<row|<cell|1>|<cell|1>|<cell|0>|<cell|1>>|<row|<cell|2>|<cell|2>|<cell|0>|<cell|2>>>>>>. Prima individua se serve uno scambio; poi scrivi le soluzioni come una particolare più il nucleo.

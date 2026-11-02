@@ -1,6 +1,31 @@
 # Fondamenti di Programmazione Spark — verifica della revisione
 
-2 novembre 2026. **PDF finale esportato, rigenerato dalla cartella definitiva e controllato.**
+2 novembre 2026, revisione narrativa. **PDF esportato dalla cartella definitiva e controllato pagina per pagina.**
+
+## Consegna
+
+55 pagine; 9 capitoli; 12 figure vettoriali utilizzate (nessuna nuova); 18 esercizi con soluzioni ragionate. PDF di 972.453 byte. Sorgenti, documento nativo TeXmacs, template, figure, script di build e documenti di copertura inclusi.
+
+## Controlli della revisione narrativa
+
+- Riscritti e riletti per intero introduzione, capitoli 1–9, testi degli esercizi e soluzioni; i calcoli citati nel testo sono stati ricontrollati a mano durante la riscrittura.
+- `checks/narrative-pass.py` (nuovo): verifica esaustiva su domini piccoli delle tracce e identità del testo (prodotto per somme, potenza, scambio aritmetico, convenzione div/mod, divisione, somme, fattoriale, MCD, radice cubica e variante, Fibonacci con e senza k=0, ricorrenza dimezzante e f(19)=7, esercizio 8.1, accessi e aggiornamenti degli array, bandiere a due e tre colori, conteggio dei negativi) e le polarità del nuovo esercizio 2.2. Esito: superato.
+- Rieseguiti i sette verificatori esistenti in `checks/` (`check-arrays`, `check-hoare`, `check-logic`, `deep-pass`, `foundations`, `review-foundations-logic-checks`, `review-independent`): tutti superati.
+- `sh build.sh`: assemblaggio, `scripts/check-editorial.py` (9 aperture presenti; 4 capoversi sopra le 80 parole segnalati, riletti e lasciati perché sviluppano un solo ragionamento), `scripts/check.py` e esportazione riusciti. Durante il lavoro il controllo di sintassi ha intercettato alcune parentesi `}` al posto di `>` in formule annidate, corrette prima dell'esportazione finale.
+- Tutte le 55 pagine renderizzate e ispezionate in fogli di contatto; a scala di lettura copertina, indice, pagine 13 e 50. Nessun taglio, sovrapposizione, titolo isolato o riquadro rotto. Le pagine 9 e 25 sono chiusure di capitolo con spazio bianco naturale prima dell'apertura successiva.
+- Manifesto delle fonti: `sources.py verify` riporta 14 fonti intatte, 0 modificate.
+
+## Impronte della revisione narrativa
+
+PDF SHA-256: `4837d0faa41fbfef08bbe31371b9888c963047a786a0fb5ae151121ad7c52aa3`.
+
+TeXmacs SHA-256: `6e65b7f165f4e17b636b0dabffc1258ccab2024e62973043b1921a5f8f0d6d25`.
+
+La copia in `~/Documents/Notebooks` è responsabilità dell'orchestratore e non è stata aggiornata in questo passaggio.
+
+---
+
+## Verifica precedente (revisione profonda, 51 pagine)
 
 ## Consegna
 
