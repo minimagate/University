@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+                "file": "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-30 - Fattorizzazione dei polinomi e radici complesse"
+              "title": "2026-10-21 - Relazioni di equivalenza e strutture quoziente"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.07421875
+    "width": 374.88671875
   },
   "right": {
     "id": "cfaa1f077aa9c112",
@@ -189,5 +189,11 @@
     }
   },
   "active": "cb49407fb8880402",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Books/October/aritmetica-ottobre.pdf",
+    "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+    "Books/October/aritmetica-ottobre.tm",
+    "Books/October",
+    "Books"
+  ]
 }
