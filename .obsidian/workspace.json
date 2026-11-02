@@ -11,14 +11,12 @@
             "id": "cb49407fb8880402",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Notes/Fondamenti di Programmazione/Lectures/2026-10-20 - Regole di inferenza per le triple di Hoare e invarianti.md",
-                "mode": "preview",
-                "source": false
+                "file": "Books/October/aritmetica-1-spark/aritmetica-1-spark.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2026-10-20 - Regole di inferenza per le triple di Hoare e invarianti"
+              "icon": "lucide-file-text",
+              "title": "aritmetica-1-spark"
             }
           }
         ]
@@ -83,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 647.44921875
+    "width": 298.75390625
   },
   "right": {
     "id": "cfaa1f077aa9c112",
@@ -188,43 +186,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "cb49407fb8880402",
+  "active": "30e29a4449e2e66a",
   "lastOpenFiles": [
-    "Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
-    "Notes/Aritmetica/Lectures/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
-    "Protocol.md",
-    "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
-    "Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
-    "Notes/Aritmetica/Lectures/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
-    "Notes/Aritmetica/Lectures/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md",
-    "Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
-    "Notes/Aritmetica/Lectures/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
-    "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
-    "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
-    "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
-    "Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
-    "Notes/Analisi 1/Lectures/2026-10-28 - Teorema di De L'Hôpital e sviluppi di Taylor.md",
-    "Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
-    "_transcripts/Geometria 1/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
-    "_transcripts/Aritmetica/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
-    "_transcripts/Aritmetica/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
-    "_audio/Geometria 1/New Recording 82.m4a",
-    "_audio/Aritmetica/New Recording 81.m4a",
-    "_audio/Aritmetica/New Recording 80.m4a",
-    "Notes/Analisi 1/Lectures/2026-10-27 - Derivate, differenziabilità e regole di derivazione.md",
-    "Notes/Aritmetica/Lectures/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
-    "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
-    "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
-    "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
-    "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
-    "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
-    "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
-    "_audio/Aritmetica/New Recording 79.m4a",
-    "_audio/Geometria 1/New Recording 78.m4a",
-    "_audio/Geometria 1/New Recording 77.m4a",
-    "_audio/Aritmetica/New Recording 76.m4a",
-    "_audio/Aritmetica/New Recording 75.m4a",
-    "_audio/Geometria 1/New Recording 74.m4a",
-    "_audio/Geometria 1/New Recording 73 copy.m4a"
+    "Books/October/aritmetica-1-spark/scripts/export.py",
+    "Books/README.md",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/99-app.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/09.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/08.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/07.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/06.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/05.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/04.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/03.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/02.tm",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/01.tm",
+    "Books/Archive/October/geometria-1-assets/unione.svg",
+    "Books/Archive/October/geometria-1-assets/traslato.svg",
+    "Books/Archive/October/geometria-1-assets/tre-casi.svg",
+    "Books/Archive/October/geometria-1-assets/span.svg",
+    "Books/Archive/October/geometria-1-assets/sottospazi-r3.svg",
+    "Books/Archive/October/geometria-1-assets/somma-prodotto.svg",
+    "Books/Archive/October/geometria-1-assets/somma-funzioni.svg",
+    "Books/Archive/October/geometria-1-assets/somma-diretta.svg",
+    "Books/Archive/October/geometria-1-assets/scambio.svg",
+    "Books/Archive/October/geometria-1-assets/scala.svg",
+    "Books/Archive/October/geometria-1-assets/README.md",
+    "Books/Archive/October/fondamenti-di-programmazione-1-assets/README.md",
+    "Books/Archive/October/aritmetica-1-assets/README.md",
+    "Books/Archive/October/analisi-1-assets/README.md",
+    "Books/Archive/October/geometria-1-mappa.md",
+    "Books/Archive/October/fondamenti-di-programmazione-1-mappa.md",
+    "Books/Archive/October/aritmetica-1-mappa.md",
+    "Books/Archive/October/analisi-1-mappa.md",
+    "Books/Archive/README.md",
+    "Books/October/aritmetica-1-spark/validation.md",
+    "Books/October/aritmetica-1-spark/reviews/review-visual-algebra.md",
+    "Books/October/aritmetica-1-spark/reviews/review-integers.md",
+    "Books/October/aritmetica-1-spark/reviews/review-algebra-independent.md",
+    "Books/October/aritmetica-1-spark/assets/README.md",
+    "Books/October/aritmetica-1-spark/source-audit.md",
+    "Books/October/aritmetica-1-spark/editorial-notes.md",
+    "Books/October/aritmetica-1-spark/coverage.md",
+    "Books/October/aritmetica-1-spark/README.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-27 - Verifica di programmi iterativi e introduzione agli array.md",
+    "Books/October/fondamenti-di-programmazione-1-assets/README.md",
+    "Books/October/fondamenti-di-programmazione-1-mappa.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-13 - Quantificazione ristretta, uguaglianza e specifiche formali.md",
+    "Books/October/analisi-1-assets/README.md",
+    "Books/October/analisi-1-mappa.md"
   ]
 }

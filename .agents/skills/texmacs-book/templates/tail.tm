@@ -1,0 +1,21 @@
+</body>
+
+<\initial>
+  <\collection>
+    <associate|font-base-size|11>
+    <associate|language|italian>
+    <associate|page-bot|22mm>
+    <associate|page-even|24mm>
+    <associate|page-height-margin|false>
+    <associate|page-medium|paper>
+    <associate|page-odd|24mm>
+    <associate|page-right|24mm>
+    <associate|page-top|21mm>
+    <associate|page-type|a4>
+    <associate|page-width-margin|false>
+    <associate|par-first|0fn>
+    <associate|par-par-sep|0.45fn>
+    <associate|par-sep|0.15fn>
+    <associate|par-width|162mm>
+  </collection>
+</initial>

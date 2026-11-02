@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="160" viewBox="0 0 440 160" role="img" aria-labelledby="title desc">
+<title id="title">Perché dim V = dim ker F + dim Im F</title><desc id="desc">Una base di V divisa in due blocchi: v1, ..., vk base del nucleo, mandati tutti in 0; v(k+1), ..., vn mandati nei vettori F(v(k+1)), ..., F(vn), che formano una base dell&#x27;immagine.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="10" y="20" width="150" height="122" fill="none" stroke="#111" stroke-width="1" rx="12"/>
+<rect x="270" y="20" width="160" height="122" fill="none" stroke="#111" stroke-width="1" rx="12"/>
+<rect x="22" y="32" width="126" height="52" fill="#e4e4e4" stroke="none" stroke-width="1" rx="8"/>
+<circle cx="298" cy="58" r="4" fill="#111" stroke="none" stroke-width="0"/>
+<rect x="282" y="96" width="138" height="36" fill="#e4e4e4" stroke="none" stroke-width="1" rx="8"/>
+<line x1="150" y1="58" x2="292" y2="58" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<line x1="150" y1="116" x2="280" y2="116" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="85" y="14" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">V</tspan></text>
+<text x="350" y="14" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">V</tspan>′</text>
+<text x="85" y="100" font-size="12" text-anchor="middle" fill="#111" font-style="italic">ker F</text>
+<text x="85" y="63" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">v</tspan>₁, …, <tspan font-style="italic">v</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">k</tspan></text>
+<text x="85" y="120" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">v</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">k</tspan><tspan baseline-shift="-28%" font-size="9.8">+1</tspan>, …, <tspan font-style="italic">v</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">n</tspan></text>
+<text x="312" y="64" font-size="15" text-anchor="middle" fill="#111">0</text>
+<text x="350" y="90" font-size="12" text-anchor="middle" fill="#111" font-style="italic">Im F</text>
+<text x="351" y="119" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">F</tspan>(<tspan font-style="italic">v</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.1">k</tspan><tspan baseline-shift="-28%" font-size="9.1">+1</tspan>), …, <tspan font-style="italic">F</tspan>(<tspan font-style="italic">v</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.1">n</tspan>)</text>
+<text x="220" y="50" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">F</tspan></text>
+<text x="220" y="108" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">F</tspan></text>
+<text x="220" y="158" font-size="13" text-anchor="middle" fill="#111" font-style="italic">k + (n − k) = n</text>
+</g>
+</svg>

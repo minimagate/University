@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="190" viewBox="0 0 640 190" role="img" aria-labelledby="title desc">
+<title id="title">Quattro funzioni</title><desc id="desc">Diagrammi a frecce da A a B: una funzione qualsiasi, una iniettiva, una suriettiva, una biiettiva.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="42" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="118" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="42" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="42" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="42" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="118" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="118" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="118" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="47" y1="58.44" x2="112" y2="58.44" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="46.53" y1="91.88" x2="112.57" y2="60.99" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="47" y1="129.56" x2="112" y2="129.56" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="202" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="278" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="202" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="202" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="202" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="278" cy="52.26" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="278" cy="80.09" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="278" cy="107.91" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="278" cy="135.74" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="206.98" y1="58.04" x2="272.02" y2="52.75" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="206.92" y1="93.1" x2="272.1" y2="81.17" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="206.98" y1="129.96" x2="272.02" y2="135.25" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="362" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="438" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="362" cy="52.26" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="362" cy="80.09" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="362" cy="107.91" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="362" cy="135.74" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="438" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="438" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="438" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="366.98" y1="52.67" x2="432.02" y2="57.96" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="366.92" y1="80.99" x2="432.1" y2="92.92" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="366.92" y1="107.01" x2="432.1" y2="95.08" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="366.98" y1="135.33" x2="432.02" y2="130.04" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="522" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="598" cy="94" rx="24" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="522" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="522" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="522" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="598" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="598" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="598" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="526.53" y1="60.56" x2="592.57" y2="91.46" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="526.53" y1="96.12" x2="592.57" y2="127.01" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="525.65" y1="126.14" x2="593.62" y2="62.54" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="42" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">A</tspan></text>
+<text x="118" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">B</tspan></text>
+<text x="80" y="184" font-size="14" text-anchor="middle" fill="#111" font-style="italic">una funzione</text>
+<text x="202" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">A</tspan></text>
+<text x="278" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">B</tspan></text>
+<text x="240" y="184" font-size="14" text-anchor="middle" fill="#111" font-style="italic">iniettiva</text>
+<text x="362" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">A</tspan></text>
+<text x="438" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">B</tspan></text>
+<text x="400" y="184" font-size="14" text-anchor="middle" fill="#111" font-style="italic">suriettiva</text>
+<text x="522" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">A</tspan></text>
+<text x="598" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">B</tspan></text>
+<text x="560" y="184" font-size="14" text-anchor="middle" fill="#111" font-style="italic">biiettiva</text>
+</g>
+</svg>

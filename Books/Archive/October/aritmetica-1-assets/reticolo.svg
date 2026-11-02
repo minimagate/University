@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-labelledby="title desc">
+<title id="title">Soluzioni intere su una retta</title><desc id="desc">La retta 2x + 3y = 9 nel piano a quadretti; i punti interi (0,3), (3,1), (6,−1) distano fra loro di un passo (3, −2).</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="52" y1="281.2" x2="52" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="90" y1="281.2" x2="90" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="128" y1="281.2" x2="128" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="166" y1="281.2" x2="166" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="204" y1="281.2" x2="204" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="242" y1="281.2" x2="242" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="280" y1="281.2" x2="280" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="318" y1="281.2" x2="318" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="356" y1="281.2" x2="356" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="394" y1="281.2" x2="394" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="432" y1="281.2" x2="432" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="470" y1="281.2" x2="470" y2="26.6" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="266" x2="485.2" y2="266" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="228" x2="485.2" y2="228" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="190" x2="485.2" y2="190" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="152" x2="485.2" y2="152" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="114" x2="485.2" y2="114" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="76" x2="485.2" y2="76" stroke="#bbb" stroke-width="0.45"/>
+<line x1="36.8" y1="38" x2="485.2" y2="38" stroke="#bbb" stroke-width="0.45"/>
+<line x1="29.2" y1="190" x2="500.4" y2="190" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="90" y1="288.8" x2="90" y2="15.2" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="44.4" y1="45.6" x2="477.6" y2="334.4" stroke="#111" stroke-width="1.2"/>
+<circle cx="90" cy="76" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="204" cy="152" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="318" cy="228" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="96" y1="76" x2="203" y2="76" stroke="#111" stroke-width="0.8" marker-end="url(#ah)" stroke-dasharray="3 3"/>
+<line x1="204" y1="77" x2="204" y2="146" stroke="#111" stroke-width="0.8" marker-end="url(#ah)" stroke-dasharray="3 3"/>
+<line x1="210" y1="152" x2="317" y2="152" stroke="#111" stroke-width="0.8" marker-end="url(#ah)" stroke-dasharray="3 3"/>
+<line x1="318" y1="153" x2="318" y2="222" stroke="#111" stroke-width="0.8" marker-end="url(#ah)" stroke-dasharray="3 3"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="500.4" y="210" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="76" y="19" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="100" y="66" font-size="13" text-anchor="start" fill="#111">(0, 3)</text>
+<text x="214" y="142" font-size="13" text-anchor="start" fill="#111">(3, 1)</text>
+<text x="328" y="218" font-size="13" text-anchor="start" fill="#111">(6, −1)</text>
+<text x="147" y="66.5" font-size="12" text-anchor="middle" fill="#111" font-style="italic">+3</text>
+<text x="225.2" y="114" font-size="12" text-anchor="middle" fill="#111" font-style="italic">−2</text>
+<text x="337" y="53.2" font-size="15" text-anchor="middle" fill="#111">2<tspan font-style="italic">x</tspan> + 3<tspan font-style="italic">y</tspan> = 9</text>
+</g>
+</svg>

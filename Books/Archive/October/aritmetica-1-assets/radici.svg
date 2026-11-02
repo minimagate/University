@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="300" viewBox="0 0 340 300" role="img" aria-labelledby="title desc">
+<title id="title">Le radici seste dell’unità</title><desc id="desc">Sei punti equidistanti sul cerchio di raggio 1, da 1 a ζ alla quinta; una freccia mostra la rotazione di 60 gradi da 1 a ζ.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="30" y1="150" x2="315" y2="150" stroke="#999" stroke-width="0.6" marker-end="url(#ah)"/>
+<line x1="170" y1="278" x2="170" y2="15" stroke="#999" stroke-width="0.6" marker-end="url(#ah)"/>
+<circle cx="170" cy="150" r="100" fill="none" stroke="#111" stroke-width="0.9"/>
+<polygon points="270,150 220,63.4 120,63.4 70,150 120,236.6 220,236.6" fill="none" stroke="#777" stroke-width="0.6"/>
+<circle cx="270" cy="150" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="220" cy="63.4" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="120" cy="63.4" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="70" cy="150" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="120" cy="236.6" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="220" cy="236.6" r="4.2" fill="#111" stroke="none" stroke-width="0"/>
+<path d="M212,150 A42,42 0 0 0 191.0,113.6" fill="none" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="294" y="155" font-size="14" text-anchor="middle" fill="#111">1</text>
+<text x="232" y="49.34" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">ζ</tspan></text>
+<text x="108" y="49.34" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">ζ</tspan><tspan baseline-shift="38%" font-size="9.8">2</tspan></text>
+<text x="24" y="155" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">ζ</tspan><tspan baseline-shift="38%" font-size="9.8">3</tspan> = −1</text>
+<text x="108" y="260.66" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">ζ</tspan><tspan baseline-shift="38%" font-size="9.8">4</tspan></text>
+<text x="232" y="260.66" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">ζ</tspan><tspan baseline-shift="38%" font-size="9.8">5</tspan></text>
+<text x="220" y="132" font-size="12" text-anchor="start" fill="#111" font-style="italic">60°</text>
+</g>
+</svg>

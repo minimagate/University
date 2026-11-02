@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="290" viewBox="0 0 520 290" role="img" aria-labelledby="title desc">
+<title id="title">Le tre parti di f(x0+h)</title><desc id="desc">Curva e tangente in x0; sulla verticale x0+h i punti A sull’asse, B alla quota f(x0), C sulla tangente, D sulla curva.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="23" y1="255" x2="507.5" y2="255" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="40" y1="263.8" x2="40" y2="21.8" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<path d="M48.50,217.96 L50.71,217.46 L52.92,216.95 L55.13,216.43 L57.34,215.90 L59.55,215.37 L61.76,214.82 L63.97,214.27 L66.18,213.71 L68.39,213.15 L70.60,212.57 L72.81,211.99 L75.02,211.41 L77.23,210.82 L79.44,210.22 L81.65,209.62 L83.86,209.01 L86.07,208.39 L88.28,207.78 L90.49,207.16 L92.70,206.53 L94.91,205.90 L97.12,205.27 L99.33,204.63 L101.54,203.99 L103.75,203.35 L105.96,202.70 L108.17,202.06 L110.38,201.41 L112.59,200.75 L114.80,200.10 L117.01,199.45 L119.22,198.79 L121.43,198.13 L123.64,197.48 L125.85,196.82 L128.06,196.16 L130.27,195.50 L132.48,194.84 L134.69,194.18 L136.90,193.52 L139.11,192.85 L141.32,192.19 L143.53,191.53 L145.74,190.87 L147.95,190.22 L150.16,189.56 L152.37,188.90 L154.58,188.24 L156.79,187.59 L159.00,186.93 L161.21,186.28 L163.42,185.63 L165.63,184.97 L167.84,184.32 L170.05,183.67 L172.26,183.03 L174.47,182.38 L176.68,181.73 L178.89,181.09 L181.10,180.45 L183.31,179.80 L185.52,179.16 L187.73,178.52 L189.94,177.88 L192.15,177.24 L194.36,176.61 L196.57,175.97 L198.78,175.34 L200.99,174.70 L203.20,174.07 L205.41,173.43 L207.62,172.80 L209.83,172.17 L212.04,171.53 L214.25,170.90 L216.46,170.27 L218.67,169.63 L220.88,169.00 L223.09,168.36 L225.30,167.73 L227.51,167.09 L229.72,166.45 L231.93,165.81 L234.14,165.17 L236.35,164.53 L238.56,163.89 L240.77,163.24 L242.98,162.59 L245.19,161.94 L247.40,161.29 L249.61,160.63 L251.82,159.97 L254.03,159.31 L256.24,158.64 L258.45,157.97 L260.66,157.29 L262.87,156.61 L265.08,155.93 L267.29,155.24 L269.50,154.54 L271.71,153.84 L273.92,153.13 L276.13,152.42 L278.34,151.70 L280.55,150.97 L282.76,150.24 L284.97,149.50 L287.18,148.75 L289.39,147.99 L291.60,147.23 L293.81,146.46 L296.02,145.67 L298.23,144.88 L300.44,144.08 L302.65,143.27 L304.86,142.45 L307.07,141.62 L309.28,140.78 L311.49,139.92 L313.70,139.06 L315.91,138.19 L318.12,137.30 L320.33,136.40 L322.54,135.48 L324.75,134.56 L326.96,133.62 L329.17,132.67 L331.38,131.70 L333.59,130.72 L335.80,129.73 L338.01,128.72 L340.22,127.70 L342.43,126.66 L344.64,125.60 L346.85,124.53 L349.06,123.45 L351.27,122.34 L353.48,121.22 L355.69,120.09 L357.90,118.93 L360.11,117.76 L362.32,116.57 L364.53,115.37 L366.74,114.14 L368.95,112.90 L371.16,111.64 L373.37,110.36 L375.58,109.06 L377.79,107.74 L380.00,106.40 L382.21,105.04 L384.42,103.66 L386.63,102.27 L388.84,100.85 L391.05,99.41 L393.26,97.95 L395.47,96.47 L397.68,94.97 L399.89,93.44 L402.10,91.90 L404.31,90.34 L406.52,88.75 L408.73,87.14 L410.94,85.51 L413.15,83.86 L415.36,82.18 L417.57,80.49 L419.78,78.77 L421.99,77.03 L424.20,75.27 L426.41,73.48 L428.62,71.67 L430.83,69.84 L433.04,67.99 L435.25,66.12 L437.46,64.22 L439.67,62.30 L441.88,60.35 L444.09,58.39 L446.30,56.40 L448.51,54.39 L450.72,52.36 L452.93,50.30 L455.14,48.22 L457.35,46.12 L459.56,44.00 L461.77,41.85 L463.98,39.69 L466.19,37.50 L468.40,35.28 L470.61,33.05 L472.82,30.79 L475.03,28.52 L477.24,26.22" fill="none" stroke="#111" stroke-width="1.5" />
+<line x1="57" y1="216.69" x2="490.5" y2="90.06" stroke="#111" stroke-width="1"/>
+<line x1="176" y1="181.93" x2="380" y2="181.93" stroke="#111" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line x1="176" y1="255" x2="176" y2="181.93" stroke="#111" stroke-width="0.6" stroke-dasharray="3 3"/>
+<line x1="380" y1="255" x2="380" y2="106.4" stroke="#111" stroke-width="0.7"/>
+<circle cx="380" cy="255" r="3" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="380" cy="181.93" r="3" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="380" cy="122.34" r="3" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="380" cy="106.4" r="3" fill="#111" stroke="none" stroke-width="0"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="507.5" y="275" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="26" y="25.8" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="390" y="260" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">A</tspan></text>
+<text x="390" y="186.93" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">B</tspan></text>
+<text x="390" y="127.34" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">C</tspan></text>
+<text x="390" y="111.4" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">D</tspan></text>
+<text x="176" y="273" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan><tspan baseline-shift="-28%" font-size="9.1">0</tspan></text>
+<text x="380" y="273" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan><tspan baseline-shift="-28%" font-size="9.1">0</tspan> + <tspan font-style="italic">h</tspan></text>
+<text x="370" y="156.14" font-size="12" text-anchor="end" fill="#111"><tspan font-style="italic">αh</tspan></text>
+<text x="370" y="118.37" font-size="12" text-anchor="end" fill="#111"><tspan font-style="italic">o</tspan>(<tspan font-style="italic">h</tspan>)</text>
+<text x="370" y="222.47" font-size="12" text-anchor="end" fill="#111"><tspan font-style="italic">f</tspan>(<tspan font-style="italic">x</tspan><tspan baseline-shift="-28%" font-size="8.4">0</tspan>)</text>
+<text x="278" y="197.93" font-size="12" text-anchor="middle" fill="#111"><tspan font-style="italic">h</tspan></text>
+</g>
+</svg>

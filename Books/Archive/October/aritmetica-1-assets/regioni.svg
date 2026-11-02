@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="240" viewBox="0 0 560 240" role="img" aria-labelledby="title desc">
+<title id="title">Le sette zone di tre insiemi</title><desc id="desc">Un rettangolo X contiene tre cerchi A, B, C che lo dividono in sette zone numerate più la zona esterna, che qui è vietata.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="20" y="14" width="300" height="214" fill="#e4e4e4" stroke="#111" stroke-width="0.9" rx="6"/>
+<circle cx="135" cy="92" r="62" fill="white" stroke="none" stroke-width="1"/>
+<circle cx="205" cy="92" r="62" fill="white" stroke="none" stroke-width="1"/>
+<circle cx="170" cy="152" r="62" fill="white" stroke="none" stroke-width="1"/>
+<circle cx="135" cy="92" r="62" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="205" cy="92" r="62" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="170" cy="152" r="62" fill="none" stroke="#111" stroke-width="1"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="70" y="40" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">A</tspan></text>
+<text x="272" y="40" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">B</tspan></text>
+<text x="98" y="196" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">C</tspan></text>
+<text x="300" y="34" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="108" y="86" font-size="14" text-anchor="middle" fill="#111">1</text>
+<text x="232" y="86" font-size="14" text-anchor="middle" fill="#111">2</text>
+<text x="170" y="192" font-size="14" text-anchor="middle" fill="#111">3</text>
+<text x="170" y="70" font-size="14" text-anchor="middle" fill="#111">4</text>
+<text x="138" y="148" font-size="14" text-anchor="middle" fill="#111">5</text>
+<text x="202" y="148" font-size="14" text-anchor="middle" fill="#111">6</text>
+<text x="170" y="120" font-size="14" text-anchor="middle" fill="#111">7</text>
+<text x="345" y="70" font-size="14" text-anchor="start" fill="#111" font-style="italic">ogni elemento di X</text>
+<text x="345" y="90" font-size="14" text-anchor="start" fill="#111" font-style="italic">sceglie una delle 7 zone</text>
+<text x="345" y="130" font-size="13" text-anchor="start" fill="#111" font-style="italic">la zona grigia (fuori da tutti)</text>
+<text x="345" y="148" font-size="13" text-anchor="start" fill="#111" font-style="italic">è vietata: A ∪ B ∪ C = X</text>
+<text x="345" y="190" font-size="15" text-anchor="start" fill="#111">7 · 7 · ⋯ · 7 = 7<tspan font-style="italic" baseline-shift="38%" font-size="10.5">n</tspan></text>
+</g>
+</svg>

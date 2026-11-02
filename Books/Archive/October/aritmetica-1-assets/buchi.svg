@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="205" viewBox="0 0 560 205" role="img" aria-labelledby="title desc">
+<title id="title">Il trucco dello spostamento</title><desc id="desc">Sopra, i numeri 3, 6, 8 scelti fra 1 e 12, mai consecutivi. Sotto, dopo aver tolto 0, 1, 2, diventano 3, 5, 6 fra 1 e 10.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="40" y1="46" x2="524" y2="46" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="40" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="84" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="128" cy="46" r="9" fill="#111" stroke="#111" stroke-width="1"/>
+<circle cx="172" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="216" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="260" cy="46" r="9" fill="#111" stroke="#111" stroke-width="1"/>
+<circle cx="304" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="348" cy="46" r="9" fill="#111" stroke="#111" stroke-width="1"/>
+<circle cx="392" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="436" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="480" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="524" cy="46" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<line x1="40" y1="146" x2="436" y2="146" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="40" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="84" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="128" cy="146" r="9" fill="#111" stroke="#111" stroke-width="1"/>
+<circle cx="172" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="216" cy="146" r="9" fill="#111" stroke="#111" stroke-width="1"/>
+<circle cx="260" cy="146" r="9" fill="#111" stroke="#111" stroke-width="1"/>
+<circle cx="304" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="348" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="392" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<circle cx="436" cy="146" r="9" fill="white" stroke="#111" stroke-width="0.8"/>
+<line x1="128" y1="60" x2="128" y2="131" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="259" y1="59.73" x2="217.5" y2="131.4" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="346.49" y1="59.31" x2="262.27" y2="132.04" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="40" y="74" font-size="12" text-anchor="middle" fill="#111">1</text>
+<text x="84" y="74" font-size="12" text-anchor="middle" fill="#111">2</text>
+<text x="128" y="74" font-size="12" text-anchor="middle" fill="#111">3</text>
+<text x="172" y="74" font-size="12" text-anchor="middle" fill="#111">4</text>
+<text x="216" y="74" font-size="12" text-anchor="middle" fill="#111">5</text>
+<text x="260" y="74" font-size="12" text-anchor="middle" fill="#111">6</text>
+<text x="304" y="74" font-size="12" text-anchor="middle" fill="#111">7</text>
+<text x="348" y="74" font-size="12" text-anchor="middle" fill="#111">8</text>
+<text x="392" y="74" font-size="12" text-anchor="middle" fill="#111">9</text>
+<text x="436" y="74" font-size="12" text-anchor="middle" fill="#111">10</text>
+<text x="480" y="74" font-size="12" text-anchor="middle" fill="#111">11</text>
+<text x="524" y="74" font-size="12" text-anchor="middle" fill="#111">12</text>
+<text x="30" y="28" font-size="13" text-anchor="start" fill="#111" font-style="italic">scelti fra 1 e 12, mai vicini</text>
+<text x="40" y="174" font-size="12" text-anchor="middle" fill="#111">1</text>
+<text x="84" y="174" font-size="12" text-anchor="middle" fill="#111">2</text>
+<text x="128" y="174" font-size="12" text-anchor="middle" fill="#111">3</text>
+<text x="172" y="174" font-size="12" text-anchor="middle" fill="#111">4</text>
+<text x="216" y="174" font-size="12" text-anchor="middle" fill="#111">5</text>
+<text x="260" y="174" font-size="12" text-anchor="middle" fill="#111">6</text>
+<text x="304" y="174" font-size="12" text-anchor="middle" fill="#111">7</text>
+<text x="348" y="174" font-size="12" text-anchor="middle" fill="#111">8</text>
+<text x="392" y="174" font-size="12" text-anchor="middle" fill="#111">9</text>
+<text x="436" y="174" font-size="12" text-anchor="middle" fill="#111">10</text>
+<text x="30" y="196" font-size="13" text-anchor="start" fill="#111" font-style="italic">dopo lo spostamento: fra 1 e 10, senza vincoli</text>
+<text x="144" y="100" font-size="12" text-anchor="middle" fill="#111" font-style="italic">−0</text>
+<text x="254" y="100" font-size="12" text-anchor="middle" fill="#111" font-style="italic">−1</text>
+<text x="320" y="100" font-size="12" text-anchor="middle" fill="#111" font-style="italic">−2</text>
+</g>
+</svg>

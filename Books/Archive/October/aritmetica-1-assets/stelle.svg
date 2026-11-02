@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="150" viewBox="0 0 560 150" role="img" aria-labelledby="title desc">
+<title id="title">Stelle e sbarre</title><desc id="desc">Sei posizioni: quattro stelle e due sbarre. La configurazione stella stella sbarra stella stella sbarra rappresenta 2 + 2 + 0.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<polygon points="110,62 112.12,67.09 117.61,67.53 113.42,71.11 114.7,76.47 110,73.6 105.3,76.47 106.58,71.11 102.39,67.53 107.88,67.09" fill="#111" stroke="#111" stroke-width="0.5"/>
+<polygon points="168,62 170.12,67.09 175.61,67.53 171.42,71.11 172.7,76.47 168,73.6 163.3,76.47 164.58,71.11 160.39,67.53 165.88,67.09" fill="#111" stroke="#111" stroke-width="0.5"/>
+<line x1="226" y1="48" x2="226" y2="92" stroke="#111" stroke-width="2"/>
+<polygon points="284,62 286.12,67.09 291.61,67.53 287.42,71.11 288.7,76.47 284,73.6 279.3,76.47 280.58,71.11 276.39,67.53 281.88,67.09" fill="#111" stroke="#111" stroke-width="0.5"/>
+<polygon points="342,62 344.12,67.09 349.61,67.53 345.42,71.11 346.7,76.47 342,73.6 337.3,76.47 338.58,71.11 334.39,67.53 339.88,67.09" fill="#111" stroke="#111" stroke-width="0.5"/>
+<line x1="400" y1="48" x2="400" y2="92" stroke="#111" stroke-width="2"/>
+<path d="M98,100 Q98,110 108,110 L133.0,110 Q139.0,110 139.0,118 Q139.0,110 145.0,110 L170,110 Q180,110 180,100" fill="none" stroke="#111" stroke-width="0.8" />
+<path d="M272,100 Q272,110 282,110 L307.0,110 Q313.0,110 313.0,118 Q313.0,110 319.0,110 L344,110 Q354,110 354,100" fill="none" stroke="#111" stroke-width="0.8" />
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="110" y="26" font-size="12" text-anchor="middle" fill="#555">1</text>
+<text x="168" y="26" font-size="12" text-anchor="middle" fill="#555">2</text>
+<text x="226" y="26" font-size="12" text-anchor="middle" fill="#555">3</text>
+<text x="284" y="26" font-size="12" text-anchor="middle" fill="#555">4</text>
+<text x="342" y="26" font-size="12" text-anchor="middle" fill="#555">5</text>
+<text x="400" y="26" font-size="12" text-anchor="middle" fill="#555">6</text>
+<text x="139" y="138" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan><tspan baseline-shift="-28%" font-size="9.8">1</tspan> = 2</text>
+<text x="313" y="138" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan><tspan baseline-shift="-28%" font-size="9.8">2</tspan> = 2</text>
+<text x="429" y="138" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan><tspan baseline-shift="-28%" font-size="9.8">3</tspan> = 0</text>
+<text x="60" y="30" font-size="12" text-anchor="middle" fill="#555" font-style="italic">posti:</text>
+</g>
+</svg>

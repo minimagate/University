@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="280" viewBox="0 0 620 280" role="img" aria-labelledby="title desc">
+<title id="title">sin x ≤ x ≤ tan x</title><desc id="desc">A sinistra la corda PP’ più corta dell’arco. A destra il settore circolare grigio dentro il triangolo OSQ.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M172.08,52.84 A150,150 0 0 1 172.08,227.16" fill="none" stroke="#111" stroke-width="1.9" />
+<line x1="172.08" y1="52.84" x2="172.08" y2="227.16" stroke="#111" stroke-width="1.2" stroke-dasharray="5 3"/>
+<line x1="50" y1="140" x2="172.08" y2="52.84" stroke="#111" stroke-width="0.7"/>
+<line x1="50" y1="140" x2="172.08" y2="227.16" stroke="#111" stroke-width="0.7"/>
+<line x1="40" y1="140" x2="220" y2="140" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="50" cy="140" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="172.08" cy="52.84" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="172.08" cy="227.16" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<path d="M340,140 L490,140 A150,150 0 0 0 462.08,52.84 Z" fill="#e4e4e4" stroke="none" stroke-width="1" />
+<polygon points="340,140 490,140 490,32.91" fill="none" stroke="#111" stroke-width="1.2"/>
+<path d="M490,140 A150,150 0 0 0 380.12,-4.53" fill="none" stroke="#9a9a9a" stroke-width="0.7" />
+<line x1="340" y1="140" x2="462.08" y2="52.84" stroke="#111" stroke-width="0.7"/>
+<circle cx="462.08" cy="52.84" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="490" cy="32.91" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="490" cy="140" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="340" cy="140" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="42" y="144" font-size="13" text-anchor="end" fill="#111"><tspan font-style="italic">O</tspan></text>
+<text x="176.08" y="44.84" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">P</tspan></text>
+<text x="176.08" y="245.16" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">P</tspan>′</text>
+<text x="162.08" y="134" font-size="12" text-anchor="end" fill="#111">2 <tspan font-style="italic">sin</tspan> <tspan font-style="italic">x</tspan></text>
+<text x="214" y="110" font-size="12" text-anchor="start" fill="#111"><tspan font-style="italic">arco</tspan> 2<tspan font-style="italic">x</tspan></text>
+<text x="332" y="144" font-size="13" text-anchor="end" fill="#111"><tspan font-style="italic">O</tspan></text>
+<text x="498" y="144" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">S</tspan></text>
+<text x="498" y="36.91" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">Q</tspan></text>
+<text x="456.08" y="44.84" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">P</tspan></text>
+<text x="410" y="170" font-size="12" text-anchor="middle" fill="#111"><tspan font-style="italic">settore</tspan> <tspan font-style="italic">x</tspan>/2 ≤ <tspan font-style="italic">triangolo</tspan> (<tspan font-style="italic">tan</tspan> <tspan font-style="italic">x</tspan>)/2</text>
+</g>
+</svg>

@@ -1,0 +1,1629 @@
+{
+  "version": 1,
+  "operation": "Archive pre-Spark books, preserving contents",
+  "recorded_at": "2026-11-02T12:01:31.689182+00:00",
+  "moves": [
+    {
+      "from": "Books/October/aritmetica-1.pdf",
+      "to": "Books/Archive/October/aritmetica-1.pdf",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/aritmetica-1.tm",
+      "to": "Books/Archive/October/aritmetica-1.tm",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/aritmetica-1-mappa.md",
+      "to": "Books/Archive/October/aritmetica-1-mappa.md",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets",
+      "to": "Books/Archive/October/aritmetica-1-assets",
+      "kind": "directory"
+    },
+    {
+      "from": "Books/October/analisi-1.pdf",
+      "to": "Books/Archive/October/analisi-1.pdf",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/analisi-1.tm",
+      "to": "Books/Archive/October/analisi-1.tm",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/analisi-1-mappa.md",
+      "to": "Books/Archive/October/analisi-1-mappa.md",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/analisi-1-assets",
+      "to": "Books/Archive/October/analisi-1-assets",
+      "kind": "directory"
+    },
+    {
+      "from": "Books/October/geometria-1.pdf",
+      "to": "Books/Archive/October/geometria-1.pdf",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/geometria-1.tm",
+      "to": "Books/Archive/October/geometria-1.tm",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/geometria-1-mappa.md",
+      "to": "Books/Archive/October/geometria-1-mappa.md",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/geometria-1-assets",
+      "to": "Books/Archive/October/geometria-1-assets",
+      "kind": "directory"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1.pdf",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1.tm",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-mappa.md",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-mappa.md",
+      "kind": "file"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets",
+      "kind": "directory"
+    }
+  ],
+  "files": [
+    {
+      "from": "Books/October/aritmetica-1.pdf",
+      "to": "Books/Archive/October/aritmetica-1.pdf",
+      "sha256": "5337841882db6926b1f912f924e33e6c92767e76a3747b62ed2fef3a4a77f2de"
+    },
+    {
+      "from": "Books/October/aritmetica-1.tm",
+      "to": "Books/Archive/October/aritmetica-1.tm",
+      "sha256": "7f250bfded4628aa9f454fa609f4b05d5a2c6ce9fa1bd61e950ecf8036dc747f"
+    },
+    {
+      "from": "Books/October/aritmetica-1-mappa.md",
+      "to": "Books/Archive/October/aritmetica-1-mappa.md",
+      "sha256": "50dc6057eb5d81bfbc44620dec78a6c3f281b930af5fb7cd7012f772a956af52"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/README.md",
+      "to": "Books/Archive/October/aritmetica-1-assets/README.md",
+      "sha256": "2deda436f1854988dc3c48b14f322ef494c789d27a6ff01ac8f48a0e9c4d32a3"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/anagrammi.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/anagrammi.pdf",
+      "sha256": "53a6e0d70b68a77f351cb7f066c1867738f66258549eee06e067fc44e53e23d4"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/anagrammi.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/anagrammi.svg",
+      "sha256": "4a43f0ad8bb62d6149ee83fd06e4bfe170c9b805afc58e3f3e021024263b656e"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/buchi.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/buchi.pdf",
+      "sha256": "7cac06d83e363b696249706c2e3328a8b95cc9af9b572a334f4ebe6188f19690"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/buchi.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/buchi.svg",
+      "sha256": "21ea1539126d69fb87e457f1e14a6bea56741a5e41e7102a5d251977a4fd25d6"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/cassetti.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/cassetti.pdf",
+      "sha256": "ae984670c0ac628fb9686e6a1ca8817086d6aa82be13451a32173a68d5b5d7e9"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/cassetti.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/cassetti.svg",
+      "sha256": "86fcf79f60c54edfd35dcc745a6c92c81888e82f0c3a484f34b8a08d42582552"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/cinese.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/cinese.pdf",
+      "sha256": "90b8b6ac2c56307a1d8617ccdb8acd94555a563e1c3191ce3f15ab213d61b553"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/cinese.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/cinese.svg",
+      "sha256": "ce1ad8f26525218f7f574c1f1472c60e760bb802f7535269d64c16182157e382"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/disegni.py",
+      "to": "Books/Archive/October/aritmetica-1-assets/disegni.py",
+      "sha256": "ffbbe0f455d67c2fddda5b29ab7a13dac1e6f50a259f51d20113c1fb0c89fdb8"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/dispari.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/dispari.pdf",
+      "sha256": "cff2b6da78a375279edb26a2e4fd400ec9809a96a35aeb28d12912f00ef4192a"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/dispari.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/dispari.svg",
+      "sha256": "347d6cdc23c6b87b477fbbac1f3ef233784f310ae8e8eed2e23ce2852cdf44ca"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/divisione.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/divisione.pdf",
+      "sha256": "73c9ea311631b331b5312ba134a5678ccdc49965435bdce3452290564638b7d2"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/divisione.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/divisione.svg",
+      "sha256": "ffc1b9e550eebc68daf289a42ebb2309847b30a1281bfe875a7350d5a494cd8a"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/divisori72.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/divisori72.pdf",
+      "sha256": "c84c3fdbe998448d4314267f16eced234b812c1a5437297b7f624d074c3064d0"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/divisori72.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/divisori72.svg",
+      "sha256": "25f4d335c660056a0cc669b6dc6e151955b610ca874739d3c0a488d9cb62f118"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/domino-induzione.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/domino-induzione.pdf",
+      "sha256": "d7d841157dd383fe74dda46265eaf9d1a8ae364159c2afe6733080425dff70c8"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/domino-induzione.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/domino-induzione.svg",
+      "sha256": "39b044d2eaa7d2f7f81ca84a3765357acdae4cb636d203b56b639eca7dace32c"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/domino.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/domino.pdf",
+      "sha256": "26b7c21835b4a2508058c3b059dfa7f0df49a1e3066a931047a473e88ed9c9fd"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/domino.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/domino.svg",
+      "sha256": "fcc9172dfb6badbbf8f3ba3263cb74d947ac14576e3678a6cab425486dbd0d70"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/euclide.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/euclide.pdf",
+      "sha256": "728a1582aa0ac0f35825dc80a02acb0f4746a99f9e0fdca5a7e160e21e8e704f"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/euclide.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/euclide.svg",
+      "sha256": "acd456f1fc8704ee93373af1ef9edbec9bef4acd2b2b127df3455ab228db6853"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/fattori.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/fattori.pdf",
+      "sha256": "7f8eac90b5f3fa0eec3408313550ceec79c1894f16465ad15c9713d3c15e9313"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/fattori.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/fattori.svg",
+      "sha256": "7f1b526a2e425d3e974e678649071293ebb36096542d4277a92fe087681d66c9"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/fibonacci.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/fibonacci.pdf",
+      "sha256": "ca61413f30e2a19d2beb0eaa318ce8c5ef1541f2246ab52199e8fda463a34d36"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/fibonacci.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/fibonacci.svg",
+      "sha256": "427482378381d0c6d68f49797436fa7721545f70acc1a15110891812295457d2"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/fonti.json",
+      "to": "Books/Archive/October/aritmetica-1-assets/fonti.json",
+      "sha256": "7d0d16d0f3636df946faab39f21da9bf3b08ea23f1a057ae25426fdd450ce38e"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/frazioni.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/frazioni.pdf",
+      "sha256": "a8c98326997f06e9dbfa429e1866f8d14f4e251c16190cb72ab34430cba0b432"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/frazioni.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/frazioni.svg",
+      "sha256": "1c42ca380e8d73b693d2b05898018a3aad5ce90519c0c8505e97826fba137d9d"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/funzioni.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/funzioni.pdf",
+      "sha256": "bb79258c40930edad2d24c85de5ae8d618adc5acb7dab387948d41e86da844d7"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/funzioni.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/funzioni.svg",
+      "sha256": "8107f010a13868059f42db3b7f0eb2815f7173484ccce1a578d1904b1da4cb21"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/griglia8.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/griglia8.pdf",
+      "sha256": "eafd9cb451dfe7ddf8054d0b56a9e68621481cbd91fe48e9b3b06a23467cca39"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/griglia8.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/griglia8.svg",
+      "sha256": "8f44ca5719dacfc385c112b1aae98c786fac56a40c2b167c15c0ddd32e3f753c"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/insiemi.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/insiemi.pdf",
+      "sha256": "87a455dc6ceaf1df471b00ecd0fd38fad722139755d035019fd03f608a671979"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/insiemi.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/insiemi.svg",
+      "sha256": "39f6589ca2a085892e34b0795d663727be01321cb5e235b7149e344af0b4dac3"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/legendre.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/legendre.pdf",
+      "sha256": "2cb88077042d05131375e983c05ef58714bdefb1d22ff69c92c5dd3998e1ab29"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/legendre.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/legendre.svg",
+      "sha256": "788e1e48560dd0f87207d03b3baaeb8ea8a62827bddce16191fb1d8747823a1e"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/occhi.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/occhi.pdf",
+      "sha256": "5322765f20e87c431cd9479d6110ae643259ec2410f41a5a4dbf518fdb720c7a"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/occhi.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/occhi.svg",
+      "sha256": "8b8c4b27621188f1ba3b0126b58e8ebfb87a29ab825fe27dba7ddcb17d8bbc12"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/orologio12.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/orologio12.pdf",
+      "sha256": "4e19a6c56d6486c3a78f07a3e0533cd67d6bf7635fa8e0bdf23f3b0bca89f1e2"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/orologio12.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/orologio12.svg",
+      "sha256": "67fc83641cb360373c17502038ada63c5aaa319c84d9691569e663305d0c6b09"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/parti.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/parti.pdf",
+      "sha256": "bb5c1007a2fd5507142358218404d36fed3972250a1ace82e4d192e385459e2b"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/parti.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/parti.svg",
+      "sha256": "c7f2d0f03a5584d31274abe720eb7eb4e9775bfaf7bc1b08875d17d051992a82"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/pascal.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/pascal.pdf",
+      "sha256": "9712dfedd6014928078067dee3140fb828d88faee78d7fa331e01a1dc4df661c"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/pascal.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/pascal.svg",
+      "sha256": "515ff382968fcd4c493541582f114b4be9dbe7e49dc1c8e81aea951b14e08e86"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/permutazioni.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/permutazioni.pdf",
+      "sha256": "c966822668d08a31fcf262e5d469b96e5b91b5e43ab1cc7f0815c8be8756391d"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/permutazioni.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/permutazioni.svg",
+      "sha256": "082e830123facec1fa513efc0a53f7c13df21157e4690d04b0d7dc4353de7d4c"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/potenze.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/potenze.pdf",
+      "sha256": "665279496361e5122211b3163e7c429f01884511c553f17b9943b13cfe861dd8"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/potenze.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/potenze.svg",
+      "sha256": "f28135252c74650d80000ef2d5a24e4f6a9b29ffb4dad9bda9448a0bf9c2db81"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/quadrati.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/quadrati.pdf",
+      "sha256": "7a0e18dcab829bdfb29cf93221e0e2d789ac8f8c647f684e7b2d73896513ce1e"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/quadrati.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/quadrati.svg",
+      "sha256": "d049ad4ffa4740ecd233398e6501b37c4c7c2c387aa4edf40dfd3b10203864e3"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/radici.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/radici.pdf",
+      "sha256": "c9b479486cf915c3e053d3389614a838e5b0e4f6e177afcecbcf57f9f54d4693"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/radici.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/radici.svg",
+      "sha256": "7b8b74dbb234745eaffccede029a1ede2decf28440e19969047df5aebaa70635"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/regioni.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/regioni.pdf",
+      "sha256": "b815f1283eddaaf5adae3cd5f1fca34d09ada0d6d998e78a306743fa5766a35b"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/regioni.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/regioni.svg",
+      "sha256": "3cbd862d21fbdef096960e38f03867cf0a8ad6b47c207643877e81eb30a8b906"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/resti7.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/resti7.pdf",
+      "sha256": "31b8cb7a21ee606473917c73be64c18e10b2562263afa66852dd01e048c7955b"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/resti7.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/resti7.svg",
+      "sha256": "3b886b14f7ecedeb7cfc500657cba1a781c45b6ccdf7246bb7427abf7bb10b02"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/reticolo.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/reticolo.pdf",
+      "sha256": "bfdf8f3b1696b290efc417739703a74a2d1656c7ac34933d07c0772af5b8408d"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/reticolo.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/reticolo.svg",
+      "sha256": "b2264f3cd31d1ef0e3307803b6ac170dc6d81841b325e5f9f570b71f39ee1074"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/scelte.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/scelte.pdf",
+      "sha256": "f62948e28f8f5690e41402a558619b6d830b6c84aef0ff40d8544527e1f7a62e"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/scelte.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/scelte.svg",
+      "sha256": "413dfda8c7a06f4a4e3192a856d7dbe50337752ca3c7f0be26c77349227e3536"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/sollevamento.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/sollevamento.pdf",
+      "sha256": "93785fc1013e2d786e6bad6e58cc74051a8edc903deef5f918e416ed210654ce"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/sollevamento.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/sollevamento.svg",
+      "sha256": "3e62af53312dbddbbddf09eedce0278f4ca70a3bd4404e28f6ba840bafd46ff3"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/spirale5.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/spirale5.pdf",
+      "sha256": "60d8514c1677a3bbb1f5b4b2a0af727bd6d8f0a5098a10392892d0bacbaecec4"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/spirale5.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/spirale5.svg",
+      "sha256": "fa1eb4b58b76aa2f7bfa7a49de0e48e6309e102e96e1ccf8312b16167dbac764"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/stelle.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/stelle.pdf",
+      "sha256": "69671ab6e0b887dacdc00ade2691ee71cb579e5c3625622c7a46912901ece10b"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/stelle.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/stelle.svg",
+      "sha256": "2ba6e77927ce1dfc5d8a415376cd2cc87b2591c96ea6cbc6f88013d586421320"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/strutture.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/strutture.pdf",
+      "sha256": "9384037fa10c7e1db10d7010fc563dd25157105a7f645afc1f85b190bb1e930c"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/strutture.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/strutture.svg",
+      "sha256": "f1e530d2fe3fc269c878521a3de9b16775ef1153f23bd029d379254585bc8f14"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/svg-to-pdf.swift",
+      "to": "Books/Archive/October/aritmetica-1-assets/svg-to-pdf.swift",
+      "sha256": "85613e1ec5a53c7972f9e13d22d41df1139f07cd6f0a9b91b9ee03290b00d16d"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/tabelle.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/tabelle.pdf",
+      "sha256": "67d65605b91cd75be3bbd8ad4bbe30c98121f2b57e54399f9e17318774870c53"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/tabelle.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/tabelle.svg",
+      "sha256": "718784bb01675666de28ae40e9e37c53eed9fe4fc78dc5ff83722fa0f9ffab2a"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/tassellazioni.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/tassellazioni.pdf",
+      "sha256": "f15994ece60211afef33f4a64c5e945429365738d8334ac97e276f8e41d7dbb0"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/tassellazioni.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/tassellazioni.svg",
+      "sha256": "81895027e87864dab49b9c69c06651eb7dc65729ef83c24a79ab893ebee6f99d"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/triangolo.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/triangolo.pdf",
+      "sha256": "bd7fca7870886a31f72724ae9f33b6811e73f6ad80fe406a436f772343e28cab"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/triangolo.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/triangolo.svg",
+      "sha256": "ab3e8054575057a973fa594a41d324f4ff8db9405133d56f396d3c0e8aa7ee87"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/venn3.pdf",
+      "to": "Books/Archive/October/aritmetica-1-assets/venn3.pdf",
+      "sha256": "b760202b66b271642eaa4d095cca88ed34d189fb652063eb767aa9f61394d619"
+    },
+    {
+      "from": "Books/October/aritmetica-1-assets/venn3.svg",
+      "to": "Books/Archive/October/aritmetica-1-assets/venn3.svg",
+      "sha256": "79e6ee16c2d7d70e39624fd624ac7311ff19dea410f74b94d5d5bc7a180b5635"
+    },
+    {
+      "from": "Books/October/analisi-1.pdf",
+      "to": "Books/Archive/October/analisi-1.pdf",
+      "sha256": "cc4326afdb9fd604b2cd8347a7318af5a7270efbae12b90e4dd703cb57bdbbad"
+    },
+    {
+      "from": "Books/October/analisi-1.tm",
+      "to": "Books/Archive/October/analisi-1.tm",
+      "sha256": "5a744e97ec9a76069e3c48f645344da87ee034a88914b998a6df1f045686c263"
+    },
+    {
+      "from": "Books/October/analisi-1-mappa.md",
+      "to": "Books/Archive/October/analisi-1-mappa.md",
+      "sha256": "7adfc2332e5d2c906dc4f4b688e15ea5338387cf5501fffd1f63b5aebb098d38"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/README.md",
+      "to": "Books/Archive/October/analisi-1-assets/README.md",
+      "sha256": "0376e38a6c7fd797ed81bb4307f8eb51c6fc44836520119cb41db89a39399214"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/accumulazione.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/accumulazione.pdf",
+      "sha256": "e6357ecc8d758b653659f2eebbc4f485faad59afe01673f39e4cc5b3765c4cb8"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/accumulazione.svg",
+      "to": "Books/Archive/October/analisi-1-assets/accumulazione.svg",
+      "sha256": "d06de89b8a9274f0c557fa74289915317d3cab37a3389f60286a47f5909348a5"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/carabinieri.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/carabinieri.pdf",
+      "sha256": "ac28a234014cf2b6ace57b4b7e9d0c48551a82815dbbb3a9dbcd69946cae9eab"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/carabinieri.svg",
+      "to": "Books/Archive/October/analisi-1-assets/carabinieri.svg",
+      "sha256": "7ff970bce70312c8656d29a6fea160ed82bdf70dd2394eb742ce678e31c78db6"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/circonferenza.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/circonferenza.pdf",
+      "sha256": "2251c4b37cbfa0ee4c1892dde5dc2a9d14ba566ae5130b005276cdbd9a21ed97"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/circonferenza.svg",
+      "to": "Books/Archive/October/analisi-1-assets/circonferenza.svg",
+      "sha256": "12f434c941312c5cfc54d425dce58b71ac95bdd540bdb2429ce9a0adf9fdc360"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/composizione-cont.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/composizione-cont.pdf",
+      "sha256": "9bb67b1bb0f7de452d4abfdc94beb18c7cdb4ee7e8e88dee56edf0a97b181ec0"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/composizione-cont.svg",
+      "to": "Books/Archive/October/analisi-1-assets/composizione-cont.svg",
+      "sha256": "446eeca394b2491ceb8c8dafdd88214c111cc7ea3ade6d17492925c7a1ed6abb"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/dente.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/dente.pdf",
+      "sha256": "0bb276fba1e57164e115cb82c8a1f99e175a08ff781eed652e0ea6e96675e610"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/dente.svg",
+      "to": "Books/Archive/October/analisi-1-assets/dente.svg",
+      "sha256": "9715fd718bffd56776fe86e67603891a49e62810f9a7c01e616c05e9d8c84642"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/differenziale.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/differenziale.pdf",
+      "sha256": "f8c910ec3d2011d9ec54cc193001d9a63c7a16b9862e74494fbcb493f1c35cc7"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/differenziale.svg",
+      "to": "Books/Archive/October/analisi-1-assets/differenziale.svg",
+      "sha256": "df642294067d25b91bce6fc235e48419ac154d1377726a37cbead784a1457220"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/disegni.py",
+      "to": "Books/Archive/October/analisi-1-assets/disegni.py",
+      "sha256": "6b86fc5142a27d0b9b44bfba88cab542d7c31eaaa8dcf17b285f75d5f2bc7e61"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/domino.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/domino.pdf",
+      "sha256": "2effe9e86825c095aad3744cc5f8c072df6adcb9470c34041186bb51e2399401"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/domino.svg",
+      "to": "Books/Archive/October/analisi-1-assets/domino.svg",
+      "sha256": "36a2dd1251f2ef4ff884b9a69b8ffa4b260db63c8d128dcf38c1e08a08655052"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/epsilon-delta.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/epsilon-delta.pdf",
+      "sha256": "784594219d956d8295ae8f10ffec046c92ae8bd6cdd1a5a15ce90965da6018d7"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/epsilon-delta.svg",
+      "to": "Books/Archive/October/analisi-1-assets/epsilon-delta.svg",
+      "sha256": "7b25559191cc3f6e8e827dbfe38eb98f029df2bca3e555860d12159dbac207e5"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/figlib.py",
+      "to": "Books/Archive/October/analisi-1-assets/figlib.py",
+      "sha256": "6408dc009a98f10b051dcb3e57802284196b9399a67c2eb747e01cba233c4c3b"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/fonti.json",
+      "to": "Books/Archive/October/analisi-1-assets/fonti.json",
+      "sha256": "36a53c3493c26fd026cfab7d58ee58500640d6302d1714a8a8e229b64434c80e"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/funzioni.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/funzioni.pdf",
+      "sha256": "0876db49638b8a6e7115b51bb7778dcf36e19479fbb567efab244b43ea457da7"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/funzioni.svg",
+      "to": "Books/Archive/October/analisi-1-assets/funzioni.svg",
+      "sha256": "344ca6993a3f9c9573e68a26315daa15f12817693382a57f31b82a36d8afb9ba"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/geometrica.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/geometrica.pdf",
+      "sha256": "0dfa54341b2e91f840a9250211c99252ab5d68c4497428e2f7a898f89cc0cb76"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/geometrica.svg",
+      "to": "Books/Archive/October/analisi-1-assets/geometrica.svg",
+      "sha256": "42ed92dca0e1216eaa2a5e9779559ef501de197e3f8ad4a5e4e087a4aecd32ef"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/gradini.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/gradini.pdf",
+      "sha256": "2c0e9249dbcbc9defef4af417f17fd72a0d410a95d67c63357153124acd2dc8e"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/gradini.svg",
+      "to": "Books/Archive/October/analisi-1-assets/gradini.svg",
+      "sha256": "3015f72ac7f978746f4a80ac30858fe49c4ad37d7a68675fe0c6362f376c2181"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/immagine.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/immagine.pdf",
+      "sha256": "593f58ca8603ba54780ad9b2fe8ac3171c49fb20c7912c1366c61f4242f51b10"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/immagine.svg",
+      "to": "Books/Archive/October/analisi-1-assets/immagine.svg",
+      "sha256": "cb15b02e0907e2e06908d366e69ffe65be2d28103b5345ea914d4163bdab56e8"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/insiemi.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/insiemi.pdf",
+      "sha256": "34e9a69856386c35bdecfa3471fe11f734757c5e85cff4bef45b68203d32e0c1"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/insiemi.svg",
+      "to": "Books/Archive/October/analisi-1-assets/insiemi.svg",
+      "sha256": "f095b056a85181c94f86164234040fae54e9540b30b50445b4dae7d44404051f"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/inversa.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/inversa.pdf",
+      "sha256": "7cb3fda5b6b48f5cd58613ab634008f53b5becf0cab73db1f962c04e8c218d84"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/inversa.svg",
+      "to": "Books/Archive/October/analisi-1-assets/inversa.svg",
+      "sha256": "25ea8e3c3b4bd39a502a1dfca164a40d661913073e13e92fd887ae066f621d82"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/inverse-trig.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/inverse-trig.pdf",
+      "sha256": "f300e2f35777851f1c2887b4cda5003d4f056774b16605138a0b564c15f02510"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/inverse-trig.svg",
+      "to": "Books/Archive/October/analisi-1-assets/inverse-trig.svg",
+      "sha256": "15f274c28ffe565263594b9c5c190d5026d33b20b4db515dcd00b157ffa7f32d"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/iperbole.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/iperbole.pdf",
+      "sha256": "aea669969219cd054086c9f9f4f04940a169a1b95e2b231e598297ecbac6e30d"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/iperbole.svg",
+      "to": "Books/Archive/October/analisi-1-assets/iperbole.svg",
+      "sha256": "4e578c40fb4d5acf639f006f11cd4c34e3436fe8b584c0ce155510514893d9e4"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/iperboliche.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/iperboliche.pdf",
+      "sha256": "b09bf20e64fb83e94618d1a8329574503c7a2435d30d2a4aff8b73ee62d23eb5"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/iperboliche.svg",
+      "to": "Books/Archive/October/analisi-1-assets/iperboliche.svg",
+      "sha256": "8e23af2e26ed32615c6377b5749d6d03f02b71e78f35410af5ebf1baa6ef5e2f"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/livelli.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/livelli.pdf",
+      "sha256": "2944b182bac649dd221cc2e9d74e049bbbbded526b7482af55e5047779d0554f"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/livelli.svg",
+      "to": "Books/Archive/October/analisi-1-assets/livelli.svg",
+      "sha256": "2b455c656455e35dfdcc56cdca62ebf9676b55dd1698882f3d9f6c7a6bc83d26"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/monotona.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/monotona.pdf",
+      "sha256": "2d4b61c682c07480e177cc2a446309d8023227ac7fb92e744c77b6040407a196"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/monotona.svg",
+      "to": "Books/Archive/October/analisi-1-assets/monotona.svg",
+      "sha256": "92587dd80ed7e8a5b09a3b4ef30934c845558bfc31d34ada15c2f4d85f944feb"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/nepero.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/nepero.pdf",
+      "sha256": "f619ee93b8ae06c74a8b87f0f4e73b9eba8460a650b343f381a49ed28efad91e"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/nepero.svg",
+      "to": "Books/Archive/October/analisi-1-assets/nepero.svg",
+      "sha256": "69a9587628de05c3e64a6fdd09ab9ebd80ec2b7ef83ad0ef700780579a81f8fd"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/oscilla.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/oscilla.pdf",
+      "sha256": "d21d7fa175b34c4d9f9d312dff7a1ca961c58bad5a83653adbe218f9c23b23f0"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/oscilla.svg",
+      "to": "Books/Archive/October/analisi-1-assets/oscilla.svg",
+      "sha256": "eb133a38447af2ec401b6fb74d9219838ecd2cad3dc4578b6bd09b030ab66747"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/oscillazione.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/oscillazione.pdf",
+      "sha256": "17217f54b02b1aef7c7d632ad114c5195541d660d38d9ad99a1b9e972318977b"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/oscillazione.svg",
+      "to": "Books/Archive/October/analisi-1-assets/oscillazione.svg",
+      "sha256": "51bc1ba765935d3ed3f270144f74ceb8c9b58b5093db382663ac0e0f43df7c58"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/parti.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/parti.pdf",
+      "sha256": "41815b604d34f07413a66bafcac80bf744e34d840d5b6757a2dc14fe973e6326"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/parti.svg",
+      "to": "Books/Archive/October/analisi-1-assets/parti.svg",
+      "sha256": "50086caba805158131b42e6143e500a33b5d050abd48831be9764bae0237b416"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/potenze-zero.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/potenze-zero.pdf",
+      "sha256": "d3b45c74ba2a403f42631af976de8d8f4a7a3b423fd11f17c55f1902962e248d"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/potenze-zero.svg",
+      "to": "Books/Archive/October/analisi-1-assets/potenze-zero.svg",
+      "sha256": "739536cc70563ae8f4042f5bcc3f3af0adfe8e979696500a00468277001cf3fb"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/potenze.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/potenze.pdf",
+      "sha256": "898a322985cfa11065562e33093f79f85397ced68d0837e8fc7f727e81ad28c1"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/potenze.svg",
+      "to": "Books/Archive/October/analisi-1-assets/potenze.svg",
+      "sha256": "3c511c0ba06e9a752df0a57a2fbb06e0280fc15d6d11a8f77d484e74179102ec"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/quadrato4.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/quadrato4.pdf",
+      "sha256": "d1fa7554642cf47ffe8d1dc688f149e8bc9aac7f3a444e2cfc51382b0c759c70"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/quadrato4.svg",
+      "to": "Books/Archive/October/analisi-1-assets/quadrato4.svg",
+      "sha256": "f9cb265ed73c983a81e62c601e3400212c083fc1576a495291e660eeb1cba557"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/quantificatori.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/quantificatori.pdf",
+      "sha256": "a021c3457d17d3072924ce0f30156bf5683904a599c31e670b0623efa90d00d5"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/quantificatori.svg",
+      "to": "Books/Archive/October/analisi-1-assets/quantificatori.svg",
+      "sha256": "84279c34aa5e5e10b47da1257c9a1fe3b99395cdf244a8f4a36c39c836dd055e"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/radice-retta.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/radice-retta.pdf",
+      "sha256": "b1e72719a971729eed47fcf1c2c1cd06ce2b468e58486293c472617719a5bf11"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/radice-retta.svg",
+      "to": "Books/Archive/October/analisi-1-assets/radice-retta.svg",
+      "sha256": "34a949fc213883919d6218c890c5159067e1dc39b7d47e759ea775c1c33ec7c8"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/secante.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/secante.pdf",
+      "sha256": "013587368153fa79daa7b9b57d69985d31418de05adcf63333d3d061196127c2"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/secante.svg",
+      "to": "Books/Archive/October/analisi-1-assets/secante.svg",
+      "sha256": "b83ba51a19aa92c85ecf4e4fbdb2d2d24cae83f7f6d51a0f8017a712ab6f7fa4"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/seno-x-tan.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/seno-x-tan.pdf",
+      "sha256": "1f1a234700dab572af2fbee9c17dd1625393b0b03cfe9abfbfc8e86da0f1a101"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/seno-x-tan.svg",
+      "to": "Books/Archive/October/analisi-1-assets/seno-x-tan.svg",
+      "sha256": "6afa3ca4c5692d95ca7a5a54cfb13e26f054f4176c694b2a064130acf5354bdb"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/separazione.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/separazione.pdf",
+      "sha256": "f47914b6a2d2d50052af98c34ed2222e4cc246547bf1c10f3a845432a1b68d04"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/separazione.svg",
+      "to": "Books/Archive/October/analisi-1-assets/separazione.svg",
+      "sha256": "af854f6088e06782ff04c3d4d0ce3367ac1d7b90c915b0f8affb0b5eb5466ebc"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/simmetrie.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/simmetrie.pdf",
+      "sha256": "d4cdc1e871a630ce3980090fc4bf546f791e60216938d0dd4c7d6cedf793b899"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/simmetrie.svg",
+      "to": "Books/Archive/October/analisi-1-assets/simmetrie.svg",
+      "sha256": "86abb1a1c463570546c419d48487ae3c96b36bf1105de5a7c1902488e158f542"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/somme-stime.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/somme-stime.pdf",
+      "sha256": "a788fcd2f336d2e7b9f6af32b31c54a738d79ae7ffcaf4c29405268fe713751b"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/somme-stime.svg",
+      "to": "Books/Archive/October/analisi-1-assets/somme-stime.svg",
+      "sha256": "4afe1ef129fb01f8c8df76f544af4859592e6c1398382d388bc5696adab243ce"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/somme.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/somme.pdf",
+      "sha256": "6c0eb0f22530090953fd63d2e67ccfee32d74513a5734d13699e5a3234a119c3"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/somme.svg",
+      "to": "Books/Archive/October/analisi-1-assets/somme.svg",
+      "sha256": "7833e17e289a65cbf7aa30965a620f34fc3558d8d393616a9d2cf879509f6f2d"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/sottosucc.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/sottosucc.pdf",
+      "sha256": "3b855941cb77f1fe277ad7b2ef75c9550dd2f2ad580d22541be56037e7b7dd91"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/sottosucc.svg",
+      "to": "Books/Archive/October/analisi-1-assets/sottosucc.svg",
+      "sha256": "4664bc7df03688b25e03e2918841a342321a8d3ae3fba0427d29e7127b3b20b3"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/striscia.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/striscia.pdf",
+      "sha256": "6244534ba4dac205602a3d082ef5ebb99f440fd06295b52175e91740d8ba0683"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/striscia.svg",
+      "to": "Books/Archive/October/analisi-1-assets/striscia.svg",
+      "sha256": "a9eb7812180ee93b55b6c562d1904e6bbd5daf4acce44f44e4d679e44a827327"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/sup-eps.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/sup-eps.pdf",
+      "sha256": "7432fa3a3a8973c7670ecefa1d375bf8ba7a8c5a97005293ccd599dd2c39b75a"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/sup-eps.svg",
+      "to": "Books/Archive/October/analisi-1-assets/sup-eps.svg",
+      "sha256": "4d9afd0ef0ce830c7d17cd16b1a0bbef81f7ecd6df667d09540a455c2b1d7ed4"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/svg-to-pdf.swift",
+      "to": "Books/Archive/October/analisi-1-assets/svg-to-pdf.swift",
+      "sha256": "85613e1ec5a53c7972f9e13d22d41df1139f07cd6f0a9b91b9ee03290b00d16d"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/taylor-cos.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/taylor-cos.pdf",
+      "sha256": "f01a9f6c6e7c26162c996fb16591f187c9d5ae7f5534e298fda67f7b91c4569f"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/taylor-cos.svg",
+      "to": "Books/Archive/October/analisi-1-assets/taylor-cos.svg",
+      "sha256": "e70662e3e226e717bd1b3a64248e495dc5ec720cb5fd8206b895e26ae5d75f9c"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/trasformazioni.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/trasformazioni.pdf",
+      "sha256": "5d5a282624c09231bb1079a625d8af6f0902d87796175f7713709dff843cf120"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/trasformazioni.svg",
+      "to": "Books/Archive/October/analisi-1-assets/trasformazioni.svg",
+      "sha256": "5b46155b6b0921ab6d33fca57bca702721eb51e2a0c4f265aec1d6bb9e418d6c"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/tre-viste.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/tre-viste.pdf",
+      "sha256": "a06e5a4954866b1e2a0c3597b975e4c21f657fa1ca0da10b7c6d7d9d72cf69f2"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/tre-viste.svg",
+      "to": "Books/Archive/October/analisi-1-assets/tre-viste.svg",
+      "sha256": "f0dd8d73580b94f42e3e0791c20dc4a300712a3fd175eb80ddbb30065f372a5a"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/trig-grafici.pdf",
+      "to": "Books/Archive/October/analisi-1-assets/trig-grafici.pdf",
+      "sha256": "6420271bf34b096f2a12c1f47da81c28d2b6c281023b7cabf5f14fa362bb92a7"
+    },
+    {
+      "from": "Books/October/analisi-1-assets/trig-grafici.svg",
+      "to": "Books/Archive/October/analisi-1-assets/trig-grafici.svg",
+      "sha256": "461cdf1a625edf8d1e889989f4b8215e6e4e7c82dce729627dc8ffd93660fed9"
+    },
+    {
+      "from": "Books/October/geometria-1.pdf",
+      "to": "Books/Archive/October/geometria-1.pdf",
+      "sha256": "2e05a53d9cd79cb19cfe207abc28920f5642ca6e46a491b7e65d70f7b7983ed7"
+    },
+    {
+      "from": "Books/October/geometria-1.tm",
+      "to": "Books/Archive/October/geometria-1.tm",
+      "sha256": "557aaa4258f5669015ced7bb92ac25b0ebbac4aded5f8177c1ddfcaccdb4dca2"
+    },
+    {
+      "from": "Books/October/geometria-1-mappa.md",
+      "to": "Books/Archive/October/geometria-1-mappa.md",
+      "sha256": "ae6e3ff40448b59efc1f0b597c459fb639952f1fd0f1ad0bf30caf75781f8890"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/README.md",
+      "to": "Books/Archive/October/geometria-1-assets/README.md",
+      "sha256": "ca2b701e809049192d8d3c8fa508574d9bff117f0f198dc1f3d957e59f946967"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/colonne.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/colonne.pdf",
+      "sha256": "1a726407143919cb599203d05ba461abad40e51d19a7cd89aa65962cd0083bff"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/colonne.svg",
+      "to": "Books/Archive/October/geometria-1-assets/colonne.svg",
+      "sha256": "34cb5097d75eb1dc741fec4a64a11cf41b4ea1039a2486ec2a0b6ed316e2829e"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/coniugate.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/coniugate.pdf",
+      "sha256": "da8607322be11bf0ca558ddfe36ac8e8fe69b565ab415e8760ce56ea5398ca36"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/coniugate.svg",
+      "to": "Books/Archive/October/geometria-1-assets/coniugate.svg",
+      "sha256": "4cccde452f8ef39fe6421e769e9ce14988ed07b5b375371f588aba174fb2fb1a"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/contare.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/contare.pdf",
+      "sha256": "e1d2a53d45d44a906da0468e9c8e4326587fc9dbdfe5de07c78e16c2e3ec404f"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/contare.svg",
+      "to": "Books/Archive/October/geometria-1-assets/contare.svg",
+      "sha256": "bb27000ec04d5346003e7375d20be0c80da00edf9f30a12a8a582ba03e12426b"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/coordinate-basi.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/coordinate-basi.pdf",
+      "sha256": "0c36dd6f136f44962f49faae8a2f265cef72f52d1593e7cacd48e056bd867202"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/coordinate-basi.svg",
+      "to": "Books/Archive/October/geometria-1-assets/coordinate-basi.svg",
+      "sha256": "b08608ffd97bd09b444b70383110b1ad083f4d78b10bc326750aee7aca5b961e"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/coordinate-oblique.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/coordinate-oblique.pdf",
+      "sha256": "f4a36bfa0a9e600e5ebe533840f344a57d27a69b6edbae3aa29bbf7c80ffe42f"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/coordinate-oblique.svg",
+      "to": "Books/Archive/October/geometria-1-assets/coordinate-oblique.svg",
+      "sha256": "949b9cd0ea7b91b408761257b53976a2d886cfcca8bde2337a846182956e7bf0"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/decomposizione.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/decomposizione.pdf",
+      "sha256": "bc74d1f1ca3666dbcc3e6175927c1772e83ea9a5254a8a32c95f128742a5ae86"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/decomposizione.svg",
+      "to": "Books/Archive/October/geometria-1-assets/decomposizione.svg",
+      "sha256": "e6582db60a574c08c8e693f8b2b4bd3e84401712d86420ec8c36f57360edbed4"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/disegni.py",
+      "to": "Books/Archive/October/geometria-1-assets/disegni.py",
+      "sha256": "f0bff2ed2f004357716a0d72d370ac887dd9da0fa264911f3a807049c4d35f95"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/distributiva.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/distributiva.pdf",
+      "sha256": "88eba2b5160f3c4eed3834d6b3ed4e946fd99c237491353a081c05d7e8a07d87"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/distributiva.svg",
+      "to": "Books/Archive/October/geometria-1-assets/distributiva.svg",
+      "sha256": "109e2dcf4726cddcf4877c7def2132a9740bc68a7e41029576dfc7337524e23e"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/elementari.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/elementari.pdf",
+      "sha256": "cea570485aa74b6b5225cc3850d97cdd71e47ba57d37700bb80c73c53dccd9bb"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/elementari.svg",
+      "to": "Books/Archive/October/geometria-1-assets/elementari.svg",
+      "sha256": "515611a293466ab11ee3d6690b4be28bab87aed535a1d67f6376e14eb466a63d"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/fattori.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/fattori.pdf",
+      "sha256": "3dba01c5a8bb1a14a6b3d59e82617a785f08f9efd7dd27b5696030ef531b00e1"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/fattori.svg",
+      "to": "Books/Archive/October/geometria-1-assets/fattori.svg",
+      "sha256": "7257e406f27421f6ea6ff859ad3446e35b6b6a25bd769b0c0986a96a5d388126"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/figlib.py",
+      "to": "Books/Archive/October/geometria-1-assets/figlib.py",
+      "sha256": "6408dc009a98f10b051dcb3e57802284196b9399a67c2eb747e01cba233c4c3b"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/fonti.json",
+      "to": "Books/Archive/October/geometria-1-assets/fonti.json",
+      "sha256": "a29d8503e3bbf76597ff6698dec4825fe6e1b4125e52ee958b9ff742b68db6b1"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/funzioni.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/funzioni.pdf",
+      "sha256": "7dbc0f2367314e361faece1a10b06a609397037ac977016d4dab472008cb9896"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/funzioni.svg",
+      "to": "Books/Archive/October/geometria-1-assets/funzioni.svg",
+      "sha256": "581d62b4238f1e25ad1ca62294820712ce40f88e936e41c461184ac623308d89"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/gauss-passi.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/gauss-passi.pdf",
+      "sha256": "052c1166a7050dbdc02451517b17006fd87d08743caa8f5ca4ee9e615db35e80"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/gauss-passi.svg",
+      "to": "Books/Archive/October/geometria-1-assets/gauss-passi.svg",
+      "sha256": "113afd126f8d3c9429ee6c91d627ee3e714ba9276aa691012a534f6776ff7a45"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/grafico.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/grafico.pdf",
+      "sha256": "a96b508b8cacf0a2cb895b0fa45d103e4e3c13ab478eff55fbbd1f35f121b537"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/grafico.svg",
+      "to": "Books/Archive/October/geometria-1-assets/grafico.svg",
+      "sha256": "c9927251052188d6897ecfa13fc21e81d7a40bd1d80ba200144aa329b2e3cf8b"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/grassmann.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/grassmann.pdf",
+      "sha256": "4ce62cce589df6e8d7d2eb1a2af34654ccf0cf891e99521c4c6eee9375c58572"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/grassmann.svg",
+      "to": "Books/Archive/October/geometria-1-assets/grassmann.svg",
+      "sha256": "001a07f0affb6b87abcd8152236bcb31df5058d381d94521ad7512628f1592c1"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/inversa.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/inversa.pdf",
+      "sha256": "3c48d0ea1873e43d79c81b7856b6254fa017ae1dfa23207486f64643f0fa2cb1"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/inversa.svg",
+      "to": "Books/Archive/October/geometria-1-assets/inversa.svg",
+      "sha256": "1910be5481ea59e875a3ddf2ad95bb9cf6e0d5dd10c51ad43b949b50aeccf232"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/parallelogramma.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/parallelogramma.pdf",
+      "sha256": "b295156f364c78eebd8c875520eee0b6342803469870d7dcac6fe389821abb0a"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/parallelogramma.svg",
+      "to": "Books/Archive/October/geometria-1-assets/parallelogramma.svg",
+      "sha256": "56d440839ed4d1fc7a22fb182ac9cb6d94e2d725326214177e97d564a559ff2b"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/piano-complesso.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/piano-complesso.pdf",
+      "sha256": "227994f60d4a51ff3ffb2bc9c137b470502c628950f419e43a0e5bceef9be9cf"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/piano-complesso.svg",
+      "to": "Books/Archive/October/geometria-1-assets/piano-complesso.svg",
+      "sha256": "da565c867f737059d76a9e6703eecec31e63993720ab7fdc34c042a621180428"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/piano-span.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/piano-span.pdf",
+      "sha256": "565f39a20d99bc9caefec81608582f786d6ce3dd245e0acfe8ebffa03bd2b5d1"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/piano-span.svg",
+      "to": "Books/Archive/October/geometria-1-assets/piano-span.svg",
+      "sha256": "a0846542994b8687b846d36697422f7f07375be055211f05fd1bb54eddf8f23b"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/polinomi01.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/polinomi01.pdf",
+      "sha256": "6ff216b4534d9bc5abbf07ac01fb3ddd919d9bddba98c524edf4b695228f805d"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/polinomi01.svg",
+      "to": "Books/Archive/October/geometria-1-assets/polinomi01.svg",
+      "sha256": "eb31d4b40b4ea27f26b630f87eb7f60c20bdf0d21cb9fa6f526d9d3baaa8c545"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/quadranti.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/quadranti.pdf",
+      "sha256": "200eac958993b58c457cef24aeedb91d272edbaab7d08c020cb39287bb789098"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/quadranti.svg",
+      "to": "Books/Archive/October/geometria-1-assets/quadranti.svg",
+      "sha256": "9913716c0f3ecf23b1a90736d6a10405a9c0038ffc1196da75c08f9a68aaf86f"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/radici.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/radici.pdf",
+      "sha256": "6b8636e663ecb8dafaf8e27ca91db3a74eeaf859fce3a3e27efb23084f4a133c"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/radici.svg",
+      "to": "Books/Archive/October/geometria-1-assets/radici.svg",
+      "sha256": "cf678fbc484eca87309136515e836e52272dd62d5d212799b01f187e17ccef2c"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/rango-nullita.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/rango-nullita.pdf",
+      "sha256": "36ecef1aff516bcbe35b30b9c0c3cbd65f966519eee72c7abe453fb65af7b7b3"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/rango-nullita.svg",
+      "to": "Books/Archive/October/geometria-1-assets/rango-nullita.svg",
+      "sha256": "ef9f425cacd63796a5113951192a06496f42f3bdd5cd58c56741e0092b0409e6"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/rette.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/rette.pdf",
+      "sha256": "77a46e09d599d6dbc93631af87049af86cd00cc43bb61d1c4115812bfd7d9800"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/rette.svg",
+      "to": "Books/Archive/October/geometria-1-assets/rette.svg",
+      "sha256": "81d973231830b5a884fed5ac127f05a747d72b8b8acfb11c1bde7a633e173501"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/rouche.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/rouche.pdf",
+      "sha256": "394338968ef0b963b0532f4fd81b2a51ddd332652a01fcfb9f7d6628bb5ed34f"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/rouche.svg",
+      "to": "Books/Archive/October/geometria-1-assets/rouche.svg",
+      "sha256": "155871768200b0cd7e9ebde00c198da6e118b37a1ac3b75699269ffa001ffbe1"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/scala.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/scala.pdf",
+      "sha256": "2223a4cce4151fe4d99cabc936ad355fea05f3f740c3d65901566a9d420f8918"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/scala.svg",
+      "to": "Books/Archive/October/geometria-1-assets/scala.svg",
+      "sha256": "0354774c98ac486229b688211e0f17af00fa3d318893f8133ecb6804e4a7769e"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/scambio.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/scambio.pdf",
+      "sha256": "d49592a6306a23167e4ffc61eec1ef0211b7583063aa5b5ca448c06974d140ff"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/scambio.svg",
+      "to": "Books/Archive/October/geometria-1-assets/scambio.svg",
+      "sha256": "9a57215106d77dec1d6547d79ca9d87be0dc9a7b4a1ae397d1401698c1ee47bd"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/somma-diretta.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/somma-diretta.pdf",
+      "sha256": "b6fc3f9e2315a4ab675093f1299c0defa21e276e0725376833d2a0f0f4890d75"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/somma-diretta.svg",
+      "to": "Books/Archive/October/geometria-1-assets/somma-diretta.svg",
+      "sha256": "facbd1e66e28b70fbce3bfe2d68039d3a94dbd037839a7328eb865db43a87444"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/somma-funzioni.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/somma-funzioni.pdf",
+      "sha256": "ee4cc443ebe8fcdd15f5db70b6e612f8d23421c5f01db13b0f6358660ba20c3b"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/somma-funzioni.svg",
+      "to": "Books/Archive/October/geometria-1-assets/somma-funzioni.svg",
+      "sha256": "e2a40cf70f023fc3262c2b9381f0074088ec6d5ea371ab536d070300a144beda"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/somma-prodotto.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/somma-prodotto.pdf",
+      "sha256": "d99b4e0c4da64fb2f62b7ba94e5d11278c0d0ea16f69f62b48ed1b0371ddcdfc"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/somma-prodotto.svg",
+      "to": "Books/Archive/October/geometria-1-assets/somma-prodotto.svg",
+      "sha256": "8a465a0056879cb2f754a87350393eb3c7eaf35bced1a4d2d706332776d52939"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/sottospazi-r3.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/sottospazi-r3.pdf",
+      "sha256": "1c3fd3f996cffe5dbd07393afa47cee3775623571139f23722761fb5bb178b6c"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/sottospazi-r3.svg",
+      "to": "Books/Archive/October/geometria-1-assets/sottospazi-r3.svg",
+      "sha256": "9e598f718a5eb0ed1a1dee3eb83a77e9df7576101d9eb11545da7cf5460a2f38"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/span.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/span.pdf",
+      "sha256": "6399a6ef905d3fc15fb56272cb2be418634759eb6735218cdab112a99985afcd"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/span.svg",
+      "to": "Books/Archive/October/geometria-1-assets/span.svg",
+      "sha256": "3113b7c2b69fa8b7aad1caf59efb524c1f79de9a61787f5e67cc1a475957c145"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/svg-to-pdf.swift",
+      "to": "Books/Archive/October/geometria-1-assets/svg-to-pdf.swift",
+      "sha256": "85613e1ec5a53c7972f9e13d22d41df1139f07cd6f0a9b91b9ee03290b00d16d"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/traslato.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/traslato.pdf",
+      "sha256": "e035f7e9563bdedc219003d38be726d7916d2b3705a28d7cd8e017f9fc8325ba"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/traslato.svg",
+      "to": "Books/Archive/October/geometria-1-assets/traslato.svg",
+      "sha256": "4f99629ca948c5ba62b021cf3d928cc0897bf88b51082208db6236e9712de20a"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/tre-casi.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/tre-casi.pdf",
+      "sha256": "fa09bc2266d86d7dfef5b1cf0e4b0e55f57f4a4648657f9e3719ebe9f2d26b9f"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/tre-casi.svg",
+      "to": "Books/Archive/October/geometria-1-assets/tre-casi.svg",
+      "sha256": "fe6c0878771304cdd4dc6cd8d520625b8bb2efff2591097c56f240aaf517270f"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/unione.pdf",
+      "to": "Books/Archive/October/geometria-1-assets/unione.pdf",
+      "sha256": "9571c55b7faac5ce5476b244a353590e7aa4ec4458b08b047eecd917cae92230"
+    },
+    {
+      "from": "Books/October/geometria-1-assets/unione.svg",
+      "to": "Books/Archive/October/geometria-1-assets/unione.svg",
+      "sha256": "3465749a5793bcef036b7ecbccacfeb3320dbd481a096114823f653097e984d4"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1.pdf",
+      "sha256": "a996d308b38182b613f72bb0643cf225674ad5979f4d462c4d09530b2334d922"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1.tm",
+      "sha256": "7e41ecd96ed48d5fd679bba6016449066ad4fb139dba88fe432b15a12079cb23"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-mappa.md",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-mappa.md",
+      "sha256": "3dfb7c016887a93c7de296865b4db55333350412189d12afd5218d7220ad1b80"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/README.md",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/README.md",
+      "sha256": "ccc1844ddf707f3b8c4929c89ebe30b07ca34dcc3060aaaae6e4fa5e4ab7354e"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/albero-formula.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/albero-formula.pdf",
+      "sha256": "0e51531f400c53f94fe46efe87f31572b651b75eb05f9046f426498dc06d4e96"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/albero-formula.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/albero-formula.svg",
+      "sha256": "90479843d3f7254745c82831e02d0c0d1773e4e7fb2ce55987f98567290294d1"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/allindietro.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/allindietro.pdf",
+      "sha256": "19b9a647a835555e1f2d1de92b9de47847bb97a02a36bc7093522a79189f6a54"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/allindietro.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/allindietro.svg",
+      "sha256": "ebc629503751101dd6a78cc47937012d6ef199bed24c4a4d6ad76912755f4c58"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/array-zone.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/array-zone.pdf",
+      "sha256": "59b2042722d5c6cc51b83a23b4e394033c452c4337fc359405f766f79683e7d3"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/array-zone.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/array-zone.svg",
+      "sha256": "6522e841b8ec3ee68d4dcb9abc31c0cd9ea817958d4dac772952dc42a4cb4589"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/bandiera.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/bandiera.pdf",
+      "sha256": "487768e8e2df5f1125a599de24550dc54bb2938a795cbd31607e79fa8f6a31c2"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/bandiera.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/bandiera.svg",
+      "sha256": "c6c8032178212221fbcf00e30786552f8ebb1e513aed0baf7a8a8b53dcb1669c"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/conseguenza.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/conseguenza.pdf",
+      "sha256": "3e5561ab876258892200582b2d724125b547a1a148513e44546066b203580112"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/conseguenza.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/conseguenza.svg",
+      "sha256": "609cf992af93d79c72ffaaa08c688f63caa4fe782387d286661398fde955d5fa"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/disegni.py",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/disegni.py",
+      "sha256": "117a580357d6bf5248406df53591bdbc9f57a41e295f1216a0c43dd61ebe63d2"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/fasi.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/fasi.pdf",
+      "sha256": "88335f4504af1fe44274e7e504039faadb52ce545ce74b4fd0fe9de98be858ba"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/fasi.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/fasi.svg",
+      "sha256": "a21185c229300888c2d272e905b7b05ac2798f3b3a18a32bb3def43c0e37138d"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/fibonacci.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/fibonacci.pdf",
+      "sha256": "fa46b208c17f818fbd92850530146bd2dfc29c2ee72952b83a7f2a3749eb8484"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/fibonacci.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/fibonacci.svg",
+      "sha256": "2b0de2f50b089240e69302b8355172e3724d267cd9d487a7de72796a5f645e52"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/figlib.py",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/figlib.py",
+      "sha256": "6408dc009a98f10b051dcb3e57802284196b9399a67c2eb747e01cba233c4c3b"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/fonti.json",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/fonti.json",
+      "sha256": "644d856ed7ba98058478669583f8005f178d0ce6b9f85d6b3dc80cd5c3b21594"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/incroci.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/incroci.pdf",
+      "sha256": "261f16dbd278d04479357966db7d3437047add4ab4d69824845889fe630388a1"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/incroci.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/incroci.svg",
+      "sha256": "9d1fec2e79f1c390b0ff8fa00e34bb5e68e313a0dbe96efcc51ae74b2f0d4bef"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/invariante.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/invariante.pdf",
+      "sha256": "00399f5eb813c54d98c6d10b9fc5fe7d9b124044c787b4f8627312f68fece958"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/invariante.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/invariante.svg",
+      "sha256": "f66925b4592fe696050b3b6f0d746fe2f418f2fb7b37ce5886444e211f3be1d7"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/polarita.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/polarita.pdf",
+      "sha256": "a559626bf6f63ce18a7406556b18ad979e600fe9d3b26cdeecd208c6668bcd7b"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/polarita.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/polarita.svg",
+      "sha256": "497b50c71e351f6e80ea7aacac1decacb129cc5363595f72c75faebdea54b8a9"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/portata.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/portata.pdf",
+      "sha256": "b40867582f930566daf24385ceab85a3d6f5ad6c567e5eb3b311781dde8d1d90"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/portata.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/portata.svg",
+      "sha256": "198e19f992cc7b6d18eff5be9f782116f3760f5c563bce37802641e496382e86"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/pre-post.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/pre-post.pdf",
+      "sha256": "5fd6b56f5601f5fc43038c157c15088dc8bf1fee786d553fc5589716a7bb1cb1"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/pre-post.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/pre-post.svg",
+      "sha256": "2a6e43806e34bef0d84180672e949ef579c4c6f472bfa37ff8eb52982b4eca74"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/quaderno.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/quaderno.pdf",
+      "sha256": "e94c7ad99c455c86256f078247a6ff9696d83bddf25daf902b17047b01b019ad"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/quaderno.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/quaderno.svg",
+      "sha256": "ec2c745adfaac5c36b09807da27efde991a0a9da229abcdf82e03a3d357eda73"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/quantificatori.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/quantificatori.pdf",
+      "sha256": "e393eda76fab718d3f82781b9b772e6ab3125ae468a71a62bea478ef2fc7957c"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/quantificatori.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/quantificatori.svg",
+      "sha256": "b5cea48051030e789d471e1d53fa0e429f719ab96e982e6a5f6ecbd5f285f887"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/ricerca-binaria.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/ricerca-binaria.pdf",
+      "sha256": "eb96653fdf4b73ed285b67e98c4b5e908bfe1c8cd9c1b48d303a000e63ab7e0f"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/ricerca-binaria.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/ricerca-binaria.svg",
+      "sha256": "8fdf080795f855f0262c5df4ca3e5c508f89ba4873d0c24e6ed94a4f1ca362ba"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/scala.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/scala.pdf",
+      "sha256": "5acb7a7bb76a26be756e470a311172eab8e6ad466d4fe4d9e19b2832fa56de57"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/scala.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/scala.svg",
+      "sha256": "51166f7e08b78d22a0e0ef8bbe09fd74e2ab73468a0fb8b1c04e054e3281ec83"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/scambio.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/scambio.pdf",
+      "sha256": "23fee944cd47d5fc15fd29f532e9bf40c7503416a67c95b3f56028473253aab4"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/scambio.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/scambio.svg",
+      "sha256": "5275e85d3f1bd0182ff355fe37372957d5a3f1223e45ce4a8e93815232ca4010"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/book.src",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/book.src",
+      "sha256": "f4bbb4437a7b54573178d662b30e2ce79f8db831799f824b25664f92eaf667c1"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/00-front.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/00-front.tm",
+      "sha256": "a44779e133f68244a578deaeb68dfbf6fe7febfcec3c4424d1083feb27323d9c"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/01.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/01.tm",
+      "sha256": "67b4bb086d9a20aaab40661dab41419da88c17f665ad043d9d11cbe419f4581f"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/02.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/02.tm",
+      "sha256": "df886756ec914a900b419dba9be8b854da87dd463ddb8168a5e2663e2d3841ed"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/03.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/03.tm",
+      "sha256": "78386540602f2243e1c98fb225d21aeaaa93d99285e10709105998101583d225"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/04.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/04.tm",
+      "sha256": "6ee98800dceeed08a83e28eb131c1759c2ed94ddfe45b1db4019ac1fc4533b39"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/05.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/05.tm",
+      "sha256": "acff784c29fd91c6ed20191e58d268493aa947f7925f4cb62facb46fb21aa887"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/06.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/06.tm",
+      "sha256": "35858b9883850305aae8f7e15650be45bd254d0a43513ade09b9f1b92ede715e"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/07.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/07.tm",
+      "sha256": "55554b419865261a893200637fc0a53ef320b120656c0ff31cd5be2a60807bd1"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/08.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/08.tm",
+      "sha256": "99591a1c97f68e4b69a98c867f702b83cb9cde3d7acfb676978a69d3d9f68b8d"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/09.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/09.tm",
+      "sha256": "9865713f7454ebb6d00a7211cc89274fb63d177187f76ff964f677f7b9a5906d"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/chapters/99-app.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/chapters/99-app.tm",
+      "sha256": "43d1251eb59a557e5f05583ed64fb8a0af17376b0d7e4c75ca41a5386cca18d6"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/check-numbers.py",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/check-numbers.py",
+      "sha256": "b05d0d761cb3108daa8442d987eeda45cf403c1c29f1420de3bf5de9bfa12831"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/preamble-extra.tm",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/preamble-extra.tm",
+      "sha256": "892b45b5b24f806785dd044da7b8403000bca2259191ed01ad94ae378a935288"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/prep.py",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/prep.py",
+      "sha256": "c82a510f3e296b58ae67d1517ec0ea9bdb066d0c8cb1d2f31ef51000fd9e30a8"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/source/sizes.json",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/source/sizes.json",
+      "sha256": "b6ed90e6ab06eed9f2a5aaec6b3dfb4632edd4a8c0103093661aa7deb9c0ab68"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/svg-to-pdf.swift",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/svg-to-pdf.swift",
+      "sha256": "85613e1ec5a53c7972f9e13d22d41df1139f07cd6f0a9b91b9ee03290b00d16d"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/tre-interpretazioni.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/tre-interpretazioni.pdf",
+      "sha256": "e0b2d6de8993198023a963910edffe3053954635915bf18c87c32bec43504161"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/tre-interpretazioni.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/tre-interpretazioni.svg",
+      "sha256": "4360de06da1295284839a338489b6b7d2d0f8158812295f7f8a64e7ecfe635a0"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/verifiche.json",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/verifiche.json",
+      "sha256": "73069f2af2ab1d7d98645d6e87881b7571f8ab4242b9320b16e79ebe9a527376"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/while-srotolato.pdf",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/while-srotolato.pdf",
+      "sha256": "70ee65ba86ca14d52544fae6586b2885073ffb760071a5c894021eaf10e494ef"
+    },
+    {
+      "from": "Books/October/fondamenti-di-programmazione-1-assets/while-srotolato.svg",
+      "to": "Books/Archive/October/fondamenti-di-programmazione-1-assets/while-srotolato.svg",
+      "sha256": "3a8ba1f8c4f8cd7724564a4ad3a1a5fbf8e91e061f365d6d6f6c75420e33c543"
+    }
+  ]
+}

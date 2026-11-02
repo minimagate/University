@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="135" viewBox="0 0 620 135" role="img" aria-labelledby="title desc">
+<title id="title">Le due partenze</title><desc id="desc">In una striscia 2 per n si comincia con una tessera verticale, oppure con due tessere orizzontali una sopra l’altra.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M20,28 L292,28 M20,96 L292,96 M20,28 L20,96" fill="none" stroke="#111" stroke-width="0.9" />
+<rect x="21.5" y="29.5" width="31" height="65" fill="#e4e4e4" stroke="#111" stroke-width="0.9" rx="3"/>
+<rect x="57" y="31" width="235" height="62" fill="none" stroke="#111" stroke-width="0.7" rx="3" stroke-dasharray="3 4"/>
+<path d="M330,28 L602,28 M330,96 L602,96 M330,28 L330,96" fill="none" stroke="#111" stroke-width="0.9" />
+<rect x="331.5" y="29.5" width="65" height="31" fill="#e4e4e4" stroke="#111" stroke-width="0.9" rx="3"/>
+<rect x="331.5" y="63.5" width="65" height="31" fill="#e4e4e4" stroke="#111" stroke-width="0.9" rx="3"/>
+<rect x="401" y="31" width="201" height="62" fill="none" stroke="#111" stroke-width="0.7" rx="3" stroke-dasharray="3 4"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="173" y="67" font-size="16" text-anchor="middle" fill="#111"><tspan font-style="italic">T</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="11.2">n</tspan><tspan baseline-shift="-28%" font-size="11.2">−1</tspan></text>
+<text x="156" y="124" font-size="13" text-anchor="middle" fill="#111" font-style="italic">una verticale</text>
+<text x="500" y="67" font-size="16" text-anchor="middle" fill="#111"><tspan font-style="italic">T</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="11.2">n</tspan><tspan baseline-shift="-28%" font-size="11.2">−2</tspan></text>
+<text x="466" y="124" font-size="13" text-anchor="middle" fill="#111" font-style="italic">due orizzontali</text>
+</g>
+</svg>

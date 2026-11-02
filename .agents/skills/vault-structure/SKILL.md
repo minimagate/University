@@ -1,3 +1,8 @@
+---
+name: vault-structure
+description: Locate university source material, main Spark book bundles and archived editions, and understand the vault metadata. Use when finding files or interpreting how workspace artifacts were produced.
+---
+
 <!-- generated-by: lecture -->
 # Vault Structure
 
@@ -5,12 +10,14 @@ Use this skill when you need to locate course material or understand how a file 
 
 ## Roots and course mirroring
 
-The vault root contains three meaningful content trees:
+The vault root contains these content trees:
 
 ```text
 Notes/          authored and curated study material
 _transcripts/   generated lecture corpus
 _audio/         original recordings
+Books/          main Spark course books and their production bundles
+Books/Archive/  preserved older editions, secondary references
 ```
 
 The same course name normally identifies one directory in each tree:
@@ -54,3 +61,9 @@ The body normally has a generated title, a summary, and `## Transcript` containi
 `_audio/` is immutable source material. Never rename, move, delete, edit, replace, or create files there. A course's generated `Transcriptions.base` view lives at `_transcripts/<Course>/Transcriptions.base`. `*.base` files are Obsidian views over transcript metadata, not a second database. The Markdown frontmatter remains authoritative; do not manually copy metadata into a Base.
 
 Paths inside the vault should remain relative and should use `/`. Course directory names come from the filesystem. Do not construct paths from unvalidated user input or escape a course directory when writing.
+
+## Course books
+
+`Books/README.md` identifies the main Spark editions and conversion queue. A main bundle is `Books/<Month>/<slug>-<N>-spark/`, with native TeXmacs/PDF, editable chapter sources, figures and build/coverage documents. Older flat editions are preserved in `Books/Archive/<Month>/`. They are not the main reading material.
+
+Use `monthly-book` for writing, continuing, converting or revising a book. Spark companion Markdown files are not lecture notes: do not add book-note metadata or reorganize them with note-formatting procedures. Archive relocations are recorded in `Books/Archive/relocations.json`; source manifests still refer to the untouched lecture corpus.

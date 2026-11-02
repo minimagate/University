@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="104" viewBox="0 0 440 104" role="img" aria-labelledby="title desc">
+<title id="title">Indipendenti al più n, generatori almeno n</title><desc id="desc">Una scala dei numeri di vettori: le famiglie indipendenti stanno a sinistra di n, quelle di generatori a destra; le basi stanno esattamente in n.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="10" y1="50" x2="430" y2="50" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="30" y1="45" x2="30" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="80" y1="45" x2="80" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="130" y1="45" x2="130" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="180" y1="45" x2="180" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="230" y1="45" x2="230" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="280" y1="45" x2="280" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="330" y1="45" x2="330" y2="55" stroke="#111" stroke-width="0.8"/>
+<line x1="380" y1="45" x2="380" y2="55" stroke="#111" stroke-width="0.8"/>
+<rect x="20" y="12" width="220" height="22" fill="#e4e4e4" stroke="none" stroke-width="1" rx="11"/>
+<rect x="220" y="80" width="190" height="22" fill="#e4e4e4" stroke="none" stroke-width="1" rx="11"/>
+<circle cx="230" cy="50" r="8" fill="none" stroke="#111" stroke-width="1.9"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="30" y="72" font-size="14" text-anchor="middle" fill="#111">0</text>
+<text x="80" y="72" font-size="14" text-anchor="middle" fill="#111">1</text>
+<text x="130" y="72" font-size="14" text-anchor="middle" fill="#111">2</text>
+<text x="180" y="72" font-size="14" text-anchor="middle" fill="#111">…</text>
+<text x="230" y="72" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">n</tspan></text>
+<text x="280" y="72" font-size="14" text-anchor="middle" fill="#111">…</text>
+<text x="330" y="72" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">n</tspan>+1</text>
+<text x="130" y="28" font-size="13" text-anchor="middle" fill="#111" font-style="italic">indipendenti</text>
+<text x="320" y="96" font-size="13" text-anchor="middle" fill="#111" font-style="italic">generatori</text>
+<text x="244" y="38" font-size="13" text-anchor="start" fill="#111" font-style="italic">basi</text>
+</g>
+</svg>

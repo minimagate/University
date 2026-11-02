@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200" role="img" aria-labelledby="title desc">
+<title id="title">Il grafico come sottoinsieme del prodotto cartesiano</title><desc id="desc">Due griglie X per Y: a sinistra ogni colonna contiene esattamente un punto (grafico di una funzione); a destra una colonna ha due punti e una nessuno.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<circle cx="60" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="60" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="60" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="60" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="94" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="94" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="94" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="94" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="128" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="128" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="128" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="128" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="162" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="162" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="162" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="162" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="60" cy="126" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="94" cy="58" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="128" cy="126" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="162" cy="160" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="44" y1="174" x2="186" y2="174" stroke="#111" stroke-width="0.8" marker-end="url(#ah)"/>
+<line x1="44" y1="174" x2="44" y2="34" stroke="#111" stroke-width="0.8" marker-end="url(#ah)"/>
+<circle cx="350" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="350" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="350" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="350" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="384" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="384" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="384" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="384" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="418" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="418" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="418" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="418" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="452" cy="160" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="452" cy="126" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="452" cy="92" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="452" cy="58" r="2.2" fill="white" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="350" cy="126" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="350" cy="58" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="418" cy="92" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="452" cy="160" r="4.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="334" y1="174" x2="476" y2="174" stroke="#111" stroke-width="0.8" marker-end="url(#ah)"/>
+<line x1="334" y1="174" x2="334" y2="34" stroke="#111" stroke-width="0.8" marker-end="url(#ah)"/>
+<rect x="340" y="48" width="20" height="122" fill="none" stroke="#111" stroke-width="0.8" rx="8" stroke-dasharray="3 3"/>
+<rect x="374" y="48" width="20" height="122" fill="none" stroke="#111" stroke-width="0.8" rx="8" stroke-dasharray="3 3"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="196" y="179" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="30" y="40" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="111" y="196" font-size="13" text-anchor="middle" fill="#111" font-style="italic">grafico di una funzione</text>
+<text x="486" y="179" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="320" y="40" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="401" y="196" font-size="13" text-anchor="middle" fill="#111" font-style="italic">non è un grafico</text>
+</g>
+</svg>

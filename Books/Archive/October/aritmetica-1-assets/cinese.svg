@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="240" viewBox="0 0 620 240" role="img" aria-labelledby="title desc">
+<title id="title">Riempire la griglia dei resti</title><desc id="desc">A sinistra una griglia 3 per 5: i numeri da 0 a 14, messi nella casella dei loro resti, la riempiono tutta. A destra una griglia 2 per 4: i numeri da 0 a 7 cadono a coppie in metà delle caselle e le altre restano vuote.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="40" y="70" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="84" y="70" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="128" y="70" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="172" y="70" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="216" y="70" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="40" y="114" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="84" y="114" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="128" y="114" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="172" y="114" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="216" y="114" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="40" y="158" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="84" y="158" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="128" y="158" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="172" y="158" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="216" y="158" width="44" height="44" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="40" y="70" width="220" height="132" fill="none" stroke="#111" stroke-width="1"/>
+<rect x="380" y="70" width="50" height="50" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="430" y="70" width="50" height="50" fill="#e4e4e4" stroke="#111" stroke-width="0.7"/>
+<rect x="480" y="70" width="50" height="50" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="530" y="70" width="50" height="50" fill="#e4e4e4" stroke="#111" stroke-width="0.7"/>
+<rect x="380" y="120" width="50" height="50" fill="#e4e4e4" stroke="#111" stroke-width="0.7"/>
+<rect x="430" y="120" width="50" height="50" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="480" y="120" width="50" height="50" fill="#e4e4e4" stroke="#111" stroke-width="0.7"/>
+<rect x="530" y="120" width="50" height="50" fill="white" stroke="#111" stroke-width="0.7"/>
+<rect x="380" y="70" width="200" height="100" fill="none" stroke="#111" stroke-width="1"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="150" y="36" font-size="14" text-anchor="middle" fill="#111" font-style="italic">resto mod 5 →</text>
+<text x="62" y="62" font-size="12" text-anchor="middle" fill="#444">0</text>
+<text x="106" y="62" font-size="12" text-anchor="middle" fill="#444">1</text>
+<text x="150" y="62" font-size="12" text-anchor="middle" fill="#444">2</text>
+<text x="194" y="62" font-size="12" text-anchor="middle" fill="#444">3</text>
+<text x="238" y="62" font-size="12" text-anchor="middle" fill="#444">4</text>
+<text x="28" y="96" font-size="12" text-anchor="middle" fill="#444">0</text>
+<text x="28" y="140" font-size="12" text-anchor="middle" fill="#444">1</text>
+<text x="28" y="184" font-size="12" text-anchor="middle" fill="#444">2</text>
+<text x="62" y="97" font-size="14" text-anchor="middle" fill="#111">0</text>
+<text x="106" y="97" font-size="14" text-anchor="middle" fill="#111">6</text>
+<text x="150" y="97" font-size="14" text-anchor="middle" fill="#111">12</text>
+<text x="194" y="97" font-size="14" text-anchor="middle" fill="#111">3</text>
+<text x="238" y="97" font-size="14" text-anchor="middle" fill="#111">9</text>
+<text x="62" y="141" font-size="14" text-anchor="middle" fill="#111">10</text>
+<text x="106" y="141" font-size="14" text-anchor="middle" fill="#111">1</text>
+<text x="150" y="141" font-size="14" text-anchor="middle" fill="#111">7</text>
+<text x="194" y="141" font-size="14" text-anchor="middle" fill="#111">13</text>
+<text x="238" y="141" font-size="14" text-anchor="middle" fill="#111">4</text>
+<text x="62" y="185" font-size="14" text-anchor="middle" fill="#111">5</text>
+<text x="106" y="185" font-size="14" text-anchor="middle" fill="#111">11</text>
+<text x="150" y="185" font-size="14" text-anchor="middle" fill="#111">2</text>
+<text x="194" y="185" font-size="14" text-anchor="middle" fill="#111">8</text>
+<text x="238" y="185" font-size="14" text-anchor="middle" fill="#111">14</text>
+<text x="22" y="136" font-size="1" text-anchor="middle" fill="#111"></text>
+<text x="18" y="58" font-size="11" text-anchor="start" fill="#111" font-style="italic">mod 3</text>
+<text x="480" y="36" font-size="14" text-anchor="middle" fill="#111" font-style="italic">resto mod 4 →</text>
+<text x="405" y="62" font-size="12" text-anchor="middle" fill="#444">0</text>
+<text x="455" y="62" font-size="12" text-anchor="middle" fill="#444">1</text>
+<text x="505" y="62" font-size="12" text-anchor="middle" fill="#444">2</text>
+<text x="555" y="62" font-size="12" text-anchor="middle" fill="#444">3</text>
+<text x="368" y="99" font-size="12" text-anchor="middle" fill="#444">0</text>
+<text x="368" y="149" font-size="12" text-anchor="middle" fill="#444">1</text>
+<text x="405" y="100" font-size="12" text-anchor="middle" fill="#111">0, 4</text>
+<text x="505" y="100" font-size="12" text-anchor="middle" fill="#111">2, 6</text>
+<text x="455" y="150" font-size="12" text-anchor="middle" fill="#111">1, 5</text>
+<text x="555" y="150" font-size="12" text-anchor="middle" fill="#111">3, 7</text>
+<text x="358" y="58" font-size="11" text-anchor="start" fill="#111" font-style="italic">mod 2</text>
+<text x="150" y="232" font-size="13" text-anchor="middle" fill="#111" font-style="italic">0, …, 14: tutte le 15 caselle</text>
+<text x="480" y="232" font-size="13" text-anchor="middle" fill="#111" font-style="italic">0, …, 7: solo 4 caselle su 8</text>
+</g>
+</svg>

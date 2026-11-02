@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="240" viewBox="0 0 480 240" role="img" aria-labelledby="title desc">
+<title id="title">Le regioni dell’algoritmo a bandiera</title><desc id="desc">Due stati dell’array: nel primo le regioni sono minore di zero, non ancora esaminati e maggiore o uguale a zero; nel secondo ci sono quattro regioni, con i valori uguali a zero e maggiori di zero separati.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<pattern id="hp" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#9a9a9a" stroke-width="1"/></pattern>
+<rect x="50" y="70" width="120" height="40" fill="#e4e4e4" stroke="#111" stroke-width="1"/>
+<rect x="170" y="70" width="120" height="40" fill="white" stroke="#111" stroke-width="1"/>
+<rect x="290" y="70" width="160" height="40" fill="url(#hp)" stroke="#111" stroke-width="1"/>
+<rect x="50" y="70" width="400" height="40" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="170" y1="64" x2="170" y2="70" stroke="#111" stroke-width="1"/>
+<line x1="290" y1="64" x2="290" y2="70" stroke="#111" stroke-width="1"/>
+<line x1="450" y1="64" x2="450" y2="70" stroke="#111" stroke-width="1"/>
+<rect x="50" y="170" width="80" height="40" fill="#e4e4e4" stroke="#111" stroke-width="1"/>
+<rect x="130" y="170" width="80" height="40" fill="white" stroke="#111" stroke-width="1"/>
+<rect x="210" y="170" width="120" height="40" fill="white" stroke="#111" stroke-width="1"/>
+<rect x="330" y="170" width="120" height="40" fill="url(#hp)" stroke="#111" stroke-width="1"/>
+<rect x="50" y="170" width="400" height="40" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="130" y1="164" x2="130" y2="170" stroke="#111" stroke-width="1"/>
+<line x1="210" y1="164" x2="210" y2="170" stroke="#111" stroke-width="1"/>
+<line x1="330" y1="164" x2="330" y2="170" stroke="#111" stroke-width="1"/>
+<line x1="450" y1="164" x2="450" y2="170" stroke="#111" stroke-width="1"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="110" y="95" font-size="13" text-anchor="middle" fill="#111">&lt; 0</text>
+<text x="230" y="95" font-size="13" text-anchor="middle" fill="#111">?</text>
+<text x="370" y="95" font-size="13" text-anchor="middle" fill="#111">≥ 0</text>
+<text x="170" y="58" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="290" y="58" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="450" y="58" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">n</tspan></text>
+<text x="90" y="195" font-size="13" text-anchor="middle" fill="#111">&lt; 0</text>
+<text x="170" y="195" font-size="13" text-anchor="middle" fill="#111">= 0</text>
+<text x="270" y="195" font-size="13" text-anchor="middle" fill="#111">?</text>
+<text x="390" y="195" font-size="13" text-anchor="middle" fill="#111">&gt; 0</text>
+<text x="130" y="158" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="210" y="158" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">z</tspan></text>
+<text x="330" y="158" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="450" y="158" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">n</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="225" viewBox="0 0 600 225" role="img" aria-labelledby="title desc">
+<title id="title">Differenza di quadrati</title><desc id="desc">A sinistra un quadrato di lato x privato di un quadrato di lato y; i due pezzi rimasti si ricompongono a destra in un rettangolo di lati x + y e x − y.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="46" y="18" width="80" height="140" fill="#e4e4e4" stroke="#111" stroke-width="0.9"/>
+<rect x="126" y="78" width="60" height="80" fill="white" stroke="#111" stroke-width="0.9"/>
+<rect x="126" y="18" width="60" height="60" fill="none" stroke="#111" stroke-width="0.7" stroke-dasharray="3 4"/>
+<line x1="225" y1="90" x2="285" y2="90" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<rect x="305" y="78" width="140" height="80" fill="#e4e4e4" stroke="#111" stroke-width="0.9"/>
+<rect x="445" y="78" width="60" height="80" fill="white" stroke="#111" stroke-width="0.9"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="156" y="53" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">y</tspan><tspan baseline-shift="38%" font-size="9.1">2</tspan></text>
+<text x="116" y="180" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="30" y="93" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="116" y="198" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan><tspan baseline-shift="38%" font-size="9.8">2</tspan> − <tspan font-style="italic">y</tspan><tspan baseline-shift="38%" font-size="9.8">2</tspan></text>
+<text x="405" y="180" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan> + <tspan font-style="italic">y</tspan></text>
+<text x="535" y="123" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">x</tspan> − <tspan font-style="italic">y</tspan></text>
+<text x="405" y="216" font-size="14" text-anchor="middle" fill="#111">(<tspan font-style="italic">x</tspan> + <tspan font-style="italic">y</tspan>)(<tspan font-style="italic">x</tspan> − <tspan font-style="italic">y</tspan>)</text>
+</g>
+</svg>

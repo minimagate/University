@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="220" viewBox="0 0 430 220" role="img" aria-labelledby="title desc">
+<title id="title">Schema di un ciclo con invariante</title><desc id="desc">Diagramma di un ciclo: si entra con Inv, si controlla la guardia E; se è vera si esegue C e si torna al controllo con Inv; se è falsa si esce con Inv ∧ ¬E.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="240" y1="18" x2="240" y2="62" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<polygon points="240,62 300,92 240,122 180,92" fill="white" stroke="#111" stroke-width="1"/>
+<line x1="240" y1="122" x2="240" y2="159" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<rect x="205" y="159" width="70" height="34" fill="white" stroke="#111" stroke-width="1"/>
+<line x1="205" y1="176" x2="160" y2="176" stroke="#111" stroke-width="1"/>
+<line x1="160" y1="176" x2="160" y2="92" stroke="#111" stroke-width="1"/>
+<line x1="160" y1="92" x2="178" y2="92" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<line x1="300" y1="92" x2="410" y2="92" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="252" y="42" font-size="13" text-anchor="start" fill="#111" font-style="italic">Inv</text>
+<text x="240" y="97" font-size="14" text-anchor="middle" fill="#111">E ?</text>
+<text x="232" y="146" font-size="12" text-anchor="end" fill="#111">sì</text>
+<text x="250" y="146" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">Inv</tspan> ∧ <tspan font-style="italic">E</tspan></text>
+<text x="240" y="181" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">C</tspan></text>
+<text x="150" y="134" font-size="13" text-anchor="end" fill="#111"><tspan font-style="italic">Inv</tspan></text>
+<text x="355" y="86" font-size="12" text-anchor="middle" fill="#111">no</text>
+<text x="355" y="112" font-size="13" text-anchor="middle" fill="#111"><tspan font-style="italic">Inv</tspan> ∧ ¬<tspan font-style="italic">E</tspan></text>
+</g>
+</svg>

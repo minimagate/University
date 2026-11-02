@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="186" viewBox="0 0 650 186" role="img" aria-labelledby="title desc">
+<title id="title">Funzioni, iniettive, suriettive, biiettive</title><desc id="desc">Cinque diagrammi a frecce: una regola che non è una funzione, una funzione qualsiasi, una iniettiva, una suriettiva, una biiettiva.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="34" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="96" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="34" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="34" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="34" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="96" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="96" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="96" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="39" y1="58.44" x2="90" y2="58.44" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="38.34" y1="60.93" x2="90.8" y2="91.02" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="39" y1="129.56" x2="90" y2="129.56" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="164" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="226" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="164" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="164" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="164" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="226" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="226" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="226" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="169" y1="58.44" x2="220" y2="58.44" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="168.34" y1="91.51" x2="220.8" y2="61.43" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="169" y1="129.56" x2="220" y2="129.56" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="294" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="356" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="294" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="294" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="294" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="356" cy="52.26" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="356" cy="80.09" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="356" cy="107.91" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="356" cy="135.74" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="298.98" y1="57.95" x2="350.03" y2="52.86" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="298.88" y1="92.91" x2="350.15" y2="81.4" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="298.98" y1="130.05" x2="350.03" y2="135.14" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="424" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="486" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="424" cy="52.26" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="424" cy="80.09" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="424" cy="107.91" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="424" cy="135.74" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="486" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="486" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="486" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="428.98" y1="52.76" x2="480.03" y2="57.85" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="428.88" y1="81.18" x2="480.15" y2="92.69" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="428.88" y1="106.82" x2="480.15" y2="95.31" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="428.98" y1="135.24" x2="480.03" y2="130.15" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<ellipse cx="554" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<ellipse cx="616" cy="94" rx="20" ry="64" fill="none" stroke="#111" stroke-width="1"/>
+<circle cx="554" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="554" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="554" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="616" cy="58.44" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="616" cy="94" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<circle cx="616" cy="129.56" r="2.6" fill="#111" stroke="none" stroke-width="0"/>
+<line x1="558.34" y1="60.93" x2="610.8" y2="91.02" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="558.34" y1="96.49" x2="610.8" y2="126.57" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+<line x1="557.29" y1="125.79" x2="612.06" y2="62.97" stroke="#111" stroke-width="0.85" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="34" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="96" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="65" y="182" font-size="13" text-anchor="middle" fill="#111" font-style="italic">non è funzione</text>
+<text x="164" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="226" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="195" y="182" font-size="13" text-anchor="middle" fill="#111" font-style="italic">funzione</text>
+<text x="294" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="356" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="325" y="182" font-size="13" text-anchor="middle" fill="#111" font-style="italic">iniettiva</text>
+<text x="424" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="486" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="455" y="182" font-size="13" text-anchor="middle" fill="#111" font-style="italic">suriettiva</text>
+<text x="554" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">X</tspan></text>
+<text x="616" y="22" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">Y</tspan></text>
+<text x="585" y="182" font-size="13" text-anchor="middle" fill="#111" font-style="italic">biiettiva</text>
+</g>
+</svg>

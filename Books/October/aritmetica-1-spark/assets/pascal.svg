@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="215" viewBox="0 0 440 215" role="img" aria-labelledby="title desc">
+<title id="title">Il triangolo di Pascal</title><desc id="desc">Le righe da 0 a 5 del triangolo di Pascal; il 10 della quinta riga è la somma di 4 e 6 sopra di lui.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<circle cx="174" cy="155" r="14" fill="none" stroke="#111" stroke-width="0.9"/>
+<circle cx="220" cy="155" r="14" fill="none" stroke="#111" stroke-width="0.9"/>
+<circle cx="197" cy="188" r="14" fill="#e4e4e4" stroke="#111" stroke-width="0.9"/>
+<line x1="182.58" y1="167.31" x2="187.85" y2="174.87" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="211.42" y1="167.31" x2="206.15" y2="174.87" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="220" y="28" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="197" y="61" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="243" y="61" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="174" y="94" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="220" y="94" font-size="15" text-anchor="middle" fill="#111">2</text>
+<text x="266" y="94" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="151" y="127" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="197" y="127" font-size="15" text-anchor="middle" fill="#111">3</text>
+<text x="243" y="127" font-size="15" text-anchor="middle" fill="#111">3</text>
+<text x="289" y="127" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="128" y="160" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="174" y="160" font-size="15" text-anchor="middle" fill="#111">4</text>
+<text x="220" y="160" font-size="15" text-anchor="middle" fill="#111">6</text>
+<text x="266" y="160" font-size="15" text-anchor="middle" fill="#111">4</text>
+<text x="312" y="160" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="105" y="193" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="151" y="193" font-size="15" text-anchor="middle" fill="#111">5</text>
+<text x="197" y="193" font-size="15" text-anchor="middle" fill="#111">10</text>
+<text x="243" y="193" font-size="15" text-anchor="middle" fill="#111">10</text>
+<text x="289" y="193" font-size="15" text-anchor="middle" fill="#111">5</text>
+<text x="335" y="193" font-size="15" text-anchor="middle" fill="#111">1</text>
+<text x="26" y="197" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">n</tspan> = 5</text>
+<text x="26" y="32" font-size="13" text-anchor="start" fill="#111"><tspan font-style="italic">n</tspan> = 0</text>
+</g>
+</svg>

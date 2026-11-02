@@ -1,6 +1,6 @@
 ---
 type: lecture-note
-course: Geometria 1
+course: Aritmetica
 date: 2026-10-19
 title: Dimostrazione del teorema cinese del resto
 source: Quando_G._Bresciani_fa__teoria_2.pdf

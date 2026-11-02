@@ -8,6 +8,7 @@ This vault is my local university workspace.
 - `Notes/` contains my notes and study material; `Notes/<Course>/Lectures/` is reserved for generated structured lecture notes.
 - `_transcripts/` contains machine transcriptions and is the source corpus.
 - `_audio/` contains the original lecture recordings and is immutable.
+- `Books/` contains the main Spark study books; [open the book index](Books/README.md). Earlier editions are preserved under `Books/Archive/` while other courses await conversion.
 
 Each course normally appears in all three places. For example:
 

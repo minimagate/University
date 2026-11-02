@@ -1,16 +1,17 @@
 ---
 name: format-books-for-obsidian
-description: Format new or explicitly selected Markdown study recaps under Books/ for reliable Obsidian rendering while preserving their mathematical content. Use when Books files need adaptation, normalization, or Obsidian-compatible formatting; do not apply to Notes, transcripts, audio, or Bases.
+description: Format explicitly selected standalone Markdown study recaps under Books for Obsidian while preserving their mathematics. Exclude Spark book bundles, book indexes, source audits, coverage/editorial/validation documents, and archives unless specifically requested.
 ---
 
 # Format Books for Obsidian
 
-Adapt Markdown files under `Books/<Course>/` to the conventions already used by formatted Books notes in this vault. Preserve the note's meaning, course placement, filename, examples, hypotheses, and mathematical reasoning.
+Adapt standalone Markdown study recaps to the conventions used by nearby formatted notes. Spark TeXmacs/PDF bundles are now the main books; their Markdown companions are documentation, not lecture recaps. Preserve meaning, placement, filename, examples, hypotheses and reasoning.
 
 ## Select the files
 
 - At the start, inspect `Books/` and Git status. When the user says “new files,” limit edits to untracked or newly added Markdown files that have not already been formatted.
 - If the user names files, edit exactly those files.
+- Exclude `Books/Archive/` and all `*-spark/` bundles by default. Never apply book-note frontmatter to `Books/README.md`, archive indexes, coverage, editorial notes, validation, source audits, manifests or build documentation. An explicit documentation-formatting request should preserve the document’s actual role.
 - Do not edit `Notes/`, `_transcripts/`, `_audio/`, `*.base`, or unrelated workspace files.
 - Compare with nearby formatted Books notes before choosing metadata or presentation details.
 
@@ -21,7 +22,7 @@ Give each note YAML frontmatter with this shape, using values supported by the n
 ```yaml
 ---
 type: book-note
-course: <parent Books directory>
+course: <actual course identified from the note or source>
 date: YYYY-MM-DD
 title: <concise note title>
 topics:
@@ -29,7 +30,7 @@ topics:
 ---
 ```
 
-Use the lecture or source date when present. Omit `date` rather than inventing it when no date can be established. Keep `topics` short and content-based; omit it if reliable topics cannot be inferred.
+Determine the course from the note or source, not a month/archive parent directory. Use the lecture or source date when present. Omit `date` rather than inventing it when no date can be established. Keep `topics` short and content-based; omit it if reliable topics cannot be inferred.
 
 After the frontmatter:
 
