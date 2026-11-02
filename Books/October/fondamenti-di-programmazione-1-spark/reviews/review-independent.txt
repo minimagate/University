@@ -1,1 +1,0 @@
-Independent review: 4984 checks passed (sum, gcd, factorial, cube, two/three-color classification).

@@ -1,1 +1,0 @@
-Foundations: 765 independent checks passed.

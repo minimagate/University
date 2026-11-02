@@ -1,0 +1,1391 @@
+{
+  "archived_on": "2026-11-02",
+  "files": [
+    {
+      "source": "Books/October/analisi-1-spark/assets/carabinieri.pdf",
+      "archived": "Archive/Images/analisi/carabinieri.pdf",
+      "bytes": 14282,
+      "sha256": "ac28a234014cf2b6ace57b4b7e9d0c48551a82815dbbb3a9dbcd69946cae9eab"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/carabinieri.svg",
+      "archived": "Archive/Images/analisi/carabinieri.svg",
+      "bytes": 6990,
+      "sha256": "7ff970bce70312c8656d29a6fea160ed82bdf70dd2394eb742ce678e31c78db6"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/circonferenza.pdf",
+      "archived": "Archive/Images/analisi/circonferenza.pdf",
+      "bytes": 10698,
+      "sha256": "2251c4b37cbfa0ee4c1892dde5dc2a9d14ba566ae5130b005276cdbd9a21ed97"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/circonferenza.svg",
+      "archived": "Archive/Images/analisi/circonferenza.svg",
+      "bytes": 3204,
+      "sha256": "12f434c941312c5cfc54d425dce58b71ac95bdd540bdb2429ce9a0adf9fdc360"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/dente.pdf",
+      "archived": "Archive/Images/analisi/dente.pdf",
+      "bytes": 14448,
+      "sha256": "0bb276fba1e57164e115cb82c8a1f99e175a08ff781eed652e0ea6e96675e610"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/dente.svg",
+      "archived": "Archive/Images/analisi/dente.svg",
+      "bytes": 11213,
+      "sha256": "9715fd718bffd56776fe86e67603891a49e62810f9a7c01e616c05e9d8c84642"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/differenziale.pdf",
+      "archived": "Archive/Images/analisi/differenziale.pdf",
+      "bytes": 12005,
+      "sha256": "f8c910ec3d2011d9ec54cc193001d9a63c7a16b9862e74494fbcb493f1c35cc7"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/differenziale.svg",
+      "archived": "Archive/Images/analisi/differenziale.svg",
+      "bytes": 6328,
+      "sha256": "df642294067d25b91bce6fc235e48419ac154d1377726a37cbead784a1457220"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/domino.pdf",
+      "archived": "Archive/Images/analisi/domino.pdf",
+      "bytes": 78005,
+      "sha256": "2effe9e86825c095aad3744cc5f8c072df6adcb9470c34041186bb51e2399401"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/domino.svg",
+      "archived": "Archive/Images/analisi/domino.svg",
+      "bytes": 4218,
+      "sha256": "36a2dd1251f2ef4ff884b9a69b8ffa4b260db63c8d128dcf38c1e08a08655052"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/epsilon-delta.pdf",
+      "archived": "Archive/Images/analisi/epsilon-delta.pdf",
+      "bytes": 14098,
+      "sha256": "784594219d956d8295ae8f10ffec046c92ae8bd6cdd1a5a15ce90965da6018d7"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/epsilon-delta.svg",
+      "archived": "Archive/Images/analisi/epsilon-delta.svg",
+      "bytes": 5996,
+      "sha256": "7b25559191cc3f6e8e827dbfe38eb98f029df2bca3e555860d12159dbac207e5"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/funzioni.pdf",
+      "archived": "Archive/Images/analisi/funzioni.pdf",
+      "bytes": 11191,
+      "sha256": "0876db49638b8a6e7115b51bb7778dcf36e19479fbb567efab244b43ea457da7"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/funzioni.svg",
+      "archived": "Archive/Images/analisi/funzioni.svg",
+      "bytes": 6383,
+      "sha256": "344ca6993a3f9c9573e68a26315daa15f12817693382a57f31b82a36d8afb9ba"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/geometrica.pdf",
+      "archived": "Archive/Images/analisi/geometrica.pdf",
+      "bytes": 11975,
+      "sha256": "0dfa54341b2e91f840a9250211c99252ab5d68c4497428e2f7a898f89cc0cb76"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/geometrica.svg",
+      "archived": "Archive/Images/analisi/geometrica.svg",
+      "bytes": 10177,
+      "sha256": "42ed92dca0e1216eaa2a5e9779559ef501de197e3f8ad4a5e4e087a4aecd32ef"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/gradini.pdf",
+      "archived": "Archive/Images/analisi/gradini.pdf",
+      "bytes": 9737,
+      "sha256": "2c0e9249dbcbc9defef4af417f17fd72a0d410a95d67c63357153124acd2dc8e"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/gradini.svg",
+      "archived": "Archive/Images/analisi/gradini.svg",
+      "bytes": 7714,
+      "sha256": "3015f72ac7f978746f4a80ac30858fe49c4ad37d7a68675fe0c6362f376c2181"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/inverse-trig.pdf",
+      "archived": "Archive/Images/analisi/inverse-trig.pdf",
+      "bytes": 16293,
+      "sha256": "f300e2f35777851f1c2887b4cda5003d4f056774b16605138a0b564c15f02510"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/inverse-trig.svg",
+      "archived": "Archive/Images/analisi/inverse-trig.svg",
+      "bytes": 13722,
+      "sha256": "15f274c28ffe565263594b9c5c190d5026d33b20b4db515dcd00b157ffa7f32d"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/iperbole.pdf",
+      "archived": "Archive/Images/analisi/iperbole.pdf",
+      "bytes": 13323,
+      "sha256": "aea669969219cd054086c9f9f4f04940a169a1b95e2b231e598297ecbac6e30d"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/iperbole.svg",
+      "archived": "Archive/Images/analisi/iperbole.svg",
+      "bytes": 5491,
+      "sha256": "4e578c40fb4d5acf639f006f11cd4c34e3436fe8b584c0ce155510514893d9e4"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/iperboliche.pdf",
+      "archived": "Archive/Images/analisi/iperboliche.pdf",
+      "bytes": 12788,
+      "sha256": "b09bf20e64fb83e94618d1a8329574503c7a2435d30d2a4aff8b73ee62d23eb5"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/iperboliche.svg",
+      "archived": "Archive/Images/analisi/iperboliche.svg",
+      "bytes": 9349,
+      "sha256": "8e23af2e26ed32615c6377b5749d6d03f02b71e78f35410af5ebf1baa6ef5e2f"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/monotona.pdf",
+      "archived": "Archive/Images/analisi/monotona.pdf",
+      "bytes": 12241,
+      "sha256": "2d4b61c682c07480e177cc2a446309d8023227ac7fb92e744c77b6040407a196"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/monotona.svg",
+      "archived": "Archive/Images/analisi/monotona.svg",
+      "bytes": 3754,
+      "sha256": "92587dd80ed7e8a5b09a3b4ef30934c845558bfc31d34ada15c2f4d85f944feb"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/potenze-zero.pdf",
+      "archived": "Archive/Images/analisi/potenze-zero.pdf",
+      "bytes": 11186,
+      "sha256": "d3b45c74ba2a403f42631af976de8d8f4a7a3b423fd11f17c55f1902962e248d"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/potenze-zero.svg",
+      "archived": "Archive/Images/analisi/potenze-zero.svg",
+      "bytes": 10827,
+      "sha256": "739536cc70563ae8f4042f5bcc3f3af0adfe8e979696500a00468277001cf3fb"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/quantificatori.pdf",
+      "archived": "Archive/Images/analisi/quantificatori.pdf",
+      "bytes": 10903,
+      "sha256": "a021c3457d17d3072924ce0f30156bf5683904a599c31e670b0623efa90d00d5"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/quantificatori.svg",
+      "archived": "Archive/Images/analisi/quantificatori.svg",
+      "bytes": 5592,
+      "sha256": "84279c34aa5e5e10b47da1257c9a1fe3b99395cdf244a8f4a36c39c836dd055e"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/radice-retta.pdf",
+      "archived": "Archive/Images/analisi/radice-retta.pdf",
+      "bytes": 80178,
+      "sha256": "b1e72719a971729eed47fcf1c2c1cd06ce2b468e58486293c472617719a5bf11"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/radice-retta.svg",
+      "archived": "Archive/Images/analisi/radice-retta.svg",
+      "bytes": 11473,
+      "sha256": "34a949fc213883919d6218c890c5159067e1dc39b7d47e759ea775c1c33ec7c8"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/secante.pdf",
+      "archived": "Archive/Images/analisi/secante.pdf",
+      "bytes": 7982,
+      "sha256": "013587368153fa79daa7b9b57d69985d31418de05adcf63333d3d061196127c2"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/secante.svg",
+      "archived": "Archive/Images/analisi/secante.svg",
+      "bytes": 5095,
+      "sha256": "b83ba51a19aa92c85ecf4e4fbdb2d2d24cae83f7f6d51a0f8017a712ab6f7fa4"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/seno-x-tan.pdf",
+      "archived": "Archive/Images/analisi/seno-x-tan.pdf",
+      "bytes": 76719,
+      "sha256": "1f1a234700dab572af2fbee9c17dd1625393b0b03cfe9abfbfc8e86da0f1a101"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/seno-x-tan.svg",
+      "archived": "Archive/Images/analisi/seno-x-tan.svg",
+      "bytes": 3666,
+      "sha256": "6afa3ca4c5692d95ca7a5a54cfb13e26f054f4176c694b2a064130acf5354bdb"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/sottosucc.pdf",
+      "archived": "Archive/Images/analisi/sottosucc.pdf",
+      "bytes": 12925,
+      "sha256": "3b855941cb77f1fe277ad7b2ef75c9550dd2f2ad580d22541be56037e7b7dd91"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/sottosucc.svg",
+      "archived": "Archive/Images/analisi/sottosucc.svg",
+      "bytes": 3158,
+      "sha256": "4664bc7df03688b25e03e2918841a342321a8d3ae3fba0427d29e7127b3b20b3"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/striscia.pdf",
+      "archived": "Archive/Images/analisi/striscia.pdf",
+      "bytes": 11746,
+      "sha256": "6244534ba4dac205602a3d082ef5ebb99f440fd06295b52175e91740d8ba0683"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/striscia.svg",
+      "archived": "Archive/Images/analisi/striscia.svg",
+      "bytes": 3785,
+      "sha256": "a9eb7812180ee93b55b6c562d1904e6bbd5daf4acce44f44e4d679e44a827327"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/sup-eps.pdf",
+      "archived": "Archive/Images/analisi/sup-eps.pdf",
+      "bytes": 12356,
+      "sha256": "7432fa3a3a8973c7670ecefa1d375bf8ba7a8c5a97005293ccd599dd2c39b75a"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/sup-eps.svg",
+      "archived": "Archive/Images/analisi/sup-eps.svg",
+      "bytes": 3047,
+      "sha256": "4d9afd0ef0ce830c7d17cd16b1a0bbef81f7ecd6df667d09540a455c2b1d7ed4"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/taylor-cos.pdf",
+      "archived": "Archive/Images/analisi/taylor-cos.pdf",
+      "bytes": 13745,
+      "sha256": "f01a9f6c6e7c26162c996fb16591f187c9d5ae7f5534e298fda67f7b91c4569f"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/taylor-cos.svg",
+      "archived": "Archive/Images/analisi/taylor-cos.svg",
+      "bytes": 10521,
+      "sha256": "e70662e3e226e717bd1b3a64248e495dc5ec720cb5fd8206b895e26ae5d75f9c"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/trasformazioni.pdf",
+      "archived": "Archive/Images/analisi/trasformazioni.pdf",
+      "bytes": 11420,
+      "sha256": "5d5a282624c09231bb1079a625d8af6f0902d87796175f7713709dff843cf120"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/trasformazioni.svg",
+      "archived": "Archive/Images/analisi/trasformazioni.svg",
+      "bytes": 8291,
+      "sha256": "5b46155b6b0921ab6d33fca57bca702721eb51e2a0c4f265aec1d6bb9e418d6c"
+    },
+    {
+      "source": "Books/October/analisi-1-spark/assets/sizes.json",
+      "archived": "Archive/Images/analisi/sizes.json",
+      "bytes": 990,
+      "sha256": "0be8ae3f875fd081f4cc9ed6375389b7cc114ca423977c5b8caf5078c1b6427f"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/anagrammi.pdf",
+      "archived": "Archive/Images/aritmetica/anagrammi.pdf",
+      "bytes": 78937,
+      "sha256": "53a6e0d70b68a77f351cb7f066c1867738f66258549eee06e067fc44e53e23d4"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/anagrammi.svg",
+      "archived": "Archive/Images/aritmetica/anagrammi.svg",
+      "bytes": 7519,
+      "sha256": "4a43f0ad8bb62d6149ee83fd06e4bfe170c9b805afc58e3f3e021024263b656e"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/buchi.pdf",
+      "archived": "Archive/Images/aritmetica/buchi.pdf",
+      "bytes": 14865,
+      "sha256": "7cac06d83e363b696249706c2e3328a8b95cc9af9b572a334f4ebe6188f19690"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/buchi.svg",
+      "archived": "Archive/Images/aritmetica/buchi.svg",
+      "bytes": 5366,
+      "sha256": "21ea1539126d69fb87e457f1e14a6bea56741a5e41e7102a5d251977a4fd25d6"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/cassetti.pdf",
+      "archived": "Archive/Images/aritmetica/cassetti.pdf",
+      "bytes": 7281,
+      "sha256": "ae984670c0ac628fb9686e6a1ca8817086d6aa82be13451a32173a68d5b5d7e9"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/cassetti.svg",
+      "archived": "Archive/Images/aritmetica/cassetti.svg",
+      "bytes": 2438,
+      "sha256": "86fcf79f60c54edfd35dcc745a6c92c81888e82f0c3a484f34b8a08d42582552"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/cinese.pdf",
+      "archived": "Archive/Images/aritmetica/cinese.pdf",
+      "bytes": 77040,
+      "sha256": "90b8b6ac2c56307a1d8617ccdb8acd94555a563e1c3191ce3f15ab213d61b553"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/cinese.svg",
+      "archived": "Archive/Images/aritmetica/cinese.svg",
+      "bytes": 6646,
+      "sha256": "ce1ad8f26525218f7f574c1f1472c60e760bb802f7535269d64c16182157e382"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/dispari.pdf",
+      "archived": "Archive/Images/aritmetica/dispari.pdf",
+      "bytes": 10269,
+      "sha256": "cff2b6da78a375279edb26a2e4fd400ec9809a96a35aeb28d12912f00ef4192a"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/dispari.svg",
+      "archived": "Archive/Images/aritmetica/dispari.svg",
+      "bytes": 4126,
+      "sha256": "347d6cdc23c6b87b477fbbac1f3ef233784f310ae8e8eed2e23ce2852cdf44ca"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/divisione.pdf",
+      "archived": "Archive/Images/aritmetica/divisione.pdf",
+      "bytes": 9871,
+      "sha256": "73c9ea311631b331b5312ba134a5678ccdc49965435bdce3452290564638b7d2"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/divisione.svg",
+      "archived": "Archive/Images/aritmetica/divisione.svg",
+      "bytes": 4690,
+      "sha256": "ffc1b9e550eebc68daf289a42ebb2309847b30a1281bfe875a7350d5a494cd8a"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/divisori72.pdf",
+      "archived": "Archive/Images/aritmetica/divisori72.pdf",
+      "bytes": 76983,
+      "sha256": "c84c3fdbe998448d4314267f16eced234b812c1a5437297b7f624d074c3064d0"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/divisori72.svg",
+      "archived": "Archive/Images/aritmetica/divisori72.svg",
+      "bytes": 4771,
+      "sha256": "25f4d335c660056a0cc669b6dc6e151955b610ca874739d3c0a488d9cb62f118"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/domino-induzione.pdf",
+      "archived": "Archive/Images/aritmetica/domino-induzione.pdf",
+      "bytes": 78005,
+      "sha256": "d7d841157dd383fe74dda46265eaf9d1a8ae364159c2afe6733080425dff70c8"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/domino-induzione.svg",
+      "archived": "Archive/Images/aritmetica/domino-induzione.svg",
+      "bytes": 4242,
+      "sha256": "39b044d2eaa7d2f7f81ca84a3765357acdae4cb636d203b56b639eca7dace32c"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/domino.pdf",
+      "archived": "Archive/Images/aritmetica/domino.pdf",
+      "bytes": 10737,
+      "sha256": "26b7c21835b4a2508058c3b059dfa7f0df49a1e3066a931047a473e88ed9c9fd"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/domino.svg",
+      "archived": "Archive/Images/aritmetica/domino.svg",
+      "bytes": 2339,
+      "sha256": "fcc9172dfb6badbbf8f3ba3263cb74d947ac14576e3678a6cab425486dbd0d70"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/euclide.pdf",
+      "archived": "Archive/Images/aritmetica/euclide.pdf",
+      "bytes": 5595,
+      "sha256": "728a1582aa0ac0f35825dc80a02acb0f4746a99f9e0fdca5a7e160e21e8e704f"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/euclide.svg",
+      "archived": "Archive/Images/aritmetica/euclide.svg",
+      "bytes": 2291,
+      "sha256": "acd456f1fc8704ee93373af1ef9edbec9bef4acd2b2b127df3455ab228db6853"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/fattori.pdf",
+      "archived": "Archive/Images/aritmetica/fattori.pdf",
+      "bytes": 6868,
+      "sha256": "7f8eac90b5f3fa0eec3408313550ceec79c1894f16465ad15c9713d3c15e9313"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/fattori.svg",
+      "archived": "Archive/Images/aritmetica/fattori.svg",
+      "bytes": 3187,
+      "sha256": "7f1b526a2e425d3e974e678649071293ebb36096542d4277a92fe087681d66c9"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/fibonacci.pdf",
+      "archived": "Archive/Images/aritmetica/fibonacci.pdf",
+      "bytes": 5821,
+      "sha256": "ca61413f30e2a19d2beb0eaa318ce8c5ef1541f2246ab52199e8fda463a34d36"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/fibonacci.svg",
+      "archived": "Archive/Images/aritmetica/fibonacci.svg",
+      "bytes": 2257,
+      "sha256": "427482378381d0c6d68f49797436fa7721545f70acc1a15110891812295457d2"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/frazioni.pdf",
+      "archived": "Archive/Images/aritmetica/frazioni.pdf",
+      "bytes": 11617,
+      "sha256": "a8c98326997f06e9dbfa429e1866f8d14f4e251c16190cb72ab34430cba0b432"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/frazioni.svg",
+      "archived": "Archive/Images/aritmetica/frazioni.svg",
+      "bytes": 5503,
+      "sha256": "1c42ca380e8d73b693d2b05898018a3aad5ce90519c0c8505e97826fba137d9d"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/funzioni.pdf",
+      "archived": "Archive/Images/aritmetica/funzioni.pdf",
+      "bytes": 11254,
+      "sha256": "bb79258c40930edad2d24c85de5ae8d618adc5acb7dab387948d41e86da844d7"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/funzioni.svg",
+      "archived": "Archive/Images/aritmetica/funzioni.svg",
+      "bytes": 6374,
+      "sha256": "8107f010a13868059f42db3b7f0eb2815f7173484ccce1a578d1904b1da4cb21"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/griglia8.pdf",
+      "archived": "Archive/Images/aritmetica/griglia8.pdf",
+      "bytes": 12215,
+      "sha256": "eafd9cb451dfe7ddf8054d0b56a9e68621481cbd91fe48e9b3b06a23467cca39"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/griglia8.svg",
+      "archived": "Archive/Images/aritmetica/griglia8.svg",
+      "bytes": 11456,
+      "sha256": "8f44ca5719dacfc385c112b1aae98c786fac56a40c2b167c15c0ddd32e3f753c"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/insiemi.pdf",
+      "archived": "Archive/Images/aritmetica/insiemi.pdf",
+      "bytes": 72455,
+      "sha256": "87a455dc6ceaf1df471b00ecd0fd38fad722139755d035019fd03f608a671979"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/insiemi.svg",
+      "archived": "Archive/Images/aritmetica/insiemi.svg",
+      "bytes": 3025,
+      "sha256": "39f6589ca2a085892e34b0795d663727be01321cb5e235b7149e344af0b4dac3"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/legendre.pdf",
+      "archived": "Archive/Images/aritmetica/legendre.pdf",
+      "bytes": 11353,
+      "sha256": "2cb88077042d05131375e983c05ef58714bdefb1d22ff69c92c5dd3998e1ab29"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/legendre.svg",
+      "archived": "Archive/Images/aritmetica/legendre.svg",
+      "bytes": 4234,
+      "sha256": "788e1e48560dd0f87207d03b3baaeb8ea8a62827bddce16191fb1d8747823a1e"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/occhi.pdf",
+      "archived": "Archive/Images/aritmetica/occhi.pdf",
+      "bytes": 8815,
+      "sha256": "5322765f20e87c431cd9479d6110ae643259ec2410f41a5a4dbf518fdb720c7a"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/occhi.svg",
+      "archived": "Archive/Images/aritmetica/occhi.svg",
+      "bytes": 3084,
+      "sha256": "8b8c4b27621188f1ba3b0126b58e8ebfb87a29ab825fe27dba7ddcb17d8bbc12"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/orologio12.pdf",
+      "archived": "Archive/Images/aritmetica/orologio12.pdf",
+      "bytes": 72880,
+      "sha256": "4e19a6c56d6486c3a78f07a3e0533cd67d6bf7635fa8e0bdf23f3b0bca89f1e2"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/orologio12.svg",
+      "archived": "Archive/Images/aritmetica/orologio12.svg",
+      "bytes": 3284,
+      "sha256": "67fc83641cb360373c17502038ada63c5aaa319c84d9691569e663305d0c6b09"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/parti.pdf",
+      "archived": "Archive/Images/aritmetica/parti.pdf",
+      "bytes": 75652,
+      "sha256": "bb5c1007a2fd5507142358218404d36fed3972250a1ace82e4d192e385459e2b"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/parti.svg",
+      "archived": "Archive/Images/aritmetica/parti.svg",
+      "bytes": 5446,
+      "sha256": "c7f2d0f03a5584d31274abe720eb7eb4e9775bfaf7bc1b08875d17d051992a82"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/pascal.pdf",
+      "archived": "Archive/Images/aritmetica/pascal.pdf",
+      "bytes": 7856,
+      "sha256": "9712dfedd6014928078067dee3140fb828d88faee78d7fa331e01a1dc4df661c"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/pascal.svg",
+      "archived": "Archive/Images/aritmetica/pascal.svg",
+      "bytes": 3199,
+      "sha256": "515ff382968fcd4c493541582f114b4be9dbe7e49dc1c8e81aea951b14e08e86"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/permutazioni.pdf",
+      "archived": "Archive/Images/aritmetica/permutazioni.pdf",
+      "bytes": 12215,
+      "sha256": "c966822668d08a31fcf262e5d469b96e5b91b5e43ab1cc7f0815c8be8756391d"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/permutazioni.svg",
+      "archived": "Archive/Images/aritmetica/permutazioni.svg",
+      "bytes": 5487,
+      "sha256": "082e830123facec1fa513efc0a53f7c13df21157e4690d04b0d7dc4353de7d4c"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/potenze.pdf",
+      "archived": "Archive/Images/aritmetica/potenze.pdf",
+      "bytes": 13063,
+      "sha256": "665279496361e5122211b3163e7c429f01884511c553f17b9943b13cfe861dd8"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/potenze.svg",
+      "archived": "Archive/Images/aritmetica/potenze.svg",
+      "bytes": 3264,
+      "sha256": "f28135252c74650d80000ef2d5a24e4f6a9b29ffb4dad9bda9448a0bf9c2db81"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/quadrati.pdf",
+      "archived": "Archive/Images/aritmetica/quadrati.pdf",
+      "bytes": 8824,
+      "sha256": "7a0e18dcab829bdfb29cf93221e0e2d789ac8f8c647f684e7b2d73896513ce1e"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/quadrati.svg",
+      "archived": "Archive/Images/aritmetica/quadrati.svg",
+      "bytes": 2677,
+      "sha256": "d049ad4ffa4740ecd233398e6501b37c4c7c2c387aa4edf40dfd3b10203864e3"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/radici.pdf",
+      "archived": "Archive/Images/aritmetica/radici.pdf",
+      "bytes": 11299,
+      "sha256": "c9b479486cf915c3e053d3389614a838e5b0e4f6e177afcecbcf57f9f54d4693"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/radici.svg",
+      "archived": "Archive/Images/aritmetica/radici.svg",
+      "bytes": 2847,
+      "sha256": "7b8b74dbb234745eaffccede029a1ede2decf28440e19969047df5aebaa70635"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/regioni.pdf",
+      "archived": "Archive/Images/aritmetica/regioni.pdf",
+      "bytes": 77484,
+      "sha256": "b815f1283eddaaf5adae3cd5f1fca34d09ada0d6d998e78a306743fa5766a35b"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/regioni.svg",
+      "archived": "Archive/Images/aritmetica/regioni.svg",
+      "bytes": 3108,
+      "sha256": "3cbd862d21fbdef096960e38f03867cf0a8ad6b47c207643877e81eb30a8b906"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/resti7.pdf",
+      "archived": "Archive/Images/aritmetica/resti7.pdf",
+      "bytes": 12732,
+      "sha256": "31b8cb7a21ee606473917c73be64c18e10b2562263afa66852dd01e048c7955b"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/resti7.svg",
+      "archived": "Archive/Images/aritmetica/resti7.svg",
+      "bytes": 3455,
+      "sha256": "3b886b14f7ecedeb7cfc500657cba1a781c45b6ccdf7246bb7427abf7bb10b02"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/reticolo.pdf",
+      "archived": "Archive/Images/aritmetica/reticolo.pdf",
+      "bytes": 12222,
+      "sha256": "bfdf8f3b1696b290efc417739703a74a2d1656c7ac34933d07c0772af5b8408d"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/reticolo.svg",
+      "archived": "Archive/Images/aritmetica/reticolo.svg",
+      "bytes": 4254,
+      "sha256": "b2264f3cd31d1ef0e3307803b6ac170dc6d81841b325e5f9f570b71f39ee1074"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/scelte.pdf",
+      "archived": "Archive/Images/aritmetica/scelte.pdf",
+      "bytes": 10578,
+      "sha256": "f62948e28f8f5690e41402a558619b6d830b6c84aef0ff40d8544527e1f7a62e"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/scelte.svg",
+      "archived": "Archive/Images/aritmetica/scelte.svg",
+      "bytes": 5050,
+      "sha256": "413dfda8c7a06f4a4e3192a856d7dbe50337752ca3c7f0be26c77349227e3536"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/sollevamento.pdf",
+      "archived": "Archive/Images/aritmetica/sollevamento.pdf",
+      "bytes": 80197,
+      "sha256": "93785fc1013e2d786e6bad6e58cc74051a8edc903deef5f918e416ed210654ce"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/sollevamento.svg",
+      "archived": "Archive/Images/aritmetica/sollevamento.svg",
+      "bytes": 3980,
+      "sha256": "3e62af53312dbddbbddf09eedce0278f4ca70a3bd4404e28f6ba840bafd46ff3"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/spirale5.pdf",
+      "archived": "Archive/Images/aritmetica/spirale5.pdf",
+      "bytes": 11817,
+      "sha256": "60d8514c1677a3bbb1f5b4b2a0af727bd6d8f0a5098a10392892d0bacbaecec4"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/spirale5.svg",
+      "archived": "Archive/Images/aritmetica/spirale5.svg",
+      "bytes": 10125,
+      "sha256": "fa1eb4b58b76aa2f7bfa7a49de0e48e6309e102e96e1ccf8312b16167dbac764"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/stelle.pdf",
+      "archived": "Archive/Images/aritmetica/stelle.pdf",
+      "bytes": 8894,
+      "sha256": "69671ab6e0b887dacdc00ade2691ee71cb579e5c3625622c7a46912901ece10b"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/stelle.svg",
+      "archived": "Archive/Images/aritmetica/stelle.svg",
+      "bytes": 3154,
+      "sha256": "2ba6e77927ce1dfc5d8a415376cd2cc87b2591c96ea6cbc6f88013d586421320"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/strutture.pdf",
+      "archived": "Archive/Images/aritmetica/strutture.pdf",
+      "bytes": 15930,
+      "sha256": "9384037fa10c7e1db10d7010fc563dd25157105a7f645afc1f85b190bb1e930c"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/strutture.svg",
+      "archived": "Archive/Images/aritmetica/strutture.svg",
+      "bytes": 2948,
+      "sha256": "f1e530d2fe3fc269c878521a3de9b16775ef1153f23bd029d379254585bc8f14"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/tabelle.pdf",
+      "archived": "Archive/Images/aritmetica/tabelle.pdf",
+      "bytes": 11329,
+      "sha256": "67d65605b91cd75be3bbd8ad4bbe30c98121f2b57e54399f9e17318774870c53"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/tabelle.svg",
+      "archived": "Archive/Images/aritmetica/tabelle.svg",
+      "bytes": 14614,
+      "sha256": "718784bb01675666de28ae40e9e37c53eed9fe4fc78dc5ff83722fa0f9ffab2a"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/tassellazioni.pdf",
+      "archived": "Archive/Images/aritmetica/tassellazioni.pdf",
+      "bytes": 6382,
+      "sha256": "f15994ece60211afef33f4a64c5e945429365738d8334ac97e276f8e41d7dbb0"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/tassellazioni.svg",
+      "archived": "Archive/Images/aritmetica/tassellazioni.svg",
+      "bytes": 2883,
+      "sha256": "81895027e87864dab49b9c69c06651eb7dc65729ef83c24a79ab893ebee6f99d"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/triangolo.pdf",
+      "archived": "Archive/Images/aritmetica/triangolo.pdf",
+      "bytes": 7544,
+      "sha256": "bd7fca7870886a31f72724ae9f33b6811e73f6ad80fe406a436f772343e28cab"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/triangolo.svg",
+      "archived": "Archive/Images/aritmetica/triangolo.svg",
+      "bytes": 1857,
+      "sha256": "ab3e8054575057a973fa594a41d324f4ff8db9405133d56f396d3c0e8aa7ee87"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/venn3.pdf",
+      "archived": "Archive/Images/aritmetica/venn3.pdf",
+      "bytes": 77719,
+      "sha256": "b760202b66b271642eaa4d095cca88ed34d189fb652063eb767aa9f61394d619"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/venn3.svg",
+      "archived": "Archive/Images/aritmetica/venn3.svg",
+      "bytes": 3070,
+      "sha256": "79e6ee16c2d7d70e39624fd624ac7311ff19dea410f74b94d5d5bc7a180b5635"
+    },
+    {
+      "source": "Books/October/aritmetica-1-spark/assets/sizes.json",
+      "archived": "Archive/Images/aritmetica/sizes.json",
+      "bytes": 1522,
+      "sha256": "ca57d6ac35b1a6137d28fadbf6f8e0099a2a5b0ba6777adbfeea6238ffb632df"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/albero-formula.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/albero-formula.pdf",
+      "bytes": 72689,
+      "sha256": "0e51531f400c53f94fe46efe87f31572b651b75eb05f9046f426498dc06d4e96"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/albero-formula.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/albero-formula.svg",
+      "bytes": 2979,
+      "sha256": "90479843d3f7254745c82831e02d0c0d1773e4e7fb2ce55987f98567290294d1"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/allindietro.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/allindietro.pdf",
+      "bytes": 75063,
+      "sha256": "19b9a647a835555e1f2d1de92b9de47847bb97a02a36bc7093522a79189f6a54"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/allindietro.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/allindietro.svg",
+      "bytes": 2320,
+      "sha256": "ebc629503751101dd6a78cc47937012d6ef199bed24c4a4d6ad76912755f4c58"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/array-zone.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/array-zone.pdf",
+      "bytes": 8888,
+      "sha256": "59b2042722d5c6cc51b83a23b4e394033c452c4337fc359405f766f79683e7d3"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/array-zone.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/array-zone.svg",
+      "bytes": 4096,
+      "sha256": "6522e841b8ec3ee68d4dcb9abc31c0cd9ea817958d4dac772952dc42a4cb4589"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/bandiera.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/bandiera.pdf",
+      "bytes": 74310,
+      "sha256": "487768e8e2df5f1125a599de24550dc54bb2938a795cbd31607e79fa8f6a31c2"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/bandiera.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/bandiera.svg",
+      "bytes": 3858,
+      "sha256": "c6c8032178212221fbcf00e30786552f8ebb1e513aed0baf7a8a8b53dcb1669c"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/conseguenza.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/conseguenza.pdf",
+      "bytes": 79032,
+      "sha256": "3e5561ab876258892200582b2d724125b547a1a148513e44546066b203580112"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/conseguenza.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/conseguenza.svg",
+      "bytes": 2409,
+      "sha256": "609cf992af93d79c72ffaaa08c688f63caa4fe782387d286661398fde955d5fa"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/fasi.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/fasi.pdf",
+      "bytes": 15260,
+      "sha256": "88335f4504af1fe44274e7e504039faadb52ce545ce74b4fd0fe9de98be858ba"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/fasi.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/fasi.svg",
+      "bytes": 3000,
+      "sha256": "a21185c229300888c2d272e905b7b05ac2798f3b3a18a32bb3def43c0e37138d"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/fibonacci.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/fibonacci.pdf",
+      "bytes": 9975,
+      "sha256": "6deae8ba1f827d5f2de9b3f12a9f2e5d65eb8d1d2d5009babf0e48504b3cd4b2"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/fibonacci.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/fibonacci.svg",
+      "bytes": 2392,
+      "sha256": "634bd5689ca5e363479ccf6e54d42632ca6aa6f1a3d3b4d4bc25cafb8d6d03a6"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/incroci.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/incroci.pdf",
+      "bytes": 75016,
+      "sha256": "261f16dbd278d04479357966db7d3437047add4ab4d69824845889fe630388a1"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/incroci.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/incroci.svg",
+      "bytes": 3532,
+      "sha256": "9d1fec2e79f1c390b0ff8fa00e34bb5e68e313a0dbe96efcc51ae74b2f0d4bef"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/invariante.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/invariante.pdf",
+      "bytes": 73846,
+      "sha256": "00399f5eb813c54d98c6d10b9fc5fe7d9b124044c787b4f8627312f68fece958"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/invariante.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/invariante.svg",
+      "bytes": 2511,
+      "sha256": "f66925b4592fe696050b3b6f0d746fe2f418f2fb7b37ce5886444e211f3be1d7"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/polarita.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/polarita.pdf",
+      "bytes": 75144,
+      "sha256": "a559626bf6f63ce18a7406556b18ad979e600fe9d3b26cdeecd208c6668bcd7b"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/polarita.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/polarita.svg",
+      "bytes": 4776,
+      "sha256": "497b50c71e351f6e80ea7aacac1decacb129cc5363595f72c75faebdea54b8a9"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/portata.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/portata.pdf",
+      "bytes": 74708,
+      "sha256": "b40867582f930566daf24385ceab85a3d6f5ad6c567e5eb3b311781dde8d1d90"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/portata.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/portata.svg",
+      "bytes": 4682,
+      "sha256": "198e19f992cc7b6d18eff5be9f782116f3760f5c563bce37802641e496382e86"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/pre-post.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/pre-post.pdf",
+      "bytes": 12887,
+      "sha256": "5fd6b56f5601f5fc43038c157c15088dc8bf1fee786d553fc5589716a7bb1cb1"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/pre-post.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/pre-post.svg",
+      "bytes": 2227,
+      "sha256": "2a6e43806e34bef0d84180672e949ef579c4c6f472bfa37ff8eb52982b4eca74"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/quaderno.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/quaderno.pdf",
+      "bytes": 12925,
+      "sha256": "e94c7ad99c455c86256f078247a6ff9696d83bddf25daf902b17047b01b019ad"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/quaderno.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/quaderno.svg",
+      "bytes": 5670,
+      "sha256": "ec2c745adfaac5c36b09807da27efde991a0a9da229abcdf82e03a3d357eda73"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/quantificatori.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/quantificatori.pdf",
+      "bytes": 9451,
+      "sha256": "e393eda76fab718d3f82781b9b772e6ab3125ae468a71a62bea478ef2fc7957c"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/quantificatori.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/quantificatori.svg",
+      "bytes": 2583,
+      "sha256": "b5cea48051030e789d471e1d53fa0e429f719ab96e982e6a5f6ecbd5f285f887"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/ricerca-binaria.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/ricerca-binaria.pdf",
+      "bytes": 11446,
+      "sha256": "eb96653fdf4b73ed285b67e98c4b5e908bfe1c8cd9c1b48d303a000e63ab7e0f"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/ricerca-binaria.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/ricerca-binaria.svg",
+      "bytes": 13937,
+      "sha256": "8fdf080795f855f0262c5df4ca3e5c508f89ba4873d0c24e6ed94a4f1ca362ba"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/scala.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/scala.pdf",
+      "bytes": 77572,
+      "sha256": "5acb7a7bb76a26be756e470a311172eab8e6ad466d4fe4d9e19b2832fa56de57"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/scala.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/scala.svg",
+      "bytes": 3341,
+      "sha256": "51166f7e08b78d22a0e0ef8bbe09fd74e2ab73468a0fb8b1c04e054e3281ec83"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/scambio.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/scambio.pdf",
+      "bytes": 11303,
+      "sha256": "23fee944cd47d5fc15fd29f532e9bf40c7503416a67c95b3f56028473253aab4"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/scambio.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/scambio.svg",
+      "bytes": 6867,
+      "sha256": "5275e85d3f1bd0182ff355fe37372957d5a3f1223e45ce4a8e93815232ca4010"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/tre-interpretazioni.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/tre-interpretazioni.pdf",
+      "bytes": 79485,
+      "sha256": "e0b2d6de8993198023a963910edffe3053954635915bf18c87c32bec43504161"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/tre-interpretazioni.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/tre-interpretazioni.svg",
+      "bytes": 6575,
+      "sha256": "4360de06da1295284839a338489b6b7d2d0f8158812295f7f8a64e7ecfe635a0"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/while-srotolato.pdf",
+      "archived": "Archive/Images/fondamenti-di-programmazione/while-srotolato.pdf",
+      "bytes": 10765,
+      "sha256": "70ee65ba86ca14d52544fae6586b2885073ffb760071a5c894021eaf10e494ef"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/while-srotolato.svg",
+      "archived": "Archive/Images/fondamenti-di-programmazione/while-srotolato.svg",
+      "bytes": 3588,
+      "sha256": "3a8ba1f8c4f8cd7724564a4ad3a1a5fbf8e91e061f365d6d6f6c75420e33c543"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/assets/sizes.json",
+      "archived": "Archive/Images/fondamenti-di-programmazione/sizes.json",
+      "bytes": 706,
+      "sha256": "3a5962b159d13d4e7e80c1f3bc878a2f67bc793fe7c954bd51212f899885b8b6"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/colonne.pdf",
+      "archived": "Archive/Images/geometria/colonne.pdf",
+      "bytes": 12787,
+      "sha256": "1a726407143919cb599203d05ba461abad40e51d19a7cd89aa65962cd0083bff"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/colonne.svg",
+      "archived": "Archive/Images/geometria/colonne.svg",
+      "bytes": 3385,
+      "sha256": "34cb5097d75eb1dc741fec4a64a11cf41b4ea1039a2486ec2a0b6ed316e2829e"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/coniugate.pdf",
+      "archived": "Archive/Images/geometria/coniugate.pdf",
+      "bytes": 10194,
+      "sha256": "da8607322be11bf0ca558ddfe36ac8e8fe69b565ab415e8760ce56ea5398ca36"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/coniugate.svg",
+      "archived": "Archive/Images/geometria/coniugate.svg",
+      "bytes": 2723,
+      "sha256": "4cccde452f8ef39fe6421e769e9ce14988ed07b5b375371f588aba174fb2fb1a"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/contare.pdf",
+      "archived": "Archive/Images/geometria/contare.pdf",
+      "bytes": 9362,
+      "sha256": "e1d2a53d45d44a906da0468e9c8e4326587fc9dbdfe5de07c78e16c2e3ec404f"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/contare.svg",
+      "archived": "Archive/Images/geometria/contare.svg",
+      "bytes": 2820,
+      "sha256": "bb27000ec04d5346003e7375d20be0c80da00edf9f30a12a8a582ba03e12426b"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/coordinate-basi.pdf",
+      "archived": "Archive/Images/geometria/coordinate-basi.pdf",
+      "bytes": 10797,
+      "sha256": "0c36dd6f136f44962f49faae8a2f265cef72f52d1593e7cacd48e056bd867202"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/coordinate-basi.svg",
+      "archived": "Archive/Images/geometria/coordinate-basi.svg",
+      "bytes": 3436,
+      "sha256": "b08608ffd97bd09b444b70383110b1ad083f4d78b10bc326750aee7aca5b961e"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/coordinate-oblique.pdf",
+      "archived": "Archive/Images/geometria/coordinate-oblique.pdf",
+      "bytes": 10127,
+      "sha256": "f4a36bfa0a9e600e5ebe533840f344a57d27a69b6edbae3aa29bbf7c80ffe42f"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/coordinate-oblique.svg",
+      "archived": "Archive/Images/geometria/coordinate-oblique.svg",
+      "bytes": 2768,
+      "sha256": "949b9cd0ea7b91b408761257b53976a2d886cfcca8bde2337a846182956e7bf0"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/decomposizione.pdf",
+      "archived": "Archive/Images/geometria/decomposizione.pdf",
+      "bytes": 7609,
+      "sha256": "bc74d1f1ca3666dbcc3e6175927c1772e83ea9a5254a8a32c95f128742a5ae86"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/decomposizione.svg",
+      "archived": "Archive/Images/geometria/decomposizione.svg",
+      "bytes": 2303,
+      "sha256": "e6582db60a574c08c8e693f8b2b4bd3e84401712d86420ec8c36f57360edbed4"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/distributiva.pdf",
+      "archived": "Archive/Images/geometria/distributiva.pdf",
+      "bytes": 73000,
+      "sha256": "88eba2b5160f3c4eed3834d6b3ed4e946fd99c237491353a081c05d7e8a07d87"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/distributiva.svg",
+      "archived": "Archive/Images/geometria/distributiva.svg",
+      "bytes": 3001,
+      "sha256": "109e2dcf4726cddcf4877c7def2132a9740bc68a7e41029576dfc7337524e23e"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/elementari.pdf",
+      "archived": "Archive/Images/geometria/elementari.pdf",
+      "bytes": 79303,
+      "sha256": "cea570485aa74b6b5225cc3850d97cdd71e47ba57d37700bb80c73c53dccd9bb"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/elementari.svg",
+      "archived": "Archive/Images/geometria/elementari.svg",
+      "bytes": 6628,
+      "sha256": "515611a293466ab11ee3d6690b4be28bab87aed535a1d67f6376e14eb466a63d"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/fattori.pdf",
+      "archived": "Archive/Images/geometria/fattori.pdf",
+      "bytes": 78734,
+      "sha256": "3dba01c5a8bb1a14a6b3d59e82617a785f08f9efd7dd27b5696030ef531b00e1"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/fattori.svg",
+      "archived": "Archive/Images/geometria/fattori.svg",
+      "bytes": 3025,
+      "sha256": "7257e406f27421f6ea6ff859ad3446e35b6b6a25bd769b0c0986a96a5d388126"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/funzioni.pdf",
+      "archived": "Archive/Images/geometria/funzioni.pdf",
+      "bytes": 12115,
+      "sha256": "7dbc0f2367314e361faece1a10b06a609397037ac977016d4dab472008cb9896"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/funzioni.svg",
+      "archived": "Archive/Images/geometria/funzioni.svg",
+      "bytes": 7745,
+      "sha256": "581d62b4238f1e25ad1ca62294820712ce40f88e936e41c461184ac623308d89"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/gauss-passi.pdf",
+      "archived": "Archive/Images/geometria/gauss-passi.pdf",
+      "bytes": 10073,
+      "sha256": "052c1166a7050dbdc02451517b17006fd87d08743caa8f5ca4ee9e615db35e80"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/gauss-passi.svg",
+      "archived": "Archive/Images/geometria/gauss-passi.svg",
+      "bytes": 4271,
+      "sha256": "113afd126f8d3c9429ee6c91d627ee3e714ba9276aa691012a534f6776ff7a45"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/grafico.pdf",
+      "archived": "Archive/Images/geometria/grafico.pdf",
+      "bytes": 13858,
+      "sha256": "a96b508b8cacf0a2cb895b0fa45d103e4e3c13ab478eff55fbbd1f35f121b537"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/grafico.svg",
+      "archived": "Archive/Images/geometria/grafico.svg",
+      "bytes": 5574,
+      "sha256": "c9927251052188d6897ecfa13fc21e81d7a40bd1d80ba200144aa329b2e3cf8b"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/grassmann.pdf",
+      "archived": "Archive/Images/geometria/grassmann.pdf",
+      "bytes": 78640,
+      "sha256": "4ce62cce589df6e8d7d2eb1a2af34654ccf0cf891e99521c4c6eee9375c58572"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/grassmann.svg",
+      "archived": "Archive/Images/geometria/grassmann.svg",
+      "bytes": 2903,
+      "sha256": "001a07f0affb6b87abcd8152236bcb31df5058d381d94521ad7512628f1592c1"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/inversa.pdf",
+      "archived": "Archive/Images/geometria/inversa.pdf",
+      "bytes": 9787,
+      "sha256": "3c48d0ea1873e43d79c81b7856b6254fa017ae1dfa23207486f64643f0fa2cb1"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/inversa.svg",
+      "archived": "Archive/Images/geometria/inversa.svg",
+      "bytes": 3547,
+      "sha256": "1910be5481ea59e875a3ddf2ad95bb9cf6e0d5dd10c51ad43b949b50aeccf232"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/parallelogramma.pdf",
+      "archived": "Archive/Images/geometria/parallelogramma.pdf",
+      "bytes": 9321,
+      "sha256": "b295156f364c78eebd8c875520eee0b6342803469870d7dcac6fe389821abb0a"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/parallelogramma.svg",
+      "archived": "Archive/Images/geometria/parallelogramma.svg",
+      "bytes": 2994,
+      "sha256": "56d440839ed4d1fc7a22fb182ac9cb6d94e2d725326214177e97d564a559ff2b"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/piano-complesso.pdf",
+      "archived": "Archive/Images/geometria/piano-complesso.pdf",
+      "bytes": 13624,
+      "sha256": "227994f60d4a51ff3ffb2bc9c137b470502c628950f419e43a0e5bceef9be9cf"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/piano-complesso.svg",
+      "archived": "Archive/Images/geometria/piano-complesso.svg",
+      "bytes": 3139,
+      "sha256": "da565c867f737059d76a9e6703eecec31e63993720ab7fdc34c042a621180428"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/piano-span.pdf",
+      "archived": "Archive/Images/geometria/piano-span.pdf",
+      "bytes": 11559,
+      "sha256": "565f39a20d99bc9caefec81608582f786d6ce3dd245e0acfe8ebffa03bd2b5d1"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/piano-span.svg",
+      "archived": "Archive/Images/geometria/piano-span.svg",
+      "bytes": 2336,
+      "sha256": "a0846542994b8687b846d36697422f7f07375be055211f05fd1bb54eddf8f23b"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/polinomi01.pdf",
+      "archived": "Archive/Images/geometria/polinomi01.pdf",
+      "bytes": 11261,
+      "sha256": "6ff216b4534d9bc5abbf07ac01fb3ddd919d9bddba98c524edf4b695228f805d"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/polinomi01.svg",
+      "archived": "Archive/Images/geometria/polinomi01.svg",
+      "bytes": 7623,
+      "sha256": "eb31d4b40b4ea27f26b630f87eb7f60c20bdf0d21cb9fa6f526d9d3baaa8c545"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/quadranti.pdf",
+      "archived": "Archive/Images/geometria/quadranti.pdf",
+      "bytes": 11303,
+      "sha256": "200eac958993b58c457cef24aeedb91d272edbaab7d08c020cb39287bb789098"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/quadranti.svg",
+      "archived": "Archive/Images/geometria/quadranti.svg",
+      "bytes": 2405,
+      "sha256": "9913716c0f3ecf23b1a90736d6a10405a9c0038ffc1196da75c08f9a68aaf86f"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/radici.pdf",
+      "archived": "Archive/Images/geometria/radici.pdf",
+      "bytes": 76009,
+      "sha256": "6b8636e663ecb8dafaf8e27ca91db3a74eeaf859fce3a3e27efb23084f4a133c"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/radici.svg",
+      "archived": "Archive/Images/geometria/radici.svg",
+      "bytes": 3753,
+      "sha256": "cf678fbc484eca87309136515e836e52272dd62d5d212799b01f187e17ccef2c"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/rango-nullita.pdf",
+      "archived": "Archive/Images/geometria/rango-nullita.pdf",
+      "bytes": 12776,
+      "sha256": "36ecef1aff516bcbe35b30b9c0c3cbd65f966519eee72c7abe453fb65af7b7b3"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/rango-nullita.svg",
+      "archived": "Archive/Images/geometria/rango-nullita.svg",
+      "bytes": 3488,
+      "sha256": "ef9f425cacd63796a5113951192a06496f42f3bdd5cd58c56741e0092b0409e6"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/rette.pdf",
+      "archived": "Archive/Images/geometria/rette.pdf",
+      "bytes": 11013,
+      "sha256": "77a46e09d599d6dbc93631af87049af86cd00cc43bb61d1c4115812bfd7d9800"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/rette.svg",
+      "archived": "Archive/Images/geometria/rette.svg",
+      "bytes": 3306,
+      "sha256": "81d973231830b5a884fed5ac127f05a747d72b8b8acfb11c1bde7a633e173501"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/rouche.pdf",
+      "archived": "Archive/Images/geometria/rouche.pdf",
+      "bytes": 76329,
+      "sha256": "394338968ef0b963b0532f4fd81b2a51ddd332652a01fcfb9f7d6628bb5ed34f"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/rouche.svg",
+      "archived": "Archive/Images/geometria/rouche.svg",
+      "bytes": 3086,
+      "sha256": "155871768200b0cd7e9ebde00c198da6e118b37a1ac3b75699269ffa001ffbe1"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/scala.pdf",
+      "archived": "Archive/Images/geometria/scala.pdf",
+      "bytes": 72280,
+      "sha256": "2223a4cce4151fe4d99cabc936ad355fea05f3f740c3d65901566a9d420f8918"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/scala.svg",
+      "archived": "Archive/Images/geometria/scala.svg",
+      "bytes": 3310,
+      "sha256": "0354774c98ac486229b688211e0f17af00fa3d318893f8133ecb6804e4a7769e"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/scambio.pdf",
+      "archived": "Archive/Images/geometria/scambio.pdf",
+      "bytes": 13878,
+      "sha256": "d49592a6306a23167e4ffc61eec1ef0211b7583063aa5b5ca448c06974d140ff"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/scambio.svg",
+      "archived": "Archive/Images/geometria/scambio.svg",
+      "bytes": 5488,
+      "sha256": "9a57215106d77dec1d6547d79ca9d87be0dc9a7b4a1ae397d1401698c1ee47bd"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/somma-diretta.pdf",
+      "archived": "Archive/Images/geometria/somma-diretta.pdf",
+      "bytes": 73963,
+      "sha256": "b6fc3f9e2315a4ab675093f1299c0defa21e276e0725376833d2a0f0f4890d75"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/somma-diretta.svg",
+      "archived": "Archive/Images/geometria/somma-diretta.svg",
+      "bytes": 2471,
+      "sha256": "facbd1e66e28b70fbce3bfe2d68039d3a94dbd037839a7328eb865db43a87444"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/somma-funzioni.pdf",
+      "archived": "Archive/Images/geometria/somma-funzioni.pdf",
+      "bytes": 12310,
+      "sha256": "ee4cc443ebe8fcdd15f5db70b6e612f8d23421c5f01db13b0f6358660ba20c3b"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/somma-funzioni.svg",
+      "archived": "Archive/Images/geometria/somma-funzioni.svg",
+      "bytes": 12260,
+      "sha256": "e2a40cf70f023fc3262c2b9381f0074088ec6d5ea371ab536d070300a144beda"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/somma-prodotto.pdf",
+      "archived": "Archive/Images/geometria/somma-prodotto.pdf",
+      "bytes": 13382,
+      "sha256": "d99b4e0c4da64fb2f62b7ba94e5d11278c0d0ea16f69f62b48ed1b0371ddcdfc"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/somma-prodotto.svg",
+      "archived": "Archive/Images/geometria/somma-prodotto.svg",
+      "bytes": 3961,
+      "sha256": "8a465a0056879cb2f754a87350393eb3c7eaf35bced1a4d2d706332776d52939"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/sottospazi-r3.pdf",
+      "archived": "Archive/Images/geometria/sottospazi-r3.pdf",
+      "bytes": 10426,
+      "sha256": "1c3fd3f996cffe5dbd07393afa47cee3775623571139f23722761fb5bb178b6c"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/sottospazi-r3.svg",
+      "archived": "Archive/Images/geometria/sottospazi-r3.svg",
+      "bytes": 3997,
+      "sha256": "9e598f718a5eb0ed1a1dee3eb83a77e9df7576101d9eb11545da7cf5460a2f38"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/span.pdf",
+      "archived": "Archive/Images/geometria/span.pdf",
+      "bytes": 8973,
+      "sha256": "6399a6ef905d3fc15fb56272cb2be418634759eb6735218cdab112a99985afcd"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/span.svg",
+      "archived": "Archive/Images/geometria/span.svg",
+      "bytes": 3229,
+      "sha256": "3113b7c2b69fa8b7aad1caf59efb524c1f79de9a61787f5e67cc1a475957c145"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/traslato.pdf",
+      "archived": "Archive/Images/geometria/traslato.pdf",
+      "bytes": 10180,
+      "sha256": "dc1291be593cda4239096592e5a76bf375dd5eca7a7b257449c1fbdf4d260359"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/traslato.svg",
+      "archived": "Archive/Images/geometria/traslato.svg",
+      "bytes": 2458,
+      "sha256": "5c60660ffe13f905adad12cbe289042ee6c9a0c044ac0a3b8a33dd860dbb5d01"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/tre-casi.pdf",
+      "archived": "Archive/Images/geometria/tre-casi.pdf",
+      "bytes": 9094,
+      "sha256": "fa09bc2266d86d7dfef5b1cf0e4b0e55f57f4a4648657f9e3719ebe9f2d26b9f"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/tre-casi.svg",
+      "archived": "Archive/Images/geometria/tre-casi.svg",
+      "bytes": 2363,
+      "sha256": "fe6c0878771304cdd4dc6cd8d520625b8bb2efff2591097c56f240aaf517270f"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/unione.pdf",
+      "archived": "Archive/Images/geometria/unione.pdf",
+      "bytes": 7563,
+      "sha256": "9571c55b7faac5ce5476b244a353590e7aa4ec4458b08b047eecd917cae92230"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/unione.svg",
+      "archived": "Archive/Images/geometria/unione.svg",
+      "bytes": 2274,
+      "sha256": "3465749a5793bcef036b7ecbccacfeb3320dbd481a096114823f653097e984d4"
+    },
+    {
+      "source": "Books/October/geometria-1-spark/assets/sizes.json",
+      "archived": "Archive/Images/geometria/sizes.json",
+      "bytes": 1207,
+      "sha256": "befc3c09618307d053e1b361ddc069e63cbae81ab7704922c07ecc1717a390d5"
+    },
+    {
+      "source": ".agents/skills/texmacs-book/templates/preamble.tm",
+      "archived": "Archive/TeXmacs/preamble.tm",
+      "bytes": 3630,
+      "sha256": "3f680e51ec0c8beb4853cdd7eff6cee1a6b2578d34f516f52b866e5fe037ac9d"
+    },
+    {
+      "source": ".agents/skills/texmacs-book/templates/tail.tm",
+      "archived": "Archive/TeXmacs/tail.tm",
+      "bytes": 555,
+      "sha256": "e19cd9ed043a7a7957c614f38467c0768bd07911c728b5e806da73e67f6395e3"
+    },
+    {
+      "source": "Books/October/fondamenti-di-programmazione-1-spark/templates/preamble.tm",
+      "archived": "Archive/TeXmacs/preamble-with-code.tm",
+      "bytes": 3692,
+      "sha256": "74f548b0b6982ae19a07a878827eec229c195af96c37d0595946a0e961f34d7b"
+    }
+  ]
+}

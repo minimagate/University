@@ -83,21 +83,9 @@ When asked what the professor said, prioritize transcript evidence. For a concep
 
 Additional procedures live in `.agents/skills/`. Read the relevant skill for the task instead of loading every skill every time. `vault-structure` explains files and metadata, `course-context` explains efficient research, and `note-authoring` explains how to write study material.
 
-## Books — Spark is the default
+## Preserved formatting and images
 
-All new course books and conversions use the **Spark** teaching method. Follow `monthly-book` end to end; use `texmacs-book` and `book-figures` for production. The current production reference is `Books/October/aritmetica-1-spark/`. Inspect `Books/README.md` for main editions and the conversion queue.
-
-- Main editions live in `Books/<Month>/<slug>-<N>-spark/`, with PDF, native TeXmacs, editable chapters, figures, local build scripts and companion documentation.
-- Older editions live in `Books/Archive/<Month>/`. They are preserved references, not the main books. Do not silently count archived copies as new volumes or assume their material is already mastered.
-- A request to convert an existing period retains the volume number; a genuine continuation follows the verified stopping point. Preserve course directory spellings; naming details are in `monthly-book`.
-
-Gather every note and matching transcript for the course/period, standalone notes, the previous relevant Spark coverage and any supplied extras. Analyze the main concepts and dependencies before choosing an order. Sources stay untouched.
-
-Spark means **simple, warm, patient explanations in natural Italian that is pleasant to read, with rigorous mathematics**. Explain why things are done, not only what is done. Beyond that tone (see `.agents/skills/monthly-book/references/spark-standard.md`), structure, rhythm and presentation are left to the writer's judgment.
-
-Cover all main concepts and name them clearly in titles and the contents. Keep the reading manageable by selecting secondary material and documenting omissions in `coverage.md`. Provide explained exercise solutions. Keep the classical TeXmacs typography and useful monochrome vector figures. The cover names the edition month and year (for example «ottobre 2026»), not the span of months covered.
-
-Deliver a finished, regenerable PDF after separate mathematical and editorial reviews, exact checks of computations, and visual inspection of every page. Include `coverage.md`, `editorial-notes.md`, `validation.md` and the source hash manifest. Ask only for genuinely missing course/period information or actions beyond existing authorization. Do not rewrite the other courses merely because they are waiting in the conversion queue.
+TeXmacs formatting rules and original templates are archived in `Archive/TeXmacs/`; consult `formatting-rules.md` when formatting `.tm` documents. Archived SVG figures and vector PDF copies are in `Archive/Images/`, grouped by course. `Archive/README.md` describes the archive, and `Archive/manifest.json` records original paths and file hashes.
 
 ## Explicit intent required
 

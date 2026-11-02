@@ -1,6 +1,6 @@
 ---
 name: course-context
-description: Gather the smallest relevant course context for questions, distinguish transcript evidence from explanation, and route full course book work to the Spark monthly-book workflow.
+description: Gather the smallest relevant course context for questions and distinguish transcript evidence from explanation.
 ---
 
 <!-- generated-by: lecture -->
@@ -35,9 +35,3 @@ If a note conflicts with a transcript, preserve the distinction: notes may be a 
 Transcripts are automatic speech recognition, not polished lecture notes. Names, technical terms, formulas, and symbols are especially error-prone. Use surrounding sentences, neighboring lectures, and existing notes to test an interpretation. Do not invent an exact formula or quotation when the transcript does not support it. Mark an inference as an inference.
 
 When explaining beyond the lecture, label the added explanation when the difference could matter. Keep the raw transcript unchanged.
-
-## Spark books
-
-For a conceptual question, a relevant main Spark chapter may supplement the notes; locate it through `Books/README.md`. Keep transcript evidence primary when the user asks what the professor said. Do not search archived books as if they were current main editions.
-
-For a request to create, continue, convert or revise a course book, route to `monthly-book`: that workflow intentionally analyzes the entire selected course/period, rather than the small transcript subset used for an ordinary question.

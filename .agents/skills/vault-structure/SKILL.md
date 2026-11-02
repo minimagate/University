@@ -1,6 +1,6 @@
 ---
 name: vault-structure
-description: Locate university source material, main Spark book bundles and archived editions, and understand the vault metadata. Use when finding files or interpreting how workspace artifacts were produced.
+description: Locate university source material and preserved formatting/image assets, and understand the vault metadata. Use when finding files or interpreting how workspace artifacts were produced.
 ---
 
 <!-- generated-by: lecture -->
@@ -16,8 +16,7 @@ The vault root contains these content trees:
 Notes/          authored and curated study material
 _transcripts/   generated lecture corpus
 _audio/         original recordings
-Books/          main Spark course books and their production bundles
-Books/Archive/  preserved older editions, secondary references
+Archive/        preserved TeXmacs formatting rules and vector images
 ```
 
 The same course name normally identifies one directory in each tree:
@@ -62,8 +61,6 @@ The body normally has a generated title, a summary, and `## Transcript` containi
 
 Paths inside the vault should remain relative and should use `/`. Course directory names come from the filesystem. Do not construct paths from unvalidated user input or escape a course directory when writing.
 
-## Course books
+## Preserved assets
 
-`Books/README.md` identifies the main Spark editions and conversion queue. A main bundle is `Books/<Month>/<slug>-<N>-spark/`, with native TeXmacs/PDF, editable chapter sources, figures and build/coverage documents. Older flat editions, when present, live in `Books/Archive/<Month>/`; dated snapshots of revised Spark bundles can also live directly under `Books/Archive/`. Inspect the actual directory and archive README: do not assume every historical edition still exists or restore absent files without authorization. These are not the main reading material.
-
-Use `monthly-book` for writing, continuing, converting or revising a book. Spark companion Markdown files are not lecture notes: do not add book-note metadata or reorganize them with note-formatting procedures. Archive relocations, when available, are recorded in `Books/Archive/relocations.json`; copies need no relocation entry and absent registries are not evidence of current files; source manifests still refer to the untouched lecture corpus.
+`Archive/README.md` indexes the preserved TeXmacs formatting rules and vector images. Formatting rules and original templates are in `Archive/TeXmacs/`; SVG originals, vector PDF copies and physical dimensions are grouped by course under `Archive/Images/`. `Archive/manifest.json` records the original paths and SHA-256 hashes. These assets are independent of the lecture corpus.

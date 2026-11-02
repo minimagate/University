@@ -1,1 +1,0 @@
-448 finite logical checks passed; printed countermodels and quantifier example verified.
