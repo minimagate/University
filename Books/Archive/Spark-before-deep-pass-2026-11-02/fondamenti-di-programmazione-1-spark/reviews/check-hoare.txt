@@ -1,1 +1,0 @@
-PASS: 12416 checked cases; exact integer arithmetic. General proofs reviewed separately.

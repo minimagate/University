@@ -1,4 +1,0 @@
-{
-  "checks": 4546,
-  "result": "passed"
-}
