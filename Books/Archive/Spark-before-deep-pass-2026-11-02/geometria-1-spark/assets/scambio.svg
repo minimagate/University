@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200" role="img" aria-labelledby="title desc">
+<title id="title">Il lemma di scambio</title><desc id="desc">Righe di caselle: una base u1, ..., u4; a ogni passo un vettore w della famiglia indipendente entra al posto di un u, e si ottiene ancora una base.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="150" y="20" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="210" y="20" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="270" y="20" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="330" y="20" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="150" y="64" width="48" height="32" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="210" y="64" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="270" y="64" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="330" y="64" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="150" y="108" width="48" height="32" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="210" y="108" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="270" y="108" width="48" height="32" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="330" y="108" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="150" y="152" width="48" height="32" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="210" y="152" width="48" height="32" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="270" y="152" width="48" height="32" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="330" y="152" width="48" height="32" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<line x1="174" y1="51" x2="174" y2="63" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="294" y1="95" x2="294" y2="107" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="234" y1="139" x2="234" y2="151" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="174" y="42" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₁</text>
+<text x="234" y="42" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₂</text>
+<text x="294" y="42" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₃</text>
+<text x="354" y="42" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₄</text>
+<text x="130" y="42" font-size="12" text-anchor="end" fill="#111" font-style="italic">base iniziale</text>
+<text x="410" y="42" font-size="12" text-anchor="start" fill="#111" font-style="italic">ancora una base</text>
+<text x="174" y="86" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">w</tspan>₁</text>
+<text x="234" y="86" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₂</text>
+<text x="294" y="86" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₃</text>
+<text x="354" y="86" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₄</text>
+<text x="130" y="86" font-size="12" text-anchor="end" fill="#111" font-style="italic">entra w₁</text>
+<text x="410" y="86" font-size="12" text-anchor="start" fill="#111" font-style="italic">ancora una base</text>
+<text x="174" y="130" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">w</tspan>₁</text>
+<text x="234" y="130" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₂</text>
+<text x="294" y="130" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">w</tspan>₂</text>
+<text x="354" y="130" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₄</text>
+<text x="130" y="130" font-size="12" text-anchor="end" fill="#111" font-style="italic">entra w₂</text>
+<text x="410" y="130" font-size="12" text-anchor="start" fill="#111" font-style="italic">ancora una base</text>
+<text x="174" y="174" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">w</tspan>₁</text>
+<text x="234" y="174" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">w</tspan>₃</text>
+<text x="294" y="174" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">w</tspan>₂</text>
+<text x="354" y="174" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">u</tspan>₄</text>
+<text x="130" y="174" font-size="12" text-anchor="end" fill="#111" font-style="italic">entra w₃</text>
+<text x="410" y="174" font-size="12" text-anchor="start" fill="#111" font-style="italic">ancora una base</text>
+</g>
+</svg>

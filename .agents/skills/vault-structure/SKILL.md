@@ -64,6 +64,6 @@ Paths inside the vault should remain relative and should use `/`. Course directo
 
 ## Course books
 
-`Books/README.md` identifies the main Spark editions and conversion queue. A main bundle is `Books/<Month>/<slug>-<N>-spark/`, with native TeXmacs/PDF, editable chapter sources, figures and build/coverage documents. Older flat editions are preserved in `Books/Archive/<Month>/`. They are not the main reading material.
+`Books/README.md` identifies the main Spark editions and conversion queue. A main bundle is `Books/<Month>/<slug>-<N>-spark/`, with native TeXmacs/PDF, editable chapter sources, figures and build/coverage documents. Older flat editions, when present, live in `Books/Archive/<Month>/`; dated snapshots of revised Spark bundles can also live directly under `Books/Archive/`. Inspect the actual directory and archive README: do not assume every historical edition still exists or restore absent files without authorization. These are not the main reading material.
 
-Use `monthly-book` for writing, continuing, converting or revising a book. Spark companion Markdown files are not lecture notes: do not add book-note metadata or reorganize them with note-formatting procedures. Archive relocations are recorded in `Books/Archive/relocations.json`; source manifests still refer to the untouched lecture corpus.
+Use `monthly-book` for writing, continuing, converting or revising a book. Spark companion Markdown files are not lecture notes: do not add book-note metadata or reorganize them with note-formatting procedures. Archive relocations, when available, are recorded in `Books/Archive/relocations.json`; copies need no relocation entry and absent registries are not evidence of current files; source manifests still refer to the untouched lecture corpus.

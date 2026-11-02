@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="290" viewBox="0 0 640 290" role="img" aria-labelledby="title desc">
+<title id="title">Funzione di terminazione della divisione</title><desc id="desc">Istogramma dei valori della funzione di terminazione r = x − k·y per x = 17 e y = 5: i valori 17, 12, 7, 2 decrescono di cinque a ogni giro e restano sopra zero.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="86" y1="180" x2="94" y2="180" stroke="#111" stroke-width="0.8"/>
+<line x1="86" y1="130" x2="94" y2="130" stroke="#111" stroke-width="0.8"/>
+<line x1="86" y1="80" x2="94" y2="80" stroke="#111" stroke-width="0.8"/>
+<line x1="90" y1="230" x2="90" y2="52" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<line x1="90" y1="180" x2="548" y2="180" stroke="#9a9a9a" stroke-width="0.7" stroke-dasharray="4,3"/>
+<rect x="142" y="60" width="56" height="170" fill="#e4e4e4" stroke="#111" stroke-width="1"/>
+<rect x="242" y="110" width="56" height="120" fill="#e4e4e4" stroke="#111" stroke-width="1"/>
+<rect x="342" y="160" width="56" height="70" fill="#e4e4e4" stroke="#111" stroke-width="1"/>
+<rect x="442" y="210" width="56" height="20" fill="#e4e4e4" stroke="#111" stroke-width="1"/>
+<line x1="90" y1="230" x2="560" y2="230" stroke="#111" stroke-width="1.9"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="80" y="184" font-size="12" text-anchor="end" fill="#111">5</text>
+<text x="80" y="134" font-size="12" text-anchor="end" fill="#111">10</text>
+<text x="80" y="84" font-size="12" text-anchor="end" fill="#111">15</text>
+<text x="78" y="48" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">r</tspan></text>
+<text x="552" y="184" font-size="12" text-anchor="start" fill="#111">y = 5</text>
+<text x="170" y="54" font-size="13" text-anchor="middle" fill="#111">17</text>
+<text x="170" y="248" font-size="12" text-anchor="middle" fill="#111"><tspan font-style="italic">k</tspan> = 0</text>
+<text x="270" y="104" font-size="13" text-anchor="middle" fill="#111">12</text>
+<text x="270" y="248" font-size="12" text-anchor="middle" fill="#111"><tspan font-style="italic">k</tspan> = 1</text>
+<text x="370" y="154" font-size="13" text-anchor="middle" fill="#111">7</text>
+<text x="370" y="248" font-size="12" text-anchor="middle" fill="#111"><tspan font-style="italic">k</tspan> = 2</text>
+<text x="470" y="204" font-size="13" text-anchor="middle" fill="#111">2</text>
+<text x="470" y="248" font-size="12" text-anchor="middle" fill="#111"><tspan font-style="italic">k</tspan> = 3</text>
+<text x="470" y="270" font-size="11" text-anchor="middle" fill="#111" font-style="italic">r &lt; y: guardia falsa</text>
+<text x="330" y="100" font-size="13" text-anchor="middle" fill="#111">ogni giro: −5</text>
+<text x="568" y="235" font-size="14" text-anchor="start" fill="#111"><tspan font-style="italic">t</tspan> ≥ 0</text>
+</g>
+</svg>

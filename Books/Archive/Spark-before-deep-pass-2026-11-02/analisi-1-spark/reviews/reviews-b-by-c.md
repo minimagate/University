@@ -1,0 +1,26 @@
+# Revisione matematica indipendente del blocco 7–10
+
+Letti integralmente i quattro frammenti 07.tm (101 righe), 08.tm (141), 09.tm (171), 10.tm (245) e solutions-b.tm (69): 727 righe. Revisione eseguita dopo la stesura del blocco 11–14, senza modificarne i file. È una revisione dei ragionamenti e delle risposte; non equivale a una revisione visiva del PDF.
+
+## Esito
+
+**Nessun errore matematico che richieda una correzione rilevato.** Le nove soluzioni corrispondono alle domande e spiegano i passaggi decisivi. Le dipendenze centrali sono ordinate in modo non circolare.
+
+## Verifiche per capitolo
+
+- **7:** quantificatori di definitivamente/frequentemente distinti; definizione con ≤ε equivalente a versione stretta; n0 dipende da ε; limiti±∞ corretti. Unicità finita tramite ε=d/3, incompatibilità con infiniti e controesempio(−1)^n rigorosi. Limitatezza convergenti controlla prefisso finito e coda. Permanenza segno e confronto distinguono ordine largo/stretto. Carabinieri completo. La successione(2+(−1)^n)/n è positiva, tende0 e continua a risalire; n+2(−1)^n diverge pur scendendo tra ciascun pari e dispari successivo. Soluzioni7.1 e7.2 corrette.
+- **8:** teorema monotone deriva correttamente dalla proprietà ε del supremo, compreso caso illimitato e duale decrescente. La prova della monotonia e_n con Bernoulli è corretta: e_n/e_(n−1)=(1−1/n²)^n·n/(n−1)≥1. Stima binomiale e_n≤1+Σ1/k!≤3−2^(1−n) corretta. Il margine uniforme1/12 al termine k3 evita il falso passaggio «tutti<3⇒limite<3»: e≤35/12<3. Somma/prodotto/reciproco hanno controlli ε e denominatori positivi anche con limiti nulli. Forme indeterminate non confuse con nonesistenza. Soluzione ricorrenza prova prima esistenza, poi calcola L=2 senza anticipare continuità radice; soluzione coseno usa confronto uniforme corretto.
+- **9:** potenze e radici fisse dimostrate con Bernoulli; radice nth di n tramite termine quadratico del binomio, con scelta t=√(2/(n−1)), corretta. Criteri radice e rapporto per successioni (non serie) hanno ipotesi appropriate e casiℓ=0,+∞. Teorema rapporto⇒radice dimostrato anche ai bordi, senza assumere il criterio conℓ1; il controesempio inverso1,2,1,2 corretto. Gerarchie esponenziali/potenze/fattoriali/n^n e radice(n!)/n→1/e corrette. Nell'esempio radicale esponenziale è verificata positività definitiva e radicando interno tra1/2e2, evitando un uso improprio della continuità con indice variabile. Razionalizzazioni e limiti7/2,7/3 corretti; radici normalizzate controllate con identità algebriche. Somme con n+1termini contate correttamente; somma armonica da n a2n decrescente perché1/(2n+1)+1/(2n+2)<1/n. Le stime [1/2,1] non vengono spacciate per carabinieri né per valore esatto. Soluzione binomiale rapporto27/4 corretta; radicale x→−∞ ha limite−7/2 e dominio definitivo corretto.
+- **10:** punto accumulazione e centro bucato distinti; continuità include centro e punti isolati. Limiti laterali richiedono accumulazione dal lato appropriato. Infinito dominio illimitato; lato ingresso distinto da lato arrivo. Composizione continue provata con tolleranza esternaη e poiδ interna. Continuità exp da radice nth, senza derivate; continuità log da bracketing monotono. Prova geometrica sine usa cos→1 derivato da1−cos=2sin² e sin piccolo, non assume continuità per chiudere il primo limite. Notevoli inversi coerenti con intervalli. Lemma gradini e squeeze per (1+1/x)^x corretti sia a+∞sia a−∞; log esponenziale ricavati in ordine non circolare. Caso a1 separato. Cambio variabile avverte sul valore nel centro e sull'argomento che deve arrivare a0. Limite logcos/x²=−1/2 e potenza cos^(1/sin²)→exp(−1/2) corretti, con domini. Sottosuccessioni e campionamento di funzioni provati direttamente; controesempi oscillanti hanno due successioni esplicite corrette. Parametroα per(1+1/n)^(n^α) ha soglia1 e limiti corretti. Soluzioni10.1–3 tutte corrette, compreso segno+1/2nel limite centrato3π/2.
+
+## Due possibili rifiniture editoriali, senza necessità di cambiare la matematica
+
+1. Nel cap10 si menziona la continuità delle inverse trigonometriche nel paragrafo sulle inverse, prima della prova della continuità di sin/cos nella sezione successiva. Il consumo effettivo avviene dopo quella prova, quindi non c'è circolarità. Per rendere la progressione più trasparente si può precisare «Una volta stabilita la continuità di seno e coseno, lo stesso argomento…».
+2. Nell'esercizio9.2 si studia già una funzione a−∞ mentre la definizione formale generale di limite di funzione arriva nel capitolo10. La soluzione è comprensibile col cambio y=−x e la razionalizzazione costruita nel capitolo9; se si desidera evitare qualunque anticipo di linguaggio, si può chiamarlo un primo esempio da riprendere col capitolo10 oppure spostarlo nel gruppo esercizi10. Non richiede cambi per correttezza matematica.
+
+Le formule lunghe del radicando esponenziale e delle razionalizzazioni richiedono controllo visivo delle larghezze nell'export, che spetta al passaggio di produzione integrato.
+
+
+## Esito della revisione unitaria
+
+Le due osservazioni editoriali sono state recepite: l’esercizio 9.2 ora riguarda una successione; il caso originale a −∞ è ripreso nel capitolo 10. La continuità delle inverse trigonometriche segue ora la prova della continuità di seno e coseno.

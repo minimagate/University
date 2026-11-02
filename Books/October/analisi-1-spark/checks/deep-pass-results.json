@@ -1,0 +1,26 @@
+{
+  "total": 2636,
+  "groups": {
+    "Square root: step to the right": 102,
+    "Square root: lower barrier": 141,
+    "e: common cube": 3,
+    "e: expansion at n=3": 2,
+    "e: transformed identity": 177,
+    "e: coefficient bound": 1888,
+    "e: strict bound": 58,
+    "Continuity: concrete tolerance": 122,
+    "Taylor: quadratic coefficients": 3,
+    "Taylor: denominator chain": 66,
+    "Taylor: last denominator": 11,
+    "Composition: full cube": 1,
+    "Composition: sine of x+x^3": 1,
+    "Composition: cosine of sine": 1,
+    "Products: mixed terms": 2,
+    "Reciprocal: quadratic contribution": 1,
+    "Cubic sine: multiplicity": 1,
+    "Hyperbolic cosine: monotonicity": 12,
+    "TeXmacs syntax": 16,
+    "Chapter openings": 28
+  },
+  "scope": "Exact finite computations, all fragment syntax, 14 immediate In breve openings. No PDF or analytic-proof certification."
+}

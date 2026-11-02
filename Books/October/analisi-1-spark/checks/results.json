@@ -1,0 +1,33 @@
+{
+  "total": 513,
+  "groups": {
+    "Logica": 16,
+    "Somme e induzione": 90,
+    "Bernoulli": 210,
+    "Numero e": 87,
+    "Somma geometrica": 32,
+    "Rapporti fattoriali": 38,
+    "Serie: seno per coseno": 1,
+    "Serie: reciproco coseno": 1,
+    "Serie: tangente": 1,
+    "Serie: seno del seno interno": 1,
+    "Serie: coseno del seno": 1,
+    "Serie: seno meno arcotangente": 1,
+    "Derivata quinta": 1,
+    "Serie: potenza variabile": 1,
+    "Serie: logaritmo di uno piu seno quadro": 1,
+    "Serie: seno iperbolico": 1,
+    "Serie: coseno iperbolico": 1,
+    "Serie: identita iperbolica": 1,
+    "Serie: radice quadrata": 1,
+    "Serie: due radici cubiche": 1,
+    "Serie: esempio Hôpital Taylor": 1,
+    "Serie: esercizio11 numeratore": 1,
+    "Serie: esercizio11 denominatore": 1,
+    "Serie: centro2 logaritmo": 1,
+    "Limiti esercizi: rapporti esatti": 2,
+    "Trigonometria e inverse": 12,
+    "Successioni oscillanti": 8
+  },
+  "scope": "Conti esatti finiti e coefficienti formali; valori trigonometrici numerici. Non sono prove dei teoremi o dei resti."
+}

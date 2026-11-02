@@ -11,7 +11,7 @@ Spark is the default for every new book. Use `Books/October/aritmetica-1-spark/`
 
 Write simply and patiently: a concrete case, the reason a strategy works, then the rigorous argument. For Euclid's lemma, first show why `3∣5t` implies `3∣t` through `t=2·3t−5t`, explain why Bézout supplies this identity, then prove the general statement. Explain unfamiliar notation before using it. Name all main concepts explicitly in chapter or section titles; add concise `concetto` boxes selectively, a mental map and useful connections. A student must be able to find the course's pillars in the contents.
 
-Choose chapter length from the reasoning. No page/chapter quotas, repeated seven-part structure or requirement to use every box in every chapter. Keep secondary variants in an optional “Per proseguire” passage or document their omission in `coverage.md`. Use `anatomia` sparingly where it reveals a proof's decisions; include explained solutions in an appendix. Do not restore the old “Officina” language or a compulsory proof-toolbox appendix.
+Choose chapter length from the reasoning. Every numbered chapter must open with the canonical `inbreve` environment containing two or three short orienting sentences. This matches Aritmetica. No page/chapter quotas, repeated seven-part structure or requirement to use the other boxes in every chapter. Keep secondary variants in an optional “Per proseguire” passage or document their omission in `coverage.md`. Use `anatomia` sparingly where it reveals a proof's decisions; include explained solutions in an appendix. Do not restore the old “Officina” language or a compulsory proof-toolbox appendix.
 
 Preserve the canonical preamble and tail:
 
@@ -57,12 +57,14 @@ A direct TeXmacs edit of the generated full `.tm` is valid, but rebuilding from 
 - Text: `<strong|…>`, `<em|…>`, `<\itemize>`, `<\enumerate>`, Italian «quotes».
 - Figures: `<figura|@IMG(name)|Caption.>` or `@IMG(name,0.85)`. `sizes.json` supplies physical dimensions; TeXmacs embeds the vector PDF. Figure and caption stay together.
 
-The canonical macros are available when helpful, not a chapter checklist:
+Keep one conceptual move per real paragraph. Separate calculations, definitions and the reasons for choosing a proof step. Use meaningful subheadings or a small trace table for changes of subject or state; avoid both dense prose catalogues and fragmented notes.
+
+The canonical macros are available when helpful; only the opening `inbreve` is required in every numbered chapter:
 
 | Macro | Purpose |
 |---|---|
 | `<\concetto|Name> … </concetto>` | Short definition or main principle; name it explicitly |
-| `<\inbreve> … </inbreve>` | Brief orientation |
+| `<\inbreve> … </inbreve>` | Required chapter-opening orientation |
 | `<\guidato|Title> … </guidato>` | Patient worked example, with reasons for the steps |
 | `<\attenzione|Title> … </attenzione>` | A consequential error and its correction |
 | `<\immagine|Title> … </immagine>` | A useful mental image |
@@ -72,6 +74,8 @@ The canonical macros are available when helpful, not a chapter checklist:
 Titles start with capitals. Box cells can break over pages; avoid stranded labels or a one-line first fragment.
 
 ## Verify before delivery
+
+Run `python3 scripts/check-editorial.py .` before export (included in the bundle build). It fails when a numbered chapter lacks its opening `In breve` and flags unusually long prose for human review; it cannot evaluate clarity or mathematical density. Read the prose and rendered pages independently.
 
 Run syntax checking before export: a TeXmacs parse error can silently load a blank page. `check.py` checks tag balance, not mathematical correctness. Verify computations and proof hypotheses independently at the scale required by the text; record findings in `validation.md`.
 
@@ -83,6 +87,8 @@ sh scripts/tools.sh "$SCRATCH/bin"
 "$SCRATCH/bin/contact" "$SCRATCH/sheet.png" 6 240 330 "$SCRATCH"/pages/*.png
 ```
 
-Look at every page; inspect dense or suspicious pages at 1.2–2.0. Check complete contents with main sections, correct pages/references, named conceptual pillars, the cover and chapter titles, box margins and breaks, products rendered as products, readable unwarped figures/captions, no stranded headings or unexplained empty pages, and short table columns that do not wrap awkwardly. Rebuild and review after repairs. A successful exit alone is not evidence of a readable book.
+Look at every page; inspect dense or suspicious pages at 1.2–2.0. Compare difficult passages and chapter openings with Aritmetica at the same reading scale. Check dense uninterrupted prose, definition catalogues and proof boxes, not only clipping. Keep type size and margins; repair density through explanation and structure.
+
+Check complete contents with main sections, correct pages/references, named conceptual pillars, the cover and chapter titles, box margins and breaks, products rendered as products, readable unwarped figures/captions, no stranded headings or unexplained empty pages, and short table columns that do not wrap awkwardly. Rebuild and review after repairs. A successful exit alone is not evidence of a readable book.
 
 Avoid `TeXmacs -C in.tm out.pdf`: it can export the dark screen theme. `par-mode` must wrap a whole block; use the canonical heading macros. Never write native tags with shell `echo`, which may interpret backslashes; use the supplied assembler. The engine's “Installation completed successfully” message is initialization, not proof of PDF generation.

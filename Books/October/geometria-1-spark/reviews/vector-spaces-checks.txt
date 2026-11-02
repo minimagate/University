@@ -1,0 +1,4 @@
+OK 4: operazioni, parametrizzazione 2x-y+3z=0 e soluzione 4.2
+OK 5: indipendenza, coordinate; dipendenza complessa/indipendenza reale e caso F2
+OK 6: scambio concreto, tutte basi dei polinomi, esercizi 6.1-6.2
+OK 7: esempi Grassmann, scomposizione simmetrica/antisimmetrica, soluzioni 7.1-7.2

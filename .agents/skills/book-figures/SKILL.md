@@ -5,7 +5,7 @@ description: Design, generate and check fine-line SVG drawings with vector PDF c
 
 # Spark book figures
 
-A drawing makes one idea visible: why a formula is true, how a definition works or how a procedure moves. Choose figures alongside the explanation. Use a simple memorable object (dominoes, drawers, tiles) when it clarifies the mathematics; do not add a figure merely to fill a chapter. There is no per-chapter quota.
+A drawing makes one idea visible: why a formula is true, how a definition works or how a procedure moves. Choose figures alongside the explanation. Use a simple memorable object (dominoes, drawers, tiles) when it clarifies the mathematics; do not add a figure merely to fill a chapter. There is no per-chapter quota. For an algorithm, a short state trace or compact table may explain the step better than another drawing. Use the format that makes the reasoning visible and interrupts dense exposition usefully; do not add decoration to disguise a wall of text.
 
 Spark is the default for new books. The current reference is `Books/October/aritmetica-1-spark/`; historical flat volumes in `Books/Archive/` do not set the editorial model. Reuse the existing figure library and useful vector originals. Preserve the current Spark in place and use its same flat `assets/` layout for every bundle.
 

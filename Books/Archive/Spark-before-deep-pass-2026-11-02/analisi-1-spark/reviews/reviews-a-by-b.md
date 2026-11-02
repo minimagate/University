@@ -1,0 +1,25 @@
+# Revisione indipendente dei capitoli 1–6 e delle relative soluzioni
+
+Revisore: blocco limiti, distinto dall'autore dei fondamenti. Letti integralmente i sei frammenti 01–06.tm e `solutions-a.tm`, nella versione disponibile il2novembre2026. Verifica matematica e didattica delle dipendenze, senza modificare i frammenti dell'altro autore. Il controllo visivo finale rimane al coordinatore.
+
+## Esito
+
+Non ho individuato errori matematici sostanziali, ipotesi mancanti che invalidino risultati o risposte errate. I prerequisiti necessari ai capitoli7–10 sono effettivamente presenti e in un ordine coerente: quantificatori/dipendenza, funzioni e inverse, induzione, Bernoulli, somma geometrica, completezza e sup/inf, Archimede, valore assoluto e triangolare, proprietà algebriche/monotonia delle potenze reali e dei logaritmi, radianti e trigonometria. Le proprietà di esponenziale/logaritmo assunte nel ponte sono dichiarate come tali; non vengono falsamente presentate come dimostrate.
+
+## Controlli specifici
+
+- **Logica/insiemi:** sei disposizioni dei due quantificatori correttamente distinte; DeMorgan e negazione annidata preservano ordine delle variabili; implicazione è falsa soltanto nel caso vero/falso. Corretta la differenza fra condizione necessaria e sufficiente, elemento e sottoinsieme, vuoto e singleton del vuoto. La soluzione1.1 precisa che «non fallire» equivale a «superare» solo sotto l'alternativa dichiarata.
+- **Funzioni/inverse:** esistenza/unicità di immagine per ciascuna entrata, quattro scelte degli insiemi per il quadrato, teorema inversa iff biettiva con entrambi i versi; composizione in ordine corretto. Sono valide le quattro proprietà: composizione di iniettive/suriettive; composta iniettiva⇒fattore interno iniettivo; composta suriettiva⇒fattore esterno suriettivo. La controimmagine non richiede invertibilità.
+- **Induzione:** base e passo distinti; somma quadrati verificata nel passaggio2n²+7n+6=(n+2)(2n+3); Bernoulli usa1+x≥0 prima di moltiplicare, comprende x=−1 per n≥1 ed evita0^0. Geometrica separa a=1. Rafforzamento telescopico calcola n(n+2)+1=(n+1)² e formula(n+1)/(n+2) corretta. Soluzione fattoriale copre il caso isolato n=0, esclude1–3 e avvia induzione da4.
+- **Completezza:** dimostrazione irrazionalità√2 per parità, assioma separazione con A,B non vuoti, distinzione fra separatore e unicità, massimo e maggiorante. Esistenza sup: separatore è esso stesso maggiorante e minimo dell'insieme dei maggioranti. Caratterizzazione ε ha entrambi i versi. Archimede non è assunto: dimostrato da supN e passaggio n→n+1. Inf attraverso opposti coerente.
+- **Radici/grafici:** costruzione√2 via sup senza invocare continuità o teoremi successivi. Se c²<2, h<min(1,d/5) produce punto nell'insieme sopra c; se c²>2, h<min(1/2,d/4) produce maggiorante c−h più piccolo. Entrambe le stime sono corrette con1≤c≤2. √(x²)=|x| e radici pari nonnegative; potenze dispari suR. Traslazioni interne hanno segno corretto. Il quadramento di√(x+6)>x è eseguito solo sul tratto x≥0 e restituisce[-6,3). Immagine|x²−4| di[1,4]=[0,12] e controimmagine[-2,1]=[−√5,−√3]∪[√3,√5] corrette.
+- **Esponenziali/log:** definizione via sup per basea>1, a<1 tramite reciproco/esponenteopposto, a=1 separato. Sono dichiarate come assunte proprietà che richiedono dimostrazioni fuori dal ponte; la continuità è rinviata e poi dimostrata nelcap10. La notazione log=basee è introdotta avvisando che e verrà costruito, non usando già sue derivate.
+- **Trigonometria:** dominio tan escludeπ/2+kπ, interpretazione mediante rettaOP e non sola semiretta, periodi corretti. Intervalli principali delle tre inverse espliciti. arcsin(sin2)=π−2, arccos(cos4)=2π−4 corretti. sin(arccost), cos(arcsint) scelgono radice positiva dall'intervallo; identità arcsin+arccos e arctanx+arctan1/x controllano dominio e segno. arccos(sinx) ha le due formuleπ/2−x e x−π/2 sul periodo indicato; raccordo e periodicità coerenti.
+- **Soluzioni:** tutte le dodici risposte sono coerenti con gli esercizi. Il conteggio|x²−4|=λ separaλ=0 per non duplicare le soluzioni eλ=4 per la radicezero. Log(3x+1)=log(x+5) dichiara x>−1/3 e controlla la soluzione2. Tan(arccost) esclude t=0 e conserva±1; segno negativo per t<0 corretto.
+
+## Osservazioni editoriali minori, non ostative
+
+1. Nelcap6, per angoli negativi l'espressione «arco di lunghezza α» va intesa come lunghezza orientata: la frase precedente dice già «arco orientato» e il seguito specifica il verso. Se si desidera massima precisione terminologica, si può scrivere «lunghezza orientata α, lunghezza ordinaria|α|». Non cambia alcuna formula successiva.
+2. La costruzione generale di tutte le radici e delle potenze reali è intenzionalmente compatta, con dimostrazione rappresentativa di√2 e proprietà esponenziali assunte apertamente. È una scelta coerente con il corso e con la sostenibilità; segnalarla nel documento coverage evita di farla passare per una costruzione integrale dei reali/esponenziali.
+
+Non sono emersi impedimenti all'integrazione. Nessuna modifica ai capitoli dell'altro autore effettuata dal revisore.

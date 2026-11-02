@@ -1,0 +1,2115 @@
+<TeXmacs|2.1.5>
+
+<style|book>
+
+<\body>
+
+<\hide-preamble>
+    <assign|chapter-title|<macro|name|<style-with|src-compact|none|<new-page*><no-indent><vspace*|3.4fn><sectional-centered|<with|font-size|1.7|<arg|name>>><vspace|3.2fn><no-page-break><no-indent*>>>>
+    <assign|chapter-numbered-title|<macro|title|<chapter-title|<tabular|<tformat|<cwith|1|2|1|1|cell-halign|c>|<cwith|1|1|1|1|cell-bsep|0.9fn>|<cwith|1|2|1|1|cell-lsep|0fn>|<cwith|1|2|1|1|cell-rsep|0fn>|<table|<row|<cell|<with|font-shape|small-caps|font-size|0.7|<chapter-text> <the-chapter>>>>|<row|<cell|<arg|title>>>>>>>>>
+    <assign|appendix-numbered-title|<macro|title|<chapter-title|<tabular|<tformat|<cwith|1|2|1|1|cell-halign|c>|<cwith|1|1|1|1|cell-bsep|0.9fn>|<cwith|1|2|1|1|cell-lsep|0fn>|<cwith|1|2|1|1|cell-rsep|0fn>|<table|<row|<cell|<with|font-shape|small-caps|font-size|0.7|<appendix-text> <the-appendix>>>>|<row|<cell|<arg|title>>>>>>>>>
+    <assign|section-title|<macro|name|<style-with|src-compact|none|<sectional-normal-bold|<vspace*|1.6fn><with|font-size|1.12|<arg|name>><vspace|0.6fn>>>>>
+    <assign|subsection-toc|<macro|name|>>
+    <assign|box-label|<macro|x|<with|font-shape|small-caps|font-series|bold|<arg|x>>>>
+    <assign|box-head|<macro|label|title|<box-label|<arg|label>><if|<equal|<arg|title>|>||<space|0.4spc>\<cdot\><space|0.4spc><with|font-series|bold|math-font-series|bold|<arg|title>>>>>
+    <assign|box2|<macro|lb|tb|bb|bg|hsep|head|body|<box3|<arg|lb>|<arg|tb>|<arg|bb>|0ln|<arg|bg>|<arg|hsep>|<arg|head>|<arg|body>>>>
+    <assign|box3|<macro|lb|tb|bb|rb|bg|hsep|head|body|<surround|<no-indent>||<tabular|<tformat|<twith|table-width|1par>|<cwith|1|2|1|1|cell-width|1par>|<cwith|1|2|1|1|cell-hyphen|t>|<cwith|1|2|1|1|cell-lborder|<arg|lb>>|<cwith|1|2|1|1|cell-rborder|<arg|rb>>|<cwith|1|1|1|1|cell-tborder|<arg|tb>>|<cwith|2|2|1|1|cell-bborder|<arg|bb>>|<cwith|1|2|1|1|cell-lsep|<arg|hsep>>|<cwith|1|2|1|1|cell-rsep|<arg|hsep>>|<cwith|1|1|1|1|cell-tsep|0.75fn>|<cwith|1|1|1|1|cell-bsep|0.3fn>|<cwith|2|2|1|1|cell-tsep|0fn>|<cwith|2|2|1|1|cell-bsep|0.75fn>|<cwith|1|2|1|1|cell-background|<arg|bg>>|<table|<row|<cell|<arg|head>>>|<row|<cell|<arg|body>>>>>>>>>
+    <assign|guidato|<macro|title|body|<padded|<box2|0ln|0ln|0ln|#efefeb|1.2spc|<box-head|Esempio guidato|<arg|title>>|<arg|body>>>>>
+    <assign|attenzione|<macro|title|body|<padded|<box2|1.8pt|0ln|0ln||1.3spc|<box-head|Attenzione|<arg|title>>|<arg|body>>>>>
+    <assign|immagine|<macro|title|body|<padded|<box3|0.45pt|0.45pt|0.45pt|0.45pt||1.2spc|<box-head|Immagine mentale|<arg|title>>|<arg|body>>>>>
+    <assign|anatomia|<macro|title|body|<padded|<box2|0ln|1.2pt|0.45pt||0spc|<box-head|Anatomia di una dimostrazione|<arg|title>>|<arg|body>>>>>
+    <assign|inbreve|<macro|body|<padded|<box2|0.45pt|0ln|0ln||1.2spc|<box-label|In breve>|<arg|body>>>>>
+    <assign|verifica|<macro|num|body|<padded|<box2|0ln|0.45pt|0ln||0spc|<box-label|Verifica <arg|num>>|<arg|body>>>>>
+    <assign|figura|<macro|img|cap|<padded|<surround|<no-indent>||<tabular|<tformat|<twith|table-width|1par>|<cwith|1|2|1|1|cell-width|1par>|<cwith|1|2|1|1|cell-halign|c>|<cwith|2|2|1|1|cell-hyphen|t>|<cwith|1|2|1|1|cell-lsep|0pt>|<cwith|1|2|1|1|cell-rsep|0pt>|<cwith|1|1|1|1|cell-bsep|0.5fn>|<cwith|2|2|1|1|cell-tsep|0pt>|<table|<row|<cell|<arg|img>>>|<row|<cell|<with|par-mode|center|font-size|0.86|<arg|cap>>>>>>>>>>>
+    <assign|concetto|<macro|title|body|<padded|<box2|0.7pt|0ln|0ln||1.2spc|<box-head|Concetto chiave|<arg|title>>|<arg|body>>>>>
+    <assign|toc-strong-2|<macro|left|right|<vspace*|1fn><with|font-series|bold|math-font-series|bold|<arg|left>><toc-dots><no-break><arg|right><vspace|0.5fn><no-page-break>>>
+    <assign|tt|<macro|body|<with|font-family|tt|<arg|body>>>>
+  </hide-preamble>
+
+<assign|page-this-header|><assign|page-this-footer|>
+
+<\with|par-mode|center>
+<vspace*|6.7cm>
+
+<with|font-size|2.8|Fondamenti di>
+
+<with|font-size|2.8|Programmazione>
+
+<vspace|1.4fn>
+
+<with|font-shape|small-caps|font-size|1.5|Spark>
+
+<vspace|1.4fn>
+
+<with|font-shape|small-caps|font-size|1.15|settembre e ottobre 2026 · volume 1>
+</with>
+
+<chapter*|Capire un programma, un passo alla volta>
+
+Un programma cambia dei dati. Per capire se lo fa nel modo giusto dobbiamo dire che cosa vogliamo ottenere, seguire le operazioni e trovare un ragionamento che valga per tutti gli ingressi ammessi. Il libro costruisce questi passaggi partendo da esempi piccoli. Servono soltanto aritmetica e algebra elementari.
+
+<subsection|Il percorso>
+
+Cominciamo da una richiesta, una procedura e i valori che cambiano mentre la eseguiamo: sono <strong|specifica, algoritmo e stato> (capitolo 1).
+
+Per scrivere proprietà precise ci serve poi la <strong|logica>. Prima ragioniamo con frasi considerate vere o false (capitolo 2); poi impariamo a parlare di oggetti e a dire «tutti» ed «esiste» con i <strong|quantificatori> (capitoli 3 e 4).
+
+Torniamo quindi ai programmi. Studiamo l’effetto dei comandi (capitolo 5) e lo colleghiamo alle proprietà che valgono prima e dopo con le <strong|triple di Hoare> (capitolo 6).
+
+Infine affrontiamo i cicli. Gli <strong|invarianti> spiegano che cosa si conserva; le <strong|funzioni di terminazione> spiegano perché il calcolo finisce. Negli array useremo confini mobili per distinguere il lavoro già fatto da quello rimasto (capitoli 7–9).
+
+<subsection|Come leggere gli esempi>
+
+Non occorre imparare subito ogni simbolo. Leggi l’esempio e chiediti che cosa vogliamo sapere; poi torna alla definizione. Prima di un assegnamento, fermati: quale valore viene letto? Quale viene sostituito?
+
+Nelle prove distingui ciò che sappiamo prima di un passo da ciò che dobbiamo sapere dopo. Quando scegliamo un comando o un’uguaglianza, cerchiamo anche il motivo della scelta.
+
+Gli esercizi hanno tutti una soluzione spiegata nell’ultima parte. Prova almeno a scegliere il primo passo prima di leggerla. I passaggi «Per proseguire» sviluppano varianti secondarie e si possono rimandare a una seconda lettura.
+
+<subsection|Convenzioni e fonti>
+
+I naturali comprendono lo zero. Usiamo il piccolo linguaggio imperativo del corso con interi matematici, senza limiti di rappresentazione. La divisione intera e le condizioni perché un’espressione abbia valore saranno precisate prima dell’uso.
+
+L’assegnamento <math|x:=E> cambia il valore di <math|x>; l’uguaglianza <math|x=E> afferma una proprietà. Le <em|variabili di specifica> ricordano valori iniziali e restano fissate durante la prova.
+
+Il periodo va dalla prima nota disponibile, del 19 settembre, al 31 ottobre 2026. L’ultima lezione presente è del 29 ottobre. Il volume rielabora tredici note e la trascrizione del 25 settembre. Le spiegazioni aggiunte non sono citazioni del docente; fonti e scelte sono registrate nei documenti di accompagnamento.
+
+<\table-of-contents|toc>
+</table-of-contents>
+
+<chapter|Algoritmi, specifiche e stati>
+
+<\inbreve>
+Come si passa da una richiesta a un programma? Partiamo da una moltiplicazione fatta con sole somme. Distingueremo il risultato che vogliamo ottenere, le istruzioni da eseguire e i valori che cambiano durante il calcolo.
+</inbreve>
+
+Vogliamo calcolare <math|5·3> usando soltanto somme. Possiamo sommare 5 tre volte: il risultato è sempre 15, ma il procedimento dipende dalle operazioni che l’esecutore sa compiere.
+
+Distinguiamo quindi due domande: quale risultato vogliamo? Quali passi possono produrlo?
+
+<section|Dal problema alla specifica>
+
+«Trova il numero di telefono di una persona» sembra una richiesta chiara. Ma che cosa accade se due persone hanno lo stesso nome? E se il nome non compare? Per programmare dobbiamo sciogliere queste ambiguità prima di scegliere i passi del calcolo.
+
+Una <strong|specifica> descrive quali dati sono ammessi all'inizio e quale relazione deve esserci fra questi dati e il risultato. Per il prodotto: dati due interi non negativi <math|a,b>, ottenere <math|ab>. Abbiamo esteso l'esempio positivo delle lezioni al caso zero, che potremo controllare esplicitamente. La specifica non impone ancora somme, moltiplicazioni o altri strumenti.
+
+Per precisare un problema possiamo chiederci quali dati servono, quali parti possiamo affrontare separatamente e se abbiamo già risolto qualcosa di simile. Sono tre aspetti del <strong|pensiero computazionale>: <em|astrazione>, <em|scomposizione> e riconoscimento di <em|schemi>.
+
+Il passo successivo è scrivere una procedura così precisa da poter essere eseguita automaticamente. L’informatica studia come progettare e analizzare queste procedure, chiamate algoritmi, e quali problemi possiamo risolvere con esse.
+
+<\concetto|Algoritmo e programma>
+Un algoritmo descrive un procedimento mediante regole finite, non ambigue ed eseguibili da un esecutore adatto. Un programma lo esprime in un linguaggio di programmazione. Per un problema che richiede un risultato, chiediamo anche che l'esecuzione termini su tutti i dati ammessi e produca quel risultato.
+</concetto>
+
+Una descrizione finita può contenere una ripetizione: «finché rimangono somme, eseguine una» è una sola regola, anche se viene usata molte volte. La finitezza della descrizione e la terminazione dell'esecuzione sono quindi due questioni distinte. «Aggiungi sale quanto basta» lascia invece indeterminato il controllo da eseguire: per un esecutore automatico occorre una condizione precisa.
+
+Una volta precisata la <em|specifica>, progettiamo l’algoritmo. Poi lo traduciamo in un linguaggio, cioè lo <em|codifichiamo>, e lo eseguiamo.
+
+Se qualcosa non funziona, cerchiamo dove nasce l’errore: nella richiesta, nel procedimento, nella traduzione o nell’esecuzione. Questa ricerca si chiama <strong|debugging>; un debugger aiuta a osservare i singoli passi.
+
+Un test riuscito conferma il risultato sul caso provato. Per garantire tutti i casi ammessi servirà invece una dimostrazione.
+
+<section|Stato e assegnamento: che cosa cambia>
+
+Nel prodotto per somme ci servono tre informazioni: il valore da aggiungere, quante aggiunte restano e quanto abbiamo già accumulato. Chiamiamole <math|A,B,C>. Uno stato raccoglie i loro valori in un certo momento:
+
+<\equation*>
+σ={A↦5,B↦3,C↦0}.
+</equation*>
+
+La scrittura <math|B↦3> associa il nome <math|B> al valore 3. Il nome permette di ritrovare l’informazione; il valore può cambiare.
+
+Ogni nome presente deve avere un solo valore. Alcuni nomi possono invece mancare: diciamo perciò che lo stato è una <strong|funzione parziale> dai nomi ai valori.
+
+Lo stato <math|{x↦3,y↦3}> è ammesso: nomi diversi possono avere lo stesso valore. <math|{x↦3,x↦4}> non lo è: quale valore dovremmo leggere per <math|x>?
+
+L'<strong|assegnamento> <math|C:=C+A> legge i valori correnti di <math|C> e <math|A>, ne calcola la somma e sostituisce il valore di <math|C>. Nello stato precedente ottiene <math|C=5>. Non è un'equazione da risolvere: i due usi di <math|C> riguardano due momenti diversi. Il valore di <math|A> resta 5 e quello di <math|B> resta 3.
+
+Possiamo dunque scrivere il procedimento:
+
+<\verbatim>
+C := 0;<no-page-break>
+
+while B › 0 do<no-page-break>
+
+<hspace|1.050em>C := C + A;<no-page-break>
+
+<hspace|1.050em>B := B - 1<no-page-break>
+
+endw
+</verbatim>
+
+La guardia <math|B›0> viene controllata prima di ogni giro. Se è vera, si eseguono nell'ordine le due istruzioni; poi si torna al controllo. Se è falsa, si esce senza eseguire il corpo. Con <math|B=0> all'inizio il risultato resta 0: il caso zero è già compreso.
+
+<figura|@IMG(quaderno)|Stati ai controlli della guardia per <math|A=5,B=3>. Tra due colonne si eseguono prima l'aggiunta e poi il decremento.>
+
+Perché diminuire <math|B>? Per ricordare quante aggiunte mancano. Perché iniziare <math|C> da zero? Prima della prima aggiunta non abbiamo ancora accumulato nulla. Dopo il primo giro abbiamo fatto una somma e ne restano due; dopo il secondo abbiamo 10 e ne resta una; dopo il terzo abbiamo 15 e non ne resta nessuna.
+
+<subsection|Ricordare il prodotto iniziale>
+
+Per controllare il risultato dobbiamo ricordare i valori di partenza. Chiamiamo <math|a> il valore iniziale di <math|A> e <math|b> quello di <math|B>. Sono <strong|valori di specifica>: restano fissati mentre il programma cambia le sue variabili.
+
+Con <math|a=5,b=3>, dopo il primo giro abbiamo prodotto 5 e restano due aggiunte da 5. La parte già calcolata e quella da calcolare danno ancora il prodotto iniziale:
+
+<\equation*>
+5+5·2=15.
+</equation*>
+
+In generale, ai controlli della guardia vogliamo conservare
+
+<\equation*>
+C+AB=ab.
+</equation*>
+
+All’inizio è vera, perché <math|C=0,A=a,B=b>. In un giro aggiungiamo <math|A> a <math|C> e togliamo 1 a <math|B>. L’aumento della parte calcolata compensa la diminuzione della parte rimasta:
+
+<\equation*>
+(C+A)+A(B-1)=C+AB.
+</equation*>
+
+Quando <math|B=0>, l’uguaglianza diventa <math|C=ab>: è il risultato cercato. Quel momento viene raggiunto perché <math|B> parte da un naturale e scende di 1 finché arriva a zero.
+
+Una proprietà che si conserva in questo modo si chiama <strong|invariante>. La ritroveremo nei capitoli 6 e 7, dove impareremo a dimostrarla e a usarla nelle prove dei cicli.
+
+Non basta scrivere alla fine «<math|C=AB>»: nello stato finale <math|B=0>, quindi quel prodotto non ricorda più l'ingresso. La richiesta corretta è <math|C=ab>. Se vogliamo preservare anche gli ingressi, dobbiamo dichiararlo nella specifica e usare un contatore ausiliario.
+
+<section|Algoritmi diversi, costi diversi>
+
+Il prodotto per somme impiega <math|b> giri. Possiamo sfruttare una regolarità per ridurli. Se il primo fattore è pari, dimezzarlo e raddoppiare il secondo conserva il prodotto. Se è dispari e maggiore di 1, togliamo un'unità e mettiamo da parte una copia del secondo fattore. Con <math|13·11> otteniamo:
+
+<\equation*>
+13·11=12·11+11=6·22+11=3·44+11.
+</equation*>
+
+Ora <math|3·44=2·44+44=1·88+44>, quindi il risultato è <math|88+44+11=143>. È l'idea della moltiplicazione egizia richiamata nella lezione introduttiva: un procedimento antico mette in luce come usare proprietà dei numeri per progettare un algoritmo.
+
+Un secondo esempio è la ricerca in un elenco ordinato. Confrontiamo il nome cercato con quello centrale. Se il cercato viene prima, tutti i nomi successivi possono essere esclusi; se viene dopo, escludiamo tutti i precedenti. L'ordine giustifica lo scarto. Senza ordinamento, eliminare una metà non sarebbe lecito.
+
+<figura|@IMG(ricerca-binaria,0.9)|Ricerca di 47: i valori confrontati sono 33, 51, 42, 47. La zona attiva si restringe perché i valori sono ordinati.>
+
+Qui contiamo un confronto a tre esiti con l'elemento centrale come un passo. Il numero dei candidati si riduce circa della metà, mentre in una ricerca sequenziale si esaminano uno dopo l'altro. Dire che un algoritmo è corretto non dice ancora quanto costa eseguirlo: <strong|correttezza> ed <strong|efficienza> sono proprietà diverse.
+
+<section|Modelli di calcolo e limiti>
+
+Possiamo rendere precisa l'idea di esecutore senza costruire un calcolatore fisico. Una <strong|macchina di Turing> usa un nastro di simboli, una testina e regole finite; può leggere, scrivere e cambiare posizione e stato di controllo. 
+
+La <strong|macchina universale> riceve la descrizione di un'altra macchina e il suo ingresso e ne simula il comportamento: uno stesso esecutore può svolgere programmi diversi.
+
+<subsection|Modi diversi di descrivere il calcolo>
+
+Il <strong|λ-calcolo> di Church descrive il calcolo attraverso funzioni e applicazioni. Ha una forma diversa dalla macchina di Turing, ma i due modelli calcolano le stesse funzioni: la loro equivalenza è un teorema.
+
+La <strong|tesi di Church–Turing> afferma che questi modelli descrivono tutti i procedimenti che intendiamo intuitivamente come calcoli eseguibili. La chiamiamo tesi perché la nozione intuitiva non ha una definizione matematica indipendente.
+
+L’architettura di <strong|von Neumann> conserva dati e istruzioni in memoria. Quando discutiamo la sua capacità astratta di calcolo assumiamo una memoria estendibile; un calcolatore reale ha invece risorse finite.
+
+Il corso cita anche sistemi di Post e funzioni ricorsive come altri modelli di calcolo. I modelli quantistici e biologici sono qui soltanto richiamati: il volume non ne confronta l’efficienza.
+
+<subsection|Una richiesta che nessun algoritmo risolve in generale>
+
+Non ogni richiesta precisa ammette un algoritmo generale. Il <strong|problema dell'arresto> chiede di decidere, per ogni programma e ogni ingresso, se l'esecuzione terminerà. È indecidibile: non esiste un algoritmo che dia sempre la risposta corretta e termini su tutti questi casi. Ciò non impedisce di dimostrare la terminazione di specifici programmi, come faremo nei capitoli 7 e 8.
+
+<subsection|Come si organizza un programma>
+
+Possiamo organizzare il calcolo in modi diversi, chiamati <strong|paradigmi di programmazione>. La tabella raccoglie quelli citati nel corso.
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.6em>|<cwith|1|-1|1|-1|cell-rsep|0.6em>|<table|<row|<cell|<text|Paradigma>>|<cell|<text|Idea principale>>>|<row|<cell|<text|Imperativo, come C>>|<cell|<text|Comandi che cambiano lo stato>>>|<row|<cell|<text|Funzionale>>|<cell|<text|Funzioni e applicazioni>>>|<row|<cell|<text|A oggetti>>|<cell|<text|Oggetti che raccolgono dati e operazioni>>>|<row|<cell|<text|Logico, come Prolog>>|<cell|<text|Relazioni e inferenze>>>|<row|<cell|<text|Concorrente>>|<cell|<text|Processi che interagiscono>>>>>>
+</equation*>
+
+Ci concentreremo sul paradigma imperativo. Prima di studiarne gli altri comandi, dobbiamo imparare a esprimere con precisione le proprietà degli stati: è il compito della logica.
+
+<\verifica|1>
+<strong|1.> Nell'algoritmo del prodotto, parti da <math|A=4,B=2>. Scrivi gli stati ai controlli della guardia, spiega il ruolo di <math|C> e indica perché <math|C=AB> non è la richiesta finale corretta.
+
+<strong|2.> Vuoi restituire il maggiore fra due interi, conservando gli ingressi. Scrivi una specifica che distingua ingressi, risultato e vincoli. Spiega perché la richiesta non stabilisce ancora l'algoritmo.
+</verifica>
+
+<chapter|Calcolo proposizionale: verità e conseguenza>
+
+<\inbreve>
+Quando una conclusione segue davvero dalle premesse? Sappiamo già ragionare con frasi come «se piove, porto l’ombrello». Impareremo a controllare questi ragionamenti e a scrivere con precisione le condizioni che useremo nei programmi.
+</inbreve>
+
+«Se Corrado va al cinema, ci va Antonio; se Antonio va al cinema, ci va Bruno.» Possiamo concludere che, se ci va Corrado, ci va Bruno? Sì: quando Corrado va, la prima premessa porta ad Antonio e la seconda a Bruno.
+
+Non possiamo invece concludere che, se va Bruno, vada Corrado. Bruno potrebbe andare da solo. Il calcolo proposizionale rende preciso questo controllo: una conclusione segue se non possiamo avere premesse vere e conclusione falsa.
+
+<section|Formule, connettivi e interpretazioni>
+
+Una <strong|proposizione> è una frase dichiarativa alla quale attribuiamo vero o falso. Una domanda e un comando non sono proposizioni. «<math|x+1=2>» diventerà vera o falsa quando avremo fissato <math|x>; torneremo su questa dipendenza con il primo ordine.
+
+Per ora rappresentiamo le proposizioni semplici con lettere <math|p,q,r,…>. Da queste costruiamo formule: <math|¬P> significa «non <math|P>», <math|P∧Q> «<math|P> e <math|Q>», <math|P∨Q> «almeno una fra <math|P> e <math|Q>». La disgiunzione è inclusiva: ammette che entrambe siano vere. <math|P⇒Q> significa «se <math|P>, allora <math|Q>»; <math|P≡Q> «<math|P> se e solo se <math|Q>».
+
+Il significato di «se» merita una sosta. «Se piove, porto l'ombrello» esclude il solo caso in cui piove e non porto l'ombrello. Quando non piove, l'affermazione non impone nulla sull'ombrello. Perciò <math|P⇒Q> è falsa soltanto con <math|P> vera e <math|Q> falsa. L'equivalenza, invece, è vera quando i due valori coincidono.
+
+Indichiamo i valori con <math|<math-up|t>> e <math|<math-up|f>>. Questa tabella definisce le operazioni booleane:
+
+<\equation*>
+<tabular|<tformat|<table|<row|<cell|P>|<cell|Q>|<cell|¬P>|<cell|P∧Q>|<cell|P∨Q>|<cell|P⇒Q>|<cell|P≡Q>>|<row|<cell|<math-up|t>>|<cell|<math-up|t>>|<cell|<math-up|f>>|<cell|<math-up|t>>|<cell|<math-up|t>>|<cell|<math-up|t>>|<cell|<math-up|t>>>|<row|<cell|<math-up|t>>|<cell|<math-up|f>>|<cell|<math-up|f>>|<cell|<math-up|f>>|<cell|<math-up|t>>|<cell|<math-up|f>>|<cell|<math-up|f>>>|<row|<cell|<math-up|f>>|<cell|<math-up|t>>|<cell|<math-up|t>>|<cell|<math-up|f>>|<cell|<math-up|t>>|<cell|<math-up|t>>|<cell|<math-up|f>>>|<row|<cell|<math-up|f>>|<cell|<math-up|f>>|<cell|<math-up|t>>|<cell|<math-up|f>>|<cell|<math-up|f>>|<cell|<math-up|t>>|<cell|<math-up|t>>>>>>
+</equation*>
+
+Quali scritture sono formule? Partiamo dalle lettere e dalle costanti <math|T,F>. Se abbiamo già due formule, possiamo collegarle con <math|∧>, <math|∨>, <math|⇒> oppure <math|≡>; se ne abbiamo una, possiamo negarla.
+
+Ripetiamo le stesse regole sui risultati ottenuti: questa costruzione si dice <strong|ricorsiva>. Le regole formano la <strong|sintassi> del linguaggio e si possono raccogliere in una grammatica libera dal contesto. <math|p∧∨> non è una formula, perché dopo <math|∧> manca una seconda formula.
+
+Le costanti <math|T> e <math|F> indicano rispettivamente la formula sempre vera e quella sempre falsa. A differenza delle lettere, non hanno un valore da scegliere.
+
+Le parentesi descrivono la costruzione. Nel corso <math|¬> lega più di <math|∧,∨>, che legano più di <math|⇒>, che lega più di <math|≡>. Fra <math|∧> e <math|∨> non scegliamo una precedenza: scriviamo le parentesi. Anche due implicazioni consecutive richiedono parentesi. Con <math|P,Q> false, <math|(P⇒¬P)⇒Q> è falsa, mentre <math|P⇒(¬P⇒Q)> è vera. Le parentesi hanno cambiato la domanda logica.
+
+Un'<strong|interpretazione> <math|I> assegna a ogni lettera un valore booleano. La semantica valuta poi la formula seguendone la costruzione. Con <math|I(p)=<math-up|t>>, <math|I(q)=I(r)=<math-up|f>>, per valutare <math|(p∧q)∨¬r> calcoliamo prima <math|p∧q>, che è falsa, e <math|¬r>, che è vera; la loro disgiunzione è vera. Scriviamo <math|⟦P⟧<rsub|I>> per il valore di <math|P> in <math|I>.
+
+Per una <strong|tavola di verità> ripetiamo la valutazione per tutte le scelte dei valori. Con <math|n> lettere distinte ci sono <math|2<rsup|n>> scelte, perché ogni lettera ha due possibilità indipendenti.
+
+<section|Modelli, tautologie e controesempi>
+
+Un’interpretazione che rende vera <math|P> è un suo <strong|modello>. Scriviamo <math|I⊨P> per dire che <math|I> è un modello di <math|P>.
+
+Una formula è <strong|soddisfacibile> se ha almeno un modello. Per esempio, <math|p⇒q> è vera quando <math|p,q> sono vere: questo basta a mostrarla soddisfacibile.
+
+Una <strong|tautologia> è vera in ogni interpretazione. <math|p∨¬p> lo è: qualunque valore abbia <math|p>, una delle due parti è vera. <math|p⇒q> invece non lo è, perché fallisce con <math|p> vera e <math|q> falsa.
+
+Una <strong|contraddizione> non ha modelli. <math|p∧¬p> lo è: non possiamo rendere vere insieme una proposizione e la sua negazione.
+
+<\concetto|Conseguenza logica>
+<math|Γ⊨Q> significa che ogni interpretazione che rende vere tutte le premesse di <math|Γ> rende vera anche <math|Q>. Per confutare la conseguenza basta un <strong|controesempio>: premesse tutte vere e conclusione falsa.
+</concetto>
+
+Riprendiamo gli amici: <math|c⇒a> e <math|a⇒b>. La conclusione <math|c⇒b> segue: se fosse falsa avremmo <math|c> vera e <math|b> falsa. La prima premessa imporrebbe <math|a> vera, e la seconda sarebbe allora falsa. Non esiste quindi un controesempio. Per <math|b⇒c>, invece, scegliamo <math|b> vera, <math|a,c> false: entrambe le premesse sono vere, la conclusione no.
+
+Non concludiamo neppure che nessuno va al cinema: l'interpretazione con tutti e tre veri soddisfa le premesse. Una condizione necessaria non è automaticamente sufficiente. «Antonio va <em|solo se> va Bruno» si scrive <math|a⇒b>: Antonio che va obbliga Bruno, non viceversa.
+
+Con premesse finite <math|P<rsub|1>,…,P<rsub|n>>, la conseguenza equivale alla tautologicità di <math|(P<rsub|1>∧⋯∧P<rsub|n>)⇒Q>. Infatti la formula è falsa esattamente nei controesempi. Questo permette di controllare le inferenze con una tavola di verità, ma il numero delle righe cresce rapidamente. Le leggi ci danno un altro modo di ragionare.
+
+<section|Equivalenze e dimostrazioni motivate>
+
+Una <strong|legge> è una tautologia che usiamo per giustificare passaggi. Se <math|P≡Q> è una legge, possiamo sostituire una sottoformula <math|P> con <math|Q> dentro una formula più grande: i valori restano uguali in ogni interpretazione. È il principio di sostituzione per l'equivalenza. 
+
+Per esempio <math|P⇒Q> si può sostituire con <math|¬P∨Q>, perché entrambe sono false nel solo caso <math|P> vera, <math|Q> falsa.
+
+<subsection|Leggi per trasformare una formula>
+
+Scambiare l’ordine di due termini non cambia una congiunzione o una disgiunzione: è la <strong|commutatività>. Se ripetiamo lo stesso connettivo, possiamo anche spostare le parentesi: è l’<strong|associatività>.
+
+Ripetere la stessa condizione non aggiunge richieste. Questa proprietà si chiama <strong|idempotenza>:
+
+<\equation*>
+P∧P≡P,<space|2em>P∨P≡P.
+</equation*>
+
+Le costanti <math|T,F> permettono altre semplificazioni. Aggiungere una condizione già vera a una congiunzione non cambia nulla; aggiungere una possibilità sempre falsa a una disgiunzione neppure:
+
+<\equation*>
+P∧T≡P,<space|2em>P∨F≡P.
+</equation*>
+
+Sono le leggi di <strong|unità>. Se invece una congiunzione contiene una parte falsa, fallisce tutta; se una disgiunzione contiene una parte vera, è vera tutta:
+
+<\equation*>
+P∧F≡F,<space|2em>P∨T≡T.
+</equation*>
+
+Qui <math|F> e <math|T> sono detti <strong|elementi assorbenti> per le rispettive operazioni.
+
+La <strong|distributività> consente di separare i due casi di <math|Q∨R>:
+
+<\equation*>
+P∧(Q∨R)≡(P∧Q)∨(P∧R).
+</equation*>
+
+Vale anche la legge ottenuta scambiando <math|∧> e <math|∨>. Useremo queste leggi quando ci aiutano ad avvicinare parti che possiamo semplificare.
+
+La doppia negazione dà <math|¬¬P≡P>. Le leggi di De Morgan dicono
+
+<\equation*>
+¬(P∧Q)≡¬P∨¬Q,<space|2em>¬(P∨Q)≡¬P∧¬Q.
+</equation*>
+
+Per capire la prima, chiediamoci quando fallisce «entrambi»: basta che fallisca almeno uno. La seconda dice che per fallire «almeno uno» devono fallire entrambi. Inoltre <math|¬(P⇒Q)≡P∧¬Q>, ed <math|P≡Q> equivale sia a <math|(P⇒Q)∧(Q⇒P)> sia a <math|(P∧Q)∨(¬P∧¬Q)>.
+
+Vediamo perché può essere utile distribuire, anziché farlo senza una meta. Vogliamo semplificare <math|P∨(¬P∧Q)>. Qui <math|P> compare anche negata: distribuendo portiamo le due occorrenze vicine:
+
+<\equation*>
+P∨(¬P∧Q)≡(P∨¬P)∧(P∨Q)≡T∧(P∨Q)≡P∨Q.
+</equation*>
+
+Il primo passo usa la distributività; il secondo usa <math|P∨¬P≡T>, il <em|terzo escluso>; l’ultimo usa l’unità. Abbiamo ottenuto una <strong|legge di complemento>. L’altra è <math|P∧(¬P∨Q)≡P∧Q>, proposta nella verifica finale.
+
+Le leggi di <strong|assorbimento> danno invece
+
+<\equation*>
+P∧(P∨Q)≡P,<space|2em>P∨(P∧Q)≡P.
+</equation*>
+
+Nella prima, chiedere <math|P> rende già vera <math|P∨Q>. Nella seconda, il caso <math|P∧Q> era già compreso nel caso <math|P>. Non occorre memorizzare tutto insieme: cerchiamo ogni volta la legge che rende più semplice la formula.
+
+<subsection|Dalle premesse alla conclusione>
+
+Per dimostrare un’implicazione possiamo assumere la premessa e ricavare la conclusione. Da <math|P⇒Q> e <math|P> segue <math|Q>: è il <strong|modus ponens>, perché la sola possibilità di <math|Q> falsa renderebbe falsa una premessa. 
+
+Da <math|P⇒Q> e <math|¬Q> segue <math|¬P> (<strong|modus tollens>): se <math|P> fosse vera, costringerebbe <math|Q> a esserlo. Qui abbiamo usato un ragionamento per assurdo, non una nuova operazione misteriosa.
+
+La <strong|controposizione> esprime proprio <math|(P⇒Q)≡(¬Q⇒¬P)>. Non scambia semplicemente i due lati: li nega entrambi. La prova per assurdo di <math|P⇒Q> cerca una contraddizione assumendo <math|P∧¬Q>, l'unico caso che potrebbe falsificare l'implicazione. Una prova per casi sceglie una proposizione <math|R> e dimostra la stessa conclusione sia con <math|R> sia con <math|¬R>; questi due casi esauriscono le possibilità.
+
+<section|Implicazione e polarità delle occorrenze>
+
+Sappiamo che <math|x›10⇒x›0>. La condizione «maggiore di 10» è più forte: ammette meno numeri. Se la sostituiamo con «maggiore di 0» nella richiesta <math|x›10∧R>, otteniamo una richiesta più debole:
+
+<\equation*>
+(x›10∧R)⇒(x›0∧R).
+</equation*>
+
+Sotto una negazione accade il contrario. «Non maggiore di 0» implica «non maggiore di 10», mentre il viceversa fallisce per <math|x=5>:
+
+<\equation*>
+¬(x›0)⇒¬(x›10).
+</equation*>
+
+La negazione ha invertito il verso. Anche stare a sinistra di un’implicazione lo inverte. La richiesta <math|A⇒R> diventa più impegnativa se sostituiamo <math|A> con una condizione più debole: dovremo garantire <math|R> in più casi.
+
+<subsection|Seguire un’occorrenza nella formula>
+
+Prendiamo una sola formula e seguiamo tutti i passaggi:
+
+<\equation*>
+Φ=¬(P⇒Q)∧R.
+</equation*>
+
+Possiamo leggerne la costruzione come un albero. La congiunzione è il punto di partenza; a sinistra troviamo una negazione, poi un’implicazione. A destra troviamo direttamente <math|R>.
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.6em>|<cwith|1|-1|1|-1|cell-rsep|0.6em>|<table|<row|<cell|<text|Occorrenza>>|<cell|<text|Percorso dalla congiunzione>>|<cell|<text|Inversioni>>>|<row|<cell|P>|<cell|∧,¬,<text| antecedente di >⇒>|<cell|2>>|<row|<cell|Q>|<cell|∧,¬,<text| conseguente di >⇒>|<cell|1>>|<row|<cell|R>|<cell|∧>|<cell|0>>>>>
+</equation*>
+
+Per arrivare a <math|P> attraversiamo prima <math|¬> e poi il lato sinistro di <math|⇒>. Sono due inversioni: il verso iniziale si ristabilisce. Diciamo che questa occorrenza è <strong|positiva>.
+
+Per arrivare a <math|Q> attraversiamo la stessa negazione, ma poi il lato destro di <math|⇒>, che non inverte. Rimane una sola inversione: l’occorrenza è <strong|negativa>. Per <math|R> non incontriamo inversioni: è positiva.
+
+Un controllo è riscrivere <math|Φ> come <math|(P∧¬Q)∧R>. Ora i tre ruoli si vedono direttamente.
+
+<\concetto|Polarità di un’occorrenza>
+Partiamo dal segno positivo e seguiamo il percorso fino all’occorrenza scelta. Ogni negazione e ogni passaggio nell’antecedente di <math|⇒> cambia il segno. <math|∧>, <math|∨> e il conseguente lo lasciano invariato. Prima eliminiamo gli eventuali <math|≡>.
+</concetto>
+
+Conta il posto occupato da ciascuna occorrenza, non il nome della lettera: due <math|P> nella stessa formula possono avere segni diversi.
+
+<subsection|Usare il segno per sostituire>
+
+Supponiamo valida <math|A⇒B>. In una posizione positiva, sostituire <math|A> con <math|B> dà un’implicazione dalla formula iniziale alla nuova. In una posizione negativa otteniamo l’implicazione dalla nuova alla iniziale.
+
+Per esempio, <math|Q∧R⇒Q>. Nel conseguente di <math|P⇒(Q∧R)> non abbiamo inversioni, quindi
+
+<\equation*>
+(P⇒(Q∧R))⇒(P⇒Q).
+</equation*>
+
+Invece <math|P⇒P∨Q>. La sostituzione nell’antecedente di <math|P⇒R> incontra una inversione e dà il verso opposto:
+
+<\equation*>
+((P∨Q)⇒R)⇒(P⇒R).
+</equation*>
+
+La formula a sinistra garantisce <math|R> sia quando vale <math|P> sia quando vale <math|Q>. Perciò garantisce anche il solo caso <math|P>.
+
+<subsection|Tenere presenti le ipotesi>
+
+Se abbiamo assunto <math|P>, possiamo sostituirla con <math|T> e scrivere <math|P∧Q≡T∧Q≡Q>. Il risultato dipende però dall’ipotesi. Abbiamo dimostrato
+
+<\equation*>
+P⇒((P∧Q)≡Q),
+</equation*>
+
+non <math|(P∧Q)≡Q> senza condizioni. Con <math|P> falsa e <math|Q> vera quest’ultima sarebbe falsa.
+
+<subsection|Per proseguire: forme normali, risoluzione e NAND>
+
+Un <strong|letterale> è una lettera o la sua negazione, come <math|p> e <math|¬q>. Una <strong|forma normale congiuntiva> (FNC) è una congiunzione di disgiunzioni di letterali:
+
+<\equation*>
+(p∨¬q)∧r.
+</equation*>
+
+Una <strong|forma normale disgiuntiva> (FND) scambia i ruoli: è una disgiunzione di congiunzioni di letterali, come <math|(p∧q)∨¬r>.
+
+Per ottenere queste forme eliminiamo <math|⇒,≡>, spingiamo le negazioni fino alle lettere con De Morgan e distribuiamo. Il procedimento può allungare molto le formule; la forma ottenuta non è unica.
+
+<subsection|Risolvere due clausole>
+
+La <strong|risoluzione> usa due clausole <math|P∨Q> e <math|¬P∨R> per ricavare <math|Q∨R>. Perché? Se <math|P> è falsa, la prima clausola impone <math|Q>; se è vera, la seconda impone <math|R>. È una prova per casi. 
+
+Dalle tre clausole <math|P∨Q>, <math|¬P∨R>, <math|¬Q∨R> ricaviamo prima <math|Q∨R>, poi, risolvendo su <math|Q>, <math|R>. La risoluzione è uno strumento dei metodi automatici e della programmazione logica.
+
+<subsection|Quanti connettivi sono necessari?>
+
+Un insieme di connettivi è <strong|funzionalmente completo> se permette di esprimere ogni funzione booleana, cioè ogni scelta dei risultati in una tavola di verità.
+
+L’insieme <math|{¬,∧}> è completo. De Morgan permette di esprimere <math|∨>; con una FND possiamo poi raccogliere precisamente le righe della tavola in cui vogliamo il risultato vero. Per la funzione sempre falsa basta <math|P∧¬P>.
+
+Anche <math|{¬,∨}> è completo, per De Morgan. Lo è <math|{¬,⇒}>, perché possiamo costruire <math|P∨Q> come <math|¬P⇒Q>.
+
+Basta persino il solo <strong|NAND>, definito da <math|P↑Q≡¬(P∧Q)>. Prima ricostruiamo la negazione, poi la congiunzione:
+
+<\equation*>
+P↑P≡¬P,<space|2em>(P↑Q)↑(P↑Q)≡P∧Q.
+</equation*>
+
+Abbiamo così ritrovato l’insieme completo <math|{¬,∧}>. Usare più connettivi rimane utile per scrivere formule leggibili.
+
+<\verifica|2>
+<strong|1.> Con <math|p>: «piove» ed <math|e>: «esco», traduci «esco solo se non piove». La formula ottenuta implica «se non piove, esco»? Cerca un caso che distingua le due richieste.
+
+<strong|2.> Semplifica <math|P∧(¬P∨Q)> mostrando le leggi usate. Poi stabilisci il segno delle occorrenze di <math|P,Q,R> in <math|¬(P⇒Q)∧R>.
+</verifica>
+
+<chapter|Logica del primo ordine: individui e formule>
+
+<\inbreve>
+Come diciamo che una proprietà vale per tutti i numeri, oppure soltanto per alcuni? Le lettere proposizionali da sole non mostrano gli oggetti di cui parliamo. Introduciamo variabili, funzioni e quantificatori per esprimere queste richieste.
+</inbreve>
+
+«Tutti i numeri pari hanno successore dispari.» Potremmo introdurre una lettera per il caso di 0, una per il caso di 2, e così via, ma non avremmo scritto la regola generale. 
+
+Ci serve distinguere gli oggetti e le operazioni: il numero, la proprietà «pari», l'operazione «successore». La <strong|logica del primo ordine> aggiunge questi ingredienti e permette di dire «per ogni» ed «esiste».
+
+<section|Termini, predicati e quantificatori>
+
+Scegliamo prima gli oggetti di cui parlare, il <strong|dominio>. Per l'esempio usiamo <math|ℕ={0,1,2,…}>. Introduciamo la costante 1, la funzione somma, i predicati <math|<math-up|pari>> e <math|<math-up|dispari>>, e una variabile <math|x>. La scrittura
+
+<\equation*>
+∀x.(<math-up|pari>(x)⇒<math-up|dispari>(x+1))
+</equation*>
+
+dice che, qualunque numero sia scelto per <math|x>, se è pari il suo successore è dispari. Il simbolo <math|∀> è il <strong|quantificatore universale>. Per dire che almeno un numero è pari usiamo l'<strong|esistenziale> <math|∃x.<math-up|pari>(x)>.
+
+Per scrivere queste formule servono nomi per numeri fissati (<strong|costanti>), posti per numeri ancora da scegliere (<strong|variabili>), operazioni (<strong|funzioni>) e proprietà o relazioni (<strong|predicati>). Sono gli ingredienti del linguaggio del primo ordine, insieme a connettivi e quantificatori.
+
+Ogni funzione e ogni predicato richiede un certo numero di argomenti, chiamato <strong|arietà>. Il successore ne richiede uno, la somma due, il predicato «minore» due. Un predicato senza argomenti, di arietà zero, si comporta come una lettera proposizionale.
+
+La scrittura <math|s(s(x))> indica il successore del successore di <math|x>. Indica un numero: non è ancora una frase vera o falsa. Una scrittura che indica un oggetto si chiama <strong|termine>.
+
+Ogni costante e ogni variabile è un termine. Possiamo poi applicare una funzione ai termini già costruiti: se <math|f> richiede <math|n> argomenti, da <math|t<rsub|1>,…,t<rsub|n>> otteniamo il termine <math|f(t<rsub|1>,…,t<rsub|n>)>.
+
+Nell’esempio applichiamo prima <math|s> a <math|x>, ottenendo <math|s(x)>, poi ancora <math|s> al risultato. La stessa regola si usa due volte.
+
+Le <strong|formule atomiche> applicano un predicato a termini: <math|<math-up|pari>(s(s(x)))> oppure <math|x‹y>. Da queste, da <math|T,F>, e dai connettivi costruiamo formule come prima. La nuova regola consente, data una formula <math|P>, di costruire <math|∀x.P> ed <math|∃x.P>. Quantificatori consecutivi uguali si possono abbreviare, per esempio <math|∀x,y.P>.
+
+<\concetto|Termine e formula>
+Un termine indica un individuo; una formula esprime una condizione vera o falsa. Le funzioni prendono individui e restituiscono individui; i predicati prendono individui e restituiscono valori booleani. <math|x+1> è un termine, <math|<math-up|pari>(x+1)> una formula. <math|<math-up|pari>(x)+1> non rispetta questi ruoli.
+</concetto>
+
+<section|Portata, variabili libere e sostituzione>
+
+In <math|∀x.P> la formula <math|P> è la <strong|portata> del quantificatore. Un'occorrenza di <math|x> è <strong|legata> quando si trova nella portata di un quantificatore su <math|x>; altrimenti è <strong|libera>. Se vi sono quantificatori annidati con lo stesso nome, conta quello più interno che comprende l'occorrenza.
+
+In <math|(∀x.p(x))∧q(x,y)> la prima <math|x> è legata; la seconda <math|x> e <math|y> sono libere. Dunque una stessa lettera può avere occorrenze con ruoli diversi. Una formula è <strong|chiusa> se non ha variabili libere, <strong|aperta> altrimenti. La formula <math|x+1=2> dipende dal valore esterno di <math|x>; <math|∃x.x+1=2> afferma invece l'esistenza di un valore adatto.
+
+<figura|@IMG(portata,0.85)|Le frecce identificano il quantificatore che lega ogni occorrenza. Nella formula illustrata tutte le <math|y> sono legate, tutte le <math|z> libere; la <math|x> esterna a <math|∃x> rimane libera.>
+
+La notazione <math|P[t/x]> significa: sostituisci il termine <math|t> alle occorrenze <em|libere> di <math|x> in <math|P>. Non cambiamo le occorrenze già governate da un quantificatore interno su <math|x>. Inoltre nessuna variabile libera del termine inserito deve diventare legata per effetto della sostituzione: sarebbe una <strong|cattura>.
+
+Vediamo un caso che spiega la precauzione. In <math|P=∃y.x‹y> vogliamo sostituire <math|y> a <math|x>. Scrivere <math|∃y.y‹y> sarebbe sbagliato: la <math|y> inserita, che doveva restare libera, è stata catturata. Prima rinominiamo il segnaposto legato: <math|∃z.x‹z>. Ora sostituiamo e otteniamo <math|∃z.y‹z>. Sui naturali questa formula dice correttamente che il numero <math|y> ha un numero più grande.
+
+Possiamo quindi cambiare il nome di una variabile legata, purché il nuovo nome non crei altri legami. Questa operazione è la <strong|ridenominazione delle variabili legate>.
+
+Se <math|z> non compare in <math|P>, possiamo scrivere
+
+<\equation*>
+∀x.P≡∀z.P[z/x].
+</equation*>
+
+Nella portata <math|P> sostituiamo soltanto le occorrenze libere di <math|x>, cioè quelle governate dall’universale esterno. Il nome è un segnaposto: conta quali occorrenze dipendono dal quantificatore.
+
+<section|Interpretazioni: i simboli ricevono un significato>
+
+La formula <math|∀x.p(x)> non dice ancora quali oggetti consideriamo né quale proprietà esprima <math|p>. Dobbiamo scegliere un dominio non vuoto <math|D> e dare un significato ai simboli. Queste scelte formano un’<strong|interpretazione>, che scriviamo <math|I=(D,α)>.
+
+Ogni costante indica un elemento di <math|D>. Una funzione con <math|n> argomenti prende <math|n> elementi del dominio e ne restituisce uno. Deve essere definita su tutte le scelte: è una funzione <em|totale> <math|D<rsup|n>→D>.
+
+Un predicato con <math|n> argomenti prende gli stessi dati, ma restituisce vero o falso: è una funzione <math|D<rsup|n>→<math-up|Bool>>. Qui <math|D<rsup|n>> raccoglie le liste ordinate di <math|n> elementi di <math|D>. Per l’uguaglianza useremo il significato usuale: due termini sono uguali se indicano lo stesso individuo.
+
+Il dominio conta anche per gli elementi senza nome. Se <math|D={5,10,15}> e <math|p> significa «essere multiplo di 5», <math|∀x.p(x)> è vera. Se ampliamo il dominio a <math|ℕ> e manteniamo lo stesso significato, la formula è falsa: 7 è un controesempio. Avere costanti che nominano soltanto 5, 10 e 15 non elimina gli altri numeri dal dominio dei quantificatori.
+
+Costanti diverse possono indicare lo stesso individuo, se non imponiamo che siano distinti. Simboli dall'aspetto familiare, come <math|+>, non hanno automaticamente l'interpretazione aritmetica: occorre dichiararla. Nel seguito, quando lavoriamo sui numeri e sui programmi, useremo esplicitamente quella usuale.
+
+<section|Formalizzare: tutti, alcuni, esattamente uno>
+
+Prendiamo come dominio le persone e come predicati <math|S(x)>: «<math|x> segue FPL», <math|C(x)>: «<math|x> va al cinema». 
+
+«Tutti gli studenti di FPL vanno al cinema» diventa <math|∀x.(S(x)⇒C(x))>. Una persona che non segue FPL non è un controesempio: l'enunciato non la riguarda. 
+
+«Qualche studente di FPL va al cinema» diventa invece <math|∃x.(S(x)∧C(x))>: il testimone deve soddisfare entrambe le condizioni.
+
+Questo spiega le abbreviazioni della <strong|quantificazione ristretta>:
+
+<\equation*>
+(∀x:S(x).C(x))≡(∀x.(S(x)⇒C(x))),
+</equation*>
+
+<\equation*>
+(∃x:S(x).C(x))≡(∃x.(S(x)∧C(x))).
+</equation*>
+
+Usare un'implicazione nell'esistenziale darebbe un significato diverso: basterebbe una persona che non segue FPL, anche se nessuno studente andasse al cinema. 
+
+Usare una congiunzione nell’universale imporrebbe invece che tutte le persone seguano FPL.
+
+<subsection|Dire che l’eccezione è una sola>
+
+«Tutti tranne uno» richiede sia un'eccezione sia la sua unicità. Costruiamo prima la proprietà dell'eccezione, <math|E(x)=S(x)∧¬C(x)>. Dire «esattamente uno studente di FPL non va al cinema» significa
+
+<\equation*>
+∃x.(E(x)∧∀y.(E(y)⇒y=x)).
+</equation*>
+
+La prima parte dà un'eccezione; la seconda impone che ogni eccezione coincida con essa. Equivalentemente possiamo dire che tutti gli altri studenti vanno al cinema. Senza la seconda parte avremmo detto soltanto «almeno uno».
+
+<subsection|Una relazione fra più individui>
+
+Il dominio e il vocabolario si scelgono in funzione della domanda. Per «due persone sono parenti se hanno un antenato comune» servono predicati binari <math|A(z,x)>: «<math|z> è antenato di <math|x>» e <math|R(x,y)>: «sono parenti». L'antenato senza nome diventa una variabile:
+
+<\equation*>
+∀x,y.((∃z.(A(z,x)∧A(z,y)))⇒R(x,y)).
+</equation*>
+
+«Se» dà questa direzione; «se e solo se» ne imporrebbe anche un'altra. La formalizzazione richiede dunque interpretare il senso della frase, poi controllare che la formula dica proprio quello.
+
+<\verifica|3>
+<strong|1.> Nella formula <math|(∀x.p(x,y))∧(∃y.q(x,y))> individua le occorrenze libere e legate. Sostituisci poi <math|y> alle occorrenze libere di <math|x>, evitando catture.
+
+<strong|2.> Sui naturali formalizza «ogni numero pari ha il successore del successore pari», usando la funzione <math|s> di successore. Formalizza poi «esattamente un elemento soddisfa <math|p>», spiegando il compito dell'uguaglianza.
+</verifica>
+
+<chapter|Semantica e dimostrazioni con i quantificatori>
+
+<\inbreve>
+Come controlliamo una formula con «per ogni» o «esiste»? Partiamo dal valore di una variabile e da piccoli domini. Capiremo poi quali passi permettono di dimostrare una proprietà generale e come usare un testimone senza attribuirgli proprietà non giustificate.
+</inbreve>
+
+Per valutare <math|x+1=4> dobbiamo sapere che numero rappresenta <math|x>. Per valutare <math|∃x.x+1=4> dobbiamo invece provare se qualche numero rende vera la condizione. La stessa idea, dare temporaneamente un valore a una variabile, ci permette di definire entrambe le valutazioni.
+
+<section|Assegnamenti e valore di termini e formule>
+
+Fissiamo <math|I=(D,α)>. Un <strong|assegnamento> <math|ρ> associa a ogni variabile un elemento di <math|D>. La scrittura <math|ρ[d/x]> indica l'assegnamento uguale a <math|ρ> sulle altre variabili, ma che dà <math|d> a <math|x>. 
+
+Con <math|ρ(x)=2>, <math|ρ(y)=10>, l'assegnamento <math|ρ[3/x]> dà 3 a <math|x> e ancora 10 a <math|y>.
+
+Il valore di un termine, <math|α<rsub|ρ>(t)>, si calcola dalla sua struttura. Una variabile vale <math|ρ(x)>, una costante vale <math|α(c)>; per <math|f(t<rsub|1>,…,t<rsub|n>)> calcoliamo prima i termini e poi applichiamo la funzione <math|α(f)> ai risultati. 
+
+Per esempio, se <math|s> è il successore sui naturali e <math|ρ(x)=2>, <math|s(s(x))> vale 4: prima 2, poi 3, infine 4.
+
+Per una formula atomica valutiamo i termini e applichiamo il predicato. Se <math|p> significa «essere pari», <math|p(s(s(x)))> è vera con quell'assegnamento. I connettivi mantengono le tabelle del capitolo 2. Scriviamo <math|I<rsub|ρ>(P)> per il valore della formula. Per i quantificatori:
+
+<\concetto|Semantica dei quantificatori>
+<math|I<rsub|ρ>(∀x.P)> è vero se <math|I<rsub|ρ[d/x]>(P)> è vero per <em|ogni> <math|d∈D>. <math|I<rsub|ρ>(∃x.P)> è vero se ciò accade per <em|almeno un> <math|d∈D>. Altrimenti il rispettivo valore è falso.
+</concetto>
+
+Su un dominio finito <math|{a,b,c}>, un universale si comporta come la congiunzione dei tre casi e un esistenziale come la loro disgiunzione. Un elemento che rende vera la portata di un esistenziale è un <strong|testimone>. Un elemento che rende falsa quella di un universale è un controesempio.
+
+Consideriamo <math|D={a,b}>, con <math|Q> vera su entrambi gli elementi, e <math|P(x,y)> vera soltanto quando <math|x=a>. Vogliamo valutare
+
+<\equation*>
+∃x.(Q(x)∧∀y.P(x,y)).
+</equation*>
+
+Cerchiamo un elemento che soddisfi entrambe le richieste. Scegliamo <math|a>: <math|Q(a)> è vera, e per l'universale interno controlliamo <math|P(a,a)> e <math|P(a,b)>, entrambe vere. Dunque <math|a> è un testimone e la formula è vera. Con <math|b> la verifica fallirebbe; ciò non cancella il testimone già trovato.
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.7em>|<cwith|1|-1|1|-1|cell-rsep|0.7em>|<table|<row|<cell|P(x,y)>|<cell|y=a>|<cell|y=b>>|<row|<cell|x=a>|<cell|<math-up|t>>|<cell|<math-up|t>>>|<row|<cell|x=b>|<cell|<math-up|f>>|<cell|<math-up|f>>>>>>
+</equation*>
+
+La riga di <math|a> è tutta vera: per l'universale interno serve tutta la riga, per l'esistenziale esterno ne basta una.
+
+Una formula dipende soltanto dai valori assegnati alle sue variabili libere. Perciò una formula chiusa non dipende da <math|ρ>, e scriviamo semplicemente <math|I(P)>. Le nozioni di modello, soddisfacibilità e conseguenza logica si estendono come nel capitolo 2.
+
+Una formula chiusa è <strong|valida> se è vera in tutte le interpretazioni. 
+
+Per una formula aperta, dire che è valida significa richiedere la verità per ogni interpretazione e per ogni assegnamento alle variabili libere. Questo è il senso in cui useremo le leggi schematiche. 
+
+Essere vera sui naturali con le operazioni usuali è meno esigente: <math|∀x.x+1›x> vi è vera, ma non per qualunque interpretazione dei simboli.
+
+<section|Negazione, distribuzione e domini ristretti>
+
+Negare «tutti soddisfano <math|P>» significa che almeno uno non la soddisfa; negare «almeno uno soddisfa <math|P>» significa che tutti la falliscono. Sono le leggi di De Morgan:
+
+<\equation*>
+¬(∀x.P)≡∃x.¬P,<space|2em>¬(∃x.P)≡∀x.¬P.
+</equation*>
+
+Nella quantificazione ristretta manteniamo il filtro: <math|¬(∀x:R.P)≡∃x:R.¬P>. Non neghiamo <math|R>, perché stiamo cercando proprio fra gli elementi ammessi. 
+
+Se nessun elemento soddisfa <math|R>, <math|∀x:R.P> è <strong|vacuamente vera>: non ci sono controesempi ammessi. <math|∃x:R.P> è falsa: manca ogni testimone. In particolare, «tutti gli elementi dell'array vuoto sono positivi» non afferma che nell'array vi siano elementi.
+
+Un universale distribuisce su <math|∧>: ogni individuo soddisfa entrambe le condizioni esattamente quando tutti soddisfano la prima e tutti la seconda. Dualmente l'esistenziale distribuisce su <math|∨>:
+
+<\equation*>
+(∀x.(P∧Q))≡((∀x.P)∧(∀x.Q)),
+</equation*>
+
+<\equation*>
+(∃x.(P∨Q))≡((∃x.P)∨(∃x.Q)).
+</equation*>
+
+<subsection|Perché alcuni versi non si possono invertire>
+
+Un testimone che soddisfa entrambe le proprietà può essere usato separatamente per ciascuna:
+
+<\equation*>
+(∃x.(P∧Q))⇒((∃x.P)∧(∃x.Q)).
+</equation*>
+
+Il viceversa non vale. Sui naturali esistono numeri pari ed esistono numeri dispari, ma non esiste un numero che sia entrambe le cose: i due esistenziali possono avere testimoni diversi.
+
+Per l’universale vale invece
+
+<\equation*>
+((∀x.P)∨(∀x.Q))⇒∀x.(P∨Q).
+</equation*>
+
+Anche qui il viceversa fallisce. Ogni intero è pari o dispari; questo non significa che tutti gli interi siano pari, né che tutti siano dispari.
+
+<subsection|Una parte che non dipende dalla variabile>
+
+Se <math|x> non è libera in <math|Q>, il valore di <math|Q> non cambia mentre varia <math|x>. Possiamo quindi portare questa parte fuori dal quantificatore. Per esempio:
+
+<\equation*>
+(∀x.(P∧Q))≡((∀x.P)∧Q),
+</equation*>
+
+<\equation*>
+(∃x.(P∨Q))≡((∃x.P)∨Q).
+</equation*>
+
+Qui usiamo il dominio non vuoto. La stessa ipotesi serve per togliere un quantificatore da una formula che non dipende affatto da <math|x>: <math|∀x.Q≡Q> ed <math|∃x.Q≡Q>.
+
+Se ammettessimo domini vuoti, <math|∀x.F> sarebbe vera e <math|∃x.T> falsa. Non potremmo quindi sostituirle con <math|F> e <math|T>.
+
+<subsection|L’ordine cambia la scelta del testimone>
+
+I quantificatori dello stesso tipo si scambiano: <math|∀x.∀y.P≡∀y.∀x.P>, e analogamente per due esistenziali. 
+
+Scambiare tipi diversi cambia invece la scelta che possiamo fare. Sui naturali <math|∀x.∃y.x‹y> è vera: dopo aver visto <math|x>, scegliamo <math|y=x+1>. 
+
+<math|∃y.∀x.x‹y> è falsa: un solo <math|y> dovrebbe superare anche sé stesso. 
+
+Vale sempre il verso da un testimone comune a testimoni che possono dipendere da <math|x>:
+
+<\equation*>
+(∃y.∀x.P(x,y))⇒(∀x.∃y.P(x,y)).
+</equation*>
+
+<section|Regole di prova: individui particolari e generici>
+
+Sapere che una proprietà vale per tutti permette di applicarla a un termine particolare. Da <math|∀x.P> ricaviamo <math|P[t/x]>: è l’<strong|eliminazione dell’universale>.
+
+Viceversa, se abbiamo un caso che soddisfa la proprietà, sappiamo che un caso esiste. Da <math|P[t/x]> ricaviamo <math|∃x.P>: è l’<strong|introduzione dell’esistenziale>. Le sostituzioni devono sempre evitare la cattura.
+
+Per esempio, «tutti gli uomini sono mortali» si applica a Socrate. Otteniamo «se Socrate è uomo, è mortale». Sapendo che è uomo, il modus ponens dà la conclusione.
+
+<subsection|Dimostrare una proprietà per tutti>
+
+Per dimostrare <math|∀x.P> non basta verificare un individuo noto. Prendiamo un nome nuovo <math|d>, senza attribuirgli proprietà particolari, e dimostriamo <math|P[d/x]>.
+
+Se il ragionamento vale senza ipotesi particolari su <math|d>, possiamo concludere che vale per tutti: è la <strong|generalizzazione>. Il nome deve essere assente dalla formula generale da dimostrare e dalle ipotesi ancora utilizzate.
+
+Un’ipotesi è <em|aperta> finché il risultato dipende da essa. La <em|chiudiamo>, o <em|scarichiamo>, quando una regola permette di eliminarla dal gruppo delle premesse. L’esempio seguente mostra concretamente questa distinzione.
+
+<subsection|Usare un oggetto di cui sappiamo l’esistenza>
+
+Per usare <math|∃x.P> come premessa possiamo dare al testimone un nome nuovo <math|d>, assumere temporaneamente <math|P[d/x]>, e ricavare una conclusione che non nomini <math|d>. 
+
+Il corso chiama questo passo <strong|skolemizzazione>; qui è la regola di uso di un testimone esistenziale. Il nome deve essere nuovo anche rispetto alla conclusione. Non stiamo affermando la legge <math|(∃x.P)⇒P[d/x]> per una costante prefissata: sarebbe falsa.
+
+<subsection|Una prova con un testimone temporaneo>
+
+Supponiamo di sapere che ogni oggetto con proprietà <math|P> ha anche proprietà <math|Q>, e che almeno un oggetto ha proprietà <math|P>. Vogliamo dimostrare che almeno un oggetto ha proprietà <math|Q>.
+
+Indichiamo con <math|Γ> le due premesse, che rimangono disponibili in tutta la prova:
+
+<\equation*>
+Γ={∀x.(P(x)⇒Q(x)),∃x.P(x)}.
+</equation*>
+
+<strong|1. Diamo un nome al testimone.> L’esistenziale non ci dice quale oggetto scegliere. Lo chiamiamo <math|d>, usando un nome nuovo, e apriamo l’ipotesi temporanea <math|H:P(d)>. Non affermiamo che una costante già nota soddisfi <math|P>.
+
+<strong|2. Usiamo la regola generale su quell’oggetto.> Dalla prima premessa, eliminando l’universale, ricaviamo <math|P(d)⇒Q(d)>. In questo momento le ipotesi aperte sono ancora <math|Γ> e <math|H>.
+
+<strong|3. Ricaviamo la proprietà cercata.> Con <math|H> e il modus ponens otteniamo <math|Q(d)>. Introducendo l’esistenziale concludiamo:
+
+<\equation*>
+Γ,H⊢∃x.Q(x).
+</equation*>
+
+<strong|4. Chiudiamo l’ipotesi sul testimone.> La conclusione non nomina <math|d> e nessuna premessa di <math|Γ> lo nomina. Il ragionamento funziona quindi per qualunque testimone garantito da <math|∃x.P(x)>. La regola di eliminazione dell’esistenziale chiude <math|H> e lascia
+
+<\equation*>
+Γ⊢∃x.Q(x).
+</equation*>
+
+Restano aperte le due premesse iniziali: la conclusione dipende da esse. Si è chiusa soltanto l’ipotesi locale <math|P(d)>. Non possiamo concludere <math|∀x.Q(x)>: <math|d> era un testimone con una proprietà particolare, non un individuo generico.
+
+<subsection|Che cosa garantisce un sistema di prova>
+
+Un <strong|sistema di dimostrazione> raccoglie le regole di inferenza che possiamo usare. Una regola consente di passare da certe premesse a una conclusione; una regola senza premesse è un assioma.
+
+Scriviamo <math|Γ⊢P> quando esiste una sequenza di passi consentiti che parte dalle premesse <math|Γ> e arriva a <math|P>. Questa è una proprietà delle prove scritte, distinta da <math|Γ⊨P>, che riguarda la verità nelle interpretazioni.
+
+Il sistema è <strong|corretto> se tutto ciò che possiamo derivare è conseguenza logica delle premesse. È <strong|completo> se possiamo derivare ogni conseguenza logica.
+
+Per il proposizionale si hanno entrambe le proprietà. Per il sistema presentato nel corso usiamo la correttezza. Esistono sistemi completi anche per il primo ordine, ma non un procedimento che decida sempre, in un numero finito di passi, la validità di una formula arbitraria.
+
+<subsection|Dall’ipotesi all’implicazione>
+
+Se assumiamo <math|H> e ricaviamo <math|Q>, possiamo chiudere l’ipotesi e concludere <math|H⇒Q>, rispettando le condizioni delle regole di quantificazione. Questo è il contenuto del <strong|teorema di deduzione>. Le altre premesse usate restano disponibili e il risultato continua a dipendere da esse.
+
+Anche le sostituzioni richiedono attenzione alle ipotesi. Sotto un quantificatore possiamo usare un’equivalenza, o le polarità del capitolo 2, solo se la relazione vale per tutti i valori esaminati.
+
+Sapere <math|P(x)> per il solo valore attuale di <math|x> non autorizza a sostituire <math|P(x)> con <math|T> dentro <math|∀x.P(x)>. Il quantificatore deve considerare anche gli altri valori.
+
+<section|Uguaglianza e asserzioni sugli stati>
+
+Con l'interpretazione usuale dell'uguaglianza, <math|t=u> è vera quando i termini indicano lo stesso elemento. La <strong|legge di Leibniz> dice che sostituire un individuo con uno uguale non cambia le proprietà:
+
+<\equation*>
+x=y⇒(P≡P[y/x]).
+</equation*>
+
+La sostituzione riguarda le occorrenze libere e non deve catturare variabili. In particolare, <math|x=y> insieme a <math|P> permette di concludere <math|P[y/x]>. Per esempio, <math|x=y> ed <math|x›0> danno <math|y›0>.
+
+Le <strong|leggi del singoletto> precisano che quantificare su un solo individuo equivale a sostituirlo. Per nomi di variabile distinti <math|x,y>, sempre evitando catture:
+
+<\equation*>
+(∀x.(x=y⇒P))≡P[y/x],
+</equation*>
+
+<\equation*>
+(∃x.(x=y∧P))≡P[y/x].
+</equation*>
+
+Nella seconda formula l'unico possibile testimone è il valore di <math|y>: se soddisfa <math|P>, l'esistenziale è vero; se non la soddisfa, nessun altro valore può sostituirlo, perché violerebbe <math|x=y>. La prima formula controlla lo stesso unico individuo mediante un'implicazione.
+
+Siamo pronti a parlare dei programmi. Un'asserzione come <math|x≥0∧y›0> è una formula aperta; uno stato fornisce i valori delle variabili di programma, come un assegnamento. Scriviamo <math|σ⊨P> se <math|P> è vera con quei valori nell'interpretazione numerica usuale. Il prossimo capitolo userà coppie di asserzioni per distinguere ciò che chiediamo prima di un programma da ciò che vogliamo ottenere dopo.
+
+<subsection|Per proseguire: leggi sui domini e indebolimento>
+
+Per verificare una proprietà sull'unione di due gruppi, la verifichiamo su entrambi: <math|(∀x:P∨Q.R)≡((∀x:P.R)∧(∀x:Q.R))>. Per trovare un testimone nell'unione basta trovarlo in uno dei gruppi: la legge esistenziale scambia <math|∧> esterna con <math|∨>. Anche le leggi distributive già viste e De Morgan valgono con uno stesso filtro ristretto.
+
+L'indebolimento mantiene la direzione consueta: <math|(∀x.P)⇒∀x.(P∨Q)>, <math|(∃x.P)⇒∃x.(P∨Q)>, e dalle versioni con <math|P∧Q> possiamo sempre conservare soltanto <math|P>. I quantificatori non invertono la polarità: una relazione valida per tutti gli individui può essere trasportata nelle loro portate.
+
+<\verifica|4>
+<strong|1.> Nega <math|∀x.(p(x)⇒∃y.q(x,y))>, portando la negazione fino agli atomi. Spiega che cosa dovresti trovare per mostrare falsa la formula iniziale.
+
+<strong|2.> Su <math|D={a,b}>, la relazione <math|R> è vera soltanto per <math|(a,b)> e <math|(b,a)>. Valuta <math|∀x.∃y.R(x,y)> ed <math|∃y.∀x.R(x,y)>. Mostra poi con un esempio perché da <math|P(d)> per una costante già nota non si può sempre generalizzare a <math|∀x.P(x)>.
+</verifica>
+
+<chapter|Stati, espressioni e comandi>
+
+<\inbreve>
+Che cosa accade quando eseguiamo un comando? Abbiamo già distinto il nome di una variabile dal suo valore. Ora seguiremo letture, assegnamenti, scelte e ripetizioni, precisando anche quando un’esecuzione non arriva a un risultato.
+</inbreve>
+
+Per capire un programma dobbiamo seguire due operazioni diverse: leggere un valore e modificare un valore. Nell'espressione <tt|x + 1> leggiamo <tt|x> e calcoliamo un numero. Nel comando <tt|x := x + 1> usiamo quel numero per aggiornare <tt|x>. Il segno <tt|:=> indica un'azione, mentre <math|=> nelle asserzioni indica un'uguaglianza.
+
+<section|Lo stato e la valutazione delle espressioni>
+
+Uno stato <math|σ> associa valori agli identificatori del programma. Per esempio <math|σ(x)=10> e <math|σ(y)=3>. Nel linguaggio considerato i valori sono interi o booleani: <math|<math-up|Val>=ℤ∪<math-up|Bool>>. I due valori booleani sono vero e falso. Lavoriamo con interi matematici, senza un limite di memoria o fenomeni di traboccamento.
+
+Si possono descrivere stati parziali, che non assegnano un valore a tutti i nomi possibili. Nel seguito ogni identificatore letto si assume presente nello stato e del tipo dichiarato. Questa ipotesi sarà importante quando diremo che la lettura di una variabile è sempre definita.
+
+Le espressioni partono da costanti intere, dai valori booleani <tt|true>, <tt|false> e dai nomi delle variabili. Possiamo combinarle con parentesi e operatori. I nomi <tt|true> e <tt|false> sono riservati ai due valori booleani.
+
+Gli operatori <tt|+>, <tt|->, <tt|*>, <tt|div> e <tt|mod> operano sugli interi. I confronti e gli operatori logici producono booleani.
+
+Le precedenze usuali distinguono <tt|8 + 5 * 3> da <tt|(8 + 5) * 3>: il primo vale 23, il secondo 39. Nel dubbio, le parentesi rendono visibile quale operazione viene prima.
+
+Prima di eseguire un'espressione controlliamo i tipi. <tt|(x + 5) and (x › y)> può rispettare la grammatica, ma <tt|and> richiede due booleani e <tt|x + 5> è un intero. Il controllo dei tipi è detto <strong|semantica statica>: analizza la forma senza eseguire il programma. Da qui in poi consideriamo espressioni correttamente tipate.
+
+Scriviamo <math|ℰ(E,σ)> per il valore dell'espressione <math|E> nello stato <math|σ>. Per calcolare <tt|(x + 1) * y> nello stato dell'esempio, leggiamo <math|σ(x)=10>, otteniamo <math|10+1=11>, leggiamo <math|σ(y)=3> e infine moltiplichiamo: <math|11·3=33>. Lo stato non cambia.
+
+La definizione generale segue la costruzione dell'espressione:
+
+<\equation*>
+ℰ(x,σ)=σ(x),<space|2em>ℰ(E+E',σ)=ℰ(E,σ)+ℰ(E',σ).
+</equation*>
+
+Le costanti indicano i valori corrispondenti; <tt|true> indica vero e <tt|false> falso. Gli altri operatori si interpretano nello stesso modo, applicando l'operazione ai valori degli argomenti; le parentesi non cambiano il valore e <tt|not> nega un booleano. 
+
+Qui <tt|and> e <tt|or> valutano entrambi gli argomenti: non assumiamo il cortocircuito di alcuni linguaggi reali.
+
+<subsection|Un’espressione può non avere valore>
+
+Il controllo dei tipi non impedisce ogni errore. <tt|x div (y - 3)> richiede correttamente due interi; ma con <math|y=3> tenta una divisione per zero. Per alcune coppie espressione-stato il valore non esiste: perciò <math|ℰ> è una <strong|funzione parziale>. Indichiamo il valore mancante con <math|⊥>.
+
+Precisiamo anche la divisione intera. Se <math|a≥0> e <math|b›0>, <tt|a div b> è il quoziente e <tt|a mod b> è il resto non negativo minore di <math|b>. Per esempio,
+
+<\equation*>
+17<space|0.3em><math-up|div><space|0.3em>5=3,<space|2em>17<space|0.3em>mod<space|0.3em>5=2.
+</equation*>
+
+Tutti gli esempi di divisione del libro usano questi segni. Per dare un significato anche agli altri casi, fissiamo, per qualsiasi intero <math|a> e qualsiasi <math|b≠0>, la convenzione
+
+<\equation*>
+a<space|0.3em><math-up|div><space|0.3em>b=⌊a/b⌋,<space|1em>a<space|0.3em>mod<space|0.3em>b=a-b⌊a/b⌋.
+</equation*>
+
+Il simbolo <math|⌊u⌋> indica il più grande intero non maggiore di <math|u>. Questa scelta rende precisa la semantica del nostro linguaggio; non è una regola attribuita al C.
+
+<section|Assegnamento, sequenza e perdita di informazione>
+
+La scrittura <math|σ[v/x]> indica lo stato uguale a <math|σ> su tutti i nomi tranne <math|x>, al quale associa <math|v>. Il comando <tt|x := E> prima valuta tutta <math|E> nello stato vecchio, poi aggiorna <math|x>. Per esempio, da <math|x=10,y=3>, il comando <tt|x := x + y> produce <math|x=13,y=3>.
+
+<\concetto|Espressioni e comandi>
+Un'espressione legge lo stato e calcola un valore. Un comando viene eseguito e, se termina con successo, produce uno stato. Un assegnamento sostituisce il vecchio valore della variabile destinazione.
+</concetto>
+
+Una sequenza <tt|C; D> esegue prima <tt|C>, poi <tt|D> nello stato raggiunto. Per questo <tt|x := y; y := x> non scambia i valori. Da <math|x=10,y=20>, il primo comando porta a <math|x=20,y=20>; il secondo legge il nuovo <math|x=20> e lascia ancora <math|y=20>. Il vecchio 10 è stato perso.
+
+Per conservarlo lo copiamo prima in una variabile ausiliaria:
+
+<\verbatim>
+temp := x;<no-page-break>
+
+x := y;<no-page-break>
+
+y := temp
+</verbatim>
+
+Dopo il primo comando <tt|temp> contiene 10; dopo il secondo <tt|x> contiene 20; dopo il terzo <tt|y> recupera 10. La necessità dell'appoggio nasce dal fatto che ogni comando legge lo stato corrente, non quello iniziale.
+
+<figura|@IMG(scambio)|Lo scambio conserva temporaneamente il valore che il secondo assegnamento sovrascriverà. Le frecce seguono la direzione dell'esecuzione.>
+
+<section|Scelte e ripetizioni: if e while>
+
+Il comando <tt|skip> non fa nulla e lascia lo stato invariato. Il condizionale <tt|if E then C else D fi> valuta la guardia booleana <math|E>. Se è vera esegue soltanto <math|C>; se è falsa esegue soltanto <math|D>. Se la guardia non è definita, non può scegliere il ramo.
+
+Per ottenere il valore assoluto di <tt|x> in <tt|r> usiamo:
+
+<\verbatim>
+if x › 0 then r := x else r := -x fi
+</verbatim>
+
+Con <math|x=7> scegliamo il primo ramo e otteniamo <math|r=7>. Con <math|x=-7> scegliamo il secondo e otteniamo ancora <math|r=7>. Con <math|x=0> la guardia è falsa e il secondo ramo assegna <math|-0=0>. La variabile <tt|x> resta invariata.
+
+Il ciclo <tt|while E do C endw> controlla la guardia prima di ogni eventuale esecuzione del corpo <math|C>. Se è falsa, esce subito. Se è vera, esegue il corpo e torna a controllare la guardia nello stato nuovo. Non decide in anticipo il numero di ripetizioni.
+
+<figura|@IMG(while-srotolato)|Ogni freccia rappresenta un'intera esecuzione del corpo. Il controllo della guardia avviene anche nello stato iniziale; il primo controllo falso conclude il ciclo.>
+
+Consideriamo una potenza, con <math|<math-up|base>=2> ed <math|<math-up|esp>=3>:
+
+<\verbatim>
+ris := 1;<no-page-break>
+
+while esp › 0 do<no-page-break>
+
+<hspace|2.100em>ris := ris * base;<no-page-break>
+
+<hspace|2.100em>esp := esp - 1<no-page-break>
+
+endw
+</verbatim>
+
+Al primo controllo abbiamo <math|(<math-up|ris>,<math-up|esp>)=(1,3)>. Il corpo moltiplica il risultato per 2 e diminuisce l'esponente residuo: i controlli successivi incontrano <math|(2,2)>, <math|(4,1)> e <math|(8,0)>. Nell'ultimo stato la guardia è falsa, quindi il risultato è 8. 
+
+Se l’esponente iniziale è zero, il corpo non viene eseguito e rimane 1, come richiede <math|A<rsup|0>=1>.
+
+La traccia spiega questa esecuzione, ma non prova il risultato per ogni esponente. Per farlo cercheremo una relazione che leghi sempre il prodotto già calcolato al lavoro ancora da svolgere: sarà l'idea di invariante.
+
+<section|La semantica dei comandi e le esecuzioni senza risultato>
+
+Scriviamo <math|𝒞(C,σ)> per lo stato finale prodotto da <math|C> a partire da <math|σ>. Per i primi costrutti:
+
+<\equation*>
+𝒞(<text|skip>,σ)=σ,
+</equation*>
+
+<\equation*>
+𝒞(<text|x := E>,σ)=σ[ℰ(E,σ)/x],
+</equation*>
+
+<\equation*>
+𝒞(C;D,σ)=𝒞(D,𝒞(C,σ)).
+</equation*>
+
+La formula della sequenza rispecchia l’ordine dei comandi: lo stato prodotto da <math|C> viene passato a <math|D>. Per il condizionale si sceglie <math|𝒞(C,σ)> oppure <math|𝒞(D,σ)> secondo il valore della guardia.
+
+Per il ciclo <math|W≡<text|while E do C endw>> distinguiamo due casi. Se la guardia è falsa, non si esegue il corpo e lo stato resta quello iniziale:
+
+<\equation*>
+𝒞(W,σ)=σ.
+</equation*>
+
+Se la guardia è vera, si esegue prima <math|C> e poi si ricomincia lo stesso ciclo nello stato ottenuto:
+
+<\equation*>
+𝒞(W,σ)=𝒞(W,𝒞(C,σ)).
+</equation*>
+
+La seconda clausola richiama il ciclo stesso. Descrive il risultato quando le valutazioni necessarie sono definite e si raggiunge un controllo falso.
+
+Anche <math|𝒞> è parziale: non tutte le esecuzioni producono uno stato finale. Può verificarsi un errore, come in <tt|x := 1 div 0>, oppure il calcolo può continuare per sempre.
+
+Consideriamo
+
+<\verbatim>
+while x ›= y do x := x + 1 endw
+</verbatim>
+
+Se all’inizio <math|x≥y>, ogni giro aumenta ancora <math|x>: la guardia resta sempre vera e il ciclo non termina. Se invece <math|x‹y>, la guardia è subito falsa e si esce senza eseguire il corpo.
+
+Il ciclo con <tt|x := x - 1> al posto dell'incremento termina per ogni coppia di interi: <math|y> resta fisso e <math|x> diminuisce di uno finché diventa minore di <math|y>. La prova generale di questa affermazione richiederà una misura naturale del lavoro residuo, introdotta nel capitolo 7.
+
+<subsection|Tre modi di descrivere un programma>
+
+Quando seguiamo i singoli passi dell’esecuzione usiamo la <strong|semantica operazionale>. Quando associamo a ogni comando la funzione parziale che porta dallo stato iniziale a quello finale usiamo la <strong|semantica denotazionale>.
+
+Nel capitolo seguente descriveremo il comportamento con proprietà vere prima e dopo i comandi. Le regole che collegano queste proprietà formano la <strong|semantica assiomatica>.
+
+<\verifica|5>
+<strong|1.> Esegui <tt|x := x + y; y := x - y; x := x - y> da <math|x=3,y=7>. Poi usa valori iniziali generici <math|A,B> per spiegare il comportamento per tutti gli interi.
+
+<strong|2.> Per <tt|while x ≠ 0 do x := x - 2 endw>, confronta le esecuzioni da <math|x=4> e da <math|x=5>. Che cosa mostra l'esempio sulla necessità di controllare la terminazione?
+</verifica>
+
+<chapter|Triple di Hoare e invarianti dei cicli>
+
+<\inbreve>
+Come possiamo garantire il risultato per tutti gli ingressi ammessi? Sappiamo descrivere uno stato con una formula e seguire l’esecuzione dei comandi. Le triple di Hoare collegano ciò che chiediamo prima del programma a ciò che vogliamo sapere dopo.
+</inbreve>
+
+Con <math|x=17,y=5> possiamo seguire una divisione fino a ottenere quoziente 3 e resto 2. Per usare il programma su altri dati vogliamo di più: una prova che copra tutti gli ingressi ammessi.
+
+<section|Precondizione, postcondizione e correttezza>
+
+Un’<strong|asserzione> è una formula sulle variabili del programma. Scriviamo <math|σ⊨P> per dire che <math|P> è vera nello stato <math|σ>.
+
+Per esempio, con <math|σ(x)=18> e <math|σ(z)=-8>, la formula <math|x›0∧z‹0> diventa <math|18›0∧-8‹0> ed è vera. Indichiamo con <math|P<rsup|σ>> la formula valutata usando i valori dello stato.
+
+La verità dipende soltanto dalle variabili libere di <math|P>: cambiare un’altra variabile non può modificarla. Allo stesso modo, il valore di un’espressione dipende soltanto dai nomi che essa legge.
+
+<\concetto|Tripla di Hoare>
+La tripla <math|{P}<space|0.5em>C<space|0.5em>{Q}> collega una <strong|precondizione> <math|P>, un comando <math|C> e una <strong|postcondizione> <math|Q>.
+
+In <strong|correttezza totale>, ogni esecuzione da uno stato che soddisfa <math|P> termina con successo e soddisfa <math|Q> all’uscita.
+
+In <strong|correttezza parziale>, da uno stato che soddisfa <math|P>, ogni esecuzione che arriva a uno stato finale soddisfa <math|Q>.
+</concetto>
+
+La seconda nozione non garantisce che uno stato finale esista. Nella convenzione semantica qui adottata, errori ed esecuzioni infinite non producono uno stato finale: una prova soltanto parziale non esclude neppure gli errori. Manteniamo quindi espliciti i controlli di definitezza quando vogliamo un'esecuzione con successo. Scriveremo <math|⊨<rsub|tot>> oppure <math|⊨<rsub|par>> se occorre distinguere le due letture.
+
+La tripla <math|{x›1}<space|0.5em><text|x := x + 1><space|0.5em>{x›2}> è totalmente corretta: il nuovo valore è il precedente più uno, quindi supera 2. La tripla <math|{x=5}<space|0.5em><text|x := x + 1><space|0.5em>{x=5}> è falsa: l'unico valore finale possibile di <math|x> è 6.
+
+Possiamo usare una tripla per descrivere un comando, cercando <math|Q>; per costruire un programma, cercando <math|C>; oppure per verificare una proposta, avendo già tutti e tre gli elementi. 
+
+<subsection|Il valore finale e quello iniziale>
+
+Una postcondizione va letta nello stato finale. Così <math|{x›0}<space|0.5em>C<space|0.5em>{y=2x}> ammette anche <tt|y := 10; x := 5>.
+
+Se desideriamo il doppio dell'ingresso, dobbiamo fissarlo con una variabile di specifica: <math|{x=A∧A›0}<space|0.5em>C<space|0.5em>{y=2A}>. La lettera <math|A> resta fissata durante la prova e non compare nei comandi.
+
+<section|Conseguenza e definitezza delle espressioni>
+
+Se un programma funziona su tutti gli stati con <math|x›0>, funziona anche su quelli con <math|x›10>, che sono meno. È il <strong|rafforzamento della precondizione>. 
+
+Se garantisce <math|x=5>, garantisce anche <math|x›0>, che chiede meno: è l'<strong|indebolimento della postcondizione>. La regola di conseguenza riunisce queste osservazioni:
+
+<\equation*>
+<frac|P⇒P'<space|1em>{P'} C {Q'}<space|1em>Q'⇒Q|{P} C {Q}>.
+</equation*>
+
+Le implicazioni sono richieste per tutti gli stati considerati. In termini di insiemi, gli stati di <math|P> sono contenuti in quelli di <math|P'>; gli stati di <math|Q'> sono contenuti in quelli di <math|Q>. Non possiamo allargare arbitrariamente gli ingressi o pretendere conclusioni più forti.
+
+<figura|@IMG(pre-post)|Una precondizione più forte restringe i punti di partenza; una postcondizione più debole amplia i risultati ammessi.>
+
+Per garantire che un'espressione <math|E> abbia valore introduciamo l'asserzione <math|<math-up|def>(E)>. Le costanti e le variabili presenti nello stato sono definite. Per somme, prodotti, differenze, confronti e operatori booleani occorre che siano definiti gli argomenti. Per divisione e resto occorre anche il divisore non nullo:
+
+<\equation*>
+<math-up|def>(E<space|0.3em><math-up|div><space|0.3em>D)
+≡<math-up|def>(E)∧<math-up|def>(D)∧D≠0.
+</equation*>
+
+La stessa clausola vale per <tt|mod>. Per negazione e parentesi basta la definitezza dell'espressione interna. Per esempio, <math|<math-up|def>(x<space|0.3em><math-up|div><space|0.3em>(z-y))> equivale a <math|z≠y>: la sottrazione è definita, ma il suo risultato non deve essere zero. Con valutazione senza cortocircuito, <tt|x ≠ 0 and y div x › 1> richiede comunque <math|x≠0> per essere definita.
+
+<section|Assegnamento: ragionare a partire dal risultato>
+
+Vogliamo garantire <math|x›y> dopo <tt|x := x + 2>. Il valore finale di <math|x> sarà il vecchio <math|x+2>. Dobbiamo dunque chiedere, prima, <math|x+2›y>. Non stiamo sostituendo il programma con una formula: stiamo descrivendo la condizione che il suo risultato deve soddisfare.
+
+In generale <math|Q[E/x]> sostituisce <math|E> alle occorrenze libere di <math|x> in <math|Q>, senza catturare variabili. Rinominiamo prima eventuali variabili quantificate che ostacolano la sostituzione. Se <math|E> è definita, vale la proprietà fondamentale:
+
+<\equation*>
+σ[ℰ(E,σ)/x]⊨Q<text| se e solo se >σ⊨Q[E/x].
+</equation*>
+
+A sinistra valutiamo <math|Q> dopo l'aggiornamento; a destra anticipiamo nella formula il valore che verrà assegnato. Questa proprietà giustifica l'assioma dell'assegnamento:
+
+<\equation*>
+{<math-up|def>(E)∧Q[E/x]}<space|0.6em><text|x := E><space|0.6em>{Q}.
+</equation*>
+
+La definitezza assicura che il comando produca uno stato; la sostituzione assicura che quel risultato soddisfi <math|Q>.
+
+Se abbiamo già una precondizione <math|P>, dobbiamo dimostrare <math|P⇒<math-up|def>(E)∧Q[E/x]>. La regola di conseguenza permette poi di usare <math|P> come ingresso.
+
+Per <tt|x := 5> e postcondizione <math|x=5>, la sostituzione dà <math|5=5>, sempre vera. Non serve alcuna richiesta sul vecchio valore di <math|x>.
+
+Per <tt|x := 1 div y>, invece, serve <math|y≠0> anche se la postcondizione non legge <math|x>: in correttezza totale dobbiamo comunque escludere l’errore.
+
+Il comando <tt|skip> ha l'assioma <math|{P}<space|0.5em><text|skip><space|0.5em>{P}>: nessun valore cambia, quindi ogni asserzione vera prima resta vera dopo.
+
+<section|Sequenza: trovare l'asserzione intermedia>
+
+Per provare <math|{P}<space|0.5em>C;D<space|0.5em>{Q}> cerchiamo un'asserzione <math|R> tale che <math|{P} C {R}> e <math|{R} D {Q}>. Il primo comando consegna al secondo uno stato nelle condizioni che gli servono. È la regola della sequenza.
+
+Riprendiamo lo scambio, con <math|x=N∧y=M> all’ingresso e <math|x=M∧y=N> all’uscita. Il programma ha la forma <tt|t := E; x := y; y := t>. Quale valore deve salvare il primo comando?
+
+Partiamo dall’ultimo assegnamento. Dopo <tt|y := t> vogliamo <math|y=N>, quindi prima ci serve <math|t=N>. La richiesta su <math|x> resta la stessa, perché il comando non lo cambia.
+
+Risaliamo poi attraverso <tt|x := y>. Per ottenere <math|x=M> dopo questo passo, prima deve valere <math|y=M>. Le condizioni prima dei tre comandi sono dunque:
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.7em>|<cwith|1|-1|1|-1|cell-rsep|0.7em>|<table|<row|<cell|<text|Comando>>|<cell|<text|Condizione prima del comando>>>|<row|<cell|<text|y := t>>|<cell|x=M∧t=N>>|<row|<cell|<text|x := y>>|<cell|y=M∧t=N>>|<row|<cell|<text|t := E>>|<cell|y=M∧E=N>>>>>
+</equation*>
+
+Il primo comando deve anche avere un’espressione definita. L’ingresso offre <math|x=N>: scegliamo <math|E=x>. Leggiamo la variabile di programma <tt|x>; <math|N> serve soltanto alla prova e non può comparire nei comandi.
+
+Con <math|N=3,M=7> l’esecuzione va da <math|(x,y)=(3,7)> a <math|(7,3)>, passando per <math|t=3>. L’esecuzione procede dall’alto verso il basso nel programma; la ricerca delle condizioni è partita invece dall’ultimo comando.
+
+Un esempio più breve è <tt|x := x + 1; y := y - 1>, con risultato <math|x›y>. Prima dell'ultimo comando serve <math|x›y-1>; prima del primo serve <math|x+1›y-1>. La precondizione <math|x≥y-1> è sufficiente, perché dà <math|x+1≥y›y-1>. La regola non esige che la precondizione data sia esattamente quella calcolata: basta che la implichi.
+
+<section|Condizionale: utilizzare l'informazione della guardia>
+
+Per verificare <tt|if E then C else D fi> con ingresso <math|P> e uscita <math|Q> controlliamo che <math|P⇒<math-up|def>(E)>. Poi dimostriamo <math|{P∧E} C {Q}> e <math|{P∧¬E} D {Q}>. Ogni ramo riceve l'informazione che ha determinato la scelta.
+
+Vogliamo che <math|m> contenga il massimo di <math|x,y>. Usiamo
+
+<\verbatim>
+if x ‹ y then m := y else m := x fi
+</verbatim>
+
+La guardia è definita. Nel primo ramo sappiamo <math|x‹y>: assegnare <math|y> a <math|m> dà il massimo. Nel secondo sappiamo <math|x≥y>: assegnare <math|x> dà ancora il massimo.
+
+Non serve conoscere il vecchio valore di <math|m>, perché entrambi i rami lo sostituiscono.
+
+<subsection|Una guardia che richiede una divisione>
+
+Consideriamo una scelta che usa la divisione:
+
+<\verbatim>
+if x div y › 0 then m := x else m := y fi
+</verbatim>
+
+L’ipotesi <math|x≥0∧y≥0> non basta: permette <math|y=0>, con cui la guardia non ha valore. Chiediamo invece <math|x≥0∧y›0>.
+
+Con questi vincoli, <math|x<space|0.3em><math-up|div><space|0.3em>y›0> equivale a <math|x≥y>. Nel ramo vero scegliamo quindi il massimo <math|x>; nel ramo falso scegliamo il massimo <math|y>.
+
+L’ipotesi sul divisore ha due ruoli: rende possibile la valutazione e permette di leggere correttamente il confronto.
+
+<section|Invariante e correttezza parziale del while>
+
+Passiamo alla divisione mediante sottrazioni, con <math|x≥0>, <math|y›0> e <math|x,y> non modificati:
+
+<\verbatim>
+q := 0; r := x;<no-page-break>
+
+while r ›= y do<no-page-break>
+
+<hspace|2.100em>q := q + 1;<no-page-break>
+
+<hspace|2.100em>r := r - y<no-page-break>
+
+endw
+</verbatim>
+
+Da <math|x=17,y=5> otteniamo ai controlli le coppie <math|(q,r)=(0,17),(1,12),(2,7),(3,2)>. Che cosa collega queste righe? Ogni volta aumenta di 5 la quantità <math|qy> e diminuisce di 5 il resto <math|r>. Si conserva <math|x=qy+r>. 
+
+Inoltre <math|r≥0>: il corpo sottrae <math|y> solo quando <math|r≥y>.
+
+Scegliamo perciò <math|I≡(x=qy+r∧r≥0∧y›0)>. È un <strong|invariante>: vale dopo l'inizializzazione e viene ripristinato dopo ogni intera esecuzione del corpo. 
+
+Dopo il solo incremento di <math|q> l'uguaglianza può essere falsa; torna vera dopo la sottrazione da <math|r>. Il punto in cui la richiediamo è il controllo della guardia.
+
+<figura|@IMG(invariante)|La proprietà deve valere prima del controllo e dopo l'intero corpo. All'uscita aggiungiamo l'informazione che la guardia è falsa.>
+
+<subsection|Perché l’invariante vale anche all’uscita>
+
+La regola generale, in correttezza parziale, è
+
+<\equation*>
+<frac|{I∧E}<space|0.4em>C<space|0.4em>{I}|{I}<space|0.4em><text|while E do C endw><space|0.4em>{I∧¬E}>.
+</equation*>
+
+Perché funziona? Prima della prima iterazione vale <math|I>. Se vale prima di un giro eseguito, è vera anche <math|E> e la premessa ripristina <math|I>. Ripetendo questo ragionamento per il numero di giri effettivamente completati, <math|I> vale a ogni controllo raggiunto.
+
+Se il ciclo produce uno stato finale, in quello stato la guardia è falsa: otteniamo <math|I∧¬E>. È un ragionamento per induzione sul numero di iterazioni, senza dover conoscere quel numero in anticipo.
+
+Per una specifica generale servono anche ingresso e uscita: <math|P⇒I> e <math|I∧¬E⇒Q>. Nella divisione la guardia falsa dà <math|r‹y>; insieme all'invariante otteniamo <math|x=qy+r∧0≤r‹y>. La prova descrive il risultato di ogni esecuzione che arriva all'uscita. Nel prossimo capitolo dimostriamo che quell'uscita viene raggiunta con successo.
+
+<\verifica|6>
+<strong|1.> Calcola una precondizione che garantisca <math|y›10> dopo <tt|y := x * 2>. Verifica poi se <math|x≥6> è sufficiente. Motiva con l'assioma, senza limitarti a provare alcuni valori.
+
+<strong|2.> La precondizione <math|z=5∧x=3> garantisce <math|z›4> dopo <tt|x := 0; y := z div x> in correttezza totale? Calcola all'indietro il controllo di definitezza e spiega la risposta.
+</verifica>
+
+<chapter|Correttezza totale e funzioni di terminazione>
+
+<\inbreve>
+Come dimostriamo che un ciclo arriva all’uscita? Nella divisione abbiamo visto che il resto diminuisce. Cercheremo una quantità naturale che scenda a ogni giro e useremo questa idea per completare le prove di correttezza.
+</inbreve>
+
+Nella divisione ogni sottrazione riduce il resto. Questo fatto suggerisce perché il ciclo debba finire, ma dobbiamo precisare che cosa diminuisce e perché non può diminuire per sempre. L'invariante descrive la relazione che vogliamo conservare; una funzione di terminazione descrive il progresso verso l'uscita.
+
+<section|Una quantità naturale che diminuisce>
+
+Con <math|x=17,y=5>, il resto ai controlli è <math|17,12,7,2>. È sempre un intero non negativo e diminuisce strettamente a ogni giro eseguito. Una sequenza di questo genere non può essere infinita: partendo da un naturale <math|k>, dopo ogni diminuzione intera si perde almeno uno, quindi non si possono compiere più di <math|k> diminuzioni senza scendere sotto zero.
+
+<\concetto|Funzione di terminazione>
+Una funzione di terminazione associa agli stati considerati una quantità <math|t> intera, definita e non negativa. Se ogni iterazione completata la fa diminuire strettamente, e ogni iterazione termina con successo, il ciclo non può eseguire infinite iterazioni.
+</concetto>
+
+<subsection|Perché chiediamo un numero naturale>
+
+La sola diminuzione non basta. La successione di interi <math|0,-1,-2,…> diminuisce senza fermarsi; serve il limite inferiore. Neppure essere reale e positivo basta: <math|1,1/2,1/4,…> è una successione infinita strettamente decrescente. La scelta dei naturali contiene quindi una parte essenziale dell'argomento.
+
+<subsection|Confrontare il valore vecchio e quello nuovo>
+
+Per confrontare il valore prima e dopo il corpo usiamo una variabile di specifica fresca <math|V>. Nella premessa <math|t=V> essa memorizza il valore di partenza; nessun comando può modificarla. Il progresso si scrive
+
+<\equation*>
+{I∧E∧t=V}<space|0.5em>C<space|0.5em>{t‹V}.
+</equation*>
+
+Non significa che il programma debba conservare <math|t>. Significa che la prova può confrontare il nuovo valore di <math|t> con il suo valore vecchio, rimasto fissato in <math|V>.
+
+<section|La regola del while in correttezza totale>
+
+Una prova totale deve garantire tre fatti: ogni controllo della guardia ha valore; ogni corpo che viene iniziato termina con successo; il numero di iterazioni è finito. Ecco gli obblighi per <math|{P}<space|0.4em>W<space|0.4em>{Q}>, dove <math|W> è <tt|while E do C endw>:
+
+<\enumerate>
+<item><strong|Ingresso.> <math|P⇒I∧<math-up|def>(E)>: prima del primo controllo valgono l'invariante e la definitezza della guardia.
+
+<item><strong|Preservazione.> <math|{I∧E} C {I∧<math-up|def>(E)}> in correttezza totale: il corpo termina con successo e prepara il controllo successivo.
+
+<item><strong|Limite inferiore.> <math|I⇒t≥0>, con <math|t> intera e definita negli stati di <math|I>.
+
+<item><strong|Progresso.> <math|{I∧E∧t=V} C {t‹V}> in correttezza totale, per ogni valore fissato di <math|V>.
+
+<item><strong|Uscita.> <math|I∧¬E⇒Q>: quando il ciclo si ferma, le informazioni rimaste danno il risultato richiesto.
+</enumerate>
+
+La preservazione garantisce che il ragionamento possa continuare a ogni controllo. Se la guardia rimanesse sempre vera, otterremmo infinite diminuzioni fra naturali, impossibili. Dunque incontriamo un controllo falso; l'invariante e l'uscita danno <math|Q>. 
+
+Quando un’inizializzazione precede il ciclo, il primo obbligo è una tripla sul comando iniziale, anziché un'implicazione diretta.
+
+<section|Divisione intera: completare la prova>
+
+Riprendiamo <tt|q := 0; r := x> e il corpo <tt|q := q + 1; r := r - y>, con guardia <math|r≥y>. L'invariante è <math|I≡(x=qy+r∧r≥0∧y›0)> e scegliamo <math|t=r>. La positività di <math|y> compare nell'invariante perché la useremo per dimostrare il progresso a ogni giro.
+
+<subsection|Inizializzazione e conservazione>
+
+L’inizializzazione stabilisce <math|x=0·y+x> e <math|r=x≥0>. La guardia contiene solo un confronto fra variabili e quindi è definita. 
+
+Per verificare che l’invariante si conservi, indichiamo con <math|q,r> i valori prima del corpo e con <math|q',r'> quelli dopo. La sequenza produce <math|q'=q+1> e <math|r'=r-y>. Perciò
+
+<\equation*>
+q'y+r'=(q+1)y+(r-y)=qy+r=x.
+</equation*>
+
+La guardia <math|r≥y> assicura <math|r'≥0>. Il corpo non assegna a <math|y>, quindi <math|y›0> resta vera. Somma e sottrazione sono definite e terminano: abbiamo provato la conservazione dell’invariante con un’esecuzione che termina con successo.
+
+<subsection|Progresso e risultato>
+
+Dall’invariante abbiamo <math|t=r≥0>. Se prima del corpo <math|r=V>, dopo vale <math|r'=V-y‹V>, perché <math|y›0>. Abbiamo così la diminuzione stretta. All'uscita la guardia falsa dà <math|r‹y>; insieme all'invariante otteniamo
+
+<\equation*>
+x=qy+r∧0≤r‹y.
+</equation*>
+
+Questa è precisamente la caratterizzazione del quoziente e del resto della divisione di <math|x> per <math|y>. Il programma termina e li calcola per ogni <math|x≥0,y›0>. Con <math|y=0>, invece, la guardia sarebbe sempre vera e la sottrazione non cambierebbe <math|r>: fallirebbe il progresso. L'ipotesi sul divisore ha dunque un motivo concreto.
+
+<figura|@IMG(scala)|Per <math|x=17,y=5> il resto scende da 17 a 2. Il limite inferiore e la diminuzione intera spiegano la terminazione; l'invariante spiega il significato del risultato.>
+
+<section|Somma dei primi interi: scegliere l'invariante>
+
+Vogliamo sommare gli interi da 0 a <math|n-1>, con <math|n≥0> non modificato. Invece di memorizzare tutti gli addendi, teniamo la somma degli addendi già attraversati e l'indice del prossimo:
+
+<\verbatim>
+x := 0; s := 0;<no-page-break>
+
+while x ‹ n do<no-page-break>
+
+<hspace|2.100em>s := s + x;<no-page-break>
+
+<hspace|2.100em>x := x + 1<no-page-break>
+
+endw
+</verbatim>
+
+Prima del controllo, <math|x> è il prossimo intero da aggiungere. Gli addendi già inclusi sono dunque <math|0,1,…,x-1>. Questa lettura suggerisce
+
+<\equation*>
+I≡s=<big|sum><rsub|i=0><rsup|x-1>i∧0≤x≤n.
+</equation*>
+
+La somma è vuota e vale zero quando <math|x=0>. L'inizializzazione è quindi corretta. I limiti su <math|x> servono sia a interpretare la parte già percorsa sia a riconoscere il punto finale.
+
+<subsection|Preparare il giro successivo>
+
+Per conservare l’invariante chiediamoci che cosa deve valere prima dell'ultimo comando <tt|x := x + 1>. Sostituendo <math|x+1> a <math|x> nell'invariante otteniamo
+
+<\equation*>
+s=<big|sum><rsub|i=0><rsup|x>i∧0≤x+1≤n.
+</equation*>
+
+Prima di <tt|s := s + x> serve quindi
+
+<\equation*>
+s+x=<big|sum><rsub|i=0><rsup|x>i∧0≤x+1≤n.
+</equation*>
+
+La prima uguaglianza viene dall'invariante e dall'identità
+
+<\equation*>
+<big|sum><rsub|i=0><rsup|x>i=<big|sum><rsub|i=0><rsup|x-1>i+x.
+</equation*>
+
+La guardia <math|x‹n>, insieme a <math|0≤x> e al fatto che <math|x,n> sono interi, dà <math|0≤x+1≤n>. Abbiamo verificato entrambe le richieste; tutte le espressioni sono definite.
+
+<subsection|Quanto lavoro rimane?>
+
+Per la terminazione prendiamo <math|t=n-x>, il numero di addendi ancora da attraversare. Da <math|x≤n> segue <math|t≥0>. Un giro aumenta <math|x> di uno e lascia <math|n> fisso, quindi il nuovo valore è <math|V-1‹V>. All'uscita <math|x≥n> e <math|x≤n> danno <math|x=n>: l'invariante diventa la somma richiesta. Per <math|n=0> non eseguiamo alcun giro e otteniamo correttamente zero.
+
+È essenziale l'ordine degli assegnamenti: aggiungiamo il vecchio <math|x>, poi lo incrementiamo. Scambiandoli sommeremmo gli interi da 1 a <math|n>, risolvendo un problema diverso.
+
+<section|Programmi annotati e proprietà non modificate>
+
+Annotare un programma significa scrivere asserzioni nei punti utili alla prova. Per la somma possiamo indicare <math|I> e <math|t=n-x> prima del <tt|while>, <math|I∧x‹n> all'ingresso del corpo, l'asserzione intermedia appena ricavata fra i due assegnamenti e <math|I∧x≥n> dopo il ciclo. Queste scritte non vengono eseguite: dichiarano gli obblighi che il lettore deve giustificare.
+
+Spesso serve trasportare un'informazione che il comando non tocca. Sia <math|<math-up|change>(C)> l'insieme dei nomi che compaiono come destinazione di un assegnamento in <math|C>. Sono nomi che il comando potrebbe modificare, anche se un particolare ramo non viene eseguito.
+
+Con <math|<math-up|free>(R)> indichiamo le variabili libere dell’asserzione <math|R>. Se
+
+<\equation*>
+<math-up|free>(R)∩<math-up|change>(C)=∅,
+</equation*>
+
+la verità di <math|R> non cambia durante un'esecuzione con successo di <math|C>. Dalla tripla <math|{P} C {Q}> possiamo dunque ricavare <math|{R∧P} C {R∧Q}>. La condizione sulle variabili è ciò che giustifica il passaggio. Nella divisione il corpo assegna solo a <math|q,r>, quindi conserva <math|y›0>.
+
+<subsection|Combinare due garanzie>
+
+Possiamo anche combinare prove dello stesso comando. Da <math|{P<rsub|1>} C {Q<rsub|1>}> e <math|{P<rsub|2>} C {Q<rsub|2>}> ricaviamo <math|{P<rsub|1>∧P<rsub|2>} C {Q<rsub|1>∧Q<rsub|2>}>: uno stato che soddisfa entrambi gli ingressi gode di entrambe le garanzie sul risultato.
+
+Da <math|{P} C {Q}> e <math|{R} C {Q}> ricaviamo <math|{P∨R} C {Q}>: distinguiamo quale ingresso vale e applichiamo la prova corrispondente. In questo linguaggio deterministico la stessa esecuzione finale permette di congiungere le conclusioni.
+
+<subsection|Per proseguire: eliminare gli incroci>
+
+Un esempio geometrico mostra che la funzione di terminazione va scelta pensando al problema, non soltanto al codice. Sono fissati <math|N> punti blu e <math|N> punti rossi distinti, senza tre punti allineati. Vogliamo abbinarli con segmenti fra colori diversi, senza incroci. 
+
+Partiamo da un abbinamento qualsiasi; finché due segmenti si incrociano, sostituiamoli con i due collegamenti non incrociati che rispettano i colori.
+
+L'invariante afferma che ogni punto appartiene esattamente a un segmento e ogni segmento unisce colori diversi. Lo scambio lo conserva: ricongiunge gli stessi quattro estremi, ciascuno una sola volta. All'uscita non ci sono incroci, quindi l'obiettivo è raggiunto, se il procedimento termina.
+
+Contare gli incroci non offre direttamente una prova di progresso: togliere l'incrocio scelto può crearne con altri segmenti. Consideriamo invece la somma delle lunghezze. Se <math|AB> e <math|CD> si incontrano in <math|E> e i colori consentono i nuovi segmenti <math|AD,CB>, la disuguaglianza triangolare dà
+
+<\equation*>
+ℓ(AD)‹ℓ(AE)+ℓ(ED),<space|1em>ℓ(CB)‹ℓ(CE)+ℓ(EB).
+</equation*>
+
+Le disuguaglianze sono strette: i triangoli coinvolti non sono degeneri, per l'ipotesi di non allineamento. Sommando, la nuova lunghezza totale è strettamente minore di quella vecchia. Gli altri segmenti restano invariati.
+
+<figura|@IMG(incroci)|I percorsi spezzati che passano per <math|E> sono più lunghi dei nuovi collegamenti rettilinei. Il risparmio riguarda la lunghezza totale.>
+
+Le lunghezze sono reali, quindi la sola positività non basterebbe. Qui però i punti sono fissati e gli abbinamenti possibili sono finiti: <math|N!>, perché a ciascun blu associamo un diverso rosso. Anche i valori della lunghezza totale sono finiti in numero.
+
+Una diminuzione stretta impedisce di tornare a un valore precedente e quindi non può continuare all'infinito. Questa è una prova completa di terminazione basata sulla finitezza dello spazio degli stati possibili.
+
+<\verifica|7>
+<strong|1.> Per <tt|while i ‹ n do i := i + 1 endw>, con <math|I≡0≤i≤n> e <math|n> fisso, proponi una funzione di terminazione e verifica limite inferiore, progresso e uscita.
+
+<strong|2.> Nel programma della somma scambia i due assegnamenti del corpo. Trova un invariante che descriva la somma ora calcolata e spiega il risultato finale, compreso il caso <math|n=0>.
+</verifica>
+
+<chapter|Costruire un ciclo: il significato delle variabili>
+
+<\inbreve>
+Come troviamo un ciclo, prima ancora di verificarlo? Partiamo dal risultato desiderato e da esempi piccoli. Sceglieremo che cosa devono ricordare le variabili durante il calcolo, poi costruiremo i comandi che mantengono quel significato.
+</inbreve>
+
+<section|Dalla postcondizione a una proprietà da conservare>
+
+Per ottenere il quoziente della divisione di 17 per 5, possiamo sottrarre ripetutamente 5 e contare le sottrazioni. Dopo due passi abbiamo tolto 10 e rimane 7: l'uguaglianza <math|17=2·5+7> racconta dove siamo arrivati. Il resto non è ancora piccolo abbastanza, ma l'uguaglianza è già vera.
+
+Questo spiega la scelta fatta nel capitolo precedente: separare la relazione da conservare, <math|x=qy+r∧r≥0>, dalla condizione da raggiungere, <math|r‹y>. La prima diventa un invariante, insieme al vincolo <math|y›0>; la seconda suggerisce la guardia opposta, <tt|r ›= y>. 
+
+Introdurre <math|r> rende visibile il testimone dell'esistenziale che caratterizza il quoziente: esiste un resto con <math|x=qy+r> e <math|0≤r‹y>.
+
+In generale cerchiamo due proprietà <math|I> e <math|G> tali che <math|I∧G> implichi la postcondizione. Vogliamo conservare <math|I> e continuare finché <math|G> è falsa. Occorrono poi un'inizializzazione che stabilisca <math|I>, un corpo che la ristabilisca e una prova di terminazione. La guardia deve essere un'espressione del linguaggio, quindi non ogni scomposizione matematica è utilizzabile.
+
+<\concetto|Invariante come significato delle variabili>
+Un buon invariante spiega che cosa rappresentano i valori presenti durante il calcolo. Si rafforza con i vincoli necessari per leggere le espressioni, eseguire il passo successivo e dimostrare la terminazione.
+</concetto>
+
+<section|Fattoriale: ricordare il prodotto già calcolato>
+
+Il fattoriale <math|n!> è il prodotto da 1 a <math|n>; per convenzione <math|0!=1>. Supponiamo <math|n≥0> intero e non modificato. Per <math|n=4> vogliamo ottenere in successione <math|1>, <math|1·1>, <math|1·1·2>, <math|1·1·2·3>, <math|1·1·2·3·4>. Serve una variabile per il prodotto e una per il prossimo fattore.
+
+<\verbatim>
+fatt := 1; x := 1;<no-page-break>
+
+while x ‹= n do<no-page-break>
+
+<hspace|2.100em>fatt := fatt * x;<no-page-break>
+
+<hspace|2.100em>x := x + 1<no-page-break>
+
+endw
+</verbatim>
+
+Prima di usare il fattore <math|x>, sono già stati moltiplicati gli interi fino a <math|x-1>. Cerchiamo dunque
+
+<\equation*>
+I≡<math-up|fatt>=(x-1)!∧1≤x≤n+1.
+</equation*>
+
+Il limite inferiore 1 assicura che il fattoriale nell'asserzione abbia un argomento naturale. Il limite superiore <math|n+1> include lo stato finale: dopo aver usato <math|n>, il contatore avanza ancora una volta.
+
+<subsection|Controllare il significato del prodotto>
+
+All’inizio <math|x=1> e <math|<math-up|fatt>=1=0!>; inoltre <math|1≤n+1>. 
+
+Supponiamo ora che <math|I> valga e che <math|x≤n>. La prima assegnazione produce <math|<math-up|fatt>'=(x-1)!·x=x!>. La seconda porta <math|x> a <math|x'=x+1>. La relazione da ritrovare è <math|<math-up|fatt>'=(x'-1)!>, ed è proprio l'uguaglianza appena ottenuta. 
+
+Anche i limiti si conservano: <math|1≤x'≤n+1>.
+
+<subsection|Fermarsi dopo l’ultimo fattore>
+
+La quantità <math|n+1-x> è un intero non negativo sotto <math|I> e diminuisce di 1 a ogni giro. Tutte le espressioni del corpo e della guardia sono definite. Il ciclo termina. 
+
+All’uscita <math|x›n>; insieme a <math|x≤n+1> e al fatto che <math|x,n> sono interi, questo dà <math|x=n+1>. Dunque <math|<math-up|fatt>=n!>.
+
+Per <math|n=0> non si entra nel ciclo e si conserva il risultato 1. La funzione <math|n-x> scenderebbe invece a <math|-1> nello stato finale: per la regola adottata nel corso, che chiede non negatività sotto tutto l'invariante, scegliamo <math|n+1-x>.
+
+<section|MCD: trasformare i dati conservando la risposta>
+
+Il massimo comune divisore di 18 e 12 è anche il massimo comune divisore di 6 e 12. Infatti un intero divide 18 e 12 se e solo se divide <math|18-12> e 12: una direzione usa la differenza, l'altra la somma <math|18=(18-12)+12>. Sottrarre il minore dal maggiore conserva quindi tutti i divisori comuni.
+
+Con <math|a,b›0> interi e non modificati, lavoriamo su due copie:
+
+<\verbatim>
+x := a; y := b;<no-page-break>
+
+while x != y do<no-page-break>
+
+<hspace|2.100em>if x › y<no-page-break>
+
+<hspace|4.200em>then x := x - y<no-page-break>
+
+<hspace|4.200em>else y := y - x<no-page-break>
+
+<hspace|2.100em>fi<no-page-break>
+
+endw
+</verbatim>
+
+Il risultato da conservare non è una somma già accumulata: è il MCD dei due valori di lavoro. Scegliamo
+
+<\equation*>
+I≡x›0∧y›0∧<math-up|mcd>(x,y)=<math-up|mcd>(a,b).
+</equation*>
+
+L'inizializzazione rende vera questa proprietà. Se <math|x›y>, allora <math|x-y›0> e la proprietà dei divisori comuni appena dimostrata conserva il MCD. 
+
+Se si esegue l’altro ramo, sappiamo sia <math|x≠y> sia <math|¬(x›y)>: perciò <math|x‹y>, e vale il ragionamento simmetrico. La guardia è importante anche per giustificare questo secondo caso.
+
+<subsection|Una somma che diminuisce>
+
+Come misurare il lavoro che rimane? Non serve sapere quanti passi occorreranno: basta una quantità che scenda. <math|x+y> è positiva sotto <math|I>. Nel primo ramo il suo nuovo valore è <math|(x-y)+y=x>, strettamente minore del vecchio <math|x+y>; nel secondo è <math|y>, ancora minore. Quindi il ciclo termina.
+
+All'uscita <math|x=y›0>, e il MCD di due numeri positivi uguali è quel numero. L'invariante dà <math|x=<math-up|mcd>(a,b)>. Per esempio, da <math|(x,y)=(12,18)> passiamo a <math|(12,6)> e poi a <math|(6,6)>.
+
+<section|Radice cubica: costruire potenze con differenze>
+
+Dato un intero <math|x≥0>, vogliamo l’intero <math|r≥0> per cui <math|r<rsup|3>≤x‹(r+1)<rsup|3>>. Con <math|x=10>, i cubi sono <math|0,1,8,27>: la risposta è 2, perché <math|8≤10‹27>.
+
+Proviamo i cubi in ordine, fino al primo che supera <math|x>. Per passare da un cubo al successivo usando soltanto somme sfruttiamo
+
+<\equation*>
+(b+1)<rsup|3>=b<rsup|3>+3b<rsup|2>+3b+1.
+</equation*>
+
+Il solo cubo non basta: ci serve anche il quadrato. Conserviamo perciò l’indice in <math|b>, il quadrato in <math|a> e il cubo in <math|y>. Per aggiornare il quadrato usiamo <math|(b+1)<rsup|2>=b<rsup|2>+2b+1>.
+
+<\verbatim>
+a := 0; b := 0; y := 0;<no-page-break>
+
+while y ‹= x do<no-page-break>
+
+<hspace|2.100em>y := y + 3*a + 3*b + 1;<no-page-break>
+
+<hspace|2.100em>a := a + 2*b + 1;<no-page-break>
+
+<hspace|2.100em>b := b + 1<no-page-break>
+
+endw
+</verbatim>
+
+L’ordine conta: <tt|y> legge i vecchi <tt|a> e <tt|b>; poi <tt|a> legge il vecchio <tt|b>; soltanto alla fine aumentiamo <tt|b>.
+
+<subsection|Seguire il calcolo per 10>
+
+Ai controlli della guardia otteniamo:
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.8em>|<cwith|1|-1|1|-1|cell-rsep|0.8em>|<table|<row|<cell|b>|<cell|a=b<rsup|2>>|<cell|y=b<rsup|3>>|<cell|y≤10>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|<text|vero>>>|<row|<cell|1>|<cell|1>|<cell|1>|<cell|<text|vero>>>|<row|<cell|2>|<cell|4>|<cell|8>|<cell|<text|vero>>>|<row|<cell|3>|<cell|9>|<cell|27>|<cell|<text|falso>>>>>>
+</equation*>
+
+Guardiamo l’ultimo giro. Si parte da <math|a=4,b=2,y=8>. Il primo comando calcola <math|8+3·4+3·2+1=27>; il secondo calcola <math|4+2·2+1=9>; il terzo porta <math|b> a 3. Al controllo successivo usciamo.
+
+La variabile <math|b> ha superato la risposta di uno. Il cubo attuale supera 10, ma il precedente, <math|2<rsup|3>=8>, era ancora ammesso. Questo è il fatto da ricordare nell’invariante.
+
+<subsection|Ricordare anche il cubo precedente>
+
+Ai controlli vogliamo conservare
+
+<\equation*>
+I≡a=b<rsup|2>∧y=b<rsup|3>∧(b-1)<rsup|3>≤x∧b≥0∧x≥0.
+</equation*>
+
+All’inizio <math|a=b=y=0>. La condizione sul cubo precedente vale perché <math|(b-1)<rsup|3>=-1≤x>. Non indica un cubo già provato dal programma: permette soltanto di usare la stessa formula anche nello stato iniziale.
+
+Supponiamo vera la guardia. Le due identità sulle potenze assicurano che i nuovi valori siano il quadrato e il cubo del nuovo indice <math|b'=b+1>.
+
+Resta il cubo precedente. Prima del giro sappiamo <math|b<rsup|3>=y≤x>, grazie alla guardia. Dopo il giro il cubo precedente è proprio <math|(b'-1)<rsup|3>=b<rsup|3>>. Anche questa parte di <math|I> è quindi conservata; i limiti <math|b'≥0,x≥0> rimangono veri.
+
+<subsection|Come trovare una quantità che diminuisce>
+
+Il cubo <math|y> cresce. Verrebbe da misurare quanto manca a <math|x> con <math|x-y>, ma nell’ultimo stato questa quantità è negativa: per 10 diventerebbe <math|10-27=-17>. Non rispetta la non negatività richiesta sotto tutto l’invariante.
+
+L’invariante ci offre un’altra quantità: il cubo <em|precedente> non supera mai <math|x>. La distanza <math|x-(b-1)<rsup|3>> è quindi sempre non negativa. Aggiungiamo 1 e scegliamo
+
+<\equation*>
+t=x+1-(b-1)<rsup|3>.
+</equation*>
+
+Così <math|t≥1> in ogni stato di <math|I>, compreso quello finale. Con <math|x=10> possiamo controllare la scelta sulle stesse quattro righe:
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.8em>|<cwith|1|-1|1|-1|cell-rsep|0.8em>|<table|<row|<cell|b>|<cell|(b-1)<rsup|3>>|<cell|t=11-(b-1)<rsup|3>>>|<row|<cell|0>|<cell|-1>|<cell|12>>|<row|<cell|1>|<cell|0>|<cell|11>>|<row|<cell|2>|<cell|1>|<cell|10>>|<row|<cell|3>|<cell|8>|<cell|3>>>>>
+</equation*>
+
+La traccia suggerisce la diminuzione; ora la dimostriamo per ogni giro. Dopo il corpo <math|b'=b+1>, quindi <math|t'=x+1-b<rsup|3>>. Sottraendo troviamo
+
+<\equation*>
+t-t'=b<rsup|3>-(b-1)<rsup|3>=3b(b-1)+1.
+</equation*>
+
+Per <math|b=0> e <math|b=1> il risultato è 1. Per ogni intero <math|b≥2>, il prodotto <math|b(b-1)> è positivo. Dunque <math|t-t'›0> per tutti i valori ammessi: <math|t> scende strettamente.
+
+La guardia e il corpo usano soltanto operazioni sempre definite sugli interi. Ogni giro termina con successo; la funzione naturale <math|t> esclude infiniti giri.
+
+<subsection|Leggere il risultato all’uscita>
+
+Quando usciamo, <math|y›x>. Dall’invariante otteniamo
+
+<\equation*>
+(b-1)<rsup|3>≤x‹b<rsup|3>.
+</equation*>
+
+All’inizio la guardia è vera, perché <math|0≤x>. È stato quindi eseguito almeno un giro e all’uscita <math|b≥1>. La risposta <math|b-1> è non negativa ed è proprio la parte intera della radice cubica.
+
+<\attenzione|Quale variabile contiene la radice?>
+Il ciclo lascia in <tt|b> un valore in più: per <math|x=0> lascia 1, per <math|x=8> lascia 3. Per consegnare la risposta in <tt|b>, aggiungiamo dopo il ciclo <tt|b := b - 1>. L’invariante riguarda il ciclo prima di questa correzione.
+</attenzione>
+
+<section|Fibonacci: conservare il valore che manca>
+
+La successione di Fibonacci parte da <math|<math-up|fib>(0)=0> e <math|<math-up|fib>(1)=1>; ogni termine successivo è la somma dei due precedenti. Per calcolare <math|<math-up|fib>(k)> con <math|k≥1>, vorremmo mantenere <math|x=<math-up|fib>(i)> e far avanzare <math|i> fino a <math|k>.
+
+Il prossimo valore dovrebbe essere <math|<math-up|fib>(i+1)=x+<math-up|fib>(i-1)>. La formula spiega il passo, ma non è ancora un comando: <tt|fib> non è un'operazione del nostro linguaggio. Conserviamo allora il valore mancante in <math|y>. L'invariante diventa
+
+<\equation*>
+I≡x=<math-up|fib>(i)∧y=<math-up|fib>(i-1)∧1≤i≤k.
+</equation*>
+
+Per avanzare vogliamo che il nuovo <math|x> valga il vecchio <math|x+y> e che il nuovo <math|y> valga il vecchio <math|x>. Con <math|x=3,y=2>, i nuovi valori devono essere 5 e 3. La sequenza <tt|x := x+y; y := x> produrrebbe invece 5 e 5. Salviamo prima il vecchio <math|x>:
+
+<\verbatim>
+x := 1; i := 1; y := 0;<no-page-break>
+
+while i != k do<no-page-break>
+
+<hspace|2.100em>temp := x;<no-page-break>
+
+<hspace|2.100em>x := x + y;<no-page-break>
+
+<hspace|2.100em>y := temp;<no-page-break>
+
+<hspace|2.100em>i := i + 1<no-page-break>
+
+endw
+</verbatim>
+
+<figura|@IMG(fibonacci)|La coppia dei termini consecutivi si sposta di un posto. La variabile temporanea permette di usare il vecchio <math|x> anche dopo averlo aggiornato.>
+
+<subsection|Controllare il passo e l’uscita>
+
+L’inizializzazione usa <math|<math-up|fib>(1)=1> e <math|<math-up|fib>(0)=0>. Quindi vale l’invariante. Se siamo nel corpo, <math|1≤i≤k> e <math|i≠k> danno <math|i‹k>.
+
+Indichiamo con un apice i valori dopo il corpo. La somma produce il termine successivo; il temporaneo conserva quello che deve diventare il precedente:
+
+<\equation*>
+x'=<math-up|fib>(i)+<math-up|fib>(i-1)=<math-up|fib>(i+1),
+</equation*>
+
+<\equation*>
+y'=<math-up|fib>(i),<space|2em>i'=i+1.
+</equation*>
+
+Riscrivendo rispetto al nuovo indice ritroviamo <math|x'=<math-up|fib>(i')> e <math|y'=<math-up|fib>(i'-1)>. Inoltre <math|i‹k> assicura <math|1≤i'≤k>: anche i limiti si conservano.
+
+La quantità <math|k-i> è non negativa e diminuisce di 1 a ogni giro. Tutte le operazioni sono definite, quindi il ciclo termina. All’uscita <math|i=k> e l’invariante dà <math|x=<math-up|fib>(k)>.
+
+Per <math|k=1> la guardia è subito falsa e il risultato è già pronto. Il caso <math|k=0> è escluso da questa specifica; la verifica finale chiede come includerlo.
+
+<subsection|Per proseguire: seguire una ricorrenza che dimezza l'indice>
+
+Un altro problema del corso mostra che far crescere un contatore non è sempre la scelta migliore. Definiamo <math|f(0)=0>, <math|f(1)=1>; per <math|j≥2> poniamo <math|f(j)=f(j/2)> se <math|j> è pari e <math|f(j)=f((j-1)/2)+f((j+1)/2)> se è dispari. Gli argomenti a destra sono più piccoli di <math|j>, quindi la definizione permette di calcolare i valori a partire dai casi iniziali.
+
+Per esempio <math|f(19)=f(9)+f(10)=f(4)+2f(5)=3f(2)+2f(3)=5f(1)+2f(2)=7>. In ogni passaggio compaiono due indici consecutivi. Cerchiamo allora di conservare
+
+<\equation*>
+I≡0≤x≤n∧f(n)=k f(x)+h f(x+1),
+</equation*>
+
+con <math|n≥0> non modificato. Inizializzando <math|x=n,k=1,h=0> l'uguaglianza è vera. Quando <math|x=0> diventa <math|f(n)=k·0+h·1=h>: sappiamo già quale guardia scegliere e dove troveremo il risultato.
+
+Deriviamo il corpo. Scriviamo <math|q=x<space|0.2em><math-up|div><space|0.2em>2>. Se <math|x=2q›0>, allora <math|f(x)=f(q)> e <math|f(x+1)=f(q)+f(q+1)>; pertanto
+
+<\equation*>
+k f(x)+h f(x+1)=(k+h)f(q)+h f(q+1).
+</equation*>
+
+Basta sommare <math|h> a <math|k> e dimezzare <math|x>. Se <math|x=2q+1>, le identità danno invece
+
+<\equation*>
+k f(x)+h f(x+1)=k f(q)+(k+h)f(q+1).
+</equation*>
+
+Basta sommare <math|k> a <math|h> e dimezzare <math|x>. Per <math|x=1>, la prima identità del caso dispari è ancora vera perché <math|f(1)=f(0)+f(1)>.
+
+Possiamo ora scrivere il programma, usando il test <tt|x mod 2 = 0> per riconoscere gli indici pari:
+
+<\verbatim>
+x := n; k := 1; h := 0;<no-page-break>
+
+while x != 0 do<no-page-break>
+
+<hspace|2.100em>if x mod 2 = 0<no-page-break>
+
+<hspace|4.200em>then k := h + k<no-page-break>
+
+<hspace|4.200em>else h := h + k<no-page-break>
+
+<hspace|2.100em>fi;<no-page-break>
+
+<hspace|2.100em>x := x div 2<no-page-break>
+
+endw
+</verbatim>
+
+Prima aggiorniamo il coefficiente richiesto dal caso pari o dispari, poi dimezziamo l’indice. Il risultato sarà in <math|h>.
+
+Le uguaglianze appena ottenute provano che l’invariante si conserva. Sotto la guardia <math|x›0>, e <math|0≤x<space|0.2em><math-up|div><space|0.2em>2‹x>; dunque <math|x> è una funzione di terminazione. Il divisore 2 è sempre non nullo. 
+
+All’uscita <math|h=f(n)>, anche per <math|n=0>, quando il corpo non viene eseguito. Le asserzioni guidano la costruzione; il programma usa solo somme, divisione intera e modulo.
+
+<\verifica|8>
+<strong|1.> Vogliamo conservare <math|xy+pq=n> mediante <tt|x := x-p; q := E>. Trova un'espressione <math|E> che funzioni per tutti gli interi e giustifica anche il caso <math|p=0>.
+
+<strong|2.> Nel programma di Fibonacci modifica soltanto l'inizializzazione e l'invariante per calcolare anche il caso <math|k=0>. Puoi mantenere la stessa forma del corpo usando due termini consecutivi a indici non negativi? Indica quale variabile conterrà il risultato.
+</verifica>
+
+<chapter|Array: indici, aggiornamenti e zone>
+
+<\inbreve>
+Come lavoriamo su una sequenza senza sbagliare posizione? Sappiamo già usare contatori e invarianti. Negli array daremo un significato agli indici e ai confini tra la parte già trattata e quella ancora da esaminare.
+</inbreve>
+
+Per sommare i voti di un elenco vogliamo conservare molti valori con un solo nome. Un <strong|array> raccoglie la sequenza; un <strong|indice> permette di scegliere una posizione. Dovremo controllare quali posizioni possiamo leggere e modificare.
+
+<section|Array come funzioni sugli indici>
+
+La dichiarazione <tt|v : array [0,4) of int> descrive quattro interi con indici <math|0,1,2,3>. L'estremo destro 4 segna la fine: non è una posizione leggibile. In generale un array omogeneo, cioè con elementi dello stesso tipo, è una funzione
+
+<\equation*>
+v:[a,b)→A,
+</equation*>
+
+con indici naturali <math|a≤b> e <math|A=ℤ> oppure <math|A=<math-up|Bool>>. L'intervallo <math|[a,b)> comprende gli indici <math|a≤i‹b>, ha <math|b-a> posizioni ed è vuoto se <math|a=b>. Scriviamo <math|<math-up|dom>(v)=[a,b)> per il dominio degli indici validi.
+
+Lo stato associa ora al nome <math|v> un'intera funzione <math|σ(v)>. Se <math|σ(v)={0↦2,1↦1,2↦10,3↦6}>, leggere <tt|v[2]> restituisce 10. Si calcola prima l'espressione indice e poi si applica la funzione:
+
+<\equation*>
+ℰ(v[E],σ)=σ(v)(ℰ(E,σ)).
+</equation*>
+
+Questa formula ha senso solo se il valore dell'indice esiste e appartiene al dominio. 
+
+Un indice può contenere altre letture: <tt|v[v[0]+v[1]]> legge prima 2 e 1, somma ottenendo 3, poi legge <tt|v[3]>, cioè 6. Dobbiamo controllare sia gli indici interni 0 e 1, sia l'indice esterno 3. 
+
+Se la somma fosse 4, gli accessi interni sarebbero leciti ma quello esterno fallirebbe.
+
+<\concetto|Definitezza di un accesso>
+Per un'espressione indice intera <math|E>,
+
+<\equation*>
+<math-up|def>(v[E])≡<math-up|def>(E)∧E∈<math-up|dom>(v).
+</equation*>
+
+La correttezza richiede che ogni lettura effettivamente eseguita abbia un indice valido. Per un array su <math|[0,n)>, il solo vincolo <math|x≤n> non autorizza a leggere <tt|v[x]>: occorre <math|0≤x‹n>.
+</concetto>
+
+Le cause di indefinitezza comprendono ora divisori nulli e indici fuori dominio. I tipi restano un altro controllo: un array booleano produce booleani, che non possono essere usati come indici interi. Gli operatori del linguaggio agiscono sui singoli elementi: una scrittura come <tt|v+w>, intesa come somma di interi array, non è ammessa.
+
+<section|Aggiornamento selettivo: prima valutare, poi modificare>
+
+Il comando <tt|v[E] := E'> cambia una sola posizione. Tanto l'indice quanto il valore a destra si calcolano nello stato precedente. Per esempio, con l'array appena visto, <tt|v[v[0]] := v[1]+5> calcola l'indice 2 e il valore 6, poi cambia soltanto <tt|v[2]>. Il nuovo array è <math|{0↦2,1↦1,2↦6,3↦6}>.
+
+Per descrivere formalmente l'effetto, poniamo <math|j=ℰ(E,σ)> e <math|d=ℰ(E',σ)>. Se entrambi sono definiti e <math|j∈<math-up|dom>(v)>, costruiamo la nuova sequenza <math|w=σ(v)[d/j]>: essa vale <math|d> all'indice <math|j> e coincide con <math|σ(v)> a ogni altro indice. Infine aggiorniamo lo stato:
+
+<\equation*>
+𝒞(v[E]:=E',σ)=σ[w/v].
+</equation*>
+
+L'aggiornamento interno riguarda una posizione della sequenza; quello esterno cambia il valore associato al nome <math|v>. Il dominio resta lo stesso.
+
+<subsection|La condizione prima di un aggiornamento>
+
+Per verificare una postcondizione <math|P>, scriviamo simbolicamente <math|w=v[E'/E]>. L'assioma di assegnamento richiede prima del comando
+
+<\equation*>
+<math-up|def>(E)∧<math-up|def>(E')∧E∈<math-up|dom>(v)∧P[w/v].
+</equation*>
+
+Dopo <tt|v[E] := E'> vale allora <math|P>. Come per le variabili con un solo valore, una precondizione più forte può essere usata tramite la regola della conseguenza. Qui sostituiamo l'intera sequenza nell'asserzione: il nuovo elemento in posizione <math|i> è <math|E'> se <math|i=E>, e il vecchio <math|v[i]> se <math|i≠E>.
+
+<\guidato|Estendere un prefisso di somme>
+Supponiamo <math|1≤k‹n> e che, prima della posizione <math|k>, l'array contenga già le somme <math|a[i]=<big|sum><rsub|j=0><rsup|i>j> per ogni <math|0≤i‹k>. Eseguiamo <tt|a[k] := a[k-1]+k>.
+
+I vincoli su <math|k> rendono validi entrambi gli indici <math|k> e <math|k-1>. Per dimostrare la nuova proprietà fino a <math|k> incluso, separiamo due casi. Se <math|i‹k>, la posizione <math|i> non viene toccata e conserva la somma corretta. Se <math|i=k>, il nuovo valore è
+
+<\equation*>
+a[k-1]+k=<big|sum><rsub|j=0><rsup|k-1>j+k=<big|sum><rsub|j=0><rsup|k>j.
+</equation*>
+
+Abbiamo così verificato tutti gli indici <math|0≤i≤k>. La distinzione tra posizione modificata e posizioni conservate è ciò che permette di provare una postcondizione quantificata.
+</guidato>
+
+<section|Incrementare un array: un confine tra fatto e da fare>
+
+Vogliamo aggiungere 1 a ogni elemento di <tt|a : array [0,n) of int>, con <math|n≥0>. Chiamiamo <math|V> la sequenza iniziale, una variabile di specifica che il programma non modifica. Il risultato richiesto è <math|∀k∈[0,n). a[k]=V[k]+1>.
+
+Pensiamo a un confine <math|x>: a sinistra abbiamo già incrementato, da <math|x> in poi dobbiamo ancora farlo. All'inizio <math|x=0>; alla fine vogliamo <math|x=n>. Da questa immagine ricaviamo
+
+<\equation*>
+I≡0≤x≤n∧(∀k∈[0,x). a[k]=V[k]+1)
+</equation*>
+
+<\equation*>
+∧(∀k∈[x,n). a[k]=V[k]).
+</equation*>
+
+La seconda riga non è superflua: per concludere che incrementare <tt|a[x]> produce <math|V[x]+1>, dobbiamo sapere che prima vale ancora <math|V[x]>.
+
+<figura|@IMG(array-zone)|Il confine <math|x> separa le posizioni già incrementate da quelle ancora uguali alla sequenza iniziale <math|V>. Il confine può anche essere 0 oppure <math|n>.>
+
+<\verbatim>
+x := 0;<no-page-break>
+
+while x ‹ n do<no-page-break>
+
+<hspace|2.100em>a[x] := a[x] + 1;<no-page-break>
+
+<hspace|2.100em>x := x + 1<no-page-break>
+
+endw
+</verbatim>
+
+La precondizione è <math|n≥0∧a=V>, dove l'uguaglianza indica che coincidono tutti gli elementi. Con <math|x=0>, il prefisso elaborato è vuoto e la proprietà sul resto è esattamente quella iniziale: si stabilisce <math|I>.
+
+Prima del corpo, <math|I∧x‹n> dà <math|0≤x‹n>: la lettura e la scrittura sono lecite. Le posizioni prima di <math|x> restano incrementate, quella in <math|x> passa da <math|V[x]> a <math|V[x]+1>, quelle dopo restano iniziali. Abbiamo quindi la stessa divisione con confine <math|x+1>. Il secondo assegnamento dà a <math|x> proprio quel valore, ristabilendo <math|I>.
+
+<subsection|Quando il confine raggiunge la fine>
+
+La quantità <math|n-x> è non negativa e diminuisce di 1. Il ciclo termina e, quando la guardia è falsa, <math|x≥n>; insieme a <math|x≤n> otteniamo <math|x=n>. L'intero array appartiene allora alla parte elaborata. Per <math|n=0> le proprietà quantificate riguardano l'insieme vuoto e sono soddisfatte senza eseguire il corpo.
+
+<section|Somma di un array: sostituire la fine con un confine mobile>
+
+Ora l'array non deve cambiare; vogliamo soltanto ottenere
+
+<\equation*>
+s=<big|sum><rsub|i=0><rsup|n-1>a[i].
+</equation*>
+
+Sostituiamo nella postcondizione il valore finale <math|n> con un indice di lavoro <math|x>: <math|s> sarà la somma delle prime <math|x> posizioni. Per <math|x=0> questa è la somma vuota, che vale 0. Per <math|x=n> sarà la somma desiderata.
+
+<\verbatim>
+x := 0; s := 0;<no-page-break>
+
+while x != n do<no-page-break>
+
+<hspace|2.100em>s := s + a[x];<no-page-break>
+
+<hspace|2.100em>x := x + 1<no-page-break>
+
+endw
+</verbatim>
+
+Usiamo <math|I≡s=<big|sum><rsub|i=0><rsup|x-1>a[i]∧0≤x≤n>. L'uguaglianza spiega l'accumulatore; i limiti sul contatore permettono la verifica. Infatti, sotto la guardia <math|x≠n>, essi danno <math|0≤x‹n>, quindi <tt|a[x]> è definito.
+
+All'inizio <math|I> vale per la convenzione sulla somma vuota. Se vale prima del corpo, dopo l'aggiunta otteniamo
+
+<\equation*>
+s'=<big|sum><rsub|i=0><rsup|x-1>a[i]+a[x]=<big|sum><rsub|i=0><rsup|x>a[i].
+</equation*>
+
+Poiché il nuovo contatore è <math|x'=x+1>, questa è la somma fino a <math|x'-1>. Inoltre <math|x‹n> implica <math|x'≤n>, dunque l'invariante è ristabilito. Ancora <math|n-x> prova la terminazione; la guardia falsa dà direttamente <math|x=n>. Con <math|n=0> il risultato è 0.
+
+Sostituire una costante della specifica con una variabile ha trasformato il risultato completo in una proprietà di risultati parziali. I vincoli aggiunti su <math|x> servono insieme al controllo degli indici, all'invarianza e alla terminazione.
+
+<section|Bandiera a due colori: classificare senza perdere elementi>
+
+Vogliamo riordinare un array in modo che prima vengano i negativi e poi i valori positivi o nulli. Non chiediamo l'ordinamento interno a ciascun gruppo. Ma chiediamo di conservare tutti i valori, comprese le loro ripetizioni: scriviamo <math|<math-up|perm>(a,A)> se <math|a> ha gli stessi elementi della sequenza iniziale <math|A>, con le stesse molteplicità.
+
+Un solo confine non basta a distinguere gli elementi già messi a destra da quelli ancora da guardare. Introduciamo due confini <math|x≤y>: il prefisso <math|[0,x)> contiene negativi, il suffisso <math|[y,n)> contiene non negativi, mentre <math|[x,y)> è ancora sconosciuto. L'invariante è
+
+<\equation*>
+I≡<math-up|perm>(a,A)∧0≤x≤y≤n
+</equation*>
+
+<\equation*>
+∧(∀i∈[0,x). a[i]‹0)∧(∀i∈[y,n). a[i]≥0).
+</equation*>
+
+Non affermiamo nulla sui segni della zona sconosciuta: è proprio il lavoro che resta. La sua lunghezza <math|y-x> suggerisce insieme la guardia <tt|x != y> e la funzione di terminazione. Con <math|x=0,y=n> entrambe le zone classificate sono vuote.
+
+<figura|@IMG(bandiera)|In alto, due categorie e una zona ancora sconosciuta. In basso, lo stesso ragionamento è esteso a negativi, zeri e positivi: cambiano i confini, mentre resta centrale la zona da esaminare.>
+
+Sotto la guardia <math|x‹y>. Possiamo leggere <tt|a[x]> e, se serve, <tt|a[y-1]>: entrambi gli indici sono compresi tra 0 e <math|n-1>. Se <math|a[x]‹0>, abbiamo trovato un altro elemento per il prefisso: basta avanzare <math|x>. Se invece <math|a[x]≥0>, vogliamo portarlo a destra, nella posizione <math|y-1>, e arretrare <math|y>.
+
+Una copia <tt|a[y-1] := a[x]> perderebbe il vecchio elemento di destra. Per conservare la permutazione facciamo uno scambio usando una variabile temporanea. Il valore che arriva in posizione <math|x> è ancora sconosciuto: in questo ramo <math|x> deve restare fermo.
+
+<\verbatim>
+x := 0; y := n;<no-page-break>
+
+while x != y do<no-page-break>
+
+<hspace|2.100em>if a[x] ‹ 0<no-page-break>
+
+<hspace|4.200em>then x := x + 1<no-page-break>
+
+<hspace|4.200em>else temp := a[y-1];<no-page-break>
+
+<hspace|6.825em>a[y-1] := a[x];<no-page-break>
+
+<hspace|6.825em>a[x] := temp;<no-page-break>
+
+<hspace|6.825em>y := y - 1<no-page-break>
+
+<hspace|2.100em>fi<no-page-break>
+
+endw
+</verbatim>
+
+<subsection|Perché x resta fermo dopo lo scambio>
+
+Partiamo da quattro elementi <math|a=[4,-2,0,7]>, con <math|x=0,y=4>. Il primo elemento è non negativo: lo scambiamo con l’ultimo e arretriamo <math|y>.
+
+<\equation*>
+<tabular|<tformat|<cwith|1|-1|1|-1|cell-lsep|0.6em>|<cwith|1|-1|1|-1|cell-rsep|0.6em>|<table|<row|<cell|<text|Controllo>>|<cell|a>|<cell|x>|<cell|y>>|<row|<cell|<text|iniziale>>|<cell|[4,-2,0,7]>|<cell|0>|<cell|4>>|<row|<cell|<text|dopo il primo giro>>|<cell|[7,-2,0,4]>|<cell|0>|<cell|3>>|<row|<cell|<text|dopo il secondo giro>>|<cell|[0,-2,7,4]>|<cell|0>|<cell|2>>>>>
+</equation*>
+
+Dopo il primo giro è arrivato 7 in posizione 0. Non era stato esaminato: occorre controllarlo nel secondo giro, che lo sposta a destra. Anche il nuovo 0 dovrà essere esaminato al giro seguente.
+
+Se dopo il primo scambio avessimo aumentato <math|x>, avremmo dichiarato negativo il valore 7. Si perderebbe subito il significato del prefisso. Per questo lo scambio fa avanzare soltanto il confine destro.
+
+<subsection|Conservare le zone e arrivare all’uscita>
+
+Verifichiamo i due rami. Nel primo l'array non cambia e il solo elemento aggiunto al prefisso è negativo. 
+
+Nel secondo, lo scambio non modifica né il vecchio prefisso <math|[0,x)> né il vecchio suffisso <math|[y,n)>; mette un non negativo in <math|y-1> e conserva le molteplicità. Dopo l'arretramento, il nuovo suffisso è quindi tutto non negativo. 
+
+Se <math|x=y-1>, lo scambio riguarda una posizione con sé stessa: funziona ugualmente.
+
+Ogni ramo diminuisce <math|y-x> di 1, mantenendo <math|0≤x≤y≤n>. Il ciclo termina. All'uscita <math|x=y>, quindi la zona sconosciuta è vuota: il prefisso è negativo e l'intero resto è non negativo. 
+
+La postcondizione comprende <math|0≤x≤n>, con entrambi gli estremi ammessi. Se tutti i valori sono negativi, <math|x=n>; se nessuno lo è, <math|x=0>. Anche l'array vuoto è ammesso.
+
+<subsection|Per proseguire: bandiera a tre colori>
+
+Separiamo ora negativi, zeri e positivi. Per una classificazione completa servono due confini finali; durante il lavoro ne usiamo tre:
+
+<\equation*>
+0≤x≤z≤y≤n.
+</equation*>
+
+Manteniamo <math|<math-up|perm>(a,A)>, negativi in <math|[0,x)>, zeri in <math|[x,z)>, positivi in <math|[y,n)>. La parte sconosciuta è <math|[z,y)>. Inizializziamo <math|x=z=0,y=n>; continuiamo finché <math|z≠y> e misuriamo il lavoro con <math|y-z>.
+
+Se <math|a[z]‹0>, dobbiamo portarlo subito dopo il prefisso negativo, cioè in <math|x>. Scambiamo <math|a[x]> e <math|a[z]>, poi avanziamo entrambi <math|x> e <math|z>. 
+
+Quando <math|x‹z>, il vecchio <math|a[x]> era uno zero, quindi può diventare l'ultimo elemento della nuova zona degli zeri. 
+
+Quando <math|x=z>, lo scambio è con sé stesso e i confini avanzano insieme senza creare zeri inesistenti.
+
+<subsection|Gli altri due casi>
+
+Se <math|a[z]=0>, basta avanzare <math|z>. Se <math|a[z]›0>, arretriamo <math|y>, scambiamo l'elemento positivo con quello della nuova posizione <math|y> e lasciamo <math|z> fermo: occorre esaminare ciò che è arrivato da destra.
+
+<\verbatim>
+x := 0; z := 0; y := n;<no-page-break>
+
+while z != y do<no-page-break>
+
+<hspace|2.100em>if a[z] ‹ 0<no-page-break>
+
+<hspace|4.200em>then temp := a[x]; a[x] := a[z]; a[z] := temp;<no-page-break>
+
+<hspace|6.825em>x := x + 1; z := z + 1<no-page-break>
+
+<hspace|4.200em>else if a[z] = 0<no-page-break>
+
+<hspace|8.925em>then z := z + 1<no-page-break>
+
+<hspace|8.925em>else y := y - 1;<no-page-break>
+
+<hspace|11.550em>temp := a[y]; a[y] := a[z]; a[z] := temp<no-page-break>
+
+<hspace|6.825em>fi<no-page-break>
+
+<hspace|2.100em>fi<no-page-break>
+
+endw
+</verbatim>
+
+<subsection|Indici, progresso e risultato>
+
+Sotto la guardia <math|z‹y>, tutti gli accessi sono validi. In particolare, nel ramo positivo il nuovo <math|y> è il vecchio <math|y-1≥z>. 
+
+Gli scambi conservano le molteplicità; l'analisi dei tre casi mostra che ciascuna zona mantiene il proprio significato. Ogni ramo diminuisce <math|y-z> di 1, quindi il ciclo termina. 
+
+All’uscita <math|z=y>: la zona sconosciuta scompare e restano, nell'ordine, negativi, zeri e positivi. Questo sviluppo completa l'esercizio proposto nelle lezioni.
+
+<\verifica|9>
+<strong|1.> Per <tt|v : array [0,4) of int> con valori <math|[2,1,10,6]>, esegui <tt|v[v[0]] := v[0]+v[1]>. Indica tutti gli indici controllati e il nuovo array. Spiega perché il comando successivo <tt|v[v[2]] := 0> è definito oppure non lo è.
+
+<strong|2.> Modifica il programma della somma per contare gli elementi negativi di un array. Scrivi un invariante che dia significato al contatore, controlla gli indici e giustifica terminazione e risultato anche per l'array vuoto.
+</verifica>
+
+<appendix|Soluzioni ragionate>
+
+<section|Capitolo 1 — Specifiche e stati>
+
+<strong|1.1. Prodotto per somme.> Ai controlli della guardia gli stati sono <math|(A,B,C)=(4,2,0)>, poi <math|(4,1,4)> e infine <math|(4,0,8)>. <math|C> raccoglie la parte già calcolata; <math|B> conta le aggiunte rimaste.
+
+Il valore iniziale era <math|b=2>, ma alla fine <math|B=0>. Quindi il prodotto corrente <math|AB=0> non ricorda quello iniziale. La richiesta è <math|C=ab=8>.
+
+<strong|1.2. Il maggiore.> Chiamiamo <math|x,y> gli ingressi e <math|r> il risultato. Le lettere di specifica <math|a,b> ricordano i valori iniziali. La precondizione è <math|x=a∧y=b>, con <math|a,b∈ℤ>.
+
+Alla fine vogliamo conservare <math|x=a∧y=b> e ottenere
+
+<\equation*>
+r≥a∧r≥b∧(r=a∨r=b).
+</equation*>
+
+Le disuguaglianze da sole ammetterebbero numeri troppo grandi. L’ultima condizione richiede che <math|r> sia uno dei due ingressi: insieme, le tre condizioni dicono che è il massimo.
+
+La specifica dice che cosa ottenere, ma non sceglie ancora il confronto e gli assegnamenti che lo produrranno.
+
+<section|Capitolo 2 — Calcolo proposizionale>
+
+<strong|2.1. Uscire senza pioggia.> «Esco solo se non piove» è <math|e⇒¬p>: uscire richiede che non piova. «Se non piove, esco» è invece <math|¬p⇒e>: non piovere basterebbe per uscire.
+
+Scegliamo <math|p> falsa ed <math|e> falsa: non piove e resto a casa. La prima formula è vera, la seconda falsa. Questo controesempio mostra che la prima non implica la seconda.
+
+<strong|2.2. Semplificare e seguire i segni.> Distribuiamo per avvicinare <math|P> e la sua negazione:
+
+<\equation*>
+P∧(¬P∨Q)≡(P∧¬P)∨(P∧Q)≡F∨(P∧Q)≡P∧Q.
+</equation*>
+
+I passi usano distributività, contraddizione e unità.
+
+In <math|¬(P⇒Q)∧R>, il percorso verso <math|P> attraversa la negazione e l’antecedente: due inversioni, quindi segno positivo. Per <math|Q> attraversiamo soltanto la negazione: segno negativo. Per <math|R> non ci sono inversioni: segno positivo.
+
+La riscrittura <math|(P∧¬Q)∧R> conferma i tre segni.
+
+<section|Capitolo 3 — Individui e formule>
+
+<strong|3.1. Sostituire senza catturare.> In <math|(∀x.p(x,y))∧(∃y.q(x,y))>, la <math|x> dentro <math|p> è legata e la <math|y> è libera. Dentro <math|q> accade il contrario: <math|x> è libera e <math|y> legata.
+
+Vogliamo sostituire <math|y> alla sola <math|x> libera. Prima rinominiamo il quantificatore esistenziale in <math|∃z>: altrimenti la <math|y> inserita verrebbe catturata. Poi sostituiamo e otteniamo
+
+<\equation*>
+(∀x.p(x,y))∧(∃z.q(y,z)).
+</equation*>
+
+La prima parte resta invariata, perché non contiene una <math|x> libera. Le due <math|y> rimaste sono libere: <math|∃z> non le lega.
+
+<strong|3.2. Una proprietà generale e un unico testimone.> Con <math|s(n)=n+1> scriviamo
+
+<\equation*>
+∀x.(<math-up|pari>(x)⇒<math-up|pari>(s(s(x)))).
+</equation*>
+
+<math|s(s(x))> indica un numero ed è un termine; l’intera scrittura esprime una proprietà ed è una formula chiusa.
+
+Per dire «esattamente un elemento soddisfa <math|p>» usiamo
+
+<\equation*>
+∃x.(p(x)∧∀y.(p(y)⇒y=x)).
+</equation*>
+
+La parte <math|p(x)> garantisce un testimone. L’universale dice che ogni altro testimone coincide con esso: l’uguaglianza garantisce l’unicità.
+
+<section|Capitolo 4 — Semantica e quantificatori>
+
+<strong|4.1. Trovare un controesempio.> Neghiamo prima l’universale, poi l’implicazione:
+
+<\equation*>
+¬(∀x.(p(x)⇒∃y.q(x,y)))≡∃x.(p(x)∧¬(∃y.q(x,y))).
+</equation*>
+
+Un secondo De Morgan porta la negazione fino agli atomi:
+
+<\equation*>
+∃x.(p(x)∧∀y.¬q(x,y)).
+</equation*>
+
+Dobbiamo trovare un individuo con proprietà <math|p> per cui la relazione <math|q> fallisca con tutti gli individui <math|y>. Non basta una sola coppia per cui <math|q> è falsa.
+
+<strong|4.2. Cambiare il testimone o sceglierne uno solo.> <math|∀x.∃y.R(x,y)> è vera: per <math|x=a> scegliamo <math|y=b>; per <math|x=b> scegliamo <math|y=a>.
+
+<math|∃y.∀x.R(x,y)> è falsa. Il candidato <math|y=a> fallisce per <math|x=a>; il candidato <math|y=b> fallisce per <math|x=b>. Ogni elemento ha un compagno, ma nessuno è compagno di tutti.
+
+Per la generalizzazione scegliamo sui naturali <math|P(x)>: «<math|x> è pari» e una costante <math|d> che indica 2. <math|P(d)> è vera, ma <math|∀x.P(x)> è falsa per 1. Quel nome aveva una proprietà particolare: non rappresentava un individuo generico.
+
+<section|Capitolo 5 — Stati, espressioni e comandi>
+
+<strong|5.1. Scambiare con somme e differenze.> Da <math|(x,y)=(3,7)> i tre comandi producono, nell’ordine, <math|(10,7)>, <math|(10,3)> e <math|(7,3)>.
+
+Usiamo ora gli ingressi generici <math|A,B>. Dopo il primo comando abbiamo <math|(A+B,B)>. Il secondo legge il nuovo <math|x> e calcola <math|(A+B)-B=A>: otteniamo <math|(A+B,A)>.
+
+Il terzo calcola <math|(A+B)-A=B>, quindi lo stato finale è <math|(B,A)>. Abbiamo provato lo scambio per tutti gli interi matematici. Con interi rappresentati da un numero limitato di cifre dovremmo controllare anche se la somma è rappresentabile.
+
+<strong|5.2. Diminuire non basta.> Da 4 otteniamo <math|4,2,0>: dopo due giri la guardia è falsa. Da 5 otteniamo invece <math|5,3,1,-1,-3,…>.
+
+Sottrarre 2 conserva la parità: nel secondo caso ogni valore rimane dispari e non può essere zero. La guardia resta vera e il ciclo non termina. Una variabile può diminuire senza raggiungere il valore richiesto per uscire.
+
+<section|Capitolo 6 — Triple di Hoare e invarianti>
+
+<strong|6.1. Risalire attraverso un assegnamento.> Il valore finale di <math|y> sarà <math|2x>. Sostituendolo nella postcondizione <math|y›10> otteniamo <math|2x›10>, cioè <math|x›5>.
+
+La moltiplicazione è sempre definita. Poiché <math|x> è intero, la condizione equivale a <math|x≥6>. L’ipotesi proposta basta dunque per l’assioma dell’assegnamento, su tutti gli ingressi ammessi.
+
+<strong|6.2. Una divisione che fallisce sempre.> Prima di <tt|y := z div x> serve <math|x≠0> per la definitezza, oltre alla postcondizione <math|z›4>, che l’assegnamento non cambia.
+
+Risalendo attraverso <tt|x := 0>, sostituiamo 0 a <math|x> e otteniamo
+
+<\equation*>
+0≠0∧z›4.
+</equation*>
+
+La richiesta è falsa in ogni stato: nessun ingresso può rendere questa esecuzione corretta in senso totale. La precondizione data è invece soddisfatta da uno stato con <math|z=5,x=3>: da quello stato il comando tenta comunque di dividere per zero.
+
+<section|Capitolo 7 — Correttezza totale>
+
+<strong|7.1. Un contatore che raggiunge n.> Scegliamo <math|t=n-i>. Dall’invariante segue <math|i≤n>, quindi <math|t≥0>.
+
+Se prima del corpo <math|n-i=V>, dopo l’incremento vale <math|n-(i+1)=V-1‹V>. Inoltre <math|i‹n> e il fatto che i valori siano interi danno <math|i+1≤n>: l’invariante si conserva.
+
+Guardia e corpo sono sempre definiti e il singolo incremento termina. Il ciclo termina; all’uscita <math|i≥n> e l’invariante <math|i≤n> danno <math|i=n>.
+
+<strong|7.2. Aggiungere dopo l’incremento.> Ora il corpo aumenta prima <math|x> e poi aggiunge il valore nuovo. L’invariante adatto è
+
+<\equation*>
+I≡s=<big|sum><rsub|j=1><rsup|x>j∧0≤x≤n.
+</equation*>
+
+All’inizio la somma è vuota e vale zero. Se prima <math|x=k>, il corpo porta <math|x> a <math|k+1> e aggiunge proprio <math|k+1> a una somma che arriva a <math|k>. Si ristabilisce la stessa proprietà con il nuovo contatore.
+
+La funzione di terminazione resta <math|n-x>. All’uscita <math|x=n>, quindi abbiamo sommato da 1 a <math|n>. Per <math|n=0> la somma è vuota: il risultato è zero senza eseguire il corpo.
+
+<section|Capitolo 8 — Costruire un ciclo>
+
+<strong|8.1. Compensare una modifica.> Dopo <tt|x := x-p>, il termine <math|xy> ha perso <math|py>. Possiamo compensare aumentando <math|q> di <math|y>, così <math|pq> guadagna proprio <math|py>. Scegliamo <math|E=q+y>.
+
+In termini dei valori precedenti ai due comandi:
+
+<\equation*>
+(x-p)y+p(q+y)=xy-py+pq+py=xy+pq=n.
+</equation*>
+
+L’espressione <math|q+y> non legge <math|x>, quindi il primo comando non la cambia. Per <math|p=0> la conservazione non impone un nuovo valore particolare a <math|q>, ma la scelta funziona comunque. Tutte le espressioni sono definite sugli interi.
+
+<strong|8.2. Fibonacci includendo zero.> Mettiamo il risultato in <tt|y>. Inizializziamo <tt|x := 1; i := 0; y := 0> e scegliamo
+
+<\equation*>
+I≡x=<math-up|fib>(i+1)∧y=<math-up|fib>(i)∧0≤i≤k.
+</equation*>
+
+Ora entrambi gli indici della successione sono non negativi, anche all’inizio. Il corpo resta <tt|temp := x; x := x+y; y := temp; i := i+1>.
+
+Dopo gli assegnamenti, <math|x> contiene <math|<math-up|fib>(i+2)> e <math|y> contiene <math|<math-up|fib>(i+1)>, dove <math|i> indica il vecchio contatore. Con il nuovo indice <math|i'=i+1> ritroviamo esattamente l’invariante.
+
+Sotto la guardia <math|i≠k>, i limiti danno <math|i‹k>, quindi l’incremento non supera <math|k>. La funzione <math|k-i> prova la terminazione. All’uscita <math|i=k> e <math|y=<math-up|fib>(k)>.
+
+Per <math|k=0> la guardia è subito falsa e <math|y=0>: anche questo caso è incluso.
+
+<section|Capitolo 9 — Array>
+
+<strong|9.1. Valutare prima di aggiornare.> Nell’indice, <tt|v[0]> vale 2. A destra leggiamo le posizioni 0 e 1 e otteniamo <math|2+1=3>. Gli indici usati sono 0, 1 e 2, tutti validi.
+
+Cambiamo soltanto la posizione 2: il nuovo array è <math|[2,1,3,6]>. Il comando successivo legge <tt|v[2]>, ora uguale a 3, e scrive in posizione 3. È quindi definito e lascia <math|[2,1,3,0]>.
+
+Se eseguissimo il secondo comando per primo, leggerebbe 10 in posizione 2 e tenterebbe di scrivere fuori dall’array. L’ordine dei comandi può cambiare anche la definitezza degli accessi.
+
+<strong|9.2. Contare i negativi.> Usiamo <math|c> per il numero di negativi incontrati. Il programma è:
+
+<\verbatim>
+x := 0; c := 0;<no-page-break>
+
+while x != n do<no-page-break>
+
+<hspace|2.100em>if a[x] ‹ 0 then c := c + 1 else skip fi;<no-page-break>
+
+<hspace|2.100em>x := x + 1<no-page-break>
+
+endw
+</verbatim>
+
+L’invariante richiede <math|0≤x≤n> e dice che <math|c> conta gli indici <math|i∈[0,x)> con <math|a[i]‹0>. All’inizio il prefisso è vuoto e <math|c=0>.
+
+Sotto la guardia abbiamo <math|0≤x‹n>, quindi la lettura è valida. Se il nuovo elemento è negativo, aumentiamo <math|c> di uno; altrimenti lo lasciamo invariato. Dopo l’incremento di <math|x>, il prefisso comprende esattamente una posizione in più: quella appena esaminata.
+
+La quantità <math|n-x> è non negativa e diminuisce di 1. Il corpo termina con successo, quindi il ciclo termina. All’uscita <math|x=n> e <math|c> conta i negativi dell’intero array.
+
+Se <math|n=0>, il risultato è già <math|c=0> e non si legge alcuna posizione.
+
+</body>
+
+<\initial>
+  <\collection>
+    <associate|font-base-size|11>
+    <associate|language|italian>
+    <associate|page-bot|22mm>
+    <associate|page-even|24mm>
+    <associate|page-height-margin|false>
+    <associate|page-medium|paper>
+    <associate|page-odd|24mm>
+    <associate|page-right|24mm>
+    <associate|page-top|21mm>
+    <associate|page-type|a4>
+    <associate|page-width-margin|false>
+    <associate|par-first|0fn>
+    <associate|par-par-sep|0.45fn>
+    <associate|par-sep|0.15fn>
+    <associate|par-width|162mm>
+  </collection>
+</initial>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="370" viewBox="0 0 600 370" role="img" aria-labelledby="title desc">
+<title id="title">Polarità delle occorrenze di P, R e Q</title><desc id="desc">Due alberi affiancati: in P ⇒ (¬R ⇒ Q) la lettera P è in posizione negativa, R e Q positive; in (P ⇒ ¬R) ⇒ Q la lettera P è positiva, R positiva e Q positiva.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="120.81" y1="49.19" x2="59.19" y2="110.81" stroke="#111" stroke-width="1"/>
+<line x1="138.56" y1="49.78" x2="191.44" y2="110.22" stroke="#111" stroke-width="1"/>
+<line x1="193.11" y1="131.02" x2="156.89" y2="188.98" stroke="#111" stroke-width="1"/>
+<line x1="206.89" y1="131.02" x2="243.11" y2="188.98" stroke="#111" stroke-width="1"/>
+<line x1="150" y1="213" x2="150" y2="267" stroke="#111" stroke-width="1"/>
+<circle cx="50" cy="158" r="9" fill="white" stroke="#111" stroke-width="0.7"/>
+<circle cx="250" cy="232" r="9" fill="white" stroke="#111" stroke-width="0.7"/>
+<circle cx="150" cy="308" r="9" fill="white" stroke="#111" stroke-width="0.7"/>
+<line x1="461.44" y1="49.78" x2="408.56" y2="110.22" stroke="#111" stroke-width="1"/>
+<line x1="478.56" y1="49.78" x2="531.44" y2="110.22" stroke="#111" stroke-width="1"/>
+<line x1="394.19" y1="131.63" x2="365.81" y2="188.37" stroke="#111" stroke-width="1"/>
+<line x1="405.81" y1="131.63" x2="434.19" y2="188.37" stroke="#111" stroke-width="1"/>
+<line x1="440" y1="213" x2="440" y2="267" stroke="#111" stroke-width="1"/>
+<circle cx="360" cy="232" r="9" fill="white" stroke="#111" stroke-width="0.7"/>
+<circle cx="540" cy="152" r="9" fill="white" stroke="#111" stroke-width="0.7"/>
+<circle cx="440" cy="308" r="9" fill="white" stroke="#111" stroke-width="0.7"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="130" y="45" font-size="15" text-anchor="middle" fill="#111">⇒</text>
+<text x="81" y="82" font-size="14" text-anchor="middle" fill="#111">−</text>
+<text x="166" y="162" font-size="14" text-anchor="middle" fill="#111">−</text>
+<text x="141" y="242" font-size="14" text-anchor="middle" fill="#111">−</text>
+<text x="200" y="125" font-size="15" text-anchor="middle" fill="#111">⇒</text>
+<text x="150" y="205" font-size="15" text-anchor="middle" fill="#111">¬</text>
+<text x="50" y="125" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">P</tspan></text>
+<text x="250" y="205" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">Q</tspan></text>
+<text x="150" y="285" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan></text>
+<text x="50" y="162" font-size="12" text-anchor="middle" fill="#111">−</text>
+<text x="250" y="236" font-size="12" text-anchor="middle" fill="#111">+</text>
+<text x="150" y="312" font-size="12" text-anchor="middle" fill="#111">+</text>
+<text x="130" y="344" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">P</tspan> ⇒ (¬<tspan font-style="italic">R</tspan> ⇒ <tspan font-style="italic">Q</tspan>)</text>
+<text x="470" y="45" font-size="15" text-anchor="middle" fill="#111">⇒</text>
+<text x="426" y="82" font-size="14" text-anchor="middle" fill="#111">−</text>
+<text x="371" y="162" font-size="14" text-anchor="middle" fill="#111">−</text>
+<text x="431" y="242" font-size="14" text-anchor="middle" fill="#111">−</text>
+<text x="400" y="125" font-size="15" text-anchor="middle" fill="#111">⇒</text>
+<text x="440" y="205" font-size="15" text-anchor="middle" fill="#111">¬</text>
+<text x="360" y="205" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">P</tspan></text>
+<text x="540" y="125" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">Q</tspan></text>
+<text x="440" y="285" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan></text>
+<text x="360" y="236" font-size="12" text-anchor="middle" fill="#111">+</text>
+<text x="540" y="156" font-size="12" text-anchor="middle" fill="#111">+</text>
+<text x="440" y="312" font-size="12" text-anchor="middle" fill="#111">+</text>
+<text x="400" y="344" font-size="14" text-anchor="middle" fill="#111">(<tspan font-style="italic">P</tspan> ⇒ ¬<tspan font-style="italic">R</tspan>) ⇒ <tspan font-style="italic">Q</tspan></text>
+</g>
+</svg>

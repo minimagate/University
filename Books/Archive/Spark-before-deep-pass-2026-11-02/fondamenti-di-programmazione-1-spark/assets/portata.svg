@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="190" viewBox="0 0 640 190" role="img" aria-labelledby="title desc">
+<title id="title">Portata dei quantificatori</title><desc id="desc">La formula ∀y.( z = y ∧ ( x = y ∨ ( ∃x. x = z ∨ z = y ) ) ): le tre occorrenze di y sono legate da ∀y, l’x di x = z è legata da ∃x, le z e l’x di x = y sono libere e campite in grigio.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="160.5" y="86" width="12.25" height="20" fill="#e4e4e4" stroke="none" stroke-width="1"/>
+<rect x="317" y="86" width="12.25" height="20" fill="#e4e4e4" stroke="none" stroke-width="1"/>
+<rect x="79.5" y="86" width="12.25" height="20" fill="#e4e4e4" stroke="none" stroke-width="1"/>
+<rect x="352" y="86" width="12.25" height="20" fill="#e4e4e4" stroke="none" stroke-width="1"/>
+<path d="M120.62,82 Q78.5,50 36.38,82" fill="none" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<path d="M201.62,82 Q119,30 36.38,82" fill="none" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<path d="M393.12,82 Q214.75,10 36.38,82" fill="none" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<path d="M288.12,82 Q276.75,58 265.38,82" fill="none" stroke="#111" stroke-width="1" marker-end="url(#ah)"/>
+<path d="M70.5,112 V118 H430.25 V112" fill="none" stroke="#111" stroke-width="0.7" />
+<path d="M284.0,144 V150 H397.25 V144" fill="none" stroke="#111" stroke-width="0.7" />
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="30" y="100" font-size="15" text-anchor="start" fill="#111">∀</text>
+<text x="47.75" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="61" y="100" font-size="15" text-anchor="start" fill="#111">.</text>
+<text x="70.5" y="100" font-size="15" text-anchor="start" fill="#111">(</text>
+<text x="81.5" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">z</tspan></text>
+<text x="94.75" y="100" font-size="15" text-anchor="start" fill="#111">=</text>
+<text x="116.5" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="129.75" y="100" font-size="15" text-anchor="start" fill="#111">∧</text>
+<text x="151.5" y="100" font-size="15" text-anchor="start" fill="#111">(</text>
+<text x="162.5" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="175.75" y="100" font-size="15" text-anchor="start" fill="#111">=</text>
+<text x="197.5" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="210.75" y="100" font-size="15" text-anchor="start" fill="#111">∨</text>
+<text x="232.5" y="100" font-size="15" text-anchor="start" fill="#111">(</text>
+<text x="243.5" y="100" font-size="15" text-anchor="start" fill="#111">∃</text>
+<text x="261.25" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="274.5" y="100" font-size="15" text-anchor="start" fill="#111">.</text>
+<text x="284" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">x</tspan></text>
+<text x="297.25" y="100" font-size="15" text-anchor="start" fill="#111">=</text>
+<text x="319" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">z</tspan></text>
+<text x="332.25" y="100" font-size="15" text-anchor="start" fill="#111">∨</text>
+<text x="354" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">z</tspan></text>
+<text x="367.25" y="100" font-size="15" text-anchor="start" fill="#111">=</text>
+<text x="389" y="100" font-size="15" text-anchor="start" fill="#111"><tspan font-style="italic">y</tspan></text>
+<text x="402.25" y="100" font-size="15" text-anchor="start" fill="#111">)</text>
+<text x="413.25" y="100" font-size="15" text-anchor="start" fill="#111">)</text>
+<text x="424.25" y="100" font-size="15" text-anchor="start" fill="#111">)</text>
+<text x="250.38" y="134" font-size="12" text-anchor="middle" fill="#111" font-style="italic">ambito di ∀y</text>
+<text x="340.62" y="166" font-size="12" text-anchor="middle" fill="#111" font-style="italic">ambito di ∃x</text>
+</g>
+</svg>

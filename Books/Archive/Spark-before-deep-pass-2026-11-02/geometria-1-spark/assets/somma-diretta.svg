@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="220" viewBox="0 0 620 220" role="img" aria-labelledby="title desc">
+<title id="title">Somma diretta e somma non diretta in R^3</title><desc id="desc">A sinistra un piano U e una retta W che lo incontra solo nell&#x27;origine: R^3 = U ⊕ W. A destra due piani distinti che si tagliano in una retta: la loro somma è R^3 ma non è diretta.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<line x1="150" y1="120" x2="135.04" y2="186.89" stroke="#111" stroke-width="1.9" stroke-dasharray="4 3"/>
+<polygon points="121.44,95.52 250.64,95.52 177.2,150.6 48,150.6" fill="#e4e4e4" stroke="#111" stroke-width="0.9"/>
+<line x1="150" y1="120" x2="173.8" y2="34.58" stroke="#111" stroke-width="1.9"/>
+<circle cx="150" cy="120" r="3.4" fill="#111" stroke="none" stroke-width="0"/>
+<polygon points="431.44,95.52 560.64,95.52 487.2,150.6 358,150.6" fill="#e4e4e4" stroke="#111" stroke-width="0.9"/>
+<polygon points="398.8,174.4 528.0,174.4 528.0,55.4 398.8,55.4" fill="white" fill-opacity="0.55" stroke="#111" stroke-width="0.9"/>
+<line x1="398.8" y1="120" x2="528" y2="120" stroke="#111" stroke-width="1.9"/>
+<circle cx="460" cy="120" r="3.4" fill="#111" stroke="none" stroke-width="0"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="256.76" y="91.78" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">U</tspan></text>
+<text x="179.92" y="27.01" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">W</tspan></text>
+<text x="150" y="212" font-size="13" text-anchor="middle" fill="#111" font-style="italic">U ∩ W = {0}: somma diretta</text>
+<text x="566.76" y="91.78" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">U</tspan></text>
+<text x="536.5" y="60.5" font-size="15" text-anchor="middle" fill="#111"><tspan font-style="italic">W</tspan></text>
+<text x="460" y="212" font-size="13" text-anchor="middle" fill="#111" font-style="italic">U ∩ W è una retta: non diretta</text>
+</g>
+</svg>

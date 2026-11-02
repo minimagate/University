@@ -4,11 +4,19 @@ The user found the previous books too difficult and insufficiently step by step.
 
 ## Make the conceptual structure visible
 
-Choose the pillars after analyzing the actual course. A pillar is a main idea, not necessarily one chapter. Explicit mathematical names belong in titles and the contents; a metaphor alone is not enough. At each transition explain the question, the knowledge we bring and what becomes possible next. Distinguish objects, algorithms and theorems (for example MCD, Euclid's algorithm, Bézout). Use a short `concetto` statement after its meaning has been prepared; avoid bolding everything.
+Choose the pillars after analyzing the actual course. A pillar is a main idea, not necessarily one chapter. Explicit mathematical names belong in titles and the contents; a metaphor alone is not enough. Every numbered chapter starts with an `In breve` in the canonical layout: two or three short sentences describing its question and learning route. Do not repeat the same prose immediately below it. This is the one regular opening aid; other special boxes remain selective.
+
+At each transition explain the question, the knowledge we bring and what becomes possible next. Distinguish objects, algorithms and theorems (for example MCD, Euclid's algorithm, Bézout). Use a short `concetto` statement after its meaning has been prepared; avoid bolding everything.
 
 ## Be patient without padding
 
 Use clear Italian and short connected paragraphs. Start with small concrete cases; explain the decisions and show the meaningful intermediate steps. Introduce notation when useful and say what it means. Do not hide a nontrivial inference behind «è immediato», «ovviamente» or «con un semplice calcolo». Avoid infantilizing language, forced jokes and unnecessary metaphors.
+
+One paragraph should develop one conceptual move. Give formulas their own line when the reader must follow a transformation. Use a meaningful subheading when the subject changes; give separate definitions their own explanation and example rather than packing a glossary into prose. In TeXmacs, a single newline does not make a new paragraph: leave a blank line.
+
+Prefer a complete small example before the general proof. For programs, show how the state changes in a short trace before presenting an invariant or termination argument. Explain how the proposed invariant or decreasing quantity is found. For abstract mathematics, calculate with a small concrete object before introducing a general family.
+
+Review every chapter, including captions and answers, for natural Italian. Recast awkward sentences and explain unfamiliar terms; cosmetic synonym replacement is insufficient. Do not meet a word limit by mechanically chopping sentences, shrinking type, or removing useful steps. Inspect the PDF: adjacent definition-heavy paragraphs and oversized proof boxes can remain walls of text even when no paragraph is unusually long.
 
 The goal is understanding all the main ideas, not duplicating every numerical exercise or source variant. Spend space on a difficult conceptual step and recover it by selecting secondary material. Optional sections must not hide prerequisites required immediately afterward. There is no target of150 pages,52 pages,12 chapters or a fixed figure/exercise ratio.
 

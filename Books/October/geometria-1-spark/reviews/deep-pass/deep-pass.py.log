@@ -1,0 +1,8 @@
+3: exact expansions for the multiplicity and conjugate-pair examples
+5: span identity, two representations of (3,6), obstruction for (1,0)
+6: extracted base, two exchanges, explicit base of 2x-y+3z=0
+7: common line, whole-space sum and Grassmann dimensions 2+2-1=3
+8: adapted base (k,e1,e3), kernel and image dimensions, vector reconstruction
+10: exact row operations, equal row/column rank, original pivot columns, compatibility examples
+Structure: all 10 main chapters have one In breve immediately after the title
+All exact deep-pass checks passed. General proofs require separate review.

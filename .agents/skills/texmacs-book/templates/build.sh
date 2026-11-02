@@ -4,6 +4,7 @@ set -eu
 BOOK_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 cd "$BOOK_ROOT"
 STEM=${BOOK_STEM:-$(basename "$BOOK_ROOT")}
+python3 scripts/check-editorial.py "$BOOK_ROOT"
 sh scripts/assemble.sh "$STEM.src" --preamble templates/preamble.tm --tail templates/tail.tm source/*.tm
 # Keep the published .tm until a checked candidate has exported successfully.
 CANDIDATE=$(python3 -c 'import os, sys, tempfile; fd, name = tempfile.mkstemp(prefix=".build-", suffix=".tm", dir=sys.argv[1]); os.close(fd); print(name)' "$BOOK_ROOT")

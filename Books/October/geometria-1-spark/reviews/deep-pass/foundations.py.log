@@ -1,0 +1,4 @@
+F2: verificati esattamente tutti i casi degli assiomi.
+Distributive: 512 triple finite verificate (controllo, non prova generale).
+Complessi: prodotti, divisioni, radici cubiche/seste/quarte esatti in anelli quadratici.
+Polinomi: quadratica corretta, fattori z^6-1, esercizio3.2 e molteplicità figura verificati.

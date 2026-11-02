@@ -1,0 +1,38 @@
+{
+  "course": "Fondamenti di Programmazione",
+  "chapters": 9,
+  "figures": 12,
+  "exercises": 18,
+  "sources": 14,
+  "detail": [
+    8,
+    12,
+    20,
+    22,
+    38,
+    39,
+    46,
+    47
+  ],
+  "limitations": "Le slide citate nelle note non sono disponibili; le discrepanze documentarie di settembre restano descritte in source-audit.md. I modelli di calcolo sono presentati al livello introduttivo delle fonti, senza dimostrare risultati di indecidibilità.",
+  "pages": 51,
+  "bytes": 932392,
+  "pdf_sha256": "b85cf948d473abb6f74a78c861badf2b40d10e0df0b9e97648a489e4708bfa2b",
+  "tm_sha256": "465380b92ca877f9b484c245d9f761dfd3fa6a93e7d850b862152ea0fe9b664a",
+  "chapter_pages": {
+    "1": 5,
+    "2": 9,
+    "3": 14,
+    "4": 17,
+    "5": 22,
+    "6": 26,
+    "7": 31,
+    "8": 36,
+    "9": 42
+  },
+  "date": "2026-11-02",
+  "all_pages_rendered_and_checked": true,
+  "required_chapter_openings": 9,
+  "reading_scale_comparison": "Aritmetica Spark, pp.5 e21; preambolo canonico invariato",
+  "finite_checks_are_not_proofs": true
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="150" viewBox="0 0 640 150" role="img" aria-labelledby="title desc">
+<title id="title">Le tre operazioni elementari di riga</title><desc id="desc">Tre schemi di una matrice a tre righe: scambio di due righe, moltiplicazione di una riga per λ diverso da zero, somma a una riga di un multiplo di un&#x27;altra.</desc>
+<defs><marker id="ah" viewBox="0 0 10 8" refX="9.2" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.6 L10,4 L0,7.4 L2.4,4 Z" fill="#111"/></marker><marker id="ahs" viewBox="0 0 10 8" refX="0.8" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M10,0.6 L0,4 L10,7.4 L7.6,4 Z" fill="#111"/></marker></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect x="10" y="14" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="104" y="14" width="94" height="26" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="10" y="46" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="104" y="46" width="94" height="26" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="10" y="78" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="104" y="78" width="94" height="26" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<line x1="76" y1="59" x2="98" y2="59" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="222" y="14" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="316" y="14" width="94" height="26" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="222" y="46" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="316" y="46" width="94" height="26" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="222" y="78" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="316" y="78" width="94" height="26" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<line x1="288" y1="59" x2="310" y2="59" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="434" y="14" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="528" y="14" width="94" height="26" fill="#e4e4e4" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="434" y="46" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="528" y="46" width="94" height="26" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="434" y="78" width="60" height="26" fill="none" stroke="#111" stroke-width="1" rx="4"/>
+<rect x="528" y="78" width="94" height="26" fill="white" stroke="#111" stroke-width="1" rx="4"/>
+<line x1="500" y1="59" x2="522" y2="59" stroke="#111" stroke-width="0.9" marker-end="url(#ah)"/>
+</g>
+<g font-family="'STIX Two Text', 'STIX Two Math', 'Times New Roman', serif">
+<text x="40" y="32" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">i</tspan></text>
+<text x="151" y="32" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">j</tspan></text>
+<text x="40" y="64" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">2</tspan></text>
+<text x="151" y="64" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">2</tspan></text>
+<text x="40" y="96" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">j</tspan></text>
+<text x="151" y="96" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">i</tspan></text>
+<text x="104" y="134" font-size="13" text-anchor="middle" fill="#111" font-style="italic">scambio</text>
+<text x="252" y="32" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">1</tspan></text>
+<text x="363" y="32" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">1</tspan></text>
+<text x="252" y="64" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">i</tspan></text>
+<text x="363" y="64" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">λR</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">i</tspan></text>
+<text x="252" y="96" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">3</tspan></text>
+<text x="363" y="96" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">3</tspan></text>
+<text x="316" y="134" font-size="13" text-anchor="middle" fill="#111" font-style="italic">una riga per λ ≠ 0</text>
+<text x="464" y="32" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">i</tspan></text>
+<text x="575" y="32" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">i</tspan> + <tspan font-style="italic">λR</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">j</tspan></text>
+<text x="464" y="64" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">2</tspan></text>
+<text x="575" y="64" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan baseline-shift="-28%" font-size="9.8">2</tspan></text>
+<text x="464" y="96" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">j</tspan></text>
+<text x="575" y="96" font-size="14" text-anchor="middle" fill="#111"><tspan font-style="italic">R</tspan><tspan font-style="italic" baseline-shift="-28%" font-size="9.8">j</tspan></text>
+<text x="528" y="134" font-size="13" text-anchor="middle" fill="#111" font-style="italic">riga più λ volte un&#x27;altra</text>
+</g>
+</svg>

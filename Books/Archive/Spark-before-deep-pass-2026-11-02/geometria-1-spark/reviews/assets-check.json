@@ -1,0 +1,65 @@
+{
+  "used_figures": 20,
+  "references": {
+    "distributiva": [
+      "01.tm"
+    ],
+    "funzioni": [
+      "01.tm"
+    ],
+    "piano-complesso": [
+      "02.tm"
+    ],
+    "radici": [
+      "02.tm"
+    ],
+    "fattori": [
+      "03.tm"
+    ],
+    "coniugate": [
+      "03.tm"
+    ],
+    "rette": [
+      "04.tm"
+    ],
+    "span": [
+      "05.tm"
+    ],
+    "coordinate-basi": [
+      "05.tm"
+    ],
+    "scambio": [
+      "06.tm"
+    ],
+    "polinomi01": [
+      "06.tm"
+    ],
+    "somma-diretta": [
+      "07.tm"
+    ],
+    "grassmann": [
+      "07.tm"
+    ],
+    "colonne": [
+      "08.tm"
+    ],
+    "traslato": [
+      "08.tm"
+    ],
+    "rango-nullita": [
+      "08.tm"
+    ],
+    "scala": [
+      "09.tm"
+    ],
+    "gauss-passi": [
+      "09.tm"
+    ],
+    "piano-span": [
+      "09.tm"
+    ],
+    "rouche": [
+      "10.tm"
+    ]
+  }
+}
