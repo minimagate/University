@@ -11,12 +11,14 @@
             "id": "cb49407fb8880402",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Books/October/geometria-1-spark/geometria-1-spark.pdf"
+                "file": "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "geometria-1-spark"
+              "icon": "lucide-file",
+              "title": "2026-09-30 - Fattorizzazione dei polinomi e radici complesse"
             }
           }
         ]
@@ -186,8 +188,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "30e29a4449e2e66a",
+  "active": "cb49407fb8880402",
   "lastOpenFiles": [
+    "Books/October/analisi-1-spark/analisi-1-spark.pdf",
+    "Books/October/geometria-1-spark/geometria-1-spark.pdf",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/templates/tail.tm",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/templates/preamble.tm",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/templates/front.tm",
@@ -197,8 +201,6 @@
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/source/99-app.tm",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/source/09.tm",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/source/08.tm",
-    "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/source/04.tm",
-    "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/source/07.tm",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/reviews/review-hoare-arrays.md",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/reviews/review-foundations-logic.md",
     "Books/Archive/Spark-before-deep-pass-2026-11-02/fondamenti-di-programmazione-1-spark/reviews/review-final-visual-arrays.md",

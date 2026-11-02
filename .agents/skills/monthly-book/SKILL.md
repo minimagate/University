@@ -5,7 +5,7 @@ description: Create, continue, convert or revise a course study book for a month
 
 # Monthly books — Spark by default
 
-Spark is the user's default for every course book. Read `AGENTS.md`, `Books/README.md`, [the Spark teaching standard](references/spark-standard.md) and [the approved prose example](references/prose-example.md). The editorial reference is `Books/October/aritmetica-1-spark/`: inspect its introduction, relevant chapters, coverage and production files. Adapt to the subject; do not copy its arithmetic topic list, chapter count or page count.
+Spark is the user's default for every course book. Read `AGENTS.md`, `Books/README.md` and [the Spark teaching standard](references/spark-standard.md). The production reference is `Books/October/aritmetica-1-spark/`: inspect its coverage and production files. Adapt to the subject; do not copy its topic list, chapter count or page count.
 
 Use sibling skills `texmacs-book` for native authoring/build/visual checks and `book-figures` for illustrations. Ordinary book work does not modify `.agents/`, `AGENTS.md`, Notes, transcripts, audio or Bases. Explicit user authorization can include a policy update or archival operation; do not ask again for an action already authorized.
 
@@ -36,13 +36,7 @@ Use `templates/mappa.md` as the planning/source-audit starting point. Distinguis
 
 ## Write and evaluate
 
-Follow the teaching standard: familiar example → question → intuition → precise concept → motivated reasoning → use. This is a flexible progression, not a mandatory seven-part form. Clearly name the pillars in chapter/section titles and the index; selectively highlight essential definitions with `concetto`. Connect each new pillar to what the reader already knows. Few well-chosen examples are better than a long list of unexplained computations.
-
-For central proofs, explain why a move is worth trying, then give the complete rigorous proof. Use `anatomia` sparingly. Teach induction, contradiction and other methods through actual reasoning; do not reintroduce a proof-recipe toolbox or rename the old workshops without changing their content. Examples and exercises explain choices, not just calculations. Provide explained answers to all exercises posed for autonomous work; gradually reduce hints. Open every numbered chapter with a real `In breve`: a short narrative paragraph (usually three or four connected sentences) telling the chapter's problem and where it leads, with openings that vary across chapters. Other boxes and exercise counts are chosen by need; the chapter orientation is required.
-
-Write narrative prose in the voice of [the approved example](references/prose-example.md): a concrete question, the obstacle, the way out, the formal answer. Connected sentences of varied length, sparing colons, motivated choices, no personified abstractions and no reviewer-facing remarks; the full list is in the teaching standard. Read the entire prose, captions and solutions aloud in your head, including chapters that initially seem adequate. Avoid dense paragraphs that introduce several definitions or combine a goal, proof and conclusion, and equally avoid strings of one-fact sentences. Use actual blank-line paragraphs, meaningful subheadings, displayed calculations and small worked traces where they clarify the reasoning. Do not merely split an unchanged catalogue of jargon or turn the book into disconnected bullet points.
-
-Review every chapter as a beginner: terms introduced before use, one idea developed at a time, applicable hypotheses visible, simple language, examples building understanding and important links explained. Rewrite compressed passages before proceeding. Keep a continuous university-book narrative and a manageable reading load; use `Per proseguire` for secondary developments, and trim duplication rather than concepts. No decorative quizzes or advanced additions just for completeness.
+Write in the tone of the teaching standard and otherwise use your own judgment about structure, rhythm and presentation. Name the main concepts clearly so they can be found in the contents. Keep proofs complete and rigorous, and give explained answers to the exercises. Reread the book as a beginner would and fix whatever is unclear.
 
 Use delegation when authorized and useful: assign bounded source/writing blocks with explicit dependencies, keep one integrated editorial voice, independently review proofs and answers. The orchestrator must assess the complete book; parallel writing does not replace integration.
 
@@ -52,7 +46,7 @@ Reuse correct existing vector drawings; add only figures that explain an idea. C
 
 Verify computed examples, figures and answers with independent exact arithmetic/enumeration where appropriate. Preserve useful check scripts. Review proofs separately: passing finite checks does not prove a theorem. If a check disagrees with the text, investigate both rather than forcing the test to pass.
 
-Compile in scratch, inspect **every rendered page**, then inspect formulas/figures/problem pages at reading size. Compare opening pages and difficult passages with the Aritmetica reference at reading size. Check visual density as well as overflow: several short but conceptually packed paragraphs can still form a wall of text. Fix stale index entries, broken boxes, overflows, stranded openings and nearly empty pages containing only exercises. Paragraph/box counts are diagnostics, not a readability score. Build/export again from the actual final destination and check the delivered copy.
+Compile in scratch, inspect **every rendered page**, then inspect formulas/figures/problem pages at reading size. Fix stale index entries, broken boxes, overflows and nearly empty pages. Build/export again from the actual final destination and check the delivered copy.
 
 ## Deliver the main bundle
 
