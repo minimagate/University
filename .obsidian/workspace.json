@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
-                "mode": "source",
+                "file": "Books/Aritmetica-I/02 - Naturali e induzione.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-10-21 - Relazioni di equivalenza e strutture quoziente"
+              "title": "02 - Naturali e induzione"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.88671875
+    "width": 290.17578125
   },
   "right": {
     "id": "cfaa1f077aa9c112",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Geometria 1/Lectures/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+                "file": "Books/Aritmetica-I/02 - Naturali e induzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,8 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.203125,
-    "collapsed": true
+    "width": 345.203125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,10 +189,20 @@
   },
   "active": "cb49407fb8880402",
   "lastOpenFiles": [
+    "Books/Aritmetica-I/05 - Distribuzioni e ripetizioni.md",
+    "Books/Aritmetica-I/00 - Indice e piano di studio.md",
+    "Books/Aritmetica-I/03 - Contare attraverso le funzioni.md",
+    "Books/Aritmetica-I/06 - Inclusione ed esclusione.md",
+    "Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali.md",
+    "Books/Aritmetica-I/02 - Naturali e induzione.md",
+    "Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni.md",
+    "Books/Aritmetica-I/90 - Fonti e criteri editoriali.md",
+    "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
+    "Books/Aritmetica-I",
+    "Books",
     "Books/October/aritmetica-ottobre.pdf",
     "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
     "Books/October/aritmetica-ottobre.tm",
-    "Books/October",
-    "Books"
+    "Books/October"
   ]
 }
