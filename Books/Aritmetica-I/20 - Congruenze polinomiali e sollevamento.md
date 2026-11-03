@@ -2,19 +2,29 @@
 
 Prerequisiti: [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze e inversi]], [[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|teorema cinese]], [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|anelli e campi]], [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|aritmetica dei gruppi modulari]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Risolverai congruenze $f(x)\equiv0\pmod n$ con $f$ polinomio a coefficienti interi, spezzando il modulo $n$ in potenze di primi.
+> - Modulo un primo risolverai le quadratiche con il discriminante; modulo una potenza prima passerai da $p^k$ a $p^{k+1}$ risolvendo una congruenza lineare (sollevamento).
+> - Distinguerai le radici semplici, che si sollevano in un solo modo, da quelle singolari, che non si sollevano affatto oppure si sollevano in $p$ modi.
+> - Ricomporrai le soluzioni con il teorema cinese e conterai le radici come prodotto dei conteggi locali.
+
 ## Un problema finito, ma organizzato meglio
 
 Quali interi soddisfano $x^2\equiv2\pmod{49}$? Potremmo provare tutti i resti da $0$ a $48$. Ma modulo $7$ le prove sono soltanto sette: troviamo $3^2\equiv4^2\equiv2$. Ogni soluzione cercata deve quindi essere congrua a $3$ oppure a $4$ modulo $7$. Possiamo correggere questi due resti, aggiungendo un multiplo di $7$, fino a ottenere soluzioni modulo $49$?
 
 Questo passaggio da un'informazione meno precisa a una più precisa si chiama **sollevamento**. Vedremo che, sotto un'ipotesi controllabile, la correzione si trova risolvendo una congruenza lineare. Prima occorre però capire quali problemi conviene separare.
 
-Sia $f\in\mathbb Z[x]$ un polinomio a coefficienti interi e sia $n\ge2$. Risolvere
+Sia $f\in\mathbb Z[x]$ (la scrittura indica un polinomio a coefficienti interi) e sia $n\ge2$. Risolvere
 
 $$
 f(x)\equiv0\pmod n
 $$
 
 significa trovare le classi $[x]_n$ che annullano $f$. Le chiamiamo **radici modulo $n$**. Se sostituiamo $x$ con un intero congruo modulo $n$, anche tutte le sue potenze, e quindi $f(x)$, rimangono congrue. La domanda dipende dunque dalla classe: ci sono sempre soltanto $n$ candidati, anche se gli interi sono infiniti.
+
+> [!example] Esempi e controesempi — radice modulo $n$
+> **È una radice:** per $f(x)=x^2-2$, la classe di $3$ modulo $7$, perché $3^2-2=7$; e lo è anche $10$, perché $10\equiv3\pmod 7$ dà la stessa classe e $10^2-2=98$ è multiplo di $7$.
+> **Non è una radice:** la classe di $5$ modulo $7$, perché $5^2-2=23$ non è divisibile per $7$. Per decidere basta provare un solo rappresentante della classe, perché $f$ rispetta le congruenze.
 
 La fattorizzazione del modulo ci permette di organizzarli. Scriviamo
 
@@ -39,6 +49,14 @@ $$
 $$
 
 Scelte locali diverse danno classi globali diverse: differiscono in almeno un resto. Se anche un solo $N_i$ è zero, non esiste alcuna soluzione globale. Lavorare localmente serve tanto a costruire soluzioni quanto a escluderle.
+
+> [!abstract] Concetto chiave — Si risolve primo per primo e si ricompone
+> Se $n=p_1^{e_1}\cdots p_r^{e_r}$ e $N_i$ è il numero di radici di $f$ modulo $p_i^{e_i}$, allora $f(x)\equiv0\pmod n$ ha esattamente $N_1\cdots N_r$ radici modulo $n$ (in particolare nessuna se un $N_i=0$).
+> È la conseguenza del teorema cinese ([[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|capitolo 12]]) che riduce ogni modulo a potenze di primi; il resto del capitolo studia le potenze di primi.
+
+> [!example] Esempi e controesempi — contare le radici come prodotto
+> **Vale (moduli coprimi):** $x^2\equiv1$ ha $1$ radice modulo $2$ e $2$ modulo $5$ ($\pm1$) con moduli coprimi, quindi $1\cdot2=2$ radici modulo $10$. In effetti sono $1$ e $9$.
+> **Non vale (moduli non coprimi):** $8=2\cdot4$, ma $\gcd(2,4)=2\neq1$. Modulo $2$ la congruenza $x^2\equiv1$ ha $1$ radice, modulo $4$ ne ha $2$ ($1,3$): il prodotto darebbe $1\cdot2=2$, mentre modulo $8$ le radici sono $4$ ($1,3,5,7$). Il teorema cinese richiede una scomposizione in fattori a due a due coprimi, qui $8$ non si spezza affatto.
 
 ## Quadratiche modulo un primo
 
@@ -100,13 +118,17 @@ $$
 
 L'elenco completo è quindi $\{0,1,3,4,5,9\}$: manca $2$, perciò non esistono soluzioni. La stessa congruenza non potrebbe avere soluzioni modulo un multiplo di $11$.
 
+> [!example] Esempi e controesempi — quadrato modulo $p$
+> **È un quadrato modulo $11$:** $3$, perché $5^2=25\equiv3$; $4$, perché $2^2=4$; anche $0$, che qui includiamo.
+> **Non è un quadrato modulo $11$:** $2$, perché l'elenco $0,1,4,9,5,3$ dei quadrati dei rappresentanti non lo contiene (e gli opposti ripetono gli stessi quadrati).
+
 Le ipotesi sulla formula contano. Se $p\mid A$, riduciamo prima i coefficienti: rimane $Bx+C\equiv0\pmod p$. Se $p\nmid B$ c'è un'unica soluzione; se $p\mid B$ ci sono tutte le classi quando $p\mid C$, nessuna altrimenti. Se $p=2$, controlliamo direttamente $x=0,1$: dividere per $2$ non è consentito.
 
 ## Che cosa cambia per una potenza prima
 
 Passando da $p$ a $p^e$, con $e>1$, perdiamo il campo. Per esempio $5\cdot5\equiv0\pmod{25}$, ma nessuno dei fattori è nullo modulo $25$. La divisibilità richiesta può distribuirsi fra i fattori.
 
-Il linguaggio delle [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|valutazioni prime]] rende precisa questa osservazione: per interi non nulli $a,b$,
+Il linguaggio delle [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|valutazioni prime]] rende precisa questa osservazione. La valutazione $v_p(a)$ è l'esponente con cui il primo $p$ compare nella fattorizzazione di $a$ (per esempio $v_5(50)=2$). Per interi non nulli $a,b$,
 
 $$
 v_p(ab)=v_p(a)+v_p(b).
@@ -182,6 +204,16 @@ $$
 
 Si parla di **radice semplice** e di sollevamento semplice di Hensel. Se invece $f'(x_0)\equiv0\pmod p$, la radice è detta **singolare**: per $\gamma\not\equiv0$ non esiste alcun sollevamento, mentre per $\gamma\equiv0$ tutti i $p$ valori di $h$ funzionano. Queste alternative sono conseguenze complete della congruenza lineare, non eccezioni da verificare con una nuova formula.
 
+> [!abstract] Concetto chiave — Sollevamento di Hensel
+> Sia $x_0$ una radice di $f$ modulo $p^k$ e $\gamma=f(x_0)/p^k$. Le radici modulo $p^{k+1}$ che si riducono a $x_0$ sono $x_0+p^kh$ con $\gamma+hf'(x_0)\equiv0\pmod p$. Se $f'(x_0)\not\equiv0\pmod p$ ce n'è esattamente una; se $f'(x_0)\equiv0$ ce ne sono $0$ (quando $\gamma\not\equiv0$) oppure $p$ (quando $\gamma\equiv0$).
+> È lo strumento che porta una soluzione modulo $p$ a una modulo $p^e$; torna ogni volta che si risolve una congruenza modulo un numero con fattori ripetuti.
+
+> [!example] Esempi e controesempi — radice semplice e singolare
+> **Radice semplice:** $x_0=3$ per $x^2-2$ modulo $7$, perché $f'(3)=6\not\equiv0\pmod7$: si solleva in un solo modo (a $10$ modulo $49$).
+> **Radice singolare con $p$ sollevamenti:** $x_0=0$ per $x^2$ modulo $5$, perché $f'(0)=0$ e $\gamma=0$: si sollevano tutte le classi $5h$.
+> **Radice singolare senza sollevamenti:** $x_0=0$ per $x^2-5$ modulo $5$, perché $f'(0)=0$ ma $\gamma=-1\not\equiv0$.
+> Se togli l'ipotesi $f'(x_0)\not\equiv0$, l'unicità del sollevamento cade, e nei due esempi singolari le uniche alternative sono nessuno oppure tutti.
+
 La procedura si ripete alle potenze successive. Ogni radice superiore si riduce a una radice inferiore, quindi partire da tutte le radici modulo $p$ e conservare tutti i sollevamenti dà una ricerca completa. Se una radice è semplice, resta tale lungo il processo: $x\equiv x_0\pmod p$ implica $f'(x)\equiv f'(x_0)\pmod p$. Ogni suo passaggio è unico. I rami singolari possono invece ramificarsi o interrompersi.
 
 ## Due comportamenti, con tutti i conti
@@ -214,6 +246,50 @@ Per $g(x)=x^2-5$, invece, $\gamma=-1$. La congruenza di correzione diventa $-1\e
 
 > [!warning] Attenzione — Una radice iniziale non garantisce una radice finale
 > Non basta risolvere modulo $p$ per avere risolto modulo $p^e$. Occorre seguire ogni correzione. Nel caso singolare una radice può produrre $p$ figli al passaggio successivo oppure nessuno; i figli vanno a loro volta controllati. Non presumere né l'esistenza né un numero fisso di radici.
+
+### Un albero di sollevamenti: $x^2\equiv25\pmod{125}$
+
+Mettiamo insieme i due comportamenti sullo stesso polinomio $f(x)=x^2-25$, con $f'(x)=2x$. Modulo $5$ l'unica radice è $0$, ed è singolare. Il primo passo ($k=1$) ha $\gamma=f(0)/5=-5\equiv0$, quindi tutti i cinque candidati funzionano: le radici modulo $25$ sono $0,5,10,15,20$.
+
+Al passo successivo ($k=2$), ogni $x_0$ è multiplo di $5$, perciò $f'(x_0)\equiv0\pmod5$ e la condizione diventa soltanto $\gamma\equiv0\pmod5$, con $\gamma=f(x_0)/25$ (il valore non dipende dal rappresentante scelto, perché $25f'(x_0)\equiv0\pmod{125}$):
+
+| $x_0\pmod{25}$ | $f(x_0)$ | $\gamma=f(x_0)/25$ | $\gamma\bmod5$ | Radici modulo $125$ sopra $x_0$ |
+|---|---|---|---|---|
+| $0$ | $-25$ | $-1$ | $4$ | nessuna |
+| $5$ | $0$ | $0$ | $0$ | $5,30,55,80,105$ |
+| $10$ | $75$ | $3$ | $3$ | nessuna |
+| $15$ | $200$ | $8$ | $3$ | nessuna |
+| $20$ | $375$ | $15$ | $0$ | $20,45,70,95,120$ |
+
+Dei cinque rami, tre si interrompono e due producono ciascuno $5$ radici: in totale $10$ radici modulo $125$. Il controllo diretto con $x=5y$ lo conferma: $25y^2\equiv25\pmod{125}$ equivale a $y^2\equiv1\pmod5$, cioè $y\equiv\pm1\pmod5$.
+
+## Il metodo completo, passo per passo
+
+Per qualunque $n$ e qualunque polinomio $f$ a coefficienti interi, il diagramma raccoglie quanto visto. Si legge dall'alto: ogni primo del modulo si tratta separatamente e i risultati si riuniscono in fondo.
+
+```mermaid
+flowchart TD
+    A["Problema: f(x) ≡ 0 mod n"] --> B["Fattorizza n = p1^e1 ··· pr^er"]
+    B --> C["Per ogni primo p: risolvi f(x) ≡ 0 mod p"]
+    C --> D{"Esiste una radice r mod p?"}
+    D -->|"no"| Z["N_i = 0: nessuna soluzione per n"]
+    D -->|"sì"| E{"f'(r) ≢ 0 mod p ?"}
+    E -->|"sì: radice semplice"| F["Un solo sollevamento a ogni livello, fino a p^e"]
+    E -->|"no: radice singolare"| G["A ogni livello: γ ≢ 0 nessuno, γ ≡ 0 tutti i p"]
+    F --> H["N_i = numero di radici mod p^e"]
+    G --> H
+    H --> I["Ricomponi con il teorema cinese"]
+    I --> J["Numero di soluzioni = N_1 · … · N_r"]
+```
+
+Un esempio completo: risolviamo $x^2\equiv25\pmod{875}$, con $875=5^3\cdot7$.
+
+- **Fattorizza.** $875=125\cdot7$, con $\gcd(125,7)=1$.
+- **Modulo $7$.** $x^2\equiv25\equiv4$, quindi $x\equiv2,5$. La derivata è $2x\equiv4,3\not\equiv0$: sono radici semplici, e $N=2$ (esponente $1$, nessun sollevamento da fare).
+- **Modulo $125$.** Dall'albero precedente, $N=10$ (caso singolare).
+- **Ricomponi.** In totale $2\cdot10=20$ radici modulo $875$. Per esempio, per $x\equiv5\pmod{125}$ e $x\equiv2\pmod7$ scriviamo $x=5+125k$: $125\equiv6$, quindi $5+6k\equiv2\pmod7$, $k\equiv3$ e $x\equiv380$. Verifica: $380^2-25=144375=165\cdot875$.
+
+Un secondo esempio con soli sollevamenti semplici: $x^2\equiv2\pmod{98}$, con $98=2\cdot49$. Modulo $2$ la radice è $0$ (da $x^2\equiv0$) e non c'è nulla da sollevare; modulo $49$ le radici sono $10,39$. La ricomposizione con la parità dà $x\equiv10$ e $x\equiv88\pmod{98}$, e $88^2-2=7742=79\cdot98$. Sono $1\cdot2=2$ radici.
 
 ## Un prodotto speciale: due interi consecutivi
 

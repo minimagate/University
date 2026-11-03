@@ -2,6 +2,16 @@
 
 Prerequisiti: [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|cardinalità e conteggio delle funzioni]] e [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|coefficienti binomiali e binomio di Newton]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice del libro]].
 
+> [!info] In questo capitolo
+> - Imparerai a contare unioni di insiemi che si sovrappongono senza contare due volte lo stesso elemento.
+> - Vedrai perché i segni alternano, seguendo il contributo di un singolo elemento: una dimostrazione che vale per qualunque numero di insiemi.
+> - Conterai le funzioni suriettive, cioè le assegnazioni in cui nessuna scatola resta vuota.
+> - Troverai uno schema per impostare ogni problema e un esempio che mostra cosa succede se si dimentica un termine.
+> - Per decidere se un problema richiede questo metodo, usa la [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni#Mappa decisionale del conteggio|mappa decisionale del capitolo 05]].
+
+> [!note] Notazione insiemistica
+> Per due insiemi $A,B$: $A\cup B$ (unione) contiene gli elementi che stanno in almeno uno dei due; $A\cap B$ (intersezione) quelli che stanno in entrambi; $A\setminus B$ quelli di $A$ che non sono in $B$. Due insiemi sono **disgiunti** se $A\cap B=\varnothing$. In tutto il capitolo fissiamo un insieme finito $U$, l'**insieme ambiente**, che contiene tutto ciò che stiamo considerando. Rivedi il [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]] se serve.
+
 ## Quando una somma conta troppo
 
 Quanti interi da $1$ a $100$ sono divisibili per $3$ oppure per $5$? I multipli di $3$ sono $33$, quelli di $5$ sono $20$. Sommando otteniamo $53$, ma il numero $15$ compare in entrambi gli elenchi, come $30$, $45$, $60$, $75$ e $90$. Questi sei numeri sono stati contati due volte.
@@ -26,6 +36,12 @@ $$
 |A^c|=|U|-|A|.
 $$
 
+> [!example] Esempi e controesempi — unione e complementare
+> **Vale:** in $U=\{1,\ldots,10\}$ con $A=\{\text{pari}\}$ e $B=\{\text{multipli di }3\}$ si ha $|A\cup B|=5+3-1=7$ (il $6$ è l'unico comune) e $|A^c|=10-5=5$.
+> **Non vale** se si toglie un'ipotesi:
+> - $|A\cup B|=|A|+|B|$ vale soltanto se $A\cap B=\varnothing$ (viola «disgiunti»): qui darebbe $8\neq7$;
+> - il complementare dipende dall'ambiente: i non multipli di $3$ sono $67$ in $\{1,\ldots,100\}$ ma $34$ in $\{1,\ldots,50\}$. Calcolare $|U|-|A|$ senza dichiarare $U$ non ha senso.
+
 Nell'esempio iniziale, i numeri non divisibili né per $3$ né per $5$ sono quindi $100-47=53$. Abbiamo contato prima quelli con almeno una proprietà e poi li abbiamo tolti dal totale. È una strategia utile quando il vincolo desiderato dice «nessuno», «mai» o «tutti i valori devono comparire».
 
 > [!warning] Attenzione — «Oppure» comprende anche il caso comune
@@ -44,6 +60,31 @@ $$
 
 Perché aggiungere l'intersezione tripla? Un suo elemento è stato sommato tre volte e sottratto tre volte: il suo contributo provvisorio è zero. Bisogna ripristinarlo. Un elemento che sta esattamente in due insiemi contribuisce invece $2-1=1$; uno che sta in un solo insieme contribuisce già $1$.
 
+Per capire il meccanismo conviene vedere le regioni di un diagramma di Venn con tre cerchi. Ogni elemento di $U$ appartiene a una e una sola di queste otto regioni, a seconda che stia o no in $A$, in $B$ e in $C$ (i numeri fra parentesi sono quelli dell'esempio che segue, con $30$ studenti):
+
+```text
+U
+├── in nessun insieme                      (3)
+├── in uno solo
+│   ├── solo A                             (7)
+│   ├── solo B                             (4)
+│   └── solo C                             (3)
+├── in esattamente due
+│   ├── A e B, non C                       (6)
+│   ├── A e C, non B                       (3)
+│   └── B e C, non A                       (2)
+└── in tutti e tre  (A, B e C)             (2)
+```
+
+Ogni riga della tabella seguente dice con quale peso una regione entra nei tre blocchi della formula. L'ultima colonna è sempre $1$ per le regioni dentro l'unione e $0$ fuori: è questa la ragione per cui la formula funziona.
+
+| Regione | in $\lvert A\rvert+\lvert B\rvert+\lvert C\rvert$ | in $-$(intersezioni a due) | in $+\lvert A\cap B\cap C\rvert$ | Peso totale |
+|---|---|---|---|---|
+| in nessun insieme | $0$ | $0$ | $0$ | $0$ |
+| in un solo insieme | $1$ | $0$ | $0$ | $1$ |
+| in esattamente due | $2$ | $-1$ | $0$ | $1$ |
+| in tutti e tre | $3$ | $-3$ | $+1$ | $1$ |
+
 **Esempio svolto: tre attività.** Fra $30$ studenti, $18$ seguono teatro, $14$ musica e $10$ fotografia. Seguono teatro e musica in $8$, teatro e fotografia in $5$, musica e fotografia in $4$; in $2$ seguono tutte e tre le attività. Le intersezioni a due comprendono anche questi ultimi due studenti. Il numero di studenti con almeno un'attività è
 
 $$
@@ -52,7 +93,21 @@ $$
 
 Ne restano $30-27=3$ senza attività. Per controllare il ragionamento, gli studenti con esattamente due attività sono $(8-2)+(5-2)+(4-2)=11$; quelli con una sola sono $(18-8-5+2)+(14-8-4+2)+(10-5-4+2)=14$. Ritroviamo $14+11+2=27$.
 
+> [!warning] Attenzione — Cosa va storto se si dimentica un termine
+> Con gli stessi dati, vediamo gli effetti di ciascuna omissione. In ogni caso il peso sbagliato dipende dalla regione dell'elemento (tabella sopra).
+>
+> | Calcolo | Risultato | Che cosa non torna |
+> |---|---|---|
+> | formula completa | $27$ | corretto |
+> | senza $+\lvert A\cap B\cap C\rvert$ | $18+14+10-8-5-4=25$ | i $2$ studenti con tutte e tre le attività hanno peso $3-3=0$: sono spariti dal conteggio |
+> | senza $-\lvert B\cap C\rvert$ | $18+14+10-8-5+2=31$ | $31>30$: più studenti dell'intero gruppo, risultato impossibile; i $2$ studenti in $B$ e $C$ ma non in $A$ pesano $2$ anziché $1$, e i $2$ in tutti e tre pesano $2$ anziché $1$: $27+2+2=31$ |
+> | solo $\lvert A\rvert+\lvert B\rvert+\lvert C\rvert$ | $42$ | ogni studente con più attività è contato più volte |
+>
+> Il controllo più rapido è questo: un risultato che supera $\lvert U\rvert$ o è negativo segnala un termine mancante o un segno sbagliato.
+
 ## Trasformare l'appartenenza in un numero
+
+Per dimostrare la formula con un numero qualsiasi di insiemi servirà un modo di calcolare con l'appartenenza. Lo abbiamo già incontrato nel [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|capitolo 04]], dove la funzione caratteristica descriveva i sottoinsiemi; ora la usiamo come strumento di calcolo.
 
 Per $A\subseteq U$, la **funzione caratteristica** di $A$ è
 
@@ -70,6 +125,10 @@ Essa registra se una proprietà è vera. Se $U$ è finito, sommare questi segnal
 $$
 |A|=\sum_{x\in U}\chi_A(x).
 $$
+
+> [!example] Esempi e controesempi — funzione caratteristica
+> **È una funzione caratteristica:** in $U=\{1,\ldots,6\}$, per $A=\{2,4,6\}$ i valori sono $(0,1,0,1,0,1)$ e la loro somma è $3=|A|$.
+> **Non è $\chi_A$:** la funzione che vale $1$ solo su $\{2,4\}$ è la caratteristica di $\{2,4\}$, non di $A$ (viola «vale $1$ su **tutti** gli elementi di $A$»). **Non è la caratteristica di alcun insieme:** $\chi_A+\chi_B$ quando $A\cap B\neq\varnothing$, perché sull'intersezione vale $2$, fuori da $\{0,1\}$ (viola «solo valori $0$ e $1$»): per questo nell'unione si sottrae il prodotto.
 
 Le operazioni fra insiemi diventano operazioni fra numeri. Per ogni $x\in U$ valgono
 
@@ -94,15 +153,16 @@ Queste identità valgono anche su un insieme ambiente infinito: sono uguaglianze
 
 Siano $r\geq1$ e $A_1,\ldots,A_r\subseteq U$, con $U$ finito. Scriviamo $[r]=\{1,\ldots,r\}$. Per ogni sottoinsieme non vuoto $I\subseteq[r]$, l'intersezione $\bigcap_{i\in I}A_i$ contiene gli elementi che hanno tutte le proprietà indicate da $I$.
 
-Il principio di inclusione-esclusione afferma che
+Il principio di inclusione-esclusione afferma che:
 
-$$
-\boxed{
-\left|\bigcup_{i=1}^r A_i\right|
-=\sum_{\varnothing\ne I\subseteq[r]}
-(-1)^{|I|+1}\left|\bigcap_{i\in I}A_i\right|.
-}
-$$
+> [!abstract] Concetto chiave — Principio di inclusione-esclusione
+> Per insiemi finiti $A_1,\ldots,A_r$:
+> $$
+> \left|\bigcup_{i=1}^r A_i\right|
+> =\sum_{\varnothing\ne I\subseteq[r]}
+> (-1)^{|I|+1}\left|\bigcap_{i\in I}A_i\right|.
+> $$
+> Si sommano i singoli insiemi, si tolgono le intersezioni a due, si aggiungono quelle a tre e così via, alternando i segni. È lo strumento per ogni conteggio con vincoli sovrapposti: suriezioni, sistemazioni con divieti (esercizio 8), limiti superiori nelle somme di stelle e sbarre ([[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|capitolo 05]]).
 
 In parole: sommiamo i singoli insiemi, sottraiamo tutte le intersezioni a due, aggiungiamo quelle a tre e continuiamo alternando i segni. Ogni gruppo di indici compare una sola volta: $A_1\cap A_2$ e $A_2\cap A_1$ sono lo stesso termine.
 
@@ -127,6 +187,20 @@ $$
 $$
 
 Ogni elemento dell'unione viene dunque contato una volta, qualunque sia il numero di proprietà che soddisfa; ogni elemento esterno viene contato zero volte. Questo prova la formula.
+
+> [!abstract] Concetto chiave — Il contributo di un elemento vale 1
+> Un elemento che appartiene a esattamente $m\geq1$ degli insiemi dati contribuisce al membro destro
+> $$
+> \sum_{k=1}^{m}(-1)^{k+1}\binom mk=1.
+> $$
+> Vedere un'identità di conteggio «elemento per elemento» è il metodo che usiamo per controllare ogni formula con segni alternati. Si basa sul binomio di Newton del [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|capitolo 04]].
+
+> [!example] Esempi e controesempi — inclusione-esclusione
+> **Vale:** per $A_1,A_2,A_3$ come nell'esempio dei $30$ studenti, la formula dà $27$, e un elemento in tutti e tre pesa $3-3+1=1$.
+> **Non vale** se si cambia l'enunciato:
+> - senza i segni alterni (viola «$(-1)^{|I|+1}$»), un elemento in tutti e tre peserebbe $3+3+1=7$;
+> - troncando la somma dopo le intersezioni a due, un elemento in tutti e tre pesa $3-3=0$ (è il controesempio dell'esercizio 4);
+> - con insiemi **infiniti** (viola «insiemi finiti») le cardinalità non si sottraggono: per $A=B=\mathbb N$, $|A|+|B|-|A\cap B|$ sarebbe «$\infty+\infty-\infty$», che non ha significato.
 
 Possiamo vedere la stessa struttura direttamente nelle funzioni caratteristiche. Non appartenere all'unione significa non appartenere a nessuno degli insiemi: è la legge di De Morgan
 
@@ -153,9 +227,27 @@ Sommando su $x\in U$ segue nuovamente la formula generale. Il primo argomento sp
 > [!warning] Attenzione — Le intersezioni dello stesso ordine possono avere dimensioni diverse
 > In generale non possiamo sostituire la somma delle intersezioni a due con $\binom{r}{2}|A_1\cap A_2|$. Il coefficiente conta quante intersezioni ci sono, ma possiamo moltiplicarlo per una sola cardinalità soltanto dopo aver provato che tutte quelle intersezioni hanno la stessa cardinalità.
 
+## Come impostare un problema
+
+Prima di applicare la formula conviene seguire sempre gli stessi passi. Leggi il diagramma dall'alto: il punto decisivo è se le intersezioni di $k$ proprietà dipendono soltanto da $k$ (come nelle suriezioni qui sotto), perché in quel caso la somma si accorcia.
+
+```mermaid
+flowchart TD
+  A["1. Fissa l'insieme ambiente U"] --> B["2. Definisci le proprietà vietate A₁ ... Aᵣ"]
+  B --> C["3. Calcola l'intersezione di k proprietà"]
+  C --> D{"Dipende solo da k?"}
+  D -->|"sì"| E["Raggruppa: C(r,k) termini uguali"]
+  D -->|"no"| F["Somma le intersezioni una per una"]
+  E --> G["4. Somma alternata"]
+  F --> G
+  G --> H["5. Complementare: U meno l'unione"]
+```
+
 ## Suriezioni: vietare che manchi un valore
 
-Siano $X,Y$ finiti, con $|X|=n\geq1$ e $|Y|=m\geq1$. Una funzione $f:X\to Y$ è suriettiva quando ogni elemento di $Y$ viene raggiunto. Il conteggio diretto richiederebbe controllare insieme molte fibre non vuote. Proviamo a contare il complementare.
+Quando si distribuiscono oggetti **distinti** in scatole etichettate pretendendo che nessuna scatola resti vuota, il conteggio diretto è difficile perché i casi da distinguere sono molti. Conviene contare le assegnazioni in cui qualche scatola resta vuota, e sottrarre dal totale. Nella [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni#Mappa decisionale del conteggio|mappa decisionale]] è la cella «distinti, etichettate, tutte piene».
+
+Siano $X,Y$ finiti, con $|X|=n\geq1$ e $|Y|=m\geq1$. Una funzione $f:X\to Y$ è **suriettiva** quando ogni elemento di $Y$ viene raggiunto. La **fibra** di $y\in Y$ è l'insieme $f^{-1}(\{y\})$ degli elementi di $X$ che $f$ manda in $y$: $f$ è suriettiva se e solo se tutte le fibre sono non vuote. Il conteggio diretto richiederebbe controllare insieme molte fibre non vuote. Proviamo a contare il complementare.
 
 L'insieme ambiente è ora $\Omega=Y^X$, l'insieme di **tutte le funzioni** da $X$ a $Y$, e ha cardinalità $m^n$. Numeriamo $Y=\{y_1,\ldots,y_m\}$ e poniamo
 
@@ -175,12 +267,12 @@ $$
 
 Questa volta la cardinalità dipende soltanto da $k$: abbiamo giustificato il raggruppamento delle $\binom{m}{k}$ intersezioni dello stesso ordine. Sottraendo dal totale la loro unione otteniamo il numero $S(n,m)$ di suriezioni:
 
-$$
-\boxed{
-S(n,m)=\sum_{k=0}^{m}(-1)^k\binom{m}{k}(m-k)^n
-\qquad(n,m\geq1).
-}
-$$
+> [!abstract] Concetto chiave — Numero di suriezioni
+> Per $n,m\geq1$ il numero $S(n,m)$ di suriezioni da un insieme di $n$ elementi a uno di $m$ è
+> $$
+> S(n,m)=\sum_{k=0}^{m}(-1)^k\binom{m}{k}(m-k)^n.
+> $$
+> Conta le assegnazioni di $n$ oggetti distinti a $m$ scatole etichettate con nessuna scatola vuota. Con la divisione per $m!$ dà i gruppi senza nome (tabella nel [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni#Mappa decisionale del conteggio|capitolo 05]]).
 
 Il termine $k=0$ è il totale $m^n$; il termine $k=m$ è zero perché $n\geq1$. Se $n<m$, la somma vale zero: una funzione non può raggiungere più di $n$ valori distinti. Se $n=m$, le suriezioni sono biezioni, perciò la somma vale $n!$.
 
@@ -192,6 +284,13 @@ S(5,3)=3^5-\binom31 2^5+\binom32 1^5-\binom33 0^5
 $$
 
 Sottrarre soltanto $3\cdot2^5$ darebbe $147$: ogni assegnazione in cui tutti scelgono lo stesso laboratorio sarebbe stata sottratta due volte, perché lascia vuoti gli altri due. Le tre intersezioni a due ripristinano queste tre assegnazioni una volta ciascuna.
+
+> [!example] Esempi e controesempi — funzione suriettiva
+> **È una suriezione** $f:\{1,\ldots,5\}\to\{a,b,c\}$: $f=(a,a,b,c,c)$, perché raggiunge $a$, $b$ e $c$.
+> **Non è una suriezione**, e ciascun esempio viola una condizione:
+> - $f=(a,a,b,b,b)$: è una funzione ma non raggiunge $c$ (viola «ogni elemento di $Y$ è raggiunto»);
+> - l'assegnazione che manda $1$ sia in $a$ sia in $b$ non è una funzione (viola «un solo valore per ogni argomento»): due scelte per lo stesso oggetto non sono un'unica assegnazione.
+> Il caso estremo $n<m$ non ha suriezioni: non si possono raggiungere più valori di quanti sono gli argomenti.
 
 I casi vuoti si leggono dalla definizione, senza usare potenze ambigue:
 

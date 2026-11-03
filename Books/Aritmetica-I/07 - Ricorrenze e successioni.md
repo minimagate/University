@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/02 - Naturali e induzione|induzione]], [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|conteggi e corrispondenze]], [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|coefficienti binomiali]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Costruirai una **ricorrenza** per un problema di conteggio, scegliendo un "primo passo" dopo il quale resta lo stesso problema in formato più piccolo.
+> - Capirai perché ricorrenza e dati iniziali bastano a identificare una successione (**unicità**).
+> - Imparerai a passare da una ricorrenza lineare a una formula esplicita tramite l'**equazione caratteristica**, distinguendo radici distinte, complesse e coincidenti.
+> - Vedrai come una stessa famiglia di oggetti, contata in due modi, dà un'identità fra somme di binomiali e numeri di Fibonacci.
+
 ## Un rettangolo nasconde rettangoli più piccoli
 
 Abbiamo una griglia di due righe e $n$ colonne. Vogliamo ricoprirla con domino rettangolari, ciascuno formato da due caselle adiacenti, senza sovrapposizioni e senza lasciare vuoti. Possiamo ruotare i domino. Quante tassellazioni esistono?
@@ -41,7 +47,7 @@ T_5&=T_4+T_3=8.
 \end{aligned}
 $$
 
-Non abbiamo dovuto disegnare otto figure: abbiamo dimostrato una regola che costruisce e conta tutte le figure, senza ripetizioni. Questa è la funzione di una **ricorrenza** in un problema combinatorio.
+Non abbiamo dovuto disegnare otto figure: abbiamo dimostrato una regola che costruisce e conta tutte le figure, senza ripetizioni. Questa è la funzione di una **ricorrenza** in un problema combinatorio: una regola che esprime ciascun termine mediante quelli precedenti.
 
 ## Una regola e i suoi dati iniziali
 
@@ -53,7 +59,7 @@ $$
 
 dove $\mathbb N=\{0,1,2,\ldots\}$. Il simbolo $a_n$ indica un termine; $(a_n)_{n\geq0}$ indica l'intera successione.
 
-Una descrizione per ricorrenza spiega come ottenere nuovi termini da quelli già disponibili. Per esempio, assegnati $p,q,u,v\in\mathbb R$, consideriamo
+Fin qui la ricorrenza è nata da un conteggio. Ora ci chiediamo in generale: quando una regola di questo tipo, insieme ad alcuni valori di partenza, determina davvero una sola successione? Senza questa garanzia, "la successione definita dalla ricorrenza" non avrebbe senso. Una descrizione per ricorrenza spiega come ottenere nuovi termini da quelli già disponibili. Per esempio, assegnati $p,q,u,v\in\mathbb R$, consideriamo
 
 $$
 a_0=u,\qquad a_1=v,\qquad
@@ -76,7 +82,11 @@ $$
 
 Insieme ad $a_{n+1}=b_{n+1}$, questa uguaglianza dà $P(n+1)$. Dunque i termini coincidono per ogni indice.
 
-La prova ci consegna un criterio molto utile: **per identificare una successione basta verificare la ricorrenza e i dati iniziali**. Non serve confrontare uno per uno infiniti termini.
+> [!abstract] Concetto chiave — Unicità da ricorrenza e dati iniziali
+> Una ricorrenza $a_{n+2}=pa_{n+1}+qa_n$ con $a_0$ e $a_1$ assegnati determina una e una sola successione. Per identificare una successione basta verificare la ricorrenza e i due dati iniziali.
+> È il pilastro di tutto il capitolo: serve per $T_n=F_{n+1}$, per la completezza delle formule esplicite e per la formula di Binet.
+
+La prova ci consegna un criterio molto utile: non serve confrontare uno per uno infiniti termini. Per esempio, basta ricordare che due dati iniziali sono necessari: la ricorrenza $a_{n+2}=a_{n+1}+a_n$ con la sola condizione $a_0=0$ è soddisfatta sia da $F_n$ sia da $2F_n$ (stessa legge, stesso $a_0$, ma $a_1=1$ contro $a_1=2$), quindi la conclusione di unicità cade togliendo un dato.
 
 Definiamo ora i numeri di Fibonacci con la convenzione
 
@@ -125,7 +135,14 @@ $$
 a_{n+2}=pa_{n+1}+qa_n
 $$
 
-è una **ricorrenza lineare omogenea del secondo ordine a coefficienti costanti**. È lineare perché i termini compaiono alla prima potenza e non sono moltiplicati tra loro; è omogenea perché non c'è un termine aggiuntivo indipendente dalla successione. I coefficienti $p,q$ non dipendono da $n$. Quando $q\ne0$, la regola coinvolge effettivamente entrambi i termini precedenti.
+è una **ricorrenza lineare omogenea del secondo ordine a coefficienti costanti**. È lineare perché i termini compaiono alla prima potenza e non sono moltiplicati tra loro; è omogenea perché non c'è un termine aggiuntivo indipendente dalla successione. I coefficienti $p,q$ non dipendono da $n$. Quando $q\ne0$, la regola coinvolge effettivamente entrambi i termini precedenti. "Del secondo ordine" significa che ogni termine dipende dai due precedenti.
+
+> [!example] Esempi e controesempi — Ricorrenza lineare omogenea a coefficienti costanti
+> **È una ricorrenza di questo tipo:** $a_{n+2}=a_{n+1}+a_n$ (Fibonacci); $a_{n+1}=3a_n-2a_{n-1}$ (stessa forma con indici spostati); $a_{n+2}=-a_n$ (qui $p=0$).
+> **Non lo è, violando una sola condizione:**
+> - $a_{n+2}=a_{n+1}a_n$ non è *lineare*: i termini sono moltiplicati fra loro. Infatti la successione costante $b_n=1$ la soddisfa ($1=1\cdot1$), ma $d_n=2b_n=2$ no ($2\ne2\cdot2$).
+> - $a_{n+2}=a_{n+1}+a_n+1$ non è *omogenea*: c'è il termine aggiuntivo $+1$. La successione costante $b_n=-1$ la soddisfa ($-1=-1-1+1$), ma $2b_n=-2$ no ($-2\ne-2-2+1=-3$).
+> - $a_{n+2}=n\,a_{n+1}+a_n$ non ha *coefficienti costanti*: il coefficiente dipende da $n$, e la sostituzione $\lambda^n$ non porta più a un'equazione indipendente dall'indice.
 
 Per trovare una formula esplicita, osserviamo prima una proprietà. Se $(b_n)$ e $(c_n)$ soddisfano la ricorrenza, per ogni $A,B\in\mathbb R$ anche $d_n=Ab_n+Bc_n$ la soddisfa. Infatti
 
@@ -138,7 +155,7 @@ d_{n+2}
 \end{aligned}
 $$
 
-Cerchiamo dunque alcune soluzioni semplici da combinare. Proviamo con $b_n=\lambda^n$, dove $\lambda\ne0$. La scelta è naturale perché spostare l'indice di una potenza equivale a moltiplicarla per una costante. Sostituendo,
+Cerchiamo dunque alcune soluzioni semplici da combinare. Proviamo con $b_n=\lambda^n$, dove $\lambda\ne0$ è un numero da determinare. La scelta è naturale perché spostare l'indice di una potenza equivale a moltiplicarla per una costante. Sostituendo,
 
 $$
 \lambda^{n+2}=p\lambda^{n+1}+q\lambda^n.
@@ -150,7 +167,26 @@ $$
 \boxed{\lambda^2-p\lambda-q=0.}
 $$
 
-È l'**equazione caratteristica**. Ogni sua radice non nulla fornisce una soluzione esponenziale della ricorrenza.
+È l'**equazione caratteristica**. Ogni sua radice non nulla fornisce una soluzione esponenziale della ricorrenza (una "radice" è un numero che, sostituito a $\lambda$, rende vera l'equazione).
+
+> [!abstract] Concetto chiave — Equazione caratteristica
+> Le soluzioni di $a_{n+2}=pa_{n+1}+qa_n$ della forma $\lambda^n$ sono esattamente quelle con $\lambda^2-p\lambda-q=0$ (e $\lambda\ne0$). Con due radici distinte e non nulle $r,s$, tutte le soluzioni sono $Ar^n+Bs^n$.
+> Trasforma un problema su infiniti termini in un'equazione di secondo grado; riappare, in forma più strutturale, nelle potenze e negli ordini dei capitoli successivi.
+
+Il metodo si riassume nello schema seguente. Si legge dall'alto verso il basso: parti dalla ricorrenza, guarda le radici dell'equazione caratteristica, scegli la forma della soluzione e fissa le costanti con i dati iniziali.
+
+```mermaid
+flowchart TD
+    A["Ricorrenza a(n+2) = p·a(n+1) + q·a(n)"] --> B["Equazione caratteristica λ² − pλ − q = 0"]
+    B --> C{"Che radici ha?"}
+    C -->|"due reali distinte"| D["a(n) = A·r^n + B·s^n"]
+    C -->|"complesse coniugate, vedi sotto"| E["stessa forma, con r e s complessi"]
+    C -->|"una radice doppia r"| F["a(n) = (A + B·n)·r^n"]
+    D --> G["Imposta a(0) e a(1): sistema per A e B"]
+    E --> G
+    F --> G
+    G --> H["Verifica ricorrenza e dati iniziali, poi usa l'unicità"]
+```
 
 Supponiamo ora che l'equazione abbia **due radici reali distinte e non nulle** $r,s$. Allora ogni successione della forma
 
@@ -253,7 +289,7 @@ La presenza di numeri irrazionali non impedisce al risultato di essere intero: l
 
 ### Se le radici sono complesse
 
-Se conosci i numeri complessi, puoi usare lo stesso metodo anche quando il polinomio non ha radici reali. La verifica delle potenze, il sistema per $A,B$ e la prova di unicità funzionano senza cambiamenti in $\mathbb C$, purché le radici siano distinte e non nulle. Questo è il motivo del richiamo ai complessi nella lezione: permettono di trattare anche equazioni caratteristiche come $\lambda^2+1=0$.
+Un **numero complesso** è un numero della forma $x+yi$ con $x,y$ reali e $i$ tale che $i^2=-1$; con questi numeri ogni equazione di secondo grado ha radici. Se li conosci, puoi usare lo stesso metodo anche quando il polinomio non ha radici reali. La verifica delle potenze, il sistema per $A,B$ e la prova di unicità funzionano senza cambiamenti in $\mathbb C$, purché le radici siano distinte e non nulle. Questo è il motivo del richiamo ai complessi nella lezione: permettono di trattare anche equazioni caratteristiche come $\lambda^2+1=0$.
 
 Per esempio, per $a_{n+2}=-a_n$, $a_0=1$, $a_1=0$, le radici sono $i$ e $-i$, dove $i^2=-1$. La formula
 
@@ -267,7 +303,7 @@ ha i dati iniziali richiesti e soddisfa la ricorrenza, perché entrambe le basi 
 
 Questo paragrafo è un'integrazione didattica. Il teorema precedente richiede due radici distinte; se la radice è doppia, ripetere la stessa potenza non fornisce due soluzioni diverse.
 
-Supponiamo che il polinomio caratteristico sia $(\lambda-r)^2$ con $r\ne0$. La ricorrenza è allora
+Supponiamo che il polinomio $\lambda^2-p\lambda-q$ (quello dell'equazione caratteristica) sia $(\lambda-r)^2$ con $r\ne0$. La ricorrenza è allora
 
 $$
 a_{n+2}=2r a_{n+1}-r^2a_n.
@@ -281,6 +317,10 @@ $$
 $$
 
 Le combinazioni hanno quindi forma $(A+Bn)r^n$. Esse rappresentano tutte le soluzioni: dati $a_0=u,a_1=v$, basta porre $A=u$ e $B=v/r-u$, poi applicare l'unicità. Per esempio, $a_{n+2}=2a_{n+1}-a_n$, $a_0=0,a_1=1$, ha soluzione $a_n=n$.
+
+> [!example] Esempi e controesempi — Radici distinte e radice doppia
+> **Radici distinte:** $\lambda^2-3\lambda+2=(\lambda-1)(\lambda-2)$ ha radici $1,2$; la formula $A+B2^n$ ammette due dati iniziali arbitrari.
+> **Radice doppia (la condizione "distinte" viene meno):** $\lambda^2-2\lambda+1=(\lambda-1)^2$. La formula $A1^n+B1^n=(A+B)$ è costante e non può dare $a_0=0,a_1=1$; serve il termine $nr^n$.
 
 > [!warning] Attenzione — Non applicare una formula fuori dalle ipotesi
 > Con radice doppia $r$, la scrittura $Ar^n+Br^n=(A+B)r^n$ non permette di assegnare due dati iniziali arbitrari. La dimostrazione per radici distinte divide per $r-s$: quando $r=s$ quel passaggio non è lecito. Anche i casi con radice nulla richiedono un trattamento specifico; non sono compresi negli enunciati sulle formule risolutive qui dimostrati.

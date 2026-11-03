@@ -2,6 +2,14 @@
 
 Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|Bézout e lemma di Euclide]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|MCD e mcm]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze lineari e inversi]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Risolverai sistemi di congruenze sostituendo una congruenza con un'uguaglianza $x=a+mk$.
+> - Costruirai con Bézout un numero che ha resti prescritti rispetto a moduli coprimi, e vedrai perché la soluzione è unica modulo il prodotto.
+> - Estenderai la costruzione a molti moduli con la formula ricostruttiva.
+> - Distinguerai i tre casi (moduli coprimi, non coprimi compatibili, incompatibili) e risolverai il caso generale fondendo due condizioni per volta.
+>
+> L'idea che lega il capitolo: conoscere un numero attraverso più resti equivale a conoscerlo modulo il mcm, il minimo comune multiplo dei moduli, purché i resti siano compatibili.
+
 ## Due calendari, un appuntamento
 
 Un laboratorio apre nei giorni $2,7,12,17,\dots$: un appuntamento ogni cinque giorni, a partire dal giorno $2$. Una biblioteca organizza un incontro nei giorni $3,10,17,24,\dots$: uno ogni sette giorni, a partire dal giorno $3$. In quali giorni possiamo partecipare a entrambe le attività?
@@ -69,19 +77,17 @@ Un sistema con due condizioni diventa una sola congruenza lineare. Questo metodo
 
 ## Due moduli coprimi: costruzione e unicità
 
-**Teorema cinese del resto, per due moduli.** Siano $m,n\geq1$ con $\gcd(m,n)=1$ e siano $a,b\in\mathbb Z$. Il sistema
-
-$$
-x\equiv a\pmod m,\qquad x\equiv b\pmod n
-$$
-
-ammette una soluzione $x_0$, e l'insieme delle soluzioni è esattamente
-
-$$
-\{x_0+mnt:t\in\mathbb Z\}.
-$$
-
-Si dice che la soluzione è **unica modulo $mn$**.
+> [!abstract] Concetto chiave — Teorema cinese del resto (due moduli)
+> Siano $m,n\geq1$ con $\gcd(m,n)=1$ e $a,b\in\mathbb Z$. Il sistema
+> $$
+> x\equiv a\pmod m,\qquad x\equiv b\pmod n
+> $$
+> ammette una soluzione $x_0$, e l'insieme delle soluzioni è esattamente
+> $$
+> \{x_0+mnt:t\in\mathbb Z\}.
+> $$
+> Si dice che la soluzione è **unica modulo $mn$**.
+> È il pilastro del capitolo: nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]] sarà riletto come corrispondenza fra classi modulo $mn$ e coppie di classi, e tornerà nei capitoli [[Books/Aritmetica-I/18 - Congruenze esponenziali|18]] e [[Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento|20]] per scomporre moduli composti.
 
 ### Perché esiste
 
@@ -128,6 +134,11 @@ Ogni soluzione differisce da $x_0$ per un multiplo di $mn$. Viceversa, aggiunger
 
 La coprimalità garantisce la risolubilità **per ogni coppia di resti**. È anche necessaria per questa garanzia universale: se il sistema $x\equiv0\pmod m$, $x\equiv1\pmod n$ è risolvibile, ogni divisore comune dei moduli divide sia $x$ sia $x-1$, quindi divide $1$. Ne segue $\gcd(m,n)=1$. Un singolo sistema può invece essere risolvibile anche con moduli non coprimi.
 
+> [!example] Esempi e controesempi — coprimalità dei moduli
+> **Vale:** $m=5$, $n=7$ sono coprimi; per ogni coppia di resti il sistema ha soluzione, per esempio $x\equiv2\pmod5$, $x\equiv3\pmod7$ dà $17+35t$.
+> **Senza coprimalità l'esistenza fallisce:** $m=4$, $n=6$ ($\gcd=2$). Il sistema $x\equiv0\pmod4$, $x\equiv1\pmod6$ è impossibile: la prima condizione rende $x$ pari, la seconda dispari.
+> **Senza coprimalità l'unicità modulo $mn$ fallisce:** $x\equiv0\pmod4$, $x\equiv0\pmod6$ ha per soluzioni i multipli di $12$, cioè una sola classe modulo $12$ ma due classi ($0$ e $12$) modulo $mn=24$.
+
 ## Più resti: ricostruire una coordinata alla volta
 
 Siano $r\geq2$ e $m_1,\dots,m_r\geq2$ **a due a due coprimi**, cioè
@@ -157,12 +168,15 @@ e_i\equiv1\pmod{m_i},
 e_i\equiv0\pmod{m_j}\quad(j\neq i).
 $$
 
-Il coefficiente $e_i$ seleziona la posizione $i$: agisce soltanto sul resto che vogliamo assegnare in quella posizione. La formula ricostruttiva è
+Il coefficiente $e_i$ seleziona la posizione $i$: agisce soltanto sul resto che vogliamo assegnare in quella posizione. La formula ricostruttiva è la seguente.
 
-$$
-\boxed{x_0=\sum_{i=1}^r a_i e_i
-=\sum_{i=1}^r a_i M_i c_i.}
-$$
+> [!abstract] Concetto chiave — Ricostruzione da più resti
+> Se $m_1,\dots,m_r\ge2$ sono a due a due coprimi, $M=\prod m_i$, $M_i=M/m_i$ e $c_i$ è un inverso di $M_i$ modulo $m_i$, allora
+> $$
+> x_0=\sum_{i=1}^r a_i M_i c_i
+> $$
+> risolve $x\equiv a_i\pmod{m_i}$ per ogni $i$, e le soluzioni sono tutte e sole $x_0+Mt$, $t\in\mathbb Z$.
+> Ogni addendo agisce su un solo resto e lascia in pace gli altri; la stessa idea ricompare nel capitolo [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|15]].
 
 **Prova dell'esistenza.** Fissiamo un indice $j$ e riduciamo la somma modulo $m_j$. Tutti gli addendi con $i\neq j$ sono nulli; l'unico rimasto è $a_j e_j\equiv a_j$. Questo vale per ogni $j$, quindi $x_0$ soddisfa l'intero sistema.
 
@@ -170,7 +184,7 @@ $$
 
 Aggiungere un multiplo di $M$ conserva ogni resto. Abbiamo così dimostrato, per un numero qualsiasi di moduli a due a due coprimi, esistenza e unicità modulo $M$.
 
-I coefficienti $e_i$ sono spesso chiamati **idempotenti modulo $M$**: infatti $e_i^2-e_i$ è nullo modulo ciascun $m_j$, perché in ogni posizione $e_i$ vale $0$ oppure $1$. Per la divisibilità appena provata,
+I coefficienti $e_i$ sono spesso chiamati **idempotenti modulo $M$** (un numero $e$ è idempotente quando $e^2=e$, come accade a $0$ e $1$ fra i numeri ordinari): infatti $e_i^2-e_i$ è nullo modulo ciascun $m_j$, perché in ogni posizione $e_i$ vale $0$ oppure $1$. Per la divisibilità appena provata,
 
 $$
 e_i^2\equiv e_i\pmod M.
@@ -210,32 +224,35 @@ $$
 
 Verifichiamo il rappresentante piccolo: $23=7\cdot3+2=4\cdot5+3=3\cdot7+2$. Tutte le soluzioni sono $x=23+105t$, con $t\in\mathbb Z$.
 
+> [!example] Esempi e controesempi — coprimi a due a due
+> **Lo sono:** $(3,5,7)$ e $(4,5,9)$: ogni coppia ha MCD 1.
+> **Non lo sono, per una sola coppia:** $(3,5,6)$: le coppie $(3,5)$ e $(5,6)$ sono coprime, ma $\gcd(3,6)=3$. Basta quella coppia a rompere l'ipotesi: il sistema $x\equiv1\pmod3$, $x\equiv2\pmod6$ è impossibile, perché i resti modulo 3 differiscono.
+> **Non lo sono, pur avendo MCD totale 1:** $(6,10,15)$, descritto qui sotto.
+
 > [!warning] Attenzione — MCD totale $1$ non basta
 > Si ha $\gcd(6,10,15)=1$, ma i moduli non sono a due a due coprimi: condividono rispettivamente fattori $2$, $3$ e $5$. Il sistema $x\equiv0\pmod6$, $x\equiv1\pmod{10}$, $x\equiv0\pmod{15}$ è impossibile già per la parità. Non possiamo usare la formula precedente: per esempio $M_1=150$ non è invertibile modulo $6$.
+>
+> Il guasto ha due volti ($\gcd(6,10)=2$, $\gcd(6,15)=3$, $\gcd(10,15)=5$). Con i resti sopra l'**esistenza** manca. Con tutti i resti uguali a $1$, il sistema è risolvibile ($x=1$), ma le soluzioni sono $1+30t$: una sola classe modulo $\operatorname{mcm}(6,10,15)=30$, cioè $30$ classi modulo il prodotto $900$. Manca allora l'**unicità** modulo $900$.
 
 ## Quando i moduli condividono fattori
 
 Con moduli non coprimi, le informazioni sui resti possono sovrapporsi. Per esempio, un resto modulo $6$ stabilisce già la parità e il resto modulo $3$. Una condizione modulo $9$ deve rispettare quest'ultima informazione.
 
-**Teorema generale per due moduli.** Siano $m,n\geq1$, $a,b\in\mathbb Z$ e $d=\gcd(m,n)$. Il sistema
-
-$$
-x\equiv a\pmod m,\qquad x\equiv b\pmod n
-$$
-
-è risolvibile se e solo se
-
-$$
-\boxed{d\mid(b-a).}
-$$
-
-Se è risolvibile, tutte le soluzioni sono
-
-$$
-\boxed{x=x_0+\frac{mn}{d}\,t,\qquad t\in\mathbb Z,}
-$$
-
-ossia una sola classe modulo $\operatorname{mcm}(m,n)=mn/d$.
+> [!abstract] Concetto chiave — Teorema generale per due moduli
+> Siano $m,n\geq1$, $a,b\in\mathbb Z$ e $d=\gcd(m,n)$. Il sistema
+> $$
+> x\equiv a\pmod m,\qquad x\equiv b\pmod n
+> $$
+> è risolvibile se e solo se
+> $$
+> d\mid(b-a).
+> $$
+> Se è risolvibile, tutte le soluzioni sono
+> $$
+> x=x_0+\frac{mn}{d}\,t,\qquad t\in\mathbb Z,
+> $$
+> ossia una sola classe modulo $\operatorname{mcm}(m,n)=mn/d$.
+> Contiene il caso coprime ($d=1$, sempre risolvibile, periodo $mn$) e dà la regola per fondere due condizioni alla volta, usata nel resto del capitolo.
 
 **Necessità.** Se $x$ è soluzione, $d$ divide sia $x-a$ sia $x-b$. Sottraendo, divide $b-a$. Le due prescrizioni devono dunque dare lo stesso resto modulo il divisore comune $d$.
 
@@ -286,6 +303,28 @@ Se $n\mid m$, dalla congruenza $x\equiv a\pmod m$ segue $x\equiv a\pmod n$. Quin
 
 Per esempio $x\equiv5\pmod6$ e $x\equiv2\pmod3$ equivalgono alla sola prima condizione. Sostituire $2$ con $1$ modulo $3$ produce invece un sistema impossibile. Moduli non coprimi non significano automaticamente incompatibilità: occorre confrontare i resti.
 
+### Mappa dei tre casi
+
+Per due moduli $m,n$ con $d=\gcd(m,n)$ esiste un solo controllo, quello sulla differenza dei resti. Lo schema si legge dall'alto: il rombo decide fra incompatibilità e compatibilità; poi $d=1$ o $d>1$ dice qual è il periodo.
+
+```mermaid
+flowchart TD
+A["Sistema x ≡ a (mod m), x ≡ b (mod n)"] --> B["d = MCD di m e n"]
+B --> C{"d divide b − a?"}
+C -- "no" --> D["Caso 3: incompatibile, nessuna soluzione"]
+C -- "sì" --> E{"d = 1?"}
+E -- "sì" --> F["Caso 1: moduli coprimi, una classe modulo mn"]
+E -- "no" --> G["Caso 2: non coprimi ma compatibili, una classe modulo mcm = mn/d"]
+```
+
+| Caso | Condizione | Soluzioni | Esempio |
+|---|---|---|---|
+| 1. moduli coprimi | $d=1$ | sempre, una classe modulo $mn$ | $x\equiv2\pmod5$, $x\equiv3\pmod7$: $x=17+35t$ |
+| 2. non coprimi, compatibili | $d>1$, $d\mid b-a$ | una classe modulo $mn/d$ | $x\equiv2\pmod6$, $x\equiv5\pmod9$: $x=14+18t$ ($\gcd=3$, $3\mid3$) |
+| 3. incompatibili | $d\nmid b-a$ | nessuna | $x\equiv2\pmod6$, $x\equiv4\pmod9$: modulo 3 i resti sono $2$ e $1$ |
+
+Nel caso 2 il periodo è $18=\operatorname{mcm}(6,9)$, non $54=6\cdot9$: i moduli si sovrappongono e informano due volte sullo stesso resto.
+
 ## Molti moduli generali: fondere due condizioni per volta
 
 Anche senza coprimalità possiamo risolvere un sistema finito usando soltanto il teorema per due moduli. Fondiamo le prime due condizioni: se sono incompatibili, il sistema intero è impossibile; se sono compatibili, le sostituiamo con l'unica congruenza $x\equiv c\pmod L$, dove $L$ è il loro mcm. Poi fondiamo questa congruenza con la terza, e continuiamo.
@@ -300,7 +339,7 @@ $$
 
 Dalle prime due: $x=1+6k$, quindi $6k\equiv2\pmod{10}$, ossia $3k\equiv1\pmod5$. Otteniamo $k\equiv2\pmod5$ e $x\equiv13\pmod{30}$. Quest'ultima congruenza implica già $x\equiv13\pmod{15}$: la soluzione finale è $x=13+30t$, con $t\in\mathbb Z$.
 
-Questo modo di procedere sarà utile anche quando i sistemi nasceranno da condizioni sugli esponenti: i periodi incontrati potranno condividere fattori, come vedremo nel [[Books/Aritmetica-I/18 - Congruenze esponenziali|capitolo 18]]. Un'altra rilettura arriverà nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]]: per moduli coprimi, associare a una classe modulo il prodotto la lista delle sue classi modulo i singoli fattori è una corrispondenza biiettiva che conserva somme e prodotti. Qui l'abbiamo già costruita e giustificata con interi, divisibilità e Bézout.
+Questo modo di procedere sarà utile anche quando i sistemi nasceranno da condizioni sugli esponenti: i periodi incontrati potranno condividere fattori, come vedremo nel [[Books/Aritmetica-I/18 - Congruenze esponenziali|capitolo 18]]. Un'altra rilettura arriverà nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]]: per moduli coprimi, associare a una classe modulo il prodotto la lista delle sue classi modulo i singoli fattori è una corrispondenza biiettiva (a ogni lista di classi corrisponde una e una sola classe modulo il prodotto) che conserva somme e prodotti. Qui l'abbiamo già costruita e giustificata con interi, divisibilità e Bézout.
 
 ## Fonti e integrazioni
 

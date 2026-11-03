@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|insiemi, quantificatori e implicazioni]]. Navigazione: [[Books/Aritmetica-I/00 - Indice e piano di studio|indice del libro]].
 
+> [!info] In questo capitolo
+> - Imparerai a dimostrare un'affermazione su infiniti numeri con un argomento finito: passo base e passo induttivo.
+> - Vedrai tre forme dello stesso principio (induzione debole, induzione forte, buon ordinamento) e sai scegliere quale usare.
+> - Capirai perché base e passo sono entrambi necessari, guardando dimostrazioni sbagliate.
+> - Userai l'induzione forte per provare che ogni numero $\ge2$ è prodotto di primi.
+
 ## Una dimostrazione per infiniti casi
 
 I primi cinque numeri dispari hanno somma $1+3+5+7+9=25$. Provando altri esempi sembra emergere una regola: la somma dei primi $n$ dispari è $n^2$. Ma controllare cento casi lascia aperto il centunesimo. Come possiamo raggiungere tutti i naturali con una dimostrazione finita?
@@ -17,7 +23,7 @@ $$
 \mathbb N_{>0}=\{1,2,3,\ldots\}.
 $$
 
-Il **successore** di $n$ è il numero che viene subito dopo, indicato con $S(n)$ o $n+1$. Nell’impostazione assiomatica usuale si richiede che il successore sia definito per ogni naturale, che $0$ non sia successore di alcun naturale e che
+Il **successore** di $n$ è il numero che viene subito dopo, indicato con $S(n)$ o $n+1$. Nell’impostazione assiomatica usuale (cioè quella che parte da poche regole fondamentali, gli *assiomi*, e ricava tutto il resto) si richiede che il successore sia definito per ogni naturale, che $0$ non sia successore di alcun naturale e che
 
 $$
 S(a)=S(b)\Longrightarrow a=b.
@@ -27,17 +33,34 @@ Quest’ultima proprietà impedisce che due numeri distinti abbiano lo stesso su
 
 Questa è una descrizione degli ingredienti essenziali, non una costruzione completa dell’aritmetica da zero. Nel capitolo usiamo le operazioni e l’ordine usuali, con le loro proprietà elementari. In particolare $0$ è il più piccolo naturale; ogni naturale positivo ha un predecessore; se $a<b$, allora $a\le b-1$. Somma e prodotto restano nei naturali, mentre una differenza come $2-5$ non vi appartiene. Quando scriviamo $m-1$, verificheremo dunque che $m>0$.
 
-Il **principio del buon ordinamento**, detto anche principio del minimo, afferma:
+Ci serve una seconda proprietà dei naturali, apparentemente ovvia ma potentissima: se esiste almeno un numero con una certa proprietà, ne esiste uno più piccolo di tutti. Permette di ragionare sul «primo caso» in cui qualcosa accade.
 
-> Ogni sottoinsieme non vuoto $A\subseteq\mathbb N$ ha un minimo, cioè un elemento $m\in A$ tale che $m\le a$ per ogni $a\in A$.
+> [!abstract] Concetto chiave — Buon ordinamento
+> Ogni sottoinsieme non vuoto $A\subseteq\mathbb N$ ha un **minimo**, cioè un elemento $m\in A$ tale che $m\le a$ per ogni $a\in A$.
+> Detto anche principio del minimo; è equivalente all'induzione (vedi sotto) e sostiene dimostrazioni di esistenza come quella della divisione con resto ([[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|capitolo 08]]).
 
 Per esempio, l’insieme dei multipli naturali di $7$ maggiori di $20$ è infinito, ma ha minimo $21$. Il principio riguarda anche insiemi definiti da condizioni di cui non sappiamo calcolare facilmente le soluzioni: purché l’insieme sia non vuoto, il minimo esiste.
 
 La condizione sul dominio conta. L’insieme $\mathbb Z$ non ha minimo, perché per ogni intero $z$ esiste l’intero più piccolo $z-1$. Anche l’insieme dei reali positivi non ha minimo: se $x>0$, allora $0<x/2<x$.
 
+> [!example] Esempi e controesempi — Buon ordinamento
+> **Ha minimo:** $\{n\in\mathbb N:n\ge8\}$, con minimo $8$; l'insieme dei multipli di $7$ maggiori di $20$, con minimo $21$.
+> **Non ha minimo**, perché viola esattamente una condizione:
+> - $\varnothing$ non è non vuoto: non ha elementi, quindi nemmeno un minimo (ipotesi «non vuoto»);
+> - $\mathbb Z$ non è contenuto in $\mathbb N$: ogni $z$ è battuto da $z-1$ (ipotesi «sottoinsieme di $\mathbb N$»);
+> - i reali positivi non sono un sottoinsieme di $\mathbb N$: ogni $x$ è battuto da $x/2$.
+
 ## Induzione a partire da un indice qualsiasi
 
-Sia $n_0\in\mathbb N$ e sia $P(n)$ una proprietà definita per ogni naturale $n\ge n_0$. Il **principio di induzione debole**, o ordinaria, dice che, se
+Una **proprietà** $P(n)$ è un'affermazione che dipende da $n$ e che, per ciascun $n$, risulta vera o falsa (per esempio «$n$ è pari», oppure «la somma dei primi $n$ dispari è $n^2$»). Vogliamo mostrare che $P(n)$ è vera per tutti gli $n$ da un certo indice in poi, senza controllarli uno per uno: è l'idea del domino, in cui basta che la prima tessera cada e che ciascuna faccia cadere la successiva.
+
+Sia $n_0\in\mathbb N$ e sia $P(n)$ una proprietà definita per ogni naturale $n\ge n_0$.
+
+> [!abstract] Concetto chiave — Principio di induzione
+> Se (1) $P(n_0)$ è vera e (2) per ogni $n\ge n_0$ vale $P(n)\Rightarrow P(n+1)$, allora $P(n)$ è vera per ogni $n\ge n_0$.
+> Il metodo con cui dimostriamo quasi tutte le formule e le proprietà «per ogni $n$» del libro (per esempio nei capitoli [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|04]] e [[Books/Aritmetica-I/07 - Ricorrenze e successioni|07]]).
+
+Questo è il **principio di induzione debole**, o ordinaria: se
 
 1. $P(n_0)$ è vera;
 2. per ogni $n\ge n_0$ si dimostra $P(n)\Rightarrow P(n+1)$;
@@ -49,11 +72,18 @@ Il primo punto è il **passo base**. Il secondo è il **passo induttivo**: si fi
 L’indice iniziale dipende dall’enunciato. Una formula può essere definita da $0$, ma vera soltanto da $4$; allora possiamo tentare un’induzione con $n_0=4$. Se invece il passo dimostrato funziona solo per $n\ge 5$, una base a $4$ da sola non basta: manca il collegamento da $4$ a $5$.
 
 > [!warning] Attenzione — Il passo induttivo non avvia la catena
-> La proprietà $P(n): n=n+1$ è falsa per ogni naturale. Tuttavia l’implicazione $P(n)\Rightarrow P(n+1)$ è vera per ogni $n$, perché ha antecedente falso. Senza una base vera non si conclude nulla. Occorre anche verificare che il passo funzioni già all’indice della base.
+> La proprietà $P(n): n=n+1$ è falsa per ogni naturale. Tuttavia l’implicazione $P(n)\Rightarrow P(n+1)$ è vera per ogni $n$, perché ha ipotesi falsa (e un’implicazione con ipotesi falsa è sempre vera). Senza una base vera non si conclude nulla. Occorre anche verificare che il passo funzioni già all’indice della base.
+
+> [!example] Esempi e controesempi — Perché servono base e passo
+> **Passo vero, base falsa:** $P(n):\ n=n+1$ ha il passo $P(n)\Rightarrow P(n+1)$ vero per ogni $n$, ma $P(0)$ è falsa e la proprietà è falsa per ogni $n$.
+> **Base vera, passo falso:** $P(n):\ n<5$ ha $P(0)$ vera, ma il passo fallisce a $n=4$: $P(4)$ è vera e $P(5)$ è falsa. La proprietà vale per $0,\ldots,4$ e poi smette.
+> **Indice iniziale sbagliato:** $P(n):\ n^2>n$ è falsa per $n=0,1$ e vera per ogni $n\ge2$. Con base $P(2)$ il passo funziona e si conclude da $2$ in poi; con base $P(0)$ non si può concludere, perché $P(0)$ è falsa.
+
+I due esempi seguenti mostrano il metodo all'opera, dalla scelta della proprietà fino al calcolo finale.
 
 ### Esempio svolto: somma dei naturali
 
-Definiamo $s_n=\sum_{k=1}^{n}k$ per $n\ge1$ e poniamo $s_0=0$: una **somma vuota** vale zero. Vogliamo provare
+Il simbolo $\sum_{k=1}^{n}k$ (sommatoria) indica la somma $1+2+\cdots+n$ degli $n$ termini che si ottengono facendo variare $k$ da $1$ a $n$. Definiamo $s_n=\sum_{k=1}^{n}k$ per $n\ge1$ e poniamo $s_0=0$: una **somma vuota** vale zero. Vogliamo provare
 
 $$
 s_n=\frac{n(n+1)}2\qquad(n\in\mathbb N).
@@ -108,7 +138,7 @@ Questa immagine aiuta a trovare la formula. L’induzione verifica una formula g
 
 ## Perché buon ordinamento e induzione sono equivalenti
 
-Sul consueto ordine dei naturali, i due principi si ricavano l’uno dall’altro. Possiamo dunque assumerne uno come punto di partenza e dimostrare l’altro.
+Sul consueto ordine dei naturali, i due principi si ricavano l’uno dall’altro. Possiamo dunque assumerne uno come punto di partenza e dimostrare l’altro. Perché ci interessa? Perché alcuni problemi si risolvono meglio con l'uno (si cerca il «primo caso» che va male), altri con l'altro (si fa propagare una proprietà): sapere che sono equivalenti ci lascia scegliere liberamente.
 
 ### Dal minimo all’induzione: il minimo controesempio
 
@@ -124,7 +154,7 @@ Il metodo del **minimo controesempio** si può usare anche senza scrivere esplic
 
 ### Dall’induzione al minimo: conservare tutta l’informazione
 
-Assumiamo ora l’induzione ordinaria e prendiamo un insieme non vuoto $A\subseteq\mathbb N$. Supponiamo per assurdo che non abbia minimo. Consideriamo la proprietà cumulativa
+Assumiamo ora l’induzione ordinaria e prendiamo un insieme non vuoto $A\subseteq\mathbb N$. Supponiamo per assurdo che non abbia minimo. L'induzione ordinaria dà $P(n+1)$ a partire dal solo $P(n)$; per escludere gli elementi di $A$ ci serve però sapere che *tutti* i numeri fino a $n$ sono fuori da $A$. Usiamo allora una **proprietà cumulativa**, cioè una proprietà che riassume tutti i casi fino a $n$ (non solo l’$n$-esimo):
 
 $$
 Q(n):\quad A\cap\{0,1,\ldots,n\}=\varnothing.
@@ -164,6 +194,26 @@ La base $R(n_0)$ coincide con $P(n_0)$. Se vale $R(n)$, l’ipotesi del passo fo
 
 Abbiamo provato tutte le equivalenze: buon ordinamento, induzione ordinaria e induzione forte. La proprietà cumulativa è il raccordo concreto fra le ultime due. Per scegliere il metodo, chiediti quali casi più piccoli servono davvero: il solo predecessore, diversi indici, oppure il minimo di un insieme di controesempi.
 
+Lo schema seguente riassume le equivalenze (le frecce portano da ciò che si assume a ciò che si ricava); la tabella dice quando conviene ciascuna forma.
+
+```mermaid
+flowchart LR
+    B["Buon ordinamento"] -->|"minimo controesempio"| D["Induzione debole"]
+    D -->|"proprietà cumulativa Q"| B
+    D -->|"proprietà cumulativa R"| F["Induzione forte"]
+    F -->|"caso particolare"| D
+```
+
+| Forma | Cosa hai a disposizione nel passo | Quando usarla | Esempio nel capitolo |
+|---|---|---|---|
+| Induzione debole | Solo $P(n)$ | Il caso $n+1$ si ottiene dal solo caso $n$ (si aggiunge un termine, si moltiplica per un fattore) | $\sum k=n(n+1)/2$; $d_n=n^2$; $2^n\ge n+1$ |
+| Induzione forte | Tutti i $P(k)$ con $n_0\le k\le n$ | Il caso $n$ si spezza in casi più piccoli ma non consecutivi, oppure serve più di un predecessore | Fattorizzazione in primi; gettoni da $3$ e $5$ |
+| Buon ordinamento (minimo controesempio) | Il più piccolo caso falso, e quindi tutti i precedenti veri | Si vuole mostrare che non esistono controesempi, o che esiste un elemento minimo con una proprietà | Dimostrazione dell'induzione dal minimo; procedura sui fattori |
+
+> [!example] Esempi e controesempi — Induzione forte
+> **Serve la forma forte:** nel teorema di esistenza della fattorizzazione, il caso $84$ dipende da $7$ e $12$, non da $83$. **Basta quella debole:** $2^n\ge n+1$, perché $2^{n+1}=2\cdot2^n$ usa solo il caso $n$.
+> **Basi mancanti:** la proprietà «$n=3a+5b$ con $a,b\in\mathbb N$» è falsa per $1,2,4,7$ e vera da $8$ in poi. Il passo «sottrai $3$» richiede che $n-3$ sia ancora almeno $8$, cioè $n\ge11$: per questo l'esercizio 7 richiede le tre basi $8,9,10$. Con una sola base il passo non arriva a coprire $9$ e $10$.
+
 ## Un errore che si nasconde nel primo passaggio
 
 Consideriamo la falsa affermazione: «In ogni gruppo di $n\ge1$ persone, tutte hanno gli occhi dello stesso colore». Per $n=1$ è vera. Si tenta poi questo ragionamento: date $n+1$ persone $x_1,\ldots,x_{n+1}$, i gruppi
@@ -183,15 +233,24 @@ Spostare la base a $2$ non ripara la prova, perché la proprietà per due person
 
 Un’applicazione dell’induzione forte chiarisce perché sia utile poter tornare a indici diversi dal predecessore.
 
-Per naturali positivi $d,n$, diciamo che $d$ **divide** $n$, e scriviamo $d\mid n$, se esiste $q\in\mathbb N_{>0}$ tale che $n=dq$. Un naturale $p\ge2$ è **primo** se i suoi soli divisori positivi sono $1$ e $p$. Un naturale $n\ge2$ non primo è **composto**. Per esempio $2,3,5,7$ sono primi; $12=3\cdot4$ è composto. Il numero $1$ è escluso dalla definizione di primo.
+Per dimostrare che ogni numero si scompone in «mattoni» indivisibili, dobbiamo prima dire che cosa sono i mattoni e che cosa significa scomporre. Per naturali positivi $d,n$, diciamo che $d$ **divide** $n$, e scriviamo $d\mid n$, se esiste $q\in\mathbb N_{>0}$ tale che $n=dq$. Un naturale $p\ge2$ è **primo** se i suoi soli divisori positivi sono $1$ e $p$. Un naturale $n\ge2$ non primo è **composto**. Per esempio $2,3,5,7$ sono primi; $12=3\cdot4$ è composto. Il numero $1$ è escluso dalla definizione di primo.
+
+> [!example] Esempi e controesempi — Divisore, primo e composto
+> **$d\mid n$:** $3\mid12$ (con $q=4$). **Non vale** $5\mid12$ (nessun naturale $q$ con $12=5q$) e nemmeno $12\mid3$ (servirebbe $q=1/4$).
+> **Primo:** $2$ e $13$. **Non primo**, per una condizione violata per volta: $1$ (non è $\ge2$) e $9$ (è $\ge2$ ma ha il divisore $3$, diverso da $1$ e $9$).
+> **Composto:** $12=3\cdot4$. **Non composto:** $7$ (è primo) e $1$ (non è $\ge2$).
 
 Se $n$ è composto, ha un divisore $a$ con $1<a<n$. Scrivendo $n=ab$, anche $b$ soddisfa $1<b<n$: se fosse $b=1$, avremmo $a=n$; poiché $a\ge2$, il prodotto $ab=n$ implica $b<n$. Dunque un composto si spezza in due naturali entrambi almeno $2$ e strettamente più piccoli di lui.
 
-**Teorema di esistenza.** Ogni naturale $n\ge2$ è un prodotto finito, con almeno un fattore, di numeri primi.
+> [!abstract] Concetto chiave — Esistenza della fattorizzazione in primi
+> Ogni naturale $n\ge2$ è un prodotto finito, con almeno un fattore, di numeri primi.
+> È il primo pilastro dell'aritmetica degli interi: l'unicità, dimostrata nel [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|capitolo 09]], renderà i primi i veri «mattoni» dei numeri e sarà usata per MCD, mcm e divisori.
 
-Dimostriamo la proprietà $P(n)$ per induzione forte da $2$. La base è vera: $2$ è primo e costituisce un prodotto con un solo fattore. Sia ora $n>2$ e supponiamo che tutti i naturali da $2$ a $n-1$ siano prodotti di primi.
+Dimostriamo la proprietà $P(n)$: «$n$ è prodotto di primi» per induzione forte da $2$.
 
-Se $n$ è primo, il prodotto cercato è $n$ stesso. Se è composto, scriviamo $n=ab$ con $2\le a,b<n$. Per ipotesi induttiva esistono primi tali che
+*Passo 1 — Base.* $2$ è primo e costituisce un prodotto con un solo fattore.
+
+*Passo 2 — Passo forte.* Sia $n>2$ e supponiamo che tutti i naturali da $2$ a $n-1$ siano prodotti di primi. Se $n$ è primo, il prodotto cercato è $n$ stesso. Se è composto, scriviamo $n=ab$ con $2\le a,b<n$. Per ipotesi induttiva esistono primi tali che
 
 $$
 a=p_1\cdots p_r,\qquad b=q_1\cdots q_s.
@@ -204,6 +263,11 @@ n=p_1\cdots p_rq_1\cdots q_s,
 $$
 
 che è un prodotto finito di primi. Questo conclude il passo e la dimostrazione.
+
+> [!example] Esempi e controesempi — Ipotesi del teorema
+> **Funziona:** $12=3\cdot4=3\cdot2\cdot2$, e anche $12=2\cdot6=2\cdot2\cdot3$.
+> **Fallisce togliendo un'ipotesi:** per $n=1$ la conclusione non vale, perché nessun prodotto con almeno un fattore primo può dare $1$ (ogni primo è $\ge2$): l'ipotesi $n\ge2$ è necessaria.
+> **Non dice:** che i primi siano gli stessi per ogni scelta dei fattori intermedi. Qui $12=3\cdot4$ e $12=2\cdot6$ danno la stessa lista $2,2,3$ a meno dell'ordine, ma l'unicità è un risultato a parte.
 
 Per vedere il meccanismo su un numero concreto possiamo scegliere
 

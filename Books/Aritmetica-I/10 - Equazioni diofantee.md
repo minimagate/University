@@ -2,6 +2,14 @@
 
 Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea, Bézout e lemma di Euclide]]; per contare le rappresentazioni finali, [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori e fattorizzazione]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Deciderai se $ax+by=c$ ha soluzioni intere guardando soltanto $\gcd(a,b)$ e $c$.
+> - Costruirai una soluzione con l'algoritmo di Euclide esteso e le scriverai tutte con un unico parametro intero $t$.
+> - Tradurrai vincoli come «non negativo» o «compreso fra $-100$ e $100$» in condizioni su $t$.
+> - Userai la stessa idea, trasformare l'equazione in un prodotto di fattori, per $x^2-y^2=n$.
+>
+> L'idea che lega il capitolo: i punti interi di una retta formano una successione regolare, con un passo fisso, il più piccolo possibile (primitivo), che non salta nessun punto.
+
 ## Una retta, ma soltanto punti interi
 
 Un magazzino prepara confezioni da 6 oppure da 9 pezzi. In quanti modi può spedire esattamente 54 pezzi? Se $x$ conta le confezioni piccole e $y$ quelle grandi, dobbiamo risolvere
@@ -27,9 +35,12 @@ Assumiamo che $a,b$ non siano entrambi nulli: questa è precisamente l’ipotesi
 
 Poniamo $d=\gcd(a,b)>0$. Il criterio fondamentale è
 
-$$
-\boxed{ax+by=c\text{ ha soluzioni intere}\iff d\mid c.}
-$$
+> [!abstract] Concetto chiave — Criterio di esistenza
+> Con $d=\gcd(a,b)$:
+> $$
+> ax+by=c\text{ ha soluzioni intere}\iff d\mid c.
+> $$
+> È il primo controllo da fare, prima di cercare qualsiasi soluzione. La stessa idea decide le congruenze lineari ([[Books/Aritmetica-I/11 - Congruenze e inversi modulari|capitolo 11]]) e la compatibilità dei sistemi ([[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|capitolo 12]]).
 
 Dimostriamo separatamente le due implicazioni, perché hanno significati diversi.
 
@@ -53,7 +64,12 @@ $$
 a(\gamma r)+b(\gamma s)=d\gamma=c.
 $$
 
-Quindi $(x_0,y_0)=(\gamma r,\gamma s)$ è una soluzione. Non abbiamo soltanto provato che esiste: Euclide esteso permette di costruirla.
+Quindi $(x_0,y_0)=(\gamma r,\gamma s)$ è una soluzione. Non abbiamo soltanto provato che esiste: Euclide esteso, cioè l'algoritmo di Euclide percorso all'indietro per scrivere il MCD come combinazione di $a$ e $b$ (capitolo 08), permette di costruirla.
+
+> [!example] Esempi e controesempi — equazione lineare con soluzioni intere
+> **Ha soluzioni intere:** $6x+9y=54$ ($d=3$ divide 54; per esempio $(0,6)$); $11x+41y=2$ ($d=1$ divide ogni termine noto; per esempio $(30,-8)$).
+> **Non ha soluzioni intere:** $6x+9y=55$, dove fallisce l'unica condizione $d\mid c$ (3 non divide 55: il primo membro è sempre multiplo di 3); $4x+10y=7$ ($d=2$: il primo membro è pari, 7 no).
+> **Senza l'ipotesi sui coefficienti:** $0x+0y=c$ non è una retta; il MCD sarebbe 0 e il criterio non ha senso (nessuna soluzione se $c\ne0$, tutte le coppie se $c=0$).
 
 Quando il criterio è soddisfatto possiamo dividere **tutta** l’equazione per $d$:
 
@@ -62,7 +78,7 @@ a_1x+b_1y=c_1,
 \qquad a_1=\frac ad,\quad b_1=\frac bd,\quad c_1=\frac cd.
 $$
 
-Le soluzioni rimangono identiche e $\gcd(a_1,b_1)=1$. Un modo rapido per verificarlo è dividere per $d$ la relazione di Bézout: $a_1r+b_1s=1$. Ogni divisore comune di $a_1,b_1$ deve allora dividere 1.
+Le soluzioni rimangono identiche e $a_1,b_1$ sono **coprimi**, cioè $\gcd(a_1,b_1)=1$: non hanno divisori comuni oltre a $\pm1$. Un modo rapido per verificarlo è dividere per $d$ la relazione di Bézout: $a_1r+b_1s=1$. Ogni divisore comune di $a_1,b_1$ deve allora dividere 1.
 
 > [!warning] Attenzione — Intero non significa non negativo
 > Il criterio $d\mid c$ garantisce soluzioni in $\mathbb Z^2$. Non garantisce confezioni, monete o quantità fisiche ammissibili. Per esempio $6x+9y=3$ ha la soluzione $(-1,1)$, ma nessuna soluzione non negativa: una confezione non vuota contiene già almeno 6 pezzi.
@@ -71,16 +87,19 @@ I casi con un coefficiente nullo sono particolarmente trasparenti. Se $a=0$ e $b
 
 ## Da una soluzione a tutte le altre
 
-Supponiamo ora $d\mid c$ e fissiamo una soluzione $(x_0,y_0)$. Il risultato completo è
+Una soluzione sola non basta: vogliamo sapere che cosa resta fuori. Supponiamo ora $d\mid c$ e fissiamo una soluzione $(x_0,y_0)$. Il risultato completo è questo.
 
-$$
-\boxed{
-\begin{aligned}
-x&=x_0+\frac bd\,t,\\
-y&=y_0-\frac ad\,t,
-\end{aligned}
-\qquad t\in\mathbb Z.}
-$$
+> [!abstract] Concetto chiave — Tutte le soluzioni di $ax+by=c$
+> Se $d=\gcd(a,b)$ divide $c$ e $(x_0,y_0)$ è una soluzione, le soluzioni intere sono tutte e sole
+> $$
+> \begin{aligned}
+> x&=x_0+\frac bd\,t,\\
+> y&=y_0-\frac ad\,t,
+> \end{aligned}
+> \qquad t\in\mathbb Z,
+> $$
+> con un parametro $t$ diverso per ogni soluzione.
+> È il modello per ogni «soluzione particolare più soluzioni dell'omogenea» del libro: lo ritroviamo nelle congruenze lineari ([[Books/Aritmetica-I/11 - Congruenze e inversi modulari|capitolo 11]]) e nei sistemi ([[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|capitolo 12]]).
 
 Per dimostrarlo occorre verificare due cose: le coppie scritte funzionano; ogni soluzione è fra quelle coppie.
 
@@ -107,7 +126,7 @@ $$
 a_1u=-b_1v.
 $$
 
-Questa è l’equazione **omogenea** associata. Dice che $b_1\mid a_1u$; poiché $\gcd(a_1,b_1)=1$, il lemma di Euclide dà $b_1\mid u$. Esiste quindi $t\in\mathbb Z$ con $u=b_1t$. Sostituendo,
+Questa è l’equazione **omogenea** associata, cioè la stessa equazione con termine noto $0$: le sue soluzioni sono proprio le differenze fra soluzioni dell'equazione originale. Dice che $b_1\mid a_1u$; poiché $\gcd(a_1,b_1)=1$, il lemma di Euclide (un numero che divide un prodotto ed è coprimo con un fattore divide l'altro) dà $b_1\mid u$. Esiste quindi $t\in\mathbb Z$ con $u=b_1t$. Sostituendo,
 
 $$
 a_1b_1t=-b_1v.
@@ -118,6 +137,13 @@ Qui $b_1\ne0$, dunque possiamo cancellarlo e ottenere $v=-a_1t$. Tornando a $x,y
 Trattiamo adesso separatamente i coefficienti nulli, senza cancellare uno zero. Se $a=0$, allora $d=|b|$ e $b/d$ è $1$ oppure $-1$: la formula lascia $y=y_0=c/b$ e fa percorrere a $x=x_0+(b/d)t$ tutti gli interi, una volta ciascuno. Se $b=0$, analogamente lascia $x=x_0=c/a$ e fa percorrere a $y=y_0-(a/d)t$ tutti gli interi. Anche in questi casi la famiglia è completa e il parametro è unico.
 
 Abbiamo così distinto una verifica per sostituzione da una dimostrazione di completezza: produrre infinite soluzioni non basta, da solo, a provarne l’esaustività.
+
+> [!example] Esempi e controesempi — la famiglia di tutte le soluzioni
+> Prendiamo $2x+3y=18$ (qui $d=1$, il passo è $(3,-2)$).
+> **È la famiglia completa:** punto di partenza $(0,6)$ e passo $(3,-2)$: $(0,6),(3,4),(6,2),(9,0),(-3,8),\dots$ Ogni soluzione compare una volta sola.
+> **Il punto di partenza non è una soluzione:** $(1,1)$ con lo stesso passo dà $2+3=5\ne18$. Fallisce la condizione «$(x_0,y_0)$ risolve l'equazione».
+> **Il passo non è parallelo alla retta:** $(0,6)+t(3,2)$ dà per $t=1$ il punto $(3,8)$, e $6+24=30\ne18$. Fallisce la condizione «il passo $(b/d,-a/d)$».
+> **Il passo non è primitivo:** per $6x+9y=54$ il passo corretto è $(3,-2)$; col passo $(9,-6)$ da $(0,6)$ si ottengono $(0,6),(9,0),\dots$ e si salta $(3,4)$. Si perde l'esaustività, non la validità delle coppie trovate.
 
 ## Il passo fondamentale sul reticolo
 
@@ -141,6 +167,21 @@ Poiché $s\mapsto k+s$ percorre tutti gli interi, la famiglia non cambia. Anche 
 
 > [!warning] Attenzione — Un cambio di parametro deve percorrere tutti gli interi
 > Le sostituzioni $t=s+k$ e $t=-s$ conservano l’intera famiglia. La sostituzione $t=2s$ seleziona soltanto i parametri pari: in generale perde metà delle soluzioni. Analogamente, il passo $(b,-a)$ può saltare punti se $d>1$: il passo fondamentale è $(b/d,-a/d)$.
+
+## Il metodo in uno schema
+
+Prima di un esempio completo, ecco i passi nell'ordine in cui si eseguono. Si legge dall'alto verso il basso; il rombo è la sola scelta, e il ramo «no» chiude il problema.
+
+```mermaid
+flowchart TD
+A["Equazione ax+by=c, con a e b non entrambi nulli"] --> B["Calcola d = MCD di a e b con Euclide"]
+B --> C{"d divide c?"}
+C -->|"no"| D["Nessuna soluzione intera"]
+C -->|"sì"| E["Euclide esteso: ar+bs=d, poi x0=(c/d)r e y0=(c/d)s"]
+E --> F["Famiglia generale: x=x0+(b/d)t, y=y0-(a/d)t, con t intero"]
+F --> G["Ogni vincolo su x e y diventa una disuguaglianza in t"]
+G --> H["Intersezione delle disuguaglianze, t intero: elenco finale"]
+```
 
 ## Un esempio completo: una retta dentro un quadrato
 
@@ -238,6 +279,11 @@ $$
 
 Le due trasformazioni sono inverse. Abbiamo quindi una corrispondenza esatta fra soluzioni $(x,y)$ e **coppie ordinate** di fattori $(u,v)$ di uguale parità. Scambiare $u,v$ cambia $y$ nel suo opposto e può dare una soluzione diversa.
 
+> [!example] Esempi e controesempi — coppie $(u,v)$ ammissibili
+> **È ammissibile:** per $n=45$, $(u,v)=(9,5)$: stessa parità (dispari) e $uv=45$; dà $(x,y)=(7,2)$. Per $n=20$, $(u,v)=(2,10)$: entrambi pari, $uv=20$; dà $(6,-4)$, e $36-16=20$.
+> **Parità diversa (la sola condizione che fallisce):** per $n=26$, $(u,v)=(2,13)$ ha $uv=26$ ma darebbe $x=15/2$, non intero.
+> **Prodotto sbagliato (la sola condizione che fallisce):** $(u,v)=(3,5)$ ha la stessa parità, ma $uv=15\ne45$: dà $(4,-1)$, cioè $16-1=15$, non 45.
+
 ### Quali interi sono differenze di quadrati?
 
 Se $u,v$ sono entrambi dispari, il loro prodotto è dispari; se sono entrambi pari, il prodotto è divisibile per 4. Non può quindi essere $n=4k+2$ per alcun $k\in\mathbb Z$. In particolare 26 non è una differenza di quadrati interi: in ogni fattorizzazione uno dei fattori è pari e l’altro dispari.
@@ -262,6 +308,14 @@ n\text{ è dispari oppure }4\mid n.}
 $$
 
 Per esempio $-12=2^2-4^2$: un risultato negativo significa semplicemente che il secondo quadrato è più grande.
+
+La tabella riassume il criterio: si legge guardando la forma di $n$ nella prima colonna.
+
+| Forma di $n$ | Risolubile in $\mathbb Z^2$? | Esempio o motivo |
+|---|---|---|
+| dispari | sì | $7=4^2-3^2$, $\ 45=23^2-22^2$ |
+| multiplo di 4 | sì | $8=3^2-1^2$, $\ 20=6^2-4^2$ |
+| $4k+2$ | no | $26$, $\ 6$: in ogni fattorizzazione un fattore è pari e l'altro dispari |
 
 ### Come trovare tutte le rappresentazioni
 

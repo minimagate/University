@@ -2,6 +2,12 @@
 
 Prerequisiti: aritmetica elementare e familiarità con interi e frazioni. [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice e piano di studio]] · Segue: [[Books/Aritmetica-I/02 - Naturali e induzione|Naturali e induzione]].
 
+> [!info] In questo capitolo
+> - Imparerai a leggere e a scrivere affermazioni precise: insiemi, «per ogni», «esiste», «se... allora».
+> - Saprai negare una frase e costruire un controesempio che la smentisce.
+> - Avrai uno schema per scegliere fra prova diretta, contrapposizione e assurdo.
+> - Capirai che cosa significano funzione iniettiva, suriettiva e biettiva, e perché una funzione si può invertire esattamente quando è biettiva: sarà lo strumento di tutti i conteggi dei capitoli successivi.
+
 ## Da un esempio a un'affermazione controllabile
 
 Il quadrato di un numero pari è pari: $2^2=4$, $4^2=16$, $6^2=36$. Quanti esempi servono per esserne sicuri? Se l'affermazione riguarda tutti gli interi pari, nessuna lista finita esaurisce i casi. Occorre un ragionamento che li comprenda insieme.
@@ -14,7 +20,7 @@ $$
 
 Poiché $2k^2$ è un intero, anche $n^2$ è pari. Abbiamo sostituito gli esempi con una **dimostrazione**: da un'ipotesi precisa siamo arrivati alla conclusione usando passaggi verificabili. Il numero $k$ non è un valore scelto a caso: rappresenta qualunque intero che testimoni la parità di $n$.
 
-Questo capitolo costruisce il linguaggio per leggere e produrre ragionamenti simili. Le operazioni elementari sui numeri sono già familiari; i loro fondamenti specifici saranno sviluppati nei capitoli successivi. Useremo la convenzione $\mathbb N=\{0,1,2,\ldots\}$ e indicheremo con $\mathbb N_{>0}$ i naturali positivi.
+Questo capitolo costruisce il linguaggio per leggere e produrre ragionamenti simili. Le operazioni elementari sui numeri sono già familiari; i loro fondamenti specifici saranno sviluppati nei capitoli successivi. Useremo la convenzione $\mathbb N=\{0,1,2,\ldots\}$ e indicheremo con $\mathbb N_{>0}$ i naturali positivi. Con $\mathbb Z$ indichiamo gli interi relativi (positivi, negativi e zero), con $\mathbb R$ i numeri reali.
 
 ## Insiemi: che cosa stiamo considerando?
 
@@ -27,12 +33,14 @@ $$
 
 Nella seconda scrittura i due punti significano «tali che». Ordine e ripetizioni non cambiano un insieme: $\{1,2\}=\{2,1,1\}$. L'**insieme vuoto**, indicato con $\varnothing$, non contiene elementi; $\{\varnothing\}$ contiene invece un elemento, che è l'insieme vuoto.
 
-L'**inclusione** $A\subseteq B$ afferma che ogni elemento di $A$ appartiene anche a $B$. Ammette il caso $A=B$; per escluderlo scriveremo $A\subsetneq B$. Due insiemi sono uguali quando hanno gli stessi elementi, dunque
+L'**inclusione** $A\subseteq B$ afferma che ogni elemento di $A$ appartiene anche a $B$. Ammette il caso $A=B$; per escluderlo scriveremo $A\subsetneq B$. Dire che due insiemi sono uguali significa che hanno gli stessi elementi. Ma come si dimostra, in pratica, una uguaglianza fra insiemi che non si possono elencare? Si spezza in due inclusioni, ciascuna più facile da controllare.
 
-$$
-A=B\quad\Longleftrightarrow\quad
-A\subseteq B\text{ e }B\subseteq A.
-$$
+> [!abstract] Concetto chiave — Doppia inclusione
+> $$
+> A=B\quad\Longleftrightarrow\quad
+> A\subseteq B\text{ e }B\subseteq A.
+> $$
+> È il metodo standard per provare uguaglianze fra insiemi; lo ritroveremo, per esempio, nelle partizioni e nelle classi di equivalenza ([[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|capitolo 13]]).
 
 Questa equivalenza suggerisce un metodo: per dimostrare un'uguaglianza, partire da un elemento arbitrario del primo insieme e mostrarne l'appartenenza al secondo, poi fare il percorso inverso. «Arbitrario» significa che non gli attribuiamo proprietà ulteriori rispetto all'appartenenza dichiarata.
 
@@ -44,6 +52,11 @@ Fissato un insieme ambiente $U$ e due suoi sottoinsiemi $A,B$, le principali ope
 | $A\cap B$, intersezione | $x\in A$ e $x\in B$ |
 | $A\setminus B$, differenza | $x\in A$ e $x\notin B$ |
 | $A^c=U\setminus A$, complementare | $x\in U$ e $x\notin A$ |
+
+> [!example] Esempi e controesempi — Inclusione e uguaglianza
+> **Vale $A\subseteq B$:** $\{2,4\}\subseteq\{0,2,4\}$, perché ogni elemento di sinistra sta a destra; $\varnothing\subseteq B$ per ogni $B$.
+> **Non vale $A\subseteq B$:** $\{2,5\}\not\subseteq\{0,2,4\}$, perché $5\notin\{0,2,4\}$: basta un elemento a smentirla.
+> **Non vale l'uguaglianza** pur valendo una sola inclusione: $\{2\}\subseteq\{2,4\}$ ma $\{2,4\}\not\subseteq\{2\}$. Servono entrambe le inclusioni.
 
 Due insiemi sono **disgiunti** se $A\cap B=\varnothing$. Il complementare dipende dall'ambiente: quello di $\{0,2\}$ in $\{0,1,2,3\}$ è $\{1,3\}$, mentre in $\mathbb N$ contiene anche $4,5,6,\ldots$.
 
@@ -66,7 +79,14 @@ $$
 
 Per la prima, un elemento di $U$ è fuori dall'unione esattamente quando non appartiene né ad $A$ né a $B$. Per la seconda, essere fuori dall'intersezione significa che manca almeno una delle due appartenenze. In entrambi i casi abbiamo confrontato l'appartenenza di un elemento arbitrario: questo dimostra le uguaglianze.
 
-Ci serviranno anche due costruzioni. Il **prodotto cartesiano** $A\times B$ è l'insieme delle coppie ordinate $(a,b)$ con $a\in A$ e $b\in B$. Le coppie $(1,2)$ e $(2,1)$ sono diverse, perché conta la posizione. L'**insieme delle parti** $\mathcal P(A)$ raccoglie tutti i sottoinsiemi di $A$: per esempio $\mathcal P(\{a\})=\{\varnothing,\{a\}\}$.
+Ci serviranno anche due costruzioni: la prima permette di descrivere oggetti formati da due scelte in ordine, la seconda di parlare di «tutti i sottoinsiemi» come di un unico insieme. Il **prodotto cartesiano** $A\times B$ è l'insieme delle coppie ordinate $(a,b)$ con $a\in A$ e $b\in B$. Le coppie $(1,2)$ e $(2,1)$ sono diverse, perché conta la posizione. L'**insieme delle parti** $\mathcal P(A)$ raccoglie tutti i sottoinsiemi di $A$: per esempio $\mathcal P(\{a\})=\{\varnothing,\{a\}\}$.
+
+> [!example] Esempi e controesempi — Prodotto cartesiano e insieme delle parti
+> Sia $A=\{1,2\}$ e $B=\{3,4\}$.
+> **Sta in $A\times B$:** $(1,3)$ e $(2,4)$.
+> **Non sta in $A\times B$:** $(3,4)$, perché la prima componente $3\notin A$ (la seconda va bene); $(1,2)$, perché la seconda componente $2\notin B$ (la prima va bene). Anche $(3,1)$ ha le componenti «al posto sbagliato»: l'ordine conta.
+> **Sta in $\mathcal P(A)$:** $\varnothing$, $\{1\}$, $\{1,2\}$.
+> **Non sta in $\mathcal P(A)$:** $1$, che è un elemento di $A$ e non un sottoinsieme; $\{1,3\}$, che contiene $3\notin A$.
 
 ## Quantificatori: tutti, qualcuno, uno solo
 
@@ -88,19 +108,20 @@ $$
 
 La scrittura $\exists!x\in A:P(x)$ significa che esiste esattamente un elemento di $A$ con la proprietà $P$. Va dimostrata sia l'esistenza, sia l'unicità: se $x$ e $x'$ soddisfano $P$, allora devono coincidere.
 
-Negare una frase significa descrivere precisamente quando è falsa:
+Negare una frase significa descrivere precisamente quando è falsa. Serve a capire che cosa dobbiamo mostrare per smentire un'affermazione.
 
-$$
-\neg(\forall x\in A:P(x))
-\quad\Longleftrightarrow\quad
-\exists x\in A:\neg P(x),
-$$
-
-$$
-\neg(\exists x\in A:P(x))
-\quad\Longleftrightarrow\quad
-\forall x\in A:\neg P(x).
-$$
+> [!abstract] Concetto chiave — Negazione dei quantificatori
+> $$
+> \neg(\forall x\in A:P(x))
+> \quad\Longleftrightarrow\quad
+> \exists x\in A:\neg P(x),
+> $$
+> $$
+> \neg(\exists x\in A:P(x))
+> \quad\Longleftrightarrow\quad
+> \forall x\in A:\neg P(x).
+> $$
+> Per smentire un «per ogni» basta un controesempio; per smentire un «esiste» occorre escludere tutti i casi. Lo useremo in ogni dimostrazione per assurdo e per minimo controesempio ([[Books/Aritmetica-I/02 - Naturali e induzione|capitolo 02]]).
 
 «Non tutti» significa «almeno uno no», non «nessuno». Per esempio, la negazione di «ogni studente ha risolto almeno un esercizio» è «esiste uno studente che non ha risolto alcun esercizio».
 
@@ -116,6 +137,10 @@ $$
 
 Per smentire un'inclusione basta dunque trovare un elemento preciso. Inoltre $\varnothing\subseteq B$ per ogni $B$: non esiste un elemento del vuoto che possa violare l'inclusione. Per la stessa ragione un'affermazione universale su un dominio vuoto è vera; un'affermazione esistenziale su quel dominio è falsa.
 
+> [!example] Esempi e controesempi — Quantificatori
+> **«$\forall n\in\mathbb N\ \exists m:\ m>n$» è vera**, con $m=n+1$. **«$\exists m\ \forall n:\ m>n$» è falsa**, perché $m>m$ non vale: scambiando i quantificatori cambia il significato.
+> **$\exists!$:** «esiste un unico $x\in\mathbb N$ con $x+2=5$» è vera ($x=3$). «Esiste un unico $x\in\mathbb Z$ con $x^2=4$» è falsa per mancanza di *unicità* ($2$ e $-2$). «Esiste un unico $x\in\mathbb N$ con $x+5=2$» è falsa per mancanza di *esistenza*.
+
 ## Implicazioni, equivalenze e controesempi
 
 Scrivere $P\Rightarrow Q$ significa «se $P$, allora $Q$». $P$ è l'ipotesi, $Q$ la conclusione. L'implicazione esclude esattamente la situazione in cui $P$ è vera e $Q$ è falsa; perciò la sua negazione è
@@ -127,6 +152,10 @@ $$
 Nell'esempio iniziale, «$n$ è pari» implica «$n^2$ è pari». Un caso con $n$ dispari non potrebbe smentire questa implicazione, perché non soddisferebbe l'ipotesi. In generale, per confutare un'affermazione universale occorre un **controesempio** che rispetti tutte le ipotesi e violi la conclusione.
 
 Per esempio «per ogni $n\in\mathbb N$, $n^2>n$» è falsa: $n=0$ soddisfa $n^2=n$. Anche $n=1$ è un controesempio. Verificare $2,3,\ldots,100$ non avrebbe reso vero l'enunciato.
+
+> [!example] Esempi e controesempi — Controesempio
+> **È un controesempio** a «se $n$ è pari, allora $n^2>n$»: $n=0$, perché è pari (rispetta l'ipotesi) e $0^2=0\not>0$ (viola la conclusione).
+> **Non è un controesempio:** $n=3$, perché è dispari e non rispetta l'ipotesi; $n=4$, perché rispetta l'ipotesi ma soddisfa anche la conclusione ($16>4$). Un controesempio deve rispettare l'ipotesi *e* violare la conclusione.
 
 La **reciproca** di $P\Rightarrow Q$ è $Q\Rightarrow P$ e richiede una dimostrazione propria. Se entrambe valgono, scriviamo $P\Longleftrightarrow Q$, letto «$P$ se e solo se $Q$». Dimostrare un'equivalenza significa quindi controllare due direzioni.
 
@@ -151,6 +180,23 @@ per ottenere $P\Rightarrow Q$. Le due implicazioni escludono la stessa situazion
 
 In una prova **per assurdo** si assume la negazione della conclusione e si ricava una contraddizione con le ipotesi o con un fatto già stabilito. Per dimostrare che $\mathbb N$ non ha un massimo, supponiamo che ne abbia uno, $M$. Il successore $M+1$ è ancora naturale e soddisfa $M+1>M$, contraddicendo la massimalità di $M$.
 
+Quale tecnica scegliere? Il criterio pratico è guardare che cosa si può ricavare facilmente dall'ipotesi e dalla negazione della tesi. La tabella va letta riga per riga: a sinistra la forma dell'enunciato, a destra il primo tentativo ragionevole.
+
+| Che cosa devo dimostrare | Tecnica da provare | Primo passo |
+|---|---|---|
+| $P\Rightarrow Q$, e dall'ipotesi si ricava una formula (es. $n=2k$) | Diretta | Traduci $P$ con la definizione e arriva alla forma richiesta da $Q$ |
+| $P\Rightarrow Q$, ma $\neg Q$ è più informativa di $P$ («nessuno supera...», «non è divisibile...») | Contrapposizione | Assumi $\neg Q$ e dimostra $\neg P$ |
+| Una non esistenza o un'impossibilità («$\mathbb N$ non ha massimo») | Assurdo | Assumi che esista e cerca la contraddizione |
+| $A=B$ fra insiemi | Doppia inclusione | Elemento arbitrario di $A$, poi di $B$ |
+| $P\Longleftrightarrow Q$ | Due implicazioni | Prova $P\Rightarrow Q$ e $Q\Rightarrow P$ separatamente |
+| Un «per ogni» che sospetti falso | Controesempio | Cerca un caso che rispetti l'ipotesi e violi la tesi |
+| Un «esiste» | Costruzione | Esibisci un elemento e verifica la proprietà |
+| Una proprietà di tutti i naturali, che passa da $n$ a $n+1$ | Induzione | Vedi il [[Books/Aritmetica-I/02 - Naturali e induzione|capitolo 02]] |
+
+> [!example] Esempi e controesempi — Contrapposizione e assurdo
+> **Va bene:** nell'esempio con $x+y>10$ la contrapposizione funziona perché $\neg Q$ dà due disuguaglianze sommabili.
+> **Non va bene:** assumere $Q$ e dedurre $P$ prova la reciproca $Q\Rightarrow P$, che è un'altra affermazione e può essere falsa ($n^2$ pari $\Rightarrow n$ pari vale, ma $n$ pari $\Rightarrow n$ multiplo di $4$ no). La contrapposizione nega *entrambe* le parti e inverte la freccia: $\neg Q\Rightarrow\neg P$. Un assurdo, poi, si conclude solo se si arriva a una contraddizione vera e propria.
+
 Contrapposizione e assurdo sono vicini, ma conviene tenere visibile che cosa si sta facendo: nella prima si prova una precisa implicazione equivalente; nel secondo si rende impossibile la negazione della tesi. Nessuno dei due metodi autorizza ad assumere ciò che si vuole dimostrare. Una prova deve avere un punto di partenza indipendente dalla conclusione.
 
 ## Funzioni: assegnare senza ambiguità
@@ -171,7 +217,16 @@ $$
 
 Quest'ultima notazione è disponibile per qualsiasi funzione: non presuppone l'esistenza di una funzione inversa.
 
+Una **preimmagine** di $y\in Y$ è un qualunque $x\in X$ con $f(x)=y$; la controimmagine di $\{y\}$ è l'insieme di tutte le preimmagini di $y$.
+
 Per esempio, $f:\mathbb Z\to\mathbb Z$, $f(n)=2n$, ha come immagine gli interi pari. La regola «associare a $x$ il suo reciproco» non definisce una funzione $\mathbb R\to\mathbb R$, perché non assegna un valore a $0$; definisce invece una funzione su $\mathbb R\setminus\{0\}$.
+
+> [!example] Esempi e controesempi — Funzione
+> **È una funzione:** $n\mapsto2n$ da $\mathbb Z$ a $\mathbb Z$; $x\mapsto1/x$ da $\mathbb R\setminus\{0\}$ a $\mathbb R$.
+> **Non è una funzione**, ciascuna violando una sola condizione:
+> - $x\mapsto1/x$ da $\mathbb R$ a $\mathbb R$ non assegna alcun valore a $0$ (manca un valore);
+> - «a ogni $n\in\mathbb N_{>0}$ associa un suo divisore positivo» non è ben definita: a $6$ si può associare $1,2,3$ o $6$ (manca l'unicità del valore);
+> - $n\mapsto n/2$ da $\mathbb Z$ a $\mathbb Z$ assegna a $1$ il valore $1/2\notin\mathbb Z$ (il valore non sta nel codominio).
 
 Due funzioni $f,g:X\to Y$ sono uguali se $f(x)=g(x)$ per ogni $x\in X$. Avere la stessa immagine non basta: su $\{1,2\}$, l'identità e la funzione che scambia $1$ con $2$ hanno la stessa immagine e valori diversi. Nel libro consideriamo dominio e codominio parte della specificazione della funzione.
 
@@ -181,10 +236,24 @@ Le tre proprietà fondamentali distinguono tipi di assegnazione:
 - $f$ è **suriettiva** se per ogni $y\in Y$ esiste $x\in X$ tale che $f(x)=y$. Quindi $f(X)=Y$: nessun armadietto rimane inutilizzato.
 - $f$ è **biettiva** se è iniettiva e suriettiva: ogni elemento di $Y$ corrisponde a esattamente un elemento di $X$.
 
+Come si leggono insieme queste tre proprietà? Guardale come due domande indipendenti sul codominio: «qualche valore è raggiunto due volte?» (iniettività) e «qualche valore non è raggiunto?» (suriettività). La tabella le combina tutte e quattro in modo possibile, con un esempio per ciascuna.
+
+| Funzione | Iniettiva | Suriettiva | Motivo |
+|---|---|---|---|
+| $\mathbb Z\to\mathbb Z$, $n\mapsto n+1$ | sì | sì | ogni $m$ ha l'unica preimmagine $m-1$: biettiva |
+| $\mathbb Z\to\mathbb Z$, $n\mapsto2n$ | sì | no | $2n=2n'$ forza $n=n'$; ma $1$ non è mai raggiunto |
+| $\mathbb Z\to\{0,1\}$, $n\mapsto0$ se $n$ è pari, $1$ se $n$ è dispari | no | sì | $0$ e $2$ hanno la stessa immagine; sia $0$ sia $1$ sono raggiunti |
+| $\mathbb Z\to\mathbb Z$, $n\mapsto n^2$ | no | no | $1$ e $-1$ hanno la stessa immagine; $2$ non è un quadrato |
+
+> [!example] Esempi e controesempi — Iniettiva, suriettiva, biettiva
+> **Iniettiva:** $n\mapsto2n$ su $\mathbb Z$ (da $2n=2n'$ segue $n=n'$). **Non iniettiva**, perché due elementi distinti hanno la stessa immagine: $n\mapsto n^2$ su $\mathbb Z$ ($f(1)=f(-1)=1$).
+> **Suriettiva:** $n\mapsto n+1$ su $\mathbb Z$. **Non suriettiva**, perché un elemento del codominio non è raggiunto: $n\mapsto2n$ su $\mathbb Z$ (manca $1$).
+> **Biettiva:** $n\mapsto n+1$ su $\mathbb Z$. **Non biettiva** pur essendo iniettiva: $n\mapsto2n$ su $\mathbb Z$. **Non biettiva** pur essendo suriettiva: la funzione parità $\mathbb Z\to\{0,1\}$ della tabella.
+
 Per provare l'iniettività si prendono $x,x'$ arbitrari e si studia l'uguaglianza delle immagini. Per provare la suriettività si prende un $y$ arbitrario nel codominio e si cerca una sua preimmagine, verificando che appartenga al dominio.
 
 > [!warning] Attenzione — La formula non determina da sola le proprietà
-> $n\mapsto2n$ da $\mathbb Z$ a $\mathbb Z$ è iniettiva ma non suriettiva: $1$ non è raggiunto. La stessa regola, da $\mathbb Z$ all'insieme degli interi pari, è biettiva. Il codominio è decisivo. Anche l'iniettività può cambiare restringendo il dominio: $x\mapsto x^2$ identifica $1$ e $-1$ su $\mathbb R$, ma è iniettiva su $[0,+\infty)$.
+> $n\mapsto2n$ da $\mathbb Z$ a $\mathbb Z$ è iniettiva ma non suriettiva: $1$ non è raggiunto. La stessa regola, da $\mathbb Z$ all'insieme degli interi pari, è biettiva. Il codominio è decisivo. Anche l'iniettività può cambiare restringendo il dominio: $x\mapsto x^2$ identifica $1$ e $-1$ su $\mathbb R$, ma è iniettiva sull'insieme $[0,+\infty)$ dei reali maggiori o uguali a zero.
 
 ## Comporre e tornare indietro
 
@@ -212,9 +281,23 @@ g\circ f=\operatorname{id}_X,
 f\circ g=\operatorname{id}_Y.
 $$
 
-**Una funzione ammette inversa se e solo se è biettiva.** Se $f$ è biettiva, ogni $y$ è immagine di un unico $x$: definiamo $g(y)$ come quell'$x$. Le due identità seguono dalla costruzione. Viceversa, se esiste $g$, da $f(x)=f(x')$ otteniamo $g(f(x))=g(f(x'))$, quindi $x=x'$; inoltre ogni $y$ è raggiunto perché $f(g(y))=y$. Dunque $f$ è sia iniettiva sia suriettiva.
+Quando ha senso «tornare indietro»? Solo se nessun valore è raggiunto da due elementi (altrimenti non sapremmo quale scegliere) e nessun valore è lasciato fuori (altrimenti per quel valore non ci sarebbe alcun punto a cui tornare).
+
+> [!abstract] Concetto chiave — Inversa e biiezione
+> Una funzione $f:X\to Y$ ammette inversa se e solo se è biettiva. L'inversa è unica.
+> È il ponte fra funzioni e conteggio: una biezione conserva il numero di elementi ([[Books/Aritmetica-I/03 - Contare attraverso le funzioni|capitolo 03]]) e le permutazioni sono le biezioni di un insieme in sé ([[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|capitolo 14]]).
+
+*Passo 1 — Se $f$ è biettiva, l'inversa esiste.* Ogni $y$ è immagine di un unico $x$: definiamo $g(y)$ come quell'$x$. Le due identità seguono dalla costruzione.
+
+*Passo 2 — Se l'inversa esiste, $f$ è biettiva.* Se esiste $g$, da $f(x)=f(x')$ otteniamo $g(f(x))=g(f(x'))$, quindi $x=x'$; inoltre ogni $y$ è raggiunto perché $f(g(y))=y$. Dunque $f$ è sia iniettiva sia suriettiva.
 
 L'inversa è unica: per ogni $y$ deve restituire l'unica preimmagine di $y$. Si indica con $f^{-1}$; il simbolo non significa $1/f$.
+
+> [!example] Esempi e controesempi — Inversa
+> **Ha inversa:** $n\mapsto n+1$ su $\mathbb Z$, con inversa $m\mapsto m-1$.
+> **Non ha inversa**, ciascuna violando una sola condizione:
+> - $n\mapsto2n$ da $\mathbb Z$ a $\mathbb Z$ è iniettiva ma non suriettiva. Si può definire $g(m)=m/2$ se $m$ è pari e $g(m)=0$ se $m$ è dispari: allora $g\circ f=\operatorname{id}_{\mathbb Z}$, ma $f(g(1))=0\ne1$, quindi $f\circ g\ne\operatorname{id}$;
+> - la parità $p:\mathbb Z\to\{0,1\}$ è suriettiva ma non iniettiva. Con $g(0)=0$, $g(1)=1$ si ha $p\circ g=\operatorname{id}$, ma $g(p(2))=0\ne2$, quindi $g\circ p\ne\operatorname{id}$.
 
 **Esempio svolto.** Sia $D=\{2k+1:k\in\mathbb Z\}$ l'insieme degli interi dispari e sia $f:\mathbb Z\to D$, $f(n)=2n+1$. Se $2n+1=2n'+1$, sottraendo $1$ e dividendo per $2$ otteniamo $n=n'$: $f$ è iniettiva. Ogni $d\in D$ ha la forma $2k+1$, dunque $f(k)=d$: è suriettiva. Risolvendo $d=2n+1$ rispetto a $n$ troviamo
 

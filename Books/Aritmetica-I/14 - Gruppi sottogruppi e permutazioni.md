@@ -2,6 +2,13 @@
 
 Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|funzioni e dimostrazioni]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisibilità e mcm]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|inversi modulari]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Imparerai a decidere se un insieme con un'operazione è un gruppo e, se non lo è, quale assioma fallisce.
+> - Dimostrerai le prime conseguenze degli assiomi: unicità del neutro e dell'inverso, inverso di un prodotto, cancellazione.
+> - Userai il criterio del sottogruppo e distinguerai ciò che un sottoinsieme eredita da ciò che deve verificare.
+> - Calcolerai con le permutazioni: composizione, cicli disgiunti, inverso, potenze e ordine.
+> - L'idea che lega tutto: poche regole sull'operazione bastano a trattare allo stesso modo numeri, resti e trasformazioni, a patto di non scambiare mai l'ordine senza motivo.
+
 ## Comporre azioni che si possono annullare
 
 Ruota un triangolo equilatero di un terzo di giro, poi di un altro terzo: ottieni una rotazione di due terzi. Tre rotazioni riportano ogni vertice al punto iniziale. Puoi anche riflettere il triangolo rispetto a un suo asse: ripetere la riflessione annulla il primo movimento.
@@ -11,6 +18,8 @@ Qui gli oggetti da studiare sono le trasformazioni. L’operazione consiste nell
 La nozione di **gruppo** isola questo schema comune. Permette di dimostrare una sola volta regole che valgono per numeri, resti e trasformazioni. Occorre però conservare l’ordine delle azioni: riflettere e poi ruotare può dare un risultato diverso da ruotare e poi riflettere.
 
 ## Le regole di un gruppo
+
+Per trattare allo stesso modo numeri, resti e trasformazioni servono poche richieste: abbastanza deboli da valere in tutti questi casi, abbastanza forti da permettere di dimostrare qualcosa. Le elenchiamo, sapendo che vanno controllate una per una: nella tabella più sotto vedrai insiemi in cui ne fallisce esattamente una.
 
 Un’operazione binaria interna su un insieme $G$ è una funzione $G\times G\to G$: a ogni coppia $x,y$ associa un elemento $xy$ dello stesso insieme. La parola *interna* esprime la **chiusura**.
 
@@ -23,6 +32,10 @@ L’insieme con questa operazione è un gruppo se valgono tre ulteriori condizio
 L’associatività consente di spostare le parentesi, mantenendo l’ordine dei fattori. Se inoltre $xy=yx$ per ogni coppia, il gruppo si dice **abeliano**. Questa è una proprietà aggiuntiva.
 
 In notazione moltiplicativa scriviamo $e$, $x^{-1}$, $xy$. In notazione additiva scriviamo $0$, $-x$, $x+y$: l’inverso diventa l’opposto. Cambiano i simboli, non gli assiomi.
+
+> [!abstract] Concetto chiave — Gruppo
+> Un insieme $G$ con un'operazione interna è un **gruppo** quando valgono: chiusura ($xy\in G$), associatività, esistenza del neutro, esistenza degli inversi. È **abeliano** se vale anche $xy=yx$.
+> È la definizione su cui poggia tutto il seguito: sottogruppi, ordine e gruppi ciclici ([[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]]), Lagrange ([[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]]), il gruppo additivo e quello delle unità di un anello ([[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]]).
 
 Gli esempi familiari chiariscono perché bisogna specificare insieme e operazione:
 
@@ -41,6 +54,63 @@ $$
 U(10)=\{[1],[3],[7],[9]\}.
 $$
 Poiché $3\cdot7=21\equiv1\pmod{10}$, $[3]^{-1}=[7]$; inoltre $[9]^{-1}=[9]$. La classe $[2]$ non appartiene a questo gruppo, pur appartenendo all’insieme delle classi modulo $10$.
+
+### Quando un insieme con operazione non è un gruppo
+
+Un candidato si controlla con le quattro condizioni, una dopo l'altra. La commutatività non fa parte della definizione di gruppo: è solo una colonna in più. «n.d.» significa che la condizione non si può nemmeno enunciare (per esempio gli inversi esistono solo rispetto a un neutro).
+
+| Insieme e operazione | Chiusura | Associatività | Neutro | Inversi | Commutatività | Gruppo? |
+|---|---|---|---|---|---|---|
+| $(\mathbb N,+)$ (con $0\in\mathbb N$) | sì | sì | sì ($0$) | **no** | sì | no: $1$ non ha opposto in $\mathbb N$ |
+| $(\mathbb Z,+)$ | sì | sì | sì ($0$) | sì ($-a$) | sì | sì, abeliano |
+| $(\mathbb Z,\cdot)$ | sì | sì | sì ($1$) | **no** | sì | no: $2$ non ha inverso intero |
+| $(\mathbb Z,-)$ | sì | **no** | **no** | n.d. | no | no: $(5-3)-1=1$ ma $5-(3-1)=3$; inoltre $a-0=a$ ma $0-a=-a$ |
+| $(\mathbb Z/n\mathbb Z,+)$, $n\ge2$ | sì | sì | sì ($[0]$) | sì ($[-a]$) | sì | sì, abeliano |
+| $(\mathbb Z/n\mathbb Z,\cdot)$, $n\ge2$ | sì | sì | sì ($[1]$) | **no** | sì | no: $[0]$ non ha mai inverso; in $\mathbb Z/6\mathbb Z$ nemmeno $[2],[3],[4]$ |
+| $(\mathbb Z/6\mathbb Z\setminus\{[0]\},\cdot)$ | **no** | sì | sì ($[1]$) | **no** | sì | no: $[2][3]=[0]$ esce dall'insieme |
+| $(U(n),\cdot)$ | sì | sì | sì ($[1]$) | sì | sì | sì, abeliano |
+| $(\mathbb Q,\cdot)$ | sì | sì | sì ($1$) | **no** | sì | no: $0$ non ha inverso |
+| $(\mathbb Q^\times,\cdot)$, con $\mathbb Q^\times=\mathbb Q\setminus\{0\}$ | sì | sì | sì ($1$) | sì ($1/q$) | sì | sì, abeliano |
+| $(\{1,-1\},\cdot)$ | sì | sì | sì ($1$) | sì (ciascuno è inverso di sé stesso) | sì | sì, abeliano |
+| $(S_3,\circ)$ | sì | sì | sì ($\operatorname{id}$) | sì | **no** | sì, ma non abeliano |
+| (pari, $+$) in $\mathbb Z$ | sì | sì | sì ($0$) | sì | sì | sì, abeliano |
+| (dispari, $+$) in $\mathbb Z$ | **no** | sì | **no** | n.d. | sì | no: $1+3=4$ non è dispari; $0$ non è dispari |
+
+Tre letture della tabella. Primo: la stessa operazione può dare un gruppo o no a seconda dell'insieme ($\mathbb Q$ contro $\mathbb Q^\times$ per il prodotto). Secondo: lo stesso insieme può dare un gruppo o no a seconda dell'operazione ($\mathbb Z$ con $+$ contro $\mathbb Z$ con $\cdot$ o con $-$). Terzo: il fallimento tipico è quello degli inversi; la mancanza di chiusura o di associatività è più rara ma va sempre controllata.
+
+> [!example] Esempi e controesempi — gruppo
+> **È un gruppo:** $(\mathbb Z,+)$, $(\mathbb Z/n\mathbb Z,+)$, $(U(10),\cdot)$, $(S_3,\circ)$.
+>
+> **Non è un gruppo.** Ogni caso mostra una condizione che fallisce:
+> - chiusura: $(\mathbb Z/6\mathbb Z\setminus\{[0]\},\cdot)$, perché $[2][3]=[0]$ esce dall'insieme;
+> - associatività: $(\mathbb Z,-)$, perché $(5-3)-1\ne5-(3-1)$;
+> - neutro: i numeri pari **positivi** con $+$ sono chiusi e associativi, ma $0$ non appartiene all'insieme;
+> - inversi: $(\mathbb N,+)$, dove $1$ non ha opposto, e $(\mathbb Z,\cdot)$, dove $2$ non ha inverso intero; in entrambi chiusura, associatività e neutro valgono.
+>
+> Ogni ipotesi è dunque necessaria. La commutatività, invece, non lo è: $S_3$ è un gruppo.
+
+### La mappa delle strutture: dove stiamo andando
+
+Il gruppo è il primo gradino di una scala. Lo schema è un'anteprima: i nomi a destra del gruppo saranno definiti nei capitoli indicati, qui servono solo a collocare ciò che stai studiando. Si legge dall'alto verso il basso: ogni freccia aggiunge una richiesta.
+
+```mermaid
+flowchart TD
+  A["Insieme con una operazione interna"] -->|"associatività, neutro, inversi"| G["Gruppo (questo capitolo)"]
+  G -->|"commutatività"| AB["Gruppo abeliano"]
+  AB -->|"generato da un solo elemento"| CI["Gruppo ciclico (cap. 16)"]
+  AB -->|"seconda operazione, distributiva sulla prima"| AN["Anello (cap. 15)"]
+  AN -->|"ogni elemento non nullo è invertibile"| CA["Campo (cap. 15)"]
+```
+
+| Livello | Che cosa si aggiunge | Esempio | Non esempio |
+|---|---|---|---|
+| Gruppo | un'operazione con neutro e inversi | $S_3$ | $(\mathbb Z,\cdot)$ |
+| Gruppo abeliano | $xy=yx$ | $(\mathbb Z/n\mathbb Z,+)$ | $S_3$ |
+| Anello (anteprima) | una seconda operazione, il prodotto, compatibile con la somma | $(\mathbb Z,+,\cdot)$ | $(S_3,\circ)$ ha una sola operazione |
+| Campo (anteprima) | ogni elemento non nullo ha un inverso moltiplicativo | $\mathbb Q$ | $\mathbb Z$, perché $2$ non è invertibile |
+| Gruppo ciclico (anteprima) | tutti gli elementi sono potenze di uno solo | $(\mathbb Z,+)$ generato da $1$ | $S_3$ |
+
+In un anello la parte additiva è un gruppo abeliano (per questo la freccia parte da lì); il prodotto si chiede solo associativo e distributivo. I dettagli sono nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]].
 
 ## Le prime dimostrazioni: annullare senza cambiare l’ordine
 
@@ -85,12 +155,15 @@ Cancellando $h$ a destra **in $G$**, otteniamo $e_H=e$. Ora l’inverso di $h$ c
 
 La cancellazione evita un passaggio ingiustificato: all’inizio sappiamo che $e_H$ è neutro sugli elementi di $H$, non su tutti quelli di $G$.
 
-**Criterio del sottogruppo.** Per $H\subseteq G$ vale
-$$
-H\leq G
-\quad\Longleftrightarrow\quad
-H\neq\varnothing\ \text{ e }\ xy^{-1}\in H\ \text{per ogni }x,y\in H.
-$$
+Possiamo ora ridurre il lavoro: invece di controllare tutti gli assiomi su $H$, basta una sola condizione.
+
+> [!abstract] Concetto chiave — Criterio del sottogruppo
+> $$
+> H\leq G
+> \quad\Longleftrightarrow\quad
+> H\neq\varnothing\ \text{ e }\ xy^{-1}\in H\ \text{per ogni }x,y\in H.
+> $$
+> È lo strumento standard per dimostrare che qualcosa è un sottogruppo; lo useremo per $d\mathbb Z$, per il centro, per i sottogruppi generati ([[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]]) e per i nuclei degli omomorfismi ([[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]]).
 
 Se $H$ è un sottogruppo, quanto appena dimostrato garantisce inversi e prodotti in $H$, quindi la condizione è necessaria. Viceversa, scegliamo $a\in H$. Applicando la condizione a $a,a$ troviamo $e=aa^{-1}\in H$. Applicandola a $e,y$ troviamo $y^{-1}\in H$. Infine, poiché $y^{-1}\in H$, applicandola a $x,y^{-1}$ otteniamo
 $$
@@ -109,6 +182,28 @@ $$
 d\mathbb Z\subseteq m\mathbb Z\quad\Longleftrightarrow\quad m\mid d.
 $$
 Se vale l’inclusione, $d\in m\mathbb Z$, quindi $m\mid d$. Se $d=mq$, ogni $dk=m(qk)$ appartiene a $m\mathbb Z$. Il verso dell’inclusione è così spiegato: $6\mathbb Z\subseteq2\mathbb Z$, perché essere multiplo di $6$ è un requisito più restrittivo.
+
+Lo schema seguente riassume come applicare il criterio. Si legge dall'alto; i rami «no» si chiudono con una risposta negativa, che si dimostra esibendo un elemento o una coppia precisa.
+
+```mermaid
+flowchart TD
+  A["H sottoinsieme di G"] --> B{"H è non vuoto? Contiene il neutro?"}
+  B -->|"no"| N1["Non è un sottogruppo"]
+  B -->|"sì"| C{"Per ogni x, y in H, x·y⁻¹ sta in H?"}
+  C -->|"no, per una coppia"| N2["Non è un sottogruppo: esibisci x e y"]
+  C -->|"sì"| Y["H è un sottogruppo di G"]
+```
+
+> [!example] Esempi e controesempi — sottogruppo
+> **È un sottogruppo:** $2\mathbb Z\le(\mathbb Z,+)$; $\{\operatorname{id},(1\ 2)\}\le S_3$ (perché $(1\ 2)^2=\operatorname{id}$); $\{[1],[9]\}\le U(10)$ (perché $9\cdot9=81\equiv1$); i due sottogruppi banali $\{e\}$ e $G$.
+>
+> **Non è un sottogruppo** (ciascun caso viola una sola richiesta):
+> - *non vuoto:* $\varnothing\subseteq\mathbb Z$ soddisfa vacuamente la condizione su $xy^{-1}$, ma non contiene il neutro;
+> - *inversi:* $\mathbb N\subseteq\mathbb Z$ è non vuoto, contiene $0$ ed è chiuso per $+$, ma $1-2=-1\notin\mathbb N$: manca l'opposto di $1$;
+> - *chiusura:* $\{\operatorname{id},(1\ 2),(1\ 3)\}\subseteq S_3$ contiene il neutro e gli inversi (ogni trasposizione è inversa di sé stessa), ma $(1\ 2)(1\ 3)=(1\ 3\ 2)$ non vi appartiene; analogamente $2\mathbb Z\cup3\mathbb Z$ non contiene $2+3$;
+> - *stessa operazione:* $U(10)$ è un gruppo per il prodotto, ma non è un sottogruppo di $(\mathbb Z/10\mathbb Z,+)$, perché $[1]+[3]=[4]\notin U(10)$. Un sottoinsieme che è un gruppo con un'altra operazione non basta.
+>
+> **Nei gruppi finiti basta meno:** se $G$ è finito e $H\ne\varnothing$ è chiuso per prodotto, allora $H\le G$. Per $x\in H$ le potenze $x,x^2,x^3,\ldots$ stanno in $H$ ma sono in numero finito, quindi $x^i=x^j$ con $i<j$. Cancellando $x^i$ si ottiene $x^{j-i}=e\in H$ e $x^{j-i-1}$ (che è $e$ se $j-i=1$) è l'inverso di $x$. Il controesempio $\mathbb N\subseteq\mathbb Z$ vive perciò in un gruppo infinito.
 
 ### Intersezioni e unioni
 
@@ -147,7 +242,7 @@ Quindi $x^{-1}$ è centrale: abbiamo verificato appartenenza, non assunto un inv
 
 ## Le permutazioni come gruppo
 
-Una **permutazione** di un insieme $X$ è una biiezione $X\to X$. Le permutazioni formano il gruppo $\operatorname{Sym}(X)$ per composizione. Il composto di due biiezioni è biiettivo; la composizione è associativa, perché entrambi i raggruppamenti mandano $x$ in $\sigma(\tau(\rho(x)))$. Il neutro è $\operatorname{id}_X$ e l’inverso è la funzione inversa.
+Una **permutazione** di un insieme $X$ è una biiezione $X\to X$, cioè una funzione sia iniettiva sia suriettiva (si veda il [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]]): mescola gli elementi senza perderne né duplicarne. Le permutazioni formano il gruppo $\operatorname{Sym}(X)$ per composizione. Il composto di due biiezioni è biiettivo; la composizione è associativa, perché entrambi i raggruppamenti mandano $x$ in $\sigma(\tau(\rho(x)))$. Il neutro è $\operatorname{id}_X$ e l’inverso è la funzione inversa.
 
 Per $X=\{1,\ldots,n\}$, con $n\geq1$, il gruppo si indica con $S_n$. Fissiamo la convenzione
 $$
@@ -161,6 +256,11 @@ $$
 \sigma=\begin{pmatrix}1&2&3&4&5\\3&5&1&4&2\end{pmatrix}.
 $$
 Qui $1\mapsto3\mapsto1$, $2\mapsto5\mapsto2$ e $4$ rimane fisso. La scrittura in cicli è dunque $\sigma=(1\ 3)(2\ 5)$.
+
+> [!example] Esempi e controesempi — permutazione
+> **È una permutazione:** la funzione $1\mapsto3$, $2\mapsto5$, $3\mapsto1$, $4\mapsto4$, $5\mapsto2$ della scrittura a due righe; l'identità; $n\mapsto n+1$ come funzione $\mathbb Z\to\mathbb Z$.
+>
+> **Non è una permutazione:** $1\mapsto2$, $2\mapsto2$, $3\mapsto1$ su $\{1,2,3\}$: $2$ ha due preimmagini (non iniettiva) e $3$ non è immagine di nessuno (non suriettiva); su un insieme finito le due mancanze si presentano sempre insieme. Invece $n\mapsto n+1$ come funzione $\mathbb N\to\mathbb N$ è iniettiva ma non suriettiva ($0$ non è immagine): su insiemi infiniti si può violare una sola condizione.
 
 Un **ciclo** $(a_1\ a_2\ \cdots\ a_r)$, dove gli $a_i$ sono distinti, manda ogni elemento al successivo e $a_r$ ad $a_1$, fissando gli altri. Un ciclo di lunghezza due è una **trasposizione**. I punti fissi sono cicli di lunghezza uno, normalmente omessi. Si può cambiare il punto iniziale, per esempio $(1\ 2\ 3)=(2\ 3\ 1)$; invertire il verso produce il ciclo inverso, che può essere diverso.
 
@@ -185,9 +285,27 @@ $$
 S_3=\{\operatorname{id},(1\ 2),(1\ 3),(2\ 3),(1\ 2\ 3),(1\ 3\ 2)\}.
 $$
 
+Tutti i prodotti possibili stanno nella tabella seguente: nella riga di $\sigma$ e nella colonna di $\tau$ trovi $\sigma\tau$, cioè prima $\tau$ e poi $\sigma$.
+
+| $\sigma\backslash\tau$ | id | $(1\ 2\ 3)$ | $(1\ 3\ 2)$ | $(1\ 2)$ | $(1\ 3)$ | $(2\ 3)$ |
+|---|---|---|---|---|---|---|
+| **id** | id | $(1\ 2\ 3)$ | $(1\ 3\ 2)$ | $(1\ 2)$ | $(1\ 3)$ | $(2\ 3)$ |
+| **$(1\ 2\ 3)$** | $(1\ 2\ 3)$ | $(1\ 3\ 2)$ | id | $(1\ 3)$ | $(2\ 3)$ | $(1\ 2)$ |
+| **$(1\ 3\ 2)$** | $(1\ 3\ 2)$ | id | $(1\ 2\ 3)$ | $(2\ 3)$ | $(1\ 2)$ | $(1\ 3)$ |
+| **$(1\ 2)$** | $(1\ 2)$ | $(2\ 3)$ | $(1\ 3)$ | id | $(1\ 3\ 2)$ | $(1\ 2\ 3)$ |
+| **$(1\ 3)$** | $(1\ 3)$ | $(1\ 2)$ | $(2\ 3)$ | $(1\ 2\ 3)$ | id | $(1\ 3\ 2)$ |
+| **$(2\ 3)$** | $(2\ 3)$ | $(1\ 3)$ | $(1\ 2)$ | $(1\ 3\ 2)$ | $(1\ 2\ 3)$ | id |
+
+Ogni riga e ogni colonna contiene ciascun elemento una volta sola: è la cancellazione vista sopra. La tabella non è simmetrica rispetto alla diagonale, per esempio $(1\ 2\ 3)(1\ 2)=(1\ 3)$ ma $(1\ 2)(1\ 2\ 3)=(2\ 3)$, e questo è il segno che $S_3$ non è abeliano.
+
 ## Decomporre, invertire e ripetere
 
 Due cicli sono **disgiunti** quando non condividono punti. Commutano: un punto mosso dal primo è fissato dal secondo, prima e dopo il movimento; analogamente per il secondo. Un punto esterno a entrambi rimane fermo.
+
+> [!example] Esempi e controesempi — cicli disgiunti
+> **Disgiunti, quindi commutano:** $(1\ 2)(3\ 4)=(3\ 4)(1\ 2)$, perché ciascun ciclo muove punti che l'altro lascia fermi.
+>
+> **Non disgiunti, non commutano:** $(1\ 2)$ e $(2\ 3)$ condividono il punto $2$. Applicando prima il fattore a destra, $(1\ 2)(2\ 3)$ manda $1\mapsto1\mapsto2$, $2\mapsto3\mapsto3$, $3\mapsto2\mapsto1$, cioè è $(1\ 2\ 3)$; l'ordine opposto dà $(2\ 3)(1\ 2)=(1\ 3\ 2)$. La disgiunzione è necessaria.
 
 Ogni permutazione di un insieme finito si decompone in cicli disgiunti. Ecco perché. Scegli un punto $a$ e segui
 $$
@@ -205,11 +323,21 @@ Per invertire un prodotto si rovescia anche l’ordine dei fattori; quando i cic
 
 Su un ciclo di lunghezza $r$, la potenza $k$ fa avanzare di $k$ posizioni. Scrivendo $k=qr+s$, con $0\leq s<r$, i $q$ giri completi lasciano lo stesso effetto di $s$ passi. Il ciclo torna identità esattamente quando $r\mid k$.
 
-L’**ordine di una permutazione** $\pi$, indicato con $\operatorname{ord}(\pi)$, è il minimo intero positivo $k$ per cui $\pi^k=\operatorname{id}$. Se i cicli disgiunti hanno lunghezze $r_1,\ldots,r_t$, ogni punto ritorna al suo posto esattamente quando tutte le lunghezze dividono $k$. Ne segue
-$$
-\boxed{\operatorname{ord}(\pi)=\operatorname{mcm}(r_1,\ldots,r_t).}
-$$
-Per l’identità l’ordine è $1$, includendo i suoi cicli di lunghezza uno. La generalizzazione dell’ordine agli elementi di un gruppo qualsiasi sarà sviluppata nel [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]].
+L’**ordine di una permutazione** $\pi$, indicato con $\operatorname{ord}(\pi)$, è il minimo intero positivo $k$ per cui $\pi^k=\operatorname{id}$. Se i cicli disgiunti hanno lunghezze $r_1,\ldots,r_t$, ogni punto ritorna al suo posto esattamente quando tutte le lunghezze dividono $k$. Ne segue il risultato che useremo per ogni calcolo con le permutazioni.
+
+> [!abstract] Concetto chiave — Ordine di una permutazione
+> Ogni permutazione di un insieme finito è prodotto di cicli disgiunti, e se questi hanno lunghezze $r_1,\ldots,r_t$ allora
+> $$
+> \operatorname{ord}(\pi)=\operatorname{mcm}(r_1,\ldots,r_t).
+> $$
+> Ridurre un problema di permutazioni a un calcolo di mcm è il ponte con l'aritmetica; la nozione di ordine in un gruppo qualsiasi è nel [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]].
+
+Per l’identità l’ordine è $1$, includendo i suoi cicli di lunghezza uno.
+
+> [!example] Esempi e controesempi — formula dell'ordine
+> **Si applica:** $(1\ 2)(3\ 4\ 5)$ ha cicli disgiunti di lunghezze $2$ e $3$, quindi ordine $\operatorname{mcm}(2,3)=6$.
+>
+> **Non si applica senza disgiunzione:** $(1\ 2)(2\ 3)$ ha due fattori di lunghezza $2$, e il mcm darebbe $2$. Ma, come visto sopra, il prodotto è il ciclo $(1\ 2\ 3)$, di ordine $3$. La formula va usata dopo aver riscritto la permutazione in cicli disgiunti.
 
 Per esempio, in $S_7$ poniamo
 $$

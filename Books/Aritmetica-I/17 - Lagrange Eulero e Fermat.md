@@ -2,13 +2,20 @@
 
 Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi e sottogruppi]], [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|unità e teorema cinese]], [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|ordine di un elemento]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Dividerai un gruppo finito in blocchi senza sovrapposizioni (le classi laterali) e ne ricaverai il teorema di Lagrange: la taglia di un sottogruppo divide quella del gruppo.
+> - Calcolerai la funzione di Eulero $\varphi(n)$, cioè il numero di classi invertibili modulo $n$.
+> - Dedurrai i teoremi di Eulero e di Fermat, e li userai per calcolare potenze enormi e inversi modulari.
+> - Imparerai a trovare l'ordine esatto di una classe cercandolo fra i divisori di $\varphi(n)$.
+> - L'idea che lega tutto: *contare* i blocchi di una partizione obbliga gli esponenti a comportarsi bene.
+
 ## Una potenza prevedibile senza calcolarla
 
 Come possiamo sapere che $7^{40}\equiv1\pmod{100}$ senza costruire quell’enorme intero? Nei capitoli precedenti abbiamo imparato che le potenze di una classe invertibile, lavorando fra un numero finito di classi, tornano all’identità. Ma questo assicura l’esistenza di un esponente; non spiega ancora perché proprio $40$ debba funzionare.
 
 La risposta parte da un problema di conteggio. Le potenze di $[7]_{100}$ formano un sottogruppo del gruppo delle classi invertibili. Se riuscissimo a dividere tutto il gruppo in blocchi grandi quanto quel sottogruppo, il numero di elementi del sottogruppo dovrebbe dividere il totale. L’ordine di $[7]_{100}$ dividerebbe allora $40$, e la potenza cercata sarebbe obbligata a valere uno.
 
-Il passaggio decisivo consiste dunque nel costruire blocchi senza sovrapposizioni. Le classi laterali servono esattamente a questo: trasformano una proprietà algebrica in una partizione da contare.
+Il passaggio decisivo consiste dunque nel costruire blocchi senza sovrapposizioni. Le classi laterali servono esattamente a questo: trasformano una proprietà algebrica in una partizione da contare. (Una **partizione** di un insieme è una famiglia di sottoinsiemi non vuoti, a due a due disgiunti, la cui unione è tutto l'insieme; si veda il [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|capitolo 13]].)
 
 ## Traslare un sottogruppo
 
@@ -20,7 +27,7 @@ $$
 
 È una copia di $H$ traslata mediante la moltiplicazione a sinistra per $g$. La parola «sinistra» specifica dove mettiamo $g$: in un gruppo non commutativo l’ordine dei fattori conta.
 
-Per capire perché queste copie non si sovrappongano parzialmente, introduciamo su $G$ la relazione
+Per capire perché queste copie non si sovrappongano parzialmente, introduciamo su $G$ una relazione di equivalenza (una relazione riflessiva, simmetrica e transitiva, come nel [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|capitolo 13]]; le sue classi sono i blocchi di una partizione):
 
 $$
 x\sim y\quad\Longleftrightarrow\quad x^{-1}y\in H.
@@ -50,7 +57,7 @@ $$
 H\longrightarrow gH,\qquad h\longmapsto gh
 $$
 
-è suriettiva per definizione di $gH$ ed è iniettiva per cancellazione: $gh_1=gh_2$ implica $h_1=h_2$. La sua inversa manda $x\in gH$ in $g^{-1}x\in H$. Perciò ogni classe laterale ha la stessa cardinalità di $H$.
+è suriettiva (ogni elemento di $gH$ è un'immagine) per definizione di $gH$ ed è iniettiva (elementi diversi hanno immagini diverse) per cancellazione: $gh_1=gh_2$ implica $h_1=h_2$. La sua inversa manda $x\in gH$ in $g^{-1}x\in H$. Perciò ogni classe laterale ha la stessa cardinalità di $H$.
 
 Qui le classi laterali sono soltanto insiemi. Per contarle non serve definire un’operazione fra classi né chiedere altre proprietà a $H$.
 
@@ -75,7 +82,27 @@ $$
 
 Ogni elemento compare una volta: abbiamo quattro blocchi da tre elementi. La classe $[4]_{12}+H$ coincide già con $H$, quindi scegliere un nuovo rappresentante non produce necessariamente un nuovo blocco.
 
+Per vedere la partizione a colpo d'occhio, scriviamo i dodici elementi in una tabella: ogni riga è una classe laterale, e leggendo l'intera tabella ogni elemento compare una volta sola (per brevità indichiamo $[k]_{12}$ con $k$).
+
+| Classe laterale | $+0$ | $+4$ | $+8$ |
+|---|---|---|---|
+| $0+H=H$ | 0 | 4 | 8 |
+| $1+H$ | 1 | 5 | 9 |
+| $2+H$ | 2 | 6 | 10 |
+| $3+H$ | 3 | 7 | 11 |
+
+Quattro righe per tre colonne: $12=4\cdot3$. Questo è il teorema di Lagrange in miniatura.
+
+> [!example] Esempi e controesempi — classe laterale
+> **È una classe laterale di $H=\{0,4,8\}$ in $\mathbb Z/12\mathbb Z$:** $\{1,5,9\}=1+H$ (traslata di $H$ per $1$); $\{4,8,0\}=4+H$, che coincide con $H$ stessa (un rappresentante diverso può dare lo stesso blocco); $\{7,11,3\}=7+H=3+H$.
+> **Non è una classe laterale:** $\{0,4,9\}$, perché una traslata di $H$ conserva le differenze fra gli elementi, e qui $9-4=5$ non è una differenza fra elementi di $H$ (tutte le differenze di $H$ sono multipli di $4$); $\{0,4\}$, perché ha due elementi e non tre, mentre ogni classe ha la taglia di $H$.
+> **Una classe laterale non è un sottogruppo, in generale:** $1+H=\{1,5,9\}$ non contiene lo zero $[0]_{12}$, l'elemento neutro. Solo la classe $H$ stessa lo è.
+
 ## Lagrange: la divisibilità nasce dalla partizione
+
+> [!abstract] Concetto chiave — Teorema di Lagrange
+> Se $G$ è un gruppo finito e $H\le G$ è un sottogruppo, allora $|H|$ divide $|G|$; in particolare $\operatorname{ord}(g)\mid|G|$ per ogni $g\in G$.
+> È il pilastro del capitolo: da qui discendono Eulero e Fermat, e tutti i vincoli sugli ordini usati nel [[Books/Aritmetica-I/18 - Congruenze esponenziali|capitolo 18]] e nel [[Books/Aritmetica-I/19 - Frazioni e sviluppi decimali|capitolo 19]].
 
 **Teorema di Lagrange.** Se $G$ è un gruppo finito e $H\le G$, allora
 
@@ -104,6 +131,14 @@ g^{|G|}=\bigl(g^{\operatorname{ord}(g)}\bigr)^t=e.
 $$
 
 Distinguiamo i due argomenti che ora abbiamo a disposizione. La proprietà $g^m=e\iff\operatorname{ord}(g)\mid m$ viene dalla divisione euclidea degli esponenti, già dimostrata nel capitolo 16. La proprietà $\operatorname{ord}(g)\mid|G|$ viene invece dalla partizione di $G$ in classi laterali. La seconda collega il comportamento di un singolo elemento alla dimensione dell’intero gruppo.
+
+> [!example] Esempi e controesempi — teorema di Lagrange
+> **Lo rispetta:** in $\mathbb Z/12\mathbb Z$ i sottogruppi $\langle[4]\rangle$ (3 elementi) e $\langle[3]\rangle$ (4 elementi) hanno taglie che dividono $12$. In $U(12)=\{1,5,7,11\}$ gli elementi non neutri hanno ordine $2$, che divide $4$.
+> **Senza l'ipotesi «sottogruppo» la conclusione fallisce:** in $\mathbb Z/6\mathbb Z$ il sottoinsieme $S=\{[0],[1],[2],[3]\}$ ha $4$ elementi e $4\nmid6$. Non è un sottogruppo: $[3]+[3]=[0]$ va bene, ma $[2]+[3]=[5]\notin S$ (la chiusura è violata).
+> **Senza l'ipotesi «finito» non ha senso:** in $(\mathbb Z,+)$ il sottogruppo $2\mathbb Z$ ha infiniti elementi, come $\mathbb Z$, e nessuna divisione fra taglie.
+
+> [!warning] Attenzione — Il viceversa di Lagrange non vale in generale
+> Lagrange dice che la taglia di un sottogruppo *deve* dividere $|G|$, non che per ogni divisore $d$ di $|G|$ *esista* un sottogruppo con $d$ elementi. Nei gruppi ciclici finiti, come $\mathbb Z/12\mathbb Z$, il viceversa vale (c'è un sottogruppo per ogni divisore di $12$). Esistono però gruppi finiti non commutativi in cui fallisce; il più piccolo ha $12$ elementi e non lo studiamo qui. Per questo Lagrange fornisce un elenco di candidati, mai una garanzia di esistenza.
 
 ## Quante classi sono invertibili? La funzione di Eulero
 
@@ -136,6 +171,10 @@ $$
 
 In particolare, $\varphi(p)=p-1$.
 
+> [!example] Esempi e controesempi — funzione di Eulero
+> **Valori:** $\varphi(7)=6$ (tutti i resti $1,\dots,6$ sono coprimi con $7$); $\varphi(9)=9-3=6$ (togliamo i multipli di $3$: $0,3,6$); $\varphi(12)=4$, con unità $1,5,7,11$.
+> **Non basta togliere $1$:** $\varphi(9)=6\neq8$. La formula $n-1$ vale solo per $n$ primo; per $p^s$ si tolgono i multipli di $p$, non solo $0$.
+
 Per passare dalle potenze prime a un modulo qualsiasi usiamo il teorema cinese strutturale del [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]]. Se $m,n\ge2$ sono coprimi, la mappa
 
 $$
@@ -150,6 +189,11 @@ $$
 $$
 
 Se uno dei moduli è $1$, l’identità vale direttamente grazie a $\varphi(1)=1$.
+
+(Un **isomorfismo** è un omomorfismo biiettivo, cioè una corrispondenza uno a uno che rispetta l'operazione, come visto nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]]; una **biiezione** è una funzione sia iniettiva sia suriettiva.)
+
+> [!warning] Attenzione — La moltiplicatività richiede moduli coprimi
+> $\varphi(4)=2$ e $\varphi(6)=2$, ma $\varphi(24)=8\neq\varphi(4)\varphi(6)=4$: $\gcd(4,6)=2$. La prova cade perché il teorema cinese strutturale richiede moduli coprimi.
 
 Ora fattorizziamo $n\ge2$ come $n=p_1^{s_1}\cdots p_r^{s_r}$, con primi distinti. Le potenze prime sono a due a due coprime: applicando ripetutamente la moltiplicatività,
 
@@ -171,6 +215,20 @@ $$
 Equivalentemente, possiamo contare separatamente le unità modulo $8$, $9$ e $5$: sono $4$, $6$ e $4$, quindi in totale $4\cdot6\cdot4=96$.
 
 ## Eulero e Fermat
+
+> [!abstract] Concetto chiave — Teorema di Eulero (e Fermat)
+> Se $\gcd(a,n)=1$ allora $a^{\varphi(n)}\equiv1\pmod n$; per $n=p$ primo diventa $a^{p-1}\equiv1\pmod p$ (Fermat).
+> Permette di ridurre gli esponenti, calcolare inversi e limitare l'ordine ai divisori di $\varphi(n)$; torna in tutto il [[Books/Aritmetica-I/18 - Congruenze esponenziali|capitolo 18]] e nel [[Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento|capitolo 20]].
+
+Come leggere lo schema seguente: ogni freccia è una deduzione, e ogni risultato nasce dal precedente specializzando il gruppo $G$.
+
+```mermaid
+flowchart TD
+A["Classi laterali: G diviso in blocchi, tutti della taglia di H"] --> B["Lagrange: la taglia di H divide la taglia di G"]
+B --> C["Con H generato da g: ord(g) divide la taglia di G"]
+C --> D["Con G = U(n), taglia φ(n): Eulero, a^φ(n) ≡ 1 mod n"]
+D --> E["Con n = p primo, φ(p) = p − 1: Fermat, a^(p−1) ≡ 1 mod p"]
+```
 
 **Teorema di Eulero.** Se $n\ge2$, $a\in\mathbb Z$ e $\gcd(a,n)=1$, allora
 
@@ -198,6 +256,11 @@ Se $p\nmid a$, moltiplichiamo la precedente congruenza per $a$. Se invece $p\mid
 
 > [!warning] Attenzione — La coprimalità decide se possiamo tornare a uno
 > Per $a=2$ e $n=8$ abbiamo $\varphi(8)=4$, ma $2^4\equiv0\pmod8$. Il teorema di Eulero richiede $\gcd(a,n)=1$. La forma $a^p\equiv a\pmod p$ di Fermat ammette anche i multipli di $p$, proprio perché conclude qualcosa di diverso dal ritorno a uno.
+
+> [!example] Esempi e controesempi — teorema di Eulero
+> **Vale:** $a=5$, $n=12$: $\gcd(5,12)=1$, $\varphi(12)=4$ e $5^4=625=52\cdot12+1\equiv1$. $a=2$, $p=13$: $2^{12}\equiv1\pmod{13}$ (Fermat).
+> **Non vale, ipotesi $\gcd(a,n)=1$ violata:** $a=6$, $n=9$: $\varphi(9)=6$ ma $6^6\equiv0\pmod9$; $a=10$, $n=15$: $\varphi(15)=8$ ma $10^8\equiv10\pmod{15}$, non $1$. In entrambi i casi nessuna potenza positiva può dare $1$, perché il fattore comune con $n$ resta.
+> **Vale, ma $\varphi(n)$ non è l'ordine:** $5$ modulo $12$ ha ordine $2$, mentre $\varphi(12)=4$.
 
 ### Potenze grandi e inversi
 
@@ -258,6 +321,9 @@ Un criterio utile rende breve anche l’esclusione: sapendo $a^d\equiv1$, basta 
 
 > [!warning] Attenzione — Un esponente che funziona non è necessariamente l’ordine
 > Da $a^{\varphi(n)}\equiv1$ segue che l’ordine **divide** $\varphi(n)$. Per $7$ modulo $100$ l’ordine è $4$, mentre il gruppo ha $40$ elementi. Avere un gruppo di $40$ elementi non significa che ogni elemento lo generi.
+
+> [!info] Dove cercare l'ordine
+> Dopo aver verificato la coprimalità, i candidati sono i divisori di $\varphi(n)$ (Lagrange); si cerca il più piccolo $d$ con $a^d\equiv1$ escludendo i divisori propri.
 
 ## Due limiti delle conclusioni
 

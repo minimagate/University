@@ -2,13 +2,19 @@
 
 Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione con resto]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|fattorizzazione]], [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|numeri razionali]], [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|ordine]] e [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|teorema di Eulero]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Calcolerai le cifre decimali di una frazione con la divisione a resti e capirai perché prima o poi si ripetono.
+> - Saprai passare da un blocco periodico alla frazione che lo produce, e viceversa.
+> - Dal denominatore ridotto leggerai, senza eseguire la divisione, quante cifre precedono la ripetizione (l'antiperiodo) e quanto è lungo il blocco che si ripete (il periodo).
+> - L'idea che lega tutto: lo «stato» della divisione è il resto; i resti possibili sono finiti, quindi si entra in un ciclo, e la lunghezza del ciclo è un ordine moltiplicativo di $10$.
+
 ## Perché una divisione ricomincia da capo?
 
 Calcolando $1/12$ otteniamo $0,083333\ldots$; calcolando $1/28$ compare invece $0,03571428571428\ldots$. Perché le cifre finiscono per ripetersi? E possiamo prevedere quante cifre precederanno la ripetizione, senza eseguire tutta la divisione?
 
 La prima risposta sta nei resti: una divisione può produrre infinite cifre, ma dispone soltanto di un numero finito di resti. La seconda collega quei resti alle potenze di $10$. Scopriremo che la fattorizzazione del denominatore determina l’inizio della ripetizione, mentre un ordine moltiplicativo ne determina la lunghezza.
 
-Cominciamo da un razionale non negativo. Separando la parte intera e riducendo la frazione restante, scriviamo
+Ricordiamo che un **numero razionale** è un numero che si scrive come frazione $m/n$ di interi con $n\neq0$. Cominciamo da un razionale non negativo. Separando la parte intera e riducendo la frazione restante, scriviamo
 
 $$
 x=a_0+\frac ab,
@@ -57,6 +63,12 @@ $$
 
 Le due cifre $08$ precedono il ciclo. Si chiamano **antiperiodo**; il blocco $3$ è un **periodo**. Scrivere $0,08\overline{33}$ dà lo stesso numero: quando parliamo della lunghezza del periodo senza altre precisazioni, cerchiamo la lunghezza positiva minima. Analogamente cerchiamo il numero minimo di cifre da lasciare prima della parte periodica.
 
+> [!example] Esempi e controesempi — antiperiodo e periodo
+> **Sono sviluppi con antiperiodo e periodo:** $1/12=0,08\overline3$ (antiperiodo $08$, periodo $3$); $1/7=0,\overline{142857}$ (antiperiodo vuoto, periodo di sei cifre); $7/12=0,58\overline3$.
+> **Non è lo stesso numero se sposti il blocco:** $0,08\overline3=1/12$, mentre $0,0\overline{83}=0,083838\ldots=83/990$. Il confine fra antiperiodo e periodo conta.
+> **Non è minimo:** $0,08\overline{33}$ vale ancora $1/12$, ma il blocco $33$ ripete due volte il blocco minimo $3$; e $0,083\overline3$ ha un antiperiodo di tre cifre, una più del necessario.
+> **Non è eventualmente periodico:** $0,101001000100001\ldots$ (esercizio 8) ha infinite cifre ma nessun blocco che si ripeta da un certo punto in poi: non è un razionale.
+
 ## Da un periodo a una frazione
 
 Prendiamo un blocco di $t\ge1$ cifre e indichiamo con $B$ il suo valore intero. La lunghezza $t$ è un dato distinto da $B$: il blocco $003$ ha valore $3$ e lunghezza $3$.
@@ -90,12 +102,11 @@ x=a_0+\frac{A}{10^s}
 }
 $$
 
-Il fattore $10^{-s}$ colloca la coda periodica nella posizione giusta. Ogni addendo è razionale: questa è la direzione inversa del teorema precedente. Possiamo quindi affermare
+Il fattore $10^{-s}$ colloca la coda periodica nella posizione giusta. Ogni addendo è razionale: questa è la direzione inversa del teorema precedente. Possiamo quindi affermare:
 
-$$
-\boxed{x\in\mathbb Q\iff
-\text{il suo sviluppo decimale è eventualmente periodico}.}
-$$
+> [!abstract] Concetto chiave — Razionale equivale a eventualmente periodico
+> Un numero reale $x$ è razionale se e solo se il suo sviluppo decimale canonico è eventualmente periodico (anche uno sviluppo finito, proseguito con zeri).
+> Il numero finito di resti obbliga la divisione a ciclare, e ogni periodo si converte in frazione: è il ponte fra la scrittura decimale e l'aritmetica dei resti, che il resto del capitolo sfrutta per leggere antiperiodo e periodo dal denominatore.
 
 ### Conversione svolta: $0,12\overline{34}$
 
@@ -171,14 +182,11 @@ Per esempio $3/40=0,075$: da $40=2^3\cdot5$ prevediamo esattamente tre cifre. Pe
 
 Supponiamo $c>1$. Poiché $10$ è invertibile modulo $c$, esiste una potenza positiva congrua a $1$. Ricordiamo brevemente perché: fra $1,10,10^2,\ldots,10^c$ due potenze hanno lo stesso resto modulo $c$; cancellando la potenza minore, che è invertibile, otteniamo $10^m\equiv1\pmod c$ per qualche $m>0$. È l’argomento dei resti della lezione del 14 ottobre, reinterpretato nel [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]].
 
-Il minimo esponente positivo con questa proprietà è $\operatorname{ord}_c(10)$. Dimostriamo che
+Il minimo esponente positivo con questa proprietà si chiama **ordine di $10$ modulo $c$** e si indica $\operatorname{ord}_c(10)$: è il numero di moltiplicazioni per $10$ dopo le quali, modulo $c$, si torna a $1$. Dimostriamo il risultato centrale del capitolo.
 
-$$
-\boxed{
-s_{\min}=\max(\alpha,\beta),\qquad
-t_{\min}=\operatorname{ord}_c(10).
-}
-$$
+> [!abstract] Concetto chiave — Antiperiodo e periodo dal denominatore ridotto
+> Sia $a/b$ ridotta, con $b=2^\alpha5^\beta c$ e $\gcd(c,10)=1$. Allora l'antiperiodo minimo è $s_{\min}=\max(\alpha,\beta)$ e, se $c>1$, il periodo minimo è $t_{\min}=\operatorname{ord}_c(10)$; se $c=1$ lo sviluppo è finito.
+> È il criterio che trasforma una domanda sulle cifre in due domande sul denominatore: i fattori $2$ e $5$ decidono dove inizia la ripetizione, il fattore $c$ ne decide la lunghezza. L'ordine è quello del [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]].
 
 Il passaggio centrale è il seguente criterio, valido per ogni $s\ge0$ e $t\ge1$:
 
@@ -215,6 +223,41 @@ $$
 $$
 
 La lunghezza minima del periodo divide $\varphi(c)$; può essere più piccola. Per esempio $10\equiv1\pmod3$, quindi l’ordine è $1$, mentre $\varphi(3)=2$. Se $c=1$ usiamo il criterio dello sviluppo finito: non occorre introdurre un ordine modulo $1$.
+
+## Schema: dal denominatore alle lunghezze
+
+Il diagramma riassume il metodo: si legge dall'alto verso il basso, partendo dalla frazione e fermandosi alle due lunghezze.
+
+```mermaid
+flowchart TD
+    A["Frazione a/b"] --> B["Riduci: MCD(a,b) = 1"]
+    B --> C["Scrivi b = 2^α · 5^β · c con MCD(c,10) = 1"]
+    C --> D["Antiperiodo: s = max(α, β)"]
+    C --> E{"c = 1 ?"}
+    E -->|"sì"| F["Sviluppo finito: nessun periodo"]
+    E -->|"no"| G["Periodo: t = ord_c(10), divide φ(c)"]
+```
+
+La tabella applica il metodo a frazioni già ridotte. Ogni sviluppo è stato confrontato con la divisione.
+
+| Frazione | Denominatore $b$ | $\alpha,\beta,c$ | Antiperiodo $s$ | Periodo $t$ | Sviluppo |
+|---|---|---|---|---|---|
+| $1/3$ | $3$ | $0,0,3$ | $0$ | $\operatorname{ord}_3(10)=1$ | $0,\overline3$ |
+| $1/7$ | $7$ | $0,0,7$ | $0$ | $\operatorname{ord}_7(10)=6$ | $0,\overline{142857}$ |
+| $1/12$ | $2^2\cdot3$ | $2,0,3$ | $2$ | $1$ | $0,08\overline3$ |
+| $7/12$ | $2^2\cdot3$ | $2,0,3$ | $2$ | $1$ | $0,58\overline3$ |
+| $1/28$ | $2^2\cdot7$ | $2,0,7$ | $2$ | $6$ | $0,03\overline{571428}$ |
+| $5/14$ | $2\cdot7$ | $1,0,7$ | $1$ | $6$ | $0,3\overline{571428}$ |
+| $1/41$ | $41$ | $0,0,41$ | $0$ | $\operatorname{ord}_{41}(10)=5$ | $0,\overline{02439}$ |
+| $3/40$ | $2^3\cdot5$ | $3,1,1$ | $3$ | nessuno ($c=1$) | $0,075$ |
+
+Per $1/41$ si usa $10^5-1=99999=41\cdot2439$ e si osserva che $10,10^2,10^3,10^4$ non sono congrui a $1$ modulo $41$ (cioè $41$ non divide $9$, $99$, $999$, $9999$). Notiamo anche che $1/12$ e $7/12$ hanno lo stesso antiperiodo e lo stesso periodo, pur con cifre diverse: il numeratore cambia le cifre, non le lunghezze (si veda l'esercizio 6).
+
+> [!example] Esempi e controesempi — il denominatore ridotto
+> **Funziona (frazione ridotta):** $7/12$ ha $\gcd(7,12)=1$ e la tabella prevede $s=2$, $t=1$: infatti $7/12=0,58\overline3$.
+> **Non funziona (frazione non ridotta):** leggere il denominatore $28$ di $7/28$ prevederebbe $s=2$ e $t=6$, ma $7/28=1/4=0,25$ è finito. Qui il numeratore ha cancellato il fattore $7$ responsabile del periodo.
+> **Un secondo caso:** $2/6=1/3=0,\overline3$. Il denominatore $6=2\cdot3$ prevederebbe $s=1$, ma lo sviluppo non ha antiperiodo; il fattore $2$ è stato cancellato dal numeratore.
+> Il fallimento ha una causa precisa: la formula dipende da $\gcd(a,b)=1$ nel passaggio $b\mid a\,10^s(10^t-1)\Rightarrow b\mid10^s(10^t-1)$.
 
 ## Un esempio che mette insieme i due meccanismi
 

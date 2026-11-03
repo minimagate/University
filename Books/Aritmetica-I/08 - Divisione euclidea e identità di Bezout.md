@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|linguaggio delle dimostrazioni]] e [[Books/Aritmetica-I/02 - Naturali e induzione|buon ordinamento dei naturali]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
 
+> [!info] In questo capitolo
+> - Userai la **divisione con resto** per ridurre un problema su numeri grandi a uno su numeri più piccoli, senza perdere i divisori comuni.
+> - Calcolerai il **massimo comun divisore** con l'algoritmo di Euclide e imparerai a risalire dalle divisioni per scriverlo come $ua+vb$ (**Bézout**).
+> - Descriverai tutte le combinazioni $ax+by$: sono i multipli del MCD.
+> - Dedurrai il **lemma di Euclide** (cancellare un fattore coprimo), che regge la fattorizzazione unica e le congruenze dei capitoli seguenti.
+
 ## Un problema grande può lasciare un resto piccolo
 
 Quali numeri dividono contemporaneamente $45$ e $17$? Elencare tutti i divisori è possibile, ma cerchiamo un metodo che funzioni anche con numeri molto più grandi. La divisione
@@ -17,6 +23,10 @@ Ripetendo questa operazione i numeri diminuiscono. Inoltre, leggendo le uguaglia
 ## Divisibilità, anche quando compare zero
 
 Per $a,b\in\mathbb Z$, scriviamo **$a\mid b$** se esiste $k\in\mathbb Z$ tale che $b=ak$. La lettera a sinistra è il divisore; quella a destra è il multiplo. Così $3\mid12$, mentre $12\nmid3$.
+
+> [!example] Esempi e controesempi — Divisibilità
+> **È una divisibilità:** $3\mid12$ ($12=3\cdot4$); $-3\mid12$ ($12=(-3)(-4)$); $7\mid0$ ($0=7\cdot0$); $0\mid0$.
+> **Non lo è:** $5\nmid12$, perché $12=5k$ non ha soluzione intera $k$ (sarebbe $k=12/5$); $0\nmid7$, perché $0\cdot k=0\ne7$ per ogni $k$. In entrambi i casi manca esattamente il $k\in\mathbb Z$ richiesto dalla definizione.
 
 La definizione comprende zero: ogni intero divide $0$, perché $0=a\cdot0$; invece $0\mid b$ soltanto se $b=0$. In particolare $0\mid0$. Questo non autorizza a dividere un numero per zero: la relazione di divisibilità e l'operazione di divisione sono concetti diversi. Inoltre cambiare il segno del divisore o del multiplo non cambia la divisibilità.
 
@@ -45,6 +55,10 @@ Su $\mathbb Z$ l'antisimmetria non vale: $2\mid-2$ e $-2\mid2$, ma $2\ne-2$. La 
 ## Divisione euclidea: scegliere un resto una volta per tutte
 
 Scrivere $a=qb+r$ non basta a determinare $q$ e $r$: per esempio $17=3\cdot5+2=2\cdot5+7$. Imponiamo una misura precisa alla piccolezza del resto.
+
+> [!abstract] Concetto chiave — Divisione euclidea
+> Per ogni $a\in\mathbb Z$ e $b\ne0$ esistono unici $q,r\in\mathbb Z$ con $a=qb+r$ e $0\le r<|b|$.
+> Rende ben definito "il resto" e fonda l'algoritmo di Euclide, le congruenze ([[Books/Aritmetica-I/11 - Congruenze e inversi modulari|capitolo 11]]) e gli insiemi di resti dei capitoli successivi.
 
 **Teorema della divisione euclidea.** Per ogni $a\in\mathbb Z$ e ogni $b\in\mathbb Z\setminus\{0\}$ esistono unici $q,r\in\mathbb Z$ tali che
 
@@ -80,6 +94,11 @@ $$
 
 Se $q\ne q'$, il primo membro ha valore assoluto almeno $|b|$, perché $|q-q'|\ge1$. È impossibile. Quindi $q=q'$ e, di conseguenza, $r=r'$.
 
+> [!example] Esempi e controesempi — Ipotesi della divisione euclidea
+> **Funziona:** $a=-17$, $b=5$ dà $q=-4$, $r=3$; $a=0$, $b=-7$ dà $q=0$, $r=0$.
+> **Senza la condizione $0\le r<|b|$** la coppia non è unica: $17=3\cdot5+2=2\cdot5+7$.
+> **Senza $b\ne0$** il teorema fallisce: con $b=0$ si avrebbe $a=r$ con $0\le r<0$, impossibile, e $q$ sarebbe del tutto arbitrario.
+
 ### Esempio svolto: dividendo e divisore negativi
 
 Per dividere $-17$ per $5$, il multiplo che lascia un resto non negativo è $-20$:
@@ -103,7 +122,7 @@ Per $b\ne0$, la divisibilità $b\mid a$ equivale ad avere resto zero: se $a=bk$,
 
 ## Il massimo comun divisore e l'algoritmo di Euclide
 
-Per $a,b\in\mathbb Z$ **non entrambi nulli**, il **massimo comun divisore**, indicato con $\gcd(a,b)$, è il massimo, nell'ordine usuale, dei divisori comuni positivi.
+Per $a,b\in\mathbb Z$ **non entrambi nulli**, il **massimo comun divisore** (MCD), indicato con $\gcd(a,b)$, è il massimo, nell'ordine usuale, dei divisori comuni positivi.
 
 Questo massimo esiste: $1$ è un divisore comune e ogni divisore comune positivo è al più il valore assoluto di uno degli argomenti non nulli. L'insieme considerato è quindi non vuoto e finito. La scelta positiva normalizza il segno:
 
@@ -112,6 +131,10 @@ $$
 $$
 
 Ammettere anche divisori negativi non eliminerebbe il massimo nell'ordine usuale; scegliere il segno positivo rende invece univoca la rappresentazione del MCD. Per la sola coppia $(0,0)$ tutti i positivi sono divisori comuni e non esiste un massimo usuale. Quando sarà utile, adotteremo esplicitamente la convenzione $\gcd(0,0)=0$.
+
+> [!example] Esempi e controesempi — MCD
+> **È il MCD:** $\gcd(12,18)=6$, perché i divisori comuni positivi sono $1,2,3,6$ e il massimo è $6$; $\gcd(18,6)=6$; $\gcd(7,0)=7$.
+> **Non lo è:** $3$ è un divisore comune di $12$ e $18$ ma non il massimo (manca la condizione "massimo"); $36$ è multiplo comune di $12$ e $18$ ma non divide $12$ (non è un divisore comune); $-6$ divide entrambi ma non è positivo, quindi non è il valore scelto; per $(0,0)$ non esiste un massimo.
 
 Come calcolare il MCD senza elencare i divisori? La proprietà delle combinazioni lineari dimostra che, per ogni intero $q$,
 
@@ -161,7 +184,11 @@ $$
 
 La prova è già contenuta nell'algoritmo. Ogni divisione riscrive il resto come differenza fra il dividendo e un multiplo del divisore. Partendo dall'ultimo resto non nullo e sostituendo ripetutamente le espressioni delle righe precedenti, si arriva a una combinazione dei due dati iniziali. Formalmente, $A$ e $B$ sono combinazioni di se stessi; se due termini consecutivi lo sono, anche la loro differenza $r_{i-1}-q r_i$ lo è. Quindi lo è l'ultimo termine non nullo $d$.
 
-Il passaggio da $|a|,|b|$ ad $a,b$ si assorbe nei segni dei coefficienti. Se uno degli argomenti è zero, basta $|a|=\operatorname{sgn}(a)a+0\cdot b$, o l'analoga identità per $b$.
+Il passaggio da $|a|,|b|$ ad $a,b$ si assorbe nei segni dei coefficienti. Se uno degli argomenti è zero, basta $|a|=\operatorname{sgn}(a)a+0\cdot b$, o l'analoga identità per $b$, dove $\operatorname{sgn}(a)$ vale $1$ se $a>0$ e $-1$ se $a<0$.
+
+> [!abstract] Concetto chiave — Identità di Bézout
+> Se $d=\gcd(a,b)$, esistono $u,v\in\mathbb Z$ con $d=ua+vb$; equivalentemente, le combinazioni $ax+by$ sono esattamente i multipli di $d$.
+> Dà gli inversi modulari ([[Books/Aritmetica-I/11 - Congruenze e inversi modulari|capitolo 11]]), le soluzioni delle diofantee ([[Books/Aritmetica-I/10 - Equazioni diofantee|capitolo 10]]) e il lemma di Euclide, quindi la fattorizzazione unica.
 
 ### Esempio svolto: $45$ e $17$
 
@@ -193,6 +220,22 @@ Il controllo finale è immediato: $-135+136=1$. Per $-45$ e $17$ otteniamo invec
 
 I coefficienti non sono unici: per esempio $1=14\cdot45-37\cdot17$. Bézout garantisce che esistano e offre un metodo per trovarli; non afferma l'unicità della coppia.
 
+### Lo stesso calcolo in tabella (algoritmo di Euclide esteso)
+
+Invece di risalire alla fine, si possono tenere due colonne $u_i,v_i$ tali che, in ogni riga, $r_i=u_i\cdot45+v_i\cdot17$. Si parte da $45=1\cdot45+0\cdot17$ e $17=0\cdot45+1\cdot17$; a ogni passo, se $q$ è il quoziente della divisione fra le due righe precedenti (la prima per la seconda), la riga nuova è la riga vecchia meno $q$ volte la riga corrente. Leggi la tabella dall'alto: l'ultima riga con resto non nullo contiene i coefficienti di Bézout.
+
+| passo | quoziente $q$ | resto $r_i$ | $u_i$ | $v_i$ | controllo $u_i\cdot45+v_i\cdot17$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0 | | $45$ | $1$ | $0$ | $45$ |
+| 1 | | $17$ | $0$ | $1$ | $17$ |
+| 2 | $2$ | $11$ | $1$ | $-2$ | $45-34=11$ |
+| 3 | $1$ | $6$ | $-1$ | $3$ | $-45+51=6$ |
+| 4 | $1$ | $5$ | $2$ | $-5$ | $90-85=5$ |
+| 5 | $1$ | $1$ | $-3$ | $8$ | $-135+136=1$ |
+| 6 | $5$ | $0$ | $17$ | $-45$ | $765-765=0$ |
+
+La riga 5 dà $1=-3\cdot45+8\cdot17$, come prima; la riga 6, con resto $0$, chiude l'algoritmo.
+
 ## Quali numeri si ottengono come combinazioni?
 
 Fissiamo $a,b$ non entrambi nulli e poniamo $d=\gcd(a,b)$. L'identità di Bézout descrive tutto l'insieme delle combinazioni:
@@ -220,6 +263,10 @@ $$
 
 La risalita dà $6=18-12=2\cdot18-30$. Le combinazioni di $18$ e $30$ sono esattamente i multipli di $6$: si può ottenere $42=14\cdot18-7\cdot30$, ma non $10$.
 
+> [!example] Esempi e controesempi — Combinazioni lineari di $18$ e $30$
+> **Si ottengono:** $6=2\cdot18-30$, $42=14\cdot18-7\cdot30$, $0$ (con $x=y=0$).
+> **Non si ottengono:** $10$, $15$, $7$: non sono multipli di $d=6$. Basta infatti che $6\nmid c$ per escludere $c=18x+30y$, perché $6$ divide ogni combinazione.
+
 Questa uguaglianza prepara le [[Books/Aritmetica-I/10 - Equazioni diofantee|equazioni diofantee]]: $ax+by=c$ ha soluzioni intere esattamente quando $d\mid c$.
 
 ## Il lemma di Euclide nella forma coprima
@@ -233,6 +280,10 @@ $$
 
 L'implicazione da sinistra è Bézout; per il ritorno, il MCD divide il membro sinistro e quindi divide $1$, perciò vale $1$.
 
+> [!abstract] Concetto chiave — Lemma di Euclide (forma coprima)
+> Se $\gcd(a,b)=1$ e $a\mid bc$, allora $a\mid c$: un fattore coprimo si può "cancellare" nella divisibilità.
+> È il passo che rende unica la fattorizzazione ([[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|capitolo 09]]) e permette di cancellare nelle congruenze ([[Books/Aritmetica-I/11 - Congruenze e inversi modulari|capitolo 11]]).
+
 **Lemma di Euclide.** Se $a,b,c\in\mathbb Z$, $\gcd(a,b)=1$ e $a\mid bc$, allora $a\mid c$.
 
 Per provarlo, moltiplichiamo $au+bv=1$ per $c$:
@@ -243,7 +294,23 @@ $$
 
 Il primo addendo è multiplo di $a$; il secondo lo è perché $a\mid bc$. Quindi $a\mid c$. La prova copre anche $a=0$: in tal caso $b=\pm1$, e l'ipotesi $0\mid bc$ forza $c=0$.
 
-Per esempio, da $14\mid15c$ segue $14\mid c$, perché $15-14=1$. Senza coprimalità la conclusione può fallire: $6\mid2\cdot3$, ma $6\nmid3$. La forma del lemma che coinvolge i numeri primi verrà sviluppata nel [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|capitolo 09]].
+Per esempio, da $14\mid15c$ segue $14\mid c$, perché $15-14=1$. Senza coprimalità la conclusione può fallire: $6\mid2\cdot3$, ma $6\nmid3$ (qui $\gcd(6,2)=2\ne1$). La forma del lemma che coinvolge i numeri primi verrà sviluppata nel [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|capitolo 09]].
+
+### Come si collegano i risultati
+
+Lo schema mostra da quale risultato discende quale. Si legge seguendo le frecce: ciò che sta in fondo a una freccia usa ciò che sta all'inizio. I riquadri con un numero di capitolo sono le conseguenze che incontrerai più avanti.
+
+```mermaid
+flowchart TD
+    A["Divisione euclidea: a = qb + r"] --> B["Algoritmo di Euclide: calcola il MCD"]
+    B --> C["Identità di Bézout: MCD = ua + vb"]
+    C --> D["Combinazioni di a e b = multipli del MCD"]
+    C --> E["Lemma di Euclide: se MCD(a,b)=1 e a divide bc, allora a divide c"]
+    D --> F["Cap. 10: equazioni diofantee"]
+    C --> G["Cap. 11: inversi modulari"]
+    E --> H["Cap. 09: fattorizzazione unica"]
+    E --> G
+```
 
 ## Approfondimento: Euclide dentro gli esponenti
 

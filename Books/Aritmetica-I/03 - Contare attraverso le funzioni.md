@@ -2,11 +2,17 @@
 
 Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|funzioni e dimostrazioni]] e [[Books/Aritmetica-I/02 - Naturali e induzione|induzione]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice del libro]].
 
+> [!info] In questo capitolo
+> - Imparerai a definire che cosa significa «contare» un insieme: una numerazione completa, cioè una biezione con $\{1,\ldots,n\}$.
+> - Userai somma, prodotto e cassetti per ridurre un conteggio a casi più semplici.
+> - Saprai contare le funzioni ($m^n$), le iniezioni ($m!/(m-n)!$) e le permutazioni ($n!$).
+> - L'idea che lega tutto: descrivi l'oggetto come una funzione, poi chiediti quali restrizioni (immagini distinte, tutte raggiunte) impone il problema.
+
 ## Un posto per ogni persona
 
-Tre persone devono occupare tre sedie numerate. Per descrivere una sistemazione possiamo disegnare una freccia da ciascuna persona alla sua sedia. Nessuna persona deve rimanere senza posto, nessuna sedia può ospitare due persone e tutte le sedie vengono occupate. Abbiamo costruito una biezione.
+Tre persone devono occupare tre sedie numerate. Per descrivere una sistemazione possiamo disegnare una freccia da ciascuna persona alla sua sedia. Nessuna persona deve rimanere senza posto, nessuna sedia può ospitare due persone e tutte le sedie vengono occupate. Abbiamo costruito una biezione (una funzione iniettiva e suriettiva, nel senso del [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]]).
 
-Se le sedie fossero cinque, potremmo sistemare le tre persone lasciando due sedie libere: avremmo un'iniezione. Se invece volessimo assegnare a ciascuna persona una delle cinque bevande disponibili, più persone potrebbero scegliere la stessa bevanda: avremmo una funzione qualsiasi.
+Se le sedie fossero cinque, potremmo sistemare le tre persone lasciando due sedie libere: avremmo un'iniezione (una funzione iniettiva, non necessariamente suriettiva). Se invece volessimo assegnare a ciascuna persona una delle cinque bevande disponibili, più persone potrebbero scegliere la stessa bevanda: avremmo una funzione qualsiasi.
 
 Queste tre domande si somigliano, ma contano oggetti diversi. Il primo passo di un problema combinatorio consiste nel dire precisamente che cosa distingue due risultati. Le persone sono riconoscibili? Le sedie hanno un numero? Una bevanda può essere scelta più volte? Quando le risposte sono chiare, una funzione spesso traduce il problema in un conteggio semplice.
 
@@ -18,7 +24,7 @@ $$
 [n]=\{1,\ldots,n\},\qquad [0]=\varnothing.
 $$
 
-Un insieme $X$ è **finito** se esiste una biezione $u:[n]\to X$ per qualche naturale $n$. Scriviamo allora $|X|=n$ e chiamiamo $n$ la sua **cardinalità**. La biezione assegna il numero $i$ all'oggetto $u(i)$: nessuna ripetizione e nessuna omissione. In particolare $|\varnothing|=0$.
+Che cosa significa dire che un insieme ha «cinque elementi»? Significa che possiamo etichettarli con i numeri $1,2,3,4,5$ senza ripetizioni e senza dimenticarne nessuno. Questa idea diventa la definizione stessa di cardinalità. Un insieme $X$ è **finito** se esiste una biezione $u:[n]\to X$ per qualche naturale $n$. Scriviamo allora $|X|=n$ e chiamiamo $n$ la sua **cardinalità**. La biezione assegna il numero $i$ all'oggetto $u(i)$: nessuna ripetizione e nessuna omissione. In particolare $|\varnothing|=0$.
 
 Dobbiamo però giustificare che due numerazioni complete non possano dare numeri diversi. Il fatto elementare che serve è questo:
 
@@ -28,21 +34,37 @@ Lo dimostriamo per induzione su $s$. Se $s=0$, nessun elemento può avere immagi
 
 Se $[r]$ e $[s]$ sono in biezione, sia la biezione sia la sua inversa sono iniettive. Il lemma dà $r\leq s$ e $s\leq r$, quindi $r=s$. Applicandolo alla composizione di due numerazioni di $X$ otteniamo l'unicità di $|X|$.
 
-Ora possiamo usare con sicurezza il **principio di corrispondenza**:
+Ora possiamo usare con sicurezza il **principio di corrispondenza**.
 
-$$
-|X|=|Y|\quad\Longleftrightarrow\quad
-\text{esiste una biezione }X\longrightarrow Y
-\qquad(X,Y\text{ finiti}).
-$$
+> [!abstract] Concetto chiave — Principio di corrispondenza
+> $$
+> |X|=|Y|\quad\Longleftrightarrow\quad
+> \text{esiste una biezione }X\longrightarrow Y
+> \qquad(X,Y\text{ finiti}).
+> $$
+> Per contare un insieme complicato basta trovare una biezione con uno più semplice. È la tecnica dei doppi conteggi e delle biezioni dei capitoli successivi ([[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|04]], [[Books/Aritmetica-I/06 - Inclusione ed esclusione|06]]).
 
 Infatti, se $u:[n]\to X$ e $v:[n]\to Y$ sono numerazioni, $v\circ u^{-1}$ è una biezione da $X$ a $Y$. Viceversa una biezione $h:X\to Y$ trasferisce la numerazione di $X$ a $Y$ mediante $h\circ u$.
+
+> [!example] Esempi e controesempi — Cardinalità e numerazioni
+> **Insieme finito:** $\{a,b,c\}$, con numerazione $u(1)=a$, $u(2)=b$, $u(3)=c$, quindi $|\{a,b,c\}|=3$; $\varnothing$ è finito, con $|\varnothing|=0$ (e $[0]=\varnothing$).
+> **Non è una numerazione completa di $\{a,b\}$:**
+> - $u:[3]\to\{a,b\}$ con $u(1)=a$, $u(2)=b$, $u(3)=a$ ripete $a$: non è iniettiva;
+> - $u:[1]\to\{a,b\}$ con $u(1)=a$ dimentica $b$: non è suriettiva.
+> **Non è finito:** $\mathbb N$. Se esistesse una biezione $u:[n]\to\mathbb N$, la sua inversa restringerebbe a un'iniezione $\{0,\ldots,n\}\to[n]$; l'insieme di partenza ha $n+1$ elementi, quindi si rinumera come $[n+1]$ e il lemma sopra darebbe $n+1\le n$, assurdo.
 
 Per esempio, le caselle di una scacchiera con $4$ righe e $3$ colonne corrispondono alle coppie $(i,j)\in[4]\times[3]$: la casella determina un'unica coppia, e la coppia permette di ritrovare la casella. Questa traduzione conserva tutte le informazioni; il problema geometrico diventa il conteggio di coppie.
 
 ## Separare i casi: il principio della somma
 
-Se $A$ e $B$ sono finiti e **disgiunti**, cioè $A\cap B=\varnothing$, allora
+Quando un problema si può dividere in casi che non si sovrappongono e che esauriscono tutte le possibilità, basta contare ogni caso e sommare.
+
+> [!abstract] Concetto chiave — Principio della somma e del prodotto
+> **Somma.** Se $A$ e $B$ sono finiti e **disgiunti**, cioè $A\cap B=\varnothing$, allora $|A\cup B|=|A|+|B|$.
+> **Prodotto.** Per $A,B$ finiti, $|A\times B|=|A|\,|B|$; più in generale, se a ogni passo ogni storia (sequenza delle scelte già fatte) ammette lo stesso numero $r_i$ di proseguimenti, le storie complete sono $r_1\cdots r_k$.
+> Sono i due mattoni di base dei conteggi: i capitoli [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|04]] e [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|05]] li combinano, e il [[Books/Aritmetica-I/06 - Inclusione ed esclusione|06]] corregge la somma quando i casi si sovrappongono.
+
+Ecco l'enunciato della somma in formule: se $A,B$ sono finiti e disgiunti,
 
 $$
 |A\cup B|=|A|+|B|.
@@ -63,6 +85,11 @@ In un problema concreto significa dividere i risultati in casi che non si sovrap
 > [!warning] Attenzione — Prima di sommare, controlla le sovrapposizioni
 > Se $A=\{1,2\}$ e $B=\{2,3\}$, allora $|A|+|B|=4$, mentre $|A\cup B|=3$. L'elemento $2$ è stato contato due volte. Il principio della somma richiede casi disgiunti; la semplice parola «oppure» non garantisce questa condizione.
 
+> [!example] Esempi e controesempi — Principio della somma
+> **Si può sommare:** biglietti rossi (4) e blu (3), perché nessun biglietto è sia rosso sia blu: $4+3=7$.
+> **Non si può sommare, perché i casi non sono disgiunti** (violata la disgiunzione): numeri da $1$ a $10$ che sono pari *oppure* multipli di $3$. I pari sono $5$, i multipli di $3$ sono $3$, ma l'unione ha $7$ elementi, non $8$: il $6$ è contato due volte (la correzione sistematica è nel [[Books/Aritmetica-I/06 - Inclusione ed esclusione|capitolo 06]]).
+> **Non si può sommare, perché i casi non esauriscono tutto** (violata l'esaustività): in $X=\{1,2,3\}$ i casi $A=\{1\}$ e $B=\{2\}$ sono disgiunti, ma $|A|+|B|=2\ne3=|X|$: manca l'elemento $3$.
+
 Una conseguenza utile è che, per $C\subseteq X$ finito,
 
 $$
@@ -73,7 +100,7 @@ Dunque $|C|\leq|X|$; se le cardinalità sono uguali, il complementare è vuoto e
 
 ## Costruire per passi: il principio del prodotto
 
-Per insiemi finiti $A$ e $B$, il prodotto cartesiano contiene le coppie ordinate $(a,b)$ con $a\in A$ e $b\in B$. Vale
+Se un oggetto si costruisce con scelte successive, il numero di oggetti si ottiene moltiplicando il numero di scelte a ogni passo. Per insiemi finiti $A$ e $B$, il prodotto cartesiano (definito nel [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]]) contiene le coppie ordinate $(a,b)$ con $a\in A$ e $b\in B$. Vale
 
 $$
 |A\times B|=|A|\,|B|.
@@ -87,7 +114,7 @@ $$
 |A_1\times\cdots\times A_k|=|A_1|\cdots|A_k|.
 $$
 
-Il prodotto vale anche per scelte successive in cui le possibilità concrete cambiano. Supponiamo di avere $r$ possibili primi passi e che **ogni** primo passo ammetta esattamente $s$ possibili secondi passi. Se ogni coppia di passi identifica un risultato e ogni risultato si ottiene una sola volta, i risultati sono $rs$. Li abbiamo divisi secondo il primo passo in $r$ classi disgiunte, ciascuna di cardinalità $s$.
+Il prodotto vale anche per scelte successive in cui le possibilità concrete cambiano. Chiamiamo **storia** la sequenza delle scelte già fatte e **proseguimenti** le scelte possibili al passo successivo. Supponiamo di avere $r$ possibili primi passi e che **ogni** primo passo ammetta esattamente $s$ possibili secondi passi. Se ogni coppia di passi identifica un risultato e ogni risultato si ottiene una sola volta, i risultati sono $rs$. Li abbiamo divisi secondo il primo passo in $r$ classi disgiunte, ciascuna di cardinalità $s$.
 
 Più in generale, se a ogni passo $i$ ogni storia consentita ammette esattamente $r_i$ proseguimenti, il totale delle storie complete è $r_1\cdots r_k$. Il numero $r_i$ deve essere uniforme rispetto alla storia precedente; gli oggetti disponibili possono dipendere da essa.
 
@@ -102,9 +129,14 @@ assegnazioni. Scambiare presidente e segretario cambia l'assegnazione, quindi og
 > [!warning] Attenzione — Il prodotto richiede un numero uniforme di proseguimenti
 > Non serve un'ipotesi di indipendenza probabilistica. Nell'esempio, la prima scelta condiziona la seconda. Se invece un primo passo ammette $2$ completamenti e un altro ne ammette $5$, il totale è $2+5=7$: non possiamo moltiplicare $2$ primi passi per un unico numero di completamenti senza giustificarlo.
 
+> [!example] Esempi e controesempi — Principio del prodotto
+> **Si può moltiplicare:** presidente e segretario fra $5$ persone, $5\cdot4=20$: il numero di proseguimenti è sempre $4$, anche se i candidati cambiano.
+> **Non si può moltiplicare, perché i proseguimenti non sono uniformi:** coppie $(a,b)$ in $\{1,2,3\}^2$ con $b>a$. Dopo $a=1$ restano $2$ scelte per $b$, dopo $a=2$ ne resta $1$, dopo $a=3$ ne restano $0$. Il totale è $2+1+0=3$, non $3\cdot2$ né $3\cdot3$.
+> **Non si può moltiplicare, perché lo stesso risultato si ottiene più volte:** scegliere un *sottoinsieme* di $2$ persone fra $3$ non è «prima una, poi un'altra»: $3\cdot2=6$ conta ogni coppia due volte (prima $A$ poi $B$, e prima $B$ poi $A$), mentre i sottoinsiemi sono $3$.
+
 ## Troppi oggetti: il principio dei cassetti
 
-Dieci oggetti vengono riposti in sette cassetti. È impossibile che ogni cassetto contenga al massimo un oggetto: in quel caso potremmo aver riposto al massimo sette oggetti. Almeno un cassetto ne contiene almeno due.
+Il principio dei cassetti permette di dimostrare che una coincidenza avviene, senza dire dove né quale. Dieci oggetti vengono riposti in sette cassetti. È impossibile che ogni cassetto contenga al massimo un oggetto: in quel caso potremmo aver riposto al massimo sette oggetti. Almeno un cassetto ne contiene almeno due.
 
 Formalmente, se $X,Y$ sono finiti e $|X|>|Y|$, ogni funzione $f:X\to Y$ **non è iniettiva**. Gli elementi di $X$ sono gli oggetti; $f(x)$ indica il cassetto assegnato a $x$.
 
@@ -124,23 +156,32 @@ contrariamente all'ipotesi. Se $Y$ è vuoto e $X$ non lo è, non esiste neppure 
 
 Lo stesso argomento dà una versione più forte: se $k\in\mathbb N_{>0}$, $q\in\mathbb N$ e più di $qk$ oggetti sono distribuiti in $k$ cassetti, almeno un cassetto contiene almeno $q+1$ oggetti. Altrimenti il totale sarebbe al massimo $qk$. Per esempio, fra $17$ studenti suddivisi in $5$ gruppi, un gruppo ne contiene almeno $4$, perché $17>3\cdot5$.
 
+> [!example] Esempi e controesempi — Cassetti
+> **Si applica:** $10$ oggetti in $7$ cassetti ($10>7$): due oggetti coincidono nel cassetto.
+> **Non si applica se $|X|\le|Y|$:** $3$ oggetti in $5$ cassetti possono stare in cassetti tutti distinti. La conclusione «due condividono» può quindi fallire.
+> **Non dice quanti:** fra $17$ studenti in $5$ gruppi un gruppo ha almeno $4$ studenti, ma non è garantito che ne abbia $5$: le dimensioni $4,4,3,3,3$ sommano a $17$.
+
 I cassetti possono essere categorie nascoste. Scegliamo sei numeri distinti da $\{1,\ldots,10\}$. Raggruppiamo i dieci numeri nelle cinque coppie
 
 $$
 \{1,10\},\ \{2,9\},\ \{3,8\},\ \{4,7\},\ \{5,6\}.
 $$
 
-Associamo ogni numero scelto alla coppia che lo contiene. Sei numeri e cinque coppie obbligano due numeri scelti a cadere nella stessa coppia: la loro somma è $11$. Non abbiamo dovuto conoscere i sei numeri; abbiamo scelto i cassetti in modo che una collisione producesse esattamente la proprietà cercata.
+Associamo ogni numero scelto alla coppia che lo contiene. Sei numeri e cinque coppie obbligano due numeri scelti a cadere nella stessa coppia: la loro somma è $11$. Con soli cinque numeri il trucco non funziona: $\{1,2,3,4,5\}$ non contiene due numeri con somma $11$. Non abbiamo dovuto conoscere i sei numeri; abbiamo scelto i cassetti in modo che una collisione producesse esattamente la proprietà cercata.
 
 ## Contare tutte le funzioni
 
-Siano $|X|=n$ e $|Y|=m$. Indichiamo con $Y^X$ l'insieme delle funzioni $X\to Y$. Se $X=\{x_1,\ldots,x_n\}$, una funzione è completamente descritta dalla lista ordinata
+Tutti i conteggi di questo capitolo si possono riassumere in una domanda sola: quante funzioni da un insieme $X$ a un insieme $Y$ soddisfano certe condizioni? Cominciamo da quelle senza condizioni. Siano $|X|=n$ e $|Y|=m$. Indichiamo con $Y^X$ l'insieme delle funzioni $X\to Y$. Se $X=\{x_1,\ldots,x_n\}$, una funzione è completamente descritta dalla lista ordinata
 
 $$
 \bigl(f(x_1),\ldots,f(x_n)\bigr).
 $$
 
 La corrispondenza fra funzioni e liste è biunivoca: dalla funzione leggiamo la lista; dalla lista assegniamo a ogni $x_i$ la sua componente. Ogni posizione può contenere uno qualsiasi degli $m$ elementi di $Y$, anche già usato. Per il prodotto,
+
+> [!abstract] Concetto chiave — Funzioni, iniezioni, permutazioni
+> Con $|X|=n$ e $|Y|=m$: le funzioni $X\to Y$ sono $m^n$; le iniezioni sono $m!/(m-n)!$ se $n\le m$ (e $0$ se $n>m$); le biezioni fra insiemi di $n$ elementi, cioè le permutazioni, sono $n!$.
+> Il modo per leggere un conteggio come funzione ritorna con i sottoinsiemi ([[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|capitolo 04]]), le distribuzioni ([[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|05]]) e le suriezioni ([[Books/Aritmetica-I/06 - Inclusione ed esclusione|06]]).
 
 $$
 \boxed{|Y^X|=m^n.}
@@ -155,7 +196,14 @@ I casi vuoti meritano di essere letti direttamente dalla definizione:
 
 Pertanto il numero di funzioni è $1$ se $n=0$, ed è $0$ se $n>0$ e $m=0$. **Nel conteggio delle funzioni adottiamo $0^0=1$**, così la formula comprende anche $\varnothing\to\varnothing$. Questa convenzione non decide il valore di espressioni o limiti in altri contesti.
 
+> [!example] Esempi e controesempi — Conteggio delle funzioni
+> **Funzioni da $X=\{x_1,x_2\}$ a $Y=\{0,1,2\}$:** $3^2=9$ (liste $(f(x_1),f(x_2))$ con ripetizioni ammesse).
+> **Non sono contate da $m^n$**, perché non sono funzioni: le liste con una sola componente (manca il valore per $x_2$) e quelle con valori fuori da $Y$, come $(0,5)$.
+> **Scambio di ruoli:** da $\{0,1,2\}$ a $X$ le funzioni sono $2^3=8$, non $9$: la formula $m^n$ non è simmetrica in $m$ e $n$.
+
 ## Vietare le ripetizioni: iniezioni e permutazioni
+
+Che cosa cambia se due elementi non possono avere la stessa immagine? Ogni valore usato diminuisce le scelte successive.
 
 Per contare le iniezioni $f:X\to Y$, con $|X|=n$ e $|Y|=m$, imponiamo che le immagini siano distinte. Se $n\leq m$, dopo aver ordinato il dominio come prima abbiamo $m$ possibilità per $f(x_1)$, $m-1$ per $f(x_2)$ e, al passo $i$, $m-i+1$ possibilità. Ogni scelta parziale consente lo stesso numero di proseguimenti al passo successivo, dunque
 
@@ -172,6 +220,33 @@ Per assegnare tre persone distinte a cinque sedie numerate otteniamo quindi
 $$
 \frac{5!}{2!}=5\cdot4\cdot3=60.
 $$
+
+> [!example] Esempi e controesempi — Iniezioni
+> **Iniezioni:** da $\{a,b\}$ a $\{1,2,3\}$ sono $3\cdot2=6$; per esempio $a\mapsto1,b\mapsto3$.
+> **Non è un'iniezione:** $a\mapsto2,b\mapsto2$ ripete l'immagine. Sono $3$ delle $9$ funzioni; le altre $6$ sono iniettive.
+> **Nessuna iniezione quando $n>m$:** da $\{a,b,c\}$ a $\{1,2\}$ la formula $m!/(m-n)!$ non va applicata (fattoriale di $-1$); per i cassetti le iniezioni sono $0$.
+
+Lo schema seguente riassume il percorso: parti dalla descrizione dell'oggetto come funzione, rispondi alle domande nei rombi e arrivi alla formula.
+
+```mermaid
+flowchart TD
+    S["Descrivi l'oggetto come funzione o lista"] --> Q1{"Casi separati o scelte in sequenza?"}
+    Q1 -->|"casi disgiunti"| SOM["Somma dei casi"]
+    Q1 -->|"scelte in sequenza"| Q2{"Valori ripetibili?"}
+    Q2 -->|"si"| F["Funzioni: m^n"]
+    Q2 -->|"no"| Q3{"n = m?"}
+    Q3 -->|"no, n minore di m"| I["Iniezioni: m!/(m-n)!"]
+    Q3 -->|"si"| P["Permutazioni: n!"]
+```
+
+La stessa informazione in tabella, con un esempio per ogni riga:
+
+| Cosa conto | Condizione su $f:X\to Y$ | Formula ($\lvert X\rvert=n$, $\lvert Y\rvert=m$) | Esempio |
+|---|---|---|---|
+| Funzioni | nessuna | $m^n$ | 4 studenti, 3 opzioni: $3^4=81$ |
+| Iniezioni | immagini distinte ($n\le m$) | $m!/(m-n)!$ | 3 persone, 5 sedie: $5\cdot4\cdot3=60$ |
+| Biezioni, permutazioni | iniettiva e suriettiva ($n=m$) | $n!$ | 4 libri in fila: $24$ |
+| Suriezioni | tutti i valori raggiunti | non è una formula elementare qui | [[Books/Aritmetica-I/06 - Inclusione ed esclusione\|capitolo 06]] |
 
 Che cosa cambia quando dominio e codominio hanno la stessa cardinalità finita $n$? Per ogni $f:X\to Y$ vale
 
@@ -191,7 +266,7 @@ $$
 \frac{n!}{(n-n)!}=n!.
 $$
 
-Una **permutazione** di $X$ è una biezione $X\to X$. Anche ordinare tutti gli elementi distinti di $X$ corrisponde a una biezione $[n]\to X$: entrambe le famiglie hanno $n!$ elementi. Per esempio quattro libri distinti si dispongono in fila in $4\cdot3\cdot2\cdot1=24$ modi. L'insieme vuoto ha una sola permutazione, coerentemente con $0!=1$.
+Una **permutazione** di $X$ è una biezione $X\to X$ (si riordinano gli elementi dell'insieme). Anche ordinare tutti gli elementi distinti di $X$ corrisponde a una biezione $[n]\to X$: entrambe le famiglie hanno $n!$ elementi. Per esempio quattro libri distinti si dispongono in fila in $4\cdot3\cdot2\cdot1=24$ modi. L'insieme vuoto ha una sola permutazione, coerentemente con $0!=1$.
 
 > [!warning] Attenzione — L'equivalenza richiede la finitezza
 > Su $\mathbb N=\{0,1,2,\ldots\}$, la funzione $s(t)=t+1$ è iniettiva ma non suriettiva: manca $0$. Inoltre $p(0)=0$, $p(t)=t-1$ per $t\geq1$ è suriettiva, perché $p(y+1)=y$ per ogni $y$, ma non iniettiva, perché $p(0)=p(1)$. Dominio e codominio sono lo stesso insieme in entrambi gli esempi.

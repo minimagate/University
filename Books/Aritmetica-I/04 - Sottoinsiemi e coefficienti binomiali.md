@@ -2,6 +2,16 @@
 
 Prerequisiti: [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|cardinalità, prodotto e permutazioni]] e [[Books/Aritmetica-I/02 - Naturali e induzione|induzione]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice del libro]].
 
+> [!info] In questo capitolo
+> - Distinguerai una **lista** (l'ordine conta) da un **sottoinsieme** (l'ordine non conta) e saprai passare dall'una all'altro.
+> - Conterai tutti i sottoinsiemi di un insieme e quelli di una data cardinalità: i coefficienti binomiali.
+> - Dimostrerai le identità di Pascal, di Newton e le somme binomiali con un solo schema: nominare l'oggetto contato e contarlo in due modi.
+> - L'idea che lega tutto: una descrizione può contenere più informazione dell'oggetto cercato, e si può dividere solo se ogni oggetto compare lo stesso numero di volte.
+> - Per scegliere il metodo giusto davanti a un problema nuovo, c'è la [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni#Mappa decisionale del conteggio|mappa decisionale del capitolo 05]].
+
+> [!note] Parole del capitolo 03 che useremo
+> **Cardinalità** $|X|$: il numero di elementi di $X$. **Iniezione** $f:A\to B$: elementi diversi hanno immagini diverse. **Biezione**: corrispondenza uno a uno tra due insiemi, che ne mostra la stessa cardinalità. Due insiemi si dicono **disgiunti** se non hanno elementi in comune; se $A$ e $B$ sono disgiunti, $|A\cup B|=|A|+|B|$. Se non le ricordi, rivedi il [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|capitolo 03]].
+
 ## Scegliere un gruppo, senza assegnare posti
 
 Fra sei studenti vogliamo scegliere una commissione di tre persone. Se scriviamo prima Anna, poi Bruno, poi Carla, abbiamo scelto la stessa commissione che otterremmo scrivendo Carla, Anna, Bruno. Il risultato è un sottoinsieme: l'ordine con cui lo abbiamo costruito non ne fa parte.
@@ -16,6 +26,8 @@ Questo esempio contiene il passaggio centrale del capitolo: una descrizione può
 
 ## Tutti i sottoinsiemi come risposte sì o no
 
+Prima di contare i sottoinsiemi con una proprietà (per esempio di una data cardinalità) ci serve un oggetto che li raccolga tutti: da qui si parte per contarli.
+
 L'**insieme delle parti** di un insieme $X$ è
 
 $$
@@ -23,6 +35,10 @@ $$
 $$
 
 Se $X=\{a,b\}$, allora $\mathcal P(X)=\{\varnothing,\{a\},\{b\},X\}$. I suoi elementi sono insiemi. In particolare il vuoto è un elemento di $\mathcal P(X)$, perché è un sottoinsieme di $X$.
+
+> [!example] Esempi e controesempi — insieme delle parti
+> **È un elemento di $\mathcal P(X)$**, con $X=\{a,b,c\}$: $\{a,c\}$ (è contenuto in $X$); $\varnothing$ (il vuoto è contenuto in ogni insieme); $X$ stesso (ogni insieme è contenuto in sé).
+> **Non è un elemento di $\mathcal P(X)$:** $a$, perché è un elemento di $X$ e non un sottoinsieme (la condizione «essere un insieme» fallisce: giusto sarebbe $\{a\}$); $\{a,d\}$ con $d\notin X$, perché non è contenuto in $X$ (la condizione «$\subseteq X$» fallisce).
 
 Per specificare $A\subseteq X$, basta rispondere per ogni $x\in X$ alla domanda «$x$ appartiene ad $A$?». Registriamo le risposte mediante la **funzione caratteristica**
 
@@ -43,7 +59,7 @@ $$
 
 Partendo da $A$, questa operazione restituisce $A$, perché raccoglie esattamente gli elementi sui quali $\chi_A$ vale $1$. Partendo da $f$, restituisce $f$: la caratteristica di $A_f$ vale $1$ proprio dove $f$ vale $1$, e altrove entrambe valgono $0$.
 
-Se $|X|=n$, il conteggio delle funzioni del capitolo precedente dà dunque
+Se $|X|=n$, il conteggio delle funzioni del capitolo precedente (due valori possibili per ciascuno degli $n$ elementi) dà dunque
 
 $$
 \boxed{|\mathcal P(X)|=2^n.}
@@ -53,6 +69,8 @@ Per $n=0$ la formula dice $|\mathcal P(\varnothing)|=1$: infatti $\mathcal P(\va
 
 ## Togliere l'ordine: i coefficienti binomiali
 
+Ora vogliamo contare solo i sottoinsiemi con un numero prefissato di elementi. Il problema è che sappiamo contare bene le liste ordinate, non i gruppi senza ordine: la risposta sarà un numero che si ottiene dalle liste correggendo il sovraconteggio. Il numero che cerchiamo ha un nome.
+
 Fissiamo $n\in\mathbb N$ e un insieme $X$ di $n$ elementi. Per $0\leq r\leq n$, chiamiamo **coefficiente binomiale**
 
 $$
@@ -60,6 +78,13 @@ $$
 $$
 
 Il numero dipende soltanto da $n$ e $r$: una biezione fra due insiemi di $n$ elementi trasferisce, tramite le immagini, i sottoinsiemi di cardinalità $r$ dell'uno in quelli dell'altro.
+
+> [!example] Esempi e controesempi — coefficiente binomiale
+> **È contato da $\binom nr$**, per $n=4$, $r=2$, $X=\{1,2,3,4\}$: i sei sottoinsiemi $\{1,2\},\{1,3\},\{1,4\},\{2,3\},\{2,4\},\{3,4\}$, quindi $\binom42=6$.
+> **Non è contato da $\binom nr$**, e ciascun controesempio viola una sola condizione della definizione:
+> - le liste ordinate di due elementi distinti, che sono $4\cdot3=12$ (viola «l'ordine non conta»: $(1,2)$ e $(2,1)$ sono la stessa coppia);
+> - i «sottoinsiemi» con un elemento ripetuto, come $\{1,1\}$, che è soltanto $\{1\}$ (viola «elementi distinti»: un insieme non registra le ripetizioni);
+> - i sottoinsiemi con **al più** due elementi, che sono $1+4+6=11$ (viola «cardinalità esattamente $r$»).
 
 Per calcolarlo consideriamo le iniezioni $f:[r]\to X$, dove $[r]=\{1,\ldots,r\}$ e $[0]=\varnothing$. Esse descrivono liste di $r$ elementi distinti. Il loro numero è
 
@@ -70,12 +95,26 @@ $$
 Mandiamo ogni iniezione nella sua immagine $f([r])$. Quali iniezioni producono un sottoinsieme fissato $A$ di $r$ elementi? Precisamente le biezioni $[r]\to A$, cioè i suoi $r!$ ordinamenti. Dividendo le iniezioni in famiglie secondo l'immagine, otteniamo $\binom nr$ famiglie disgiunte, tutte di cardinalità $r!$. Pertanto
 
 $$
-\frac{n!}{(n-r)!}=r!\binom nr,
-\qquad
-\boxed{\binom nr=\frac{n!}{r!(n-r)!}}.
+\frac{n!}{(n-r)!}=r!\binom nr.
 $$
 
 La divisione è giustificata dall'uniformità: ogni sottoinsieme ha esattamente lo stesso numero di descrizioni ordinate. Il ragionamento comprende $r=0$, perché esiste una sola iniezione vuota e $0!=1$.
+
+> [!abstract] Concetto chiave — Formula del coefficiente binomiale
+> Per $0\leq r\leq n$:
+> $$
+> \binom nr=\frac{n!}{r!\,(n-r)!}
+> $$
+> I sottoinsiemi si contano dividendo le liste senza ripetizioni per i $r!$ ordinamenti di ciascuno. Questo schema «conta troppo, poi dividi per un sovraconteggio uniforme» ritorna per gli anagrammi e i gruppi senza nome nel [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|capitolo 05]].
+
+Per scegliere fra lista e sottoinsieme conviene chiedersi due cose: l'ordine conta? gli elementi possono ripetersi? Per ora abbiamo due delle quattro risposte possibili (le altre due, con ripetizione, stanno nel capitolo 05):
+
+| Il risultato è… | L'ordine conta? | Ripetizioni? | Quanti sono | Esempio ($n=6$, $r=3$) |
+|---|---|---|---|---|
+| una lista di $r$ elementi di $X$ | sì | no | $\dfrac{n!}{(n-r)!}$ | $6\cdot5\cdot4=120$ |
+| un sottoinsieme di $r$ elementi | no | no | $\binom nr$ | $120/3!=20$ |
+
+La [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni#Mappa decisionale del conteggio|mappa decisionale]] completa la tabella con ripetizioni, oggetti uguali e vincoli.
 
 I casi estremi hanno anche una lettura immediata:
 
@@ -99,16 +138,24 @@ Scegliere chi entra equivale a scegliere chi rimane fuori. Per esempio, sceglier
 
 ## Pascal: distinguere un elemento
 
+Il fattoriale permette di calcolare $\binom nr$, ma non dice come i coefficienti siano legati fra loro. Ci serve una relazione che calcoli i coefficienti di $n+1$ elementi da quelli di $n$: basta guardare che cosa fa un elemento fissato.
+
 Prendiamo un insieme $X$ con $n+1$ elementi e fissiamo $x\in X$. Per contare i suoi sottoinsiemi di $r$ elementi, separiamoli secondo la presenza di $x$.
 
 Quelli che non contengono $x$ sono i sottoinsiemi di $r$ elementi di $X\setminus\{x\}$: sono $\binom nr$. Per quelli che contengono $x$, togliere $x$ dà una biezione con i sottoinsiemi di $r-1$ elementi di $X\setminus\{x\}$: sono $\binom n{r-1}$. I casi sono disgiunti ed esauriscono le possibilità. Abbiamo dimostrato l'**identità di Pascal**:
 
-$$
-\boxed{\binom{n+1}r=\binom nr+\binom n{r-1}}
-\qquad(n\geq0,\ 0\leq r\leq n+1).
-$$
+> [!abstract] Concetto chiave — Identità di Pascal
+> Per $n\geq0$ e $0\leq r\leq n+1$:
+> $$
+> \binom{n+1}r=\binom nr+\binom n{r-1}
+> $$
+> I sottoinsiemi si dividono in quelli che escludono un elemento fissato e quelli che lo includono. È il motore dell'induzione per Newton qui sotto e delle somme di binomiali del [[Books/Aritmetica-I/07 - Ricorrenze e successioni|capitolo 07]].
 
 Ai bordi la convenzione dei coefficienti nulli esprime il caso impossibile: per $r=0$ nessun sottoinsieme contiene $x$; per $r=n+1$ nessuno lo esclude.
+
+> [!example] Esempi e controesempi — identità di Pascal
+> **Vale:** $\binom52=\binom42+\binom41=6+4=10$. In concreto, nel gruppo $\{1,2,3,4,x\}$ i sottoinsiemi di due elementi sono 6 senza $x$ e 4 con $x$ (si sceglie l'altro elemento fra i quattro).
+> **Non vale se si sbaglia l'indice:** $\binom52\neq\binom42+\binom42=12$. Una volta incluso $x$, restano da scegliere $r-1=1$ elementi fra i quattro rimasti, cioè $\binom41=4$ modi, non $\binom42$. Anche l'intervallo delle ipotesi conta: ai bordi ($r=0$ o $r=n+1$) compare un coefficiente con indice fuori da $0,\ldots,n$, che va letto come $0$ per la convenzione data sopra.
 
 Partendo da $\binom00=1$, Pascal permette di costruire tutte le righe successive:
 
@@ -126,6 +173,8 @@ Ogni numero interno è la somma dei due numeri della riga precedente che hanno i
 
 ## Newton: scegliere un termine da ogni parentesi
 
+Finora i coefficienti binomiali contano sottoinsiemi. Vediamo che compaiono anche nei polinomi: questo collegamento serve per le somme alternate del capitolo 06.
+
 Perché gli stessi numeri compaiono nello sviluppo di una potenza? Consideriamo $n$ parentesi, distinguendole con le etichette $1,\ldots,n$:
 
 $$
@@ -138,7 +187,13 @@ $$
 \boxed{(a+b)^n=\sum_{k=0}^n\binom nk a^k b^{n-k}}.
 $$
 
-È un'identità fra polinomi e vale, in particolare, per ogni $a,b\in\mathbb R$ e $n\in\mathbb N$. I fattori con esponente zero si interpretano come il polinomio costante $1$, anche nelle successive sostituzioni numeriche. Per $n=0$ entrambi i membri sono il prodotto vuoto $1$.
+È un'identità fra polinomi e vale, in particolare, per ogni $a,b\in\mathbb R$ e $n\in\mathbb N$. I fattori con esponente zero si interpretano come il polinomio costante $1$, anche nelle successive sostituzioni numeriche. Per $n=0$ entrambi i membri sono il prodotto vuoto $1$ (il prodotto di nessun fattore vale $1$, come la somma di nessun addendo vale $0$).
+
+> [!example] Esempi e controesempi — binomio di Newton
+> **Vale:** $(a+b)^3=a^3+3a^2b+3ab^2+b^3$; con $a=b=1$ la somma dei coefficienti è $1+3+3+1=8=2^3$.
+> **Non vale se si cambia la regola dei termini:**
+> - togliendo i coefficienti, $(a+b)^2\neq a^2+b^2$: per $a=b=1$ si ha $4\neq2$;
+> - se i fattori **non commutano** ($ab\neq ba$, come accade componendo funzioni in ordine diverso), il raggruppamento dei termini uguali non è lecito: $(a+b)^2=a^2+ab+ba+b^2$, non $a^2+2ab+b^2$. La prova combinatoria usa $ab=ba$ quando raccoglie «le scelte con $k$ volte $a$».
 
 Possiamo anche dimostrarla per induzione, usando Pascal. Il caso $n=0$ è appena verificato. Supponiamo vera la formula per $n$. Moltiplicando per $a+b$ otteniamo
 
@@ -179,6 +234,8 @@ Il controllo completo dà $(2x-1)^4=16x^4-32x^3+24x^2-8x+1$. Il segno dipende da
 
 ## Somme binomiali e parità
 
+Newton e Pascal producono identità numeriche utili quando serve sommare i coefficienti. Ne ricaviamo due importanti, scegliendo valori particolari per $a$ e $b$.
+
 Dividiamo $\mathcal P(X)$ in famiglie secondo la cardinalità dei sottoinsiemi. Sono famiglie disgiunte, con cardinalità $\binom n0,\ldots,\binom nn$. Siccome $|\mathcal P(X)|=2^n$,
 
 $$
@@ -216,6 +273,8 @@ La cardinalità cambia di $1$ o di $-1$, quindi la parità si inverte. Inoltre $
 
 ## Contare sottoinsiemi con un elemento segnato
 
+Alcune somme, come $\sum_k k\binom nk$, non si lasciano ricondurre a Newton con una sostituzione. Si risolvono dando un significato a ciascun fattore. Il metodo si chiama doppio conteggio.
+
 Il **doppio conteggio** consiste nel descrivere uno stesso insieme finito in due modi. La parte decisiva è scegliere che cosa contare. Consideriamo, per $|X|=n\geq1$,
 
 $$
@@ -230,9 +289,16 @@ $$
 
 Se scegliamo prima $a$, abbiamo $n$ possibilità. Poi $a$ deve appartenere ad $A$, mentre ciascuno degli altri $n-1$ elementi può essere inserito oppure escluso. Equivalentemente, scegliamo un sottoinsieme qualsiasi di $X\setminus\{a\}$ e aggiungiamo $a$. Le possibilità sono $2^{n-1}$ per ogni $a$. Perciò
 
-$$
-\boxed{\sum_{k=0}^n k\binom nk=n2^{n-1}}\qquad(n\geq1).
-$$
+> [!abstract] Concetto chiave — Doppio conteggio
+> Se due procedimenti contano lo stesso insieme, i due risultati sono uguali: per esempio
+> $$
+> \sum_{k=0}^n k\binom nk=n2^{n-1}\qquad(n\geq1).
+> $$
+> È il modo per dimostrare identità senza algebra: si nomina un oggetto e lo si conta in due ordini. Ritorna nell'inclusione-esclusione e nelle suriezioni del [[Books/Aritmetica-I/06 - Inclusione ed esclusione|capitolo 06]].
+
+> [!example] Esempi e controesempi — doppio conteggio
+> **Funziona:** contare le coppie $(A,a)$ con $a\in A$ prima per $A$ e poi per $a$ (qui sopra): i due conteggi descrivono esattamente la stessa famiglia.
+> **Non funziona** se i due conteggi non contano lo stesso insieme. Se dimentichiamo la condizione $a\in A$, le coppie $(A,a)$ sono $n\cdot2^n$ (un elemento qualsiasi e un sottoinsieme qualsiasi), un numero diverso. Non funziona neppure se uno dei due procedimenti conta alcune coppie più di una volta: ogni coppia deve comparire esattamente una volta in ciascun conteggio.
 
 **Esempio svolto: commissione con portavoce.** Da quattro studenti scegliamo una commissione non vuota e un suo portavoce. Classificando per dimensione otteniamo
 
@@ -244,6 +310,24 @@ $$
 Scegliendo prima il portavoce, ci sono $4$ possibilità, poi $2^3=8$ modi di decidere quali altri studenti partecipino: $4\cdot8=32$. Il portavoce può anche restare solo. Per $n=0$ l'insieme delle coppie è vuoto e la somma vale $0$; teniamo quel caso separato dalla formula con $2^{n-1}$.
 
 Quando una somma contiene un coefficiente binomiale moltiplicato per un indice, prova quindi a dare all'indice un ruolo: scegliere un membro, un posto, un elemento speciale. Una formula diventa più comprensibile quando entrambi i membri hanno lo stesso oggetto da contare.
+
+## Mappa delle identità
+
+Il diagramma mostra da dove viene ciascun risultato del capitolo: leggi le frecce come «si usa per ottenere».
+
+```mermaid
+flowchart LR
+  L["Liste senza ripetizioni: n!/(n-r)!"] --> C["Coefficiente binomiale"]
+  C --> S["Simmetria: complementare"]
+  C --> P["Pascal: fissare un elemento"]
+  C --> N["Newton: una scelta per parentesi"]
+  P --> I["Newton per induzione"]
+  N --> T["Somma = 2ⁿ"]
+  I --> T
+  T --> A["Somma alternata = 0"]
+  A --> E["Pari e dispari: 2ⁿ⁻¹ ciascuno"]
+  C --> D["Doppio conteggio: somma di k per C(n,k)"]
+```
 
 ## Fonti
 

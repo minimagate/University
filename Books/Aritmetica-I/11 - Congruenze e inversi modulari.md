@@ -2,6 +2,14 @@
 
 Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea, MCD e Bézout]] e [[Books/Aritmetica-I/10 - Equazioni diofantee|equazioni diofantee]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Calcolerai con i resti invece che con numeri grandi, sostituendo ogni numero con uno congruo più piccolo.
+> - Capirai quali operazioni si possono fare «modulo $n$» (somma, prodotto, potenza) e quali no (divisione, riduzione dell'esponente).
+> - Scoprirai quando un numero ha un inverso modulo $n$ e lo troverai con Euclide.
+> - Risolverai ogni congruenza $ax\equiv b\pmod n$ e ne descriverai tutte le soluzioni.
+>
+> L'idea che lega il capitolo: una congruenza lineare è un'equazione diofantea ([[Books/Aritmetica-I/10 - Equazioni diofantee|capitolo 10]]) travestita, $ax+ny=b$, e si risolve con gli stessi strumenti.
+
 ## Un orologio conserva il resto
 
 Sono le 9. Che ora segnerà un orologio di dodici ore dopo altre 17 ore? Sommiamo $9+17=26$, ma sul quadrante leggiamo 2: abbiamo tolto due giri completi. Per questa domanda 26 e 2 portano la stessa informazione. Non sono interi uguali; differiscono di un multiplo di 12.
@@ -35,6 +43,11 @@ segue $n\mid(r_1-r_2)$. Ma $|r_1-r_2|<n$ e l'unico multiplo di $n$ con valore as
 
 Anche gli interi negativi hanno un resto fra $0$ e $n-1$: per esempio $-17=(-4)\cdot5+3$, quindi $-17\equiv3\pmod5$. Modulo 1 tutti gli interi sono congrui, perché 1 divide ogni differenza.
 
+> [!example] Esempi e controesempi — congruenza modulo $n$
+> **Sono congrui:** $26$ e $2$ modulo $12$ ($26-2=24=2\cdot12$); $-3$ e $9$ modulo $12$ ($-12$ è multiplo di 12); $-17$ e $3$ modulo $5$ ($-20$).
+> **Non sono congrui:** $25$ e $2$ modulo $12$: la differenza $23$ non è multiplo di $12$ (resti $1$ e $2$). È l'unica condizione della definizione, e fallisce.
+> **Il modulo conta:** $7\equiv1\pmod6$ ma $7\not\equiv1\pmod4$: la stessa coppia può essere congrua per un modulo e non per un altro.
+
 ## Dallo stesso resto alla stessa classe
 
 La congruenza ha tre proprietà concrete, che permettono di usarla con coerenza:
@@ -43,7 +56,7 @@ La congruenza ha tre proprietà concrete, che permettono di usarla con coerenza:
 - è **simmetrica**: se $n\mid(a-b)$, allora $n\mid-(a-b)=b-a$;
 - è **transitiva**: se $n\mid(a-b)$ e $n\mid(b-c)$, allora $n\mid((a-b)+(b-c))=a-c$.
 
-Queste tre proprietà si riassumono dicendo che è una relazione di equivalenza. Per ora usiamo soltanto il linguaggio che serve ai calcoli: la **classe di $a$ modulo $n$** è
+Queste tre proprietà si riassumono dicendo che è una **relazione di equivalenza**: un modo di confrontare elementi che si comporta come un'uguaglianza «a meno di multipli di $n$». Non tutte le relazioni sono così: «$a\le b$» non è simmetrica, e «$a$ e $b$ differiscono al più di 1» non è transitiva ($0$ e $1$, poi $1$ e $2$, ma non $0$ e $2$). Vogliamo trattare come un solo oggetto tutti i numeri con lo stesso resto. Per ora usiamo soltanto il linguaggio che serve ai calcoli: la **classe di $a$ modulo $n$** è
 
 $$
 [a]_n=\{a+kn:k\in\mathbb Z\}.
@@ -55,7 +68,7 @@ $$
 [2]_5=\{\ldots,-8,-3,2,7,12,\ldots\}.
 $$
 
-Le classi sono esattamente $[0]_n,[1]_n,\ldots,[n-1]_n$: ogni intero ha uno di questi resti, e resti diversi non sono congrui. La scrittura $[7]_5=[2]_5$ dice che due rappresentanti descrivono il medesimo insieme. Il rappresentante 2 è un intero; la classe $[2]_5$ contiene infiniti interi. Il quadro generale delle equivalenze verrà sviluppato nel [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|capitolo 13]].
+Le classi sono esattamente $[0]_n,[1]_n,\ldots,[n-1]_n$: ogni intero ha uno di questi resti, e resti diversi non sono congrui. Un intero scelto per descrivere una classe si chiama **rappresentante**. La scrittura $[7]_5=[2]_5$ dice che i rappresentanti $7$ e $2$ descrivono il medesimo insieme. Il rappresentante 2 è un intero; la classe $[2]_5$ contiene infiniti interi. Il quadro generale delle equivalenze verrà sviluppato nel [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|capitolo 13]].
 
 ## Quali operazioni conservano la congruenza?
 
@@ -78,6 +91,10 @@ ac-bd=c(a-b)+b(c-d).
 $$
 
 Entrambi gli addendi sono divisibili per $n$, dunque lo è anche $ac-bd$.
+
+> [!abstract] Concetto chiave — Compatibilità con somma e prodotto
+> Se $a\equiv b$ e $c\equiv d\pmod n$, allora $a\pm c\equiv b\pm d$ e $ac\equiv bd\pmod n$; di conseguenza $a^k\equiv b^k$ per ogni $k\ge1$.
+> Questo permette di calcolare con i resti. Nel [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|capitolo 13]] diventerà la «buona definizione» delle operazioni sulle classi, e nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]] la struttura di anello degli interi modulo $n$.
 
 Segue la compatibilità con le **potenze intere positive**:
 
@@ -164,15 +181,19 @@ Ogni passaggio usa soltanto la compatibilità del prodotto. Il metodo funziona p
 
 ## L'inverso modulare nasce da Bézout
 
-Fissiamo ora $a\in\mathbb Z$ e $n\geq2$. Un **inverso di $a$ modulo $n$** è un intero $u$ tale che
+Con somma e prodotto abbiamo molto, ma non la divisione: modulo $n$ non si può «dividere per $a$» come si fa fra i razionali. Serve un sostituto, ed è l'inverso. Fissiamo ora $a\in\mathbb Z$ e $n\geq2$. Un **inverso di $a$ modulo $n$** è un intero $u$ tale che
 
 $$
 au\equiv1\pmod n.
 $$
 
-È il numero per cui moltiplicare quando vogliamo annullare l'effetto della moltiplicazione per $a$. Non è la frazione $1/a$: $u$ deve essere intero.
+È il numero per cui moltiplicare quando vogliamo annullare l'effetto della moltiplicazione per $a$. Non è la frazione $1/a$: $u$ deve essere intero. Un intero (o una classe) che ha un inverso modulo $n$ si dice **invertibile** modulo $n$; in un contesto più generale, un elemento invertibile si chiama **unità** (capitolo 15).
 
-L'inverso esiste **se e solo se $\gcd(a,n)=1$**. Se esiste, $au-1=kn$, dunque $au-kn=1$. Ogni divisore comune di $a$ e $n$ divide il membro sinistro, quindi divide 1: il MCD è 1. Viceversa, se $\gcd(a,n)=1$, Bézout fornisce
+> [!abstract] Concetto chiave — Quando esiste l'inverso
+> Per $n\ge2$, $a$ ha un inverso modulo $n$ se e solo se $\gcd(a,n)=1$. L'inverso è unico modulo $n$ e si calcola con Euclide esteso.
+> Gli interi invertibili modulo $n$ saranno il cuore dei capitoli [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|15]] (unità) e [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|17]] (funzione di Eulero, teoremi di Eulero e Fermat).
+
+Dimostriamolo. Se l'inverso esiste, $au-1=kn$, dunque $au-kn=1$. Ogni divisore comune di $a$ e $n$ divide il membro sinistro, quindi divide 1: il MCD è 1. Viceversa, se $\gcd(a,n)=1$, Bézout fornisce
 
 $$
 au+nv=1.
@@ -205,6 +226,21 @@ $$
 
 Moltiplicare per l'inverso conserva tutte le soluzioni: l'operazione si può annullare moltiplicando per 17.
 
+### Classi invertibili e non invertibili
+
+Avere un inverso dipende soltanto dalla classe: se $a\equiv a'$ e $au\equiv1$, per la compatibilità del prodotto anche $a'u\equiv1$. Possiamo quindi dire che una **classe** è invertibile. Modulo 12 la situazione è la seguente.
+
+| classe $a$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| $\gcd(a,12)$ | 12 | 1 | 2 | 3 | 4 | 1 | 6 | 1 | 4 | 3 | 2 | 1 |
+| inverso | no | 1 | no | no | no | 5 | no | 7 | no | no | no | 11 |
+
+Le classi invertibili sono $1,5,7,11$: quattro su dodici, quelle con MCD uguale a 1. Verifica: $5\cdot5=25$, $7\cdot7=49$, $11\cdot11=121$ sono tutti $\equiv1\pmod{12}$. Quante siano in generale le classi invertibili modulo $n$ lo diremo con la funzione di Eulero $\varphi(n)$ ([[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]]). Se $n=p$ è primo, ogni classe non nulla è invertibile: modulo 7 gli inversi di $1,2,3,4,5,6$ sono $1,4,5,2,3,6$.
+
+> [!example] Esempi e controesempi — inverso modulare
+> **Ha inverso:** $5$ modulo $12$ ($\gcd=1$, inverso $5$); $17$ modulo $43$ (inverso $38$). L'inverso non è unico come intero, solo modulo $n$: anche $17$ è un inverso di $5$ modulo $12$, perché $5\cdot17=85=7\cdot12+1$.
+> **Non ha inverso:** $4$ modulo $12$: $\gcd(4,12)=4\ne1$, l'unica condizione che fallisce. Infatti $4u-12k=1$ è impossibile, perché il primo membro è pari. Anche $0$ non ha inverso modulo $n\ge2$, perché $\gcd(0,n)=n$.
+
 ## Cancellare un fattore cambia talvolta il modulo
 
 Siano $a,b,c\in\mathbb Z$, $n\geq1$ e $d=\gcd(c,n)$. La regola esatta è
@@ -229,8 +265,24 @@ Per il lemma di Euclide, essendo $n_1$ e $c_1$ coprimi, l'ultima condizione impl
 
 Se $d=1$, il modulo rimane $n$ e la cancellazione è lecita senza cambiamenti. Se $c=0$, abbiamo $d=n$ e il risultato diventa $a\equiv b\pmod1$, sempre vero, come sempre vera era la congruenza iniziale $0\equiv0\pmod n$.
 
+Il motivo profondo del fallimento è che modulo $n$ possono esistere prodotti nulli fra numeri non nulli: modulo $12$ vale $3\cdot4\equiv0$, con $3\not\equiv0$ e $4\not\equiv0$. Numeri così si chiamano **divisori dello zero** (capitolo 15) e non si possono «semplificare»: se potessimo cancellare $3$ da $3\cdot4\equiv3\cdot0$ otterremmo $4\equiv0$, che è falso.
+
 > [!warning] Attenzione — Un fattore non nullo può non essere cancellabile allo stesso modulo
 > Vale $2\cdot1\equiv2\cdot4\pmod6$, perché $2-8=-6$. Eppure $1\not\equiv4\pmod6$. Cancellando 2 si ottiene correttamente $1\equiv4\pmod3$, poiché $6/\gcd(2,6)=3$. Per conservare il modulo occorre che il fattore sia coprimo con esso.
+
+## Mappa: che cosa si può fare con una congruenza
+
+Prima di passare alle congruenze lineari, riassumiamo quali operazioni conservano la congruenza. Si legge riga per riga: a sinistra l'operazione, poi se la congruenza $a\equiv b\pmod n$ si conserva, a quali condizioni, e un esempio o un controesempio.
+
+| Operazione | Si conserva? | Condizione | Esempio o controesempio |
+|---|---|---|---|
+| somma, differenza | sì | nessuna | $7\equiv2$ e $4\equiv-1\pmod5$ danno $11\equiv1$ |
+| prodotto | sì | nessuna | $7\cdot4=28\equiv3$ e $2\cdot(-1)=-2\equiv3\pmod5$ |
+| potenza $a^k$ (esponente $k\ge1$ fissato) | sì | nessuna | $7^3\equiv3\equiv2^3\pmod5$ |
+| cancellazione di un fattore $c$ | solo modulo $n/\gcd(c,n)$ | $\gcd(c,n)=1$ per conservare $n$ | $2\cdot1\equiv2\cdot4\pmod6$ ma $1\not\equiv4\pmod6$ (vale mod 3) |
+| riduzione dell'esponente modulo $n$ | no, in generale | serve un'altra regola | $4\equiv9\pmod5$ e $2^4\equiv1$, ma $2^9\equiv2\pmod5$ |
+
+L'ultima riga non è un'omissione: la regola corretta per gli esponenti arriverà con Eulero, Fermat e l'ordine (capitoli [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|17]] e [[Books/Aritmetica-I/18 - Congruenze esponenziali|18]]).
 
 ## Congruenze lineari: esistenza, costruzione, completezza
 
@@ -241,7 +293,11 @@ ax\equiv b\pmod n,
 \qquad a,b\in\mathbb Z,\quad n\geq1.
 $$
 
-Per definizione è equivalente a $ax+ny=b$ per qualche $y\in\mathbb Z$: una congruenza lineare è la parte in $x$ di una diofantea. Poniamo $d=\gcd(a,n)>0$.
+Per definizione è equivalente a $ax+ny=b$ per qualche $y\in\mathbb Z$: una congruenza lineare è la parte in $x$ di una diofantea. Poniamo $d=\gcd(a,n)>0$. Il risultato completo, dimostrato nei due passi seguenti, è questo.
+
+> [!abstract] Concetto chiave — Congruenza lineare
+> Con $d=\gcd(a,n)$, la congruenza $ax\equiv b\pmod n$ ha soluzioni se e solo se $d\mid b$. In tal caso le soluzioni formano una sola classe modulo $n/d$, cioè esattamente $d$ classi modulo $n$.
+> È lo strumento di base per i sistemi ([[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|capitolo 12]]), per le equazioni con esponenti ([[Books/Aritmetica-I/18 - Congruenze esponenziali|capitolo 18]]) e per i sollevamenti ([[Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento|capitolo 20]]).
 
 **Esistenza.** Se $x$ è soluzione, $b=ax+ny$ è una combinazione di due multipli di $d$, quindi $d\mid b$. Viceversa, se $b=d\beta$, Bézout dà $au+nv=d$; moltiplicando per $\beta$ otteniamo
 
@@ -289,6 +345,23 @@ ax\equiv b\pmod n
 $$
 
 Quando $n/d\geq2$, il nuovo coefficiente è coprimo con il nuovo modulo e si usa il suo inverso. Se $n/d=1$, la condizione ridotta è sempre vera e ogni intero è soluzione. In particolare, per $a=0$ la congruenza ha tutte le soluzioni intere se $n\mid b$, nessuna altrimenti. Per $n=1$ ogni intero risolve qualsiasi congruenza lineare: c'è una sola classe modulo 1.
+
+### Il procedimento in uno schema
+
+Lo schema si legge dall'alto verso il basso e ha due controlli: la divisibilità $d\mid b$ e il caso banale di modulo ridotto 1.
+
+```mermaid
+flowchart TD
+A["Congruenza ax ≡ b (mod n)"] --> B["d = MCD di a e n"]
+B --> C{"d divide b?"}
+C -- "no" --> D["Nessuna soluzione"]
+C -- "sì" --> E["Dividi tutto per d: a1·x ≡ b1 (mod n1), con n1 = n/d"]
+E --> F{"n1 = 1?"}
+F -- "sì" --> G["Ogni intero è soluzione"]
+F -- "no" --> H["Inverso di a1 modulo n1, con Euclide"]
+H --> I["x ≡ inverso · b1 (mod n1)"]
+I --> J["Modulo n: d classi, x0 + k·n1 per k = 0, ..., d−1"]
+```
 
 ### Tre esempi che distinguono le possibilità
 

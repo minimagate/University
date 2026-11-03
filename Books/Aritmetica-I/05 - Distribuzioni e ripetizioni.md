@@ -2,6 +2,16 @@
 
 Prerequisiti: [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|conteggi, biezioni e permutazioni]] e [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|coefficienti binomiali]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
 
+> [!info] In questo capitolo
+> - Imparerai a dichiarare **che cosa distingue due risultati** (oggetti distinti o uguali, scatole con o senza nome) prima di scrivere qualunque formula.
+> - Conterai gli anagrammi e le distribuzioni con dimensioni fissate: il coefficiente multinomiale.
+> - Conterai le distribuzioni di oggetti uguali con la tecnica di stelle e sbarre, anche con vincoli inferiori.
+> - Troverai in fondo la **mappa decisionale del conteggio**: un diagramma e due tabelle che riuniscono i capitoli 03–06 e dicono quale formula usare.
+> - L'idea che lega il capitolo: ogni divisione e ogni sostituzione di variabili va giustificata con una corrispondenza precisa.
+
+> [!note] Vocabolario che useremo
+> **Molteplicità** di una lettera: quante volte compare in una parola. **Scatole etichettate**: scatole con un nome (A, B, C…), per cui scambiare i contenuti di due scatole dà un risultato diverso. **Suriettiva** (cap. [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|03]]): ogni elemento del codominio è immagine di almeno un elemento. In questo capitolo $\mathbb N$ contiene lo zero.
+
 ## Che cosa rende diverse due distribuzioni?
 
 Vogliamo distribuire sei biscotti a tre persone, Anna, Bruno e Carla. Prima di contare dobbiamo decidere quali differenze ci interessano. Se i biscotti sono tutti uguali, dare due biscotti a ciascuno descrive una sola distribuzione. Se invece ogni biscotto porta un nome diverso, sapere che ciascuno ne riceve due non basta: occorre sapere anche quali.
@@ -12,7 +22,13 @@ In questo capitolo incontreremo due mosse complementari. Per gli anagrammi, rend
 
 ## Anagrammi: quando si può dividere
 
+Le parole con lettere ripetute sono liste in cui l'ordine conta, ma scambiare due lettere uguali non produce una lista diversa. Il fattoriale conta quindi «troppo», e dobbiamo capire di quanto.
+
 Un **anagramma** è qui una sequenza che usa tutte le lettere assegnate, con le loro molteplicità. Non chiediamo che formi una parola italiana.
+
+> [!example] Esempi e controesempi — anagramma
+> **È un anagramma di `nonno`:** `nonno` stesso, `onnon`, `nnnoo`: usano tutte le lettere, tre `n` e due `o`.
+> **Non è un anagramma di `nonno`:** `nnoo` (viola «usa tutte le lettere»: manca una `n`); `nnnoa` (viola «con le loro molteplicità»: c'è una `a` al posto di una `o`).
 
 Consideriamo `nonno`: ci sono tre `n` e due `o`. Diamo alle copie nomi provvisori,
 
@@ -31,13 +47,20 @@ $$
 
 Un controllo diverso consiste nello scegliere le due posizioni delle `o`: sono $\binom52=10$; tutte le altre posizioni devono contenere `n`.
 
-Il principio usato merita una formulazione generale. Se una funzione suriettiva $f:E\to F$ fra insiemi finiti ha esattamente $q\geq1$ elementi sopra ciascun risultato, allora
+Il principio usato merita una formulazione generale. Una funzione $f:E\to F$ è **suriettiva** se ogni elemento di $F$ è immagine di almeno un elemento di $E$. La **fibra** sopra $y\in F$ è l’insieme $f^{-1}(\{y\})$ degli elementi di $E$ che $f$ manda in $y$.
 
-$$
-|E|=q|F|,\qquad |F|=\frac{|E|}{q}.
-$$
+> [!abstract] Concetto chiave — Sovraconteggio uniforme
+> Se $f:E\to F$ è suriettiva fra insiemi finiti e ogni fibra ha esattamente $q\geq1$ elementi, allora
+> $$
+> |E|=q|F|,\qquad |F|=\frac{|E|}{q}.
+> $$
+> È la giustificazione di ogni «conto troppo e divido». Torna negli anagrammi, nei gruppi senza nome e nelle suriezioni del [[Books/Aritmetica-I/06 - Inclusione ed esclusione|capitolo 06]].
 
-Infatti gli insiemi $f^{-1}(\{y\})$, al variare di $y\in F$, sono disgiunti, ricoprono $E$ e hanno tutti cardinalità $q$. Basta applicare il principio della somma. Nel nostro esempio $f$ cancella gli indici delle lettere.
+Il motivo è questo: gli insiemi $f^{-1}(\{y\})$, al variare di $y\in F$, sono disgiunti, ricoprono $E$ e hanno tutti cardinalità $q$. Basta applicare il principio della somma. Nel nostro esempio $f$ cancella gli indici delle lettere.
+
+> [!example] Esempi e controesempi — sovraconteggio uniforme
+> **Si può dividere:** le liste ordinate di due lettere distinte scelte fra $\{a,b,c\}$ sono $3\cdot2=6$; dimenticando l’ordine, ogni coppia ha $2$ liste, quindi le coppie sono $6/2=3$.
+> **Non si può dividere** quando le fibre hanno cardinalità diverse (viola «esattamente $q$ per ogni fibra»). Le liste di due lettere da $\{a,b\}$ sono $4$: $aa,ab,ba,bb$. Dimenticando l’ordine restano $3$ risultati ($\{a,a\},\{a,b\},\{b,b\}$) con fibre di cardinalità $1,2,1$; dividere $4/2=2$ sarebbe sbagliato.
 
 > [!warning] Attenzione — Dividere richiede un sovraconteggio uniforme
 > Non basta dire «l’ordine non conta» e dividere per un fattoriale. Occorre dimostrare che ogni oggetto finale ha lo stesso numero di rappresentazioni iniziali. Una terna con tre elementi distinti ha sei riordinamenti; una con due elementi uguali ne ha tre; una con tre elementi uguali ne ha uno.
@@ -48,14 +71,20 @@ $$
 n_1!\cdots n_k!
 $$
 
-ordinamenti etichettati: si possono assegnare gli indici alle posizioni del primo tipo in $n_1!$ modi, a quelle del secondo in $n_2!$ modi, e così via. Il numero cercato è quindi il **coefficiente multinomiale**
+ordinamenti etichettati: si possono assegnare gli indici alle posizioni del primo tipo in $n_1!$ modi, a quelle del secondo in $n_2!$ modi, e così via. Il numero cercato è quindi il **coefficiente multinomiale**:
 
-$$
-\boxed{\binom{n}{n_1,\ldots,n_k}
-=\frac{n!}{n_1!\cdots n_k!}.}
-$$
+> [!abstract] Concetto chiave — Coefficiente multinomiale
+> Gli anagrammi di $n=n_1+\cdots+n_k$ lettere, con $n_i$ copie del tipo $i$, sono
+> $$
+> \binom{n}{n_1,\ldots,n_k}=\frac{n!}{n_1!\cdots n_k!}.
+> $$
+> Generalizza il coefficiente binomiale ($k=2$) e conta anche le assegnazioni di oggetti distinti a scatole etichettate con dimensioni fissate. Ritorna nei coefficienti dello sviluppo di $(a+b+c)^n$: ogni monomio $a^ib^jc^k$ compare con coefficiente $\binom{n}{i,j,k}$.
 
 La convenzione $0!=1$ permette di includere tipi assenti. Se $n=0$, c’è un solo anagramma, la sequenza vuota, e la formula restituisce $1$.
+
+> [!example] Esempi e controesempi — coefficiente multinomiale
+> **Vale:** gli anagrammi di `MAMMA` sono $5!/(3!\,2!)=10$.
+> **Non vale** se si omette una condizione: dividere per un solo fattoriale dà $5!/3!=20\neq10$ (si è ignorata la molteplicità delle `A`, cioè il fattore $2!$). E se tutte le lettere sono diverse, come in `LIBRO`, nessun fattoriale cancella nulla: le liste sono $5!=120$, perché ogni anagramma ha un solo ordinamento etichettato.
 
 ## Scatole etichettate e gruppi senza nome
 
@@ -87,6 +116,13 @@ $$
 
 perché i fattoriali intermedi si cancellano. Questo è anche un secondo modo di dimostrare la formula.
 
+> [!example] Esempi e controesempi — scatole etichettate con dimensioni fissate
+> **Vale:** sei studenti distinti nei laboratori A, B, C con $2,1,3$ posti: $60$ assegnazioni.
+> **Non vale** quando cambia una condizione:
+> - gli oggetti sono **uguali** (viola «oggetti distinti»): tre biscotti uguali nelle scatole A e B, con $2$ e $1$ biscotti, danno una sola distribuzione, mentre tre biscotti distinti ne danno $3!/(2!\,1!)=3$;
+> - le dimensioni **non sono fissate** (viola «numero in ciascuna scatola assegnato»): sei studenti liberi di scegliere fra tre laboratori danno $3^6=729$ assegnazioni;
+> - le scatole **non hanno nome**: due gruppi di due fra quattro persone sono $6/2!=3$, non $6$.
+
 Se i gruppi non hanno nome, cambia l’oggetto da contare. Dividere quattro persone distinte in due coppie chiamate A e B dà $\binom42=6$ risultati. Se le coppie non hanno nome, ogni divisione è stata contata due volte: una per ciascun modo di dare i due nomi ai gruppi. Le divisioni sono quindi $6/2!=3$.
 
 Non bisogna però dividere automaticamente per il numero delle scatole fattoriale. Se chiediamo un gruppo di tre persone e uno di una persona, la dimensione distingue già i due gruppi: scegliere la persona isolata dà quattro divisioni senza nome. Anche le assegnazioni con tre persone nella scatola A e una nella B sono quattro. Dimenticare i nomi, in questo particolare conteggio con dimensioni assegnate, non introduce una ripetizione.
@@ -95,6 +131,8 @@ Non bisogna però dividere automaticamente per il numero delle scatole fattorial
 > «Oggetti uguali» e «scatole senza nome» sono condizioni separate. Stelle e sbarre conterà oggetti uguali in scatole etichettate. Non conterà automaticamente distribuzioni in scatole indistinguibili. Anche la presenza di scatole vuote può cambiare il numero di modi in cui si possono assegnare nomi ai gruppi visibili.
 
 ## Stelle e sbarre: una biezione completa
+
+Se gli oggetti sono tutti uguali non c’è nulla da ordinare e gli anagrammi non servono: una distribuzione è determinata soltanto da **quanti** oggetti ricevono i destinatari. Contare le liste di quantità con somma fissata è il problema che risolve la tecnica di stelle e sbarre.
 
 Torniamo ai biscotti tutti uguali. Fissiamo $r\geq1$ destinatari distinguibili e un totale $N\in\mathbb N$. Una distribuzione è determinata dalla lista delle quantità
 
@@ -122,11 +160,12 @@ Partendo da una soluzione e rileggendo i blocchi recuperiamo la soluzione inizia
 
 Per contare le sequenze scegliamo quali $r-1$ posizioni, fra le $N+r-1$ disponibili, siano occupate dalle sbarre. Tutte le altre conterranno stelle. Pertanto
 
-$$
-\boxed{\#\{(x_1,\ldots,x_r)\in\mathbb N^r:
-x_1+\cdots+x_r=N\}
-=\binom{N+r-1}{r-1}.}
-$$
+> [!abstract] Concetto chiave — Stelle e sbarre
+> Il numero di soluzioni nonnegative di $x_1+\cdots+x_r=N$ è
+> $$
+> \#\{(x_1,\ldots,x_r)\in\mathbb N^r:x_1+\cdots+x_r=N\}=\binom{N+r-1}{r-1}.
+> $$
+> Conta oggetti **uguali** in scatole **etichettate**, anche vuote. Ritorna nelle equazioni con vincoli, nel conteggio delle terne dell’ultimo paragrafo e nei divisori del [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|capitolo 09]].
 
 I casi estremi aiutano a capire la formula. Se $N=0$, la sola soluzione è $(0,\ldots,0)$ e la sola sequenza contiene tutte le sbarre consecutive: $\binom{r-1}{r-1}=1$. Se $r=1$, non occorrono sbarre: la sola soluzione è $x_1=N$, contata da $\binom N0=1$.
 
@@ -135,6 +174,14 @@ Per sei biscotti e tre persone, consentendo porzioni vuote, troviamo
 $$
 \binom{6+3-1}{3-1}=\binom82=28.
 $$
+
+> [!example] Esempi e controesempi — soluzione nonnegativa di una somma
+> **È una distribuzione contata da $\binom{N+r-1}{r-1}$**, con $N=6$ e $r=3$: $(2,0,4)$, $(0,0,6)$, $(1,3,2)$.
+> **Non lo è**, e ciascun esempio viola una condizione:
+> - $(-1,3,4)$: un valore è negativo (non appartiene a $\mathbb N^3$);
+> - $(2,2,3)$: la somma è $7$, non $6$;
+> - i sei biscotti sono **tutti diversi**: allora non contano le quantità ma anche quali biscotti, e le assegnazioni sono $3^6=729$, non $28$;
+> - le tre persone **non si distinguono**: $(6,0,0)$, $(0,6,0)$ e $(0,0,6)$ sarebbero la stessa distribuzione.
 
 ## Porzioni positive e vincoli inferiori
 
@@ -158,7 +205,7 @@ $$
 
 Se $N<r$, non ci sono soluzioni positive: la somma di $r$ interi almeno uguali a $1$ è almeno $r$. In particolare, per $N=0$ il risultato è zero; non occorre usare coefficienti binomiali con indice superiore negativo.
 
-Nel caso di sei biscotti a tre persone con porzioni positive otteniamo $\binom52=10$, anziché $28$.
+Nel caso di sei biscotti a tre persone con porzioni positive otteniamo $\binom52=10$, anziché $28$. L’errore tipico è applicare la formula $\binom{N+r-1}{r-1}$ senza prima sottrarre la dotazione minima: si contano anche le distribuzioni in cui qualcuno riceve zero biscotti, che il vincolo esclude.
 
 La stessa idea tratta minimi diversi. Fissiamo $b_1,\ldots,b_r\in\mathbb N$ e imponiamo $x_i\geq b_i$. Posto $B=b_1+\cdots+b_r$, la sostituzione
 
@@ -180,7 +227,7 @@ $$
 
 restano sei gettoni da distribuire liberamente. Le possibilità sono $\binom93=84$. Non abbiamo eliminato il vincolo: lo abbiamo incorporato nella scelta delle variabili.
 
-Un limite superiore si può talvolta trattare con un semplice complementare. Quante terne nonnegative sommano a $10$ e soddisfano $x_1\leq3$? Senza il limite sono $\binom{12}2=66$. Quelle vietate hanno $x_1\geq4$: sottraendo quattro alla prima variabile diventano terne nonnegative di somma $6$, dunque sono $\binom82=28$. Il risultato è
+Un limite superiore si può talvolta trattare con una sottrazione: contiamo tutte le soluzioni senza il limite e togliamo quelle che lo violano (nel capitolo 06 chiameremo «complementare» l’insieme di ciò che resta fuori da una proprietà). Quante terne nonnegative sommano a $10$ e soddisfano $x_1\leq3$? Senza il limite sono $\binom{12}2=66$. Quelle vietate hanno $x_1\geq4$: sottraendo quattro alla prima variabile diventano terne nonnegative di somma $6$, dunque sono $\binom82=28$. Il risultato è
 
 $$
 66-28=38.
@@ -213,6 +260,59 @@ $$
 $$
 
 La divisione per $6$ sarebbe stata ingiustificata prima di eliminare le ripetizioni. Anche la sottrazione richiede una verifica: con somma $99$ esisterebbe la terna $(33,33,33)$, appartenente a tutti e tre i casi vietati, che non sarebbero più disgiunti.
+
+## Mappa decisionale del conteggio
+
+Davanti a un problema non cercare subito la formula. Chiediti che cosa è un singolo risultato e quali differenze fra due risultati sono visibili. Il diagramma ordina le domande: scegli il ramo che descrive il tuo problema e leggi in fondo la formula e il capitolo dove è dimostrata.
+
+```mermaid
+flowchart TD
+  S["Che cosa sto contando?"]
+  S -->|"una lista di scelte"| L{"Le scelte si possono ripetere?"}
+  L -->|"sì"| L1["nʳ: n scelte per ciascuno dei r posti"]
+  L -->|"no"| L2["n!/(n-r)!: liste senza ripetizioni, cap. 03-04"]
+  S -->|"un gruppo senza ordine"| G{"Gli elementi si possono ripetere?"}
+  G -->|"no"| G1["binomiale C(n,r), cap. 04"]
+  G -->|"sì"| G2["C(n+r-1,r): stelle e sbarre"]
+  S -->|"oggetti in scatole"| O{"Gli oggetti sono distinti?"}
+  O -->|"sì, dimensioni fissate"| O1["multinomiale n!/(n₁!...nₖ!)"]
+  O -->|"sì, senza vincoli"| O2["mⁿ; se ogni scatola è piena: suriezioni, cap. 06"]
+  O -->|"no, sono uguali"| O3["stelle e sbarre; minimi per sostituzione; massimi con cap. 06"]
+```
+
+La tabella seguente è una versione semplificata del cosiddetta «via dei dodici modi» (in inglese *twelvefold way*) per contare. Mette in colonna le tre condizioni più comuni su una distribuzione di $n$ oggetti in $m$ scatole. Nelle celle c’è la formula e, dopo il segno $=$, il valore per $n=4$ oggetti e $m=3$ scatole, così puoi controllare di avere letto bene la riga. Qui $S(n,m)$ è il numero di suriezioni da $n$ a $m$ elementi, definito nel [[Books/Aritmetica-I/06 - Inclusione ed esclusione|capitolo 06]].
+
+| Oggetti | Scatole | Nessun vincolo | Al più un oggetto per scatola | Almeno un oggetto per scatola |
+|---|---|---|---|---|
+| distinti | etichettate | $m^n=81$ | $m(m-1)\cdots(m-n+1)=0$ (un fattore è nullo se $n>m$) | $S(n,m)=36$ |
+| uguali | etichettate | $\binom{n+m-1}{m-1}=15$ | $\binom mn=0$ (zero se $n>m$) | $\binom{n-1}{m-1}=3$ |
+| distinti | senza nome | si somma sul numero di scatole piene: $1+7+6=14$ | $1$ se $n\leq m$, altrimenti $0$ | $S(n,m)/m!=6$ |
+| uguali | senza nome | partizioni di $n$ in al più $m$ parti: $4$ | $1$ se $n\leq m$, altrimenti $0$ | partizioni di $n$ in esattamente $m$ parti: $1$ |
+
+Le prime due righe hanno formule chiuse. Nelle ultime due si divide o si elenca. Dividere per $m!$ nella riga «distinti, senza nome, tutte piene» è lecito perché, con ogni scatola non vuota, i $m!$ modi di dare nomi alle scatole producono suriezioni sempre diverse (sovraconteggio uniforme). Nella riga degli oggetti uguali non esiste una divisione uniforme: per $n=4$ e tre scatole, $(4,0,0)$ ha tre riordinamenti ma $(3,1,0)$ ne ha sei (esercizio 5), e si elencano le partizioni. Nella letteratura il numero $S(n,m)/m!$ si chiama numero di Stirling di seconda specie.
+
+Le stesse quattro idee si traducono nei nomi classici per le scelte di $r$ elementi fra $n$ tipi:
+
+| L’ordine conta? | Ripetizioni? | Nome classico | Quanti sono |
+|---|---|---|---|
+| sì | no | disposizioni semplici | $n!/(n-r)!$ |
+| sì | sì | disposizioni con ripetizione | $n^r$ |
+| no | no | combinazioni | $\binom nr$ |
+| no | sì | combinazioni con ripetizione | $\binom{n+r-1}{r}$ |
+
+Le liste in cui alcuni elementi sono uguali (gli anagrammi) richiedono un terzo ingrediente, i multinomiali.
+
+**Esempi di lettura.** Per ciascun problema indica il ramo del diagramma e controlla il numero.
+
+| Problema | Ramo | Risposta |
+|---|---|---|
+| PIN di quattro cifre | lista, ripetizioni ammesse | $10^4=10000$ |
+| Comitato di $3$ persone fra $10$ | gruppo, senza ripetizioni | $\binom{10}3=120$ |
+| Otto gelati scegliendo fra $5$ gusti (si può ripetere un gusto) | gruppo, con ripetizioni | $\binom{12}4=495$ |
+| Anagrammi di `MAMMA` | oggetti con molteplicità | $5!/(3!\,2!)=10$ |
+| Sei studenti distinti in tre aule, nessuna vuota | oggetti distinti, ogni scatola piena | $S(6,3)=540$ |
+
+Il collegamento con i capitoli precedenti e successivi è questo: il capitolo [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|04]] costruisce la riga dei sottoinsiemi, questo capitolo le righe con oggetti uguali e dimensioni fissate, il [[Books/Aritmetica-I/06 - Inclusione ed esclusione|capitolo 06]] la colonna delle suriezioni e i limiti superiori.
 
 ## Fonti
 

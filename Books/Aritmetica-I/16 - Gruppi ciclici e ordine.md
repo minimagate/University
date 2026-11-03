@@ -1,6 +1,12 @@
 # Gruppi ciclici e ordine
 
-Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi e sottogruppi]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea e Bézout]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi e sottogruppi]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea e Bézout]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]], [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|omomorfismi e unità]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+
+> [!info] In questo capitolo
+> - Imparerai a calcolare potenze (o multipli) di un elemento in un gruppo e a trovarne l'ordine, cioè dopo quanti passi si ritorna al punto di partenza.
+> - Saprai trasformare un'uguaglianza di potenze in una divisibilità, e capire da dove nasce il $\gcd$ nella formula $r/\gcd(r,k)$.
+> - Descriverai tutti i sottogruppi di un gruppo ciclico: uno per ogni divisore dell'ordine, e nessun altro.
+> - L'idea che lega tutto: la divisione euclidea con resto controlla sia il ritorno all'identità sia la struttura dei sottogruppi.
 
 ## Ripetere un solo passo
 
@@ -46,6 +52,10 @@ g^ag^b=g^{a+b}=g^{b+a}=g^bg^a.
 $$
 Un gruppo $G$ si dice **ciclico** se $G=\langle g\rangle$ per qualche $g$, detto **generatore**. Ogni gruppo ciclico è dunque abeliano. Il viceversa fallisce, come vedremo con $U(8)$.
 
+> [!example] Esempi e controesempi — Gruppo ciclico
+> **È ciclico:** $(\mathbb Z,+)=\langle1\rangle$; $(\mathbb Z/12\mathbb Z,+)=\langle[1]\rangle$, ma anche $=\langle[5]\rangle$; il gruppo delle rotazioni di un poligono regolare, generato dalla rotazione di un passo; $U(7)=\langle[3]\rangle$, perché le potenze di $3$ modulo $7$ sono $3,2,6,4,5,1$, cioè tutte le classi non nulle.
+> **Non è ciclico:** $U(8)=\{[1],[3],[5],[7]\}$, perché ogni elemento ha ordine $1$ o $2$ e nessuno genera i quattro elementi (il gruppo è abeliano: viola solo l'esistenza del generatore); $\mathbb Z/2\mathbb Z\times\mathbb Z/2\mathbb Z$ (con la somma componente per componente), che ha quattro elementi ma $(a,b)+(a,b)=(0,0)$ per ogni $(a,b)$, quindi nessun elemento ha ordine $4$; $S_3$, che non è nemmeno abeliano ([[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|capitolo 14]]). Attenzione: $\mathbb Z/4\mathbb Z$, pur avendo anch'esso quattro elementi, è ciclico, generato da $[1]$: avere un dato numero di elementi non basta a decidere.
+
 In notazione additiva, le potenze diventano multipli interi:
 $$
 \langle g\rangle=\{kg:k\in\mathbb Z\}.
@@ -72,6 +82,10 @@ t=qr+s,\qquad 0\leq s<r.
 $$
 Allora $g^t=(g^r)^qg^s=g^s$. Se $g^t=e$, anche $g^s=e$; un resto positivo contraddirebbe la minimalità di $r$. Pertanto $s=0$, cioè $r\mid t$.
 
+> [!abstract] Concetto chiave — Una potenza vale l'identità se e solo se l'esponente è multiplo dell'ordine
+> Se $\operatorname{ord}(g)=r<\infty$: $g^t=e\Longleftrightarrow r\mid t$, e quindi $g^a=g^b\Longleftrightarrow r\mid(a-b)$. Il gruppo $\langle g\rangle$ ha esattamente $r$ elementi.
+> È il passaggio che trasforma un problema su gruppi in un problema di divisibilità tra interi: sostiene tutto il capitolo e il teorema di Lagrange del [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]].
+
 Applicando questo risultato alla differenza degli esponenti troviamo
 $$
 \boxed{g^a=g^b\quad\Longleftrightarrow\quad r\mid(a-b).}
@@ -86,6 +100,10 @@ Se l’ordine è infinito, il sottogruppo generato è invece in corrispondenza b
 > [!warning] Attenzione — Una potenza uguale all’identità non determina l’ordine
 > Da $g^{12}=e$ segue che $\operatorname{ord}(g)$ divide $12$: potrebbe essere $1,2,3,4,6$ oppure $12$. Per provare che l’ordine è $12$ bisogna escludere i divisori propri. Questa divisibilità deriva dalla divisione euclidea; non abbiamo ancora usato il teorema di Lagrange.
 
+> [!example] Esempi e controesempi — Ordine di un elemento
+> **Ha ordine finito:** $[8]\in(\mathbb Z/12\mathbb Z,+)$ ha ordine $3$; $[3]\in U(7)$ ha ordine $6$ ($3^6=729=1+7\cdot104$); l'identità ha sempre ordine $1$.
+> **Ha ordine infinito:** $1\in(\mathbb Z,+)$, perché $m\cdot1=m\neq0$ per ogni $m>0$. Un elemento ha ordine finito esattamente quando una sua potenza con esponente positivo è l'identità; ma $g^{12}=e$ non significa che l'ordine sia $12$ (si veda l'avvertenza sopra).
+
 **Esempio svolto.** Nel gruppo additivo $\mathbb Z/12\mathbb Z$, i multipli di $[8]$ sono $[0],[8],[4],[0],\ldots$. I primi tre sono distinti e $3[8]=[24]=[0]$. Dunque $\operatorname{ord}([8])=3$ e $\langle[8]\rangle=\{[0],[4],[8]\}$. Gli interi $a,b$ danno lo stesso multiplo di $[8]$ precisamente quando $a\equiv b\pmod3$, benché il gruppo ambiente sia definito modulo $12$.
 
 ## L’ordine di una potenza e i generatori
@@ -94,7 +112,7 @@ Sia $\operatorname{ord}(g)=r<\infty$ e sia $k\in\mathbb Z$. Vogliamo trovare il 
 $$
 (g^k)^m=e\quad\Longleftrightarrow\quad r\mid km.
 $$
-Poniamo $d=\gcd(r,k)>0$ e scriviamo
+Ragioniamo con il quadrante dell'inizio: avanzare di $k$ passi alla volta su $r$ posizioni, dopo $m$ mosse si è tornati a zero quando $km$ è multiplo di $r$. Poniamo $d=\gcd(r,k)>0$ e scriviamo
 $$
 r=dr_1,\qquad k=dk_1,\qquad \gcd(r_1,k_1)=1.
 $$
@@ -102,6 +120,11 @@ La condizione equivale a $r_1\mid k_1m$, e quindi a $r_1\mid m$, per il lemma di
 $$
 \boxed{\operatorname{ord}(g^k)=\frac{r}{\gcd(r,k)}.}
 $$
+
+> [!abstract] Concetto chiave — Ordine di una potenza
+> Se $\operatorname{ord}(g)=r$, allora $\operatorname{ord}(g^k)=r/\gcd(r,k)$. In particolare $g^k$ genera $\langle g\rangle$ se e solo se $\gcd(r,k)=1$, e un gruppo ciclico di ordine $r$ ha tanti generatori quanti sono i resti fra $0$ e $r-1$ coprimi con $r$: il numero $\varphi(r)$, definito poco sotto.
+> Dà gli ordini in $\mathbb Z/n\mathbb Z$ e conta i generatori; ritorna nel [[Books/Aritmetica-I/18 - Congruenze esponenziali|capitolo 18]] per le potenze modulo $n$.
+
 La formula comprende $k=0$: $\gcd(r,0)=r$ e $g^0=e$ ha ordine $1$. Comprende anche gli esponenti negativi, perché $\gcd(r,-k)=\gcd(r,k)$. Nella prova, per $k=0$ si hanno $r_1=1,k_1=0$, e la divisibilità rimane valida.
 
 Se invece $g$ ha ordine infinito, $g^k$ ha ordine infinito per ogni $k\neq0$: un’uguaglianza $g^{km}=e$ con $m>0$ darebbe una potenza nonnulla di $g$ uguale all’identità, e passando all’inverso anche una positiva. Per $k=0$ l’ordine è sempre $1$.
@@ -130,7 +153,15 @@ Per il gruppo additivo delle classi modulo $n\geq2$, il generatore $[1]_n$ ha or
 $$
 \boxed{\operatorname{ord}([a]_n)=\frac{n}{\gcd(a,n)}\quad\text{in }(\mathbb Z/n\mathbb Z,+).}
 $$
-Per esempio i generatori additivi modulo $12$ sono $[1],[5],[7],[11]$.
+Per esempio i generatori additivi modulo $12$ sono $[1],[5],[7],[11]$. Per vedere la formula all'opera, ecco gli ordini di tutti gli elementi di $(\mathbb Z/12\mathbb Z,+)$, accanto agli ordini moltiplicativi in $U(7)$ e in $U(9)$ (si cerca il minimo $m>0$ con $a^m\equiv1$):
+
+| Gruppo | Elementi e ordini |
+|---|---|
+| $(\mathbb Z/12\mathbb Z,+)$ | ordine $1$: $[0]$; ordine $2$: $[6]$; ordine $3$: $[4],[8]$; ordine $4$: $[3],[9]$; ordine $6$: $[2],[10]$; ordine $12$: $[1],[5],[7],[11]$ |
+| $U(7)$ | ordine $1$: $[1]$; ordine $2$: $[6]$; ordine $3$: $[2],[4]$; ordine $6$: $[3],[5]$ |
+| $U(9)$ | ordine $1$: $[1]$; ordine $2$: $[8]$; ordine $3$: $[4],[7]$; ordine $6$: $[2],[5]$ |
+
+In $\mathbb Z/12\mathbb Z$ l'ordine di $[a]$ è $12/\gcd(a,12)$: per $[8]$ è $12/4=3$, per $[10]$ è $12/2=6$. Sia $U(7)$ sia $U(9)$ hanno sei elementi e un elemento di ordine $6$: sono ciclici, con $\varphi(6)=2$ generatori ciascuno, e infatti i due gruppi hanno gli stessi ordini, elemento per elemento nella tabella. In ogni riga il numero di elementi con ordine $d$ è $\varphi(d)$, un fatto che dimostreremo sotto per ogni gruppo ciclico.
 
 > [!warning] Attenzione — Specifica l’operazione
 > La formula $n/\gcd(a,n)$ riguarda l’ordine **additivo** di $[a]_n$. L’ordine moltiplicativo riguarda invece $[a]_n\in U(n)$ e cerca il minimo $m>0$ con $a^m\equiv1\pmod n$; non è dato da quella formula.
@@ -164,6 +195,10 @@ $$
 \boxed{H=\langle g^m\rangle.}
 $$
 La prova funziona sia quando $G$ è finito sia quando è infinito.
+
+> [!abstract] Concetto chiave — I sottogruppi di un gruppo ciclico sono ciclici
+> Se $G=\langle g\rangle$ e $H\leq G$, allora $H=\langle g^m\rangle$, dove $m$ è il minimo esponente positivo con $g^m\in H$. Se $G$ è finito di ordine $N$, per ogni $d\mid N$ esiste un unico sottogruppo di ordine $d$ e non ce ne sono altri.
+> Classifica completamente i sottogruppi dei gruppi additivi $\mathbb Z$ e $\mathbb Z/n\mathbb Z$; il confronto con i gruppi non ciclici è il contenuto del [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]].
 
 Applicandola a $(\mathbb Z,+)$ otteniamo che **tutti i suoi sottogruppi sono $d\mathbb Z$, con $d\geq0$**. Il caso $d=0$ dà $\{0\}$; negli altri casi $d$ è il minimo elemento positivo del sottogruppo, quindi è unico. Per esempio $6\mathbb Z$ è generato sia da $6$ sia da $-6$. Più in generale, in un gruppo ciclico infinito $\langle g\rangle$ gli unici generatori dell’intero gruppo sono $g$ e $g^{-1}$: se $g\in\langle g^k\rangle$, allora $g=g^{kt}$ per qualche intero $t$, e l’assenza di ripetizioni impone $kt=1$.
 
@@ -206,7 +241,28 @@ Per $d=1$ si conta il solo neutro, coerentemente con $\varphi(1)=1$.
 | $6$ | $\langle[2]\rangle$ | $[2],[10]$ |
 | $12$ | $\langle[1]\rangle$ | $[1],[5],[7],[11]$ |
 
-Ci sono sei sottogruppi. Per leggere una riga, $H_4=\{[0],[3],[6],[9]\}$ ha quattro elementi, ma soltanto $[3]$ e $[9]$ hanno ordine quattro: appartenere a un sottogruppo non significa generarlo.
+Ci sono sei sottogruppi. Il diagramma seguente li dispone secondo l'inclusione: una freccia da $H_d$ a $H_e$ significa $H_d\subseteq H_e$, e coincide con la relazione $d\mid e$ tra i divisori di $12$. Si legge dal basso verso l'alto, dal sottogruppo banale all'intero gruppo.
+
+```mermaid
+flowchart BT
+    H1["H1 = ⟨0⟩, ordine 1"]
+    H2["H2 = ⟨6⟩, ordine 2"]
+    H3["H3 = ⟨4⟩, ordine 3"]
+    H4["H4 = ⟨3⟩, ordine 4"]
+    H6["H6 = ⟨2⟩, ordine 6"]
+    H12["H12 = ⟨1⟩, ordine 12"]
+    H1 --> H2
+    H1 --> H3
+    H2 --> H4
+    H2 --> H6
+    H3 --> H6
+    H4 --> H12
+    H6 --> H12
+```
+
+L'inclusione corrisponde alla divisibilità. Se $d\mid e$, il sottogruppo ciclico $H_e$ di ordine $e$ ha un sottogruppo di ordine $d$; questo è anche un sottogruppo di $G$ di ordine $d$ e, per unicità, è $H_d$. Viceversa, se $H_d\subseteq H_e$, allora $H_d$ è un sottogruppo del gruppo ciclico $H_e$, e la classificazione appena provata, applicata a $H_e$, dice che $d\mid e$. Nota che $H_3\not\subseteq H_4$, perché $3\nmid4$: infatti $[4]\notin\{[0],[3],[6],[9]\}$.
+
+Per leggere una riga, $H_4=\{[0],[3],[6],[9]\}$ ha quattro elementi, ma soltanto $[3]$ e $[9]$ hanno ordine quattro: appartenere a un sottogruppo non significa generarlo.
 
 ## Approfondimento geometrico: le radici dell’unità
 

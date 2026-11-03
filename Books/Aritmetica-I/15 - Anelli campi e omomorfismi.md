@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|quozienti e buona definizione]], [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|inversi modulari]] e [[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|teorema cinese]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Capirai quali regole del calcolo con gli interi restano valide modulo $n$ e quali no (dividere, cancellare, annullare un prodotto).
+> - Saprai distinguere anello, anello commutativo, dominio d'integrità e campo, con un esempio per ciascun livello, e dire quando $\mathbb Z/n\mathbb Z$ è un campo.
+> - Imparerai a riconoscere un omomorfismo (una funzione che conserva le operazioni), a controllarne la buona definizione e a distinguerlo da un isomorfismo.
+> - L'idea che lega tutto: il teorema cinese diventa un isomorfismo di anelli, che trasporta i calcoli da modulo $mn$ a modulo $m$ e modulo $n$.
+
 ## Cambiare rappresentazione per calcolare meglio
 
 Per calcolare modulo $6$ possiamo conservare un unico resto, oppure conservare due informazioni: la parità e il resto modulo $3$. Il teorema cinese assicura che queste due informazioni individuano una classe modulo $6$. Ma consentono anche di sommare e moltiplicare senza ricostruire ogni volta l'intero di partenza?
@@ -14,11 +20,15 @@ Anelli e campi descrivono il primo aspetto; omomorfismi e isomorfismi descrivono
 
 In questo capitolo per **anello** intendiamo sempre un anello commutativo con identità. È un insieme $R$ con due operazioni interne $+$ e $\cdot$ tali che:
 
-1. $(R,+)$ è un gruppo abeliano, con neutro $0$ e opposto $-a$ di ogni $a$;
+1. $(R,+)$ è un gruppo abeliano (un gruppo la cui operazione è commutativa, [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|capitolo 14]]), con neutro $0$ e opposto $-a$ di ogni $a$;
 2. il prodotto è associativo e commutativo e ha un neutro $1$;
 3. vale la distributività: $a(b+c)=ab+ac$ e $(a+b)c=ac+bc$.
 
 Il prodotto non deve dare un gruppo su tutto $R$: non chiediamo un inverso moltiplicativo per ogni elemento. Questa distinzione permette di includere $\mathbb Z$, dove la somma si può sempre annullare con un opposto, mentre il prodotto per $2$ non si può annullare moltiplicando per un intero.
+
+> [!example] Esempi e controesempi — Anello (nel senso di questo capitolo)
+> **È un anello:** $\mathbb Z$, $\mathbb Q$, $\mathbb Z/6\mathbb Z$ (somma e prodotto sono commutativi, c'è l'$1$, vale la distributività).
+> **Non è un anello:** $\mathbb N$ con le operazioni usuali, perché viola la condizione 1 (manca l'opposto: non c'è $n$ con $3+n=0$); $2\mathbb Z$ (i numeri pari), perché viola la condizione 2: somma e prodotto sono interni e il prodotto è associativo e commutativo, ma non c'è un neutro $1$ fra i pari; le matrici $2\times2$ reali $M_2(\mathbb R)$ (somma e prodotto righe per colonne), perché il prodotto non è commutativo: con $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ e $B=\begin{pmatrix}1&0\\0&0\end{pmatrix}$ si ha $AB=\begin{pmatrix}0&0\\0&0\end{pmatrix}$ ma $BA=A\neq AB$. Le matrici sono però un anello nel senso più ampio, che non richiede la commutatività del prodotto: ci serviranno solo come esempio.
 
 Dagli assiomi segue una regola familiare: $a0=0$. Infatti
 
@@ -59,6 +69,8 @@ Useremo moduli almeno $2$, dunque $[0]_n\neq[1]_n$. L'anello con un solo element
 
 ## Quando si può dividere: unità e campi
 
+In $\mathbb Z$ non si può dividere per $2$, mentre in $\mathbb Q$ sì; modulo $12$ si può dividere per $5$ ma non per $2$. Per descrivere con precisione per chi si può dividere servono le unità.
+
 Un elemento $a\in R$ è una **unità**, o elemento invertibile, se esiste $b\in R$ tale che $ab=ba=1$. L'inverso è unico: se $b$ e $c$ sono inversi di $a$, allora $b=b(ac)=(ba)c=c$. Lo indichiamo con $a^{-1}$.
 
 Le unità formano un insieme indicato con $R^\times$. Questo insieme è un gruppo rispetto al prodotto. Per dimostrarlo, controlliamo ciò che non è automatico quando si passa a un sottoinsieme. Anzitutto $1\in R^\times$. Se $a,b\in R^\times$, allora
@@ -70,6 +82,10 @@ $$
 e analogamente nell'altro ordine: dunque $ab$ è ancora invertibile. Inoltre $a^{-1}$ appartiene a $R^\times$, perché ha inverso $a$. L'associatività si eredita da $R$. Nel nostro caso il gruppo è anche abeliano.
 
 Per esempio, $\mathbb Z^\times=\{1,-1\}$ e $\mathbb Q^\times=\mathbb Q\setminus\{0\}$. La somma non è l'operazione di questo gruppo: due unità possono sommare a zero.
+
+> [!example] Esempi e controesempi — Unità
+> **È una unità:** $-1$ in $\mathbb Z$ (perché $(-1)(-1)=1$); $[5]_{12}$ in $\mathbb Z/12\mathbb Z$ (perché $5\cdot5=25\equiv1$); ogni elemento non nullo di $\mathbb Q$.
+> **Non è una unità:** $2$ in $\mathbb Z$ (nessun intero $b$ dà $2b=1$); $[2]_{12}$ in $\mathbb Z/12\mathbb Z$ (un prodotto $2b$ è pari, mentre $1+12k$ è dispari, quindi $2b\equiv1\pmod{12}$ è impossibile); lo zero, in ogni anello con $0\neq1$, perché $0b=0\neq1$.
 
 Per gli anelli modulari, il [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|criterio degli inversi]] dà
 
@@ -98,6 +114,14 @@ Invece $[2]_{12}$ non ha inverso. L'equazione $[2]_{12}x=[4]_{12}$ ha due soluzi
 
 Un **campo** è un anello commutativo con $0\neq1$ in cui ogni elemento non nullo è invertibile. Dunque $\mathbb Q$ è un campo, mentre $\mathbb Z$ non lo è. L'ipotesi $0\neq1$ è parte della definizione: esclude l'anello zero.
 
+> [!example] Esempi e controesempi — Campo
+> **È un campo:** $\mathbb Q$, $\mathbb R$, $\mathbb Z/7\mathbb Z$ (ogni classe non nulla è coprima con $7$).
+> **Non è un campo:** $\mathbb Z$, perché $2$ non è invertibile (viola «ogni non nullo è invertibile», le altre condizioni valgono); $\mathbb Z/1\mathbb Z$, l'anello zero, che viola $0\neq1$ e nulla più; $\mathbb Z/6\mathbb Z$, dove $[2]$ non ha inverso. Se si toglie la sola commutatività si ottengono strutture più rare, come i quaternioni, che qui non servono.
+
+> [!abstract] Concetto chiave — $\mathbb Z/n\mathbb Z$ è un campo se e solo se $n$ è primo
+> Per $n\geq2$: $\mathbb Z/n\mathbb Z$ è un campo $\Longleftrightarrow$ $n$ è primo. Solo modulo un primo si può dividere per ogni classe non nulla.
+> È il pilastro che permette di usare l'algebra «come in $\mathbb Q$» modulo $p$: ritorna in [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|17]] (piccolo teorema di Fermat) e in [[Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento|20]] (polinomi modulo $p$).
+
 **Teorema.** Per $n\geq2$, l'anello $\mathbb Z/n\mathbb Z$ è un campo se e solo se $n$ è primo.
 
 Se $n=p$ è primo, una classe non nulla ha un rappresentante $a$ con $1\leq a<p$. Nessun divisore primo di $p$ divide $a$, dunque $\gcd(a,p)=1$ e la classe è invertibile.
@@ -125,7 +149,61 @@ Infatti, se $a\neq0$, esiste $a^{-1}$ e il ragionamento precedente forza $b=0$. 
 > [!warning] Attenzione — Non ogni elemento non nullo si può cancellare
 > In un anello generico $ab=ac$ dà $a(b-c)=0$, ma da $a\neq0$ non segue necessariamente $b=c$. Modulo $6$, $[2][1]=[2][4]$ eppure $[1]\neq[4]$. Una unità si può sempre cancellare; in un anello senza divisori dello zero si può cancellare ogni elemento non nullo. Quest'ultima proprietà non basta a essere un campo: $\mathbb Z$ permette la cancellazione ma $2$ non è invertibile.
 
+Un anello con $0\neq1$ e senza divisori dello zero si chiama **dominio d'integrità** (o semplicemente dominio). Serve un nome per questo caso intermedio: sono gli anelli dove l'annullamento del prodotto e la cancellazione funzionano, anche se non si può dividere per tutti. Ogni campo è un dominio, per quanto visto sopra; $\mathbb Z$ è un dominio ma non un campo. Per gli anelli finiti la distinzione sparisce: se $R$ è un dominio finito e $a\neq0$, la mappa $x\mapsto ax$ è iniettiva per la cancellazione, quindi suriettiva perché $R$ è finito, e allora $ax=1$ per qualche $x$. Dunque un dominio finito è un campo.
+
+> [!example] Esempi e controesempi — Dominio d'integrità
+> **È un dominio:** $\mathbb Z$ (se $ab=0$ in $\mathbb Z$ allora $a=0$ o $b=0$); $\mathbb Z/7\mathbb Z$ e $\mathbb Q$, che sono campi.
+> **Non è un dominio:** $\mathbb Z/6\mathbb Z$, perché $[2][3]=[0]$ con entrambi i fattori non nulli (viola l'assenza di divisori dello zero); $\mathbb Z/1\mathbb Z$, perché viola $0\neq1$.
+
+### La mappa delle strutture
+
+Per orientarti, ecco la gerarchia: ogni freccia aggiunge una richiesta alla struttura precedente, e sotto ogni livello c'è un esempio che appartiene a quel livello ma non al successivo. Leggi dall'alto verso il basso.
+
+```mermaid
+flowchart TD
+    G["Gruppo abeliano, solo somma: ℤ con +"]
+    A["Anello in senso ampio: prodotto associativo, anche non commutativo"]
+    N["Non commutativo: matrici 2×2 reali"]
+    C["Anello di questo capitolo, commutativo con 1: ℤ/6ℤ, ℤ"]
+    D["Dominio d'integrità: nessun divisore dello zero, ℤ"]
+    K["Campo: ogni non nullo è invertibile, ℤ/7ℤ, ℚ, ℝ"]
+    G -->|"aggiungi un prodotto associativo e la distributività"| A
+    A -->|"il prodotto è commutativo e ha l'1"| C
+    A -.->|"esempio fuori da C"| N
+    C -->|"niente divisori dello zero e 0 diverso da 1"| D
+    C -.->|"esempio fuori da D"| Z["ℤ/6ℤ: 2·3=0, non è un dominio"]
+    D -->|"ogni elemento non nullo ha un inverso"| K
+```
+
+Una frase sul caso che useremo di più: $\mathbb Z/n\mathbb Z$ è sempre un anello commutativo; è un dominio se e solo se $n$ è primo, e in tal caso è un campo (per un anello finito le due cose coincidono). La tabella seguente confronta alcuni esempi proprietà per proprietà: «unità» indica gli invertibili, e per $\mathbb Z/n\mathbb Z$ sono i resti coprimi con $n$.
+
+| Struttura | Commutativo? | Ha l'$1$? | Unità | Divisori dello zero | Dominio? | Campo? |
+|---|---|---|---|---|---|---|
+| $\mathbb Z$ | sì | sì | $\pm1$ | nessuno | sì | no |
+| $\mathbb Q$ | sì | sì | tutti i non nulli | nessuno | sì | sì |
+| $\mathbb Z/6\mathbb Z$ | sì | sì | $1,5$ | $2,3,4$ | no | no |
+| $\mathbb Z/7\mathbb Z$ | sì | sì | $1,\ldots,6$ | nessuno | sì | sì |
+| $\mathbb Z/8\mathbb Z$ | sì | sì | $1,3,5,7$ | $2,4,6$ | no | no |
+| $2\mathbb Z$ | sì | no | nessuna (manca l'$1$) | nessuno | non è un anello nel nostro senso | no |
+| $M_2(\mathbb R)$ | no | sì (la matrice identità) | le matrici di determinante non nullo | sì, per esempio $A$ sopra: $AB=0$ | non è un anello commutativo | no |
+
+In $2\mathbb Z$ non c'è l'$1$, quindi non ha senso parlare di inversi; tuttavia il prodotto di due pari non nulli è non nullo. In $M_2(\mathbb R)$ valgono $AB=0$ con $A,B\neq0$ (e anche $A^2=0$): è un esempio in cui il prodotto non è commutativo e lo zero si ottiene da fattori non nulli.
+
+### Il legame con i gruppi del capitolo 14
+
+Un anello contiene due gruppi, che non vanno confusi. Il primo è il **gruppo additivo** $(R,+)$: è sempre abeliano e comprende tutti gli elementi, zero compreso. Il secondo è il **gruppo delle unità** $(R^\times,\cdot)$: contiene soltanto gli invertibili e non contiene lo zero (se $0\neq1$). Per $R=\mathbb Z/n\mathbb Z$ si ha $(R,+)$ di ordine $n$ e $U(n)=R^\times$ con tanti elementi quanti sono i resti coprimi con $n$.
+
+| Anello | Gruppo additivo $(R,+)$ | Gruppo delle unità $R^\times$ |
+|---|---|---|
+| $\mathbb Z/12\mathbb Z$ | $12$ elementi: tutte le classi | $U(12)=\{1,5,7,11\}$, $4$ elementi |
+| $\mathbb Z/7\mathbb Z$ | $7$ elementi | $U(7)$, $6$ elementi: tutte le classi non nulle |
+| $\mathbb Q$ | $(\mathbb Q,+)$ | $\mathbb Q\setminus\{0\}$ con il prodotto |
+
+Un campo è dunque un anello in cui $R^\times$ è tutto $R$ meno lo zero. Nel [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]] vedremo che il gruppo additivo $\mathbb Z/n\mathbb Z$ è sempre ciclico, mentre $U(n)$ non lo è sempre.
+
 ## Funzioni che conservano le operazioni
+
+Richiamiamo i termini sulle funzioni ([[Books/Aritmetica-I/03 - Contare attraverso le funzioni|capitolo 03]]): una funzione è **iniettiva** se elementi diversi hanno immagini diverse, **suriettiva** se ogni elemento del codominio è un'immagine, **biiettiva** se è entrambe le cose.
 
 Siano $G,H$ gruppi, scritti moltiplicativamente. Un **omomorfismo di gruppi** è una funzione $f:G\to H$ tale che
 
@@ -141,6 +219,10 @@ $$
 
 quindi $f(x^{-1})=f(x)^{-1}$. Per gruppi additivi le stesse conclusioni si scrivono $f(0)=0$ e $f(-x)=-f(x)$.
 
+> [!abstract] Concetto chiave — Omomorfismo: una funzione che conserva le operazioni
+> $f(xy)=f(x)f(y)$ per i gruppi; $f(a+b)=f(a)+f(b)$, $f(ab)=f(a)f(b)$ e $f(1)=1$ per gli anelli. Ne seguono la conservazione di neutri e inversi.
+> È ciò che rende lecito «calcolare altrove e tornare»: lo useremo per il teorema cinese qui sotto e per il confronto fra gruppi nel [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]].
+
 Per anelli $R,S$, un **omomorfismo di anelli** è una funzione $f:R\to S$ che, per ogni $a,b\in R$, soddisfa
 
 $$
@@ -149,6 +231,11 @@ f(ab)=f(a)f(b),\qquad f(1_R)=1_S.
 $$
 
 La conservazione di $1$ è una nostra convenzione esplicita. Le prime due proprietà, da sole, non la garantiscono: la funzione costante zero le soddisfa, ma fra anelli con $0\neq1$ non conserva $1$. Poiché un omomorfismo di anelli è anche un omomorfismo dei gruppi additivi, conserva $0$, opposti e differenze. Conserva inoltre le unità: se $aa^{-1}=1$, allora $f(a)f(a^{-1})=1$.
+
+> [!example] Esempi e controesempi — Omomorfismo di anelli
+> **È un omomorfismo:** la riduzione $\pi_n:\mathbb Z\to\mathbb Z/n\mathbb Z$; la riduzione $\mathbb Z/12\mathbb Z\to\mathbb Z/4\mathbb Z$, $[a]_{12}\mapsto[a]_4$ (ben definita perché $4\mid12$; per esempio $[5]\cdot[7]=[11]$ in $\mathbb Z/12\mathbb Z$ e $[1]\cdot[3]=[3]$ in $\mathbb Z/4\mathbb Z$, come $[11]_{12}\mapsto[3]_4$); l'inclusione $\mathbb Z\to\mathbb Q$.
+> **Non è un omomorfismo:** $x\mapsto2x$ su $\mathbb Z$, che conserva la somma ma non il prodotto né l'$1$; $x\mapsto x^2$ su $\mathbb Z$, che conserva il prodotto e $f(1)=1$ ma non la somma, perché $(1+1)^2=4\neq1+1$; la funzione costante $0$ da $\mathbb Z$ in sé, che conserva somma e prodotto ma non l'$1$; $x\mapsto x+1$ su $\mathbb Z$, una biiezione che non manda $0$ in $0$ e quindi non conserva la somma.
+> **Non è nemmeno una funzione:** $\mathbb Z/4\mathbb Z\to\mathbb Z/6\mathbb Z$, $[a]_4\mapsto[a]_6$. Poiché $[0]_4=[4]_4$ ma $[0]_6\neq[4]_6$, la formula dipende dal rappresentante. Qui la buona definizione fallisce perché $6\nmid4$ (si veda l'esercizio 7).
 
 La proiezione $\pi_n:\mathbb Z\to\mathbb Z/n\mathbb Z$, $a\mapsto[a]_n$, è un omomorfismo suriettivo. Non è iniettivo: $0$ e $n$ hanno la stessa immagine. L'inclusione $\mathbb Z\to\mathbb Q$ è invece iniettiva, ma non suriettiva.
 
@@ -165,7 +252,7 @@ Lo stesso argomento vale per il prodotto e $f^{-1}(1_S)=1_R$. Per gruppi si ripe
 
 ## Il teorema cinese come isomorfismo
 
-Prima di costruire la mappa, specifichiamo i calcoli nel codominio. Per anelli $R,S$, il **prodotto diretto** $R\times S$ ha operazioni componente per componente:
+Prima di costruire la mappa, specifichiamo i calcoli nel codominio. Per anelli $R,S$, il **prodotto diretto** $R\times S$ (detto anche prodotto di anelli: l'insieme delle coppie $(a,b)$ con $a\in R$, $b\in S$) ha operazioni componente per componente:
 
 $$
 (a,b)+(c,d)=(a+c,b+d),\qquad
@@ -197,6 +284,10 @@ F([x]_{mn}[y]_{mn})=([xy]_m,[xy]_n)
 $$
 
 e $F([1]_{mn})=([1]_m,[1]_n)$, il neutro moltiplicativo del prodotto.
+
+> [!abstract] Concetto chiave — Teorema cinese come isomorfismo
+> Per $m,n\geq2$, la mappa $F:\mathbb Z/mn\mathbb Z\to\mathbb Z/m\mathbb Z\times\mathbb Z/n\mathbb Z$, $[x]_{mn}\mapsto([x]_m,[x]_n)$, è sempre un omomorfismo ed è un isomorfismo se e solo se $\gcd(m,n)=1$.
+> Permette di calcolare modulo $mn$ lavorando modulo $m$ e modulo $n$ separatamente; ritorna in [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|17]] per contare le unità e per la moltiplicatività di $\varphi$.
 
 **Teorema cinese, forma strutturale.** La mappa $F$ è un isomorfismo se e solo se $\gcd(m,n)=1$.
 

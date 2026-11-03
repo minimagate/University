@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze e inversi]], [[Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto|sistemi modulari]], [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|ordine e gruppi ciclici]], [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|Eulero e Fermat]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
+> [!info] In questo capitolo
+> - Risolverai equazioni del tipo $a^x\equiv b\pmod n$, dove l'incognita è l'*esponente*.
+> - Capirai che il problema si divide in due: trovare il periodo delle potenze (l'ordine di $a$) e collocare $b$ dentro quel periodo.
+> - Descriverai *tutte* le soluzioni come una classe $x_0+rt$, e saprai riconoscere quando non ce ne sono.
+> - Con modulo composto spezzerai il problema con il teorema cinese e controllerai la compatibilità degli esponenti.
+
 ## Cercare l’esponente invece della base
 
 Quali interi $x$ soddisfano
@@ -29,11 +35,11 @@ $$
 
 con $a,b$ noti e $x$ incognito. In questo capitolo supponiamo inizialmente $n\ge2$ e $\gcd(a,n)=1$, e cerchiamo $x\in\mathbb Z$. Alla fine vedremo che cosa cambia senza l’ipotesi sulla base.
 
-Per gli esponenti negativi la scrittura va interpretata nelle classi: se $g=[a]_n\in U(n)$, definiamo $g^{-h}=(g^{-1})^h$ per $h>0$. Per esempio $[3]_{13}^{-1}=[9]_{13}$, perché $3\cdot9\equiv1\pmod{13}$. L’inverso usato qui è una classe modulare. Scrivere $a^x\equiv b\pmod n$ per $x<0$ significherà dunque $[a]_n^x=[b]_n$.
+Qui $U(n)$ indica, come nel [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]], il gruppo delle classi invertibili modulo $n$, cioè quelle $[a]_n$ con $\gcd(a,n)=1$. Per gli esponenti negativi la scrittura va interpretata nelle classi: se $g=[a]_n\in U(n)$, definiamo $g^{-h}=(g^{-1})^h$ per $h>0$. Per esempio $[3]_{13}^{-1}=[9]_{13}$, perché $3\cdot9\equiv1\pmod{13}$. L’inverso usato qui è una classe modulare. Scrivere $a^x\equiv b\pmod n$ per $x<0$ significherà dunque $[a]_n^x=[b]_n$.
 
 ## Il periodo esatto delle potenze
 
-Poniamo $g=[a]_n$. Il gruppo $U(n)$ è finito, quindi $g$ ha ordine finito. Ricordiamo dal [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]] che
+Per descrivere tutte le soluzioni serve sapere dopo quanti passi le potenze si ripetono: questo numero è l'ordine. Poniamo $g=[a]_n$. Il gruppo $U(n)$ è finito, quindi $g$ ha ordine finito. Ricordiamo dal [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]] che l'**ordine** di $g$ è il più piccolo esponente positivo che riporta a $1$:
 
 $$
 r=\operatorname{ord}_n(a)
@@ -44,10 +50,11 @@ Si può anche vedere direttamente perché l’insieme non sia vuoto. Tra le pote
 
 La proprietà decisiva è
 
-$$
-\boxed{g^x=g^y\quad\Longleftrightarrow\quad r\mid(x-y)}
-\qquad(x,y\in\mathbb Z).
-$$
+> [!abstract] Concetto chiave — Le potenze sono uguali se e solo se gli esponenti sono congrui modulo l'ordine
+> $$
+> g^x=g^y\quad\Longleftrightarrow\quad r\mid(x-y)\qquad(x,y\in\mathbb Z),\qquad r=\operatorname{ord}(g).
+> $$
+> Trasforma un'equazione fra potenze in una congruenza fra esponenti. È il pilastro del capitolo: si riusa nelle soluzioni $x_0+rt$, nel prodotto di ordini e nel periodo dei decimali ([[Books/Aritmetica-I/19 - Frazioni e sviluppi decimali|capitolo 19]]).
 
 **Dimostrazione.** La cancellazione nel gruppo dà $g^x=g^y$ se e solo se $g^{x-y}=1$. Per capire gli esponenti che producono $1$, dividiamo un intero qualsiasi $h$ per $r$:
 
@@ -83,7 +90,7 @@ $$
 \mathbb Z\longrightarrow U(n),\qquad x\longmapsto g^x
 $$
 
-ha come immagine il sottogruppo ciclico
+ha come immagine il sottogruppo ciclico (l'insieme di tutte le potenze di $g$, descritto nel [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|capitolo 16]])
 
 $$
 \langle g\rangle=\{1,g,\ldots,g^{r-1}\}.
@@ -104,6 +111,13 @@ $$
 $$
 
 Infatti la congruenza equivale a $g^x=g^{x_0}$, e la proprietà precedente equivale a $r\mid(x-x_0)$. Questa è sia la prova che tutti gli interi indicati funzionano, sia la prova che non ve ne sono altri.
+
+> [!example] Esempi e controesempi — congruenza esponenziale $a^x\equiv b\pmod n$
+> **È risolvibile:** $3^x\equiv9\pmod{13}$ ($b$ compare nel ciclo $1,3,9$: $x\equiv2\pmod3$); $5^x\equiv8\pmod{13}$ ($x\equiv3\pmod4$).
+> **Non è risolvibile, $b$ non è invertibile:** $2^x\equiv6\pmod9$. Le potenze di $2$ sono unità modulo $9$, ma $\gcd(6,9)=3$.
+> **Non è risolvibile, $b$ è invertibile ma fuori dal ciclo:** $4^x\equiv2\pmod{17}$. Le potenze di $4$ sono $1,4,16,13$, e $2$ non compare.
+> **Non è risolvibile, le congruenze locali sono compatibili da sole ma non insieme:** $2^x\equiv7\pmod{15}$ (vedi sotto).
+> **La base non è invertibile, la teoria non si applica:** $2^x\equiv0\pmod8$ è vera per tutti gli $x\ge3$ e falsa per $x\le2$ ($x\in\mathbb N$): non è una classe di esponenti $x_0+rt$ (vedi l'ultima sezione).
 
 Se il problema richiede $x\in\mathbb N$, si tengono soltanto gli esponenti non negativi. Scegliendo il rappresentante $0\le x_0<r$, la risposta diventa $x=x_0+rt$ con $t\in\mathbb N$. Ricordiamo che qui $0\in\mathbb N$.
 
@@ -194,10 +208,11 @@ $$
 
 Quando è compatibile, le soluzioni formano una classe modulo $\operatorname{mcm}(r_u,r_v)$. Questo coincide proprio con l’ordine globale:
 
-$$
-\boxed{\operatorname{ord}_{uv}(a)
-=\operatorname{mcm}\bigl(\operatorname{ord}_u(a),\operatorname{ord}_v(a)\bigr).}
-$$
+> [!abstract] Concetto chiave — Ordine modulo un prodotto di moduli coprimi
+> $$
+> \operatorname{ord}_{uv}(a)=\operatorname{mcm}\bigl(\operatorname{ord}_u(a),\operatorname{ord}_v(a)\bigr)\qquad(\gcd(u,v)=1,\ \gcd(a,uv)=1).
+> $$
+> Permette di calcolare l'ordine modulo un numero composto dai suoi fattori. Verrà usato anche per i periodi decimali ([[Books/Aritmetica-I/19 - Frazioni e sviluppi decimali|capitolo 19]]) e nei moduli composti del [[Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento|capitolo 20]].
 
 **Dimostrazione.** Per ogni intero positivo $h$,
 
@@ -253,6 +268,23 @@ Modulo $3$ diventa $(-1)^x\equiv1$, quindi $x\equiv0\pmod2$. Modulo $5$ diventa 
 > Scomporre $n$ in fattori coprimi permette di separare la congruenza nei valori. I successivi moduli per $x$ sono gli ordini delle basi: non ereditano la coprimalità. Per $3$ modulo $7$ e $13$ gli ordini sono $6$ e $3$; per $2$ modulo $3$ e $5$ sono $2$ e $4$. Occorre sempre controllare la compatibilità del sistema nell’esponente.
 
 Il percorso di soluzione è quindi: verificare l’invertibilità della base, determinare gli ordini utili, cercare l’appartenenza ai sottogruppi locali, tradurla in condizioni su $x$, controllare la compatibilità e descrivere tutti gli esponenti. Un controllo diretto di un rappresentante aiuta a intercettare errori di calcolo; la completezza deriva dalle equivalenze dimostrate.
+
+Lo schema seguente riassume il metodo. Si legge dall'alto: ogni rombo è una domanda, e le frecce indicano la risposta. Quando il modulo si spezza, ciascuna delle due congruenze locali si risolve con il ramo «no» del secondo rombo (ordine, appartenenza), e si torna poi al controllo di compatibilità.
+
+```mermaid
+flowchart TD
+A["Risolvere a^x ≡ b mod n"] --> B{"a invertibile? gcd(a, n) = 1"}
+B -- "no" --> C["Base non invertibile: successione eventualmente periodica, analisi a parte"]
+B -- "sì" --> D{"n si spezza in fattori coprimi u e v?"}
+D -- "no" --> I["Calcola r = ord(a) tra i divisori di φ(n)"]
+I --> J{"b appartiene alle potenze di a?"}
+J -- "no" --> G["Nessuna soluzione"]
+J -- "sì" --> K["Trova x0 con a^x0 ≡ b: soluzioni x = x0 + r·t"]
+D -- "sì" --> E["Risolvi modulo u e modulo v: x ≡ c mod r_u, x ≡ d mod r_v"]
+E --> F{"gcd(r_u, r_v) divide d − c ?"}
+F -- "no" --> G
+F -- "sì" --> H["Una classe x ≡ x0 mod mcm(r_u, r_v)"]
+```
 
 ## Se la base non è invertibile
 

@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|linguaggio, insiemi e funzioni]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
 
+> [!info] In questo capitolo
+> - Riconoscerai quando una relazione è un'equivalenza e, se non lo è, quale delle tre proprietà manca.
+> - Passerai da elemento a classe a insieme quoziente, sapendo che le classi formano una partizione.
+> - Controllerai quando una formula sulle classi è ben definita, cioè non dipende dal rappresentante scelto.
+> - L'idea che lega tutto: per trattare come un solo oggetto cose diverse, si raccolgono in un insieme e si lavora sull'insieme; la fatica sta nel verificare che i risultati non dipendano dal nome scelto.
+
 ## Una quantità, molte rappresentazioni
 
 Mezza torta e due quarti di torta sono la stessa quantità. Eppure le scritture $1/2$ e $2/4$ sono diverse: se registriamo numeratore e denominatore, otteniamo le coppie distinte $(1,2)$ e $(2,4)$. Come possiamo costruire un oggetto matematico che conservi la quantità e dimentichi questa differenza di rappresentazione?
@@ -36,17 +42,30 @@ $$
 
 Infatti la somma di due multipli di $n$ è ancora un multiplo di $n$.
 
-La divisibilità sui naturali, incontrata nel [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|capitolo 08]], esprime invece un ordine parziale: è riflessiva, transitiva e **antisimmetrica**, ossia
+La divisibilità sui naturali, incontrata nel [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|capitolo 08]], esprime invece un **ordine parziale**, cioè una relazione riflessiva, transitiva e **antisimmetrica**, ossia
 
 $$
 a\mid b\ \text{e}\ b\mid a\quad\Longrightarrow\quad a=b
 \qquad(a,b\in\mathbb N).
 $$
 
-Non è simmetrica: $2\mid6$ ma $6\nmid2$. Un’equivalenza permette di identificare elementi diversi; un ordine serve a confrontarli.
+Non è simmetrica: $2\mid6$ ma $6\nmid2$. È «parziale» perché non tutte le coppie sono confrontabili: né $2\mid3$ né $3\mid2$. Un’equivalenza permette di identificare elementi diversi; un ordine serve a confrontarli.
 
 > [!warning] Attenzione — Antisimmetria non significa assenza di simmetria
 > La simmetria richiede $xRy\Rightarrow yRx$. L’antisimmetria richiede che, se valgono entrambe, allora $x=y$. L’uguaglianza soddisfa tutte e due le proprietà. La congruenza modulo $5$ è simmetrica ma non antisimmetrica su $\mathbb Z$, perché $1\equiv6\pmod5$ e $6\equiv1\pmod5$, mentre $1\ne6$.
+
+> [!example] Esempi e controesempi — relazione di equivalenza
+> **È un'equivalenza:** l'uguaglianza; «avere la stessa parità» su $\mathbb Z$; la congruenza modulo $n$; «essere nati nello stesso anno» su un gruppo di persone.
+>
+> **Non è un'equivalenza.** Sull'insieme $X=\{1,2,3\}$ ecco tre relazioni, ciascuna delle quali viola *esattamente una* proprietà (il controllo è lo stesso su ogni coppia: basta una coppia che fallisce).
+>
+> | Relazione (coppie) | Riflessiva | Simmetrica | Transitiva | Che cosa va storto |
+> |---|---|---|---|---|
+> | $R_1=\{(1,1),(2,2)\}$ | **no** | sì | sì | manca $(3,3)$: l'elemento $3$ non è in relazione nemmeno con sé stesso, quindi $\{z:zR_13\}=\varnothing$ e non esiste una «classe di $3$» |
+> | $R_2=\{(1,1),(2,2),(3,3),(1,2)\}$ | sì | **no** | sì | c'è $(1,2)$ ma non $(2,1)$ |
+> | $R_3=\{(1,1),(2,2),(3,3),(1,2),(2,1),(2,3),(3,2)\}$ | sì | sì | **no** | $1R_32$ e $2R_33$, ma non $1R_33$ |
+>
+> Su $\mathbb Z$ lo stesso accade con $\le$ (riflessiva e transitiva, non simmetrica) e con «$|x-y|\le1$» (riflessiva e simmetrica, non transitiva: esercizio 2). In $R_3$ il difetto è tipico: ogni elemento è «vicino» ai suoi vicini, ma la vicinanza non si propaga.
 
 ## Le classi e il motivo per cui non si sovrappongono
 
@@ -58,11 +77,14 @@ $$
 
 Per riflessività $x\in[x]$, quindi nessuna classe è vuota. Un elemento della classe si chiama **rappresentante**: è un elemento che usiamo per nominare tutto l’insieme.
 
-Il fatto decisivo è
+Il fatto decisivo, su cui si regge il resto del capitolo, è questo.
 
-$$
-\boxed{[x]=[y]\quad\Longleftrightarrow\quad x\sim y.}
-$$
+> [!abstract] Concetto chiave — Classi uguali o disgiunte
+> $$
+> [x]=[y]\quad\Longleftrightarrow\quad x\sim y.
+> $$
+> Di conseguenza due classi sono uguali oppure disgiunte, e le classi di un'equivalenza formano una partizione di $X$.
+> È il motivo per cui si può «identificare» senza incoerenze; tornerà con le classi laterali nel [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]] e con $\mathbb Z/n\mathbb Z$ come anello nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]].
 
 Dimostriamolo senza confondere appartenenza e uguaglianza. Supponiamo $x\sim y$. Se $z\in[x]$, allora $z\sim x$ e dunque $z\sim y$ per transitività: quindi $z\in[y]$. Abbiamo provato $[x]\subseteq[y]$. Per simmetria $y\sim x$, e lo stesso ragionamento dà l’inclusione opposta. Viceversa, se $[x]=[y]$, poiché $x\in[x]$ otteniamo $x\in[y]$, ossia $x\sim y$.
 
@@ -83,6 +105,14 @@ Per esempio $[2]=[6]=[0]$: i tre nomi indicano lo stesso sottoinsieme di $X$. Le
 ## Partizioni e quozienti: due modi di descrivere la stessa scelta
 
 Una **partizione** di $X$ è una famiglia $\mathcal P$ di sottoinsiemi non vuoti di $X$, detti blocchi, tale che la loro unione sia $X$ e due blocchi distinti siano disgiunti. Ogni elemento appartiene dunque a esattamente un blocco. Se $X$ è vuoto, la famiglia vuota è la sua partizione.
+
+> [!example] Esempi e controesempi — partizione
+> **È una partizione di $\{1,2,3\}$:** $\{\{1,2\},\{3\}\}$; anche $\{\{1\},\{2\},\{3\}\}$ e $\{\{1,2,3\}\}$.
+>
+> **Non è una partizione di $\{1,2,3\}$** (ogni famiglia viola una sola condizione):
+> - $\{\{1\},\{2\}\}$: l'unione non è $X$, manca il $3$;
+> - $\{\{1,2\},\{2,3\}\}$: i blocchi sono distinti ma non disgiunti, perché contengono entrambi $2$;
+> - $\{\{1,2\},\varnothing,\{3\}\}$: un blocco è vuoto.
 
 Un’equivalenza produce una partizione: le classi sono non vuote, ricoprono $X$ perché $x\in[x]$, e sono uguali o disgiunte. L’insieme di queste classi è l’**insieme quoziente**:
 
@@ -108,7 +138,19 @@ $$
 \pi:X\longrightarrow X/{\sim},\qquad \pi(x)=[x]
 $$
 
-è la **proiezione canonica**. È suriettiva: ogni elemento del quoziente è, per definizione, $[x]$ per qualche $x\in X$. Generalmente non è iniettiva, proprio perché può identificare elementi distinti.
+è la **proiezione canonica**. È suriettiva (ogni elemento d'arrivo è immagine di qualcuno, come nel [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]]): ogni elemento del quoziente è, per definizione, $[x]$ per qualche $x\in X$. Generalmente non è iniettiva (elementi distinti possono avere la stessa immagine), proprio perché può identificare elementi distinti.
+
+Lo schema seguente mostra i tre livelli per la parità su $\{0,\ldots,7\}$: si legge da sinistra a destra, dagli elementi alle classi, dalle classi al quoziente. Le frecce dagli elementi alle classi sono la proiezione $\pi$.
+
+```mermaid
+flowchart LR
+  A["elementi: 0, 2, 4, 6"] -->|"π"| C0["classe [0] (un sottoinsieme di X)"]
+  B["elementi: 1, 3, 5, 7"] -->|"π"| C1["classe [1] (un sottoinsieme di X)"]
+  C0 --> Q["quoziente X/∼ (un elemento per classe, quindi 2 elementi)"]
+  C1 --> Q
+```
+
+Leggi così: $2\in[2]=[0]$ e $[0]\in X/{\sim}$. Un elemento sta in una classe; una classe sta nel quoziente.
 
 > [!warning] Attenzione — Elemento, classe e quoziente sono tre livelli diversi
 > Si scrive $x\in[x]$, mentre $[x]\in X/{\sim}$. Nel quoziente gli elementi sono sottoinsiemi di $X$. Da $[x]=[y]$ segue $x\sim y$, non necessariamente $x=y$.
@@ -146,6 +188,8 @@ Il numero $7$ è l’unico rappresentante tra $0$ e $11$, ma non è l’unico ra
 
 ## Che cosa significa definire una funzione sulle classi
 
+Un oggetto del quoziente ha molti nomi: $[2]_6$ e $[8]_6$ sono la stessa classe. Se una formula calcola il risultato guardando il nome scelto, la stessa classe potrebbe ricevere risultati diversi, e allora non descriverebbe una funzione. Serve un controllo, ed è quello che segue.
+
 Supponiamo di avere una funzione $h:X\to Y$ e di voler porre
 
 $$
@@ -153,11 +197,14 @@ $$
 \qquad \overline h([x])=h(x).
 $$
 
-Perché sia una funzione, la stessa classe deve avere una sola immagine, qualunque sia il suo nome. La condizione precisa è
+Perché sia una funzione, la stessa classe deve avere una sola immagine, qualunque sia il suo nome. La condizione precisa è la seguente.
 
-$$
-x\sim x'\quad\Longrightarrow\quad h(x)=h(x').
-$$
+> [!abstract] Concetto chiave — Buona definizione
+> $$
+> x\sim x'\quad\Longrightarrow\quad h(x)=h(x').
+> $$
+> Una formula scritta sui rappresentanti definisce una funzione sulle classi solo se il risultato non dipende dal rappresentante.
+> Lo useremo a ogni quoziente: per le operazioni di $\mathbb Z/n\mathbb Z$ qui sotto, per i razionali e, nel [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|capitolo 15]], per le funzioni che «passano al quoziente».
 
 È necessaria perché $[x]=[x']$ deve dare lo stesso valore. È sufficiente perché garantisce che tutti i rappresentanti della classe producano quel valore. Si dice allora che la formula è **ben definita**, oppure che $h$ passa al quoziente. La funzione ottenuta soddisfa $h=\overline h\circ\pi$ ed è unica, perché ogni classe ha un rappresentante.
 
@@ -172,6 +219,27 @@ fallisce: $[0]_2=[2]_2$, ma $[0]_3\ne[2]_3$. Lo stesso input riceverebbe due out
 
 > [!warning] Attenzione — Scegliere un rappresentante non dimostra la buona definizione
 > La regola «scegli il rappresentante $0$ oppure $1$ e riducilo modulo $3$» definisce una funzione, perché impone una scelta precisa. La formula «manda $[a]_2$ in $[a]_3$ per ogni intero $a$» pretende invece di funzionare con ogni rappresentante, e il controesempio mostra che non funziona.
+
+> [!example] Esempi e controesempi — formula ben definita sul quoziente
+> **Ben definite:**
+> - $[a]_6\mapsto[a]_3$: se $a-a'=6k$, allora $a-a'=3\cdot2k$, quindi $[a]_3=[a']_3$.
+> - $[a]_6\mapsto[a]_2$ (la parità): stesso argomento, perché $2\mid6$.
+> - $[a]_5\mapsto[3a+1]_5$: se $a\equiv a'\pmod5$, allora $3a+1\equiv3a'+1$.
+>
+> **Non ben definite** (basta una coppia di rappresentanti dello stesso elemento con risultati diversi):
+> - $[a]_5\mapsto a\in\mathbb Z$: $[1]_5=[6]_5$, ma $1\ne6$. Il risultato è un intero, non una classe, quindi serve l'uguaglianza vera e propria.
+> - $[a]_6\mapsto[a]_4$: $[0]_6=[6]_6$, ma $[0]_4\ne[6]_4=[2]_4$. Qui $4\nmid6$, e il caso generale è l'esercizio 8.
+
+Per controllare una formula su una classe non c'è bisogno di indovinare: il procedimento è sempre lo stesso. Lo schema si legge dall'alto; il ramo a destra si chiude esibendo una sola coppia di rappresentanti che tradisce la formula.
+
+```mermaid
+flowchart TD
+  A["Formula F su classi, scritta con un rappresentante x"] --> B["Prendi due rappresentanti x e x' con x ∼ x'"]
+  B --> C["Calcola il risultato con x e con x'"]
+  C --> D{"I due risultati sono uguali? (come classi, se l'uscita è una classe)"}
+  D -->|"sì, per ogni coppia x ∼ x'"| E["F è ben definita"]
+  D -->|"no, per una coppia"| F["F non è ben definita: esibisci x e x'"]
+```
 
 Per un’operazione su classi ci sono due rappresentanti da controllare. In $\mathbb Z/n\mathbb Z$ poniamo
 
@@ -289,6 +357,11 @@ $$
 $$
 
 Le classi coincidono perché $5\cdot36=6\cdot30=180$. Analogamente il prodotto dà $[(1,6)]$ oppure $[(6,36)]$, equivalenti perché $1\cdot36=6\cdot6$. Questi esempi mostrano il significato della prova generale: nessuna scelta di rappresentanti può alterare il risultato.
+
+> [!example] Esempi e controesempi — formula sui razionali
+> **Ben definita:** $[(a,b)]\mapsto[(2a,b)]$ (raddoppiare). Se $ad=bc$, allora $(2a)d=b(2c)$, quindi $(2a,b)\sim(2c,d)$.
+>
+> **Non ben definite:** «il numeratore» $[(a,b)]\mapsto a$, perché $(1,2)\sim(2,4)$ ma $1\ne2$; «la somma $a+b$», perché $(1,2)$ dà $3$ e $(2,4)$ dà $6$. Entrambe guardano il nome della frazione e non la quantità. Per questo un razionale non ha un numeratore «suo», a meno di fissare un rappresentante canonico (per esempio la frazione ridotta ai minimi termini con denominatore positivo).
 
 ## Fonti e integrazioni
 

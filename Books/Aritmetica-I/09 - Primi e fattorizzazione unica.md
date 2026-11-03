@@ -2,6 +2,12 @@
 
 Prerequisiti: [[Books/Aritmetica-I/02 - Naturali e induzione|induzione forte ed esistenza della fattorizzazione]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisibilità e Bézout]]; per i conteggi, [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|stelle e sbarre]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
 
+> [!info] In questo capitolo
+> - Dimostrerai che un primo che divide un prodotto divide uno dei fattori, usando Bézout, e da questo l'**unicità della fattorizzazione**.
+> - Userai le **valutazioni** $v_p$ per trasformare prodotti in somme e divisibilità in disuguaglianze fra esponenti.
+> - Calcolerai MCD, mcm e numero dei divisori dagli esponenti, e conterrai fattori primi in $n!$ con la formula di Legendre.
+> - L'idea che lega tutto: il numero è determinato dai suoi esponenti, e le operazioni diventano operazioni sugli esponenti.
+
 ## Un prodotto può raccontare due storie diverse?
 
 Il numero $60$ si può scrivere come $6\cdot10$, come $4\cdot15$ oppure come $3\cdot20$. Le scomposizioni sembrano diverse, ma continuando a spezzare i fattori troviamo sempre due copie di $2$, una di $3$ e una di $5$:
@@ -14,11 +20,15 @@ Questa unicità avrà conseguenze concrete. Permetterà di decidere una divisibi
 
 Un naturale $p\geq2$ è **primo** se i suoi soli divisori positivi sono $1$ e $p$. Un naturale $N\geq2$ è **composto** se non è primo: equivale a poter scrivere $N=ab$ con $1<a<N$ e $1<b<N$. Il numero $1$ non appartiene a nessuna delle due categorie. Se lo ammettessimo tra i primi, potremmo inserire arbitrariamente fattori $1$, distruggendo l’unicità della lunghezza.
 
+> [!example] Esempi e controesempi — Numero primo
+> **È primo:** $2$, $7$, $13$: i soli divisori positivi sono $1$ e il numero stesso.
+> **Non lo è:** $1$, perché non soddisfa $p\geq2$ (e ammetterlo spezzerebbe l'unicità); $9$, perché ha il divisore $3$, diverso da $1$ e da $9$ (viola la condizione sui divisori); $0$ e i negativi non rientrano nella definizione, che riguarda i naturali $\geq2$.
+
 Negli interi il segno va gestito separatamente. Gli interi che hanno un inverso intero per il prodotto, detti **unità**, sono precisamente $1$ e $-1$: da $uv=1$ segue $|u||v|=1$, dunque $|u|=|v|=1$. Scriveremo quindi un intero non nullo come il suo segno, moltiplicato per una fattorizzazione di $|N|$ in primi positivi. Lo zero resta escluso: un prodotto finito di primi, anche moltiplicato per $-1$, non può essere zero.
 
 ## Il passaggio decisivo viene da Bézout
 
-Sia $p$ primo e siano $a,b\in\mathbb Z$. Vogliamo dimostrare il **lemma del primo che divide un prodotto**:
+Per unicità serve poter dire: se un primo compare nel prodotto, allora compare in un fattore. È un fatto vero per i primi, ma non ovvio dalla definizione (che parla soltanto di divisori). Sia $p$ primo e siano $a,b\in\mathbb Z$. Vogliamo dimostrare il **lemma del primo che divide un prodotto**:
 
 $$p\mid ab\quad\Longrightarrow\quad p\mid a\ \text{oppure}\ p\mid b.$$
 
@@ -34,10 +44,23 @@ Entrambi gli addendi a sinistra sono divisibili per $p$, quindi anche $b$ lo è.
 
 Ripetendo il lemma otteniamo che, se $p$ divide un prodotto finito non vuoto $a_1\cdots a_s$, allora divide almeno un fattore. Formalmente si procede per induzione su $s$, applicando il caso di due fattori ad $a_1(a_2\cdots a_s)$.
 
+> [!abstract] Concetto chiave — Lemma del primo
+> Se $p$ è primo e $p\mid ab$, allora $p\mid a$ oppure $p\mid b$.
+> È il perno dell'unicità della fattorizzazione e, nei capitoli successivi, della cancellazione nelle congruenze e della struttura di $\mathbb Z/p\mathbb Z$.
+
+> [!example] Esempi e controesempi — Il lemma del primo
+> **Funziona:** $5\mid 15=3\cdot5$ e infatti $5\mid5$; $7\mid 6\cdot14$ e $7\mid14$.
+> **Non funziona se $p$ non è primo:** $6\mid4\cdot9=36$, ma $6\nmid4$ e $6\nmid9$. Qui l'ipotesi violata è soltanto "primo" ($6=2\cdot3$): il $2$ sta in $4$ e il $3$ sta in $9$.
+> Attenzione: la conclusione "oppure" non è un "e": $5\mid5\cdot2$ ma $5\nmid2$.
+
 > [!warning] Attenzione — La parola «primo» è un’ipotesi
 > Da $d\mid ab$ non segue in generale che $d\mid a$ oppure $d\mid b$: $6\mid3\cdot4$, ma $6$ non divide né $3$ né $4$. Inoltre, spiegare il lemma dicendo che «i fattori primi del prodotto provengono dai fattori» presupporrebbe proprio l’unicità che stiamo per dimostrare. Bézout evita questo circolo.
 
 ## Il teorema fondamentale dell’aritmetica
+
+> [!abstract] Concetto chiave — Teorema fondamentale dell'aritmetica
+> Ogni intero positivo si scrive in modo unico come prodotto di primi positivi, a meno dell'ordine dei fattori.
+> Giustifica quasi tutto ciò che segue: valutazioni, MCD e mcm dagli esponenti, conteggio dei divisori e formule su fattoriali.
 
 **Ogni intero positivo si scrive in modo unico come prodotto di primi positivi, a meno dell’ordine dei fattori.** Per $1$ ammettiamo il **prodotto vuoto**, cioè un prodotto senza fattori, il cui valore è $1$.
 
@@ -63,6 +86,13 @@ $$N=p_1^{\alpha_1}\cdots p_t^{\alpha_t},$$
 
 dove $p_1<\cdots<p_t$ sono primi e $\alpha_i\geq1$. Sono unici sia i primi presenti sia i loro esponenti. Per $N=1$ abbiamo $t=0$. Per un intero negativo aggiungiamo davanti il segno $-1$; usando primi positivi, anche questa rappresentazione è univoca.
 
+> [!example] Esempi e controesempi — Unicità della fattorizzazione
+> **Vale:** $60=6\cdot10=4\cdot15$ si spezzano entrambe in $2^2\cdot3\cdot5$; $91=7\cdot13$ e non c'è altra scrittura come prodotto di primi.
+> **Cade se i fattori non sono tutti primi:** $12=2\cdot6=3\cdot4$ sono due scomposizioni in fattori maggiori di $1$ diverse (nessuna è fattorizzazione in primi, perché $6$ e $4$ sono composti). Cade anche se si ammette $1$ fra i primi: $6=2\cdot3=1\cdot2\cdot3$.
+
+> [!info] Approfondimento — Dove l'unicità non vale
+> L'unicità non è automatica in ogni contesto numerico. Nell'insieme dei numeri pari $2\mathbb Z$, con il prodotto usuale, chiamiamo "indecomponibile" un pari che non è prodotto di due pari: sono i numeri $2m$ con $m$ dispari, come $2,6,10,30$. Allora $60=2\cdot30=6\cdot10$ sono due scritture diverse in indecomponibili. Un esempio classico, più profondo, è l'insieme dei numeri $a+b\sqrt{-5}$ con $a,b$ interi, dove $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$. In $\mathbb Z$ l'unicità funziona grazie al lemma del primo, cioè in ultima analisi a Bézout.
+
 ### Cercare i fattori e trovare nuovi primi
 
 Per verificare se $N\geq2$ è primo basta cercare divisori primi non superiori a $\sqrt N$. Infatti, se $N=ab$ con $a,b>1$, almeno uno dei due è al più $\sqrt N$: altrimenti il loro prodotto sarebbe maggiore di $N$. Quel fattore ha a sua volta un divisore primo $p\leq\sqrt N$. Dunque l’assenza di tali divisori prova la primalità.
@@ -73,11 +103,19 @@ I primi sono infiniti. Se fossero soltanto $p_1,\ldots,p_t$, considereremmo $M=p
 
 ## Le valutazioni: il prodotto diventa una somma
 
-Per un primo $p$ e un intero $a\neq0$, definiamo $v_p(a)$ come l’esponente di $p$ nella fattorizzazione di $|a|$. Se $p$ non compare, l’esponente è zero. Equivalentemente,
+Dopo l'unicità, ogni numero è "un elenco di esponenti", uno per ogni primo. Ci serve un modo comodo per leggere un singolo esponente: la valutazione. Per un primo $p$ e un intero $a\neq0$, definiamo $v_p(a)$ come l’esponente di $p$ nella fattorizzazione di $|a|$. Se $p$ non compare, l’esponente è zero. Equivalentemente,
 
 $$v_p(a)=\max\{k\in\mathbb N:p^k\mid a\}.$$
 
 Per esempio, $-72=-2^3\cdot3^2$, quindi $v_2(-72)=3$, $v_3(-72)=2$ e $v_5(-72)=0$. Anche $v_p(1)=v_p(-1)=0$ per ogni primo.
+
+> [!example] Esempi e controesempi — Valutazione $v_p$
+> **Ben definita:** $v_3(54)=3$ perché $54=2\cdot3^3$; $v_5(12)=0$ perché $5\nmid12$; $v_2(-72)=3$.
+> **Non definita:** $v_p(0)$, perché ogni potenza di $p$ divide $0$ e non c'è un massimo. **Non è additiva sulle somme:** $v_2(2)+v_2(6)=2$, ma $v_2(2+6)=v_2(8)=3$.
+
+> [!abstract] Concetto chiave — Valutazioni: prodotto e divisibilità
+> $v_p(ab)=v_p(a)+v_p(b)$ e $a\mid b$ se e solo se $v_p(a)\leq v_p(b)$ per ogni primo $p$.
+> Trasforma moltiplicazioni e divisibilità in somme e disuguaglianze: è il linguaggio di MCD, mcm, divisori e Legendre in questo capitolo.
 
 Per $a,b\neq0$ valgono
 
@@ -100,6 +138,8 @@ $$2v_2(a)=1+2v_2(b).$$
 Il primo membro è pari, il secondo dispari: impossibile. L'ostacolo non riguarda la grandezza dei numeri, ma la struttura dei loro fattori primi. Questo argomento completa didatticamente il richiamo all'irrazionalità di $\sqrt2$ presente nella lezione introduttiva.
 
 ## MCD e mcm: scegliere il minimo o il massimo
+
+Oltre al massimo comun divisore ([[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|capitolo 08]]), serve il **minimo comune multiplo** ($\operatorname{mcm}$): il più piccolo intero positivo divisibile sia per $a$ sia per $b$. Gli esponenti permettono di calcolare entrambi senza elencare divisori o multipli.
 
 Siano inizialmente $a,b\in\mathbb Z\setminus\{0\}$. Usiamo la stessa lista di primi nelle fattorizzazioni di $|a|$ e $|b|$, inserendo esponenti zero quando occorre:
 
@@ -128,6 +168,27 @@ $$\gcd(72,-120)=2^3\cdot3=24,$$
 $$\operatorname{mcm}(72,-120)=2^3\cdot3^2\cdot5=360.$$
 
 Il controllo $24\cdot360=8640=|72(-120)|$ conferma la coerenza dei calcoli.
+
+La tabella seguente riassume la traduzione fra numeri ed esponenti: leggi ogni riga da sinistra a destra, per un primo $p$ fissato, con $\alpha=v_p(a)$ e $\beta=v_p(b)$.
+
+| Operazione sui numeri | Operazione sugli esponenti di $p$ |
+|---|---|
+| prodotto $ab$ | somma $\alpha+\beta$ |
+| quoziente $b/a$ (se $a\mid b$) | differenza $\beta-\alpha$ |
+| divisibilità $a\mid b$ | disuguaglianza $\alpha\leq\beta$ per ogni $p$ |
+| $\gcd(a,b)$ | minimo $\min(\alpha,\beta)$ |
+| $\operatorname{mcm}(a,b)$ | massimo $\max(\alpha,\beta)$ |
+| somma $a+b$ | nessuna regola semplice |
+
+La catena logica del capitolo, da sinistra a destra:
+
+```mermaid
+flowchart LR
+    A["Bézout"] --> B["Lemma del primo"]
+    B --> C["Unicità della fattorizzazione"]
+    C --> D["Valutazioni v_p"]
+    D --> E["MCD, mcm, divisori, Legendre"]
+```
 
 Trattiamo separatamente lo zero, senza attribuirgli valutazioni: adottiamo $\gcd(a,0)=|a|$, anche per $a=0$, e $\operatorname{mcm}(a,0)=0$. Quest’ultima è una convenzione: quando un argomento è zero non esiste un multiplo comune positivo, perché l’unico multiplo di zero è zero. Con queste convenzioni l’identità del prodotto vale per tutti gli interi. La formula $\operatorname{mcm}(a,b)=|ab|/\gcd(a,b)$ si può usare quando $(a,b)\neq(0,0)$; per la coppia nulla produrrebbe $0/0$.
 
