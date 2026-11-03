@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali.md",
+                "file": "Books/Aritmetica-I/10 - Equazioni diofantee.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Sottoinsiemi e coefficienti binomiali"
+              "title": "10 - Equazioni diofantee"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali.md",
+                "file": "Books/Aritmetica-I/10 - Equazioni diofantee.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,28 +189,29 @@
   },
   "active": "cb49407fb8880402",
   "lastOpenFiles": [
+    "Books/Aritmetica-I/07 - Ricorrenze e successioni.md",
+    "Books/Aritmetica-I/00 - Indice e piano di studio.md",
+    "Books/Aritmetica-I/15 - Anelli campi e omomorfismi.md",
+    "Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente.md",
+    "Books/Aritmetica-I/10 - Equazioni diofantee.md",
+    "Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout.md",
+    "Books/Aritmetica-I/05 - Distribuzioni e ripetizioni.md",
+    "Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali.md",
     "Books/Aritmetica-I/19 - Frazioni e sviluppi decimali.md",
     "Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento.md",
     "Books/Aritmetica-I/18 - Congruenze esponenziali.md",
     "Books/Aritmetica-I/17 - Lagrange Eulero e Fermat.md",
     "Books/Aritmetica-I/16 - Gruppi ciclici e ordine.md",
-    "Books/Aritmetica-I/15 - Anelli campi e omomorfismi.md",
-    "Books/Aritmetica-I/05 - Distribuzioni e ripetizioni.md",
     "Books/Aritmetica-I/06 - Inclusione ed esclusione.md",
-    "Books/Aritmetica-I/07 - Ricorrenze e successioni.md",
-    "Books/Aritmetica-I/10 - Equazioni diofantee.md",
     "Books/Aritmetica-I/09 - Primi e fattorizzazione unica.md",
     "Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout.md",
     "Books/Aritmetica-I/11 - Congruenze e inversi modulari.md",
     "Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto.md",
-    "Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente.md",
     "Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni.md",
     "Books/Aritmetica-I/90 - Fonti e criteri editoriali.md",
-    "Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali.md",
     "Books/Aritmetica-I/03 - Contare attraverso le funzioni.md",
     "Books/Aritmetica-I/02 - Naturali e induzione.md",
     "Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni.md",
-    "Books/Aritmetica-I/00 - Indice e piano di studio.md",
     "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
     "Books/Aritmetica-I",
     "Books",

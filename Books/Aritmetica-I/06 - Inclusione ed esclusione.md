@@ -272,7 +272,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i conteggi e trasferiscono
 
 Sai usare il capitolo quando, prima della somma alternata, definisci l'insieme ambiente, i casi da escludere e il significato delle loro intersezioni. Per controllare una formula, segui il contributo di un singolo oggetto e verifica che alla fine valga esattamente zero oppure uno, secondo il vincolo richiesto.
 
-
 ---
 
 [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|← 05 · Distribuzioni e ripetizioni]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/07 - Ricorrenze e successioni|07 · Ricorrenze e successioni →]]

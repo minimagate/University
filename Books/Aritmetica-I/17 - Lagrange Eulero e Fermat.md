@@ -346,7 +346,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i risultati del capitolo a
 
 Il capitolo è acquisito quando sai ricostruire il conteggio delle classi laterali e trasformarlo in un vincolo sugli esponenti. Nei calcoli, devi saper distinguere una potenza che vale uno dall’ordine esatto e controllare la coprimalità prima di applicare Eulero.
 
-
 ---
 
 [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|← 16 · Gruppi ciclici e ordine]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/18 - Congruenze esponenziali|18 · Congruenze esponenziali →]]

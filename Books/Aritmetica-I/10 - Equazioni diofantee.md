@@ -1,6 +1,6 @@
 # Equazioni diofantee
 
-Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|divisione euclidea, Bézout e lemma di Euclide]]; per contare le rappresentazioni finali, [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori e fattorizzazione]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea, Bézout e lemma di Euclide]]; per contare le rappresentazioni finali, [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori e fattorizzazione]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
 ## Una retta, ma soltanto punti interi
 
@@ -348,7 +348,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano queste idee al conteggio e
 > Aggiungendo 1 otteniamo $(x+1)(y+1)=15$. Tutte le soluzioni intere sono $(d-1,15/d-1)$, con $d\in\{\pm1,\pm3,\pm5,\pm15\}$. Esplicitamente sono $(0,14),(2,4),(4,2),(14,0),(-2,-16),(-4,-6),(-6,-4),(-16,-2)$. Ogni coppia di fattori dà una soluzione e viceversa. Le prime quattro sono le soluzioni non negative; soltanto $(2,4)$ e $(4,2)$ sono positive.
 
 Hai acquisito il metodo quando sai motivare l’esistenza, costruire una soluzione e dimostrare che la tua famiglia non ne perde nessuna. Nei problemi con vincoli o con quadrati, controlla inoltre che la trasformazione scelta possa essere invertita rispettando integrità, segni e dominio.
-
 
 ---
 

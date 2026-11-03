@@ -270,7 +270,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i metodi e li trasferiscon
 
 Hai acquisito il metodo quando sai dichiarare che cosa distingue due risultati, costruire entrambe le direzioni della corrispondenza usata e giustificare ogni divisione con un numero uniforme di rappresentazioni. Prova in particolare a spiegare perché lo stesso insieme di quantità può descrivere una sola distribuzione di oggetti uguali e molti anagrammi.
 
-
 ---
 
 [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|← 04 · Sottoinsiemi e coefficienti binomiali]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/06 - Inclusione ed esclusione|06 · Inclusione ed esclusione →]]

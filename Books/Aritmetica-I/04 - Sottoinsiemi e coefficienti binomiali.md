@@ -301,7 +301,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 propongono collegamenti e trasferime
 
 Sai usare queste idee quando distingui una lista da un sottoinsieme e giustifichi ogni divisione contando le descrizioni di ciascun risultato. Per le identità, prova a nominare gli oggetti contati e a ricostruire entrambi i conteggi: è questo che permette di trasferire il metodo a una somma nuova.
 
-
 ---
 
 [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|← 03 · Contare attraverso le funzioni]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|05 · Distribuzioni e ripetizioni →]]

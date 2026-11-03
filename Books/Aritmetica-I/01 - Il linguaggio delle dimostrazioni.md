@@ -276,7 +276,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i concetti e li trasferisc
 
 Il capitolo è acquisito quando sai esplicitare dominio e quantificatori, distinguere una prova da un elenco di esempi e controllare entrambe le direzioni di un'equivalenza. Sulle funzioni, prova a spiegare con parole tue perché l'iniettività permette di ricostruire l'origine di un valore raggiunto e la suriettività garantisce che ogni elemento del codominio sia raggiunto.
 
-
 ---
 
 [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice e piano di studio]] · [[Books/Aritmetica-I/02 - Naturali e induzione|02 · Naturali e induzione →]]

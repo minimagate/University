@@ -2,6 +2,6 @@
   "showRibbon": false,
   "cssTheme": "Baseline",
   "accentColor": "#9c9c9c",
-  "theme": "moonstone",
+  "theme": "system",
   "nativeMenus": false
 }

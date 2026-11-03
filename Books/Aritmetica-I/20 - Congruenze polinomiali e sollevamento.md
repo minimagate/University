@@ -298,7 +298,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano il capitolo ad altre idee.
 
 Hai acquisito il metodo quando sai scegliere se fattorizzare il polinomio o il modulo, seguire tutti i sollevamenti e spiegare perché l'elenco finale è completo. Controlla in particolare di saper riconoscere il passaggio in cui serve un campo oppure un elemento invertibile.
 
-
 ---
 
 [[Books/Aritmetica-I/19 - Frazioni e sviluppi decimali|← 19 · Frazioni e sviluppi decimali]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/90 - Fonti e criteri editoriali|Fonti e criteri editoriali →]]

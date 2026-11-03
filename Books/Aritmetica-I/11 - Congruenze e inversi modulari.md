@@ -1,6 +1,6 @@
 # Congruenze e inversi modulari
 
-Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|divisione euclidea, MCD e Bézout]] e [[Books/Aritmetica-I/10 - Equazioni diofantee|equazioni diofantee]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea, MCD e Bézout]] e [[Books/Aritmetica-I/10 - Equazioni diofantee|equazioni diofantee]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
 ## Un orologio conserva il resto
 
@@ -365,7 +365,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i risultati e li trasferis
 > Per raggiungere 18 serve $12t\equiv18\pmod{30}$: dal calcolo del capitolo, $t\equiv4\pmod5$. Con $t\geq0$ otteniamo esattamente $t=4+5q$, $q\in\mathbb N$; il primo arrivo è dopo quattro scatti. La posizione 7 è irraggiungibile perché $\gcd(12,30)=6\nmid7$. In generale, posto $d=\gcd(a,n)$, il criterio di esistenza dice che le posizioni raggiungibili sono precisamente i resti $0,d,2d,\ldots,n-d$, in numero di $n/d$. Il criterio assicura inizialmente un tempo intero; un tempo negativo si rende non negativo aggiungendo un multiplo sufficientemente grande di $n$, senza cambiare la posizione.
 
 Hai acquisito gli strumenti del capitolo quando sai scegliere rappresentanti comodi, motivare ogni cancellazione e descrivere tutte le soluzioni al modulo richiesto. Nel problema della ruota, prova a spiegare con parole tue perché il MCD controlla sia le posizioni raggiungibili sia i tempi di ritorno.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # Gruppi ciclici e ordine
 
-Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi e sottogruppi]], [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|divisione euclidea e Bézout]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi e sottogruppi]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea e Bézout]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|divisori]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
 ## Ripetere un solo passo
 
@@ -286,7 +286,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 propongono collegamenti.
 > Il gruppo è abeliano, quindi $(xy)^q=x^qy^q$: $F_q$ è un omomorfismo anche per $q\leq0$. L’immagine è $\langle g^q\rangle$ e ha $N/\gcd(N,q)$ elementi. Per il nucleo, scrivi $x=g^a$ con $0\leq a<N$: occorre $N\mid qa$. Posto $d=\gcd(N,q)$, questo equivale a $N/d\mid a$. Le soluzioni sono $a=0,N/d,\ldots,(d-1)N/d$, quindi il nucleo ha $d$ elementi. L’applicazione è biiettiva, e dunque un isomorfismo, precisamente quando $d=1$. Se $q=0$, immagine e nucleo sono rispettivamente $\{e\}$ e $G$, in accordo con le formule.
 
 Hai acquisito il passaggio centrale quando sai trasformare un’uguaglianza di potenze in una divisibilità e spiegare perché compare un MCD. Per classificare i sottogruppi, prova a ricostruire la scelta dell’esponente minimo e il ruolo del resto, senza partire dalla formula finale.
-
 
 ---
 

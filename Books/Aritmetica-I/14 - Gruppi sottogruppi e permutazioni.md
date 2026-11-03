@@ -274,7 +274,6 @@ Gli esercizi 1–6 consolidano gli strumenti fondamentali; 7–8 li collegano a 
 
 Il capitolo è acquisito quando sai verificare un sottogruppo distinguendo le proprietà ereditate da quelle da provare, e calcolare una composizione conservando l’ordine delle azioni. La decomposizione in cicli deve permetterti di spiegare, oltre che calcolare, inversi, potenze e primo ritorno all’identità.
 
-
 ---
 
 [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|← 13 · Equivalenze e insiemi quoziente]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/15 - Anelli campi e omomorfismi|15 · Anelli, campi e omomorfismi →]]

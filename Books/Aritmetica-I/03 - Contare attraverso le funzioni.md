@@ -250,7 +250,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i metodi e li trasferiscon
 
 Il capitolo è acquisito quando sai costruire la corrispondenza che giustifica un conteggio, distinguere casi disgiunti da passi successivi e controllare i casi vuoti. Negli esercizi nuovi, prova a spiegare perché ogni risultato viene contato esattamente una volta prima di calcolare il numero.
 
-
 ---
 
 [[Books/Aritmetica-I/02 - Naturali e induzione|← 02 · Naturali e induzione]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/04 - Sottoinsiemi e coefficienti binomiali|04 · Sottoinsiemi e coefficienti binomiali →]]

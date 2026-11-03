@@ -28,7 +28,7 @@ I capitoli 03–07 formano una catena: prima si contano scelte semplici, poi si 
 
 | Capitolo | Domanda guida | Che cosa costruisce |
 |---|---|---|
-| [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout\|08 · Divisione euclidea e identità di Bézout]] | Perché sostituire un numero con un resto conserva il problema? | Divisibilità, divisione con segni, MCD, algoritmo di Euclide, Bézout e lemma di Euclide. |
+| [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout\|08 · Divisione euclidea e identità di Bézout]] | Perché sostituire un numero con un resto conserva il problema? | Divisibilità, divisione con segni, MCD, algoritmo di Euclide, Bézout e lemma di Euclide. |
 | [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica\|09 · Primi e fattorizzazione unica]] | In che senso i primi sono i mattoni degli interi? | Unicità della fattorizzazione, valutazioni, MCD e mcm, divisori, formula di Legendre. |
 | [[Books/Aritmetica-I/10 - Equazioni diofantee\|10 · Equazioni diofantee]] | Quando una retta passa per punti a coordinate intere? | Equazioni lineari, tutte le soluzioni, vincoli, differenze di quadrati. |
 | [[Books/Aritmetica-I/11 - Congruenze e inversi modulari\|11 · Congruenze e inversi modulari]] | Quale informazione conserviamo quando guardiamo solo il resto? | Operazioni modulari, criteri di divisibilità, inversi, cancellazione e congruenze lineari. |
@@ -66,7 +66,7 @@ Spunta un capitolo solo dopo aver risolto senza aiuto almeno gli esercizi 1–6 
 - [ ] [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|05 · Distribuzioni e ripetizioni]]
 - [ ] [[Books/Aritmetica-I/06 - Inclusione ed esclusione|06 · Inclusione ed esclusione]]
 - [ ] [[Books/Aritmetica-I/07 - Ricorrenze e successioni|07 · Ricorrenze e successioni]]
-- [ ] [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|08 · Divisione euclidea e identità di Bézout]]
+- [ ] [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|08 · Divisione euclidea e identità di Bézout]]
 - [ ] [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|09 · Primi e fattorizzazione unica]]
 - [ ] [[Books/Aritmetica-I/10 - Equazioni diofantee|10 · Equazioni diofantee]]
 - [ ] [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|11 · Congruenze e inversi modulari]]

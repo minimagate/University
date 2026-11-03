@@ -332,7 +332,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano le idee del capitolo ad al
 
 Hai acquisito gli strumenti del capitolo quando sai giustificare perché Euclide conserva i divisori comuni e termina, e sai trasformare le divisioni in un'identità verificabile. Controlla inoltre di saper usare quella identità per descrivere le combinazioni possibili e per spiegare la cancellazione nel lemma coprimo.
 
-
 ---
 
 [[Books/Aritmetica-I/07 - Ricorrenze e successioni|← 07 · Ricorrenze e successioni]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|09 · Primi e fattorizzazione unica →]]

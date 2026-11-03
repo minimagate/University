@@ -313,7 +313,6 @@ Gli esercizi 1–6 consolidano i concetti fondamentali; 7–8 li collegano a nuo
 
 Il capitolo è acquisito quando sai distinguere opposti e inversi, individuare le ipotesi che consentono la cancellazione e verificare separatamente buona definizione, conservazione delle operazioni e biiettività. Prova anche a ricostruire il teorema cinese strutturale spiegando quale parte del risultato aritmetico fornisce ciascuna proprietà della mappa.
 
-
 ---
 
 [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|← 14 · Gruppi, sottogruppi e permutazioni]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|16 · Gruppi ciclici e ordine →]]

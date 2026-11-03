@@ -1,6 +1,6 @@
 # Sistemi e teorema cinese del resto
 
-Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|Bézout e lemma di Euclide]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|MCD e mcm]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze lineari e inversi]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|Bézout e lemma di Euclide]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|MCD e mcm]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze lineari e inversi]]. Torna all'[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
 ## Due calendari, un appuntamento
 
@@ -355,7 +355,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano il capitolo ad altri probl
 > A ogni scelta di una lista di resti, uno da ciascun $S_i$, il teorema cinese associa un'unica classe modulo $M$. Liste differenti non possono dare la stessa classe, perché differiscono in almeno un resto; ogni classe ammessa proviene dalla sua lista di resti. È dunque una biiezione, e il principio del prodotto dà $\prod_i s_i$, anche quando qualche $S_i$ è vuoto. Nell'esempio le quattro liste $(1,0),(1,3),(2,0),(2,3)$ producono rispettivamente $21,31,7,17$ modulo $35$. I rappresentanti ordinati sono $7,17,21,31$.
 
 Il capitolo è acquisito quando sai passare dai resti a una famiglia completa di interi e spiegare perché il suo periodo è un prodotto oppure un mcm. Nei sistemi nuovi, il controllo decisivo è riconoscere quali condizioni sono compatibili prima di cercare gli inversi.
-
 
 ---
 

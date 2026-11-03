@@ -1,6 +1,6 @@
 # Frazioni e sviluppi decimali
 
-Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|divisione con resto]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|fattorizzazione]], [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|numeri razionali]], [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|ordine]] e [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|teorema di Eulero]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
+Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione con resto]], [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|fattorizzazione]], [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|numeri razionali]], [[Books/Aritmetica-I/16 - Gruppi ciclici e ordine|ordine]] e [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|teorema di Eulero]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice]].
 
 ## Perché una divisione ricomincia da capo?
 
@@ -306,7 +306,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 richiedono di trasferire il metodo o
 > Se la coda fosse periodica di lunghezza $t$, il periodo dovrebbe contenere un $1$, perché nello sviluppo compaiono infiniti $1$. Ogni blocco di $t$ cifre abbastanza avanzato conterrebbe allora almeno un $1$: non potrebbero esistere $t$ zeri consecutivi nella coda. Ma la costruzione produce blocchi di zeri arbitrariamente lunghi, anche dopo qualunque posizione fissata. È una contraddizione; lo sviluppo non è eventualmente periodico e quindi $x\notin\mathbb Q$. Il confronto con una lunghezza ipotetica $t$ rende precisa l’intuizione dei blocchi crescenti.
 
 Il capitolo è acquisito quando sai passare dalle cifre a una frazione e dal denominatore ridotto alle due lunghezze minime, giustificando le cancellazioni. Prova anche a spiegare con parole tue perché ripetere un resto obbliga a ripetere tutto il seguito.
-
 
 ---
 

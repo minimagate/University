@@ -326,7 +326,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano questi risultati alle cong
 
 Il capitolo è acquisito quando sai separare l’appartenenza al sottogruppo dalla ricerca del periodo e giustificare che la classe trovata contiene tutte le soluzioni. Nei problemi con modulo composto, controlla autonomamente la compatibilità degli esponenti e riconosci quando una base non invertibile richiede un’analisi diversa.
 
-
 ---
 
 [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|← 17 · Lagrange, Eulero e Fermat]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/19 - Frazioni e sviluppi decimali|19 · Frazioni e sviluppi decimali →]]

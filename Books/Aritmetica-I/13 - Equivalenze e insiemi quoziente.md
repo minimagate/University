@@ -1,6 +1,6 @@
 # Equivalenze e insiemi quoziente
 
-Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|linguaggio, insiemi e funzioni]], [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|divisione euclidea]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
+Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|linguaggio, insiemi e funzioni]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisione euclidea]], [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
 
 ## Una quantità, molte rappresentazioni
 
@@ -36,7 +36,7 @@ $$
 
 Infatti la somma di due multipli di $n$ è ancora un multiplo di $n$.
 
-La divisibilità sui naturali, incontrata nel [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|capitolo 08]], esprime invece un ordine parziale: è riflessiva, transitiva e **antisimmetrica**, ossia
+La divisibilità sui naturali, incontrata nel [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|capitolo 08]], esprime invece un ordine parziale: è riflessiva, transitiva e **antisimmetrica**, ossia
 
 $$
 a\mid b\ \text{e}\ b\mid a\quad\Longrightarrow\quad a=b
@@ -343,7 +343,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano la costruzione a nuove dom
 > Necessità: $[0]_n=[n]_n$ impone $[0]_m=[n]_m$, cioè $m\mid n$. Sufficienza: se $a-a'=kn$ e $n=tm$, allora $a-a'=ktm$, dunque $[a]_m=[a']_m$. Per la suriettività, ogni classe $[b]_m$ è immagine di $[b]_n$. Il risultato comprende i casi $m=1$ o $n=1$ senza eccezioni.
 
 Hai acquisito il passaggio al quoziente quando sai distinguere un rappresentante dalla sua classe e provare che le classi formano una partizione. Per usare davvero la costruzione, devi anche saper controllare se una formula continua a dare lo stesso risultato cambiando tutti i rappresentanti coinvolti.
-
 
 ---
 

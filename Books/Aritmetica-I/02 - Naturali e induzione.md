@@ -265,7 +265,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano i metodi a situazioni nuov
 
 Hai acquisito il metodo quando sai scegliere la proprietà da propagare, dichiarare da dove parte e giustificare ogni uso dei casi precedenti. Prova soprattutto a ricostruire la proprietà cumulativa dell’esercizio 4 e il controllo della terminazione nell’esercizio 8 senza leggere i riscontri.
 
-
 ---
 
 [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|← 01 · Il linguaggio delle dimostrazioni]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|03 · Contare attraverso le funzioni →]]

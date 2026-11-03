@@ -343,7 +343,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 collegano la ricorrenza a nuove fami
 
 Il capitolo è acquisito quando sai giustificare i casi che producono una ricorrenza, fissare correttamente i dati iniziali e dimostrare che una formula trovata descrive tutti i termini. Nei problemi nuovi, prova a spiegare quale parte puoi rimuovere e perché il completamento non introduce omissioni o ripetizioni.
 
-
 ---
 
-[[Books/Aritmetica-I/06 - Inclusione ed esclusione|← 06 · Inclusione ed esclusione]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|08 · Divisione euclidea e identità di Bézout →]]
+[[Books/Aritmetica-I/06 - Inclusione ed esclusione|← 06 · Inclusione ed esclusione]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|08 · Divisione euclidea e identità di Bézout →]]

@@ -1,6 +1,6 @@
 # Primi e fattorizzazione unica
 
-Prerequisiti: [[Books/Aritmetica-I/02 - Naturali e induzione|induzione forte ed esistenza della fattorizzazione]], [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|divisibilità e Bézout]]; per i conteggi, [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|stelle e sbarre]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
+Prerequisiti: [[Books/Aritmetica-I/02 - Naturali e induzione|induzione forte ed esistenza della fattorizzazione]], [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|divisibilità e Bézout]]; per i conteggi, [[Books/Aritmetica-I/05 - Distribuzioni e ripetizioni|stelle e sbarre]]. Torna all’[[Books/Aritmetica-I/00 - Indice e piano di studio|indice e piano di studio]].
 
 ## Un prodotto può raccontare due storie diverse?
 
@@ -22,7 +22,7 @@ Sia $p$ primo e siano $a,b\in\mathbb Z$. Vogliamo dimostrare il **lemma del prim
 
 $$p\mid ab\quad\Longrightarrow\quad p\mid a\ \text{oppure}\ p\mid b.$$
 
-Se $p\mid a$, abbiamo già concluso. Supponiamo dunque $p\nmid a$. I divisori positivi comuni di $p$ e $a$ possono essere soltanto $1$ e $p$; il secondo è escluso dall’ipotesi. Pertanto $\gcd(p,a)=1$. Per l’identità di Bézout del [[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|capitolo 08]], esistono $u,v\in\mathbb Z$ tali che
+Se $p\mid a$, abbiamo già concluso. Supponiamo dunque $p\nmid a$. I divisori positivi comuni di $p$ e $a$ possono essere soltanto $1$ e $p$; il secondo è escluso dall’ipotesi. Pertanto $\gcd(p,a)=1$. Per l’identità di Bézout del [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|capitolo 08]], esistono $u,v\in\mathbb Z$ tali che
 
 $$up+va=1.$$
 
@@ -246,7 +246,6 @@ Gli esercizi 1–6 sono fondamentali; 7–8 trasferiscono il metodo a nuovi cont
 
 Il capitolo è acquisito quando sai ricostruire il passaggio da Bézout all’unicità e tradurre una domanda di divisibilità in condizioni sugli esponenti. Nei conteggi, controlla sempre che ogni scelta di esponenti produca esattamente uno degli oggetti richiesti.
 
-
 ---
 
-[[Books/Aritmetica-I/08 - Divisione euclidea e identita di Bezout|← 08 · Divisione euclidea e identità di Bézout]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/10 - Equazioni diofantee|10 · Equazioni diofantee →]]
+[[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout|← 08 · Divisione euclidea e identità di Bézout]] · [[Books/Aritmetica-I/00 - Indice e piano di studio|Indice]] · [[Books/Aritmetica-I/10 - Equazioni diofantee|10 · Equazioni diofantee →]]
