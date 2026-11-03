@@ -83,10 +83,6 @@ When asked what the professor said, prioritize transcript evidence. For a concep
 
 Additional procedures live in `.agents/skills/`. Read the relevant skill for the task instead of loading every skill every time. `vault-structure` explains files and metadata, `course-context` explains efficient research, and `note-authoring` explains how to write study material.
 
-## Preserved formatting and images
-
-TeXmacs formatting rules and original templates are archived in `Archive/TeXmacs/`; consult `formatting-rules.md` when formatting `.tm` documents. Archived SVG figures and vector PDF copies are in `Archive/Images/`, grouped by course. `Archive/README.md` describes the archive, and `Archive/manifest.json` records original paths and file hashes.
-
 ## Explicit intent required
 
 Ask before deleting notes, reorganizing a course, renaming many files, modifying Bases, touching generated transcripts, or changing `.agents/` or `AGENTS.md`. `_audio/` is never to be modified.
