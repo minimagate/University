@@ -8,6 +8,120 @@ Prerequisiti: [[Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente|quozient
 > - Imparerai a riconoscere un omomorfismo (una funzione che conserva le operazioni), a controllarne la buona definizione e a distinguerlo da un isomorfismo.
 > - L'idea che lega tutto: il teorema cinese diventa un isomorfismo di anelli, che trasporta i calcoli da modulo $mn$ a modulo $m$ e modulo $n$.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quando cambiare coordinate conserva davvero tutti i calcoli? | [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]] | [[#Cambiare rappresentazione per calcolare meglio\|Cambiare rappresentazione per calcolare meglio]] |
+| Quali assiomi collegano somma e prodotto in un anello? | [[#Esercizio 5 — Conservare una sola operazione (omomorfismi di anelli e unità)\|5]], [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]], [[#Esercizio 11 — Quando la finitezza permette di dividere (dominio finito e campo)\|11]] | [[#Due operazioni che collaborano: gli anelli\|Due operazioni che collaborano: gli anelli]] |
+| Quando puoi dividere per una classe non nulla? | [[#Esercizio 1 — Dividere modulo dieci (unità di un anello)\|1]], [[#Esercizio 3 — Dividere in un campo (campi e inversi)\|3]], [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]], [[#Esercizio 10 — Potenze che diventano zero (divisori dello zero e fattorizzazione del modulo)\|10]], [[#Esercizio 11 — Quando la finitezza permette di dividere (dominio finito e campo)\|11]] | [[#Quando si può dividere: unità e campi\|Quando si può dividere: unità e campi]] |
+| Che cosa distingue anello, dominio e campo, anche nel caso finito? | [[#Esercizio 2 — Prodotti nulli (divisori dello zero)\|2]], [[#Esercizio 3 — Dividere in un campo (campi e inversi)\|3]], [[#Esercizio 8 — Prodotto di due campi (trasporto delle unità e divisori dello zero)\|8]], [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]], [[#Esercizio 10 — Potenze che diventano zero (divisori dello zero e fattorizzazione del modulo)\|10]], [[#Esercizio 11 — Quando la finitezza permette di dividere (dominio finito e campo)\|11]] | [[#Prodotti nulli e divisori dello zero\|Prodotti nulli e divisori dello zero]] |
+| Che cosa deve conservare un omomorfismo? | [[#Esercizio 4 — Trasportare un’inversa (omomorfismi di gruppi)\|4]], [[#Esercizio 5 — Conservare una sola operazione (omomorfismi di anelli e unità)\|5]], [[#Esercizio 7 — Riduzioni compatibili (omomorfismi di riduzione)\|7]], [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]] | [[#Funzioni che conservano le operazioni\|Funzioni che conservano le operazioni]] |
+| Perché il teorema cinese è un isomorfismo di anelli? | [[#Esercizio 6 — Calcolare per coordinate (isomorfismo del teorema cinese)\|6]], [[#Esercizio 7 — Riduzioni compatibili (omomorfismi di riduzione)\|7]], [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]] | [[#Il teorema cinese come isomorfismo\|Il teorema cinese come isomorfismo]] |
+| Quali elementi di un prodotto di anelli sono unità? | [[#Esercizio 8 — Prodotto di due campi (trasporto delle unità e divisori dello zero)\|8]], [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)\|9]] | [[#Il trasporto delle unità\|Il trasporto delle unità]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Dividere modulo dieci (unità di un anello)
+
+Determina tutte le unità di $\mathbb Z/10\mathbb Z$ e l'inverso di ciascuna.
+
+Se ti blocchi: [[#Quando si può dividere: unità e campi|Quando si può dividere: unità e campi]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Prodotti nulli (divisori dello zero)
+
+Trova tutti i divisori dello zero di $\mathbb Z/8\mathbb Z$. Per ogni classe trovata indica una classe non nulla che la annulli.
+
+Se ti blocchi: [[#Prodotti nulli e divisori dello zero|Prodotti nulli e divisori dello zero]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Dividere in un campo (campi e inversi)
+
+In $\mathbb Z/7\mathbb Z$ risolvi $[3]_7x=[5]_7$. Spiega perché la soluzione è unica e perché lo stesso ragionamento non permette di dividere per $[3]_9$ in $\mathbb Z/9\mathbb Z$.
+
+Se ti blocchi: [[#Quando si può dividere: unità e campi|Quando si può dividere: unità e campi]] · [[#Prodotti nulli e divisori dello zero|Prodotti nulli e divisori dello zero]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Trasportare un’inversa (omomorfismi di gruppi)
+
+Sia $f:G\to H$ un omomorfismo di gruppi. Dimostra che, per ogni $x,y\in G$, $f(xy^{-1})=f(x)f(y)^{-1}$. Se $f(x)=f(y)$, dimostra che $f(xy^{-1})=e_H$.
+
+Se ti blocchi: [[#Funzioni che conservano le operazioni|Funzioni che conservano le operazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Conservare una sola operazione (omomorfismi di anelli e unità)
+
+Uno studente sostiene che $g:\mathbb Z\to\mathbb Z$, $g(a)=2a$, sia un omomorfismo di anelli perché conserva la somma. Individua tutte le condizioni della definizione che falliscono. È un omomorfismo dei gruppi additivi?
+
+Se ti blocchi: [[#Due operazioni che collaborano: gli anelli|Due operazioni che collaborano: gli anelli]] · [[#Funzioni che conservano le operazioni|Funzioni che conservano le operazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Calcolare per coordinate (isomorfismo del teorema cinese)
+
+Usa l'isomorfismo $\mathbb Z/15\mathbb Z\cong\mathbb Z/3\mathbb Z\times\mathbb Z/5\mathbb Z$ per trovare la classe che corrisponde a $([2]_3,[4]_5)$ e calcolare il suo quadrato.
+
+Se ti blocchi: [[#Il teorema cinese come isomorfismo|Il teorema cinese come isomorfismo]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Riduzioni compatibili (omomorfismi di riduzione)
+
+Siano $n,d\geq2$. Dimostra che la formula $\rho([a]_n)=[a]_d$ definisce una funzione $\mathbb Z/n\mathbb Z\to\mathbb Z/d\mathbb Z$ se e solo se $d\mid n$. Quando è definita, dimostra che è un omomorfismo suriettivo.
+
+Se ti blocchi: [[#Funzioni che conservano le operazioni|Funzioni che conservano le operazioni]] · [[#Il teorema cinese come isomorfismo|Il teorema cinese come isomorfismo]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Prodotto di due campi (trasporto delle unità e divisori dello zero)
+
+Siano $K,L$ campi con $0\neq1$. Nel prodotto diretto $K\times L$, determina tutte le unità e dimostra che il prodotto non è un campo, sebbene entrambi i fattori lo siano.
+
+Se ti blocchi: [[#Prodotti nulli e divisori dello zero|Prodotti nulli e divisori dello zero]] · [[#Il trasporto delle unità|Il trasporto delle unità]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)
+
+Enuncia gli assiomi di anello adottati nel libro. Deduci $a0=0$ e $a(-b)=-(ab)$. Dimostra che le unità formano un gruppo, che un campo non ha divisori dello zero e che $\mathbb Z/n\mathbb Z$ è un campo se e solo se $n$ è primo. Spiega perché $\mathbb Z$ è un dominio ma non un campo. Per un omomorfismo di anelli con unità, dimostra conservazione di zero, opposti e unità; se è biettivo, verifica che anche l'inversa conserva le operazioni. Nel teorema cinese dimostra esplicitamente la buona definizione e la conservazione di somma, prodotto e uno.
+
+Se ti blocchi: [[#Cambiare rappresentazione per calcolare meglio|Cambiare rappresentazione per calcolare meglio]] · [[#Due operazioni che collaborano: gli anelli|Due operazioni che collaborano: gli anelli]] · [[#Quando si può dividere: unità e campi|Quando si può dividere: unità e campi]] · [[#Prodotti nulli e divisori dello zero|Prodotti nulli e divisori dello zero]] · [[#Funzioni che conservano le operazioni|Funzioni che conservano le operazioni]] · [[#Il teorema cinese come isomorfismo|Il teorema cinese come isomorfismo]] · [[#Il trasporto delle unità|Il trasporto delle unità]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Potenze che diventano zero (divisori dello zero e fattorizzazione del modulo)
+
+*Dalla raccolta fornita: esercizio preliminare 14, p. 59 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=70|p. 70 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Una classe $[x]_n$ si dice nilpotente se $[x]_n^k=[0]_n$ per qualche intero $k>0$. Per $n=\prod_i p_i^{e_i}\ge2$, caratterizza tutte le classi nilpotenti e contale. Elencale per $n=72$ e indica una potenza che annulli ciascuna. Il termine è introdotto qui; puoi risolvere usando soltanto fattorizzazione e divisibilità.
+
+Se ti blocchi: [[#Quando si può dividere: unità e campi|Quando si può dividere: unità e campi]] · [[#Prodotti nulli e divisori dello zero|Prodotti nulli e divisori dello zero]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+### Esercizio 11 — Quando la finitezza permette di dividere (dominio finito e campo)
+
+Dimostra che ogni dominio finito è un campo, studiando per $a\ne0$ la funzione $m_a:R\to R$, $x\mapsto ax$. Individua esattamente dove entrano assenza di divisori dello zero e finitezza. Perché la stessa prova non produce l'inverso di due in $\mathbb Z$? In un anello commutativo qualunque, mostra inoltre che una unità non può essere un divisore dello zero.
+
+Se ti blocchi: [[#Due operazioni che collaborano: gli anelli|Due operazioni che collaborano: gli anelli]] · [[#Quando si può dividere: unità e campi|Quando si può dividere: unità e campi]] · [[#Prodotti nulli e divisori dello zero|Prodotti nulli e divisori dello zero]].
+
+Controllo dopo il tentativo: [[#Riscontro 11|riscontro 11]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Cambiare rappresentazione per calcolare meglio
 
 Per calcolare modulo $6$ possiamo conservare un unico resto, oppure conservare due informazioni: la parità e il resto modulo $3$. Il teorema cinese assicura che queste due informazioni individuano una classe modulo $6$. Ma consentono anche di sommare e moltiplicare senza ricostruire ogni volta l'intero di partenza?
@@ -358,49 +472,86 @@ Il percorso su anelli, campi e unità segue [[Notes/Aritmetica/Lectures/2026-10-
 
 Le prove sono riscritte e completate; esempi ed esercizi sono elaborazioni didattiche. In particolare sono esplicitate la convenzione sugli omomorfismi unitari, l'esclusione dell'anello zero dai campi, la conservazione di neutri e inversi e la prova che l'inversa di un isomorfismo conserva le operazioni. Le trascrizioni, rumorose, sono state usate senza riprodurne gli errori di riconoscimento.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 consolidano i concetti fondamentali; 7–8 li collegano a nuove domande.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Determina tutte le unità di $\mathbb Z/10\mathbb Z$ e l'inverso di ciascuna.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > I resti coprimi con $10$ sono $1,3,7,9$. Gli inversi sono rispettivamente $[1]_{10},[7]_{10},[3]_{10},[9]_{10}$, perché $1\cdot1\equiv3\cdot7\equiv9\cdot9\equiv1\pmod{10}$. Quindi $U(10)=\{[1],[3],[7],[9]\}$.
 
-2. Trova tutti i divisori dello zero di $\mathbb Z/8\mathbb Z$. Per ogni classe trovata indica una classe non nulla che la annulli.
+Torna a [[#Esercizio 1 — Dividere modulo dieci (unità di un anello)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Sono $[2]_8,[4]_8,[6]_8$: si ha $[2][4]=[4][2]=[6][4]=[0]$. Gli altri elementi non nulli sono $[1],[3],[5],[7]$, tutti unità perché coprimi con $8$; una unità non può annullare un elemento non nullo. L'elenco è quindi completo; $[0]$ è escluso dalla definizione.
 
-3. In $\mathbb Z/7\mathbb Z$ risolvi $[3]_7x=[5]_7$. Spiega perché la soluzione è unica e perché lo stesso ragionamento non permette di dividere per $[3]_9$ in $\mathbb Z/9\mathbb Z$.
+Torna a [[#Esercizio 2 — Prodotti nulli (divisori dello zero)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Poiché $3\cdot5\equiv1\pmod7$, l'inverso di $[3]_7$ è $[5]_7$. Dunque $x=[25]_7=[4]_7$, e moltiplicare per l'inverso prova l'unicità. Modulo $9$ si ha $\gcd(3,9)=3$, quindi $[3]_9$ non è invertibile; inoltre $[3]_9[3]_9=[0]_9$.
 
-4. Sia $f:G\to H$ un omomorfismo di gruppi. Dimostra che, per ogni $x,y\in G$, $f(xy^{-1})=f(x)f(y)^{-1}$. Se $f(x)=f(y)$, dimostra che $f(xy^{-1})=e_H$.
+Torna a [[#Esercizio 3 — Dividere in un campo (campi e inversi)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > La conservazione dell'operazione dà $f(xy^{-1})=f(x)f(y^{-1})$; la conservazione degli inversi trasforma il secondo fattore in $f(y)^{-1}$. Se le due immagini coincidono, il prodotto è $f(y)f(y)^{-1}=e_H$. Non è lecito concludere $x=y$ senza l'iniettività di $f$.
 
-5. Uno studente sostiene che $g:\mathbb Z\to\mathbb Z$, $g(a)=2a$, sia un omomorfismo di anelli perché conserva la somma. Individua tutte le condizioni della definizione che falliscono. È un omomorfismo dei gruppi additivi?
+Torna a [[#Esercizio 4 — Trasportare un’inversa (omomorfismi di gruppi)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > La somma è conservata: $2(a+b)=2a+2b$. Il prodotto non lo è, perché $g(1\cdot1)=2$, mentre $g(1)g(1)=4$. Inoltre $g(1)=2\neq1$. Quindi non è un omomorfismo di anelli secondo la nostra convenzione, ma è un omomorfismo dei gruppi additivi.
 
-6. Usa l'isomorfismo $\mathbb Z/15\mathbb Z\cong\mathbb Z/3\mathbb Z\times\mathbb Z/5\mathbb Z$ per trovare la classe che corrisponde a $([2]_3,[4]_5)$ e calcolare il suo quadrato.
+Torna a [[#Esercizio 5 — Conservare una sola operazione (omomorfismi di anelli e unità)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > I rappresentanti con resto $4$ modulo $5$ sono $4,9,14$ fra $0$ e $14$; solo $14$ ha resto $2$ modulo $3$. La classe è $[14]_{15}$. Il quadrato della coppia è $([1]_3,[1]_5)$, che corrisponde a $[1]_{15}$. Infatti $14^2=196\equiv1\pmod{15}$.
 
-7. Siano $n,d\geq2$. Dimostra che la formula $\rho([a]_n)=[a]_d$ definisce una funzione $\mathbb Z/n\mathbb Z\to\mathbb Z/d\mathbb Z$ se e solo se $d\mid n$. Quando è definita, dimostra che è un omomorfismo suriettivo.
+Torna a [[#Esercizio 6 — Calcolare per coordinate (isomorfismo del teorema cinese)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Se la funzione è ben definita, $[0]_n=[n]_n$ obbliga $[0]_d=[n]_d$, cioè $d\mid n$. Viceversa, da $n\mid a-b$ e $d\mid n$ segue $d\mid a-b$: quindi la formula è indipendente dal rappresentante. Conserva somma, prodotto e $1$ applicando le definizioni delle operazioni sulle classi. È suriettiva perché ogni $[b]_d$ è immagine di $[b]_n$. La prova della buona definizione precede quella dell'omomorfismo.
 
-8. Siano $K,L$ campi con $0\neq1$. Nel prodotto diretto $K\times L$, determina tutte le unità e dimostra che il prodotto non è un campo, sebbene entrambi i fattori lo siano.
+Torna a [[#Esercizio 7 — Riduzioni compatibili (omomorfismi di riduzione)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > La coppia $(a,b)$ è invertibile se e solo se $a\neq0_K$ e $b\neq0_L$: in tal caso l'inverso è $(a^{-1},b^{-1})$. Se una componente fosse zero, nessun prodotto potrebbe avere $1$ in quella componente. Inoltre $(1_K,0_L)$ e $(0_K,1_L)$ sono non nulli e il loro prodotto è $(0_K,0_L)$. Sono divisori dello zero, dunque $K\times L$ non è un campo.
+
+Torna a [[#Esercizio 8 — Prodotto di due campi (trasporto delle unità e divisori dello zero)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Qui gli anelli sono commutativi con uno: gruppo abeliano additivo, prodotto associativo commutativo con unità e distributività. Da $a0=a(0+0)=a0+a0$ si cancella un termine; da $ab+a(-b)=a0$ segue la formula per l'opposto. Prodotti di unità sono unità con inversa data dal prodotto inverso delle inverse. In un campo $ab=0$ con $a\ne0$ implica $b=0$. Modulo un primo tutte le classi non nulle sono coprime al modulo e invertibili; se $n=uv$ composto, $[u],[v]\ne0$ hanno prodotto zero. Negli interi non ci sono divisori dello zero ma $2$ non è un'unità. Gli omomorfismi conservano zero e opposti per cancellazione additiva e mandano $uu^{-1}=1$ in una relazione di inversi. Per un isomorfismo scrivi due elementi come immagini e applica l'identità dell'omomorfismo per verificare l'inversa. La mappa cinese manda $[a]_{mn}$ in $([a]_m,[a]_n)$; congruenza modulo $mn$ implica entrambe le congruenze locali e le operazioni si calcolano coordinata per coordinata.
+
+Torna a [[#Esercizio 9 — Dagli assiomi al campo (anelli, domini, campi e omomorfismi)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Se $n\mid x^k$, ogni $p_i$ divide $x$. Viceversa, se tutti i $p_i$ dividono $x$, con $k\ge\max_i e_i$ ogni $p_i^{e_i}$ divide $x^k$, quindi $n\mid x^k$. I nilpotenti sono i multipli di $q=\prod_i p_i$ modulo $n$ e sono $n/q$. Per $72=2^3 3^2$, $q=6$: $0,6,12,\ldots,66$, dodici classi; il cubo di ciascuna è zero modulo $72$. Una classe nilpotente non nulla è un divisore dello zero: scegli il minimo esponente che la annulla.
+
+Torna a [[#Esercizio 10 — Potenze che diventano zero (divisori dello zero e fattorizzazione del modulo)|esercizio 10]].
+
+### Riscontro 11
+
+> [!tip]- Riscontro 11
+> Se $ax=ay$, allora $a(x-y)=0$; in un dominio, da $a\ne0$ segue $x=y$. Dunque $m_a$ è iniettiva; su un insieme finito è suriettiva, quindi uno è raggiunto e $ab=1$ per un $b$. In $\mathbb Z$ la funzione $x\mapsto2x$ è iniettiva ma non suriettiva: la finitezza è indispensabile. Per una unità $u$, da $ub=0$ si ricava $b=u^{-1}0=0$, quindi non esiste un annullatore non nullo.
+
+Torna a [[#Esercizio 11 — Quando la finitezza permette di dividere (dominio finito e campo)|esercizio 11]].
 
 Il capitolo è acquisito quando sai distinguere opposti e inversi, individuare le ipotesi che consentono la cancellazione e verificare separatamente buona definizione, conservazione delle operazioni e biiettività. Prova anche a ricostruire il teorema cinese strutturale spiegando quale parte del risultato aritmetico fornisce ciascuna proprietà della mappa.
 

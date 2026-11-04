@@ -8,6 +8,112 @@ Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi
 > - Descriverai tutti i sottogruppi di un gruppo ciclico: uno per ogni divisore dell'ordine, e nessun altro.
 > - L'idea che lega tutto: la divisione euclidea con resto controlla sia il ritorno all'identità sia la struttura dei sottogruppi.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quando un solo passo genera tutto il gruppo? | [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)\|9]] | [[#Ripetere un solo passo\|Ripetere un solo passo]] |
+| Come gestisci potenze negative, gruppo generato e ordine infinito? | [[#Esercizio 1 — Camminare per multipli (ordine e sottogruppo generato)\|1]], [[#Esercizio 6 — Un gruppo non ciclico (limiti dell’unicità dei sottogruppi)\|6]], [[#Esercizio 8 — Elevare tutto il gruppo (omomorfismi di un gruppo ciclico)\|8]], [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)\|9]], [[#Esercizio 10 — L’ordine di ogni potenza (dimostrazione della formula dell’ordine)\|10]] | [[#Potenze intere e sottogruppo generato\|Potenze intere e sottogruppo generato]] |
+| Perché una potenza è il neutro esattamente a multipli dell’ordine? | [[#Esercizio 1 — Camminare per multipli (ordine e sottogruppo generato)\|1]], [[#Esercizio 3 — Un esponente non è l’ordine (minimalità dell’ordine)\|3]], [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)\|9]], [[#Esercizio 10 — L’ordine di ogni potenza (dimostrazione della formula dell’ordine)\|10]] | [[#L’ordine: quando le potenze tornano all’identità\|L’ordine: quando le potenze tornano all’identità]] |
+| Come trovi l’ordine di una potenza e tutti i generatori? | [[#Esercizio 2 — Potenziare un generatore (ordine di una potenza e generatori)\|2]], [[#Esercizio 7 — Raggruppare per ordine (conteggio dei generatori e funzione di Eulero)\|7]], [[#Esercizio 8 — Elevare tutto il gruppo (omomorfismi di un gruppo ciclico)\|8]], [[#Esercizio 10 — L’ordine di ogni potenza (dimostrazione della formula dell’ordine)\|10]] | [[#L’ordine di una potenza e i generatori\|L’ordine di una potenza e i generatori]] |
+| Come il minimo esponente classifica i sottogruppi di un ciclico? | [[#Esercizio 5 — Sottogruppi degli interi (minimo positivo e gruppi ciclici infiniti)\|5]], [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)\|9]] | [[#Perché ogni sottogruppo di un ciclico è ciclico\|Perché ogni sottogruppo di un ciclico è ciclico]] |
+| Perché c’è un unico sottogruppo per ogni divisore e come leggi le inclusioni? | [[#Esercizio 4 — Un sottogruppo per divisore (classificazione dei sottogruppi ciclici finiti)\|4]], [[#Esercizio 6 — Un gruppo non ciclico (limiti dell’unicità dei sottogruppi)\|6]], [[#Esercizio 7 — Raggruppare per ordine (conteggio dei generatori e funzione di Eulero)\|7]], [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)\|9]] | [[#Nel caso finito: un sottogruppo per ogni divisore\|Nel caso finito: un sottogruppo per ogni divisore]] |
+| Come visualizzi ordini e generatori sulle radici dell’unità? | [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)\|9]] | [[#Approfondimento geometrico: le radici dell’unità\|Approfondimento geometrico: le radici dell’unità]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Camminare per multipli (ordine e sottogruppo generato)
+
+In $(\mathbb Z/20\mathbb Z,+)$ trova $\operatorname{ord}([6])$, elenca $\langle[6]\rangle$ e determina tutti gli interi $t$ con $t[6]=[0]$.
+
+Se ti blocchi: [[#Potenze intere e sottogruppo generato|Potenze intere e sottogruppo generato]] · [[#L’ordine: quando le potenze tornano all’identità|L’ordine: quando le potenze tornano all’identità]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Potenziare un generatore (ordine di una potenza e generatori)
+
+Sia $g$ di ordine $30$. Calcola gli ordini di $g^{12},g^{-7},g^0$ e determina quali fra questi elementi generano $\langle g\rangle$.
+
+Se ti blocchi: [[#L’ordine di una potenza e i generatori|L’ordine di una potenza e i generatori]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Un esponente non è l’ordine (minimalità dell’ordine)
+
+Uno studente sostiene: «Da $h^{15}=e$ e $h^5\neq e$ segue $\operatorname{ord}(h)=15$». Individua il difetto, costruisci un controesempio e aggiungi un’ipotesi sufficiente.
+
+Se ti blocchi: [[#L’ordine: quando le potenze tornano all’identità|L’ordine: quando le potenze tornano all’identità]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Un sottogruppo per divisore (classificazione dei sottogruppi ciclici finiti)
+
+Sia $G=\langle g\rangle$ di ordine $24$. Elenca tutti i sottogruppi indicando un generatore e l’ordine. Quanti elementi hanno ordine $8$? Quali sono?
+
+Se ti blocchi: [[#Nel caso finito: un sottogruppo per ogni divisore|Nel caso finito: un sottogruppo per ogni divisore]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Sottogruppi degli interi (minimo positivo e gruppi ciclici infiniti)
+
+Sia $H\leq(\mathbb Z,+)$ con $18,30\in H$. Dimostra che $6\mathbb Z\subseteq H$ e determina tutti i possibili $H$.
+
+Se ti blocchi: [[#Perché ogni sottogruppo di un ciclico è ciclico|Perché ogni sottogruppo di un ciclico è ciclico]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Un gruppo non ciclico (limiti dell’unicità dei sottogruppi)
+
+Nel gruppo moltiplicativo $U(8)$ trova tutti i sottogruppi. Spiega perché questo esempio impedisce di estendere l’unicità del sottogruppo di ordine $d$ a ogni gruppo finito.
+
+Se ti blocchi: [[#Potenze intere e sottogruppo generato|Potenze intere e sottogruppo generato]] · [[#Nel caso finito: un sottogruppo per ogni divisore|Nel caso finito: un sottogruppo per ogni divisore]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Raggruppare per ordine (conteggio dei generatori e funzione di Eulero)
+
+Sia $G$ ciclico di ordine $N\geq1$. Dimostra l’identità aritmetica $\sum_{d\mid N}\varphi(d)=N$ senza usare una formula per $\varphi$.
+
+Se ti blocchi: [[#L’ordine di una potenza e i generatori|L’ordine di una potenza e i generatori]] · [[#Nel caso finito: un sottogruppo per ogni divisore|Nel caso finito: un sottogruppo per ogni divisore]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Elevare tutto il gruppo (omomorfismi di un gruppo ciclico)
+
+Sia $G=\langle g\rangle$ di ordine $N$ e sia $q\in\mathbb Z$. Studia l’applicazione $F_q:G\to G$, $F_q(x)=x^q$: dimostra che è un omomorfismo e determina la cardinalità dell’immagine e del nucleo $\{x:F_q(x)=e\}$. Quando è un isomorfismo?
+
+Se ti blocchi: [[#Potenze intere e sottogruppo generato|Potenze intere e sottogruppo generato]] · [[#L’ordine di una potenza e i generatori|L’ordine di una potenza e i generatori]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)
+
+Se $g$ ha ordine infinito, dimostra che le potenze $g^k$ sono tutte distinte e che gli unici generatori di $\langle g\rangle$ sono $g,g^{-1}$. Per $H\le\langle g\rangle$ ricostruisci la prova con il minimo esponente positivo e divisione euclidea; tratta separatamente $H=\{e\}$ nel caso infinito. Nel caso finito di ordine $N$, dimostra esistenza e unicità del sottogruppo di ordine $d\mid N$ e $H_d\subseteq H_e\iff d\mid e$. Nell'approfondimento geometrico, per $\zeta=\cos(2\pi/12)+i\sin(2\pi/12)$, descrivi le dodici radici di $z^{12}=1$, i generatori e il sottogruppo di ordine quattro.
+
+Se ti blocchi: [[#Ripetere un solo passo|Ripetere un solo passo]] · [[#Potenze intere e sottogruppo generato|Potenze intere e sottogruppo generato]] · [[#L’ordine: quando le potenze tornano all’identità|L’ordine: quando le potenze tornano all’identità]] · [[#Perché ogni sottogruppo di un ciclico è ciclico|Perché ogni sottogruppo di un ciclico è ciclico]] · [[#Nel caso finito: un sottogruppo per ogni divisore|Nel caso finito: un sottogruppo per ogni divisore]] · [[#Approfondimento geometrico: le radici dell’unità|Approfondimento geometrico: le radici dell’unità]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — L’ordine di ogni potenza (dimostrazione della formula dell’ordine)
+
+*Dalla raccolta fornita: esercizio preliminare 9, p. 57 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=68|p. 68 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Se $g$ ha ordine finito $N\ge1$, dimostra per ogni $k\in\mathbb Z$ che $\operatorname{ord}(g^k)=N/\gcd(N,k)$. Deduci il criterio per i generatori e il loro numero, includendo $k=0$, $k<0$ e il gruppo banale.
+
+Se ti blocchi: [[#Potenze intere e sottogruppo generato|Potenze intere e sottogruppo generato]] · [[#L’ordine: quando le potenze tornano all’identità|L’ordine: quando le potenze tornano all’identità]] · [[#L’ordine di una potenza e i generatori|L’ordine di una potenza e i generatori]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Ripetere un solo passo
 
 Su un quadrante con dodici posizioni, parti da zero e avanza ogni volta di otto posizioni. Visiti, nell’ordine,
@@ -266,7 +372,7 @@ Per leggere una riga, $H_4=\{[0],[3],[6],[9]\}$ ha quattro elementi, ma soltanto
 
 ## Approfondimento geometrico: le radici dell’unità
 
-Questa sezione offre un’immagine dei gruppi ciclici; chi non ha ancora studiato i complessi può proseguire direttamente agli esercizi.
+Questa sezione offre un’immagine dei gruppi ciclici; chi non ha ancora studiato i complessi può tornare direttamente agli esercizi.
 
 Ricordiamo che $i^2=-1$ e che $a+ib$ si rappresenta con il punto $(a,b)$ del piano. I numeri $\cos\theta+i\sin\theta$ stanno sulla circonferenza di raggio uno. Usiamo qui le note regole trigonometriche del prodotto: gli angoli si sommano e, per la formula di De Moivre,
 $$
@@ -297,49 +403,79 @@ Il percorso riprende le note [[Notes/Aritmetica/Lectures/2026-10-27 - Gruppi cic
 
 Le prove complete, i casi con esponenti nulli e negativi, l’unicità dei sottogruppi e gli esercizi sono rielaborazioni didattiche. La distinzione fra $U(8)$ e il gruppo additivo modulo $8$ risolve l’ambiguità della trascrizione. I richiami a Lagrange ed Eulero presenti nelle fonti saranno giustificati nel [[Books/Aritmetica-I/17 - Lagrange Eulero e Fermat|capitolo 17]]; nessuna prova precedente li presuppone. L’approfondimento geometrico assume soltanto per quella sezione la rappresentazione polare e la formula di De Moivre.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 propongono collegamenti.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. In $(\mathbb Z/20\mathbb Z,+)$ trova $\operatorname{ord}([6])$, elenca $\langle[6]\rangle$ e determina tutti gli interi $t$ con $t[6]=[0]$.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > L’ordine è $20/\gcd(6,20)=10$. I multipli successivi sono $[0],[6],[12],[18],[4],[10],[16],[2],[8],[14]$: il sottogruppo è l’insieme delle classi pari. Infine $t[6]=[0]$ se e solo se $10\mid t$, quindi $t\in10\mathbb Z$.
 
-2. Sia $g$ di ordine $30$. Calcola gli ordini di $g^{12},g^{-7},g^0$ e determina quali fra questi elementi generano $\langle g\rangle$.
+Torna a [[#Esercizio 1 — Camminare per multipli (ordine e sottogruppo generato)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > La formula dà rispettivamente $30/6=5$, $30/1=30$ e $30/30=1$. Soltanto $g^{-7}$ genera tutto il sottogruppo, perché soltanto il suo ordine è $30$.
 
-3. Uno studente sostiene: «Da $h^{15}=e$ e $h^5\neq e$ segue $\operatorname{ord}(h)=15$». Individua il difetto, costruisci un controesempio e aggiungi un’ipotesi sufficiente.
+Torna a [[#Esercizio 2 — Potenziare un generatore (ordine di una potenza e generatori)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > I possibili ordini sono $1,3,5,15$; l’ipotesi esclude $1$ e $5$, ma non $3$. In $(\mathbb Z/3\mathbb Z,+)$ prendi $h=[1]$: $15h=0$ e $5h=[2]\neq0$, ma l’ordine è $3$. Aggiungendo $h^3\neq e$ si esclude anche $3$, e resta soltanto $15$.
 
-4. Sia $G=\langle g\rangle$ di ordine $24$. Elenca tutti i sottogruppi indicando un generatore e l’ordine. Quanti elementi hanno ordine $8$? Quali sono?
+Torna a [[#Esercizio 3 — Un esponente non è l’ordine (minimalità dell’ordine)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > I divisori sono $1,2,3,4,6,8,12,24$. I corrispondenti sottogruppi sono $\langle g^{24}\rangle,\langle g^{12}\rangle,\langle g^8\rangle,\langle g^6\rangle,\langle g^4\rangle,\langle g^3\rangle,\langle g^2\rangle,\langle g\rangle$, con gli ordini elencati nello stesso ordine. Gli elementi di ordine $8$ sono i $\varphi(8)=4$ generatori di $\langle g^3\rangle$: $g^3,g^9,g^{15},g^{21}$, ottenuti dagli esponenti $1,3,5,7$ coprimi con $8$.
 
-5. Sia $H\leq(\mathbb Z,+)$ con $18,30\in H$. Dimostra che $6\mathbb Z\subseteq H$ e determina tutti i possibili $H$.
+Torna a [[#Esercizio 4 — Un sottogruppo per divisore (classificazione dei sottogruppi ciclici finiti)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > La chiusura per differenze dà $12=30-18\in H$ e $6=18-12\in H$; quindi tutti i multipli di $6$ appartengono a $H$. Scrivi $H=d\mathbb Z$ con $d\geq0$. Poiché contiene $6\neq0$, $d>0$ e $d\mid6$. Le possibilità sono $\mathbb Z,2\mathbb Z,3\mathbb Z,6\mathbb Z$, e tutte contengono $18$ e $30$.
 
-6. Nel gruppo moltiplicativo $U(8)$ trova tutti i sottogruppi. Spiega perché questo esempio impedisce di estendere l’unicità del sottogruppo di ordine $d$ a ogni gruppo finito.
+Torna a [[#Esercizio 5 — Sottogruppi degli interi (minimo positivo e gruppi ciclici infiniti)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Sono $\{[1]\}$, $\{[1],[3]\}$, $\{[1],[5]\}$, $\{[1],[7]\}$ e $U(8)$. Per verificare la completezza, un sottogruppo che contiene due elementi distinti diversi dall’identità contiene anche il terzo: $[3][5]=[7]$, $[3][7]=[5]$, $[5][7]=[3]$. Quindi o contiene al più uno dei tre, oppure è tutto $U(8)$. Esistono tre sottogruppi diversi di ordine $2$; l’unicità provata nel testo richiede la ciclicità.
 
-7. Sia $G$ ciclico di ordine $N\geq1$. Dimostra l’identità aritmetica $\sum_{d\mid N}\varphi(d)=N$ senza usare una formula per $\varphi$.
+Torna a [[#Esercizio 6 — Un gruppo non ciclico (limiti dell’unicità dei sottogruppi)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Ogni elemento ha un unico ordine, che è un divisore di $N$ per la formula dell’ordine di una potenza. Le classi di elementi di ordine $d$, al variare di $d\mid N$, sono quindi disgiunte e ricoprono $G$. Ciascuna ha $\varphi(d)$ elementi: sommandone le cardinalità ottieni $|G|=N$. Per $N=1$ l’identità è $\varphi(1)=1$.
 
-8. Sia $G=\langle g\rangle$ di ordine $N$ e sia $q\in\mathbb Z$. Studia l’applicazione $F_q:G\to G$, $F_q(x)=x^q$: dimostra che è un omomorfismo e determina la cardinalità dell’immagine e del nucleo $\{x:F_q(x)=e\}$. Quando è un isomorfismo?
+Torna a [[#Esercizio 7 — Raggruppare per ordine (conteggio dei generatori e funzione di Eulero)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Il gruppo è abeliano, quindi $(xy)^q=x^qy^q$: $F_q$ è un omomorfismo anche per $q\leq0$. L’immagine è $\langle g^q\rangle$ e ha $N/\gcd(N,q)$ elementi. Per il nucleo, scrivi $x=g^a$ con $0\leq a<N$: occorre $N\mid qa$. Posto $d=\gcd(N,q)$, questo equivale a $N/d\mid a$. Le soluzioni sono $a=0,N/d,\ldots,(d-1)N/d$, quindi il nucleo ha $d$ elementi. L’applicazione è biiettiva, e dunque un isomorfismo, precisamente quando $d=1$. Se $q=0$, immagine e nucleo sono rispettivamente $\{e\}$ e $G$, in accordo con le formule.
+
+Torna a [[#Esercizio 8 — Elevare tutto il gruppo (omomorfismi di un gruppo ciclico)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Un'uguaglianza di potenze distinte darebbe una potenza positiva uguale al neutro. Per generare $g$ con $g^k$ serve $kt=1$, quindi $k=\pm1$. Se $H\ne\{e\}$ contiene una potenza non banale, invertendola se serve esiste un esponente positivo: scegli il minimo $m$. Per $g^a\in H$, il resto di $a$ per $m$ produrrebbe un esponente positivo minore, quindi è zero e $H=\langle g^m\rangle$. Nel caso finito $N$ è un esponente positivo ammesso anche per $H=\{e\}$; il minimo $m$ divide $N$ e l'ordine è $N/m$, da cui $H_d=\langle g^{N/d}\rangle$ e unicità. L'inclusione corrisponde alla divisibilità applicando la classificazione nel sottogruppo. Le radici sono $\zeta^j$ per $0\le j<12$; i generatori hanno $j=1,5,7,11$; il sottogruppo di ordine quattro è $\{1,\zeta^3,\zeta^6,\zeta^9\}=\{1,i,-1,-i\}$.
+
+Torna a [[#Esercizio 9 — Classificare con un minimo (ordine infinito, sottogruppi ciclici e radici dell’unità)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Per $t>0$, $(g^k)^t=e\iff N\mid kt$. Scrivi $d=\gcd(N,k)$: dopo aver diviso per $d$, la coprimalità implica $N/d\mid t$. Il minimo è $N/d$. Il generatore si ottiene esattamente per $d=1$; gli esponenti distinti modulo $N$ con questa proprietà sono $\varphi(N)$. Per $k=0$ l'ordine è uno; il segno di $k$ non cambia il MCD; per $N=1$ l'unico elemento genera il gruppo e $\varphi(1)=1$.
+
+Torna a [[#Esercizio 10 — L’ordine di ogni potenza (dimostrazione della formula dell’ordine)|esercizio 10]].
 
 Hai acquisito il passaggio centrale quando sai trasformare un’uguaglianza di potenze in una divisibilità e spiegare perché compare un MCD. Per classificare i sottogruppi, prova a ricostruire la scelta dell’esponente minimo e il ruolo del resto, senza partire dalla formula finale.
 

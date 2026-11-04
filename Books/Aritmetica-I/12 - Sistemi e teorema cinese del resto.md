@@ -10,6 +10,111 @@ Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout
 >
 > L'idea che lega il capitolo: conoscere un numero attraverso più resti equivale a conoscerlo modulo il mcm, il minimo comune multiplo dei moduli, purché i resti siano compatibili.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Come traduci due calendari in un sistema di resti? | [[#Esercizio 1 — Un appuntamento comune (sistemi di congruenze)\|1]], [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)\|9]] | [[#Due calendari, un appuntamento\|Due calendari, un appuntamento]] |
+| Come sostituisci una congruenza con un parametro intero? | [[#Esercizio 1 — Un appuntamento comune (sistemi di congruenze)\|1]], [[#Esercizio 2 — Due metodi, una classe (sostituzione e teorema cinese)\|2]], [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)\|9]], [[#Esercizio 10 — Un sistema con parametro (congruenze lineari e compatibilità di moduli non coprimi)\|10]] | [[#Sostituire una congruenza con un'uguaglianza\|Sostituire una congruenza con un'uguaglianza]] |
+| Perché la coprimalità garantisce esistenza e unicità per ogni coppia di resti? | [[#Esercizio 2 — Due metodi, una classe (sostituzione e teorema cinese)\|2]], [[#Esercizio 5 — Coprimi a due a due (ipotesi e modulo di unicità)\|5]], [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)\|9]] | [[#Due moduli coprimi: costruzione e unicità\|Due moduli coprimi: costruzione e unicità]] |
+| Come costruisci le coordinate che selezionano ciascun resto? | [[#Esercizio 3 — Tre resti (formula ricostruttiva del teorema cinese)\|3]], [[#Esercizio 5 — Coprimi a due a due (ipotesi e modulo di unicità)\|5]], [[#Esercizio 8 — Molte scelte locali (teorema cinese e conteggio delle classi)\|8]], [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)\|9]] | [[#Più resti: ricostruire una coordinata alla volta\|Più resti: ricostruire una coordinata alla volta]] |
+| Quando resti prescritti su moduli non coprimi sono compatibili? | [[#Esercizio 4 — Moduli con fattori comuni (teorema cinese generalizzato)\|4]], [[#Esercizio 5 — Coprimi a due a due (ipotesi e modulo di unicità)\|5]], [[#Esercizio 6 — Una condizione ridondante (modulo divisore e compatibilità)\|6]], [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)\|9]], [[#Esercizio 10 — Un sistema con parametro (congruenze lineari e compatibilità di moduli non coprimi)\|10]] | [[#Quando i moduli condividono fattori\|Quando i moduli condividono fattori]] |
+| Come fondi più condizioni e scegli il modulo finale? | [[#Esercizio 7 — Fondere e contare (sistemi generali e intervalli)\|7]], [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)\|9]], [[#Esercizio 10 — Un sistema con parametro (congruenze lineari e compatibilità di moduli non coprimi)\|10]] | [[#Molti moduli generali: fondere due condizioni per volta\|Molti moduli generali: fondere due condizioni per volta]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Un appuntamento comune (sistemi di congruenze)
+
+Due attività ricorrono nei giorni $x\geq0$ con $x\equiv3\pmod4$ e $x\equiv1\pmod5$. Trova tutti i giorni comuni e quelli nell'intervallo $0\leq x<60$.
+
+Se ti blocchi: [[#Due calendari, un appuntamento|Due calendari, un appuntamento]] · [[#Sostituire una congruenza con un'uguaglianza|Sostituire una congruenza con un'uguaglianza]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Due metodi, una classe (sostituzione e teorema cinese)
+
+Risolvi in $\mathbb Z$ il sistema $x\equiv-1\pmod7$, $x\equiv4\pmod{11}$, prima con la sostituzione e poi usando $8\cdot7-5\cdot11=1$.
+
+Se ti blocchi: [[#Sostituire una congruenza con un'uguaglianza|Sostituire una congruenza con un'uguaglianza]] · [[#Due moduli coprimi: costruzione e unicità|Due moduli coprimi: costruzione e unicità]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Tre resti (formula ricostruttiva del teorema cinese)
+
+Risolvi in $\mathbb Z$ il sistema $x\equiv1\pmod4$, $x\equiv2\pmod5$, $x\equiv3\pmod7$ mediante la formula ricostruttiva. Indica $M_i$, i loro inversi e il rappresentante tra $0$ e $139$.
+
+Se ti blocchi: [[#Più resti: ricostruire una coordinata alla volta|Più resti: ricostruire una coordinata alla volta]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Moduli con fattori comuni (teorema cinese generalizzato)
+
+Per ciascuno dei sistemi seguenti, decidi se esistono soluzioni intere e, quando esistono, descrivile tutte: (a) $x\equiv4\pmod6$, $x\equiv1\pmod9$; (b) $x\equiv4\pmod6$, $x\equiv2\pmod9$.
+
+Se ti blocchi: [[#Quando i moduli condividono fattori|Quando i moduli condividono fattori]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Coprimi a due a due (ipotesi e modulo di unicità)
+
+Un compagno sostiene: «Poiché $\gcd(6,10,15)=1$, ogni sistema con questi moduli ha un'unica soluzione modulo $900$». Individua l'errore nelle ipotesi e mostra, con due scelte esplicite dei resti, che possono mancare l'esistenza o l'unicità modulo il prodotto.
+
+Se ti blocchi: [[#Due moduli coprimi: costruzione e unicità|Due moduli coprimi: costruzione e unicità]] · [[#Più resti: ricostruire una coordinata alla volta|Più resti: ricostruire una coordinata alla volta]] · [[#Quando i moduli condividono fattori|Quando i moduli condividono fattori]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Una condizione ridondante (modulo divisore e compatibilità)
+
+Siano $a,b\in\mathbb Z$. Dimostra che, per $m,n\geq1$ e $n\mid m$, il sistema $x\equiv a\pmod m$, $x\equiv b\pmod n$ è risolvibile se e solo se $a\equiv b\pmod n$. Descrivi tutte le soluzioni nel caso compatibile.
+
+Se ti blocchi: [[#Quando i moduli condividono fattori|Quando i moduli condividono fattori]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Fondere e contare (sistemi generali e intervalli)
+
+Risolvi in $\mathbb Z$ il sistema $x\equiv2\pmod6$, $x\equiv5\pmod9$, $x\equiv3\pmod5$ mediante fusioni successive. Determina poi tutte le soluzioni con $0\leq x<200$.
+
+Se ti blocchi: [[#Molti moduli generali: fondere due condizioni per volta|Molti moduli generali: fondere due condizioni per volta]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Molte scelte locali (teorema cinese e conteggio delle classi)
+
+Sia $r\geq2$ un intero. Per ogni $i=1,\dots,r$, sia $m_i\geq2$, con moduli a due a due coprimi, e sia $S_i$ un insieme di $s_i$ resti distinti modulo $m_i$. Dimostra che il numero di classi modulo $M=\prod_i m_i$ il cui resto modulo ogni $m_i$ appartiene a $S_i$ è $\prod_i s_i$. Applica il risultato alle classi $x$ modulo $35$ con $x\equiv1$ oppure $2\pmod5$ e $x\equiv0$ oppure $3\pmod7$, elencandole tutte.
+
+Se ti blocchi: [[#Più resti: ricostruire una coordinata alla volta|Più resti: ricostruire una coordinata alla volta]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)
+
+Per moduli coprimi $m,n$ e $um+vn=1$, costruisci la soluzione con resti $a,b$ e dimostra l'unicità modulo $mn$. Per più moduli a due a due coprimi dimostra la formula $x=\sum_i a_iM_i u_i$ e le identità $e_i^2\equiv e_i$, $e_ie_j\equiv0$ per $i\ne j$, $\sum_i e_i\equiv1\pmod M$, dove $e_i=M_i u_i$. Per moduli generali dimostra il criterio $\gcd(m,n)\mid b-a$ e giustifica il modulo $\operatorname{mcm}(m,n)$. Che cosa impone una congruenza modulo uno?
+
+Se ti blocchi: [[#Due calendari, un appuntamento|Due calendari, un appuntamento]] · [[#Sostituire una congruenza con un'uguaglianza|Sostituire una congruenza con un'uguaglianza]] · [[#Due moduli coprimi: costruzione e unicità|Due moduli coprimi: costruzione e unicità]] · [[#Più resti: ricostruire una coordinata alla volta|Più resti: ricostruire una coordinata alla volta]] · [[#Quando i moduli condividono fattori|Quando i moduli condividono fattori]] · [[#Molti moduli generali: fondere due condizioni per volta|Molti moduli generali: fondere due condizioni per volta]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Un sistema con parametro (congruenze lineari e compatibilità di moduli non coprimi)
+
+*Dalla raccolta fornita: esercizio 96, p. 79 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=89|p. 89 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Al variare di $a\in\mathbb Z$, determina le classi soluzione del sistema $6x\equiv4a\pmod{72}$, $5x\equiv2\pmod{39}$. Specifica il modulo che descrive tutte le soluzioni e il numero di classi modulo $\operatorname{mcm}(72,39)$.
+
+Se ti blocchi: [[#Sostituire una congruenza con un'uguaglianza|Sostituire una congruenza con un'uguaglianza]] · [[#Quando i moduli condividono fattori|Quando i moduli condividono fattori]] · [[#Molti moduli generali: fondere due condizioni per volta|Molti moduli generali: fondere due condizioni per volta]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Due calendari, un appuntamento
 
 Un laboratorio apre nei giorni $2,7,12,17,\dots$: un appuntamento ogni cinque giorni, a partire dal giorno $2$. Una biblioteca organizza un incontro nei giorni $3,10,17,24,\dots$: uno ogni sette giorni, a partire dal giorno $3$. In quali giorni possiamo partecipare a entrambe le attività?
@@ -349,49 +454,79 @@ Sono state lette inoltre le parti pertinenti di [[Notes/Aritmetica/Lectures/2026
 
 La motivazione dei calendari, gli esempi, la formula ricostruttiva con gli idempotenti e la giustificazione della fusione iterativa sono integrazioni didattiche. Le prove sono riscritte per essere autonome, con moduli positivi e coprimalità a due a due esplicite; nessuna formulazione incerta dell'ASR viene usata come premessa matematica.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano il capitolo ad altri problemi.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Due attività ricorrono nei giorni $x\geq0$ con $x\equiv3\pmod4$ e $x\equiv1\pmod5$. Trova tutti i giorni comuni e quelli nell'intervallo $0\leq x<60$.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Scrivi $x=3+4k$: $4k\equiv-2\equiv3\pmod5$, quindi $k\equiv2\pmod5$. Ne segue $x=11+20t$, con $t\in\mathbb Z$; imponendo $x\geq0$ si ha $t\geq0$. Nell'intervallo richiesto: $11,31,51$.
 
-2. Risolvi in $\mathbb Z$ il sistema $x\equiv-1\pmod7$, $x\equiv4\pmod{11}$, prima con la sostituzione e poi usando $8\cdot7-5\cdot11=1$.
+Torna a [[#Esercizio 1 — Un appuntamento comune (sistemi di congruenze)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Da $x=-1+7k$ segue $7k\equiv5\pmod{11}$. Poiché l'inverso di $7$ è $8$, $k\equiv40\equiv7$, quindi $x\equiv48\pmod{77}$. La formula di Bézout dà $(-1)(-55)+4\cdot56=279\equiv48\pmod{77}$. In entrambi i casi tutte le soluzioni sono $48+77t$, $t\in\mathbb Z$.
 
-3. Risolvi in $\mathbb Z$ il sistema $x\equiv1\pmod4$, $x\equiv2\pmod5$, $x\equiv3\pmod7$ mediante la formula ricostruttiva. Indica $M_i$, i loro inversi e il rappresentante tra $0$ e $139$.
+Torna a [[#Esercizio 2 — Due metodi, una classe (sostituzione e teorema cinese)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > $M=140$, $(M_1,M_2,M_3)=(35,28,20)$. Gli inversi nei rispettivi moduli sono $(3,2,6)$: $35\cdot3\equiv1\pmod4$, $28\cdot2\equiv1\pmod5$, $20\cdot6\equiv1\pmod7$. Pertanto $x_0=105+2\cdot56+3\cdot120=577\equiv17\pmod{140}$. Tutte le soluzioni sono $17+140t$, $t\in\mathbb Z$.
 
-4. Per ciascuno dei sistemi seguenti, decidi se esistono soluzioni intere e, quando esistono, descrivile tutte: (a) $x\equiv4\pmod6$, $x\equiv1\pmod9$; (b) $x\equiv4\pmod6$, $x\equiv2\pmod9$.
+Torna a [[#Esercizio 3 — Tre resti (formula ricostruttiva del teorema cinese)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Il MCD è $3$. In (a), $3\mid1-4$ e $x=4+6k$ porta a $2k\equiv-1\equiv2\pmod3$, dunque $k\equiv1\pmod3$: $x=10+18t$, $t\in\mathbb Z$. In (b), $3\nmid2-4$, quindi non esistono soluzioni.
 
-5. Un compagno sostiene: «Poiché $\gcd(6,10,15)=1$, ogni sistema con questi moduli ha un'unica soluzione modulo $900$». Individua l'errore nelle ipotesi e mostra, con due scelte esplicite dei resti, che possono mancare l'esistenza o l'unicità modulo il prodotto.
+Torna a [[#Esercizio 4 — Moduli con fattori comuni (teorema cinese generalizzato)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Serve coprimalità a due a due. I resti $0$ modulo $6$, $1$ modulo $10$, $0$ modulo $15$ danno un sistema impossibile per la parità. Con tutti i resti nulli, le soluzioni sono i multipli di $\operatorname{mcm}(6,10,15)=30$: modulo $900$ sono $30$ classi, rappresentate da $0,30,\dots,870$. Il MCD totale $1$ non elimina le sovrapposizioni fra coppie di moduli.
 
-6. Siano $a,b\in\mathbb Z$. Dimostra che, per $m,n\geq1$ e $n\mid m$, il sistema $x\equiv a\pmod m$, $x\equiv b\pmod n$ è risolvibile se e solo se $a\equiv b\pmod n$. Descrivi tutte le soluzioni nel caso compatibile.
+Torna a [[#Esercizio 5 — Coprimi a due a due (ipotesi e modulo di unicità)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Se $x=a+mk$, allora $n\mid m$ implica $x\equiv a\pmod n$. Una soluzione deve quindi soddisfare $a\equiv b\pmod n$. Viceversa, sotto questa ipotesi, ogni $x=a+mk$ soddisfa entrambe le congruenze. Tutte le soluzioni sono esattamente $a+m\mathbb Z$; il mcm dei moduli è $m$.
 
-7. Risolvi in $\mathbb Z$ il sistema $x\equiv2\pmod6$, $x\equiv5\pmod9$, $x\equiv3\pmod5$ mediante fusioni successive. Determina poi tutte le soluzioni con $0\leq x<200$.
+Torna a [[#Esercizio 6 — Una condizione ridondante (modulo divisore e compatibilità)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Le prime due condizioni equivalgono a $x\equiv14\pmod{18}$. Scrivi $x=14+18k$: modulo $5$ ottieni $4+3k\equiv3$, quindi $3k\equiv4$ e $k\equiv3\pmod5$. Dunque $x=68+90t$, $t\in\mathbb Z$. Nell'intervallo richiesto le soluzioni sono $68$ e $158$. Il periodo è $\operatorname{mcm}(6,9,5)=90$.
 
-8. Sia $r\geq2$ un intero. Per ogni $i=1,\dots,r$, sia $m_i\geq2$, con moduli a due a due coprimi, e sia $S_i$ un insieme di $s_i$ resti distinti modulo $m_i$. Dimostra che il numero di classi modulo $M=\prod_i m_i$ il cui resto modulo ogni $m_i$ appartiene a $S_i$ è $\prod_i s_i$. Applica il risultato alle classi $x$ modulo $35$ con $x\equiv1$ oppure $2\pmod5$ e $x\equiv0$ oppure $3\pmod7$, elencandole tutte.
+Torna a [[#Esercizio 7 — Fondere e contare (sistemi generali e intervalli)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > A ogni scelta di una lista di resti, uno da ciascun $S_i$, il teorema cinese associa un'unica classe modulo $M$. Liste differenti non possono dare la stessa classe, perché differiscono in almeno un resto; ogni classe ammessa proviene dalla sua lista di resti. È dunque una biiezione, e il principio del prodotto dà $\prod_i s_i$, anche quando qualche $S_i$ è vuoto. Nell'esempio le quattro liste $(1,0),(1,3),(2,0),(2,3)$ producono rispettivamente $21,31,7,17$ modulo $35$. I rappresentanti ordinati sono $7,17,21,31$.
+
+Torna a [[#Esercizio 8 — Molte scelte locali (teorema cinese e conteggio delle classi)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> La costruzione è $x=avn+bum$: i due addendi selezionano il resto corretto. Due soluzioni differiscono per un multiplo di entrambi i moduli, dunque del loro prodotto. Per più moduli, $e_i$ è uno nella coordinata $i$ e zero nelle altre; tutte le identità seguono controllando ogni coordinata e applicando l'unicità. Nel caso generale $x=a+mt$ riduce il sistema a $mt\equiv b-a\pmod n$, risolvibile esattamente sotto il criterio; il passo in $t$ è $n/d$, quello in $x$ è $mn/d$. Modulo uno ogni intero è congruo a ogni altro: nessun vincolo.
+
+Torna a [[#Esercizio 9 — Costruire e provare l’unicità (teorema cinese e coordinate idempotenti)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> La prima congruenza richiede $6\mid4a$, cioè $3\mid a$. Scrivi $a=3b$: si riduce a $x\equiv2b\pmod{12}$. La seconda dà $x\equiv16\pmod{39}$, perché $5^{-1}\equiv8$. I resti devono coincidere modulo tre: $2b\equiv1$, ossia $b\equiv2\pmod3$. Dunque esistono soluzioni esattamente per $a=6+9c$. Allora $x=4+6c+12t$ e la seconda condizione dà $4t\equiv4-2c\pmod{13}$, quindi $t\equiv1+6c\pmod{13}$. Risultato $x\equiv16+78c\pmod{156}$. Modulo $\operatorname{mcm}(72,39)=936$ ci sono sei classi, aggiungendo $156j$ per $0\le j<6$.
+
+Torna a [[#Esercizio 10 — Un sistema con parametro (congruenze lineari e compatibilità di moduli non coprimi)|esercizio 10]].
 
 Il capitolo è acquisito quando sai passare dai resti a una famiglia completa di interi e spiegare perché il suo periodo è un prodotto oppure un mcm. Nei sistemi nuovi, il controllo decisivo è riconoscere quali condizioni sono compatibili prima di cercare gli inversi.
 

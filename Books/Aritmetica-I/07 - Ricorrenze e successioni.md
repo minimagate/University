@@ -8,6 +8,112 @@ Prerequisiti: [[Books/Aritmetica-I/02 - Naturali e induzione|induzione]], [[Book
 > - Imparerai a passare da una ricorrenza lineare a una formula esplicita tramite l'**equazione caratteristica**, distinguendo radici distinte, complesse e coincidenti.
 > - Vedrai come una stessa famiglia di oggetti, contata in due modi, dà un'identità fra somme di binomiali e numeri di Fibonacci.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quali casi disgiunti descrivono la prima colonna di una tassellazione? | [[#Esercizio 1 — Prime tassellazioni e Fibonacci (dati iniziali e ricorrenza)\|1]], [[#Esercizio 7 — Nessun consecutivo (ricorrenze e sottoinsiemi)\|7]], [[#Esercizio 8 — Domino colorati (modellazione e formula esplicita)\|8]] | [[#Un rettangolo nasconde rettangoli più piccoli\|Un rettangolo nasconde rettangoli più piccoli]] |
+| Perché ricorrenza e dati iniziali determinano una sola successione? | [[#Esercizio 1 — Prime tassellazioni e Fibonacci (dati iniziali e ricorrenza)\|1]], [[#Esercizio 4 — Stessi dati, stessa successione (unicità delle ricorrenze)\|4]], [[#Esercizio 6 — Un’identità di Fibonacci (induzione e identità di Cassini)\|6]], [[#Esercizio 8 — Domino colorati (modellazione e formula esplicita)\|8]], [[#Esercizio 9 — Formule e casi dimenticati (Binet, radici complesse e coefficienti degeneri)\|9]], [[#Esercizio 10 — Un dato iniziale lontano (unicità e successione di Fibonacci)\|10]] | [[#Una regola e i suoi dati iniziali\|Una regola e i suoi dati iniziali]] |
+| Come conti le tassellazioni fissando il numero di blocchi larghi due? | [[#Esercizio 2 — Contare per blocchi (somma binomiale delle tassellazioni)\|2]], [[#Esercizio 7 — Nessun consecutivo (ricorrenze e sottoinsiemi)\|7]] | [[#Contare ancora, questa volta per blocchi\|Contare ancora, questa volta per blocchi]] |
+| Perché un’equazione quadratica fornisce una formula esplicita? | [[#Esercizio 3 — Due potenze (equazione caratteristica con radici distinte)\|3]], [[#Esercizio 8 — Domino colorati (modellazione e formula esplicita)\|8]], [[#Esercizio 9 — Formule e casi dimenticati (Binet, radici complesse e coefficienti degeneri)\|9]] | [[#Dalla ricorrenza a un'equazione quadratica\|Dalla ricorrenza a un'equazione quadratica]] |
+| Come verifichi Binet e come tratti radici complesse? | [[#Esercizio 3 — Due potenze (equazione caratteristica con radici distinte)\|3]], [[#Esercizio 6 — Un’identità di Fibonacci (induzione e identità di Cassini)\|6]], [[#Esercizio 9 — Formule e casi dimenticati (Binet, radici complesse e coefficienti degeneri)\|9]], [[#Esercizio 10 — Un dato iniziale lontano (unicità e successione di Fibonacci)\|10]] | [[#Due formule esplicite, con verifica\|Due formule esplicite, con verifica]] |
+| Perché una radice doppia richiede un fattore lineare nell’indice? | [[#Esercizio 5 — Una radice ripetuta (equazione caratteristica con radice doppia)\|5]], [[#Esercizio 9 — Formule e casi dimenticati (Binet, radici complesse e coefficienti degeneri)\|9]] | [[#Approfondimento: quando le radici coincidono\|Approfondimento: quando le radici coincidono]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Prime tassellazioni e Fibonacci (dati iniziali e ricorrenza)
+
+Calcola $T_n$ per $0\leq n\leq7$ e $F_n$ per $0\leq n\leq8$. Spiega perché $T_0=1$ è compatibile con il conteggio.
+
+Se ti blocchi: [[#Un rettangolo nasconde rettangoli più piccoli|Un rettangolo nasconde rettangoli più piccoli]] · [[#Una regola e i suoi dati iniziali|Una regola e i suoi dati iniziali]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Contare per blocchi (somma binomiale delle tassellazioni)
+
+Conta le tassellazioni di una griglia $2\times6$ dividendole per numero $k$ di coppie orizzontali. Quante hanno esattamente due coppie?
+
+Se ti blocchi: [[#Contare ancora, questa volta per blocchi|Contare ancora, questa volta per blocchi]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Due potenze (equazione caratteristica con radici distinte)
+
+Risolvi $a_{n+2}=5a_{n+1}-6a_n$ per $n\geq0$, con $a_0=2$ e $a_1=5$. Calcola anche $a_4$.
+
+Se ti blocchi: [[#Dalla ricorrenza a un'equazione quadratica|Dalla ricorrenza a un'equazione quadratica]] · [[#Due formule esplicite, con verifica|Due formule esplicite, con verifica]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Stessi dati, stessa successione (unicità delle ricorrenze)
+
+Siano $(a_n)$ e $(b_n)$ successioni reali che soddisfano entrambe $x_{n+2}=px_{n+1}+qx_n$, con $p,q$ fissati. Dimostra che, se $a_0=b_0$ e $a_1=b_1$, allora $a_n=b_n$ per ogni $n$. Occorre supporre $q\ne0$?
+
+Se ti blocchi: [[#Una regola e i suoi dati iniziali|Una regola e i suoi dati iniziali]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Una radice ripetuta (equazione caratteristica con radice doppia)
+
+Uno studente risolve $a_{n+2}=2a_{n+1}-a_n$ per $n\geq0$, con $a_0=0,a_1=1$, scrivendo $a_n=A1^n+B1^n$; il sistema iniziale risulta impossibile. Conclude che la successione non esiste. Individua l'errore e trova la successione.
+
+Se ti blocchi: [[#Approfondimento: quando le radici coincidono|Approfondimento: quando le radici coincidono]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Un’identità di Fibonacci (induzione e identità di Cassini)
+
+Dimostra per induzione l'identità di Cassini
+   $$F_{n+1}F_{n-1}-F_n^2=(-1)^n\qquad(n\geq1).$$
+
+Se ti blocchi: [[#Una regola e i suoi dati iniziali|Una regola e i suoi dati iniziali]] · [[#Due formule esplicite, con verifica|Due formule esplicite, con verifica]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Nessun consecutivo (ricorrenze e sottoinsiemi)
+
+Per $n\geq0$, conta i sottoinsiemi di $\{1,\ldots,n\}$ che non contengono due interi consecutivi. Per $n=0$ l'insieme è vuoto. Trova una ricorrenza e il numero per $n=5$; poi conta quelli di cardinalità fissata $k\in\mathbb N$ e ricava una somma binomiale.
+
+Se ti blocchi: [[#Un rettangolo nasconde rettangoli più piccoli|Un rettangolo nasconde rettangoli più piccoli]] · [[#Contare ancora, questa volta per blocchi|Contare ancora, questa volta per blocchi]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Domino colorati (modellazione e formula esplicita)
+
+Modifica il problema delle tassellazioni: ogni domino verticale può essere rosso o blu, mentre quelli orizzontali hanno un unico colore. Tutti i colori distinguono le tassellazioni. Per $n\in\mathbb N$, trova dati iniziali, ricorrenza e formula esplicita del numero $P_n$ di tassellazioni colorate di una griglia $2\times n$. Calcola $P_4$.
+
+Se ti blocchi: [[#Un rettangolo nasconde rettangoli più piccoli|Un rettangolo nasconde rettangoli più piccoli]] · [[#Una regola e i suoi dati iniziali|Una regola e i suoi dati iniziali]] · [[#Dalla ricorrenza a un'equazione quadratica|Dalla ricorrenza a un'equazione quadratica]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Formule e casi dimenticati (Binet, radici complesse e coefficienti degeneri)
+
+Ricava la formula di Binet da $F_0=0,F_1=1$ e spiega perché è intera. Risolvi $a_{n+2}=-a_n$ con $a_0=1,a_1=0$, prima per ricorrenza e poi con le radici complesse. Risolvi infine $b_{n+2}=3b_{n+1}$ con $b_0=2,b_1=5$, senza usare potenze ambigue di zero. Per la radice doppia non nulla $r$, verifica direttamente che $(A+Bn)r^n$ soddisfa la ricorrenza di polinomio caratteristico $(\lambda-r)^2$.
+
+Se ti blocchi: [[#Una regola e i suoi dati iniziali|Una regola e i suoi dati iniziali]] · [[#Dalla ricorrenza a un'equazione quadratica|Dalla ricorrenza a un'equazione quadratica]] · [[#Due formule esplicite, con verifica|Due formule esplicite, con verifica]] · [[#Approfondimento: quando le radici coincidono|Approfondimento: quando le radici coincidono]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Un dato iniziale lontano (unicità e successione di Fibonacci)
+
+*Dalla raccolta fornita: esercizio 5, p. 70 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=80|p. 80 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Fissato $k>0$, cerca una successione reale con $a_0=0$, $a_k=1$ e $a_{n+1}=a_n+a_{n-1}$ per $n\ge1$. Dimostrane esistenza e unicità e determina $a_1$. Qui $F_0=0,F_1=1$; giustifica che il denominatore ottenuto sia non nullo.
+
+Se ti blocchi: [[#Una regola e i suoi dati iniziali|Una regola e i suoi dati iniziali]] · [[#Due formule esplicite, con verifica|Due formule esplicite, con verifica]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Un rettangolo nasconde rettangoli più piccoli
 
 Abbiamo una griglia di due righe e $n$ colonne. Vogliamo ricoprirla con domino rettangolari, ciascuno formato da due caselle adiacenti, senza sovrapposizioni e senza lasciare vuoti. Possiamo ruotare i domino. Quante tassellazioni esistono?
@@ -331,55 +437,84 @@ Il percorso sulle ricorrenze, l'esempio $a_{n+1}=3a_n-2a_{n-1}$ e il richiamo a 
 
 La prova dettagliata di unicità, la completezza tramite il sistema iniziale, la derivazione completa di Binet, l'approfondimento sulla radice doppia e gli esercizi sono integrazioni dell'esposizione. Le formule sono ricostruite e verificate matematicamente nei punti in cui l'ASR è rumoroso.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano la ricorrenza a nuove famiglie combinatorie.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Calcola $T_n$ per $0\leq n\leq7$ e $F_n$ per $0\leq n\leq8$. Spiega perché $T_0=1$ è compatibile con il conteggio.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Si ottengono $T_0,\ldots,T_7=1,1,2,3,5,8,13,21$ e $F_0,\ldots,F_8=0,1,1,2,3,5,8,13,21$. A ogni passo sommi i due termini precedenti. La tassellazione vuota è un unico oggetto: la scelta di non collocare tessere. Si verifica così anche $T_n=F_{n+1}$ negli indici richiesti.
 
-2. Conta le tassellazioni di una griglia $2\times6$ dividendole per numero $k$ di coppie orizzontali. Quante hanno esattamente due coppie?
+Torna a [[#Esercizio 1 — Prime tassellazioni e Fibonacci (dati iniziali e ricorrenza)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > I contributi per $k=0,1,2,3$ sono $\binom60=1$, $\binom51=5$, $\binom42=6$, $\binom33=1$. Il totale è $13$; quelle con due coppie sono $6$. Per $k=2$ ordini due blocchi doppi e due verticali, quindi scegli due posizioni su quattro.
 
-3. Risolvi $a_{n+2}=5a_{n+1}-6a_n$ per $n\geq0$, con $a_0=2$ e $a_1=5$. Calcola anche $a_4$.
+Torna a [[#Esercizio 2 — Contare per blocchi (somma binomiale delle tassellazioni)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Il polinomio $(\lambda-2)(\lambda-3)$ suggerisce $a_n=A2^n+B3^n$. Il sistema $A+B=2$, $2A+3B=5$ dà $A=B=1$. Dunque $a_n=2^n+3^n$ e $a_4=16+81=97$. La formula soddisfa la ricorrenza e i dati, quindi l'unicità la identifica con la successione cercata.
 
-4. Siano $(a_n)$ e $(b_n)$ successioni reali che soddisfano entrambe $x_{n+2}=px_{n+1}+qx_n$, con $p,q$ fissati. Dimostra che, se $a_0=b_0$ e $a_1=b_1$, allora $a_n=b_n$ per ogni $n$. Occorre supporre $q\ne0$?
+Torna a [[#Esercizio 3 — Due potenze (equazione caratteristica con radici distinte)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Poni $d_n=a_n-b_n$. Hai $d_0=d_1=0$ e $d_{n+2}=pd_{n+1}+qd_n$. Per induzione sulla coppia di termini consecutivi, da $d_n=d_{n+1}=0$ segue $d_{n+2}=0$. Dunque $d_n=0$ sempre. Non occorre $q\ne0$: non abbiamo diviso per $q$.
 
-5. Uno studente risolve $a_{n+2}=2a_{n+1}-a_n$ per $n\geq0$, con $a_0=0,a_1=1$, scrivendo $a_n=A1^n+B1^n$; il sistema iniziale risulta impossibile. Conclude che la successione non esiste. Individua l'errore e trova la successione.
+Torna a [[#Esercizio 4 — Stessi dati, stessa successione (unicità delle ricorrenze)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > La radice $1$ è doppia: la famiglia proposta contiene soltanto successioni costanti e non comprende tutte le soluzioni. La costruzione ricorrente assicura invece l'esistenza. La formula corretta è $a_n=n$: parte da $0,1$ e verifica $n+2=2(n+1)-n$.
 
-6. Dimostra per induzione l'identità di Cassini
-   $$F_{n+1}F_{n-1}-F_n^2=(-1)^n\qquad(n\geq1).$$
+Torna a [[#Esercizio 5 — Una radice ripetuta (equazione caratteristica con radice doppia)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Per $n=1$ il lato sinistro è $1\cdot0-1=-1$. Poni $D_n=F_{n+1}F_{n-1}-F_n^2$. Usando $F_{n+2}=F_{n+1}+F_n$ e $F_{n-1}=F_{n+1}-F_n$, trovi
 > $$D_{n+1}=F_{n+1}F_n+F_n^2-F_{n+1}^2=-D_n.$$
 > Da $D_1=-1$, il segno cambia a ogni passo: $D_n=(-1)^n$.
 
-7. Per $n\geq0$, conta i sottoinsiemi di $\{1,\ldots,n\}$ che non contengono due interi consecutivi. Per $n=0$ l'insieme è vuoto. Trova una ricorrenza e il numero per $n=5$; poi conta quelli di cardinalità fissata $k\in\mathbb N$ e ricava una somma binomiale.
+Torna a [[#Esercizio 6 — Un’identità di Fibonacci (induzione e identità di Cassini)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Se $n\geq2$, separa i sottoinsiemi che non contengono $n$, contati da $C_{n-1}$, da quelli che lo contengono e quindi escludono $n-1$, contati da $C_{n-2}$. Hai $C_0=1,C_1=2$, dunque $C_n=F_{n+2}$ e $C_5=13$. Per $1\leq k\leq\lfloor(n+1)/2\rfloor$, scrivi gli elementi come $x_1<\cdots<x_k$, con $x_{i+1}\geq x_i+2$. La trasformazione $y_i=x_i-(i-1)$ dà una successione strettamente crescente di $k$ elementi in $\{1,\ldots,n-k+1\}$, ed è reversibile. Il numero è $\binom{n-k+1}{k}$; per $k=0$ è $1$, per $k>\lfloor(n+1)/2\rfloor$ è $0$. Quindi
 > $$F_{n+2}=\sum_{k=0}^{\lfloor(n+1)/2\rfloor}\binom{n-k+1}{k}.$$
 
-8. Modifica il problema delle tassellazioni: ogni domino verticale può essere rosso o blu, mentre quelli orizzontali hanno un unico colore. Tutti i colori distinguono le tassellazioni. Per $n\in\mathbb N$, trova dati iniziali, ricorrenza e formula esplicita del numero $P_n$ di tassellazioni colorate di una griglia $2\times n$. Calcola $P_4$.
+Torna a [[#Esercizio 7 — Nessun consecutivo (ricorrenze e sottoinsiemi)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Il caso verticale ha due colori e lascia $P_{n-1}$ completamenti per ciascuno; il caso orizzontale lascia $P_{n-2}$ completamenti. Dunque $P_0=1,P_1=2$ e $P_n=2P_{n-1}+P_{n-2}$ per $n\geq2$. Le radici sono $r=1+\sqrt2$, $s=1-\sqrt2$. La formula
 > $$P_n=\frac{r^{n+1}-s^{n+1}}{2\sqrt2}$$
 > soddisfa la ricorrenza e dà $P_0=1$, $P_1=r+s=2$; l'unicità conclude. I primi termini sono $1,2,5,12,29$, quindi $P_4=29$.
+
+Torna a [[#Esercizio 8 — Domino colorati (modellazione e formula esplicita)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Poste $\varphi=(1+\sqrt5)/2$, $\psi=(1-\sqrt5)/2$, i dati danno $F_n=(\varphi^n-\psi^n)/\sqrt5$; unicità e ricorrenza intera provano l'integralità. La prima successione è $1,0,-1,0,\ldots$, cioè $(i^n+(-i)^n)/2$. Per la seconda, $b_0=2$ e $b_n=5\cdot3^{n-1}$ per $n\ge1$. Nell'ultimo caso sostituisci in $a_{n+2}=2ra_{n+1}-r^2a_n$: $2(A+B(n+1))-(A+Bn)=A+B(n+2)$. I dati iniziali determinano $A$ e $B$ perché $r\ne0$.
+
+Torna a [[#Esercizio 9 — Formule e casi dimenticati (Binet, radici complesse e coefficienti degeneri)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Per un valore provvisorio $a_1=t$, l'induzione dà $a_n=tF_n$. Inoltre $F_k>0$ per $k\ge1$, perché $F_1=F_2=1$ e la ricorrenza somma positivi. La condizione $a_k=1$ obbliga $t=1/F_k$; viceversa $a_n=F_n/F_k$ soddisfa tutto. L'unicità della ricorrenza con $a_0,a_1$ prova l'unicità richiesta, benché il secondo dato originario non sia consecutivo al primo.
+
+Torna a [[#Esercizio 10 — Un dato iniziale lontano (unicità e successione di Fibonacci)|esercizio 10]].
 
 Il capitolo è acquisito quando sai giustificare i casi che producono una ricorrenza, fissare correttamente i dati iniziali e dimostrare che una formula trovata descrive tutti i termini. Nei problemi nuovi, prova a spiegare quale parte puoi rimuovere e perché il completamento non introduce omissioni o ripetizioni.
 

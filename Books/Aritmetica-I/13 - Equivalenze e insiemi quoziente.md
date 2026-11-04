@@ -8,6 +8,102 @@ Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|lingua
 > - Controllerai quando una formula sulle classi è ben definita, cioè non dipende dal rappresentante scelto.
 > - L'idea che lega tutto: per trattare come un solo oggetto cose diverse, si raccolgono in un insieme e si lavora sull'insieme; la fatica sta nel verificare che i risultati non dipendano dal nome scelto.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quando rappresentazioni diverse devono indicare un unico oggetto? | [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#Una quantità, molte rappresentazioni\|Una quantità, molte rappresentazioni]] |
+| Come verifichi tutti e tre gli assiomi di equivalenza? | [[#Esercizio 2 — Vicini ma non equivalenti (assiomi di equivalenza)\|2]], [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#Quando una relazione esprime «la stessa cosa»\|Quando una relazione esprime «la stessa cosa»]] |
+| Perché due classi che si incontrano coincidono? | [[#Esercizio 1 — Raccogliere i rappresentanti (classi, quoziente e proiezione)\|1]], [[#Esercizio 2 — Vicini ma non equivalenti (assiomi di equivalenza)\|2]], [[#Esercizio 5 — Un’inclusione rigida (classi uguali o disgiunte)\|5]], [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#Le classi e il motivo per cui non si sovrappongono\|Le classi e il motivo per cui non si sovrappongono]] |
+| Come passi da una partizione a un quoziente e viceversa? | [[#Esercizio 1 — Raccogliere i rappresentanti (classi, quoziente e proiezione)\|1]], [[#Esercizio 3 — Dai blocchi alla relazione (partizioni e relazioni di equivalenza)\|3]], [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#Partizioni e quozienti: due modi di descrivere la stessa scelta\|Partizioni e quozienti: due modi di descrivere la stessa scelta]] |
+| Perché somma e prodotto non dipendono dal rappresentante modulare? | [[#Esercizio 4 — Calcolare sulle classi (operazioni sul quoziente modulare)\|4]], [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#L’orologio come insieme quoziente\|L’orologio come insieme quoziente]] |
+| Quando una formula definita sui rappresentanti passa alle classi? | [[#Esercizio 7 — Una falsa somma (buona definizione delle operazioni)\|7]], [[#Esercizio 8 — Ridurre un rappresentante (buona definizione delle funzioni sul quoziente)\|8]], [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#Che cosa significa definire una funzione sulle classi\|Che cosa significa definire una funzione sulle classi]] |
+| Come costruisci i razionali e provi che le operazioni sono ben definite? | [[#Esercizio 6 — Due scritture di una frazione (costruzione dei razionali)\|6]], [[#Esercizio 7 — Una falsa somma (buona definizione delle operazioni)\|7]], [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)\|9]] | [[#Costruire i razionali senza presupporli\|Costruire i razionali senza presupporli]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Raccogliere i rappresentanti (classi, quoziente e proiezione)
+
+Su $X=\{1,2,3,4,5,6\}$ definiamo $x\sim y$ se $x\equiv y\pmod3$. Elenca tutte le classi distinte, il quoziente e le immagini di $2$ e $5$ nella proiezione canonica.
+
+Se ti blocchi: [[#Le classi e il motivo per cui non si sovrappongono|Le classi e il motivo per cui non si sovrappongono]] · [[#Partizioni e quozienti: due modi di descrivere la stessa scelta|Partizioni e quozienti: due modi di descrivere la stessa scelta]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Vicini ma non equivalenti (assiomi di equivalenza)
+
+Su $\mathbb Z$ considera $xRy$ se $|x-y|\le1$. Verifica riflessività e simmetria, poi stabilisci se $R$ è un’equivalenza. Esamina gli insiemi $\{z:zR0\}$ e $\{z:zR1\}$.
+
+Se ti blocchi: [[#Quando una relazione esprime «la stessa cosa»|Quando una relazione esprime «la stessa cosa»]] · [[#Le classi e il motivo per cui non si sovrappongono|Le classi e il motivo per cui non si sovrappongono]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Dai blocchi alla relazione (partizioni e relazioni di equivalenza)
+
+La famiglia $\mathcal P=\{\{a,c\},\{b\},\{d,e\}\}$ è una partizione di $X=\{a,b,c,d,e\}$. Descrivi la relazione associata e calcola $[c]$, $[b]$ e il numero di elementi del quoziente.
+
+Se ti blocchi: [[#Partizioni e quozienti: due modi di descrivere la stessa scelta|Partizioni e quozienti: due modi di descrivere la stessa scelta]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Calcolare sulle classi (operazioni sul quoziente modulare)
+
+In $\mathbb Z/7\mathbb Z$ trova il rappresentante fra $0$ e $6$ di $[-23]_7$, poi calcola $[-23]_7+[18]_7$ e $[-23]_7[18]_7$.
+
+Se ti blocchi: [[#L’orologio come insieme quoziente|L’orologio come insieme quoziente]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Un’inclusione rigida (classi uguali o disgiunte)
+
+Sia $\sim$ un’equivalenza su $X$. Dimostra che $[x]\subseteq[y]$ implica $[x]=[y]$. Dedicane un passaggio esplicito al ruolo della riflessività.
+
+Se ti blocchi: [[#Le classi e il motivo per cui non si sovrappongono|Le classi e il motivo per cui non si sovrappongono]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Due scritture di una frazione (costruzione dei razionali)
+
+Verifica che $(2,-3)$ e $(-4,6)$ rappresentino lo stesso razionale. Somma e moltiplica questo razionale per $[(3,5)]$, usando entrambe le rappresentazioni e confrontando i risultati.
+
+Se ti blocchi: [[#Costruire i razionali senza presupporli|Costruire i razionali senza presupporli]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Una falsa somma (buona definizione delle operazioni)
+
+Si propone un’operazione sui razionali con la formula $[(a,b)]\star[(c,d)]=[(a+c,b+d)]$. Esamina prima se produce sempre una coppia ammessa. Anche restringendo il calcolo a rappresentanti con denominatori positivi, verifica se è indipendente dai rappresentanti di $1/2$ e $1/3$.
+
+Se ti blocchi: [[#Che cosa significa definire una funzione sulle classi|Che cosa significa definire una funzione sulle classi]] · [[#Costruire i razionali senza presupporli|Costruire i razionali senza presupporli]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Ridurre un rappresentante (buona definizione delle funzioni sul quoziente)
+
+Siano $m,n\ge1$. Dimostra che la formula $F([a]_n)=[a]_m$, richiesta per ogni $a\in\mathbb Z$, definisce una funzione $\mathbb Z/n\mathbb Z\to\mathbb Z/m\mathbb Z$ se e solo se $m\mid n$. Quando è ben definita, dimostra che è suriettiva.
+
+Se ti blocchi: [[#Che cosa significa definire una funzione sulle classi|Che cosa significa definire una funzione sulle classi]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)
+
+Dimostra l'equivalenza fra $x\sim y$, $[x]=[y]$ e $[x]\cap[y]\ne\varnothing$. Ricostruisci il passaggio in entrambi i versi fra equivalenze e partizioni, anche su $X=\varnothing$. Per $h:X\to Y$ dimostra che esiste un'unica $\bar h:X/{\sim}\to Y$ con $h=\bar h\circ\pi$ esattamente quando $h$ è costante sulle classi. Infine verifica che $(a,b)\sim(c,d)\iff ad=bc$, con denominatori non nulli, sia un'equivalenza e che le formule della somma e del prodotto di frazioni siano indipendenti dai rappresentanti.
+
+Se ti blocchi: [[#Una quantità, molte rappresentazioni|Una quantità, molte rappresentazioni]] · [[#Quando una relazione esprime «la stessa cosa»|Quando una relazione esprime «la stessa cosa»]] · [[#Le classi e il motivo per cui non si sovrappongono|Le classi e il motivo per cui non si sovrappongono]] · [[#Partizioni e quozienti: due modi di descrivere la stessa scelta|Partizioni e quozienti: due modi di descrivere la stessa scelta]] · [[#L’orologio come insieme quoziente|L’orologio come insieme quoziente]] · [[#Che cosa significa definire una funzione sulle classi|Che cosa significa definire una funzione sulle classi]] · [[#Costruire i razionali senza presupporli|Costruire i razionali senza presupporli]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Una quantità, molte rappresentazioni
 
 Mezza torta e due quarti di torta sono la stessa quantità. Eppure le scritture $1/2$ e $2/4$ sono diverse: se registriamo numeratore e denominatore, otteniamo le coppie distinte $(1,2)$ e $(2,4)$. Come possiamo costruire un oggetto matematico che conservi la quantità e dimentichi questa differenza di rappresentazione?
@@ -371,49 +467,72 @@ Per le congruenze: [[Notes/Aritmetica/Lectures/2026-10-07 - Fattorizzazione unic
 
 Sono integrazioni didattiche di questo capitolo la corrispondenza dimostrata in entrambe le direzioni fra partizioni ed equivalenze, il criterio generale per passare una funzione al quoziente, il controesempio fra moduli diversi, le verifiche complete della costruzione di $\mathbb Q$, gli esempi e gli esercizi. Le prove sono ricostruite esplicitando ipotesi e passaggi; non sono citazioni del docente.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano la costruzione a nuove domande.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Su $X=\{1,2,3,4,5,6\}$ definiamo $x\sim y$ se $x\equiv y\pmod3$. Elenca tutte le classi distinte, il quoziente e le immagini di $2$ e $5$ nella proiezione canonica.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Le classi sono $A=\{1,4\}$, $B=\{2,5\}$ e $C=\{3,6\}$: si raggruppano i numeri con lo stesso resto. Il quoziente è $\{A,B,C\}$ e $\pi(2)=\pi(5)=B$. Le classi contengono soltanto elementi del dominio $X$.
 
-2. Su $\mathbb Z$ considera $xRy$ se $|x-y|\le1$. Verifica riflessività e simmetria, poi stabilisci se $R$ è un’equivalenza. Esamina gli insiemi $\{z:zR0\}$ e $\{z:zR1\}$.
+Torna a [[#Esercizio 1 — Raccogliere i rappresentanti (classi, quoziente e proiezione)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Si ha $|x-x|=0$ e $|x-y|=|y-x|$, quindi valgono le prime due proprietà. Ma $0R1$ e $1R2$, mentre $0\not R2$: manca la transitività. I due insiemi sono $\{-1,0,1\}$ e $\{0,1,2\}$, distinti e con intersezione non vuota. La proprietà «uguali o disgiunti» richiede un’equivalenza.
 
-3. La famiglia $\mathcal P=\{\{a,c\},\{b\},\{d,e\}\}$ è una partizione di $X=\{a,b,c,d,e\}$. Descrivi la relazione associata e calcola $[c]$, $[b]$ e il numero di elementi del quoziente.
+Torna a [[#Esercizio 2 — Vicini ma non equivalenti (assiomi di equivalenza)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Due elementi sono in relazione quando stanno nello stesso blocco. Le coppie sono $(a,a),(a,c),(c,a),(c,c),(b,b),(d,d),(d,e),(e,d),(e,e)$. Dunque $[c]=\{a,c\}$, $[b]=\{b\}$ e il quoziente ha tre elementi, uno per blocco.
 
-4. In $\mathbb Z/7\mathbb Z$ trova il rappresentante fra $0$ e $6$ di $[-23]_7$, poi calcola $[-23]_7+[18]_7$ e $[-23]_7[18]_7$.
+Torna a [[#Esercizio 3 — Dai blocchi alla relazione (partizioni e relazioni di equivalenza)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Poiché $-23=(-4)7+5$ e $18=2\cdot7+4$, le classi sono $[5]_7$ e $[4]_7$. La somma è $[9]_7=[2]_7$; il prodotto è $[20]_7=[6]_7$. Direttamente, $-23+18=-5\equiv2$ e $-23\cdot18=-414=(-60)7+6$.
 
-5. Sia $\sim$ un’equivalenza su $X$. Dimostra che $[x]\subseteq[y]$ implica $[x]=[y]$. Dedicane un passaggio esplicito al ruolo della riflessività.
+Torna a [[#Esercizio 4 — Calcolare sulle classi (operazioni sul quoziente modulare)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > La riflessività dà $x\in[x]$. Per l’inclusione segue $x\in[y]$, quindi $x\sim y$. Il teorema sulle classi dà $[x]=[y]$. Una classe non può essere contenuta propriamente in un’altra classe della stessa equivalenza.
 
-6. Verifica che $(2,-3)$ e $(-4,6)$ rappresentino lo stesso razionale. Somma e moltiplica questo razionale per $[(3,5)]$, usando entrambe le rappresentazioni e confrontando i risultati.
+Torna a [[#Esercizio 5 — Un’inclusione rigida (classi uguali o disgiunte)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > $2\cdot6=(-3)(-4)=12$. La somma usando $(2,-3)$ dà $[(1,-15)]$; usando $(-4,6)$ dà $[(-2,30)]$. Sono equivalenti perché $1\cdot30=(-15)(-2)=30$, e rappresentano $-1/15$. Il prodotto dà $[(6,-15)]$ oppure $[(-12,30)]$: i prodotti incrociati sono entrambi $180$, e il risultato è $-2/5$.
 
-7. Si propone un’operazione sui razionali con la formula $[(a,b)]\star[(c,d)]=[(a+c,b+d)]$. Esamina prima se produce sempre una coppia ammessa. Anche restringendo il calcolo a rappresentanti con denominatori positivi, verifica se è indipendente dai rappresentanti di $1/2$ e $1/3$.
+Torna a [[#Esercizio 6 — Due scritture di una frazione (costruzione dei razionali)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Non è sempre ammessa: $(1,1)$ e $(1,-1)$ produrrebbero $(2,0)$. Con denominatori positivi il problema della buona definizione rimane: $(1,2)$ e $(1,3)$ danno $(2,5)$; sostituendo $(1,2)$ con $(2,4)$ si ottiene $(3,7)$. Poiché $2\cdot7=14\ne15=5\cdot3$, i risultati sono classi diverse. La formula non definisce l’operazione proposta su $\mathbb Q$.
 
-8. Siano $m,n\ge1$. Dimostra che la formula $F([a]_n)=[a]_m$, richiesta per ogni $a\in\mathbb Z$, definisce una funzione $\mathbb Z/n\mathbb Z\to\mathbb Z/m\mathbb Z$ se e solo se $m\mid n$. Quando è ben definita, dimostra che è suriettiva.
+Torna a [[#Esercizio 7 — Una falsa somma (buona definizione delle operazioni)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Necessità: $[0]_n=[n]_n$ impone $[0]_m=[n]_m$, cioè $m\mid n$. Sufficienza: se $a-a'=kn$ e $n=tm$, allora $a-a'=ktm$, dunque $[a]_m=[a']_m$. Per la suriettività, ogni classe $[b]_m$ è immagine di $[b]_n$. Il risultato comprende i casi $m=1$ o $n=1$ senza eccezioni.
+
+Torna a [[#Esercizio 8 — Ridurre un rappresentante (buona definizione delle funzioni sul quoziente)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Un rappresentante appartiene alla propria classe; simmetria e transitività trasportano le appartenenze e danno le tre equivalenze. Le classi ricoprono $X$ e sono uguali o disgiunte; la relazione «stesso blocco» è riflessiva, simmetrica e transitiva e ricostruisce i blocchi. Su $\varnothing$ relazione, partizione e quoziente sono vuoti. Se $h$ è costante sulle classi poni $\bar h([x])=h(x)$; è ben definita e unica per suriettività di $\pi$. Il viceversa segue dalla fattorizzazione. Per i razionali, da $ad=bc$ e $cf=de$ ottieni $adf=bde$ e cancelli $d\ne0$ per la transitività. Se $ab'=a'b$ e $cd'=c'd$, allora $(ad+bc)b'd'=(a'd'+b'c')bd$ e $(ac)b'd'=(a'c')bd$: sono le uguaglianze necessarie per somma e prodotto, con denominatori ancora non nulli.
+
+Torna a [[#Esercizio 9 — Quando una formula scende alle classi (equivalenze, fattorizzazione attraverso il quoziente e razionali)|esercizio 9]].
 
 Hai acquisito il passaggio al quoziente quando sai distinguere un rappresentante dalla sua classe e provare che le classi formano una partizione. Per usare davvero la costruzione, devi anche saper controllare se una formula continua a dare lo stesso risultato cambiando tutti i rappresentanti coinvolti.
 

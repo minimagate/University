@@ -8,6 +8,113 @@ Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout
 > - Dal denominatore ridotto leggerai, senza eseguire la divisione, quante cifre precedono la ripetizione (l'antiperiodo) e quanto è lungo il blocco che si ripete (il periodo).
 > - L'idea che lega tutto: lo «stato» della divisione è il resto; i resti possibili sono finiti, quindi si entra in un ciclo, e la lunghezza del ciclo è un ordine moltiplicativo di $10$.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Perché una divisione può ricominciare da capo? | [[#Esercizio 9 — Perché le cifre diventano periodiche (resti finiti, conversione e sviluppo canonico)\|9]] | [[#Perché una divisione ricomincia da capo?\|Perché una divisione ricomincia da capo?]] |
+| Perché ripetere un resto ripete tutto il seguito delle cifre? | [[#Esercizio 3 — Prevedere il ciclo (antiperiodo e algoritmo dei resti)\|3]], [[#Esercizio 8 — Una coda impossibile (irrazionalità e mancata periodicità)\|8]], [[#Esercizio 9 — Perché le cifre diventano periodiche (resti finiti, conversione e sviluppo canonico)\|9]], [[#Esercizio 10 — Prevedere le due lunghezze (dimostrazione di antiperiodo e periodo dal denominatore)\|10]] | [[#La divisione vista attraverso i resti\|La divisione vista attraverso i resti]] |
+| Come ricostruisci la frazione da antiperiodo e periodo? | [[#Esercizio 2 — Dalle cifre alla frazione (sviluppi periodici e conversione)\|2]], [[#Esercizio 8 — Una coda impossibile (irrazionalità e mancata periodicità)\|8]], [[#Esercizio 9 — Perché le cifre diventano periodiche (resti finiti, conversione e sviluppo canonico)\|9]] | [[#Da un periodo a una frazione\|Da un periodo a una frazione]] |
+| Come elimini l’ambiguità delle code infinite di nove? | [[#Esercizio 9 — Perché le cifre diventano periodiche (resti finiti, conversione e sviluppo canonico)\|9]] | [[#Una convenzione necessaria: le code di 9\|Una convenzione necessaria: le code di 9]] |
+| Come il denominatore ridotto determina le due lunghezze minime? | [[#Esercizio 1 — Quando finisce la divisione (sviluppi finiti e denominatore ridotto)\|1]], [[#Esercizio 3 — Prevedere il ciclo (antiperiodo e algoritmo dei resti)\|3]], [[#Esercizio 4 — Dimostrare il minimo (periodo e ordine moltiplicativo)\|4]], [[#Esercizio 5 — Ridurre prima di prevedere (ipotesi della frazione ridotta)\|5]], [[#Esercizio 6 — Cambiare numeratore (periodo e cancellazione del numeratore)\|6]], [[#Esercizio 10 — Prevedere le due lunghezze (dimostrazione di antiperiodo e periodo dal denominatore)\|10]] | [[#Leggere il denominatore\|Leggere il denominatore]] |
+| Quale controllo distingue uno sviluppo finito da uno con periodo non nullo? | [[#Esercizio 5 — Ridurre prima di prevedere (ipotesi della frazione ridotta)\|5]], [[#Esercizio 10 — Prevedere le due lunghezze (dimostrazione di antiperiodo e periodo dal denominatore)\|10]] | [[#Schema: dal denominatore alle lunghezze\|Schema: dal denominatore alle lunghezze]] |
+| Come verifichi una previsione usando la divisione effettiva? | [[#Esercizio 10 — Prevedere le due lunghezze (dimostrazione di antiperiodo e periodo dal denominatore)\|10]] | [[#Un esempio che mette insieme i due meccanismi\|Un esempio che mette insieme i due meccanismi]] |
+| Come cambia il criterio se la base è diversa da dieci? | [[#Esercizio 7 — Cambiare base (sviluppi in una base qualsiasi)\|7]] | [[#Cambiare base\|Cambiare base]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Quando finisce la divisione (sviluppi finiti e denominatore ridotto)
+
+Calcola gli sviluppi canonici di $3/40$, $7/25$ e $-13/8$. Determina per ciascuno il numero minimo di cifre dopo la virgola, motivandolo sul denominatore ridotto.
+
+Se ti blocchi: [[#Leggere il denominatore|Leggere il denominatore]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Dalle cifre alla frazione (sviluppi periodici e conversione)
+
+Trasforma in frazioni ridotte $2,4\overline{09}$ e $0,\overline{007}$. Specifica la lunghezza di ogni blocco prima di applicare la formula.
+
+Se ti blocchi: [[#Da un periodo a una frazione|Da un periodo a una frazione]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Prevedere il ciclo (antiperiodo e algoritmo dei resti)
+
+Per $5/24$ e $11/18$, prevedi antiperiodo e periodo minimi, poi calcola le cifre con la divisione.
+
+Se ti blocchi: [[#La divisione vista attraverso i resti|La divisione vista attraverso i resti]] · [[#Leggere il denominatore|Leggere il denominatore]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Dimostrare il minimo (periodo e ordine moltiplicativo)
+
+Determina il periodo minimo di $1/27$ e il suo sviluppo. Spiega perché verificare soltanto $10^3\equiv1\pmod{27}$ non basterebbe, da solo, a concludere che il periodo minimo è $3$.
+
+Se ti blocchi: [[#Leggere il denominatore|Leggere il denominatore]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Ridurre prima di prevedere (ipotesi della frazione ridotta)
+
+Diagnostica l’errore: «$14/60$ ha antiperiodo minimo $2$, perché $60=2^2\cdot3\cdot5$». Calcola invece lo sviluppo canonico e le lunghezze minime corrette.
+
+Se ti blocchi: [[#Leggere il denominatore|Leggere il denominatore]] · [[#Schema: dal denominatore alle lunghezze|Schema: dal denominatore alle lunghezze]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Cambiare numeratore (periodo e cancellazione del numeratore)
+
+Sia $b\ge2$ coprimo con $10$. Dimostra che per tutti gli interi $a$ con $1\le a<b$ e $\gcd(a,b)=1$, la frazione $a/b$ ha antiperiodo vuoto e lo stesso periodo minimo. Le cifre del periodo devono essere uguali?
+
+Se ti blocchi: [[#Leggere il denominatore|Leggere il denominatore]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Cambiare base (sviluppi in una base qualsiasi)
+
+In base $2$, determina lo sviluppo di $1/12$ e le lunghezze minime. In base $12$, determina invece lo sviluppo finito di $1/18$ e mostra che non può terminare dopo una sola cifra. Usa un pedice per distinguere le basi.
+
+Se ti blocchi: [[#Cambiare base|Cambiare base]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Una coda impossibile (irrazionalità e mancata periodicità)
+
+Definisci $x=0,101001000100001\ldots$ imponendo che fra il $k$-esimo e il $(k+1)$-esimo $1$ ci siano esattamente $k$ zeri, per ogni $k\ge1$. Dimostra che $x$ è irrazionale. Perché dire soltanto «i blocchi crescono» non completa la prova?
+
+Se ti blocchi: [[#La divisione vista attraverso i resti|La divisione vista attraverso i resti]] · [[#Da un periodo a una frazione|Da un periodo a una frazione]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Perché le cifre diventano periodiche (resti finiti, conversione e sviluppo canonico)
+
+Per $0\le a<b$, scrivi la ricorrenza $10r_{j-1}=bd_j+r_j$ e dimostra che ripetere un resto ripete tutte le cifre successive. Viceversa ricava la frazione di $0,A\overline B$ con blocchi di lunghezze $s,t$, includendo zeri iniziali. Dimostra $0,\overline9=1$ e trasforma $0,24\overline9$ nello sviluppo canonico. Perché il criterio di periodicità continua a valere dopo aver escluso le code di nove?
+
+Se ti blocchi: [[#Perché una divisione ricomincia da capo?|Perché una divisione ricomincia da capo?]] · [[#La divisione vista attraverso i resti|La divisione vista attraverso i resti]] · [[#Da un periodo a una frazione|Da un periodo a una frazione]] · [[#Una convenzione necessaria: le code di 9|Una convenzione necessaria: le code di 9]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Prevedere le due lunghezze (dimostrazione di antiperiodo e periodo dal denominatore)
+
+*Dalla raccolta fornita: esercizio preliminare 8, con esplicitazione del periodo minimo e del caso finito, p. 56 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=67|p. 67 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Sia $m/n$ ridotta, $n>0$, e $n=2^e5^f c$, $\gcd(c,10)=1$. Dimostra che, se $c>1$, le lunghezze minime sono $s=\max(e,f)$ e $t=\operatorname{ord}_c(10)$; giustifica separatamente necessità e sufficienza. Se $c=1$, mostra che lo sviluppo canonico termina dopo esattamente $s$ cifre decimali, senza introdurre un ordine modulo uno. Tratta anche $n=1$.
+
+Se ti blocchi: [[#La divisione vista attraverso i resti|La divisione vista attraverso i resti]] · [[#Leggere il denominatore|Leggere il denominatore]] · [[#Schema: dal denominatore alle lunghezze|Schema: dal denominatore alle lunghezze]] · [[#Un esempio che mette insieme i due meccanismi|Un esempio che mette insieme i due meccanismi]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Perché una divisione ricomincia da capo?
 
 Calcolando $1/12$ otteniamo $0,083333\ldots$; calcolando $1/28$ compare invece $0,03571428571428\ldots$. Perché le cifre finiscono per ripetersi? E possiamo prevedere quante cifre precederanno la ripetizione, senza eseguire tutta la divisione?
@@ -304,49 +411,79 @@ Il nucleo del capitolo segue la [[Notes/Aritmetica/Lectures/2026-10-14 - Svilupp
 
 Sono integrazioni didattiche la formalizzazione dell’algoritmo, la convenzione canonica, le prove delle lunghezze minime, il raccordo esplicito con l’ordine moltiplicativo, la formulazione in base generale e gli esercizi. Gli esempi numerici sono ricostruiti e verificati; non sono presentati come citazioni del docente.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 richiedono di trasferire il metodo o collegare più idee.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Calcola gli sviluppi canonici di $3/40$, $7/25$ e $-13/8$. Determina per ciascuno il numero minimo di cifre dopo la virgola, motivandolo sul denominatore ridotto.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Si ottengono $0,075$, $0,28$ e $-1,625$. I denominatori sono rispettivamente $2^3\cdot5$, $5^2$ e $2^3$: le lunghezze minime sono $3,2,3$. Per il negativo si applica il criterio al valore assoluto; $13/8=1+5/8$ e il denominatore della parte frazionaria è ancora $8$.
 
-2. Trasforma in frazioni ridotte $2,4\overline{09}$ e $0,\overline{007}$. Specifica la lunghezza di ogni blocco prima di applicare la formula.
+Torna a [[#Esercizio 1 — Quando finisce la divisione (sviluppi finiti e denominatore ridotto)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Nel primo caso $s=1$, $t=2$ e il valore del periodo è $9$: $2+4/10+9/(10\cdot99)=2+2/5+1/110=53/22$. Nel secondo caso $t=3$, quindi la frazione è $7/999$, già ridotta. Gli zeri iniziali determinano le potenze del dieci pur non modificando il valore intero del blocco.
 
-3. Per $5/24$ e $11/18$, prevedi antiperiodo e periodo minimi, poi calcola le cifre con la divisione.
+Torna a [[#Esercizio 2 — Dalle cifre alla frazione (sviluppi periodici e conversione)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > $24=2^3\cdot3$ dà $s=3$ e $t=\operatorname{ord}_3(10)=1$: $5/24=0,208\overline3$. I resti successivi da $5$ sono $2,20,8,8$. Per $18=2\cdot3^2$ si ha $s=1$, $t=\operatorname{ord}_9(10)=1$: $11/18=0,6\overline1$, con resti successivi $2,2$. Le cifre si ottengono dividendo ogni volta dieci volte il resto precedente.
 
-4. Determina il periodo minimo di $1/27$ e il suo sviluppo. Spiega perché verificare soltanto $10^3\equiv1\pmod{27}$ non basterebbe, da solo, a concludere che il periodo minimo è $3$.
+Torna a [[#Esercizio 3 — Prevedere il ciclo (antiperiodo e algoritmo dei resti)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > $27$ è coprimo con $10$, quindi l’antiperiodo è vuoto. Poiché $10^3=1000\equiv1\pmod{27}$, l’ordine divide $3$; escludiamo $1$ perché $10\not\equiv1$. L’ordine è dunque $3$. Inoltre $37/999=1/27$, perciò lo sviluppo è $0,\overline{037}$. Un esponente che dà $1$ potrebbe essere un multiplo del minimo: serve escludere i divisori propri.
 
-5. Diagnostica l’errore: «$14/60$ ha antiperiodo minimo $2$, perché $60=2^2\cdot3\cdot5$». Calcola invece lo sviluppo canonico e le lunghezze minime corrette.
+Torna a [[#Esercizio 4 — Dimostrare il minimo (periodo e ordine moltiplicativo)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > La frazione non è ridotta: $14/60=7/30$, con $30=2\cdot3\cdot5$. Quindi $s=1$ e $t=1$. La divisione dà $70=30\cdot2+10$ e $100=30\cdot3+10$, da cui $0,2\overline3$. Due cifre iniziali sono possibili nella scrittura $0,23\overline3$, ma non sono il minimo.
 
-6. Sia $b\ge2$ coprimo con $10$. Dimostra che per tutti gli interi $a$ con $1\le a<b$ e $\gcd(a,b)=1$, la frazione $a/b$ ha antiperiodo vuoto e lo stesso periodo minimo. Le cifre del periodo devono essere uguali?
+Torna a [[#Esercizio 5 — Ridurre prima di prevedere (ipotesi della frazione ridotta)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Nel criterio $b\mid a(10^t-1)$ si cancella $a$, quindi il minimo $t$ è sempre $\operatorname{ord}_b(10)$, mentre $s=0$ è già ammesso. Le cifre dipendono dal numeratore: $1/3=0,\overline3$ e $2/3=0,\overline6$ hanno entrambe periodo minimo $1$.
 
-7. In base $2$, determina lo sviluppo di $1/12$ e le lunghezze minime. In base $12$, determina invece lo sviluppo finito di $1/18$ e mostra che non può terminare dopo una sola cifra. Usa un pedice per distinguere le basi.
+Torna a [[#Esercizio 6 — Cambiare numeratore (periodo e cancellazione del numeratore)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > In base $2$, $12=4\cdot3$: servono due cifre iniziali e $\operatorname{ord}_3(2)=2$, perché $2\equiv-1\pmod3$. Si ha $(0,00\overline{01})_2=1/[2^2(2^2-1)]=1/12$. In base $12$, $18\mid12^2$ ma $18\nmid12$: il minimo è due cifre e $1/18=8/144=(0,08)_{12}$. Qui tutti i fattori del denominatore dividono la base, quindi non rimane una componente periodica non nulla.
 
-8. Definisci $x=0,101001000100001\ldots$ imponendo che fra il $k$-esimo e il $(k+1)$-esimo $1$ ci siano esattamente $k$ zeri, per ogni $k\ge1$. Dimostra che $x$ è irrazionale. Perché dire soltanto «i blocchi crescono» non completa la prova?
+Torna a [[#Esercizio 7 — Cambiare base (sviluppi in una base qualsiasi)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Se la coda fosse periodica di lunghezza $t$, il periodo dovrebbe contenere un $1$, perché nello sviluppo compaiono infiniti $1$. Ogni blocco di $t$ cifre abbastanza avanzato conterrebbe allora almeno un $1$: non potrebbero esistere $t$ zeri consecutivi nella coda. Ma la costruzione produce blocchi di zeri arbitrariamente lunghi, anche dopo qualunque posizione fissata. È una contraddizione; lo sviluppo non è eventualmente periodico e quindi $x\notin\mathbb Q$. Il confronto con una lunghezza ipotetica $t$ rende precisa l’intuizione dei blocchi crescenti.
+
+Torna a [[#Esercizio 8 — Una coda impossibile (irrazionalità e mancata periodicità)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> La divisione euclidea impone univocamente cifra e resto successivi; ci sono solo $b$ resti possibili. Se $A,B$ sono i valori interi dei blocchi, la frazione è $A/10^s+B/[10^s(10^t-1)]$, ottenuta sottraendo due spostamenti decimali. Per $x=0,\overline9$, $10x-x=9$ dà $x=1$; dunque $0,24\overline9=0,25$. Una coda di nove si sostituisce con un riporto e una coda di zeri, che resta periodica; la razionalità non cambia. Per i negativi si sviluppa il valore assoluto e si antepone il segno.
+
+Torna a [[#Esercizio 9 — Perché le cifre diventano periodiche (resti finiti, conversione e sviluppo canonico)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Una coda con antiperiodo $s$ e periodo $t$ impone $n\mid m10^s(10^t-1)$; riducendo la frazione si cancella $m$. Poiché $10^t-1$ è coprimo con dieci, occorre $s\ge e,f$ e $c\mid10^t-1$, quindi l'ordine divide $t$. Viceversa con queste condizioni $n\mid10^s(10^t-1)$ e i resti della divisione alle posizioni $s$ e $s+t$ coincidono, dando la coda periodica. Il minimo simultaneo è quello indicato. Per $c=1$, terminare significa $n\mid10^s$ e il minimo è $\max(e,f)$; per $n=1$ si hanno zero cifre frazionarie necessarie. Per $m<0$ si considera il valore assoluto.
+
+Torna a [[#Esercizio 10 — Prevedere le due lunghezze (dimostrazione di antiperiodo e periodo dal denominatore)|esercizio 10]].
 
 Il capitolo è acquisito quando sai passare dalle cifre a una frazione e dal denominatore ridotto alle due lunghezze minime, giustificando le cancellazioni. Prova anche a spiegare con parole tue perché ripetere un resto obbliga a ripetere tutto il seguito.
 

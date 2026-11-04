@@ -8,6 +8,102 @@ Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|insiem
 > - Capirai perché base e passo sono entrambi necessari, guardando dimostrazioni sbagliate.
 > - Userai l'induzione forte per provare che ogni numero $\ge2$ è prodotto di primi.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Come puoi provare infiniti casi con un ragionamento finito? | [[#Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)\|9]] | [[#Una dimostrazione per infiniti casi\|Una dimostrazione per infiniti casi]] |
+| Quali proprietà di zero, successore e minimo stai usando? | [[#Esercizio 1 — Cercare il primo elemento (minimo e buon ordinamento)\|1]], [[#Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)\|9]] | [[#Zero, successore e ordine\|Zero, successore e ordine]] |
+| Come scegli la base e l’indice da cui partire? | [[#Esercizio 2 — Sommare i pari (induzione ordinaria e somma vuota)\|2]], [[#Esercizio 3 — Una potenza supera una retta (passo induttivo)\|3]], [[#Esercizio 7 — Comprare gettoni (induzione forte con più basi)\|7]], [[#Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)\|9]] | [[#Induzione a partire da un indice qualsiasi\|Induzione a partire da un indice qualsiasi]] |
+| Perché minimo controesempio e induzione esprimono lo stesso principio? | [[#Esercizio 4 — Ricordare tutti i casi precedenti (proprietà cumulativa e buon ordinamento)\|4]], [[#Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)\|9]] | [[#Perché buon ordinamento e induzione sono equivalenti\|Perché buon ordinamento e induzione sono equivalenti]] |
+| Quando devi conservare tutti i casi precedenti? | [[#Esercizio 4 — Ricordare tutti i casi precedenti (proprietà cumulativa e buon ordinamento)\|4]], [[#Esercizio 6 — Spezzare centottanta (induzione forte e fattorizzazione)\|6]], [[#Esercizio 7 — Comprare gettoni (induzione forte con più basi)\|7]], [[#Esercizio 8 — Un algoritmo che termina (induzione forte e discesa degli argomenti)\|8]], [[#Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)\|9]] | [[#Induzione forte e proprietà cumulative\|Induzione forte e proprietà cumulative]] |
+| In quale passaggio si rompe una falsa prova induttiva? | [[#Esercizio 5 — Gli occhi e il passo mancante (base e validità del passo induttivo)\|5]] | [[#Un errore che si nasconde nel primo passaggio\|Un errore che si nasconde nel primo passaggio]] |
+| Perché spezzare un composto porta sempre a un prodotto finito di primi? | [[#Esercizio 6 — Spezzare centottanta (induzione forte e fattorizzazione)\|6]], [[#Esercizio 8 — Un algoritmo che termina (induzione forte e discesa degli argomenti)\|8]] | [[#Esistenza della fattorizzazione in primi\|Esistenza della fattorizzazione in primi]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Cercare il primo elemento (minimo e buon ordinamento)
+
+Determina il minimo di ciascun insieme: $A=\{n\in\mathbb N:n\ge8\}$; $B=\{n\in\mathbb N:3n>20\}$; $C=\{n\in\mathbb N:n^2>30\}$. Spiega perché $D=\{x\in\mathbb R:x>8\}$ non ha minimo.
+
+Se ti blocchi: [[#Zero, successore e ordine|Zero, successore e ordine]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Sommare i pari (induzione ordinaria e somma vuota)
+
+Dimostra per induzione che $\sum_{k=1}^n2k=n(n+1)$ per ogni $n\in\mathbb N$, interpretando la somma come vuota per $n=0$. Calcola $2+4+\cdots+30$.
+
+Se ti blocchi: [[#Induzione a partire da un indice qualsiasi|Induzione a partire da un indice qualsiasi]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Una potenza supera una retta (passo induttivo)
+
+Dimostra $2^n\ge n+1$ per ogni $n\in\mathbb N$. Indica dove usi l’ipotesi induttiva.
+
+Se ti blocchi: [[#Induzione a partire da un indice qualsiasi|Induzione a partire da un indice qualsiasi]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Ricordare tutti i casi precedenti (proprietà cumulativa e buon ordinamento)
+
+Uno studente tenta di dimostrare il buon ordinamento assumendo che $A\subseteq\mathbb N$ non abbia minimo. Usa $P(n):n\notin A$ e afferma: «Se $n\notin A$ e $n+1\in A$, allora $n+1$ sarebbe il minimo». Individua l’informazione mancante e riscrivi base e passo con una proprietà adeguata.
+
+Se ti blocchi: [[#Perché buon ordinamento e induzione sono equivalenti|Perché buon ordinamento e induzione sono equivalenti]] · [[#Induzione forte e proprietà cumulative|Induzione forte e proprietà cumulative]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Gli occhi e il passo mancante (base e validità del passo induttivo)
+
+Sia $P(n)$ la proprietà «ogni gruppo di $n$ persone ha un unico colore degli occhi». Nella falsa prova descritta nel capitolo, calcola il numero di persone comuni ai due sottogruppi e identifica esattamente il passaggio non giustificato. Spiega perché controllare soltanto $P(1)$ non basta.
+
+Se ti blocchi: [[#Un errore che si nasconde nel primo passaggio|Un errore che si nasconde nel primo passaggio]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Spezzare centottanta (induzione forte e fattorizzazione)
+
+Costruisci una fattorizzazione in primi di $180$, scegliendo prima $180=12\cdot15$. Spiega perché l’induzione forte autorizza l’uso dei due fattori e quale questione resta aperta dopo la prova di esistenza.
+
+Se ti blocchi: [[#Induzione forte e proprietà cumulative|Induzione forte e proprietà cumulative]] · [[#Esistenza della fattorizzazione in primi|Esistenza della fattorizzazione in primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Comprare gettoni (induzione forte con più basi)
+
+Un distributore vende gettoni in pacchetti da $3$ e da $5$. Dimostra che ogni numero intero $n\ge8$ di gettoni può essere acquistato esattamente: esistono $a,b\in\mathbb N$ con $n=3a+5b$. Usa induzione forte e spiega perché servono più basi nella prova che sottrae $3$.
+
+Se ti blocchi: [[#Induzione a partire da un indice qualsiasi|Induzione a partire da un indice qualsiasi]] · [[#Induzione forte e proprietà cumulative|Induzione forte e proprietà cumulative]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Un algoritmo che termina (induzione forte e discesa degli argomenti)
+
+Una procedura riceve un naturale $n\ge2$. Se è primo lo restituisce; se è composto, sceglie $n=ab$ con $2\le a,b<n$ e ripete la procedura su entrambi i fattori. Dimostra che termina dopo un numero finito di operazioni e restituisce una lista finita di primi il cui prodotto è $n$. Non usare l’unicità della fattorizzazione.
+
+Se ti blocchi: [[#Induzione forte e proprietà cumulative|Induzione forte e proprietà cumulative]] · [[#Esistenza della fattorizzazione in primi|Esistenza della fattorizzazione in primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)
+
+Enuncia le proprietà di zero e successore adottate nel capitolo. Partendo dal buon ordinamento, ricava l'induzione con base $n_0$, trattando separatamente il minimo controesempio uguale a $n_0$ e quello maggiore. Dall'induzione ordinaria ricava quella forte mediante $Q(n):\forall k\in\{n_0,\ldots,n\}\ P(k)$. Dimostra poi $n^2>n$ per $n\ge2$, spiegando perché non puoi partire da zero.
+
+Se ti blocchi: [[#Una dimostrazione per infiniti casi|Una dimostrazione per infiniti casi]] · [[#Zero, successore e ordine|Zero, successore e ordine]] · [[#Induzione a partire da un indice qualsiasi|Induzione a partire da un indice qualsiasi]] · [[#Perché buon ordinamento e induzione sono equivalenti|Perché buon ordinamento e induzione sono equivalenti]] · [[#Induzione forte e proprietà cumulative|Induzione forte e proprietà cumulative]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Una dimostrazione per infiniti casi
 
 I primi cinque numeri dispari hanno somma $1+3+5+7+9=25$. Provando altri esempi sembra emergere una regola: la somma dei primi $n$ dispari è $n^2$. Ma controllare cento casi lascia aperto il centunesimo. Come possiamo raggiungere tutti i naturali con una dimostrazione finita?
@@ -283,49 +379,72 @@ La prova stabilisce l’**esistenza** di una fattorizzazione. Non dimostra ancor
 
 Il capitolo rielabora [[Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione|la nota del 23 settembre]] e [[_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione|la relativa trascrizione]], con la parte iniziale di [[Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio|nota del 29 settembre]] e [[_transcripts/Aritmetica/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio|trascrizione del 29 settembre]] dedicata alla somma dei dispari. Le prove sono riscritte esplicitando domini e casi iniziali. La dimostrazione induzione $\Rightarrow$ buon ordinamento corregge un passaggio insufficiente della nota del 23 settembre mediante una proprietà cumulativa; esempi di controllo ed esercizi sono integrazioni didattiche.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i metodi a situazioni nuove.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Determina il minimo di ciascun insieme: $A=\{n\in\mathbb N:n\ge8\}$; $B=\{n\in\mathbb N:3n>20\}$; $C=\{n\in\mathbb N:n^2>30\}$. Spiega perché $D=\{x\in\mathbb R:x>8\}$ non ha minimo.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > I minimi sono rispettivamente $8$, $7$ e $6$. Per $B$, $3\cdot6=18\le20$ mentre $3\cdot7=21>20$; per $C$, $5^2=25\le30$ mentre $6^2=36>30$. Se $x\in D$, anche $(8+x)/2$ appartiene a $D$ ed è minore di $x$: nessun elemento può essere il minimo.
 
-2. Dimostra per induzione che $\sum_{k=1}^n2k=n(n+1)$ per ogni $n\in\mathbb N$, interpretando la somma come vuota per $n=0$. Calcola $2+4+\cdots+30$.
+Torna a [[#Esercizio 1 — Cercare il primo elemento (minimo e buon ordinamento)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > La base vale perché entrambi i membri sono zero. Al passo, aggiungi $2(n+1)$: $n(n+1)+2(n+1)=(n+1)(n+2)$. Nella somma richiesta ci sono $15$ termini; il risultato è $15\cdot16=240$.
 
-3. Dimostra $2^n\ge n+1$ per ogni $n\in\mathbb N$. Indica dove usi l’ipotesi induttiva.
+Torna a [[#Esercizio 2 — Sommare i pari (induzione ordinaria e somma vuota)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Per $n=0$, $1\ge1$. Se $2^n\ge n+1$, moltiplicando per $2$ ottieni $2^{n+1}\ge2n+2\ge n+2$, poiché $n\ge0$. L’ipotesi induttiva serve nella prima disuguaglianza; la seconda è una proprietà elementare dei naturali.
 
-4. Uno studente tenta di dimostrare il buon ordinamento assumendo che $A\subseteq\mathbb N$ non abbia minimo. Usa $P(n):n\notin A$ e afferma: «Se $n\notin A$ e $n+1\in A$, allora $n+1$ sarebbe il minimo». Individua l’informazione mancante e riscrivi base e passo con una proprietà adeguata.
+Torna a [[#Esercizio 3 — Una potenza supera una retta (passo induttivo)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Da $n\notin A$ non segue che nessun naturale minore di $n$ appartenga ad $A$: per esempio, $3\notin\{2,4\}$ ma $4$ non ne è il minimo. Usa $Q(n):A\cap\{0,\ldots,n\}=\varnothing$. La base segue dall’assenza di minimo, che esclude $0\in A$. Se $Q(n)$ vale, $n+1\in A$ lo renderebbe davvero il minimo; quindi $n+1\notin A$ e vale $Q(n+1)$. L’induzione forza $A=\varnothing$.
 
-5. Sia $P(n)$ la proprietà «ogni gruppo di $n$ persone ha un unico colore degli occhi». Nella falsa prova descritta nel capitolo, calcola il numero di persone comuni ai due sottogruppi e identifica esattamente il passaggio non giustificato. Spiega perché controllare soltanto $P(1)$ non basta.
+Torna a [[#Esercizio 4 — Ricordare tutti i casi precedenti (proprietà cumulativa e buon ordinamento)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > L’intersezione ha $n-1$ persone. È vuota per $n=1$, quindi il ragionamento non prova $P(1)\Rightarrow P(2)$. La base $P(1)$ è vera, ma non è collegata ai casi successivi. Per partire da $2$ servirebbe $P(2)$, che è falsa quando si scelgono due persone con colori diversi.
 
-6. Costruisci una fattorizzazione in primi di $180$, scegliendo prima $180=12\cdot15$. Spiega perché l’induzione forte autorizza l’uso dei due fattori e quale questione resta aperta dopo la prova di esistenza.
+Torna a [[#Esercizio 5 — Gli occhi e il passo mancante (base e validità del passo induttivo)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > $12=3\cdot4=3\cdot2\cdot2$ e $15=3\cdot5$, quindi $180=2\cdot2\cdot3\cdot3\cdot5=2^2\cdot3^2\cdot5$. Entrambi i fattori iniziali sono fra $2$ e $179$, quindi rientrano nell’ipotesi forte. Resta da dimostrare che qualunque fattorizzazione in primi abbia gli stessi fattori, salvo l’ordine: il calcolo di una singola fattorizzazione non prova l’unicità.
 
-7. Un distributore vende gettoni in pacchetti da $3$ e da $5$. Dimostra che ogni numero intero $n\ge8$ di gettoni può essere acquistato esattamente: esistono $a,b\in\mathbb N$ con $n=3a+5b$. Usa induzione forte e spiega perché servono più basi nella prova che sottrae $3$.
+Torna a [[#Esercizio 6 — Spezzare centottanta (induzione forte e fattorizzazione)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Le basi sono $8=3+5$, $9=3+3+3$ e $10=5+5$. Per $n\ge11$, $8\le n-3<n$: per ipotesi forte $n-3=3a+5b$, quindi $n=3(a+1)+5b$. Le tre basi coprono gli indici per cui sottrarre $3$ scenderebbe sotto $8$. Formalmente il passo forte tratta $9$ e $10$ direttamente e poi tutti gli $n\ge11$ con l’argomento dato.
 
-8. Una procedura riceve un naturale $n\ge2$. Se è primo lo restituisce; se è composto, sceglie $n=ab$ con $2\le a,b<n$ e ripete la procedura su entrambi i fattori. Dimostra che termina dopo un numero finito di operazioni e restituisce una lista finita di primi il cui prodotto è $n$. Non usare l’unicità della fattorizzazione.
+Torna a [[#Esercizio 7 — Comprare gettoni (induzione forte con più basi)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Usa induzione forte sulla proprietà completa «la procedura termina e restituisce una lista con il prodotto richiesto», per qualsiasi scelta ammessa dei fattori. A $n=2$ termina subito. Se $n$ è primo, lo stesso vale; altrimenti le due chiamate hanno argomenti minori, quindi terminano per ipotesi e restituiscono liste finite con prodotti $a$ e $b$. Concatenarle richiede un numero finito di operazioni e il prodotto è $ab=n$. Il numero di chiamate è dunque finito; nessun confronto tra fattorizzazioni diverse è necessario.
+
+Torna a [[#Esercizio 8 — Un algoritmo che termina (induzione forte e discesa degli argomenti)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Il successore è definito su tutti i naturali, è iniettivo e non assume valore zero; l'induzione esclude elementi fuori dalla catena di zero. Un minimo controesempio $m$ non può essere $n_0$ per la base; se $m>n_0$, il predecessore soddisfa $P$ e il passo forza $P(m)$. Per la forma forte, $Q(n)$ contiene tutte le ipotesi necessarie a provare $P(n+1)$, quindi $Q(n+1)$. Base $2^2>2$; se $n^2>n$, allora $(n+1)^2=n^2+2n+1>n+1$. A zero e uno la disuguaglianza è falsa.
+
+Torna a [[#Esercizio 9 — Ricostruire i principi (successore, minimo controesempio e induzione forte)|esercizio 9]].
 
 Hai acquisito il metodo quando sai scegliere la proprietà da propagare, dichiarare da dove parte e giustificare ogni uso dei casi precedenti. Prova soprattutto a ricostruire la proprietà cumulativa dell’esercizio 4 e il controllo della terminazione nell’esercizio 8 senza leggere i riscontri.
 

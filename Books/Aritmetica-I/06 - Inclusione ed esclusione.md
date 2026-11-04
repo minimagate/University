@@ -12,6 +12,111 @@ Prerequisiti: [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|cardinali
 > [!note] Notazione insiemistica
 > Per due insiemi $A,B$: $A\cup B$ (unione) contiene gli elementi che stanno in almeno uno dei due; $A\cap B$ (intersezione) quelli che stanno in entrambi; $A\setminus B$ quelli di $A$ che non sono in $B$. Due insiemi sono **disgiunti** se $A\cap B=\varnothing$. In tutto il capitolo fissiamo un insieme finito $U$, l'**insieme ambiente**, che contiene tutto ciò che stiamo considerando. Rivedi il [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]] se serve.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Come correggi una somma che conta più volte gli stessi elementi? | [[#Esercizio 1 — Multipli che si sovrappongono (inclusione-esclusione per due insiemi)\|1]], [[#Esercizio 2 — Tre insiemi di persone (inclusione-esclusione per tre insiemi)\|2]], [[#Esercizio 8 — Nessuno al proprio posto (inclusione-esclusione sulle permutazioni)\|8]], [[#Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)\|9]], [[#Esercizio 10 — Nessun punto fisso per qualunque dimensione (formula generale di inclusione-esclusione)\|10]] | [[#Quando una somma conta troppo\|Quando una somma conta troppo]] |
+| Come trasformi appartenenza e differenza in prodotti di zero e uno? | [[#Esercizio 3 — Appartenenza come numero (funzioni caratteristiche)\|3]], [[#Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)\|9]], [[#Esercizio 10 — Nessun punto fisso per qualunque dimensione (formula generale di inclusione-esclusione)\|10]] | [[#Trasformare l'appartenenza in un numero\|Trasformare l'appartenenza in un numero]] |
+| Perché un elemento nell’unione deve contribuire esattamente uno? | [[#Esercizio 2 — Tre insiemi di persone (inclusione-esclusione per tre insiemi)\|2]], [[#Esercizio 4 — Il termine dimenticato (contributo di un elemento)\|4]], [[#Esercizio 8 — Nessuno al proprio posto (inclusione-esclusione sulle permutazioni)\|8]], [[#Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)\|9]], [[#Esercizio 10 — Nessun punto fisso per qualunque dimensione (formula generale di inclusione-esclusione)\|10]] | [[#La formula generale e il contributo di un elemento\|La formula generale e il contributo di un elemento]] |
+| Come scegli ambiente ed eventi vietati prima di fare i conti? | [[#Esercizio 1 — Multipli che si sovrappongono (inclusione-esclusione per due insiemi)\|1]], [[#Esercizio 8 — Nessuno al proprio posto (inclusione-esclusione sulle permutazioni)\|8]], [[#Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)\|9]], [[#Esercizio 10 — Nessun punto fisso per qualunque dimensione (formula generale di inclusione-esclusione)\|10]] | [[#Come impostare un problema\|Come impostare un problema]] |
+| Come conti le funzioni che raggiungono ogni valore? | [[#Esercizio 5 — Raggiungere ogni valore (conteggio delle suriezioni e casi vuoti)\|5]], [[#Esercizio 7 — Una somma che vale un fattoriale (suriezioni e doppio conteggio)\|7]], [[#Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)\|9]] | [[#Suriezioni: vietare che manchi un valore\|Suriezioni: vietare che manchi un valore]] |
+| Come conti direttamente una suriezione con una sola fibra doppia? | [[#Esercizio 6 — Una sola fibra doppia (suriezioni su un codominio con un elemento in meno)\|6]] | [[#Un caso leggibile senza una somma alternata\|Un caso leggibile senza una somma alternata]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Multipli che si sovrappongono (inclusione-esclusione per due insiemi)
+
+Fra gli interi di $\{1,\ldots,60\}$, quanti sono divisibili per $3$ oppure per $5$? Quanti non sono divisibili per nessuno dei due? Quanti sono divisibili per esattamente uno dei due?
+
+Se ti blocchi: [[#Quando una somma conta troppo|Quando una somma conta troppo]] · [[#Come impostare un problema|Come impostare un problema]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Tre insiemi di persone (inclusione-esclusione per tre insiemi)
+
+In un insieme $U$ di $36$ persone, tre sottoinsiemi $A,B,C$ hanno cardinalità $20,18,12$. Si sa che $|A\cap B|=9$, $|A\cap C|=6$, $|B\cap C|=5$ e $|A\cap B\cap C|=3$. Quante persone appartengono ad almeno uno dei tre insiemi? Quante a nessuno?
+
+Se ti blocchi: [[#Quando una somma conta troppo|Quando una somma conta troppo]] · [[#La formula generale e il contributo di un elemento|La formula generale e il contributo di un elemento]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Appartenenza come numero (funzioni caratteristiche)
+
+Siano $A,B\subseteq U$ con $U$ finito. Dimostra l'identità $\chi_{A\setminus B}=\chi_A(1-\chi_B)$ e ricavane una formula per $|A\setminus B|$.
+
+Se ti blocchi: [[#Trasformare l'appartenenza in un numero|Trasformare l'appartenenza in un numero]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Il termine dimenticato (contributo di un elemento)
+
+Un lettore propone la formula $|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|$. Trova un controesempio con un insieme ambiente di un solo elemento e spiega quale contributo è sbagliato.
+
+Se ti blocchi: [[#La formula generale e il contributo di un elemento|La formula generale e il contributo di un elemento]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Raggiungere ogni valore (conteggio delle suriezioni e casi vuoti)
+
+Conta le suriezioni da un insieme di $4$ elementi a uno di $2$, e da un insieme di $2$ elementi a uno di $4$. Determina inoltre i numeri di suriezioni $\varnothing\to\{a\}$, $\{a\}\to\varnothing$ e $\varnothing\to\varnothing$.
+
+Se ti blocchi: [[#Suriezioni: vietare che manchi un valore|Suriezioni: vietare che manchi un valore]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Una sola fibra doppia (suriezioni su un codominio con un elemento in meno)
+
+Conta le suriezioni $[6]\to[5]$. Uno studente sceglie la coppia con immagine comune in $6\cdot5$ modi e moltiplica per $5!$. Perché il suo risultato è doppio di quello corretto?
+
+Se ti blocchi: [[#Un caso leggibile senza una somma alternata|Un caso leggibile senza una somma alternata]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Una somma che vale un fattoriale (suriezioni e doppio conteggio)
+
+Per ogni $n\geq1$, dimostra con un doppio conteggio che $\sum_{k=0}^n(-1)^k\binom nk(n-k)^n=n!$. Specifica la famiglia contata e perché il conteggio diretto dà proprio un fattoriale.
+
+Se ti blocchi: [[#Suriezioni: vietare che manchi un valore|Suriezioni: vietare che manchi un valore]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Nessuno al proprio posto (inclusione-esclusione sulle permutazioni)
+
+Cinque persone riconoscibili devono sedere su cinque sedie numerate, una per sedia. La persona $i$ non può occupare la sedia $i$, per $i\in[5]$. Conta le sistemazioni consentite usando inclusione-esclusione. Qual è l'insieme ambiente? Per $0\leq k\leq5$, quante sistemazioni violano simultaneamente un gruppo fissato di $k$ divieti?
+
+Se ti blocchi: [[#Quando una somma conta troppo|Quando una somma conta troppo]] · [[#La formula generale e il contributo di un elemento|La formula generale e il contributo di un elemento]] · [[#Come impostare un problema|Come impostare un problema]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)
+
+Per una famiglia finita $A_1,\ldots,A_r\subseteq U$ con $U$ finito, scrivi $\chi_{\cup_i A_i}=1-\prod_i(1-\chi_{A_i})$ e sviluppala. Se $x$ sta in esattamente $t\ge1$ insiemi, mostra che il suo contributo è $\sum_{j=1}^t(-1)^{j+1}\binom tj=1$; tratta anche $t=0$. Sommando su $U$, ricava la formula generale. Applica poi lo stesso metodo agli eventi «il valore $i$ non è raggiunto» per ottenere la formula generale delle suriezioni $[n]\to[m]$.
+
+Se ti blocchi: [[#Quando una somma conta troppo|Quando una somma conta troppo]] · [[#Trasformare l'appartenenza in un numero|Trasformare l'appartenenza in un numero]] · [[#La formula generale e il contributo di un elemento|La formula generale e il contributo di un elemento]] · [[#Come impostare un problema|Come impostare un problema]] · [[#Suriezioni: vietare che manchi un valore|Suriezioni: vietare che manchi un valore]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Nessun punto fisso per qualunque dimensione (formula generale di inclusione-esclusione)
+
+*Dalla raccolta fornita: esercizio preliminare 2, p. 52 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=63|p. 63 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Generalizza l'esercizio delle cinque sedie: per $n\ge0$ trova il numero $D_n$ di permutazioni di $[n]$ che non fissano alcun elemento. Scrivi l'insieme ambiente e la cardinalità dell'intersezione di $k$ divieti fissati; ricava una formula finita e controlla $n=0,1,2,5$.
+
+Se ti blocchi: [[#Quando una somma conta troppo|Quando una somma conta troppo]] · [[#Trasformare l'appartenenza in un numero|Trasformare l'appartenenza in un numero]] · [[#La formula generale e il contributo di un elemento|La formula generale e il contributo di un elemento]] · [[#Come impostare un problema|Come impostare un problema]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Quando una somma conta troppo
 
 Quanti interi da $1$ a $100$ sono divisibili per $3$ oppure per $5$? I multipli di $3$ sono $33$, quelli di $5$ sono $20$. Sommando otteniamo $53$, ma il numero $15$ compare in entrambi gli elenchi, come $30$, $45$, $60$, $75$ e $90$. Questi sei numeri sono stati contati due volte.
@@ -325,49 +430,79 @@ Il capitolo rielabora [[Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricor
 
 Le dimostrazioni sono ricostruite con notazione uniforme. I casi vuoti, le spiegazioni sui diversi insiemi ambiente, gli esempi numerici e gli esercizi sono integrazioni didattiche; non riproducono alla lettera l'esposizione orale.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i conteggi e trasferiscono il metodo a vincoli nuovi.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Fra gli interi di $\{1,\ldots,60\}$, quanti sono divisibili per $3$ oppure per $5$? Quanti non sono divisibili per nessuno dei due? Quanti sono divisibili per esattamente uno dei due?
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > I multipli di $3$ sono $20$, quelli di $5$ sono $12$, quelli comuni sono i $4$ multipli di $15$. L'unione ha $20+12-4=28$ elementi; il complementare ne ha $60-28=32$. Per esattamente una proprietà togli entrambe le copie dei multipli comuni dalla somma iniziale: $20+12-2\cdot4=24$.
 
-2. In un insieme $U$ di $36$ persone, tre sottoinsiemi $A,B,C$ hanno cardinalità $20,18,12$. Si sa che $|A\cap B|=9$, $|A\cap C|=6$, $|B\cap C|=5$ e $|A\cap B\cap C|=3$. Quante persone appartengono ad almeno uno dei tre insiemi? Quante a nessuno?
+Torna a [[#Esercizio 1 — Multipli che si sovrappongono (inclusione-esclusione per due insiemi)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Inclusione-esclusione dà $20+18+12-9-6-5+3=33$. Il complementare ha $36-33=3$ elementi. Le intersezioni a due includono le persone dell'intersezione tripla, perciò occorre l'ultimo $+3$.
 
-3. Siano $A,B\subseteq U$ con $U$ finito. Dimostra l'identità $\chi_{A\setminus B}=\chi_A(1-\chi_B)$ e ricavane una formula per $|A\setminus B|$.
+Torna a [[#Esercizio 2 — Tre insiemi di persone (inclusione-esclusione per tre insiemi)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Il prodotto vale $1$ esattamente quando $x\in A$ e $x\notin B$, cioè quando $x\in A\setminus B$; in ogni altro caso vale zero. Sviluppando e sommando su $U$ ottieni $|A\setminus B|=|A|-|A\cap B|$.
 
-4. Un lettore propone la formula $|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|$. Trova un controesempio con un insieme ambiente di un solo elemento e spiega quale contributo è sbagliato.
+Torna a [[#Esercizio 3 — Appartenenza come numero (funzioni caratteristiche)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Prendi $U=\{x\}$ e $A=B=C=U$. L'unione ha cardinalità $1$, mentre il membro proposto vale $3-3=0$. L'elemento comune è stato cancellato del tutto: manca $+|A\cap B\cap C|$.
 
-5. Conta le suriezioni da un insieme di $4$ elementi a uno di $2$, e da un insieme di $2$ elementi a uno di $4$. Determina inoltre i numeri di suriezioni $\varnothing\to\{a\}$, $\{a\}\to\varnothing$ e $\varnothing\to\varnothing$.
+Torna a [[#Esercizio 4 — Il termine dimenticato (contributo di un elemento)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Nel primo caso $2^4-2\cdot1^4=14$: si eliminano le due funzioni costanti. Nel secondo $4^2-4\cdot3^2+6\cdot2^2-4\cdot1^2=16-36+24-4=0$, coerentemente con l'impossibilità di raggiungere quattro valori con due argomenti. Nei tre casi vuoti le risposte sono rispettivamente $0,0,1$: esiste una funzione vuota nel primo e nel terzo caso, ma soltanto la seconda di queste è suriettiva.
 
-6. Conta le suriezioni $[6]\to[5]$. Uno studente sceglie la coppia con immagine comune in $6\cdot5$ modi e moltiplica per $5!$. Perché il suo risultato è doppio di quello corretto?
+Torna a [[#Esercizio 5 — Raggiungere ogni valore (conteggio delle suriezioni e casi vuoti)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Il numero corretto è $\binom62 5!=15\cdot120=1800$. La coppia è un sottoinsieme di due elementi: scambiarli non cambia la funzione. Le $6\cdot5=30$ coppie ordinate contano due volte ogni scelta della coppia; il suo procedimento darebbe erroneamente $3600$.
 
-7. Per ogni $n\geq1$, dimostra con un doppio conteggio che $\sum_{k=0}^n(-1)^k\binom nk(n-k)^n=n!$. Specifica la famiglia contata e perché il conteggio diretto dà proprio un fattoriale.
+Torna a [[#Esercizio 6 — Una sola fibra doppia (suriezioni su un codominio con un elemento in meno)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Conta le suriezioni $[n]\to[n]$. Inclusione-esclusione dà il membro sinistro. Una suriezione fra insiemi finiti della stessa cardinalità è una biezione: le sue $n$ fibre non vuote contengono in totale $n$ elementi, quindi hanno tutte cardinalità $1$. Le biezioni si contano scegliendo immagini successive in $n,n-1,\ldots,1$ modi, per un totale di $n!$.
 
-8. Cinque persone riconoscibili devono sedere su cinque sedie numerate, una per sedia. La persona $i$ non può occupare la sedia $i$, per $i\in[5]$. Conta le sistemazioni consentite usando inclusione-esclusione. Qual è l'insieme ambiente? Per $0\leq k\leq5$, quante sistemazioni violano simultaneamente un gruppo fissato di $k$ divieti?
+Torna a [[#Esercizio 7 — Una somma che vale un fattoriale (suriezioni e doppio conteggio)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > L'ambiente è l'insieme delle $5!$ biezioni $[5]\to[5]$. Poni $A_i=\{\sigma:\sigma(i)=i\}$. Se imponi queste uguaglianze per un insieme fissato di $k$ persone, rimane una biezione fra le $5-k$ persone e le $5-k$ sedie restanti: $(5-k)!$ possibilità. Le sistemazioni consentite sono il complementare di $\bigcup_i A_i$, dunque $\sum_{k=0}^5(-1)^k\binom5k(5-k)!=120-120+60-20+5-1=44$. Anche il termine $k=5$ conta una sistemazione: l'identità, che lascia fissate tutte le persone; qui $0!=1$.
+
+Torna a [[#Esercizio 8 — Nessuno al proprio posto (inclusione-esclusione sulle permutazioni)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Il prodotto vale uno esattamente quando tutte le appartenenze sono zero. Sviluppandolo si ottiene una somma sulle intersezioni non vuote, con segno $(-1)^{j+1}$. Per $t\ge1$, Newton in $(1-1)^t$ dà il contributo uno; fuori dall'unione il contributo è zero. Sommando si ottiene $|\cup_i A_i|=\sum_{\varnothing\ne I\subseteq[r]}(-1)^{|I|+1}|\cap_{i\in I}A_i|$. Per le suriezioni il complementare di $j$ valori vietati consente $(m-j)^n$ funzioni, perciò il numero è $\sum_{j=0}^m(-1)^j\binom mj(m-j)^n$, con $0^0=1$ nel conteggio; per $m=0$ vale uno solo se $n=0$.
+
+Torna a [[#Esercizio 9 — Perché i segni si alternano (funzioni caratteristiche e dimostrazione di inclusione-esclusione)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> L'ambiente ha $n!$ permutazioni. Se imponi che $k$ elementi fissati restino fermi, puoi permutare liberamente gli altri $n-k$, ottenendo $(n-k)!$ casi. Pertanto $D_n=\sum_{k=0}^n(-1)^k\binom nk(n-k)!=n!\sum_{k=0}^n(-1)^k/k!$. I valori sono $D_0=1,D_1=0,D_2=1,D_5=44$. La permutazione vuota soddisfa tutti i divieti, che sono assenti.
+
+Torna a [[#Esercizio 10 — Nessun punto fisso per qualunque dimensione (formula generale di inclusione-esclusione)|esercizio 10]].
 
 Sai usare il capitolo quando, prima della somma alternata, definisci l'insieme ambiente, i casi da escludere e il significato delle loro intersezioni. Per controllare una formula, segui il contributo di un singolo oggetto e verifica che alla fine valga esattamente zero oppure uno, secondo il vincolo richiesto.
 

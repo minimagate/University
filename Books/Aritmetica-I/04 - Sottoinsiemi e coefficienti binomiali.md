@@ -12,6 +12,117 @@ Prerequisiti: [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|cardinali
 > [!note] Parole del capitolo 03 che useremo
 > **Cardinalità** $|X|$: il numero di elementi di $X$. **Iniezione** $f:A\to B$: elementi diversi hanno immagini diverse. **Biezione**: corrispondenza uno a uno tra due insiemi, che ne mostra la stessa cardinalità. Due insiemi si dicono **disgiunti** se non hanno elementi in comune; se $A$ e $B$ sono disgiunti, $|A\cup B|=|A|+|B|$. Se non le ricordi, rivedi il [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|capitolo 03]].
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Che cosa cambia se scegli un gruppo anziché assegnare posti? | [[#Esercizio 1 — Scrivere sì oppure no (funzioni caratteristiche e insieme delle parti)\|1]] | [[#Scegliere un gruppo, senza assegnare posti\|Scegliere un gruppo, senza assegnare posti]] |
+| Come descrivi un sottoinsieme con una sequenza di sì e no? | [[#Esercizio 1 — Scrivere sì oppure no (funzioni caratteristiche e insieme delle parti)\|1]], [[#Esercizio 7 — Intersezione prescritta (sottoinsiemi e principio del prodotto)\|7]], [[#Esercizio 9 — Perché si divide per un fattoriale (formula binomiale e simmetria)\|9]] | [[#Tutti i sottoinsiemi come risposte sì o no\|Tutti i sottoinsiemi come risposte sì o no]] |
+| Perché le scelte senza ordine si contano dividendo per un fattoriale? | [[#Esercizio 2 — Una commissione con portavoce (coefficienti binomiali e scelta marcata)\|2]], [[#Esercizio 7 — Intersezione prescritta (sottoinsiemi e principio del prodotto)\|7]], [[#Esercizio 8 — Scegliere da due gruppi (identità di Vandermonde)\|8]], [[#Esercizio 9 — Perché si divide per un fattoriale (formula binomiale e simmetria)\|9]] | [[#Togliere l'ordine: i coefficienti binomiali\|Togliere l'ordine: i coefficienti binomiali]] |
+| Come distingui un elemento per ricavare Pascal? | [[#Esercizio 3 — Ricostruire una riga (identità di Pascal)\|3]] | [[#Pascal: distinguere un elemento\|Pascal: distinguere un elemento]] |
+| Come trovi un coefficiente senza sviluppare tutto il binomio? | [[#Esercizio 4 — Un coefficiente senza sviluppare (binomio di Newton e somme binomiali)\|4]], [[#Esercizio 9 — Perché si divide per un fattoriale (formula binomiale e simmetria)\|9]], [[#Esercizio 10 — Una somma con due segni (doppio conteggio e identità binomiali)\|10]] | [[#Newton: scegliere un termine da ogni parentesi\|Newton: scegliere un termine da ogni parentesi]] |
+| Perché metà dei sottoinsiemi ha cardinalità pari, salvo il caso vuoto? | [[#Esercizio 4 — Un coefficiente senza sviluppare (binomio di Newton e somme binomiali)\|4]], [[#Esercizio 5 — Scambiare la parità (biiezione fra sottoinsiemi pari e dispari)\|5]], [[#Esercizio 10 — Una somma con due segni (doppio conteggio e identità binomiali)\|10]] | [[#Somme binomiali e parità\|Somme binomiali e parità]] |
+| Come nasce un’identità contando oggetti con un elemento segnato? | [[#Esercizio 2 — Una commissione con portavoce (coefficienti binomiali e scelta marcata)\|2]], [[#Esercizio 6 — Scegliere e segnare (doppio conteggio)\|6]], [[#Esercizio 8 — Scegliere da due gruppi (identità di Vandermonde)\|8]], [[#Esercizio 10 — Una somma con due segni (doppio conteggio e identità binomiali)\|10]] | [[#Contare sottoinsiemi con un elemento segnato\|Contare sottoinsiemi con un elemento segnato]] |
+| Come scegli fra Pascal, Newton e doppio conteggio? | [[#Esercizio 8 — Scegliere da due gruppi (identità di Vandermonde)\|8]], [[#Esercizio 9 — Perché si divide per un fattoriale (formula binomiale e simmetria)\|9]], [[#Esercizio 10 — Una somma con due segni (doppio conteggio e identità binomiali)\|10]] | [[#Mappa delle identità\|Mappa delle identità]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Scrivere sì oppure no (funzioni caratteristiche e insieme delle parti)
+
+Per $X=\{a,b,c\}$, elenca i sottoinsiemi di cardinalità $2$ e scrivi per ciascuno la terna $(\chi_A(a),\chi_A(b),\chi_A(c))$. Quanti elementi ha $\mathcal P(X)$? Quanti ne ha $\mathcal P(\varnothing)$?
+
+Se ti blocchi: [[#Scegliere un gruppo, senza assegnare posti|Scegliere un gruppo, senza assegnare posti]] · [[#Tutti i sottoinsiemi come risposte sì o no|Tutti i sottoinsiemi come risposte sì o no]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Una commissione con portavoce (coefficienti binomiali e scelta marcata)
+
+Fra otto studenti distinti, di cui due fissati sono Anna e Bruno, scegli una commissione di tre persone che contenga Anna ed escluda Bruno. Quante commissioni esistono? Quante assegnazioni ottieni se devi anche designare un portavoce nella commissione?
+
+Se ti blocchi: [[#Togliere l'ordine: i coefficienti binomiali|Togliere l'ordine: i coefficienti binomiali]] · [[#Contare sottoinsiemi con un elemento segnato|Contare sottoinsiemi con un elemento segnato]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Ricostruire una riga (identità di Pascal)
+
+Ricostruisci la prova combinatoria di Pascal per $n\geq0$ e $0\leq r\leq n+1$. Usala per calcolare $\binom53$, partendo dalla riga $1,4,6,4,1$ del triangolo.
+
+Se ti blocchi: [[#Pascal: distinguere un elemento|Pascal: distinguere un elemento]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Un coefficiente senza sviluppare (binomio di Newton e somme binomiali)
+
+Trova il coefficiente di $x^3$ in $(2x-1)^5$ senza sviluppare l'intero polinomio. Calcola inoltre $\sum_{k=0}^5\binom5k$ e $\sum_{k=0}^5(-1)^k\binom5k$.
+
+Se ti blocchi: [[#Newton: scegliere un termine da ogni parentesi|Newton: scegliere un termine da ogni parentesi]] · [[#Somme binomiali e parità|Somme binomiali e parità]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Scambiare la parità (biiezione fra sottoinsiemi pari e dispari)
+
+Un lettore sostiene: «Il complementare mette sempre in biezione i sottoinsiemi pari con quelli dispari». Trova un controesempio con $|X|=4$, correggi la dimostrazione per ogni insieme finito non vuoto e spiega il caso $X=\varnothing$.
+
+Se ti blocchi: [[#Somme binomiali e parità|Somme binomiali e parità]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Scegliere e segnare (doppio conteggio)
+
+Siano $n\geq1$ e $1\leq k\leq n$. Conta in due modi le coppie $(A,a)$ con $A\subseteq[n]$, $|A|=k$ e $a\in A$, per dimostrare $k\binom nk=n\binom{n-1}{k-1}$. Verifica per $n=6$, $k=3$.
+
+Se ti blocchi: [[#Contare sottoinsiemi con un elemento segnato|Contare sottoinsiemi con un elemento segnato]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Intersezione prescritta (sottoinsiemi e principio del prodotto)
+
+Sia $X$ un insieme di sei elementi. Quante coppie **ordinate** $(A,B)$ di sottoinsiemi di $X$ soddisfano $|A\cap B|=2$? Non sono imposti altri vincoli sulle cardinalità di $A$ e $B$.
+
+Se ti blocchi: [[#Tutti i sottoinsiemi come risposte sì o no|Tutti i sottoinsiemi come risposte sì o no]] · [[#Togliere l'ordine: i coefficienti binomiali|Togliere l'ordine: i coefficienti binomiali]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Scegliere da due gruppi (identità di Vandermonde)
+
+Due gruppi disgiunti hanno rispettivamente $m$ e $n$ persone, con $m,n\in\mathbb N$. Per $0\leq r\leq m+n$, conta le commissioni di $r$ persone classificandole per il numero di membri del primo gruppo e dimostra l'**identità di Vandermonde**
+   $$
+   \binom{m+n}r=\sum_{k=0}^r\binom mk\binom n{r-k}.
+   $$
+   Verifica il conteggio per $m=4$, $n=3$, $r=3$. Usa i coefficienti nulli per le scelte impossibili.
+
+Se ti blocchi: [[#Togliere l'ordine: i coefficienti binomiali|Togliere l'ordine: i coefficienti binomiali]] · [[#Contare sottoinsiemi con un elemento segnato|Contare sottoinsiemi con un elemento segnato]] · [[#Mappa delle identità|Mappa delle identità]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Perché si divide per un fattoriale (formula binomiale e simmetria)
+
+Per $0\le k\le n$, passa dalle liste ordinate di $k$ elementi distinti ai sottoinsiemi di $k$ elementi. Quante liste producono ciascun sottoinsieme? Ricava la formula di $\binom nk$, compresi $k=0,n$, e dimostra $\binom nk=\binom n{n-k}$ con il complementare. Spiega le convenzioni per $k<0$ e $k>n$ e ricostruisci Newton scegliendo fra i due termini di ogni fattore.
+
+Se ti blocchi: [[#Tutti i sottoinsiemi come risposte sì o no|Tutti i sottoinsiemi come risposte sì o no]] · [[#Togliere l'ordine: i coefficienti binomiali|Togliere l'ordine: i coefficienti binomiali]] · [[#Newton: scegliere un termine da ogni parentesi|Newton: scegliere un termine da ogni parentesi]] · [[#Mappa delle identità|Mappa delle identità]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Una somma con due segni (doppio conteggio e identità binomiali)
+
+*Dalla raccolta fornita: esercizio 44, p. 74 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=84|p. 84 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Per $n\ge1$ dimostra $\sum_{k=0}^n k\binom nk=n2^{n-1}$ e $\sum_{k=0}^n k^2\binom nk=(n+n^2)2^{n-2}$. Nel secondo conteggio considera una coppia ordinata di elementi segnati nel sottoinsieme e separa il caso in cui coincidono. Tratta $n=1$ direttamente.
+
+Se ti blocchi: [[#Newton: scegliere un termine da ogni parentesi|Newton: scegliere un termine da ogni parentesi]] · [[#Somme binomiali e parità|Somme binomiali e parità]] · [[#Contare sottoinsiemi con un elemento segnato|Contare sottoinsiemi con un elemento segnato]] · [[#Mappa delle identità|Mappa delle identità]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Scegliere un gruppo, senza assegnare posti
 
 Fra sei studenti vogliamo scegliere una commissione di tre persone. Se scriviamo prima Anna, poi Bruno, poi Carla, abbiamo scelto la stessa commissione che otterremmo scrivendo Carla, Anna, Bruno. Il risultato è un sottoinsieme: l'ordine con cui lo abbiamo costruito non ne fa parte.
@@ -335,53 +446,79 @@ La costruzione dell'insieme delle parti, le funzioni caratteristiche e il conteg
 
 Le dimostrazioni sono ricostruite con ipotesi e casi limite espliciti. Per l'identità $\sum_{k=0}^n k\binom nk=n2^{n-1}$, proposta nella lezione del 6 ottobre, viene esplicitata la dimostrazione mediante sottoinsiemi con un membro segnato. La distinzione fra complementare e cambio della presenza di un elemento, gli esempi e i riscontri sono sviluppi didattici di questa esposizione. L'identità di Vandermonde dell'ultimo esercizio estende il metodo dei casi disgiunti a due gruppi di oggetti.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 propongono collegamenti e trasferimenti.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Per $X=\{a,b,c\}$, elenca i sottoinsiemi di cardinalità $2$ e scrivi per ciascuno la terna $(\chi_A(a),\chi_A(b),\chi_A(c))$. Quanti elementi ha $\mathcal P(X)$? Quanti ne ha $\mathcal P(\varnothing)$?
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > I sottoinsiemi sono $\{a,b\}$, $\{a,c\}$, $\{b,c\}$; le terne corrispondenti sono $(1,1,0)$, $(1,0,1)$, $(0,1,1)$. Ogni terna di zeri e uni identifica un unico sottoinsieme, quindi $|\mathcal P(X)|=2^3=8$. L'insieme delle parti del vuoto ha un elemento, il vuoto stesso: la sua cardinalità è $1$.
 
-2. Fra otto studenti distinti, di cui due fissati sono Anna e Bruno, scegli una commissione di tre persone che contenga Anna ed escluda Bruno. Quante commissioni esistono? Quante assegnazioni ottieni se devi anche designare un portavoce nella commissione?
+Torna a [[#Esercizio 1 — Scrivere sì oppure no (funzioni caratteristiche e insieme delle parti)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Anna occupa già un posto e Bruno non è disponibile. Scegli gli altri due membri fra i sei studenti rimasti: $\binom62=15$. Ogni commissione ammette tre portavoce, quindi le assegnazioni sono $15\cdot3=45$. La scelta del portavoce distingue risultati con gli stessi membri.
 
-3. Ricostruisci la prova combinatoria di Pascal per $n\geq0$ e $0\leq r\leq n+1$. Usala per calcolare $\binom53$, partendo dalla riga $1,4,6,4,1$ del triangolo.
+Torna a [[#Esercizio 2 — Una commissione con portavoce (coefficienti binomiali e scelta marcata)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Fissa un elemento in un insieme di $n+1$ elementi. I sottoinsiemi che lo escludono sono $\binom nr$; quelli che lo includono corrispondono, togliendolo, ai sottoinsiemi di $r-1$ elementi degli altri $n$. I casi sono disgiunti. Per il calcolo, $\binom53=\binom43+\binom42=4+6=10$. Ai bordi il caso impossibile ha coefficiente zero.
 
-4. Trova il coefficiente di $x^3$ in $(2x-1)^5$ senza sviluppare l'intero polinomio. Calcola inoltre $\sum_{k=0}^5\binom5k$ e $\sum_{k=0}^5(-1)^k\binom5k$.
+Torna a [[#Esercizio 3 — Ricostruire una riga (identità di Pascal)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Il termine che contiene $x^3$ ha indice $k=3$: il coefficiente è $\binom53 2^3(-1)^2=10\cdot8=80$. Le due somme sono rispettivamente $(1+1)^5=32$ e $(1-1)^5=0$, per Newton. Il segno positivo del coefficiente nasce dai due fattori $-1$.
 
-5. Un lettore sostiene: «Il complementare mette sempre in biezione i sottoinsiemi pari con quelli dispari». Trova un controesempio con $|X|=4$, correggi la dimostrazione per ogni insieme finito non vuoto e spiega il caso $X=\varnothing$.
+Torna a [[#Esercizio 4 — Un coefficiente senza sviluppare (binomio di Newton e somme binomiali)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Per $X=\{1,2,3,4\}$, $\{1,2\}$ e il suo complementare $\{3,4\}$ hanno entrambi cardinalità pari. Fissa invece $x\in X$ e inseriscilo se manca, oppure toglilo se è presente. L'operazione inverte la parità ed è la propria inversa: dà la biezione cercata. Nel vuoto c'è un solo sottoinsieme, pari, e nessuno dispari; l'uguaglianza non vale.
 
-6. Siano $n\geq1$ e $1\leq k\leq n$. Conta in due modi le coppie $(A,a)$ con $A\subseteq[n]$, $|A|=k$ e $a\in A$, per dimostrare $k\binom nk=n\binom{n-1}{k-1}$. Verifica per $n=6$, $k=3$.
+Torna a [[#Esercizio 5 — Scambiare la parità (biiezione fra sottoinsiemi pari e dispari)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Scegliendo prima $A$ ottieni $\binom nk$ possibilità e poi $k$ scelte per $a$. Scegliendo prima $a$ ottieni $n$ possibilità; gli altri $k-1$ membri di $A$ si scelgono fra i restanti $n-1$, in $\binom{n-1}{k-1}$ modi. I due conteggi descrivono le stesse coppie. Numericamente, $3\binom63=3\cdot20=60$ e $6\binom52=6\cdot10=60$.
 
-7. Sia $X$ un insieme di sei elementi. Quante coppie **ordinate** $(A,B)$ di sottoinsiemi di $X$ soddisfano $|A\cap B|=2$? Non sono imposti altri vincoli sulle cardinalità di $A$ e $B$.
+Torna a [[#Esercizio 6 — Scegliere e segnare (doppio conteggio)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Scegli prima $I=A\cap B$: ci sono $\binom62=15$ possibilità. Ogni elemento dei quattro rimanenti appartiene soltanto ad $A$, soltanto a $B$, oppure a nessuno dei due: tre possibilità. Non può appartenere a entrambi. Ottieni $\binom62 3^4=15\cdot81=1215$. Ogni coppia determina univocamente $I$ e le quattro scelte, quindi non c'è sovraconteggio. Scambiare $A$ e $B$ è consentito e, in generale, cambia la coppia.
 
-8. Due gruppi disgiunti hanno rispettivamente $m$ e $n$ persone, con $m,n\in\mathbb N$. Per $0\leq r\leq m+n$, conta le commissioni di $r$ persone classificandole per il numero di membri del primo gruppo e dimostra l'**identità di Vandermonde**
-   $$
-   \binom{m+n}r=\sum_{k=0}^r\binom mk\binom n{r-k}.
-   $$
-   Verifica il conteggio per $m=4$, $n=3$, $r=3$. Usa i coefficienti nulli per le scelte impossibili.
+Torna a [[#Esercizio 7 — Intersezione prescritta (sottoinsiemi e principio del prodotto)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Il conteggio diretto sceglie $r$ persone dall'unione: $\binom{m+n}r$. Fissato $k$, scegli $k$ persone dal primo gruppo e $r-k$ dal secondo, ottenendo $\binom mk\binom n{r-k}$ commissioni. Ogni commissione ha un unico valore di $k$, perciò i casi sono disgiunti ed esaustivi. Nell'esempio, la somma è $1\cdot1+4\cdot3+6\cdot3+4\cdot1=1+12+18+4=35=\binom73$. Per $r=0$ entrambi i membri valgono $1$, anche se uno o entrambi i gruppi sono vuoti.
+
+Torna a [[#Esercizio 8 — Scegliere da due gruppi (identità di Vandermonde)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Ogni sottoinsieme ha $k!$ ordinamenti, dunque $\binom nk=n!/[k!(n-k)!]$. Per $k=0$ la lista vuota è unica e $0!=1$; per $k=n$ si sceglie tutto. Il complementare è una biiezione con inversa sé stesso. Fuori da $0\le k\le n$ non ci sono sottoinsiemi, perciò il coefficiente vale zero. In $(x+y)^n$ scegliere i $k$ fattori che forniscono $x$ dà $\binom nk x^ky^{n-k}$; sommando su $k$ si ottiene Newton.
+
+Torna a [[#Esercizio 9 — Perché si divide per un fattoriale (formula binomiale e simmetria)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Le coppie $(A,a)$ si contano scegliendo $a$ in $n$ modi e gli altri elementi di $A$ liberamente, in $2^{n-1}$ modi. Le terne $(A,a,b)$ con $a,b\in A$ danno $\sum k^2\binom nk$. Se $a=b$ ci sono $n2^{n-1}$ scelte, se $a\ne b$ ci sono $n(n-1)2^{n-2}$ scelte per $n\ge2$. La somma è $(n+n^2)2^{n-2}$. Per $n=1$ entrambi i membri valgono uno.
+
+Torna a [[#Esercizio 10 — Una somma con due segni (doppio conteggio e identità binomiali)|esercizio 10]].
 
 Sai usare queste idee quando distingui una lista da un sottoinsieme e giustifichi ogni divisione contando le descrizioni di ciascun risultato. Per le identità, prova a nominare gli oggetti contati e a ricostruire entrambi i conteggi: è questo che permette di trasferire il metodo a una somma nuova.
 

@@ -9,6 +9,112 @@ Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|funzio
 > - Calcolerai con le permutazioni: composizione, cicli disgiunti, inverso, potenze e ordine.
 > - L'idea che lega tutto: poche regole sull'operazione bastano a trattare allo stesso modo numeri, resti e trasformazioni, a patto di non scambiare mai l'ordine senza motivo.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quali azioni si possono comporre e annullare? | [[#Esercizio 8 — Ruotare un poligono (assiomi di gruppo e commutatività)\|8]] | [[#Comporre azioni che si possono annullare\|Comporre azioni che si possono annullare]] |
+| Quali assiomi distinguono un gruppo dagli esempi che falliscono? | [[#Esercizio 1 — Le unità modulo quattordici (gruppo e inversi)\|1]], [[#Esercizio 8 — Ruotare un poligono (assiomi di gruppo e commutatività)\|8]], [[#Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)\|9]], [[#Esercizio 10 — Tutto il gruppo simmetrico piccolo (cicli, ordini e sottogruppi)\|10]] | [[#Le regole di un gruppo\|Le regole di un gruppo]] |
+| Come cancelli e inverti un prodotto senza scambiare i fattori? | [[#Esercizio 2 — Isolare un elemento (cancellazione senza commutatività)\|2]], [[#Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)\|9]] | [[#Le prime dimostrazioni: annullare senza cambiare l’ordine\|Le prime dimostrazioni: annullare senza cambiare l’ordine]] |
+| Come verifichi sottogruppi, intersezioni e unioni? | [[#Esercizio 3 — Tre classi chiuse (criterio del sottogruppo)\|3]], [[#Esercizio 4 — Intersecare e unire (intersezioni e unioni di sottogruppi)\|4]], [[#Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)\|9]], [[#Esercizio 10 — Tutto il gruppo simmetrico piccolo (cicli, ordini e sottogruppi)\|10]] | [[#Sottogruppi: restringere l’insieme conservando le regole\|Sottogruppi: restringere l’insieme conservando le regole]] |
+| Come raccogli gli elementi che commutano con tutti? | [[#Esercizio 7 — Chi commuta con chi (centralizzatore e centro)\|7]] | [[#Il centro: chi commuta con tutti?\|Il centro: chi commuta con tutti?]] |
+| Perché le permutazioni formano un gruppo e la composizione può non commutare? | [[#Esercizio 5 — L’ordine delle azioni (composizione e inversa di permutazioni)\|5]], [[#Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)\|9]], [[#Esercizio 10 — Tutto il gruppo simmetrico piccolo (cicli, ordini e sottogruppi)\|10]] | [[#Le permutazioni come gruppo\|Le permutazioni come gruppo]] |
+| Come ricavi inversa, potenze e ordine dai cicli disgiunti? | [[#Esercizio 5 — L’ordine delle azioni (composizione e inversa di permutazioni)\|5]], [[#Esercizio 6 — Ripetere cicli disgiunti (ordine e potenze delle permutazioni)\|6]], [[#Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)\|9]], [[#Esercizio 10 — Tutto il gruppo simmetrico piccolo (cicli, ordini e sottogruppi)\|10]] | [[#Decomporre, invertire e ripetere\|Decomporre, invertire e ripetere]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Le unità modulo quattordici (gruppo e inversi)
+
+In $U(14)$ elenca tutti gli elementi e trova l’inverso di ciascuno.
+
+Se ti blocchi: [[#Le regole di un gruppo|Le regole di un gruppo]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Isolare un elemento (cancellazione senza commutatività)
+
+In un gruppo $G$, risolvi $axb=c$ rispetto a $x$, per $a,b,c\in G$. Dimostra anche l’unicità della soluzione.
+
+Se ti blocchi: [[#Le prime dimostrazioni: annullare senza cambiare l’ordine|Le prime dimostrazioni: annullare senza cambiare l’ordine]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Tre classi chiuse (criterio del sottogruppo)
+
+Dimostra che $H=\{[0]_{18},[6]_{18},[12]_{18}\}$ è un sottogruppo additivo di $\mathbb Z/18\mathbb Z$.
+
+Se ti blocchi: [[#Sottogruppi: restringere l’insieme conservando le regole|Sottogruppi: restringere l’insieme conservando le regole]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Intersecare e unire (intersezioni e unioni di sottogruppi)
+
+Calcola $8\mathbb Z\cap12\mathbb Z$. L’unione è un sottogruppo di $(\mathbb Z,+)$? Motiva con un elemento preciso.
+
+Se ti blocchi: [[#Sottogruppi: restringere l’insieme conservando le regole|Sottogruppi: restringere l’insieme conservando le regole]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — L’ordine delle azioni (composizione e inversa di permutazioni)
+
+In $S_5$ siano $\alpha=(1\ 2\ 3)$ e $\beta=(3\ 4\ 5)$. Scrivi $\alpha\beta$ e $\beta\alpha$ in cicli disgiunti e trova $(\alpha\beta)^{-1}$.
+
+Se ti blocchi: [[#Le permutazioni come gruppo|Le permutazioni come gruppo]] · [[#Decomporre, invertire e ripetere|Decomporre, invertire e ripetere]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Ripetere cicli disgiunti (ordine e potenze delle permutazioni)
+
+Per $\rho=(1\ 2\ 3\ 4)(5\ 6\ 7)\in S_7$, trova ordine, inverso e $\rho^{10}$. Diagnostica l’errore: «$\rho^{24}=\operatorname{id}$, dunque l’ordine è $24$».
+
+Se ti blocchi: [[#Decomporre, invertire e ripetere|Decomporre, invertire e ripetere]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Chi commuta con chi (centralizzatore e centro)
+
+Per un elemento fissato $a$ di un gruppo $G$, poni $C_G(a)=\{x\in G:xa=ax\}$. Dimostra che è un sottogruppo e spiega perché $Z(G)=\bigcap_{a\in G}C_G(a)$.
+
+Se ti blocchi: [[#Il centro: chi commuta con tutti?|Il centro: chi commuta con tutti?]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Ruotare un poligono (assiomi di gruppo e commutatività)
+
+Numera consecutivamente in senso antiorario i vertici di un poligono regolare con $0,1,\ldots,n-1$, per $n\geq3$. Sia $r_k$ la rotazione che manda il vertice $j$ nel vertice di etichetta congrua a $j+k$ modulo $n$. Dimostra che le $n$ rotazioni $r_0,\ldots,r_{n-1}$ formano un gruppo abeliano per composizione; trova l’ordine di $r_1$.
+
+Se ti blocchi: [[#Comporre azioni che si possono annullare|Comporre azioni che si possono annullare]] · [[#Le regole di un gruppo|Le regole di un gruppo]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)
+
+Per ciascuno di $(\mathbb N,+)$, $(\mathbb Z,-)$ e delle classi non nulle modulo sei con il prodotto, identifica l'assioma che impedisce di essere un gruppo. In un gruppo dimostra unicità di neutro e inverso, cancellazione e $(ab)^{-1}=b^{-1}a^{-1}$. Dimostra il criterio «$H$ non vuoto e $xy^{-1}\in H$ per $x,y\in H$» e la chiusura delle intersezioni. Perché le biiezioni $X\to X$ sono un gruppo e perché due cicli disgiunti commutano? Deduci la formula dell'ordine come mcm delle lunghezze.
+
+Se ti blocchi: [[#Le regole di un gruppo|Le regole di un gruppo]] · [[#Le prime dimostrazioni: annullare senza cambiare l’ordine|Le prime dimostrazioni: annullare senza cambiare l’ordine]] · [[#Sottogruppi: restringere l’insieme conservando le regole|Sottogruppi: restringere l’insieme conservando le regole]] · [[#Le permutazioni come gruppo|Le permutazioni come gruppo]] · [[#Decomporre, invertire e ripetere|Decomporre, invertire e ripetere]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Tutto il gruppo simmetrico piccolo (cicli, ordini e sottogruppi)
+
+*Dalla raccolta fornita: esercizio preliminare 12, con richiesta aggiunta di una prova senza Lagrange, p. 58 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=69|p. 69 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Elenca tutti gli elementi di $S_3$, calcolane gli ordini e descrivi tutti i sottogruppi. Giustifica la completezza senza usare Lagrange, che verrà provato nel capitolo 17: controlla che due trasposizioni distinte generano tutto $S_3$ e che una trasposizione insieme a un tre-ciclo genera tutto $S_3$.
+
+Se ti blocchi: [[#Le regole di un gruppo|Le regole di un gruppo]] · [[#Sottogruppi: restringere l’insieme conservando le regole|Sottogruppi: restringere l’insieme conservando le regole]] · [[#Le permutazioni come gruppo|Le permutazioni come gruppo]] · [[#Decomporre, invertire e ripetere|Decomporre, invertire e ripetere]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Comporre azioni che si possono annullare
 
 Ruota un triangolo equilatero di un terzo di giro, poi di un altro terzo: ottieni una rotazione di due terzi. Tre rotazioni riportano ogni vertice al punto iniziale. Puoi anche riflettere il triangolo rispetto a un suo asse: ripetere la riflessione annulla il primo movimento.
@@ -356,49 +462,79 @@ Il capitolo rielabora [[Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equi
 
 Sono integrazioni didattiche la narrazione attraverso le simmetrie, la sistemazione delle prove di intersezione e unione, la giustificazione del neutro del sottogruppo mediante cancellazione e le prove tramite orbite della decomposizione e della formula dell’ordine. Esempi ed esercizi sono ricostruiti e verificati autonomamente.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 consolidano gli strumenti fondamentali; 7–8 li collegano a nuove situazioni.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. In $U(14)$ elenca tutti gli elementi e trova l’inverso di ciascuno.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Le classi coprime con $14$ sono $[1],[3],[5],[9],[11],[13]$. Gli inversi sono rispettivamente $[1],[5],[3],[11],[9],[13]$: infatti $3\cdot5=15\equiv1$, $9\cdot11=99\equiv1$ e $13^2=169\equiv1\pmod{14}$.
 
-2. In un gruppo $G$, risolvi $axb=c$ rispetto a $x$, per $a,b,c\in G$. Dimostra anche l’unicità della soluzione.
+Torna a [[#Esercizio 1 — Le unità modulo quattordici (gruppo e inversi)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Moltiplicando a sinistra per $a^{-1}$ e a destra per $b^{-1}$ si ottiene necessariamente $x=a^{-1}cb^{-1}$. Sostituendo, $a(a^{-1}cb^{-1})b=c$, quindi la soluzione esiste. Ogni soluzione deve avere questa forma, dunque è unica.
 
-3. Dimostra che $H=\{[0]_{18},[6]_{18},[12]_{18}\}$ è un sottogruppo additivo di $\mathbb Z/18\mathbb Z$.
+Torna a [[#Esercizio 2 — Isolare un elemento (cancellazione senza commutatività)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Sono le classi $[6k]_{18}$ con $k\in\mathbb Z$: riducendo $k$ modulo $3$ si ottengono esattamente le tre classi elencate. L’insieme contiene zero e $[6r]-[6s]=[6(r-s)]$ vi appartiene. Si applica il criterio additivo.
 
-4. Calcola $8\mathbb Z\cap12\mathbb Z$. L’unione è un sottogruppo di $(\mathbb Z,+)$? Motiva con un elemento preciso.
+Torna a [[#Esercizio 3 — Tre classi chiuse (criterio del sottogruppo)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > L’intersezione è $24\mathbb Z$, perché $\operatorname{mcm}(8,12)=24$. L’unione contiene $8$ e $12$, ma non $20=8+12$, che non è divisibile né per $8$ né per $12$; quindi non è un sottogruppo.
 
-5. In $S_5$ siano $\alpha=(1\ 2\ 3)$ e $\beta=(3\ 4\ 5)$. Scrivi $\alpha\beta$ e $\beta\alpha$ in cicli disgiunti e trova $(\alpha\beta)^{-1}$.
+Torna a [[#Esercizio 4 — Intersecare e unire (intersezioni e unioni di sottogruppi)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Seguendo prima il fattore a destra, $\alpha\beta$ manda $1\mapsto2\mapsto3\mapsto4\mapsto5\mapsto1$, quindi è $(1\ 2\ 3\ 4\ 5)$. Invece $\beta\alpha=(1\ 2\ 4\ 5\ 3)$. L’inverso del primo è $(1\ 5\ 4\ 3\ 2)$, ottenuto percorrendo il ciclo al contrario.
 
-6. Per $\rho=(1\ 2\ 3\ 4)(5\ 6\ 7)\in S_7$, trova ordine, inverso e $\rho^{10}$. Diagnostica l’errore: «$\rho^{24}=\operatorname{id}$, dunque l’ordine è $24$».
+Torna a [[#Esercizio 5 — L’ordine delle azioni (composizione e inversa di permutazioni)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > L’ordine è $\operatorname{mcm}(4,3)=12$ e l’inverso è $(1\ 4\ 3\ 2)(5\ 7\ 6)$. Poiché $10\equiv2\pmod4$ e $10\equiv1\pmod3$, $\rho^{10}=(1\ 3)(2\ 4)(5\ 6\ 7)$. Il ritorno al passo $24$ non è necessariamente il primo: l’ordine divide $24$, e qui è $12$.
 
-7. Per un elemento fissato $a$ di un gruppo $G$, poni $C_G(a)=\{x\in G:xa=ax\}$. Dimostra che è un sottogruppo e spiega perché $Z(G)=\bigcap_{a\in G}C_G(a)$.
+Torna a [[#Esercizio 6 — Ripetere cicli disgiunti (ordine e potenze delle permutazioni)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Il neutro commuta con $a$. Se $x,y$ commutano con $a$, allora $(xy)a=x(ya)=x(ay)=(xa)y=a(xy)$. Da $xa=ax$, moltiplicando a sinistra e a destra per $x^{-1}$, segue $ax^{-1}=x^{-1}a$. Quindi anche inversi e prodotti appartengono a $C_G(a)$. Essere in tutte queste raccolte significa commutare con ogni $a$, esattamente la definizione del centro.
 
-8. Numera consecutivamente in senso antiorario i vertici di un poligono regolare con $0,1,\ldots,n-1$, per $n\geq3$. Sia $r_k$ la rotazione che manda il vertice $j$ nel vertice di etichetta congrua a $j+k$ modulo $n$. Dimostra che le $n$ rotazioni $r_0,\ldots,r_{n-1}$ formano un gruppo abeliano per composizione; trova l’ordine di $r_1$.
+Torna a [[#Esercizio 7 — Chi commuta con chi (centralizzatore e centro)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > La composizione dà $r_kr_h=r_{k+h}$, riducendo l’indice modulo $n$: dunque è chiusa e commutativa. L’associatività è quella delle funzioni, il neutro è $r_0$, l’inverso di $r_k$ è $r_{-k}$. Le rotazioni sono distinte perché mandano il vertice $0$ in vertici distinti. Ripetere $r_1$ avanza di un posto ogni volta: il primo ritorno di tutti i vertici avviene dopo $n$ passi, quindi $\operatorname{ord}(r_1)=n$.
+
+Torna a [[#Esercizio 8 — Ruotare un poligono (assiomi di gruppo e commutatività)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Nei naturali mancano opposti; la sottrazione non è associativa e non ha neutro bilatero; le classi non nulle modulo sei non sono chiuse perché $[2][3]=[0]$. Se $e,e'$ sono neutri, $e=ee'=e'$; se $u,v$ sono inversi di $a$, $u=u(av)=(ua)v=v$. Moltiplicare dallo stesso lato per l'inverso dà cancellazione; il prodotto $ab$ con $b^{-1}a^{-1}$ vale il neutro in entrambi gli ordini. Dal criterio, scegliendo $x=y$ ottieni $e$, poi inversi e prodotti; il viceversa è immediato. Le intersezioni contengono $e$ e conservano il criterio. La composizione è associativa, ha identità e inverse; cicli disgiunti agiscono su supporti disgiunti. Una potenza è l'identità esattamente quando l'esponente è multiplo di ogni lunghezza: il minimo positivo è il mcm.
+
+Torna a [[#Esercizio 9 — Da assiomi a strumenti (assiomi di gruppo, inversi e criterio del sottogruppo)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Ci sono identità di ordine uno, tre trasposizioni di ordine due e due tre-cicli inversi di ordine tre. I sottogruppi sono $\{e\}$, i tre $\{e,(ij)\}$, $\{e,(123),(132)\}$ e $S_3$. Se un sottogruppo contiene un tre-ciclo, contiene l'altro per inversione. Due trasposizioni distinte producono un tre-ciclo; un tre-ciclo e una trasposizione producono per composizione le altre trasposizioni, dunque tutti i sei elementi. Queste osservazioni esauriscono i casi senza richiedere Lagrange.
+
+Torna a [[#Esercizio 10 — Tutto il gruppo simmetrico piccolo (cicli, ordini e sottogruppi)|esercizio 10]].
 
 Il capitolo è acquisito quando sai verificare un sottogruppo distinguendo le proprietà ereditate da quelle da provare, e calcolare una composizione conservando l’ordine delle azioni. La decomposizione in cicli deve permetterti di spiegare, oltre che calcolare, inversi, potenze e primo ritorno all’identità.
 

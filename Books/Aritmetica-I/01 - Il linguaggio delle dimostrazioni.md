@@ -8,6 +8,118 @@ Prerequisiti: aritmetica elementare e familiarità con interi e frazioni. [[Book
 > - Avrai uno schema per scegliere fra prova diretta, contrapposizione e assurdo.
 > - Capirai che cosa significano funzione iniettiva, suriettiva e biettiva, e perché una funzione si può invertire esattamente quando è biettiva: sarà lo strumento di tutti i conteggi dei capitoli successivi.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Come si passa da esempi a una prova per tutti gli interi? | [[#Esercizio 9 — Tre modi di provare (prova diretta, contrapposizione e assurdo)\|9]] | [[#Da un esempio a un'affermazione controllabile\|Da un esempio a un'affermazione controllabile]] |
+| Come distingui appartenenza, inclusione e operazioni fra insiemi? | [[#Esercizio 1 — Operare sugli insiemi (unione, intersezione, differenza e inclusione)\|1]], [[#Esercizio 4 — Due inclusioni (uguaglianza di insiemi)\|4]], [[#Esercizio 10 — Rappresentare senza confondere (De Morgan, prodotto cartesiano, controimmagine e unicità)\|10]] | [[#Insiemi: che cosa stiamo considerando?\|Insiemi: che cosa stiamo considerando?]] |
+| Che cosa cambia scambiando o negando i quantificatori? | [[#Esercizio 2 — Negare una frase (quantificatori e negazione)\|2]], [[#Esercizio 10 — Rappresentare senza confondere (De Morgan, prodotto cartesiano, controimmagine e unicità)\|10]] | [[#Quantificatori: tutti, qualcuno, uno solo\|Quantificatori: tutti, qualcuno, uno solo]] |
+| Come riconosci una condizione necessaria, una sufficiente e una reciproca falsa? | [[#Esercizio 3 — Una freccia invertita (implicazione, necessario e sufficiente)\|3]], [[#Esercizio 9 — Tre modi di provare (prova diretta, contrapposizione e assurdo)\|9]] | [[#Implicazioni, equivalenze e controesempi\|Implicazioni, equivalenze e controesempi]] |
+| Quando conviene usare prova diretta, contrapposizione o assurdo? | [[#Esercizio 4 — Due inclusioni (uguaglianza di insiemi)\|4]], [[#Esercizio 9 — Tre modi di provare (prova diretta, contrapposizione e assurdo)\|9]] | [[#Scegliere come dimostrare\|Scegliere come dimostrare]] |
+| Quando una regola definisce una funzione e quali valori raggiunge? | [[#Esercizio 5 — Cambiare il codominio (iniettività, suriettività e inversa)\|5]], [[#Esercizio 7 — Che cosa rivela la composizione (proprietà delle funzioni e controesempi)\|7]], [[#Esercizio 8 — Codificare e decodificare (identità e biiezione)\|8]], [[#Esercizio 10 — Rappresentare senza confondere (De Morgan, prodotto cartesiano, controimmagine e unicità)\|10]], [[#Esercizio 11 — Quando si può tornare indietro (teorema dell’inversa e composizione)\|11]] | [[#Funzioni: assegnare senza ambiguità\|Funzioni: assegnare senza ambiguità]] |
+| Quando puoi comporre, cancellare o invertire una funzione? | [[#Esercizio 5 — Cambiare il codominio (iniettività, suriettività e inversa)\|5]], [[#Esercizio 6 — Prima una funzione, poi l’altra (composizione e inversa)\|6]], [[#Esercizio 7 — Che cosa rivela la composizione (proprietà delle funzioni e controesempi)\|7]], [[#Esercizio 8 — Codificare e decodificare (identità e biiezione)\|8]], [[#Esercizio 11 — Quando si può tornare indietro (teorema dell’inversa e composizione)\|11]] | [[#Comporre e tornare indietro\|Comporre e tornare indietro]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Operare sugli insiemi (unione, intersezione, differenza e inclusione)
+
+Siano $U=\{0,1,2,3,4,5,6\}$, $A=\{0,2,4,6\}$ e $B=\{1,2,3\}$. Calcola $A\cup B$, $A\cap B$, $B\setminus A$ e $A^c$. Stabilisci se $A\subseteq B$.
+
+Se ti blocchi: [[#Insiemi: che cosa stiamo considerando?|Insiemi: che cosa stiamo considerando?]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Negare una frase (quantificatori e negazione)
+
+Scrivi la negazione di $\forall n\in\mathbb N\ \exists m\in\mathbb N:m>n$. Stabilisci quale delle due affermazioni è vera, giustificando la risposta.
+
+Se ti blocchi: [[#Quantificatori: tutti, qualcuno, uno solo|Quantificatori: tutti, qualcuno, uno solo]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Una freccia invertita (implicazione, necessario e sufficiente)
+
+Uno studente sostiene: «Se $n\in\mathbb Z$ è multiplo di $6$, allora è pari. Dunque se è pari è multiplo di $6$». Individua l'errore, fornisci un controesempio e formula una condizione necessaria e una sufficiente usando le due proprietà.
+
+Se ti blocchi: [[#Implicazioni, equivalenze e controesempi|Implicazioni, equivalenze e controesempi]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Due inclusioni (uguaglianza di insiemi)
+
+Per $A,B,C\subseteq U$, dimostra $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$, spiegando le due inclusioni.
+
+Se ti blocchi: [[#Insiemi: che cosa stiamo considerando?|Insiemi: che cosa stiamo considerando?]] · [[#Scegliere come dimostrare|Scegliere come dimostrare]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Cambiare il codominio (iniettività, suriettività e inversa)
+
+Considera $f:\mathbb Z\to\mathbb Z$, $f(n)=3n-2$. Dimostra che è iniettiva, mostra che non è suriettiva e indica un codominio che renda biettiva la stessa regola. Scrivi l'inversa con il suo dominio.
+
+Se ti blocchi: [[#Funzioni: assegnare senza ambiguità|Funzioni: assegnare senza ambiguità]] · [[#Comporre e tornare indietro|Comporre e tornare indietro]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Prima una funzione, poi l’altra (composizione e inversa)
+
+Siano $f,g:\mathbb R\to\mathbb R$ date da $f(x)=x+3$ e $g(x)=2x-1$. Calcola $g\circ f$, $f\circ g$ e l'inversa di $g\circ f$. Verifica le due identità dell'inversa.
+
+Se ti blocchi: [[#Comporre e tornare indietro|Comporre e tornare indietro]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Che cosa rivela la composizione (proprietà delle funzioni e controesempi)
+
+Siano $f:X\to Y$ e $g:Y\to Z$. Dimostra: se $g\circ f$ è iniettiva, allora $f$ è iniettiva; se $g\circ f$ è suriettiva, allora $g$ è suriettiva. La prima ipotesi obbliga anche $g$ a essere iniettiva? Cerca un controesempio con insiemi finiti non vuoti.
+
+Se ti blocchi: [[#Funzioni: assegnare senza ambiguità|Funzioni: assegnare senza ambiguità]] · [[#Comporre e tornare indietro|Comporre e tornare indietro]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Codificare e decodificare (identità e biiezione)
+
+Un sistema deve codificare ciascun elemento di un insieme $X$ con un codice nell'insieme $C$. Formalizza codifica $e:X\to C$ e decodifica $d:C\to X$. Dimostra che, se si richiede $d(e(x))=x$ per ogni $x\in X$, allora $e$ deve essere iniettiva. Se si richiede anche $e(d(c))=c$ per ogni $c\in C$, che cosa cambia? Con $X=\{a,b\}$, $C=\{0,1,2\}$ ed $e(a)=0,e(b)=1$, costruisci una decodifica che soddisfi la prima richiesta e spiega perché la seconda è impossibile.
+
+Se ti blocchi: [[#Funzioni: assegnare senza ambiguità|Funzioni: assegnare senza ambiguità]] · [[#Comporre e tornare indietro|Comporre e tornare indietro]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Tre modi di provare (prova diretta, contrapposizione e assurdo)
+
+Dimostra direttamente che il quadrato di un pari è pari; per contrapposizione che se $n^2$ è pari allora $n$ è pari; per assurdo che $\mathbb N$ non ha massimo. Per ogni prova scrivi ipotesi e tesi e spiega perché controllare esempi non basta. Formula anche la reciproca e la negazione di una delle implicazioni.
+
+Se ti blocchi: [[#Da un esempio a un'affermazione controllabile|Da un esempio a un'affermazione controllabile]] · [[#Implicazioni, equivalenze e controesempi|Implicazioni, equivalenze e controesempi]] · [[#Scegliere come dimostrare|Scegliere come dimostrare]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Rappresentare senza confondere (De Morgan, prodotto cartesiano, controimmagine e unicità)
+
+Per $A=\{1,2\}$ e $B=\{2,3\}$ elenca $A\times B$ e $\mathcal P(A)$; distingui $\varnothing$ da $\{\varnothing\}$. Dimostra le due leggi di De Morgan in un ambiente $U$. Per $f:\mathbb Z\to\mathbb Z$, $f(n)=n^2$, trova $f(\{-2,1,3\})$ e $f^{-1}(\{1,4\})$: questa controimmagine richiede un'inversa? Infine confronta $\forall n\,\exists m:m>n$ con $\exists m\,\forall n:m>n$ su $\mathbb N$ e verifica $\exists!x\in\mathbb N:x+2=5$.
+
+Se ti blocchi: [[#Insiemi: che cosa stiamo considerando?|Insiemi: che cosa stiamo considerando?]] · [[#Quantificatori: tutti, qualcuno, uno solo|Quantificatori: tutti, qualcuno, uno solo]] · [[#Funzioni: assegnare senza ambiguità|Funzioni: assegnare senza ambiguità]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+### Esercizio 11 — Quando si può tornare indietro (teorema dell’inversa e composizione)
+
+Per $f:X\to Y$, dimostra che esiste $g:Y\to X$ con entrambe le identità $g\circ f=\operatorname{id}_X$ e $f\circ g=\operatorname{id}_Y$ se e solo se $f$ è biettiva, e che tale $g$ è unica. Dimostra inoltre che la composizione è associativa e conserva iniettività e suriettività. Puoi concludere $f=g$ dalla sola uguaglianza delle immagini di due funzioni $X\to Y$?
+
+Se ti blocchi: [[#Funzioni: assegnare senza ambiguità|Funzioni: assegnare senza ambiguità]] · [[#Comporre e tornare indietro|Comporre e tornare indietro]].
+
+Controllo dopo il tentativo: [[#Riscontro 11|riscontro 11]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Da un esempio a un'affermazione controllabile
 
 Il quadrato di un numero pari è pari: $2^2=4$, $4^2=16$, $6^2=36$. Quanti esempi servono per esserne sicuri? Se l'affermazione riguarda tutti gli interi pari, nessuna lista finita esaurisce i casi. Occorre un ragionamento che li comprenda insieme.
@@ -191,7 +303,7 @@ Quale tecnica scegliere? Il criterio pratico è guardare che cosa si può ricava
 | $P\Longleftrightarrow Q$ | Due implicazioni | Prova $P\Rightarrow Q$ e $Q\Rightarrow P$ separatamente |
 | Un «per ogni» che sospetti falso | Controesempio | Cerca un caso che rispetti l'ipotesi e violi la tesi |
 | Un «esiste» | Costruzione | Esibisci un elemento e verifica la proprietà |
-| Una proprietà di tutti i naturali, che passa da $n$ a $n+1$ | Induzione | Vedi il [[Books/Aritmetica-I/02 - Naturali e induzione|capitolo 02]] |
+| Una proprietà di tutti i naturali, che passa da $n$ a $n+1$ | Induzione | Vedi il [[Books/Aritmetica-I/02 - Naturali e induzione\|capitolo 02]] |
 
 > [!example] Esempi e controesempi — Contrapposizione e assurdo
 > **Va bene:** nell'esempio con $x+y>10$ la contrapposizione funziona perché $\neg Q$ dà due disuguaglianze sommabili.
@@ -313,49 +425,86 @@ Il contesto degli insiemi numerici e delle corrispondenze proviene da [[Notes/Ar
 
 La trattazione sistematica di quantificatori, negazioni, necessario/sufficiente e metodi di prova è un'integrazione didattica per rendere autonomo il libro, non una ricostruzione letterale di una lezione di logica. Anche le prove sulle composizioni e sull'inversa, le operazioni insiemistiche e gli esempi sono stati esplicitati o rielaborati a questo scopo.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i concetti e li trasferiscono a situazioni nuove.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Siano $U=\{0,1,2,3,4,5,6\}$, $A=\{0,2,4,6\}$ e $B=\{1,2,3\}$. Calcola $A\cup B$, $A\cap B$, $B\setminus A$ e $A^c$. Stabilisci se $A\subseteq B$.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Unione: $\{0,1,2,3,4,6\}$; intersezione: $\{2\}$; differenza $B\setminus A=\{1,3\}$; complementare $A^c=\{1,3,5\}$. L'inclusione è falsa: per esempio $0\in A$ ma $0\notin B$. Per ogni operazione controlla la relativa condizione di appartenenza.
 
-2. Scrivi la negazione di $\forall n\in\mathbb N\ \exists m\in\mathbb N:m>n$. Stabilisci quale delle due affermazioni è vera, giustificando la risposta.
+Torna a [[#Esercizio 1 — Operare sugli insiemi (unione, intersezione, differenza e inclusione)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > La negazione è $\exists n\in\mathbb N\ \forall m\in\mathbb N:m\leq n$. Si scambiano i quantificatori e si nega $m>n$. L'enunciato iniziale è vero scegliendo $m=n+1$ per ogni $n$; la sua negazione è quindi falsa.
 
-3. Uno studente sostiene: «Se $n\in\mathbb Z$ è multiplo di $6$, allora è pari. Dunque se è pari è multiplo di $6$». Individua l'errore, fornisci un controesempio e formula una condizione necessaria e una sufficiente usando le due proprietà.
+Torna a [[#Esercizio 2 — Negare una frase (quantificatori e negazione)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > È stata invertita un'implicazione senza prova. $n=2$ è pari ma non multiplo di $6$. Essere multiplo di $6$ è sufficiente per essere pari, perché $6k=2(3k)$; essere pari è necessario per essere multiplo di $6$.
 
-4. Per $A,B,C\subseteq U$, dimostra $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$, spiegando le due inclusioni.
+Torna a [[#Esercizio 3 — Una freccia invertita (implicazione, necessario e sufficiente)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Se $x$ sta a sinistra, appartiene ad $A$ e ad almeno uno fra $B,C$: appartiene dunque ad almeno una delle intersezioni a destra. Se sta a destra, appartiene ad $A\cap B$ oppure ad $A\cap C$: in entrambi i casi appartiene ad $A$ e a $B\cup C$. Le due inclusioni danno l'uguaglianza.
 
-5. Considera $f:\mathbb Z\to\mathbb Z$, $f(n)=3n-2$. Dimostra che è iniettiva, mostra che non è suriettiva e indica un codominio che renda biettiva la stessa regola. Scrivi l'inversa con il suo dominio.
+Torna a [[#Esercizio 4 — Due inclusioni (uguaglianza di insiemi)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Da $3n-2=3n'-2$ segue $3n=3n'$, quindi $n=n'$. Il valore $0$ non è raggiunto: richiederebbe $n=2/3\notin\mathbb Z$. Con $D=\{3k-2:k\in\mathbb Z\}$ come codominio, ogni elemento è raggiunto per definizione e la funzione è biettiva. L'inversa è $D\to\mathbb Z$, $d\mapsto(d+2)/3$; il risultato è intero per la definizione di $D$.
 
-6. Siano $f,g:\mathbb R\to\mathbb R$ date da $f(x)=x+3$ e $g(x)=2x-1$. Calcola $g\circ f$, $f\circ g$ e l'inversa di $g\circ f$. Verifica le due identità dell'inversa.
+Torna a [[#Esercizio 5 — Cambiare il codominio (iniettività, suriettività e inversa)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > $(g\circ f)(x)=2(x+3)-1=2x+5$, mentre $(f\circ g)(x)=2x-1+3=2x+2$. Ponendo $h=g\circ f$, si ha $h^{-1}(y)=(y-5)/2$ su $\mathbb R$. Infatti $h^{-1}(h(x))=(2x+5-5)/2=x$ e $h(h^{-1}(y))=2(y-5)/2+5=y$.
 
-7. Siano $f:X\to Y$ e $g:Y\to Z$. Dimostra: se $g\circ f$ è iniettiva, allora $f$ è iniettiva; se $g\circ f$ è suriettiva, allora $g$ è suriettiva. La prima ipotesi obbliga anche $g$ a essere iniettiva? Cerca un controesempio con insiemi finiti non vuoti.
+Torna a [[#Esercizio 6 — Prima una funzione, poi l’altra (composizione e inversa)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Da $f(x)=f(x')$ segue $g(f(x))=g(f(x'))$, e l'iniettività della composizione dà $x=x'$. Se la composizione è suriettiva, per ogni $z\in Z$ esiste $x\in X$ con $g(f(x))=z$; dunque $f(x)\in Y$ è una preimmagine di $z$ per $g$. Per l'ultima domanda prendi $X=\{a\}$, $Y=\{b,c\}$, $Z=\{d\}$, con $f(a)=b$ e $g(b)=g(c)=d$. La composizione è iniettiva, poiché il dominio ha un solo elemento, ma $g$ non lo è.
 
-8. Un sistema deve codificare ciascun elemento di un insieme $X$ con un codice nell'insieme $C$. Formalizza codifica $e:X\to C$ e decodifica $d:C\to X$. Dimostra che, se si richiede $d(e(x))=x$ per ogni $x\in X$, allora $e$ deve essere iniettiva. Se si richiede anche $e(d(c))=c$ per ogni $c\in C$, che cosa cambia? Con $X=\{a,b\}$, $C=\{0,1,2\}$ ed $e(a)=0,e(b)=1$, costruisci una decodifica che soddisfi la prima richiesta e spiega perché la seconda è impossibile.
+Torna a [[#Esercizio 7 — Che cosa rivela la composizione (proprietà delle funzioni e controesempi)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Se $e(x)=e(x')$, applicando $d$ otteniamo $x=x'$: nessun codice usato può confondere due oggetti. Le due richieste insieme dicono che $d$ è inversa di $e$, quindi $e$ deve essere biettiva. Nell'esempio poni $d(0)=a$, $d(1)=b$ e, per esempio, $d(2)=a$. Allora $d\circ e=\operatorname{id}_X$, ma $e(d(2))=0\ne2$. Qualunque scelta di $d(2)$ fallisce la seconda identità perché $2$ non appartiene all'immagine di $e$.
+
+Torna a [[#Esercizio 8 — Codificare e decodificare (identità e biiezione)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Se $n=2k$, allora $n^2=2(2k^2)$. Se $n=2k+1$, allora $n^2=2(2k^2+2k)+1$: questa è la contrapposta della seconda affermazione. Un presunto massimo $M$ è superato da $M+1$. La reciproca di «$n$ pari implica $n^2$ pari» è la seconda affermazione; la negazione è «esiste un intero pari con quadrato dispari». Nessuna lista finita controlla tutti gli interi.
+
+Torna a [[#Esercizio 9 — Tre modi di provare (prova diretta, contrapposizione e assurdo)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Il prodotto è $\{(1,2),(1,3),(2,2),(2,3)\}$ e le parti sono $\{\varnothing,\{1\},\{2\},\{1,2\}\}$. I due insiemi vuoti indicati hanno rispettivamente zero e un elemento. De Morgan segue traducendo «non appartiene all'unione/intersezione» in «non appartiene a nessuno/almeno uno dei due». Immagine $\{1,4,9\}$; controimmagine $\{-2,-1,1,2\}$, benché $f$ non sia invertibile. Il primo enunciato quantificato è vero con $m=n+1$, il secondo falso prendendo $n=m$. Nell'ultimo $x=3$ esiste e ogni soluzione deve essere $5-2=3$.
+
+Torna a [[#Esercizio 10 — Rappresentare senza confondere (De Morgan, prodotto cartesiano, controimmagine e unicità)|esercizio 10]].
+
+### Riscontro 11
+
+> [!tip]- Riscontro 11
+> Le due identità danno iniettività applicando $g$ a $f(x)=f(x')$, e suriettività scrivendo $y=f(g(y))$. Viceversa la biiezione assegna a ogni $y$ un'unica preimmagine, che definisce l'inversa e ne forza l'unicità. Entrambe le associazioni di tre funzioni mandano $x$ in $h(g(f(x)))$. Per l'iniettività della composizione cancella prima con la funzione esterna, poi con l'interna; per la suriettività trova prima una preimmagine esterna e poi una interna. Identità e scambio su $\{1,2\}$ hanno la stessa immagine ma valori diversi, quindi l'uguaglianza delle immagini non basta.
+
+Torna a [[#Esercizio 11 — Quando si può tornare indietro (teorema dell’inversa e composizione)|esercizio 11]].
 
 Il capitolo è acquisito quando sai esplicitare dominio e quantificatori, distinguere una prova da un elenco di esempi e controllare entrambe le direzioni di un'equivalenza. Sulle funzioni, prova a spiegare con parole tue perché l'iniettività permette di ricostruire l'origine di un valore raggiunto e la suriettività garantisce che ogni elemento del codominio sia raggiunto.
 

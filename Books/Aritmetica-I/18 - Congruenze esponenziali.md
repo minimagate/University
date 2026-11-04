@@ -8,6 +8,111 @@ Prerequisiti: [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze
 > - Descriverai *tutte* le soluzioni come una classe $x_0+rt$, e saprai riconoscere quando non ce ne sono.
 > - Con modulo composto spezzerai il problema con il teorema cinese e controllerai la compatibilità degli esponenti.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Che cosa cambia quando l’incognita è l’esponente? | [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)\|9]] | [[#Cercare l’esponente invece della base\|Cercare l’esponente invece della base]] |
+| Perché il periodo esatto è l’ordine e non la cardinalità del gruppo? | [[#Esercizio 1 — Trovare un esponente (ordine e logaritmo discreto)\|1]], [[#Esercizio 7 — Un esponente affine (esponenziali e congruenze lineari)\|7]], [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)\|9]], [[#Esercizio 10 — Il bersaglio dipende dall’esponente (periodi delle potenze e classi simultanee)\|10]] | [[#Il periodo esatto delle potenze\|Il periodo esatto delle potenze]] |
+| Quando il bersaglio appartiene al ciclo e come descrivi tutte le soluzioni? | [[#Esercizio 1 — Trovare un esponente (ordine e logaritmo discreto)\|1]], [[#Esercizio 2 — Un bersaglio fuori dal ciclo (appartenenza al sottogruppo generato)\|2]], [[#Esercizio 4 — Unità non basta (condizioni necessarie e sufficienti)\|4]], [[#Esercizio 7 — Un esponente affine (esponenziali e congruenze lineari)\|7]], [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)\|9]], [[#Esercizio 10 — Il bersaglio dipende dall’esponente (periodi delle potenze e classi simultanee)\|10]] | [[#Esistenza e descrizione di tutte le soluzioni\|Esistenza e descrizione di tutte le soluzioni]] |
+| Come riduci un esponente candidato fino all’ordine esatto? | [[#Esercizio 3 — Ridurre il periodo candidato (algoritmo per determinare l’ordine)\|3]], [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)\|9]] | [[#Come determinare l’ordine senza provare ogni esponente\|Come determinare l’ordine senza provare ogni esponente]] |
+| Perché devi ricomporre le classi degli esponenti oltre ai resti della base? | [[#Esercizio 5 — Successi locali incompatibili (compatibilità delle classi di esponenti)\|5]], [[#Esercizio 6 — Ricomporre gli esponenti (teorema cinese e mcm degli ordini)\|6]], [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)\|9]], [[#Esercizio 10 — Il bersaglio dipende dall’esponente (periodi delle potenze e classi simultanee)\|10]] | [[#Spezzare il modulo e ricomporre gli esponenti\|Spezzare il modulo e ricomporre gli esponenti]] |
+| Che cosa resta vero se la base non ha un inverso? | [[#Esercizio 8 — Una base non invertibile (preperiodo e periodicità eventuale)\|8]], [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)\|9]] | [[#Se la base non è invertibile\|Se la base non è invertibile]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Trovare un esponente (ordine e logaritmo discreto)
+
+Calcola $\operatorname{ord}_{13}(5)$ e risolvi $5^x\equiv8\pmod{13}$ per $x\in\mathbb Z$ e per $x\in\mathbb N$.
+
+Se ti blocchi: [[#Il periodo esatto delle potenze|Il periodo esatto delle potenze]] · [[#Esistenza e descrizione di tutte le soluzioni|Esistenza e descrizione di tutte le soluzioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Un bersaglio fuori dal ciclo (appartenenza al sottogruppo generato)
+
+Risolvi $4^x\equiv13\pmod{17}$ con $x\in\mathbb Z$ e $-10\le x\le10$. Spiega anche perché $4^x\equiv2\pmod{17}$ non ha soluzioni intere.
+
+Se ti blocchi: [[#Esistenza e descrizione di tutte le soluzioni|Esistenza e descrizione di tutte le soluzioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Ridurre il periodo candidato (algoritmo per determinare l’ordine)
+
+Partendo da $\varphi(21)=12$, determina l’ordine di $2$ modulo $21$ con il metodo di riduzione e risolvi $2^x\equiv16\pmod{21}$ per $x\in\mathbb Z$.
+
+Se ti blocchi: [[#Come determinare l’ordine senza provare ogni esponente|Come determinare l’ordine senza provare ogni esponente]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Unità non basta (condizioni necessarie e sufficienti)
+
+Siano $n\ge2$ e $\gcd(a,n)=1$. Dimostra che se $a^x\equiv b\pmod n$ è risolvibile in $\mathbb Z$, allora $\gcd(b,n)=1$. Fornisci un controesempio alla sufficienza di questa condizione.
+
+Se ti blocchi: [[#Esistenza e descrizione di tutte le soluzioni|Esistenza e descrizione di tutte le soluzioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Successi locali incompatibili (compatibilità delle classi di esponenti)
+
+Uno studente sostiene che $3^x\equiv2\pmod{35}$ abbia soluzione perché le congruenze modulo $5$ e $7$ sono entrambe risolvibili e $\gcd(5,7)=1$. Verifica le due risolubilità locali e diagnostica l’errore. Il dominio è $x\in\mathbb Z$.
+
+Se ti blocchi: [[#Spezzare il modulo e ricomporre gli esponenti|Spezzare il modulo e ricomporre gli esponenti]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Ricomporre gli esponenti (teorema cinese e mcm degli ordini)
+
+Risolvi $2^x\equiv18\pmod{35}$ per $x\in\mathbb Z$, lavorando prima modulo $5$ e modulo $7$. Controlla un rappresentante e determina l’ordine della base modulo $35$.
+
+Se ti blocchi: [[#Spezzare il modulo e ricomporre gli esponenti|Spezzare il modulo e ricomporre gli esponenti]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Un esponente affine (esponenziali e congruenze lineari)
+
+Siano $n\ge2$, $\gcd(a,n)=1$, $r=\operatorname{ord}_n(a)$, $k\in\mathbb N_{>0}$ e $c,s\in\mathbb Z$. Per $x\in\mathbb Z$, trasforma $a^{kx+c}\equiv a^s\pmod n$ in una congruenza lineare in $x$. Dimostra che essa è risolvibile se e solo se $\gcd(k,r)\mid(s-c)$ e descrivi la forma di tutte le soluzioni quando esistono.
+
+Se ti blocchi: [[#Il periodo esatto delle potenze|Il periodo esatto delle potenze]] · [[#Esistenza e descrizione di tutte le soluzioni|Esistenza e descrizione di tutte le soluzioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Una base non invertibile (preperiodo e periodicità eventuale)
+
+Per $x\in\mathbb N$ risolvi separatamente $6^x\equiv6\pmod{12}$ e $6^x\equiv0\pmod{12}$. Individua il tratto iniziale prima della coda costante e spiega quali passaggi della teoria per le basi invertibili non si possono applicare.
+
+Se ti blocchi: [[#Se la base non è invertibile|Se la base non è invertibile]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)
+
+Per $\gcd(a,n)=1$, dimostra $a^x\equiv a^y\pmod n\iff x\equiv y\pmod r$, $r=\operatorname{ord}_n(a)$, anche per esponenti negativi. Deduci il criterio di appartenenza di $b$ e tutte le soluzioni. Per $\gcd(m,n)=1$ dimostra $\operatorname{ord}_{mn}(a)=\operatorname{mcm}(\operatorname{ord}_m(a),\operatorname{ord}_n(a))$, supponendo $\gcd(a,mn)=1$. Giustifica il metodo che riduce un esponente candidato dividendolo per primi. Infine dimostra che per una base qualunque le potenze con esponente naturale sono eventualmente periodiche, indicando il ruolo del numero finito di resti.
+
+Se ti blocchi: [[#Cercare l’esponente invece della base|Cercare l’esponente invece della base]] · [[#Il periodo esatto delle potenze|Il periodo esatto delle potenze]] · [[#Esistenza e descrizione di tutte le soluzioni|Esistenza e descrizione di tutte le soluzioni]] · [[#Come determinare l’ordine senza provare ogni esponente|Come determinare l’ordine senza provare ogni esponente]] · [[#Spezzare il modulo e ricomporre gli esponenti|Spezzare il modulo e ricomporre gli esponenti]] · [[#Se la base non è invertibile|Se la base non è invertibile]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Il bersaglio dipende dall’esponente (periodi delle potenze e classi simultanee)
+
+*Dalla raccolta fornita: esercizio 103, p. 80 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=90|p. 90 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Risolvi in $\mathbb Z$ le due congruenze $3^x\equiv7\pmod{10}$ e $3^x\equiv4+x\pmod{10}$. Per la seconda giustifica un periodo che permetta di cercare solo un numero finito di classi e prova che il risultato sia completo.
+
+Se ti blocchi: [[#Il periodo esatto delle potenze|Il periodo esatto delle potenze]] · [[#Esistenza e descrizione di tutte le soluzioni|Esistenza e descrizione di tutte le soluzioni]] · [[#Spezzare il modulo e ricomporre gli esponenti|Spezzare il modulo e ricomporre gli esponenti]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Cercare l’esponente invece della base
 
 Quali interi $x$ soddisfano
@@ -312,49 +417,79 @@ Il punto di partenza è la [[Notes/Aritmetica/Lectures/2026-10-27 - Equazioni es
 
 La [[Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari|nota del 1° novembre]] e la relativa [[_transcripts/Aritmetica/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari|trascrizione]], nelle parti dedicate all’ordine e alle potenze, offrono il raccordo con i gruppi ciclici. Sono integrazioni didattiche la formulazione sistematica con le classi e gli esponenti negativi, il metodo di riduzione dei divisori di $\varphi(n)$, la prova dell’ordine sul prodotto, gli esempi di incompatibilità e di basi non invertibili, e gli esercizi seguenti.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano questi risultati alle congruenze lineari e alle successioni di potenze.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Calcola $\operatorname{ord}_{13}(5)$ e risolvi $5^x\equiv8\pmod{13}$ per $x\in\mathbb Z$ e per $x\in\mathbb N$.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Le potenze sono $1,5,12,8,1$: infatti $5^2\equiv-1$, $5^3\equiv-5\equiv8$ e $5^4\equiv1$. Il primo ritorno è all’esponente $4$. In $\mathbb Z$ le soluzioni sono $x=3+4t$, $t\in\mathbb Z$; in $\mathbb N$ sono $x=3+4t$, $t\in\mathbb N$.
 
-2. Risolvi $4^x\equiv13\pmod{17}$ con $x\in\mathbb Z$ e $-10\le x\le10$. Spiega anche perché $4^x\equiv2\pmod{17}$ non ha soluzioni intere.
+Torna a [[#Esercizio 1 — Trovare un esponente (ordine e logaritmo discreto)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Dal ciclo di ordine $4$ segue $x\equiv3\pmod4$. Nell’intervallo richiesto si ottengono $-9,-5,-1,3,7$. La classe di $2$ non appartiene a $\{[1]_{17},[4]_{17},[16]_{17},[13]_{17}\}$, benché sia invertibile; quindi la seconda congruenza è impossibile.
 
-3. Partendo da $\varphi(21)=12$, determina l’ordine di $2$ modulo $21$ con il metodo di riduzione e risolvi $2^x\equiv16\pmod{21}$ per $x\in\mathbb Z$.
+Torna a [[#Esercizio 2 — Un bersaglio fuori dal ciclo (appartenenza al sottogruppo generato)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > $2^6\equiv1$, mentre $2^3\equiv8$ e $2^2\equiv4$ non sono $1$: dall’invariante «l’ordine divide il candidato» segue che l’ordine è $6$. Poiché $16=2^4$, tutte e sole le soluzioni sono $x\equiv4\pmod6$.
 
-4. Siano $n\ge2$ e $\gcd(a,n)=1$. Dimostra che se $a^x\equiv b\pmod n$ è risolvibile in $\mathbb Z$, allora $\gcd(b,n)=1$. Fornisci un controesempio alla sufficienza di questa condizione.
+Torna a [[#Esercizio 3 — Ridurre il periodo candidato (algoritmo per determinare l’ordine)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Nel gruppo $U(n)$ ogni potenza, anche negativa, di $[a]_n$ è invertibile: l’inverso di $[a]_n^x$ è $[a]_n^{-x}$. Dunque $[b]_n$ è un’unità, equivalente a $\gcd(b,n)=1$. Il caso $a=4$, $b=2$, $n=17$ confuta il viceversa, come mostra il ciclo $1,4,16,13$.
 
-5. Uno studente sostiene che $3^x\equiv2\pmod{35}$ abbia soluzione perché le congruenze modulo $5$ e $7$ sono entrambe risolvibili e $\gcd(5,7)=1$. Verifica le due risolubilità locali e diagnostica l’errore. Il dominio è $x\in\mathbb Z$.
+Torna a [[#Esercizio 4 — Unità non basta (condizioni necessarie e sufficienti)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Modulo $5$, il ciclo di $3$ è $1,3,4,2$, quindi $x\equiv3\pmod4$. Modulo $7$, il ciclo è $1,3,2,6,4,5$, quindi $x\equiv2\pmod6$. La prima condizione impone $x$ dispari, la seconda $x$ pari: non esiste soluzione. Il teorema cinese va applicato ai moduli degli esponenti $4$ e $6$, che non sono coprimi; $\gcd(4,6)=2$ non divide $2-3=-1$.
 
-6. Risolvi $2^x\equiv18\pmod{35}$ per $x\in\mathbb Z$, lavorando prima modulo $5$ e modulo $7$. Controlla un rappresentante e determina l’ordine della base modulo $35$.
+Torna a [[#Esercizio 5 — Successi locali incompatibili (compatibilità delle classi di esponenti)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Modulo $5$, $18\equiv3$ e il ciclo $1,2,4,3$ dà $x\equiv3\pmod4$. Modulo $7$, $18\equiv4$ e il ciclo $1,2,4$ dà $x\equiv2\pmod3$. Scrivendo $x=3+4t$, la seconda condizione diventa $t\equiv2\pmod3$. Quindi $x=11+12s$, $s\in\mathbb Z$. Il controllo è $2^{11}=2048=58\cdot35+18$. L’ordine è $\operatorname{mcm}(4,3)=12$.
 
-7. Siano $n\ge2$, $\gcd(a,n)=1$, $r=\operatorname{ord}_n(a)$, $k\in\mathbb N_{>0}$ e $c,s\in\mathbb Z$. Per $x\in\mathbb Z$, trasforma $a^{kx+c}\equiv a^s\pmod n$ in una congruenza lineare in $x$. Dimostra che essa è risolvibile se e solo se $\gcd(k,r)\mid(s-c)$ e descrivi la forma di tutte le soluzioni quando esistono.
+Torna a [[#Esercizio 6 — Ricomporre gli esponenti (teorema cinese e mcm degli ordini)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > L’uguaglianza delle potenze equivale a $r\mid(kx+c-s)$, cioè $kx\equiv s-c\pmod r$. Posto $d=\gcd(k,r)$, il criterio delle congruenze lineari dà esistenza se e solo se $d\mid(s-c)$. In tal caso, se $r/d\ge2$, si divide per $d$ e si risolve con il coefficiente invertibile $k/d$ modulo $r/d$: tutte le soluzioni sono $x\equiv x_0\pmod{r/d}$. Se $r/d=1$, ogni intero è soluzione, perché $r\mid k$ e $r\mid(s-c)$. Si tratta di un’equazione lineare dopo aver uguagliato due potenze della stessa base e usato l’ordine.
 
-8. Per $x\in\mathbb N$ risolvi separatamente $6^x\equiv6\pmod{12}$ e $6^x\equiv0\pmod{12}$. Individua il tratto iniziale prima della coda costante e spiega quali passaggi della teoria per le basi invertibili non si possono applicare.
+Torna a [[#Esercizio 7 — Un esponente affine (esponenziali e congruenze lineari)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > La successione è $1,6,0,0,\ldots$, perché $6^2=36\equiv0$ e moltiplicare ancora per $6$ conserva $0$. La prima congruenza ha la sola soluzione $x=1$; la seconda ha tutte e sole le soluzioni $x\ge2$. Il tratto iniziale è formato dai termini con esponente $0$ e $1$; la coda inizia con $x=2$ e ha periodo $1$. Non esiste una potenza positiva uguale a $1$, non si può cancellare la base e non si definiscono esponenti negativi tramite un suo inverso modulo $12$.
+
+Torna a [[#Esercizio 8 — Una base non invertibile (preperiodo e periodicità eventuale)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Nel gruppo delle unità si cancella $a^y$: occorre $a^{x-y}=1$. La divisione di $x-y$ per $r$ mostra che il resto deve essere zero per minimalità. Se $b=a^{x_0}$, tutte le soluzioni sono $x_0+r\mathbb Z$; se $b$ non appartiene al sottogruppo non ce ne sono. Una potenza vale uno modulo $mn$ esattamente quando vale uno in entrambe le coordinate, cioè quando entrambi gli ordini dividono l'esponente: il minimo è il mcm. Se l'ordine è un divisore proprio di un candidato $d$, un primo del rapporto consente di dividere ancora $d$; quando nessuna divisione è possibile il candidato è l'ordine. Fra $1,a,\ldots,a^n$ due resti coincidono; moltiplicando ripetutamente per $a$ si ripete tutta la coda, anche senza poter cancellare il tratto iniziale.
+
+Torna a [[#Esercizio 9 — Perché la classe è completa (periodo esatto, ordini locali e periodicità eventuale)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Le potenze di tre modulo dieci hanno ciclo $1,3,9,7$, di periodo quattro; per la prima $x\equiv3\pmod4$. Per la seconda il membro destro ha periodo dieci, dunque l'uguaglianza dipende da $x\pmod{20}$. Per $x\equiv0,1,2,3\pmod4$, il vincolo modulo dieci è rispettivamente $x\equiv7,9,5,3$. La compatibilità modulo due elimina il primo e il terzo caso. I due sistemi rimanenti danno $x\equiv9,3\pmod{20}$. La ricerca copre anche esponenti negativi, perché tre è un'unità modulo dieci.
+
+Torna a [[#Esercizio 10 — Il bersaglio dipende dall’esponente (periodi delle potenze e classi simultanee)|esercizio 10]].
 
 Il capitolo è acquisito quando sai separare l’appartenenza al sottogruppo dalla ricerca del periodo e giustificare che la classe trovata contiene tutte le soluzioni. Nei problemi con modulo composto, controlla autonomamente la compatibilità degli esponenti e riconosci quando una base non invertibile richiede un’analisi diversa.
 

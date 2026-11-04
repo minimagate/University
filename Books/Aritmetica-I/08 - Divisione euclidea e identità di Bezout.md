@@ -8,6 +8,103 @@ Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|lingua
 > - Descriverai tutte le combinazioni $ax+by$: sono i multipli del MCD.
 > - Dedurrai il **lemma di Euclide** (cancellare un fattore coprimo), che regge la fattorizzazione unica e le congruenze dei capitoli seguenti.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quale informazione conservi sostituendo un numero con un resto? | [[#Esercizio 3 — Risalire dalle divisioni (algoritmo di Euclide e Bézout)\|3]] | [[#Un problema grande può lasciare un resto piccolo\|Un problema grande può lasciare un resto piccolo]] |
+| Come funziona la divisibilità con zero, segni e numeri incomparabili? | [[#Esercizio 1 — Dividere anche lo zero (divisibilità e ordine parziale)\|1]], [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)\|9]] | [[#Divisibilità, anche quando compare zero\|Divisibilità, anche quando compare zero]] |
+| Perché quoziente e resto esistono e sono unici anche con segni negativi? | [[#Esercizio 2 — Quozienti con segno (divisione euclidea)\|2]], [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)\|9]] | [[#Divisione euclidea: scegliere un resto una volta per tutte\|Divisione euclidea: scegliere un resto una volta per tutte]] |
+| Perché l’ultimo resto non nullo è il MCD e l’algoritmo termina? | [[#Esercizio 3 — Risalire dalle divisioni (algoritmo di Euclide e Bézout)\|3]], [[#Esercizio 5 — Comune non basta (proprietà universale del MCD)\|5]], [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)\|9]] | [[#Il massimo comun divisore e l'algoritmo di Euclide\|Il massimo comun divisore e l'algoritmo di Euclide]] |
+| Come risali ai coefficienti di Bézout? | [[#Esercizio 3 — Risalire dalle divisioni (algoritmo di Euclide e Bézout)\|3]], [[#Esercizio 4 — Dividere per il MCD (coprimalità e combinazioni lineari)\|4]], [[#Esercizio 5 — Comune non basta (proprietà universale del MCD)\|5]], [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)\|9]] | [[#Bézout: risalire dalle divisioni\|Bézout: risalire dalle divisioni]] |
+| Quali interi sono combinazioni dei due numeri iniziali? | [[#Esercizio 4 — Dividere per il MCD (coprimalità e combinazioni lineari)\|4]], [[#Esercizio 5 — Comune non basta (proprietà universale del MCD)\|5]], [[#Esercizio 7 — Muoversi sulla retta (insieme delle combinazioni intere)\|7]], [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)\|9]] | [[#Quali numeri si ottengono come combinazioni?\|Quali numeri si ottengono come combinazioni?]] |
+| Quando puoi cancellare un fattore in una divisibilità? | [[#Esercizio 6 — Cancellare un coprimo (lemma di Euclide)\|6]], [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)\|9]] | [[#Il lemma di Euclide nella forma coprima\|Il lemma di Euclide nella forma coprima]] |
+| Come applichi Euclide agli esponenti senza sviluppare le potenze? | [[#Esercizio 8 — Euclide negli esponenti (MCD di potenze meno uno)\|8]] | [[#Approfondimento: Euclide dentro gli esponenti\|Approfondimento: Euclide dentro gli esponenti]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Dividere anche lo zero (divisibilità e ordine parziale)
+
+Per ciascuna affermazione stabilisci se è vera: $0\mid0$, $0\mid7$, $-3\mid12$, $7\mid0$. Fra $4,6,12$ indica le coppie di elementi distinti confrontabili per divisibilità.
+
+Se ti blocchi: [[#Divisibilità, anche quando compare zero|Divisibilità, anche quando compare zero]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Quozienti con segno (divisione euclidea)
+
+Trova quoziente e resto della divisione euclidea per le coppie $(a,b)=(-38,7),(38,-7),(-38,-7),(0,-7)$.
+
+Se ti blocchi: [[#Divisione euclidea: scegliere un resto una volta per tutte|Divisione euclidea: scegliere un resto una volta per tutte]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Risalire dalle divisioni (algoritmo di Euclide e Bézout)
+
+Calcola $\gcd(252,198)$ con Euclide e trova $u,v\in\mathbb Z$ tali che $252u+198v=\gcd(252,198)$.
+
+Se ti blocchi: [[#Un problema grande può lasciare un resto piccolo|Un problema grande può lasciare un resto piccolo]] · [[#Il massimo comun divisore e l'algoritmo di Euclide|Il massimo comun divisore e l'algoritmo di Euclide]] · [[#Bézout: risalire dalle divisioni|Bézout: risalire dalle divisioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Dividere per il MCD (coprimalità e combinazioni lineari)
+
+Siano $a,b\in\mathbb Z$ non entrambi nulli e $d=\gcd(a,b)$. Dimostra che $\gcd(a/d,b/d)=1$, senza usare la fattorizzazione.
+
+Se ti blocchi: [[#Bézout: risalire dalle divisioni|Bézout: risalire dalle divisioni]] · [[#Quali numeri si ottengono come combinazioni?|Quali numeri si ottengono come combinazioni?]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Comune non basta (proprietà universale del MCD)
+
+Uno studente sostiene: «Poiché $6$ divide sia $12$ sia $18$, ogni divisore comune di $12,18$ divide $6$». La conclusione è vera, ma il ragionamento è sufficiente? Correggilo e mostra con un esempio che un divisore comune qualsiasi non possiede necessariamente quella proprietà.
+
+Se ti blocchi: [[#Il massimo comun divisore e l'algoritmo di Euclide|Il massimo comun divisore e l'algoritmo di Euclide]] · [[#Bézout: risalire dalle divisioni|Bézout: risalire dalle divisioni]] · [[#Quali numeri si ottengono come combinazioni?|Quali numeri si ottengono come combinazioni?]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Cancellare un coprimo (lemma di Euclide)
+
+Per $c\in\mathbb Z$, dimostra che $35\mid12c$ implica $35\mid c$. Spiega poi perché non puoi sostituire $12$ con $15$ mantenendo la stessa conclusione per tutti i $c$.
+
+Se ti blocchi: [[#Il lemma di Euclide nella forma coprima|Il lemma di Euclide nella forma coprima]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Muoversi sulla retta (insieme delle combinazioni intere)
+
+Un dispositivo parte da $0$ e consente mosse di $+18,-18,+30,-30$. Quali posizioni intere può raggiungere? Può raggiungere $42$? E $10$? Giustifica anche che ogni posizione da te dichiarata raggiungibile si ottiene con un numero finito di mosse.
+
+Se ti blocchi: [[#Quali numeri si ottengono come combinazioni?|Quali numeri si ottengono come combinazioni?]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Euclide negli esponenti (MCD di potenze meno uno)
+
+Sostituisci la base $3$ con un intero $k\ge2$ e dimostra, per $a,b\in\mathbb N$ non entrambi nulli, che $\gcd(k^a-1,k^b-1)=k^{\gcd(a,b)}-1$. Calcola poi $\gcd(2^{15}-1,2^{21}-1)$.
+
+Se ti blocchi: [[#Approfondimento: Euclide dentro gli esponenti|Approfondimento: Euclide dentro gli esponenti]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)
+
+Dimostra che la divisibilità è un ordine parziale su $\mathbb N$, ma non su $\mathbb Z$. Prova esistenza e unicità di $a=qb+r$, $0\le r<|b|$, usando il minimo resto non negativo; indica perché $b\ne0$ è indispensabile. Prova che $(a,b)$ e $(b,a-qb)$ hanno gli stessi divisori comuni, giustifica la terminazione di Euclide e la risalita di Bézout. Deduci $a\mathbb Z+b\mathbb Z=d\mathbb Z$ e il lemma di Euclide senza fattorizzare.
+
+Se ti blocchi: [[#Divisibilità, anche quando compare zero|Divisibilità, anche quando compare zero]] · [[#Divisione euclidea: scegliere un resto una volta per tutte|Divisione euclidea: scegliere un resto una volta per tutte]] · [[#Il massimo comun divisore e l'algoritmo di Euclide|Il massimo comun divisore e l'algoritmo di Euclide]] · [[#Bézout: risalire dalle divisioni|Bézout: risalire dalle divisioni]] · [[#Quali numeri si ottengono come combinazioni?|Quali numeri si ottengono come combinazioni?]] · [[#Il lemma di Euclide nella forma coprima|Il lemma di Euclide nella forma coprima]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Un problema grande può lasciare un resto piccolo
 
 Quali numeri dividono contemporaneamente $45$ e $17$? Elencare tutti i divisori è possibile, ma cerchiamo un metodo che funzioni anche con numeri molto più grandi. La divisione
@@ -353,49 +450,72 @@ Il nucleo segue la [[Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, 
 
 Sono integrazioni espositive le verifiche sistematiche di segni e zero, l'ordine logico fra definizione usuale e proprietà del MCD, e gli esercizi. La motivazione della positività del MCD e la ricorsione sugli esponenti sono state riscritte per evitare rispettivamente un'argomentazione errata sui divisori negativi e un'incoerenza nell'ordinamento degli indici.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano le idee del capitolo ad altri problemi.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Per ciascuna affermazione stabilisci se è vera: $0\mid0$, $0\mid7$, $-3\mid12$, $7\mid0$. Fra $4,6,12$ indica le coppie di elementi distinti confrontabili per divisibilità.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Le risposte sono vera, falsa, vera, vera: valgono $0=0\cdot0$, $12=(-3)(-4)$ e $0=7\cdot0$, mentre $0k$ non può essere $7$. Le coppie confrontabili sono $4,12$ e $6,12$; $4$ e $6$ non si dividono reciprocamente.
 
-2. Trova quoziente e resto della divisione euclidea per le coppie $(a,b)=(-38,7),(38,-7),(-38,-7),(0,-7)$.
+Torna a [[#Esercizio 1 — Dividere anche lo zero (divisibilità e ordine parziale)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Le coppie $(q,r)$ sono rispettivamente $(-6,4),(-5,3),(6,4),(0,0)$. Infatti $-38=-42+4$, $38=35+3$, $-38=6(-7)+4$ e $0=0(-7)+0$. Tutti i resti sono fra $0$ e $6$.
 
-3. Calcola $\gcd(252,198)$ con Euclide e trova $u,v\in\mathbb Z$ tali che $252u+198v=\gcd(252,198)$.
+Torna a [[#Esercizio 2 — Quozienti con segno (divisione euclidea)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Le divisioni sono $252=198+54$, $198=3\cdot54+36$, $54=36+18$, $36=2\cdot18$. Il MCD è $18$ e la risalita dà $18=54-36=4\cdot54-198=4\cdot252-5\cdot198$. Quindi $(u,v)=(4,-5)$.
 
-4. Siano $a,b\in\mathbb Z$ non entrambi nulli e $d=\gcd(a,b)$. Dimostra che $\gcd(a/d,b/d)=1$, senza usare la fattorizzazione.
+Torna a [[#Esercizio 3 — Risalire dalle divisioni (algoritmo di Euclide e Bézout)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Da $au+bv=d$ ottieni $(a/d)u+(b/d)v=1$. Ogni divisore comune dei due quozienti divide dunque $1$; il loro MCD positivo è $1$. Anche quando un argomento è zero la prova rimane valida.
 
-5. Uno studente sostiene: «Poiché $6$ divide sia $12$ sia $18$, ogni divisore comune di $12,18$ divide $6$». La conclusione è vera, ma il ragionamento è sufficiente? Correggilo e mostra con un esempio che un divisore comune qualsiasi non possiede necessariamente quella proprietà.
+Torna a [[#Esercizio 4 — Dividere per il MCD (coprimalità e combinazioni lineari)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Essere divisore comune non basta: per esempio $2$ divide $12$ e $18$, ma il divisore comune $3$ non divide $2$. Nel caso di $6$, Euclide dà $18=12+6$ e $12=2\cdot6$, quindi $6$ è proprio il MCD. Oppure ogni divisore comune divide direttamente $18-12=6$.
 
-6. Per $c\in\mathbb Z$, dimostra che $35\mid12c$ implica $35\mid c$. Spiega poi perché non puoi sostituire $12$ con $15$ mantenendo la stessa conclusione per tutti i $c$.
+Torna a [[#Esercizio 5 — Comune non basta (proprietà universale del MCD)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > L'identità $3\cdot12-35=1$ dà $c=3(12c)-35c$, somma di due multipli di $35$. Con $15$ la coprimalità manca: per $c=7$, $35\mid15\cdot7=105$, ma $35\nmid7$.
 
-7. Un dispositivo parte da $0$ e consente mosse di $+18,-18,+30,-30$. Quali posizioni intere può raggiungere? Può raggiungere $42$? E $10$? Giustifica anche che ogni posizione da te dichiarata raggiungibile si ottiene con un numero finito di mosse.
+Torna a [[#Esercizio 6 — Cancellare un coprimo (lemma di Euclide)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Le posizioni raggiungibili sono le combinazioni $18x+30y$, quindi esattamente $6\mathbb Z$. Per $42$, usa $42=14\cdot18-7\cdot30$; $10$ è impossibile. Poiché $6=2\cdot18-30$, ogni $6t$ si realizza ripetendo questa sequenza $t$ volte se $t>0$, o la sequenza opposta $|t|$ volte se $t<0$; per $t=0$ non occorrono mosse.
 
-8. Sostituisci la base $3$ con un intero $k\ge2$ e dimostra, per $a,b\in\mathbb N$ non entrambi nulli, che $\gcd(k^a-1,k^b-1)=k^{\gcd(a,b)}-1$. Calcola poi $\gcd(2^{15}-1,2^{21}-1)$.
+Torna a [[#Esercizio 7 — Muoversi sulla retta (insieme delle combinazioni intere)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Per $a\ge b>0$ usa $(k^a-1)-k^{a-b}(k^b-1)=k^{a-b}-1$. La sottrazione del minore dal maggiore conserva i due MCD e fa diminuire la somma degli esponenti. Alla coppia finale $(g,0)$ si ha $\gcd(k^g-1,0)=k^g-1$; se un esponente iniziale è zero, questo è già il caso di partenza. Poiché $\gcd(15,21)=3$, il risultato numerico è $2^3-1=7$.
+
+Torna a [[#Esercizio 8 — Euclide negli esponenti (MCD di potenze meno uno)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Riflessività e transitività seguono da $a=a\cdot1$ e dal prodotto dei quozienti; l'antisimmetria sui naturali segue da $a=ak h$ se $a>0$, con $k,h>0$, e si tratta zero a parte. Su $\mathbb Z$, $1\mid-1$ e $-1\mid1$ smentiscono l'antisimmetria. Fra gli $a-q|b|\ge0$ scegli il minimo: se fosse almeno $|b|$, sottrarre $|b|$ lo ridurrebbe. Due resti ammessi differiscono per un multiplo di $|b|$ di valore assoluto minore di $|b|$, quindi coincidono; si adegua il segno del quoziente a quello di $b$. I divisori comuni si conservano sottraendo o sommando $qb$; i resti positivi decrescono. La risalita esprime l'ultimo resto come combinazione. Ogni combinazione è multipla di $d$, e Bézout produce ogni multiplo di $d$. Se $ua+vb=1$ e $a\mid bc$, moltiplicando per $c$ segue $a\mid c$.
+
+Torna a [[#Esercizio 9 — Perché Euclide funziona (ordine di divisibilità, divisione euclidea e Bézout)|esercizio 9]].
 
 Hai acquisito gli strumenti del capitolo quando sai giustificare perché Euclide conserva i divisori comuni e termina, e sai trasformare le divisioni in un'identità verificabile. Controlla inoltre di saper usare quella identità per descrivere le combinazioni possibili e per spiegare la cancellazione nel lemma coprimo.
 

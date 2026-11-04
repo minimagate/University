@@ -10,6 +10,104 @@ Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout
 >
 > L'idea che lega il capitolo: una congruenza lineare è un'equazione diofantea ([[Books/Aritmetica-I/10 - Equazioni diofantee|capitolo 10]]) travestita, $ax+ny=b$, e si risolve con gli stessi strumenti.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Che cosa conserva il resto di una divisione? | [[#Esercizio 1 — Leggere un resto negativo (classi di congruenza)\|1]] | [[#Un orologio conserva il resto\|Un orologio conserva il resto]] |
+| Perché ogni intero appartiene a una sola delle classi modulo n? | [[#Esercizio 1 — Leggere un resto negativo (classi di congruenza)\|1]], [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#Dallo stesso resto alla stessa classe\|Dallo stesso resto alla stessa classe]] |
+| Quali operazioni rispettano i rappresentanti scelti? | [[#Esercizio 7 — Invertire una potenza (compatibilità delle potenze e inversi)\|7]], [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#Quali operazioni conservano la congruenza?\|Quali operazioni conservano la congruenza?]] |
+| Perché somma e somma alternata delle cifre decidono la divisibilità? | [[#Esercizio 2 — Le cifre fanno il resto (criteri di divisibilità)\|2]], [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#Le cifre decimali spiegano i criteri di divisibilità\|Le cifre decimali spiegano i criteri di divisibilità]] |
+| Come calcoli una potenza grande usando pochi quadrati? | [[#Esercizio 3 — Una grande potenza (quadrati successivi)\|3]] | [[#Potenze grandi con quadrati piccoli\|Potenze grandi con quadrati piccoli]] |
+| Quando esiste un inverso e perché è unico modulo n? | [[#Esercizio 4 — Dividere usando Bézout (inverso modulare)\|4]], [[#Esercizio 7 — Invertire una potenza (compatibilità delle potenze e inversi)\|7]], [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#L'inverso modulare nasce da Bézout\|L'inverso modulare nasce da Bézout]] |
+| Che cosa accade al modulo quando cancelli un fattore? | [[#Esercizio 6 — Cancellare cambia il modulo (cancellazione e MCD)\|6]], [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#Cancellare un fattore cambia talvolta il modulo\|Cancellare un fattore cambia talvolta il modulo]] |
+| Come scegli un’operazione lecita su una congruenza? | [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#Mappa: che cosa si può fare con una congruenza\|Mappa: che cosa si può fare con una congruenza]] |
+| Quando una congruenza lineare ha zero, una o più classi soluzione? | [[#Esercizio 5 — Una, molte o nessuna classe (congruenze lineari)\|5]], [[#Esercizio 8 — Scatti di una ruota (congruenze lineari e classi raggiungibili)\|8]], [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)\|9]] | [[#Congruenze lineari: esistenza, costruzione, completezza\|Congruenze lineari: esistenza, costruzione, completezza]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Leggere un resto negativo (classi di congruenza)
+
+Trova il resto della divisione euclidea di $-38$ per 7, scrivi la divisione completa e descrivi la classe $[-38]_7$.
+
+Se ti blocchi: [[#Un orologio conserva il resto|Un orologio conserva il resto]] · [[#Dallo stesso resto alla stessa classe|Dallo stesso resto alla stessa classe]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Le cifre fanno il resto (criteri di divisibilità)
+
+Decidi se $75384$ è divisibile per 3, per 9 e per 11, motivando con le cifre. Calcola anche il suo resto modulo 11.
+
+Se ti blocchi: [[#Le cifre decimali spiegano i criteri di divisibilità|Le cifre decimali spiegano i criteri di divisibilità]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Una grande potenza (quadrati successivi)
+
+Calcola il resto di $3^{37}$ modulo 17 mediante quadrati successivi, senza sviluppare la potenza intera.
+
+Se ti blocchi: [[#Potenze grandi con quadrati piccoli|Potenze grandi con quadrati piccoli]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Dividere usando Bézout (inverso modulare)
+
+Trova l'inverso di 23 modulo 61 mediante Euclide e usalo per risolvere $23x\equiv7\pmod{61}$.
+
+Se ti blocchi: [[#L'inverso modulare nasce da Bézout|L'inverso modulare nasce da Bézout]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Una, molte o nessuna classe (congruenze lineari)
+
+Risolvi $18x\equiv12\pmod{30}$ e $18x\equiv13\pmod{30}$. Nel caso risolvibile elenca tutte le classi modulo 30.
+
+Se ti blocchi: [[#Congruenze lineari: esistenza, costruzione, completezza|Congruenze lineari: esistenza, costruzione, completezza]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Cancellare cambia il modulo (cancellazione e MCD)
+
+Uno studente scrive: «Da $6x\equiv6\pmod{15}$ cancello 6 e ottengo l'unica classe $x\equiv1\pmod{15}$». Individua l'errore, trova tutte le soluzioni e fornisci una soluzione esclusa dalla risposta dello studente.
+
+Se ti blocchi: [[#Cancellare un fattore cambia talvolta il modulo|Cancellare un fattore cambia talvolta il modulo]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Invertire una potenza (compatibilità delle potenze e inversi)
+
+Siano $a\in\mathbb Z$ e $n\geq2$. Dimostra che, se esiste $b\in\mathbb Z$ con $ab\equiv1\pmod n$, per ogni $k\geq1$ l'intero $b^k$ è un inverso di $a^k$ modulo $n$. Spiega anche perché $a^k$ non può avere inverso se $\gcd(a,n)>1$.
+
+Se ti blocchi: [[#Quali operazioni conservano la congruenza?|Quali operazioni conservano la congruenza?]] · [[#L'inverso modulare nasce da Bézout|L'inverso modulare nasce da Bézout]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Scatti di una ruota (congruenze lineari e classi raggiungibili)
+
+Una ruota ha 30 posizioni, numerate da 0 a 29. Parte da 0 e, a ogni scatto, avanza di 12 posizioni. Determina tutti i numeri di scatti $t\in\mathbb N$ con cui raggiunge 18 e il primo di essi. Può raggiungere 7? Dimostra infine che, per una ruota di $n\geq2$ posizioni e un avanzamento intero $a$, il numero di posizioni raggiungibili da 0 è $n/\gcd(a,n)$.
+
+Se ti blocchi: [[#Congruenze lineari: esistenza, costruzione, completezza|Congruenze lineari: esistenza, costruzione, completezza]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)
+
+Dimostra riflessività, simmetria e transitività della congruenza e che modulo $n$ ci sono esattamente $n$ classi. Prova la compatibilità con somma, prodotto e potenze. Da $10\equiv1\pmod9$ e $10\equiv-1\pmod{11}$ deduci i criteri sulle cifre. Dimostra che l'inverso esiste esattamente per $\gcd(a,n)=1$ ed è unico modulo $n$. Per $d=\gcd(c,n)$ dimostra $cx\equiv cy\pmod n\iff x\equiv y\pmod{n/d}$; deduci il criterio e il numero di classi soluzione di $ax\equiv b\pmod n$, compreso $a=0$.
+
+Se ti blocchi: [[#Dallo stesso resto alla stessa classe|Dallo stesso resto alla stessa classe]] · [[#Quali operazioni conservano la congruenza?|Quali operazioni conservano la congruenza?]] · [[#Le cifre decimali spiegano i criteri di divisibilità|Le cifre decimali spiegano i criteri di divisibilità]] · [[#L'inverso modulare nasce da Bézout|L'inverso modulare nasce da Bézout]] · [[#Cancellare un fattore cambia talvolta il modulo|Cancellare un fattore cambia talvolta il modulo]] · [[#Mappa: che cosa si può fare con una congruenza|Mappa: che cosa si può fare con una congruenza]] · [[#Congruenze lineari: esistenza, costruzione, completezza|Congruenze lineari: esistenza, costruzione, completezza]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Un orologio conserva il resto
 
 Sono le 9. Che ora segnerà un orologio di dodici ore dopo altre 17 ore? Sommiamo $9+17=26$, ma sul quadrante leggiamo 2: abbiamo tolto due giri completi. Per questa domanda 26 e 2 portano la stessa informazione. Non sono interi uguali; differiscono di un multiplo di 12.
@@ -393,49 +491,72 @@ La base del capitolo è la [[Notes/Aritmetica/Lectures/2026-10-07 - Fattorizzazi
 
 L'orologio, i nuovi esempi, l'esposizione dei quadrati successivi, il controllo dei casi limite e gli esercizi sono integrazioni didattiche. Le prove sono ricostruite esplicitamente; i numeri presenti nei passaggi ASR incerti non sono assunti come dati affidabili.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i risultati e li trasferiscono ad altri problemi.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Trova il resto della divisione euclidea di $-38$ per 7, scrivi la divisione completa e descrivi la classe $[-38]_7$.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Vale $-38=(-6)\cdot7+4$, con $0\leq4<7$. Quindi $[-38]_7=[4]_7=\{4+7t:t\in\mathbb Z\}$. Il numero $-3$ è congruo a $-38$, ma non è il resto euclideo.
 
-2. Decidi se $75384$ è divisibile per 3, per 9 e per 11, motivando con le cifre. Calcola anche il suo resto modulo 11.
+Torna a [[#Esercizio 1 — Leggere un resto negativo (classi di congruenza)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > La somma delle cifre è $7+5+3+8+4=27$, quindi il numero è divisibile per 3 e per 9. La somma alternata dalle unità è $4-8+3-5+7=1$: non è divisibile per 11 e ha resto 1 modulo 11.
 
-3. Calcola il resto di $3^{37}$ modulo 17 mediante quadrati successivi, senza sviluppare la potenza intera.
+Torna a [[#Esercizio 2 — Le cifre fanno il resto (criteri di divisibilità)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Modulo 17 si ha $3^2\equiv9$, $3^4\equiv81\equiv13$, $3^8\equiv169\equiv16\equiv-1$, $3^{16}\equiv1$ e $3^{32}\equiv1$. Poiché $37=32+4+1$, otteniamo $3^{37}\equiv1\cdot13\cdot3=39\equiv5\pmod{17}$.
 
-4. Trova l'inverso di 23 modulo 61 mediante Euclide e usalo per risolvere $23x\equiv7\pmod{61}$.
+Torna a [[#Esercizio 3 — Una grande potenza (quadrati successivi)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Le divisioni sono $61=2\cdot23+15$, $23=15+8$, $15=8+7$, $8=7+1$. Risalendo, $1=8-7=2\cdot8-15=2\cdot23-3\cdot15=8\cdot23-3\cdot61$. L'inverso è dunque 8; tutte le soluzioni sono $x\equiv8\cdot7=56\pmod{61}$, ossia $x=56+61t$ con $t\in\mathbb Z$.
 
-5. Risolvi $18x\equiv12\pmod{30}$ e $18x\equiv13\pmod{30}$. Nel caso risolvibile elenca tutte le classi modulo 30.
+Torna a [[#Esercizio 4 — Dividere usando Bézout (inverso modulare)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Il MCD è 6. La seconda congruenza non ha soluzioni, perché $6\nmid13$. La prima si riduce a $3x\equiv2\pmod5$; moltiplicando per l'inverso 2 di 3 si ottiene $x\equiv4\pmod5$. Le soluzioni sono $x=4+5t$, $t\in\mathbb Z$, e le sei classi modulo 30 hanno rappresentanti $4,9,14,19,24,29$.
 
-6. Uno studente scrive: «Da $6x\equiv6\pmod{15}$ cancello 6 e ottengo l'unica classe $x\equiv1\pmod{15}$». Individua l'errore, trova tutte le soluzioni e fornisci una soluzione esclusa dalla risposta dello studente.
+Torna a [[#Esercizio 5 — Una, molte o nessuna classe (congruenze lineari)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Poiché $\gcd(6,15)=3$, cancellando occorre passare al modulo $15/3=5$. Si ottiene $x\equiv1\pmod5$, dunque $x=1+5t$ e tre classi modulo 15: $[1]_{15},[6]_{15},[11]_{15}$. Per esempio $x=6$ soddisfa $6\cdot6-6=30$, ma non appartiene a $[1]_{15}$.
 
-7. Siano $a\in\mathbb Z$ e $n\geq2$. Dimostra che, se esiste $b\in\mathbb Z$ con $ab\equiv1\pmod n$, per ogni $k\geq1$ l'intero $b^k$ è un inverso di $a^k$ modulo $n$. Spiega anche perché $a^k$ non può avere inverso se $\gcd(a,n)>1$.
+Torna a [[#Esercizio 6 — Cancellare cambia il modulo (cancellazione e MCD)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Per la compatibilità delle potenze, $a^kb^k=(ab)^k\equiv1^k=1\pmod n$. Se invece $d=\gcd(a,n)>1$, allora $d$ divide $a^k$ e $n$. Un'ipotetica uguaglianza $a^ku-nv=1$ renderebbe 1 divisibile per $d$, impossibile. Sono così giustificate entrambe le affermazioni senza calcolare le potenze.
 
-8. Una ruota ha 30 posizioni, numerate da 0 a 29. Parte da 0 e, a ogni scatto, avanza di 12 posizioni. Determina tutti i numeri di scatti $t\in\mathbb N$ con cui raggiunge 18 e il primo di essi. Può raggiungere 7? Dimostra infine che, per una ruota di $n\geq2$ posizioni e un avanzamento intero $a$, il numero di posizioni raggiungibili da 0 è $n/\gcd(a,n)$.
+Torna a [[#Esercizio 7 — Invertire una potenza (compatibilità delle potenze e inversi)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Per raggiungere 18 serve $12t\equiv18\pmod{30}$: dal calcolo del capitolo, $t\equiv4\pmod5$. Con $t\geq0$ otteniamo esattamente $t=4+5q$, $q\in\mathbb N$; il primo arrivo è dopo quattro scatti. La posizione 7 è irraggiungibile perché $\gcd(12,30)=6\nmid7$. In generale, posto $d=\gcd(a,n)$, il criterio di esistenza dice che le posizioni raggiungibili sono precisamente i resti $0,d,2d,\ldots,n-d$, in numero di $n/d$. Il criterio assicura inizialmente un tempo intero; un tempo negativo si rende non negativo aggiungendo un multiplo sufficientemente grande di $n$, senza cambiare la posizione.
+
+Torna a [[#Esercizio 8 — Scatti di una ruota (congruenze lineari e classi raggiungibili)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Le tre proprietà seguono da $n\mid0$, dal cambio di segno e dalla somma delle differenze; la divisione euclidea fornisce gli $n$ resti distinti. Somma le differenze o scrivi $ab-a'b'=a(b-b')+b'(a-a')$; itera per le potenze. Nella scrittura decimale sostituisci ogni $10^j$ con $1$ o $(-1)^j$; modulo tre vale come modulo nove. Bézout costruisce l'inverso e un inverso implica che ogni divisore comune divida uno; moltiplicare per esso prova l'unicità. Scrivi $c=dc_1,n=dn_1$ e cancella $c_1$ nella divisibilità perché è coprimo con $n_1$. Con $g=\gcd(a,n)$, esistenza equivale a $g\mid b$ e le soluzioni sono una classe modulo $n/g$, cioè $g$ classi modulo $n$. Per $a=0$, tutte le $n$ classi se $n\mid b$, altrimenti nessuna.
+
+Torna a [[#Esercizio 9 — Giustificare i calcoli modulari (equivalenza, compatibilità, cancellazione e congruenze lineari)|esercizio 9]].
 
 Hai acquisito gli strumenti del capitolo quando sai scegliere rappresentanti comodi, motivare ogni cancellazione e descrivere tutte le soluzioni al modulo richiesto. Nel problema della ruota, prova a spiegare con parole tue perché il MCD controlla sia le posizioni raggiungibili sia i tempi di ritorno.
 

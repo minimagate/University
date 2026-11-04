@@ -8,6 +8,112 @@ Prerequisiti: [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|funzio
 > - Saprai contare le funzioni ($m^n$), le iniezioni ($m!/(m-n)!$) e le permutazioni ($n!$).
 > - L'idea che lega tutto: descrivi l'oggetto come una funzione, poi chiediti quali restrizioni (immagini distinte, tutte raggiunte) impone il problema.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Come traduci una sistemazione in una funzione? | [[#Esercizio 1 — Numerare i pari (cardinalità e biiezione)\|1]] | [[#Un posto per ogni persona\|Un posto per ogni persona]] |
+| Perché due numerazioni complete hanno la stessa lunghezza? | [[#Esercizio 1 — Numerare i pari (cardinalità e biiezione)\|1]], [[#Esercizio 6 — Riempire senza ripetere (fibre, biiezioni e permutazioni)\|6]], [[#Esercizio 8 — Due libri vicini (permutazioni e corrispondenza reversibile)\|8]], [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)\|9]] | [[#La cardinalità è una numerazione completa\|La cardinalità è una numerazione completa]] |
+| Quando i conteggi di casi diversi si possono sommare? | [[#Esercizio 2 — Scegliere il pranzo (principi della somma e del prodotto)\|2]], [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)\|9]], [[#Esercizio 10 — Colorare una scacchiera (principio del prodotto e permutazioni)\|10]] | [[#Separare i casi: il principio della somma\|Separare i casi: il principio della somma]] |
+| Quando scelte dipendenti si possono comunque moltiplicare? | [[#Esercizio 2 — Scegliere il pranzo (principi della somma e del prodotto)\|2]], [[#Esercizio 3 — Codici con e senza ripetizioni (funzioni e iniezioni)\|3]], [[#Esercizio 7 — Dipendenza delle scelte (prodotto con proseguimenti uniformi)\|7]], [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)\|9]], [[#Esercizio 10 — Colorare una scacchiera (principio del prodotto e permutazioni)\|10]] | [[#Costruire per passi: il principio del prodotto\|Costruire per passi: il principio del prodotto]] |
+| Quale coincidenza è forzata da troppi oggetti in pochi cassetti? | [[#Esercizio 5 — Troppi studenti (principio dei cassetti)\|5]], [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)\|9]] | [[#Troppi oggetti: il principio dei cassetti\|Troppi oggetti: il principio dei cassetti]] |
+| Come conti tutte le funzioni, anche con insiemi vuoti? | [[#Esercizio 3 — Codici con e senza ripetizioni (funzioni e iniezioni)\|3]], [[#Esercizio 4 — Contare dal vuoto (funzione vuota e casi limite)\|4]], [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)\|9]], [[#Esercizio 10 — Colorare una scacchiera (principio del prodotto e permutazioni)\|10]] | [[#Contare tutte le funzioni\|Contare tutte le funzioni]] |
+| Come cambia il conto se vieti ripetizioni o chiedi una biiezione? | [[#Esercizio 3 — Codici con e senza ripetizioni (funzioni e iniezioni)\|3]], [[#Esercizio 4 — Contare dal vuoto (funzione vuota e casi limite)\|4]], [[#Esercizio 6 — Riempire senza ripetere (fibre, biiezioni e permutazioni)\|6]], [[#Esercizio 8 — Due libri vicini (permutazioni e corrispondenza reversibile)\|8]], [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)\|9]], [[#Esercizio 10 — Colorare una scacchiera (principio del prodotto e permutazioni)\|10]] | [[#Vietare le ripetizioni: iniezioni e permutazioni\|Vietare le ripetizioni: iniezioni e permutazioni]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Numerare i pari (cardinalità e biiezione)
+
+Per $n\in\mathbb N$ sia $E_n=\{2,4,\ldots,2n\}$, con $E_0=\varnothing$. Costruisci una biezione $[n]\to E_n$ e la sua inversa. Qual è $|E_n|$?
+
+Se ti blocchi: [[#Un posto per ogni persona|Un posto per ogni persona]] · [[#La cardinalità è una numerazione completa|La cardinalità è una numerazione completa]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Scegliere il pranzo (principi della somma e del prodotto)
+
+Un pranzo prevede o un piatto fra $2$ primi seguito da uno fra $3$ secondi, oppure una pizza fra $4$ pizze. Le due forme di pranzo sono distinte. Quanti pranzi sono possibili? Spiega dove usi prodotto e somma.
+
+Se ti blocchi: [[#Separare i casi: il principio della somma|Separare i casi: il principio della somma]] · [[#Costruire per passi: il principio del prodotto|Costruire per passi: il principio del prodotto]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Codici con e senza ripetizioni (funzioni e iniezioni)
+
+Un codice è una sequenza di quattro cifre di $\{0,1,\ldots,9\}$. Conta i codici: (a) senza vincoli; (b) con cifre tutte distinte; (c) con cifre tutte distinte e prima cifra diversa da zero.
+
+Se ti blocchi: [[#Costruire per passi: il principio del prodotto|Costruire per passi: il principio del prodotto]] · [[#Contare tutte le funzioni|Contare tutte le funzioni]] · [[#Vietare le ripetizioni: iniezioni e permutazioni|Vietare le ripetizioni: iniezioni e permutazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Contare dal vuoto (funzione vuota e casi limite)
+
+Sia $A=\{a,b\}$. Quante funzioni e quante iniezioni esistono in ciascuno dei casi $\varnothing\to A$, $A\to\varnothing$, $\varnothing\to\varnothing$? Quali delle funzioni esistenti sono suriettive?
+
+Se ti blocchi: [[#Contare tutte le funzioni|Contare tutte le funzioni]] · [[#Vietare le ripetizioni: iniezioni e permutazioni|Vietare le ripetizioni: iniezioni e permutazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Troppi studenti (principio dei cassetti)
+
+Ventuno studenti vengono divisi in cinque gruppi etichettati, ciascuno studente in un solo gruppo. Dimostra che un gruppo contiene almeno cinque studenti. È necessariamente vero che un gruppo ne contenga almeno sei?
+
+Se ti blocchi: [[#Troppi oggetti: il principio dei cassetti|Troppi oggetti: il principio dei cassetti]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Riempire senza ripetere (fibre, biiezioni e permutazioni)
+
+Siano $X,Y$ finiti con $|X|=|Y|=n$. Ricostruisci la dimostrazione che una suriezione $f:X\to Y$ è iniettiva. Poi conta le biezioni fra $\{a,b,c\}$ e $\{1,2,3\}$.
+
+Se ti blocchi: [[#La cardinalità è una numerazione completa|La cardinalità è una numerazione completa]] · [[#Vietare le ripetizioni: iniezioni e permutazioni|Vietare le ripetizioni: iniezioni e permutazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Dipendenza delle scelte (prodotto con proseguimenti uniformi)
+
+Un lettore sostiene: «Le parole di lunghezza tre su $\{a,b,c\}$ con lettere consecutive diverse non si possono contare con un prodotto, perché la seconda lettera dipende dalla prima». Individua l'errore e conta le parole. Sono ammesse prima e terza lettera uguali.
+
+Se ti blocchi: [[#Costruire per passi: il principio del prodotto|Costruire per passi: il principio del prodotto]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Due libri vicini (permutazioni e corrispondenza reversibile)
+
+Sei libri tutti distinti devono essere messi in fila. Due libri fissati, $A$ e $B$, devono stare vicini, in uno qualsiasi dei due ordini. Conta le disposizioni e giustifica il conteggio mediante una corrispondenza reversibile.
+
+Se ti blocchi: [[#La cardinalità è una numerazione completa|La cardinalità è una numerazione completa]] · [[#Vietare le ripetizioni: iniezioni e permutazioni|Vietare le ripetizioni: iniezioni e permutazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)
+
+Dimostra per induzione su $s$ che un'iniezione $[r]\to[s]$ implica $r\le s$: rimuovi un elemento del dominio e la sua immagine, poi rinumera. Deduci l'unicità della cardinalità, il principio di corrispondenza e l'impossibilità di numerare $\mathbb N$ con $[n]$. Ricava infine $m^n$, $m(m-1)\cdots(m-n+1)$ e $n!$ per funzioni, iniezioni e biiezioni, precisando i casi vuoti e $n>m$.
+
+Se ti blocchi: [[#La cardinalità è una numerazione completa|La cardinalità è una numerazione completa]] · [[#Separare i casi: il principio della somma|Separare i casi: il principio della somma]] · [[#Costruire per passi: il principio del prodotto|Costruire per passi: il principio del prodotto]] · [[#Troppi oggetti: il principio dei cassetti|Troppi oggetti: il principio dei cassetti]] · [[#Contare tutte le funzioni|Contare tutte le funzioni]] · [[#Vietare le ripetizioni: iniezioni e permutazioni|Vietare le ripetizioni: iniezioni e permutazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Colorare una scacchiera (principio del prodotto e permutazioni)
+
+*Dalla raccolta fornita: esercizio 43, punti (i)–(ii), p. 74 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=84|p. 84 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Su una scacchiera $n\times n$, $n\ge1$, ogni casella è bianca o nera. Conta le colorazioni in cui nessuna riga è monocromatica; poi quelle con esattamente una casella nera per riga e per colonna. Descrivi la funzione o la biiezione che rende corretto ogni conteggio.
+
+Se ti blocchi: [[#Separare i casi: il principio della somma|Separare i casi: il principio della somma]] · [[#Costruire per passi: il principio del prodotto|Costruire per passi: il principio del prodotto]] · [[#Contare tutte le funzioni|Contare tutte le funzioni]] · [[#Vietare le ripetizioni: iniezioni e permutazioni|Vietare le ripetizioni: iniezioni e permutazioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Un posto per ogni persona
 
 Tre persone devono occupare tre sedie numerate. Per descrivere una sistemazione possiamo disegnare una freccia da ciascuna persona alla sua sedia. Nessuna persona deve rimanere senza posto, nessuna sedia può ospitare due persone e tutte le sedie vengono occupate. Abbiamo costruito una biezione (una funzione iniettiva e suriettiva, nel senso del [[Books/Aritmetica-I/01 - Il linguaggio delle dimostrazioni|capitolo 01]]).
@@ -279,49 +385,79 @@ Il nucleo del capitolo segue [[Notes/Aritmetica/Lectures/2026-09-29 - Cardinalit
 
 La dimostrazione dell'unicità della cardinalità, la formulazione del prodotto tramite proseguimenti uniformi, i casi vuoti, la versione estesa dei cassetti e gli esempi ed esercizi sono sviluppi didattici di questa esposizione. Le dimostrazioni sono ricostruite esplicitamente per rendere il percorso autonomo.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i metodi e li trasferiscono a nuovi problemi.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Per $n\in\mathbb N$ sia $E_n=\{2,4,\ldots,2n\}$, con $E_0=\varnothing$. Costruisci una biezione $[n]\to E_n$ e la sua inversa. Qual è $|E_n|$?
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Usa $f(i)=2i$ e $f^{-1}(j)=j/2$. La seconda formula ha valori in $[n]$ perché ogni $j\in E_n$ è pari e compreso fra $2$ e $2n$. Le composizioni restituiscono l'elemento iniziale, quindi $|E_n|=n$. Per $n=0$ entrambe sono la funzione vuota.
 
-2. Un pranzo prevede o un piatto fra $2$ primi seguito da uno fra $3$ secondi, oppure una pizza fra $4$ pizze. Le due forme di pranzo sono distinte. Quanti pranzi sono possibili? Spiega dove usi prodotto e somma.
+Torna a [[#Esercizio 1 — Numerare i pari (cardinalità e biiezione)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Le coppie primo-secondo sono $2\cdot3=6$. Sono un caso disgiunto dalle quattro scelte di pizza, quindi il totale è $6+4=10$. Ogni coppia identifica un pranzo diverso; i piatti non vengono confusi con le pizze.
 
-3. Un codice è una sequenza di quattro cifre di $\{0,1,\ldots,9\}$. Conta i codici: (a) senza vincoli; (b) con cifre tutte distinte; (c) con cifre tutte distinte e prima cifra diversa da zero.
+Torna a [[#Esercizio 2 — Scegliere il pranzo (principi della somma e del prodotto)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > (a) Ogni posizione ammette dieci cifre: $10^4=10000$. (b) Le scelte successive sono $10,9,8,7$: $5040$. (c) La prima cifra ha $9$ possibilità; la seconda ne ha ancora $9$, perché lo zero è ora consentito e solo la prima cifra è vietata. Il totale è $9\cdot9\cdot8\cdot7=4536$.
 
-4. Sia $A=\{a,b\}$. Quante funzioni e quante iniezioni esistono in ciascuno dei casi $\varnothing\to A$, $A\to\varnothing$, $\varnothing\to\varnothing$? Quali delle funzioni esistenti sono suriettive?
+Torna a [[#Esercizio 3 — Codici con e senza ripetizioni (funzioni e iniezioni)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Da $\varnothing$ ad $A$ c'è una funzione, iniettiva e non suriettiva. Da $A$ al vuoto ci sono zero funzioni e zero iniezioni. Dal vuoto al vuoto c'è una funzione, sia iniettiva sia suriettiva. Una funzione vuota non deve assegnare valori; la suriettività richiede invece che ogni elemento del codominio venga raggiunto.
 
-5. Ventuno studenti vengono divisi in cinque gruppi etichettati, ciascuno studente in un solo gruppo. Dimostra che un gruppo contiene almeno cinque studenti. È necessariamente vero che un gruppo ne contenga almeno sei?
+Torna a [[#Esercizio 4 — Contare dal vuoto (funzione vuota e casi limite)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Se tutti i gruppi contenessero al massimo quattro studenti, il totale sarebbe al massimo $5\cdot4=20$, impossibile. Non sono garantiti sei studenti in un gruppo: le dimensioni $5,4,4,4,4$ sommano a $21$ e forniscono un controesempio.
 
-6. Siano $X,Y$ finiti con $|X|=|Y|=n$. Ricostruisci la dimostrazione che una suriezione $f:X\to Y$ è iniettiva. Poi conta le biezioni fra $\{a,b,c\}$ e $\{1,2,3\}$.
+Torna a [[#Esercizio 5 — Troppi studenti (principio dei cassetti)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Per $n>0$, suddividi $X$ nelle fibre dei singoli elementi di $Y$. Sono $n$ fibre non vuote e hanno in totale $n$ elementi: nessuna può averne due. Per $n=0$ la funzione vuota è iniettiva. Le biezioni richieste sono $3!=6$: prima immagine in $3$ modi, seconda in $2$, ultima obbligata.
 
-7. Un lettore sostiene: «Le parole di lunghezza tre su $\{a,b,c\}$ con lettere consecutive diverse non si possono contare con un prodotto, perché la seconda lettera dipende dalla prima». Individua l'errore e conta le parole. Sono ammesse prima e terza lettera uguali.
+Torna a [[#Esercizio 6 — Riempire senza ripetere (fibre, biiezioni e permutazioni)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Per la prima posizione ci sono $3$ possibilità. Per la seconda, qualunque sia la prima, ne restano esattamente $2$. Per la terza ne restano esattamente $2$, perché è vietata solo la seconda. Il totale è $3\cdot2\cdot2=12$. Cambiano le lettere disponibili, ma il numero di proseguimenti a ogni passo è uniforme: questo basta per il prodotto.
 
-8. Sei libri tutti distinti devono essere messi in fila. Due libri fissati, $A$ e $B$, devono stare vicini, in uno qualsiasi dei due ordini. Conta le disposizioni e giustifica il conteggio mediante una corrispondenza reversibile.
+Torna a [[#Esercizio 7 — Dipendenza delle scelte (prodotto con proseguimenti uniformi)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Sostituisci i due libri vicini con un unico blocco: rimangono cinque oggetti distinti da ordinare, in $5!$ modi. Scegli poi se il blocco contiene $AB$ o $BA$, in $2$ modi. La corrispondenza è reversibile: ogni disposizione valida determina l'ordine dei cinque oggetti e l'ordine interno del blocco, che permettono di ricostruirla. Il totale è $5!\cdot2=240$.
+
+Torna a [[#Esercizio 8 — Due libri vicini (permutazioni e corrispondenza reversibile)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Per $s=0$ un dominio non vuoto non può avere immagini. Se $r>0$, togliendo una coppia elemento-immagine resta un'iniezione $[r-1]\to[s-1]$, quindi $r-1\le s-1$. Due numerazioni di $X$ forniscono biiezioni fra i rispettivi intervalli: il lemma in entrambi i versi ne uguaglia le lunghezze. Una biiezione trasporta una numerazione. Una numerazione di $\mathbb N$ indurrebbe un'iniezione da $n+1$ naturali in $[n]$, impossibile. Le formule seguono dalle scelte successive: $m$ sempre, oppure $m,m-1,\ldots$, oppure $n,n-1,\ldots,1$. Dal vuoto c'è una funzione; da un insieme non vuoto al vuoto nessuna; se $n>m$ non ci sono iniezioni.
+
+Torna a [[#Esercizio 9 — Perché una cardinalità è unica (iniezioni finite, cardinalità e principi di conteggio)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Ogni riga ha $2^n-2$ colorazioni non monocromatiche e le righe si scelgono indipendentemente: $(2^n-2)^n$. Nel secondo caso associa a ogni riga la colonna della casella nera: è una permutazione delle $n$ colonne, quindi ci sono $n!$ colorazioni. Per $n=1$ i due risultati sono rispettivamente zero e uno.
+
+Torna a [[#Esercizio 10 — Colorare una scacchiera (principio del prodotto e permutazioni)|esercizio 10]].
 
 Il capitolo è acquisito quando sai costruire la corrispondenza che giustifica un conteggio, distinguere casi disgiunti da passi successivi e controllare i casi vuoti. Negli esercizi nuovi, prova a spiegare perché ogni risultato viene contato esattamente una volta prima di calcolare il numero.
 

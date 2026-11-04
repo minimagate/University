@@ -12,6 +12,114 @@ Prerequisiti: [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|conteggi,
 > [!note] Vocabolario che useremo
 > **Molteplicità** di una lettera: quante volte compare in una parola. **Scatole etichettate**: scatole con un nome (A, B, C…), per cui scambiare i contenuti di due scatole dà un risultato diverso. **Suriettiva** (cap. [[Books/Aritmetica-I/03 - Contare attraverso le funzioni|03]]): ogni elemento del codominio è immagine di almeno un elemento. In questo capitolo $\mathbb N$ contiene lo zero.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Quali oggetti o scatole restano distinguibili nel risultato? | [[#Esercizio 5 — Scatole indistinguibili (fibre di cardinalità non uniforme)\|5]], [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]], [[#Esercizio 10 — Squadre senza etichette (multinomiali e sovraconteggio uniforme)\|10]] | [[#Che cosa rende diverse due distribuzioni?\|Che cosa rende diverse due distribuzioni?]] |
+| Quando ogni parola è stata contata lo stesso numero di volte? | [[#Esercizio 1 — Riordinare BANANA (anagrammi e multinomiali)\|1]], [[#Esercizio 7 — Molteplicità delle lettere (multinomiali con vincoli)\|7]], [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]], [[#Esercizio 10 — Squadre senza etichette (multinomiali e sovraconteggio uniforme)\|10]] | [[#Anagrammi: quando si può dividere\|Anagrammi: quando si può dividere]] |
+| Che cosa cambia togliendo il nome a gruppi di uguale dimensione? | [[#Esercizio 2 — Dare un nome ai gruppi (gruppi etichettati e sovraconteggio uniforme)\|2]], [[#Esercizio 5 — Scatole indistinguibili (fibre di cardinalità non uniforme)\|5]], [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]], [[#Esercizio 10 — Squadre senza etichette (multinomiali e sovraconteggio uniforme)\|10]] | [[#Scatole etichettate e gruppi senza nome\|Scatole etichettate e gruppi senza nome]] |
+| Qual è la biiezione, anche con scatole vuote, dietro stelle e sbarre? | [[#Esercizio 3 — Sette oggetti in quattro scatole (stelle e sbarre)\|3]], [[#Esercizio 6 — Una somma binomiale (doppio conteggio delle distribuzioni)\|6]], [[#Esercizio 8 — Misurare le distanze (stelle e sbarre e sequenze ordinate)\|8]], [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]] | [[#Stelle e sbarre: una biezione completa\|Stelle e sbarre: una biezione completa]] |
+| Come assorbi positività e vincoli inferiori senza perdere soluzioni? | [[#Esercizio 3 — Sette oggetti in quattro scatole (stelle e sbarre)\|3]], [[#Esercizio 4 — Assorbire i vincoli inferiori (cambio di variabili e distribuzioni)\|4]], [[#Esercizio 7 — Molteplicità delle lettere (multinomiali con vincoli)\|7]], [[#Esercizio 8 — Misurare le distanze (stelle e sbarre e sequenze ordinate)\|8]], [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]] | [[#Porzioni positive e vincoli inferiori\|Porzioni positive e vincoli inferiori]] |
+| Come trasformi una terna di somma fissata in un sottoinsieme? | [[#Esercizio 6 — Una somma binomiale (doppio conteggio delle distribuzioni)\|6]], [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]] | [[#Dalle terne ai sottoinsiemi: una somma uguale a cento\|Dalle terne ai sottoinsiemi: una somma uguale a cento]] |
+| Come scegli il modello e controlli ogni divisione? | [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)\|9]], [[#Esercizio 10 — Squadre senza etichette (multinomiali e sovraconteggio uniforme)\|10]] | [[#Mappa decisionale del conteggio\|Mappa decisionale del conteggio]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Riordinare BANANA (anagrammi e multinomiali)
+
+Quanti anagrammi distinti ha `BANANA`? Spiega anche come ottenere lo stesso numero scegliendo successivamente le posizioni delle lettere.
+
+Se ti blocchi: [[#Anagrammi: quando si può dividere|Anagrammi: quando si può dividere]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Dare un nome ai gruppi (gruppi etichettati e sovraconteggio uniforme)
+
+Otto studenti distinti vanno divisi in tre gruppi chiamati A, B e C, di dimensioni rispettivamente $3,3,2$. Quante assegnazioni ci sono? Quante divisioni rimangono se i due gruppi di tre non hanno nome e il gruppo di due è riconoscibile dalla dimensione?
+
+Se ti blocchi: [[#Scatole etichettate e gruppi senza nome|Scatole etichettate e gruppi senza nome]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Sette oggetti in quattro scatole (stelle e sbarre)
+
+Distribuisci sette oggetti uguali in quattro scatole etichettate. Conta le distribuzioni ammettendo scatole vuote e quelle in cui ogni scatola è nonvuota. Descrivi la sequenza di stelle e sbarre associata a $(0,2,1,4)$.
+
+Se ti blocchi: [[#Stelle e sbarre: una biezione completa|Stelle e sbarre: una biezione completa]] · [[#Porzioni positive e vincoli inferiori|Porzioni positive e vincoli inferiori]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Assorbire i vincoli inferiori (cambio di variabili e distribuzioni)
+
+Conta le soluzioni intere di $x_1+x_2+x_3+x_4=15$ soggette a $x_1\geq2$, $x_2\geq0$, $x_3\geq4$, $x_4\geq1$. Scrivi il cambio di variabili e la sua inversa.
+
+Se ti blocchi: [[#Porzioni positive e vincoli inferiori|Porzioni positive e vincoli inferiori]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Scatole indistinguibili (fibre di cardinalità non uniforme)
+
+Una studentessa conta le terne nonnegative di somma $4$, trova $15$ e divide per $3!$ per contare le distribuzioni di quattro oggetti uguali in tre scatole indistinguibili. Diagnostica l’errore e calcola il numero corretto, ammettendo scatole vuote.
+
+Se ti blocchi: [[#Che cosa rende diverse due distribuzioni?|Che cosa rende diverse due distribuzioni?]] · [[#Scatole etichettate e gruppi senza nome|Scatole etichettate e gruppi senza nome]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Una somma binomiale (doppio conteggio delle distribuzioni)
+
+Per $N\in\mathbb N$ e $r\in\mathbb N_{>0}$, dimostra contando soluzioni che
+
+   $$\sum_{j=0}^{N}\binom{j+r-1}{r-1}=\binom{N+r}{r}.$$
+
+Se ti blocchi: [[#Stelle e sbarre: una biezione completa|Stelle e sbarre: una biezione completa]] · [[#Dalle terne ai sottoinsiemi: una somma uguale a cento|Dalle terne ai sottoinsiemi: una somma uguale a cento]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Molteplicità delle lettere (multinomiali con vincoli)
+
+Quante parole di lunghezza otto sull’alfabeto $\{a,b,c\}$ contengono ciascuna lettera almeno due volte? Non si richiede che siano parole italiane. Spiega perché contare soltanto i vettori delle molteplicità non risolve il problema.
+
+Se ti blocchi: [[#Anagrammi: quando si può dividere|Anagrammi: quando si può dividere]] · [[#Porzioni positive e vincoli inferiori|Porzioni positive e vincoli inferiori]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Misurare le distanze (stelle e sbarre e sequenze ordinate)
+
+Conta le terne intere $1\leq a\leq b\leq c\leq8$ usando variabili che misurino le distanze successive. Come cambia la risposta imponendo $a<b<c$?
+
+Se ti blocchi: [[#Stelle e sbarre: una biezione completa|Stelle e sbarre: una biezione completa]] · [[#Porzioni positive e vincoli inferiori|Porzioni positive e vincoli inferiori]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)
+
+Sia $f:X\to Y$ suriettiva fra insiemi finiti, con ogni fibra di $d>0$ elementi: dimostra $|X|=d|Y|$. Applica il risultato alle parole con molteplicità $n_1,\ldots,n_r$. Poi costruisci la biiezione completa fra $x_1+\cdots+x_r=N$, $x_i\ge0$, e stringhe di stelle e sbarre, includendo $N=0$ e $r=1$. Per terne positive di somma $100$, usa anche $(a,b,c)\mapsto\{a,a+b\}$ e scrivi l'inversa. Come decidi se l'ordine o il nome delle scatole distingue due risultati?
+
+Se ti blocchi: [[#Che cosa rende diverse due distribuzioni?|Che cosa rende diverse due distribuzioni?]] · [[#Anagrammi: quando si può dividere|Anagrammi: quando si può dividere]] · [[#Scatole etichettate e gruppi senza nome|Scatole etichettate e gruppi senza nome]] · [[#Stelle e sbarre: una biezione completa|Stelle e sbarre: una biezione completa]] · [[#Porzioni positive e vincoli inferiori|Porzioni positive e vincoli inferiori]] · [[#Dalle terne ai sottoinsiemi: una somma uguale a cento|Dalle terne ai sottoinsiemi: una somma uguale a cento]] · [[#Mappa decisionale del conteggio|Mappa decisionale del conteggio]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Squadre senza etichette (multinomiali e sovraconteggio uniforme)
+
+*Dalla raccolta fornita: esercizio 38, p. 73 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=83|p. 83 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Fra $4n$ persone distinte, $n\ge1$, conta le divisioni in $n$ squadre di quattro senza nomi. Ripeti il conteggio quando ci sono $2n$ uomini e $2n$ donne e ogni squadra deve contenere due uomini e due donne. Spiega ogni fattoriale per cui dividi.
+
+Se ti blocchi: [[#Che cosa rende diverse due distribuzioni?|Che cosa rende diverse due distribuzioni?]] · [[#Anagrammi: quando si può dividere|Anagrammi: quando si può dividere]] · [[#Scatole etichettate e gruppi senza nome|Scatole etichettate e gruppi senza nome]] · [[#Mappa decisionale del conteggio|Mappa decisionale del conteggio]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Che cosa rende diverse due distribuzioni?
 
 Vogliamo distribuire sei biscotti a tre persone, Anna, Bruno e Carla. Prima di contare dobbiamo decidere quali differenze ci interessano. Se i biscotti sono tutti uguali, dare due biscotti a ciascuno descrive una sola distribuzione. Se invece ogni biscotto porta un nome diverso, sapere che ciascuno ne riceve due non basta: occorre sapere anche quali.
@@ -320,53 +428,81 @@ Il punto di partenza per anagrammi, multinomiali e distribuzioni con cardinalit�
 
 Per stelle e sbarre e per il conteggio dei sottoinsiemi di somma $100$ sono state consultate la [[Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio|nota del 13 ottobre]] e le parti combinatorie della [[_transcripts/Aritmetica/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio|trascrizione del 13 ottobre]]. La biezione generale con le sue due inverse, i casi estremi, la distinzione fra scatole etichettate e gruppi senza nome e gli ulteriori esempi ed esercizi sono completamenti didattici di questa esposizione. L’applicazione alle terne di prodotto $2000$, presente nelle fonti, viene sviluppata nel [[Books/Aritmetica-I/09 - Primi e fattorizzazione unica|capitolo 09]], dopo la prova della fattorizzazione unica.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i metodi e li trasferiscono a nuove descrizioni.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Quanti anagrammi distinti ha `BANANA`? Spiega anche come ottenere lo stesso numero scegliendo successivamente le posizioni delle lettere.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Ci sono tre A, due N e una B: $6!/(3!2!1!)=60$. Scegliendo le tre posizioni delle A e poi le due delle N fra le tre rimaste si ottiene $\binom63\binom32=20\cdot3=60$; la posizione della B è obbligata.
 
-2. Otto studenti distinti vanno divisi in tre gruppi chiamati A, B e C, di dimensioni rispettivamente $3,3,2$. Quante assegnazioni ci sono? Quante divisioni rimangono se i due gruppi di tre non hanno nome e il gruppo di due è riconoscibile dalla dimensione?
+Torna a [[#Esercizio 1 — Riordinare BANANA (anagrammi e multinomiali)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Con i nomi: $8!/(3!3!2!)=560$. Dimenticando i nomi dei due gruppi di tre, ciascuna divisione ha esattamente due rappresentazioni, ottenute scambiando A e B. Si ottengono $560/2=280$ divisioni. Il gruppo di due non può essere scambiato con un gruppo di tre mantenendo le dimensioni prescritte.
 
-3. Distribuisci sette oggetti uguali in quattro scatole etichettate. Conta le distribuzioni ammettendo scatole vuote e quelle in cui ogni scatola è nonvuota. Descrivi la sequenza di stelle e sbarre associata a $(0,2,1,4)$.
+Torna a [[#Esercizio 2 — Dare un nome ai gruppi (gruppi etichettati e sovraconteggio uniforme)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Nel primo caso $\binom{10}3=120$; nel secondo $\binom63=20$, dopo aver assegnato un oggetto a ogni scatola. La sequenza richiesta è `|**|*|****`: sette stelle e tre sbarre.
 
-4. Conta le soluzioni intere di $x_1+x_2+x_3+x_4=15$ soggette a $x_1\geq2$, $x_2\geq0$, $x_3\geq4$, $x_4\geq1$. Scrivi il cambio di variabili e la sua inversa.
+Torna a [[#Esercizio 3 — Sette oggetti in quattro scatole (stelle e sbarre)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Poni $(y_1,y_2,y_3,y_4)=(x_1-2,x_2,x_3-4,x_4-1)$. Allora $y_i\geq0$ e la somma è $15-7=8$. Le soluzioni sono $\binom{11}3=165$. L’inversa aggiunge rispettivamente $2,0,4,1$; questo verifica che non si perdono né si aggiungono soluzioni.
 
-5. Una studentessa conta le terne nonnegative di somma $4$, trova $15$ e divide per $3!$ per contare le distribuzioni di quattro oggetti uguali in tre scatole indistinguibili. Diagnostica l’errore e calcola il numero corretto, ammettendo scatole vuote.
+Torna a [[#Esercizio 4 — Assorbire i vincoli inferiori (cambio di variabili e distribuzioni)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Le molteplicità dei riordinamenti non sono uguali: $(4,0,0)$ ne ha tre, $(3,1,0)$ sei. Le distribuzioni si rappresentano in modo unico ordinando le quantità in senso decrescente: $(4,0,0)$, $(3,1,0)$, $(2,2,0)$, $(2,1,1)$. Sono quindi quattro. I rispettivi numeri di terne ordinate sono $3,6,3,3$, la cui somma è $15$.
 
-6. Per $N\in\mathbb N$ e $r\in\mathbb N_{>0}$, dimostra contando soluzioni che
+Torna a [[#Esercizio 5 — Scatole indistinguibili (fibre di cardinalità non uniforme)|esercizio 5]].
 
-   $$\sum_{j=0}^{N}\binom{j+r-1}{r-1}=\binom{N+r}{r}.$$
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Conta le soluzioni nonnegative di $x_1+\cdots+x_r+t=N$. Stelle e sbarre dà il membro destro, perché ci sono $r+1$ variabili. Se la somma delle prime $r$ è $j$, allora $t=N-j$ è obbligato e le prime variabili si scelgono in $\binom{j+r-1}{r-1}$ modi. I casi $j=0,\ldots,N$ sono disgiunti ed esaustivi: sommandoli ottieni il membro sinistro.
 
-7. Quante parole di lunghezza otto sull’alfabeto $\{a,b,c\}$ contengono ciascuna lettera almeno due volte? Non si richiede che siano parole italiane. Spiega perché contare soltanto i vettori delle molteplicità non risolve il problema.
+Torna a [[#Esercizio 6 — Una somma binomiale (doppio conteggio delle distribuzioni)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Dopo aver riservato due copie per lettera, rimangono due copie da assegnare. Le molteplicità hanno forma $(4,2,2)$, in tre modi, oppure $(3,3,2)$, in tre modi. Per ciascun vettore bisogna contare le parole corrispondenti. Il totale è
 > $$3\frac{8!}{4!2!2!}+3\frac{8!}{3!3!2!}=1260+1680=2940.$$
 > I sei vettori descrivono quantità di lettere; ciascuno corrisponde a molte sequenze, con numeri diversi nei due casi.
 
-8. Conta le terne intere $1\leq a\leq b\leq c\leq8$ usando variabili che misurino le distanze successive. Come cambia la risposta imponendo $a<b<c$?
+Torna a [[#Esercizio 7 — Molteplicità delle lettere (multinomiali con vincoli)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Poni $d_1=a-1$, $d_2=b-a$, $d_3=c-b$, $d_4=8-c$. Sono nonnegative e sommano a $7$. Viceversa una tale quadrupla ricostruisce $a=d_1+1$, $b=d_1+d_2+1$, $c=d_1+d_2+d_3+1$; la quarta variabile garantisce $c\leq8$. Le terne sono dunque $\binom{10}3=120$. Per disuguaglianze strette richiedi $d_2,d_3\geq1$: sottrai uno da ciascuna e ottieni somma $5$, quindi $\binom83=56$. Il secondo numero coincide con la scelta di un sottoinsieme di tre elementi fra otto.
+
+Torna a [[#Esercizio 8 — Misurare le distanze (stelle e sbarre e sequenze ordinate)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Le fibre sono disgiunte e ricoprono $X$, quindi la somma delle loro cardinalità è $d|Y|$. Etichettando temporaneamente le copie di ogni lettera, ciascuna parola ha $\prod_i n_i!$ antecedenti: il numero è $(\sum_i n_i)!/\prod_i n_i!$. I blocchi di stelle separati da $r-1$ sbarre registrano e ricostruiscono ogni $x_i$, anche nullo: $\binom{N+r-1}{r-1}$. Per $N=0$ o $r=1$ c'è una sola distribuzione. Alle terne positive corrispondono $1\le u<v\le99$, con inversa $(u,v-u,100-v)$, dunque $\binom{99}{2}$. Scambiare due scatole etichettate cambia l'assegnazione; per scatole senza nome occorre controllare quante descrizioni rappresentano ogni risultato prima di dividere.
+
+Torna a [[#Esercizio 9 — Contare attraverso le fibre (sovraconteggio uniforme, multinomiali e stelle e sbarre)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Ordinando tutte le persone e tagliando in blocchi di quattro, ogni divisione compare $(4!)^n n!$ volte: il numero è $(4n)!/[(4!)^n n!]$. Con il vincolo, suddividi prima gli uomini in coppie senza nome: $(2n)!/[(2!)^n n!]$; alle coppie ormai distinte assegna coppie di donne in $(2n)!/(2!)^n$ modi. Risultato $((2n)!)^2/[(2!)^{2n}n!]$. Non si divide una seconda volta per $n!$: l'assegnazione delle coppie di donne ha già scelto gli abbinamenti.
+
+Torna a [[#Esercizio 10 — Squadre senza etichette (multinomiali e sovraconteggio uniforme)|esercizio 10]].
 
 Hai acquisito il metodo quando sai dichiarare che cosa distingue due risultati, costruire entrambe le direzioni della corrispondenza usata e giustificare ogni divisione con un numero uniforme di rappresentazioni. Prova in particolare a spiegare perché lo stesso insieme di quantità può descrivere una sola distribuzione di oggetti uguali e molti anagrammi.
 

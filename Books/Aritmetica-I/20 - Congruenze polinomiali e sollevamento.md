@@ -8,6 +8,112 @@ Prerequisiti: [[Books/Aritmetica-I/11 - Congruenze e inversi modulari|congruenze
 > - Distinguerai le radici semplici, che si sollevano in un solo modo, da quelle singolari, che non si sollevano affatto oppure si sollevano in $p$ modi.
 > - Ricomporrai le soluzioni con il teorema cinese e conterai le radici come prodotto dei conteggi locali.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Perché conviene risolvere primo per primo e poi ricomporre? | [[#Esercizio 6 — Dalle radici locali a quelle globali (teorema cinese per congruenze polinomiali)\|6]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]], [[#Esercizio 10 — Una quadratica e un resto prescritto (radici locali e teorema cinese)\|10]] | [[#Un problema finito, ma organizzato meglio\|Un problema finito, ma organizzato meglio]] |
+| Quando puoi usare il discriminante e quante radici ottieni? | [[#Esercizio 1 — Due radici in un campo (quadratiche modulo un primo)\|1]], [[#Esercizio 2 — Quando la quadratica diventa lineare (coefficienti nulli e modulo due)\|2]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]], [[#Esercizio 10 — Una quadratica e un resto prescritto (radici locali e teorema cinese)\|10]] | [[#Quadratiche modulo un primo\|Quadratiche modulo un primo]] |
+| Perché su una potenza prima possono apparire più di due radici? | [[#Esercizio 4 — Radici che si ramificano o muoiono (sollevamento singolare)\|4]], [[#Esercizio 5 — Un prodotto nullo inganna (divisori dello zero e cancellazione)\|5]], [[#Esercizio 7 — Contare gli zeri di un quadrato (valutazioni e potenze prime)\|7]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]], [[#Esercizio 10 — Una quadratica e un resto prescritto (radici locali e teorema cinese)\|10]] | [[#Che cosa cambia per una potenza prima\|Che cosa cambia per una potenza prima]] |
+| Come una correzione polinomiale diventa una congruenza lineare? | [[#Esercizio 3 — Una correzione unica (sollevamento semplice di Hensel)\|3]], [[#Esercizio 4 — Radici che si ramificano o muoiono (sollevamento singolare)\|4]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]] | [[#Una correzione che si calcola linearmente\|Una correzione che si calcola linearmente]] |
+| Quando una radice ha zero, uno o più sollevamenti? | [[#Esercizio 4 — Radici che si ramificano o muoiono (sollevamento singolare)\|4]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]] | [[#Due comportamenti, con tutti i conti\|Due comportamenti, con tutti i conti]] |
+| Come organizzi tutti i rami e certifichi la completezza delle radici globali? | [[#Esercizio 6 — Dalle radici locali a quelle globali (teorema cinese per congruenze polinomiali)\|6]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]], [[#Esercizio 10 — Una quadratica e un resto prescritto (radici locali e teorema cinese)\|10]] | [[#Il metodo completo, passo per passo\|Il metodo completo, passo per passo]] |
+| Perché ogni potenza prima deve scegliere uno fra due fattori consecutivi? | [[#Esercizio 8 — Traslare un prodotto (radici di un prodotto di fattori coprimi)\|8]], [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)\|9]] | [[#Un prodotto speciale: due interi consecutivi\|Un prodotto speciale: due interi consecutivi]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Due radici in un campo (quadratiche modulo un primo)
+
+Risolvi $x^2+3x+2\equiv0\pmod7$ mediante il discriminante e controlla il risultato fattorizzando.
+
+Se ti blocchi: [[#Quadratiche modulo un primo|Quadratiche modulo un primo]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Quando la quadratica diventa lineare (coefficienti nulli e modulo due)
+
+Risolvi separatamente $2x^2+x+1\equiv0\pmod2$ e $7x^2+3x+1\equiv0\pmod7$. Perché la formula quadratica non è lo strumento adatto?
+
+Se ti blocchi: [[#Quadratiche modulo un primo|Quadratiche modulo un primo]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Una correzione unica (sollevamento semplice di Hensel)
+
+Solleva le radici $10,39$ di $x^2\equiv2\pmod{49}$ a tutte le radici modulo $343$.
+
+Se ti blocchi: [[#Una correzione che si calcola linearmente|Una correzione che si calcola linearmente]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Radici che si ramificano o muoiono (sollevamento singolare)
+
+Trova tutte le radici di $x^2\equiv0\pmod{27}$ e stabilisci se $x^2\equiv3\pmod9$ ha soluzioni.
+
+Se ti blocchi: [[#Che cosa cambia per una potenza prima|Che cosa cambia per una potenza prima]] · [[#Una correzione che si calcola linearmente|Una correzione che si calcola linearmente]] · [[#Due comportamenti, con tutti i conti|Due comportamenti, con tutti i conti]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Un prodotto nullo inganna (divisori dello zero e cancellazione)
+
+Diagnostica questo ragionamento: «Da $(x-1)(x+1)\equiv0\pmod8$ segue $x\equiv1$ oppure $-1$, quindi $x^2\equiv1\pmod8$ ha due radici». Trova tutte le radici e indica anche un esempio di cancellazione illecita modulo $8$.
+
+Se ti blocchi: [[#Che cosa cambia per una potenza prima|Che cosa cambia per una potenza prima]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Dalle radici locali a quelle globali (teorema cinese per congruenze polinomiali)
+
+Risolvi $x^2\equiv1\pmod{45}$, giustificando sia la costruzione sia il numero delle soluzioni.
+
+Se ti blocchi: [[#Un problema finito, ma organizzato meglio|Un problema finito, ma organizzato meglio]] · [[#Il metodo completo, passo per passo|Il metodo completo, passo per passo]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Contare gli zeri di un quadrato (valutazioni e potenze prime)
+
+Per ogni primo $p$ ed $e\ge1$, dimostra che $x^2\equiv0\pmod{p^e}$ ha esattamente $p^{\lfloor e/2\rfloor}$ radici. Descrivile tutte, senza supporre $x\ne0$.
+
+Se ti blocchi: [[#Che cosa cambia per una potenza prima|Che cosa cambia per una potenza prima]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Traslare un prodotto (radici di un prodotto di fattori coprimi)
+
+Siano $n\ge2$ e $d\in\mathbb Z$ con $\gcd(d,n)=1$. Trasferisci il risultato su $y(y-1)$ alla congruenza $x(x-d)\equiv0\pmod n$: dimostra che ha $2^r$ radici, dove $r$ è il numero dei primi distinti di $n$. Trovale per $n=72$, $d=5$.
+
+Se ti blocchi: [[#Un prodotto speciale: due interi consecutivi|Un prodotto speciale: due interi consecutivi]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)
+
+Sia $f\in\mathbb Z[x]$ e $x_0$ radice modulo $p^k$, $k\ge1$. Scrivi tutti i candidati $x=x_0+hp^k$, $0\le h<p$, e dimostra $f(x)\equiv f(x_0)+hp^kf'(x_0)\pmod{p^{k+1}}$. Deduci i casi di zero, uno e $p$ sollevamenti. Per una quadratica modulo un primo dispari con coefficiente principale non nullo, giustifica il discriminante e il numero zero, uno o due di radici. Spiega perché le radici modulo potenze prime si ricompongono per teorema cinese e dimostra che $x(x-1)\equiv0\pmod n$ ha $2^r$ radici se $n$ ha $r$ primi distinti.
+
+Se ti blocchi: [[#Un problema finito, ma organizzato meglio|Un problema finito, ma organizzato meglio]] · [[#Quadratiche modulo un primo|Quadratiche modulo un primo]] · [[#Che cosa cambia per una potenza prima|Che cosa cambia per una potenza prima]] · [[#Una correzione che si calcola linearmente|Una correzione che si calcola linearmente]] · [[#Due comportamenti, con tutti i conti|Due comportamenti, con tutti i conti]] · [[#Il metodo completo, passo per passo|Il metodo completo, passo per passo]] · [[#Un prodotto speciale: due interi consecutivi|Un prodotto speciale: due interi consecutivi]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Una quadratica e un resto prescritto (radici locali e teorema cinese)
+
+*Dalla raccolta fornita: esercizio 74, p. 77 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=87|p. 87 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Trova tutti gli interi $x$ tali che $x^2\equiv4\pmod{14}$ e $x\equiv3\pmod5$. Descrivi le classi modulo $70$ e giustifica perché non ne mancano.
+
+Se ti blocchi: [[#Un problema finito, ma organizzato meglio|Un problema finito, ma organizzato meglio]] · [[#Quadratiche modulo un primo|Quadratiche modulo un primo]] · [[#Che cosa cambia per una potenza prima|Che cosa cambia per una potenza prima]] · [[#Il metodo completo, passo per passo|Il metodo completo, passo per passo]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Un problema finito, ma organizzato meglio
 
 Quali interi soddisfano $x^2\equiv2\pmod{49}$? Potremmo provare tutti i resti da $0$ a $48$. Ma modulo $7$ le prove sono soltanto sette: troviamo $3^2\equiv4^2\equiv2$. Ogni soluzione cercata deve quindi essere congrua a $3$ oppure a $4$ modulo $7$. Possiamo correggere questi due resti, aggiungendo un multiplo di $7$, fino a ottenere soluzioni modulo $49$?
@@ -328,49 +434,79 @@ Il nucleo proviene dalla [[Notes/Aritmetica/Lectures/2026-10-27 - Equazioni espo
 
 Sono integrazioni didattiche la prova per polinomi generali a ogni livello $p^k$, l'esplicitazione completa dei casi singolari, il conteggio generale tramite radici locali e gli esempi numerici aggiuntivi. Le formule sono ricostruite algebricamente, senza riprodurre le ambiguità dell'ASR.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano il capitolo ad altre idee.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Risolvi $x^2+3x+2\equiv0\pmod7$ mediante il discriminante e controlla il risultato fattorizzando.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > $\Delta=9-8=1$, le cui radici sono $\pm1$. L'inverso di $2$ modulo $7$ è $4$, quindi $x\equiv4(-3+1)\equiv6$ oppure $x\equiv4(-3-1)\equiv5$. La fattorizzazione $(x+1)(x+2)$ conferma entrambe le radici e, poiché $7$ è primo, esclude altre soluzioni.
 
-2. Risolvi separatamente $2x^2+x+1\equiv0\pmod2$ e $7x^2+3x+1\equiv0\pmod7$. Perché la formula quadratica non è lo strumento adatto?
+Torna a [[#Esercizio 1 — Due radici in un campo (quadratiche modulo un primo)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Nella prima congruenza resta $x+1\equiv0\pmod2$: la sola radice è $1$; anche provare $0,1$ lo conferma. Nella seconda resta $3x+1\equiv0\pmod7$, dunque $x\equiv-3^{-1}\equiv-5\equiv2$. In entrambi i casi il coefficiente quadratico si annulla; inoltre modulo $2$ non esiste l'inverso di $2$.
 
-3. Solleva le radici $10,39$ di $x^2\equiv2\pmod{49}$ a tutte le radici modulo $343$.
+Torna a [[#Esercizio 2 — Quando la quadratica diventa lineare (coefficienti nulli e modulo due)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Per $10$, $\gamma=98/49=2$ e $f'(10)=20\equiv6\pmod7$: $2+6h\equiv0$ dà $h=2$, quindi $x=108$. Per $39$, $\gamma=1519/49=31\equiv3$ e $f'(39)=78\equiv1$: $h=4$, quindi $x=235$. Sono le sole radici, perché entrambi i sollevamenti sono semplici. Il controllo dà $108^2-2=34\cdot343$ e $235^2-2=161\cdot343$.
 
-4. Trova tutte le radici di $x^2\equiv0\pmod{27}$ e stabilisci se $x^2\equiv3\pmod9$ ha soluzioni.
+Torna a [[#Esercizio 3 — Una correzione unica (sollevamento semplice di Hensel)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Se $x$ non è multiplo di $3$, nemmeno $x^2$ lo è. Se $x=3t$, la prima congruenza richiede $27\mid9t^2$, cioè $3\mid t^2$, equivalente a $3\mid t$. Dunque $9\mid x$: le radici modulo $27$ sono $0,9,18$. Per la seconda, una radice dovrebbe essere multipla di $3$, ma avrebbe quadrato zero modulo $9$. Non ci sono soluzioni.
 
-5. Diagnostica questo ragionamento: «Da $(x-1)(x+1)\equiv0\pmod8$ segue $x\equiv1$ oppure $-1$, quindi $x^2\equiv1\pmod8$ ha due radici». Trova tutte le radici e indica anche un esempio di cancellazione illecita modulo $8$.
+Torna a [[#Esercizio 4 — Radici che si ramificano o muoiono (sollevamento singolare)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Il principio di annullamento non vale modulo $8$: per $x=3$ i fattori sono $2$ e $4$, entrambi non nulli ma con prodotto nullo. Le radici sono tutti e soli i dispari, cioè $1,3,5,7$. Quanto alla cancellazione, $2\cdot1\equiv2\cdot5\pmod8$, ma $1\not\equiv5\pmod8$. Cancellando $2$ si può concludere soltanto modulo $4$.
 
-6. Risolvi $x^2\equiv1\pmod{45}$, giustificando sia la costruzione sia il numero delle soluzioni.
+Torna a [[#Esercizio 5 — Un prodotto nullo inganna (divisori dello zero e cancellazione)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Modulo $9$ le radici sono $1,8$: partono da $\pm1$ modulo $3$ e si sollevano unicamente, oppure si usa che $x-1,x+1$ non possono essere entrambi divisibili per $3$. Modulo $5$ le radici sono $1,4$. Le quattro coppie $(x\bmod9,x\bmod5)=(1,1),(1,4),(8,1),(8,4)$ danno rispettivamente $1,19,26,44$ modulo $45$. Per esempio, nella seconda $x=1+9t$ impone $1+4t\equiv4\pmod5$, quindi $t\equiv2$. Verifica: i quattro valori di $x^2-1$ sono $0,360,675,1935$, tutti multipli di $45$. Il teorema cinese garantisce che non manca nessuna radice.
 
-7. Per ogni primo $p$ ed $e\ge1$, dimostra che $x^2\equiv0\pmod{p^e}$ ha esattamente $p^{\lfloor e/2\rfloor}$ radici. Descrivile tutte, senza supporre $x\ne0$.
+Torna a [[#Esercizio 6 — Dalle radici locali a quelle globali (teorema cinese per congruenze polinomiali)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Per $x\ne0$, la condizione è $2v_p(x)\ge e$, equivalente a $p^{\lceil e/2\rceil}\mid x$. Anche zero soddisfa entrambe le condizioni. Le radici sono quindi $x=p^{\lceil e/2\rceil}t$, con $0\le t<p^{e-\lceil e/2\rceil}$; sono distinte modulo $p^e$ e sono $p^{\lfloor e/2\rfloor}$. Il conteggio spiega perché una quadratica possa avere molte radici su una potenza prima.
 
-8. Siano $n\ge2$ e $d\in\mathbb Z$ con $\gcd(d,n)=1$. Trasferisci il risultato su $y(y-1)$ alla congruenza $x(x-d)\equiv0\pmod n$: dimostra che ha $2^r$ radici, dove $r$ è il numero dei primi distinti di $n$. Trovale per $n=72$, $d=5$.
+Torna a [[#Esercizio 7 — Contare gli zeri di un quadrato (valutazioni e potenze prime)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Poiché $d$ è invertibile, $x=dy$ è una corrispondenza fra classi modulo $n$. Sostituendo si ottiene $d^2y(y-1)\equiv0$, equivalente a $y(y-1)\equiv0$ perché $d^2$ è invertibile. Il numero di radici è quindi $2^r$ e tutte si ottengono moltiplicando per $d$ le radici già note. Per $72$, da $y=0,1,9,64$ otteniamo $x\equiv0,5,45,32\pmod{72}$. I prodotti $x(x-5)$ sono rispettivamente $0,0,1800,864$, tutti multipli di $72$.
+
+Torna a [[#Esercizio 8 — Traslare un prodotto (radici di un prodotto di fattori coprimi)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Ogni classe sopra $x_0$ ha uno degli $p$ candidati. Nel binomio tutti i termini dal secondo ordine contengono $p^{2k}$, multiplo di $p^{k+1}$. Dividendo per $p^k$ resta $\gamma+hf'(x_0)\equiv0\pmod p$, con $\gamma=f(x_0)/p^k$. Se la derivata è non nulla c'è una sola soluzione; se è nulla ci sono zero o $p$ soluzioni secondo che $\gamma$ sia non nullo o nullo. La quadratica equivale a $(2ax+b)^2=\Delta$ in un campo: zero ha una radice quadrata, un quadrato non nullo due opposte, un non quadrato nessuna; $2a$ è invertibile. Le coordinate modulo potenze prime sono indipendenti, quindi il teorema cinese dà una radice per ogni scelta locale e moltiplica i conteggi. Poiché $x$ e $x-1$ sono coprimi, ogni intera potenza prima di $n$ deve dividere uno dei due: localmente $x=0$ o $1$, due scelte per ogni primo.
+
+Torna a [[#Esercizio 9 — Tutte le correzioni possibili (dimostrazione del sollevamento e conteggio delle radici)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Modulo due occorre $x\equiv0$; modulo sette occorre $x\equiv2$ oppure $5$. Le radici modulo quattordici sono quindi $2,12$. Da $x=2+14t$ con $x\equiv3\pmod5$ segue $t\equiv4$, cioè $x\equiv58\pmod{70}$. Da $x=12+14t$ segue $t\equiv4$, cioè $x\equiv68\pmod{70}$. I moduli quattordici e cinque sono coprimi, quindi ciascuna radice locale dà esattamente una classe globale. I controlli danno $58^2\equiv68^2\equiv4\pmod{14}$ e entrambi sono tre modulo cinque.
+
+Torna a [[#Esercizio 10 — Una quadratica e un resto prescritto (radici locali e teorema cinese)|esercizio 10]].
 
 Hai acquisito il metodo quando sai scegliere se fattorizzare il polinomio o il modulo, seguire tutti i sollevamenti e spiegare perché l'elenco finale è completo. Controlla in particolare di saper riconoscere il passaggio in cui serve un campo oppure un elemento invertibile.
 

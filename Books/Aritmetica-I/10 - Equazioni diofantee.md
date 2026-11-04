@@ -10,6 +10,113 @@ Prerequisiti: [[Books/Aritmetica-I/08 - Divisione euclidea e identità di Bezout
 >
 > L'idea che lega il capitolo: i punti interi di una retta formano una successione regolare, con un passo fisso, il più piccolo possibile (primitivo), che non salta nessun punto.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Perché una retta reale può non avere punti interi? | [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)\|9]] | [[#Una retta, ma soltanto punti interi\|Una retta, ma soltanto punti interi]] |
+| Quale divisibilità decide se esiste almeno una soluzione? | [[#Esercizio 1 — Esiste un punto intero (criterio di risolubilità diofantea)\|1]], [[#Esercizio 2 — Tutti i punti della retta (parametrizzazione completa)\|2]], [[#Esercizio 3 — Coefficienti nulli (casi degeneri delle diofantee)\|3]], [[#Esercizio 10 — Dal problema generale alla formula (dimostrazione completa delle diofantee lineari)\|10]] | [[#Il massimo comune divisore decide l’esistenza\|Il massimo comune divisore decide l’esistenza]] |
+| Come provi che la famiglia parametrica contiene tutte le soluzioni? | [[#Esercizio 1 — Esiste un punto intero (criterio di risolubilità diofantea)\|1]], [[#Esercizio 2 — Tutti i punti della retta (parametrizzazione completa)\|2]], [[#Esercizio 3 — Coefficienti nulli (casi degeneri delle diofantee)\|3]], [[#Esercizio 5 — Un passo troppo lungo (vettore primitivo e completezza)\|5]], [[#Esercizio 10 — Dal problema generale alla formula (dimostrazione completa delle diofantee lineari)\|10]] | [[#Da una soluzione a tutte le altre\|Da una soluzione a tutte le altre]] |
+| Quali passi e cambi di parametro saltano punti del reticolo? | [[#Esercizio 5 — Un passo troppo lungo (vettore primitivo e completezza)\|5]], [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)\|9]], [[#Esercizio 10 — Dal problema generale alla formula (dimostrazione completa delle diofantee lineari)\|10]] | [[#Il passo fondamentale sul reticolo\|Il passo fondamentale sul reticolo]] |
+| Quale sequenza di controlli porta a una soluzione completa? | [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)\|9]], [[#Esercizio 10 — Dal problema generale alla formula (dimostrazione completa delle diofantee lineari)\|10]] | [[#Il metodo in uno schema\|Il metodo in uno schema]] |
+| Come intersechi i vincoli su entrambe le coordinate? | [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)\|9]] | [[#Un esempio completo: una retta dentro un quadrato\|Un esempio completo: una retta dentro un quadrato]] |
+| Come cambia il risultato imponendo quantità non negative o positive? | [[#Esercizio 4 — Quaderni in pacchi (vincoli non negativi e positivi)\|4]], [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)\|9]] | [[#Quantità non negative e positive\|Quantità non negative e positive]] |
+| Come trasformi una differenza di quadrati in fattori di pari parità? | [[#Esercizio 6 — Dalla differenza al prodotto (differenze di quadrati)\|6]], [[#Esercizio 7 — Contare le rappresentazioni (divisori e parità dei fattori)\|7]], [[#Esercizio 8 — Completare un prodotto (trasformazione reversibile di una diofantea)\|8]], [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)\|9]] | [[#Differenze di quadrati: trasformare invece di tentare\|Differenze di quadrati: trasformare invece di tentare]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Esiste un punto intero (criterio di risolubilità diofantea)
+
+Determina se $6x+10y=7$ e $6x+10y=8$ hanno soluzioni in $\mathbb Z^2$. Per ciascuna equazione risolubile, scrivi tutte le soluzioni.
+
+Se ti blocchi: [[#Il massimo comune divisore decide l’esistenza|Il massimo comune divisore decide l’esistenza]] · [[#Da una soluzione a tutte le altre|Da una soluzione a tutte le altre]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Tutti i punti della retta (parametrizzazione completa)
+
+Risolvi $18x+30y=12$ in $\mathbb Z^2$, giustificando sia l’esistenza sia la completezza della famiglia.
+
+Se ti blocchi: [[#Il massimo comune divisore decide l’esistenza|Il massimo comune divisore decide l’esistenza]] · [[#Da una soluzione a tutte le altre|Da una soluzione a tutte le altre]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Coefficienti nulli (casi degeneri delle diofantee)
+
+Descrivi tutte le soluzioni intere di $0x-7y=21$ e di $5x+0y=-10$. Descrivi poi quelle di $0x+0y=0$ e $0x+0y=1$.
+
+Se ti blocchi: [[#Il massimo comune divisore decide l’esistenza|Il massimo comune divisore decide l’esistenza]] · [[#Da una soluzione a tutte le altre|Da una soluzione a tutte le altre]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Quaderni in pacchi (vincoli non negativi e positivi)
+
+Si acquistano pacchi da 4 e da 7 quaderni per un totale di 40 quaderni. Determina tutte le coppie di quantità non negative; determina poi quelle che usano entrambi i formati.
+
+Se ti blocchi: [[#Quantità non negative e positive|Quantità non negative e positive]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Un passo troppo lungo (vettore primitivo e completezza)
+
+Uno studente trova la soluzione $(-1,1)$ di $6x+9y=3$ e afferma che tutte le soluzioni sono $x=-1+9t$, $y=1-6t$, $t\in\mathbb Z$. Diagnostica l’errore e fornisci una soluzione che la formula perde.
+
+Se ti blocchi: [[#Da una soluzione a tutte le altre|Da una soluzione a tutte le altre]] · [[#Il passo fondamentale sul reticolo|Il passo fondamentale sul reticolo]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Dalla differenza al prodotto (differenze di quadrati)
+
+Determina tutte le soluzioni in $\mathbb Z^2$ di $x^2-y^2=20$ e di $x^2-y^2=-15$. Giustifica perché non ne mancano.
+
+Se ti blocchi: [[#Differenze di quadrati: trasformare invece di tentare|Differenze di quadrati: trasformare invece di tentare]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Contare le rappresentazioni (divisori e parità dei fattori)
+
+Per $N\ge1$, indica con $\tau(N)$ il numero dei divisori positivi. Dimostra che per $n\ne0$ il numero di soluzioni intere ordinate di $x^2-y^2=n$ è $2\tau(|n|)$ se $n$ è dispari, $2\tau(|n|/4)$ se $4\mid n$, e zero negli altri casi. Controlla il risultato per $n=45$ e $n=36$.
+
+Se ti blocchi: [[#Differenze di quadrati: trasformare invece di tentare|Differenze di quadrati: trasformare invece di tentare]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Completare un prodotto (trasformazione reversibile di una diofantea)
+
+Risolvi $xy+x+y=14$ prima in $\mathbb Z^2$, poi in $\mathbb N^2$, infine con $x,y>0$. Cerca una trasformazione che porti a un prodotto senza perdere soluzioni.
+
+Se ti blocchi: [[#Differenze di quadrati: trasformare invece di tentare|Differenze di quadrati: trasformare invece di tentare]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)
+
+Trova tutte le soluzioni intere di $7x+11y=1$ con $|x|,|y|\le20$. Per la famiglia completa, confronta i cambi $t=s+3$, $t=-s$ e $t=2s$: quali conservano tutte le soluzioni e perché? Dimostra infine il criterio «$n$ è differenza di quadrati interi se e solo se è dispari o multiplo di quattro» e descrivi tutte le soluzioni per $n=0$.
+
+Se ti blocchi: [[#Una retta, ma soltanto punti interi|Una retta, ma soltanto punti interi]] · [[#Il passo fondamentale sul reticolo|Il passo fondamentale sul reticolo]] · [[#Il metodo in uno schema|Il metodo in uno schema]] · [[#Un esempio completo: una retta dentro un quadrato|Un esempio completo: una retta dentro un quadrato]] · [[#Quantità non negative e positive|Quantità non negative e positive]] · [[#Differenze di quadrati: trasformare invece di tentare|Differenze di quadrati: trasformare invece di tentare]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Dal problema generale alla formula (dimostrazione completa delle diofantee lineari)
+
+*Dalla raccolta fornita: esercizio preliminare 7, p. 55 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=66|p. 66 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Per $a,b$ non entrambi nulli, determina in funzione di $a,b,c$ tutte le soluzioni di $ax+by=c$. Devi provare sia il criterio di esistenza sia la completezza della parametrizzazione e l'unicità del parametro. Tratta esplicitamente $a=0$ oppure $b=0$; una sostituzione che verifica alcune soluzioni non conclude la prova.
+
+Se ti blocchi: [[#Il massimo comune divisore decide l’esistenza|Il massimo comune divisore decide l’esistenza]] · [[#Da una soluzione a tutte le altre|Da una soluzione a tutte le altre]] · [[#Il passo fondamentale sul reticolo|Il passo fondamentale sul reticolo]] · [[#Il metodo in uno schema|Il metodo in uno schema]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Una retta, ma soltanto punti interi
 
 Un magazzino prepara confezioni da 6 oppure da 9 pezzi. In quanti modi può spedire esattamente 54 pezzi? Se $x$ conta le confezioni piccole e $y$ quelle grandi, dobbiamo risolvere
@@ -357,49 +464,79 @@ La struttura delle equazioni lineari segue [[Notes/Aritmetica/Lectures/2026-10-0
 
 Sono integrazioni didattiche la narrazione sulle confezioni, l’esplicitazione dei coefficienti nulli, la lettura mediante il vettore primitivo, l’esempio 45 e gli esercizi. Le prove sono riscritte e controllate; la classificazione per parità è esposta senza richiedere le congruenze del capitolo successivo.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano queste idee al conteggio e ad altre equazioni.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Determina se $6x+10y=7$ e $6x+10y=8$ hanno soluzioni in $\mathbb Z^2$. Per ciascuna equazione risolubile, scrivi tutte le soluzioni.
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > Il MCD è 2: non divide 7, ma divide 8. Per la seconda equazione $(3,-1)$ è una soluzione, perché $18-10=8$. Tutte le soluzioni sono $x=3+5t$, $y=-1-3t$, con $t\in\mathbb Z$.
 
-2. Risolvi $18x+30y=12$ in $\mathbb Z^2$, giustificando sia l’esistenza sia la completezza della famiglia.
+Torna a [[#Esercizio 1 — Esiste un punto intero (criterio di risolubilità diofantea)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > Il MCD è 6 e divide 12. Dividendo otteniamo $3x+5y=2$, con soluzione $(-1,1)$. Sottrarre questa soluzione e usare la coprimalità di 3 e 5 dà $x=-1+5t$, $y=1-3t$, $t\in\mathbb Z$. La sostituzione verifica il viceversa.
 
-3. Descrivi tutte le soluzioni intere di $0x-7y=21$ e di $5x+0y=-10$. Descrivi poi quelle di $0x+0y=0$ e $0x+0y=1$.
+Torna a [[#Esercizio 2 — Tutti i punti della retta (parametrizzazione completa)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > Nel primo caso $y=-3$ e $x$ è arbitrario: $(t,-3)$, $t\in\mathbb Z$. Nel secondo $x=-2$ e $y$ è arbitrario: $(-2,t)$. La terza uguaglianza vale per ogni coppia di interi; la quarta per nessuna. Gli ultimi due casi non descrivono una retta.
 
-4. Si acquistano pacchi da 4 e da 7 quaderni per un totale di 40 quaderni. Determina tutte le coppie di quantità non negative; determina poi quelle che usano entrambi i formati.
+Torna a [[#Esercizio 3 — Coefficienti nulli (casi degeneri delle diofantee)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > L’equazione è $4x+7y=40$. Partendo da $(3,4)$ troviamo $x=3+7t$, $y=4-4t$. La non negatività impone $t\ge0$ e $t\le1$, dunque $(3,4)$ e $(10,0)$. La positività di entrambe le coordinate lascia soltanto $(3,4)$.
 
-5. Uno studente trova la soluzione $(-1,1)$ di $6x+9y=3$ e afferma che tutte le soluzioni sono $x=-1+9t$, $y=1-6t$, $t\in\mathbb Z$. Diagnostica l’errore e fornisci una soluzione che la formula perde.
+Torna a [[#Esercizio 4 — Quaderni in pacchi (vincoli non negativi e positivi)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > Le coppie proposte soddisfano l’equazione, ma il passo $(9,-6)$ non è primitivo: è tre volte $(3,-2)$. La famiglia completa è $x=-1+3s$, $y=1-2s$, $s\in\mathbb Z$. Per $s=1$ troviamo $(2,-1)$, che la formula proposta non raggiunge: richiederebbe $t=1/3$.
 
-6. Determina tutte le soluzioni in $\mathbb Z^2$ di $x^2-y^2=20$ e di $x^2-y^2=-15$. Giustifica perché non ne mancano.
+Torna a [[#Esercizio 5 — Un passo troppo lungo (vettore primitivo e completezza)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Per 20 scriviamo $20=4\cdot5$: i divisori interi di 5 sono $\pm1,\pm5$, e la formula dà $(\pm6,\pm4)$, con segni indipendenti: quattro soluzioni. Per $-15$ usiamo tutti gli otto divisori interi $\pm1,\pm3,\pm5,\pm15$; otteniamo $(\pm7,\pm8)$ e $(\pm1,\pm4)$, ancora con segni indipendenti: otto soluzioni. La corrispondenza con le coppie ordinate di fattori prova la completezza.
 
-7. Per $N\ge1$, indica con $\tau(N)$ il numero dei divisori positivi. Dimostra che per $n\ne0$ il numero di soluzioni intere ordinate di $x^2-y^2=n$ è $2\tau(|n|)$ se $n$ è dispari, $2\tau(|n|/4)$ se $4\mid n$, e zero negli altri casi. Controlla il risultato per $n=45$ e $n=36$.
+Torna a [[#Esercizio 6 — Dalla differenza al prodotto (differenze di quadrati)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Nel caso dispari la corrispondenza associa una soluzione a ciascun divisore intero di $n$, e ce ne sono $2\tau(|n|)$, positivi e negativi. Per $n=4m\ne0$ si usano invece i divisori interi di $m$, in numero $2\tau(|m|)$. Per $n=4k+2$ la parità impedisce ogni soluzione. Poiché $\tau(45)=6$, troviamo dodici soluzioni. Poiché $36/4=9$ e $\tau(9)=3$, troviamo sei soluzioni: $(\pm10,\pm8)$, con segni indipendenti, e $(\pm6,0)$. Lo zero nella seconda coordinata non dà due scelte diverse di segno.
 
-8. Risolvi $xy+x+y=14$ prima in $\mathbb Z^2$, poi in $\mathbb N^2$, infine con $x,y>0$. Cerca una trasformazione che porti a un prodotto senza perdere soluzioni.
+Torna a [[#Esercizio 7 — Contare le rappresentazioni (divisori e parità dei fattori)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Aggiungendo 1 otteniamo $(x+1)(y+1)=15$. Tutte le soluzioni intere sono $(d-1,15/d-1)$, con $d\in\{\pm1,\pm3,\pm5,\pm15\}$. Esplicitamente sono $(0,14),(2,4),(4,2),(14,0),(-2,-16),(-4,-6),(-6,-4),(-16,-2)$. Ogni coppia di fattori dà una soluzione e viceversa. Le prime quattro sono le soluzioni non negative; soltanto $(2,4)$ e $(4,2)$ sono positive.
+
+Torna a [[#Esercizio 8 — Completare un prodotto (trasformazione reversibile di una diofantea)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Una soluzione è $(8,-5)$ e tutte sono $(8+11t,-5-7t)$. Il vincolo su $x$ dà $-2\le t\le1$; quello su $y$ dà $-3\le t\le2$: restano $t=-2,-1,0,1$, cioè $(-14,9),(-3,2),(8,-5),(19,-12)$. Traslazione e negazione sono biiezioni di $\mathbb Z$; $t=2s$ perde i parametri dispari. Fattori $x+y$ e $x-y$ hanno uguale parità, quindi il prodotto è dispari o multiplo di quattro. Viceversa per $n$ dispari usa $x=(n+1)/2,y=(n-1)/2$; per $n=4m$ usa $x=m+1,y=m-1$. Per zero, $x=y$ oppure $x=-y$.
+
+Torna a [[#Esercizio 9 — Una retta dentro un quadrato (vincoli sul parametro e cambi di parametrizzazione)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Posto $d=\gcd(a,b)>0$, ogni soluzione implica $d\mid c$. Se $d\mid c$, da $au+bv=d$ ottieni $(x_0,y_0)=((c/d)u,(c/d)v)$. Le soluzioni sono $(x_0+(b/d)t,y_0-(a/d)t)$ con $t\in\mathbb Z$. Sottraendo due soluzioni, $(a/d)(x-x_0)=-(b/d)(y-y_0)$; per coprimalità $b/d$ divide $x-x_0$, e ne segue la formula per $y$. Se $a=0$, $b/d=\pm1$ e $y=c/b$ è fisso, mentre $x$ è arbitrario; se $b=0$ si scambiano i ruoli. In tutti i casi almeno una coordinata del passo è non nulla, quindi il parametro è unico.
+
+Torna a [[#Esercizio 10 — Dal problema generale alla formula (dimostrazione completa delle diofantee lineari)|esercizio 10]].
 
 Hai acquisito il metodo quando sai motivare l’esistenza, costruire una soluzione e dimostrare che la tua famiglia non ne perde nessuna. Nei problemi con vincoli o con quadrati, controlla inoltre che la trasformazione scelta possa essere invertita rispettando integrità, segni e dominio.
 

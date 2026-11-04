@@ -8,6 +8,122 @@ Prerequisiti: [[Books/Aritmetica-I/02 - Naturali e induzione|induzione forte ed 
 > - Calcolerai MCD, mcm e numero dei divisori dagli esponenti, e conterrai fattori primi in $n!$ con la formula di Legendre.
 > - L'idea che lega tutto: il numero è determinato dai suoi esponenti, e le operazioni diventano operazioni sugli esponenti.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Che cosa significano primo, composto, unità e fattorizzazione del segno? | [[#Esercizio 1 — Leggere una fattorizzazione (primi e numero dei divisori)\|1]], [[#Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)\|9]] | [[#Un prodotto può raccontare due storie diverse?\|Un prodotto può raccontare due storie diverse?]] |
+| Perché un primo che divide un prodotto deve comparire in un fattore? | [[#Esercizio 2 — Un lemma troppo forte (lemma del primo e unicità)\|2]], [[#Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)\|9]] | [[#Il passaggio decisivo viene da Bézout\|Il passaggio decisivo viene da Bézout]] |
+| Come provi unicità, infinità dei primi e controllo fino alla radice quadrata? | [[#Esercizio 2 — Un lemma troppo forte (lemma del primo e unicità)\|2]], [[#Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)\|9]] | [[#Il teorema fondamentale dell’aritmetica\|Il teorema fondamentale dell’aritmetica]] |
+| Come trasformi prodotto e divisibilità in condizioni sugli esponenti? | [[#Esercizio 4 — Riconoscere i quadrati (valutazioni e divisibilità)\|4]], [[#Esercizio 8 — Divisibilità senza sviluppare (valutazioni dei coefficienti binomiali)\|8]], [[#Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)\|9]], [[#Esercizio 10 — Quanti divisori (divisori e fattorizzazione unica)\|10]] | [[#Le valutazioni: il prodotto diventa una somma\|Le valutazioni: il prodotto diventa una somma]] |
+| Perché MCD e mcm scelgono minimo e massimo degli esponenti? | [[#Esercizio 3 — Minimi e massimi degli esponenti (MCD, mcm e segni)\|3]], [[#Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)\|9]] | [[#MCD e mcm: scegliere il minimo o il massimo\|MCD e mcm: scegliere il minimo o il massimo]] |
+| Come conti divisori e fattorizzazioni ordinate senza perdere il fattore uno? | [[#Esercizio 1 — Leggere una fattorizzazione (primi e numero dei divisori)\|1]], [[#Esercizio 4 — Riconoscere i quadrati (valutazioni e divisibilità)\|4]], [[#Esercizio 5 — Terne e riordinamenti (fattorizzazioni ordinate e sovraconteggio)\|5]], [[#Esercizio 7 — Distribuire gli esponenti (prodotti prescritti e stelle e sbarre)\|7]], [[#Esercizio 10 — Quanti divisori (divisori e fattorizzazione unica)\|10]] | [[#Contare divisori e distribuire fattori primi\|Contare divisori e distribuire fattori primi]] |
+| Come conti tutte le copie di un primo in un fattoriale? | [[#Esercizio 6 — Contare gli zeri finali (formula di Legendre)\|6]], [[#Esercizio 8 — Divisibilità senza sviluppare (valutazioni dei coefficienti binomiali)\|8]], [[#Esercizio 11 — Quanti fattori primi nel fattoriale (dimostrazione della formula di Legendre)\|11]] | [[#I fattoriali e la formula di Legendre\|I fattoriali e la formula di Legendre]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Leggere una fattorizzazione (primi e numero dei divisori)
+
+Fattorizza $252$ in primi positivi. Indica la lunghezza della fattorizzazione e il numero di primi distinti presenti. Quanti divisori positivi ha?
+
+Se ti blocchi: [[#Un prodotto può raccontare due storie diverse?|Un prodotto può raccontare due storie diverse?]] · [[#Contare divisori e distribuire fattori primi|Contare divisori e distribuire fattori primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Un lemma troppo forte (lemma del primo e unicità)
+
+Una dimostrazione afferma: «Se $d>1$ divide $ab$, allora divide $a$ oppure $b$; perciò ogni scomposizione in fattori maggiori di $1$ è unica». Trova un controesempio alla prima affermazione e due scomposizioni di $12$ che smentiscano la conclusione. Quale ipotesi ripara il lemma?
+
+Se ti blocchi: [[#Il passaggio decisivo viene da Bézout|Il passaggio decisivo viene da Bézout]] · [[#Il teorema fondamentale dell’aritmetica|Il teorema fondamentale dell’aritmetica]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Minimi e massimi degli esponenti (MCD, mcm e segni)
+
+Calcola $\gcd(-288,432)$ e $\operatorname{mcm}(-288,432)$ mediante gli esponenti. Verifica l’identità del prodotto. Indica poi MCD e mcm della coppia $(0,-288)$.
+
+Se ti blocchi: [[#MCD e mcm: scegliere il minimo o il massimo|MCD e mcm: scegliere il minimo o il massimo]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Riconoscere i quadrati (valutazioni e divisibilità)
+
+Dimostra che un intero positivo è un quadrato se e solo se tutti gli esponenti della sua fattorizzazione prima sono pari. Usa il criterio per trovare tutti i divisori positivi di $2000$ che sono quadrati.
+
+Se ti blocchi: [[#Le valutazioni: il prodotto diventa una somma|Le valutazioni: il prodotto diventa una somma]] · [[#Contare divisori e distribuire fattori primi|Contare divisori e distribuire fattori primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Terne e riordinamenti (fattorizzazioni ordinate e sovraconteggio)
+
+Si propone di dividere $150$ per $3!$ per contare le terne positive $x\leq y\leq z$ con $xyz=2000$. Spiega perché questo passaggio non è giustificato, confrontando i riordinamenti di $(1,1,2000)$ e $(1,2,1000)$. Non è richiesto il conteggio delle terne non decrescenti.
+
+Se ti blocchi: [[#Contare divisori e distribuire fattori primi|Contare divisori e distribuire fattori primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Contare gli zeri finali (formula di Legendre)
+
+Calcola $v_2(25!)$, $v_5(25!)$ e il numero di zeri finali di $25!$. Spiega il contributo aggiuntivo del fattore $25$.
+
+Se ti blocchi: [[#I fattoriali e la formula di Legendre|I fattoriali e la formula di Legendre]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Distribuire gli esponenti (prodotti prescritti e stelle e sbarre)
+
+Quante quadruple ordinate $(x_1,x_2,x_3,x_4)\in\mathbb N_{>0}^4$ hanno prodotto $720$? Generalizza il procedimento a $r\geq1$ fattori positivi con prodotto $N=\prod_{i=1}^t p_i^{\alpha_i}$, includendo $N=1$.
+
+Se ti blocchi: [[#Contare divisori e distribuire fattori primi|Contare divisori e distribuire fattori primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Divisibilità senza sviluppare (valutazioni dei coefficienti binomiali)
+
+Senza calcolare $\binom{20}{8}$ come intero, determina le sue valutazioni per $p=2,3,5$. È divisibile per $30$? Per $100$? Spiega perché si possono sottrarre le valutazioni dei fattoriali.
+
+Se ti blocchi: [[#Le valutazioni: il prodotto diventa una somma|Le valutazioni: il prodotto diventa una somma]] · [[#I fattoriali e la formula di Legendre|I fattoriali e la formula di Legendre]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)
+
+Da Bézout dimostra il lemma del primo e usalo per confrontare due fattorizzazioni di uno stesso positivo, cancellando un primo per volta. Spiega i casi $1$, interi negativi e zero. Dimostra che un composto ha un divisore primo $\le\sqrt n$ e che i primi sono infiniti. Ricava $v_p(ab)=v_p(a)+v_p(b)$, il criterio di divisibilità e le formule di MCD e mcm; perché non puoi applicare l'additività a una somma?
+
+Se ti blocchi: [[#Un prodotto può raccontare due storie diverse?|Un prodotto può raccontare due storie diverse?]] · [[#Il passaggio decisivo viene da Bézout|Il passaggio decisivo viene da Bézout]] · [[#Il teorema fondamentale dell’aritmetica|Il teorema fondamentale dell’aritmetica]] · [[#Le valutazioni: il prodotto diventa una somma|Le valutazioni: il prodotto diventa una somma]] · [[#MCD e mcm: scegliere il minimo o il massimo|MCD e mcm: scegliere il minimo o il massimo]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Quanti divisori (divisori e fattorizzazione unica)
+
+*Dalla raccolta fornita: esercizio preliminare 5, con domanda aggiunta sulla parità, p. 55 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=66|p. 66 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Per $N=\prod_{i=1}^r p_i^{\alpha_i}>0$, ricava il numero dei divisori positivi a partire dalle scelte degli esponenti, senza citarne la formula già pronta. Quando è dispari? Includi $N=1$.
+
+Se ti blocchi: [[#Le valutazioni: il prodotto diventa una somma|Le valutazioni: il prodotto diventa una somma]] · [[#Contare divisori e distribuire fattori primi|Contare divisori e distribuire fattori primi]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+### Esercizio 11 — Quanti fattori primi nel fattoriale (dimostrazione della formula di Legendre)
+
+*Dalla raccolta fornita: esercizio preliminare 6, con correzione dell’indice della somma, p. 55 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=66|p. 66 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Per un primo $p$ e $n\ge0$, dimostra $v_p(n!)=\sum_{h\ge1}\lfloor n/p^h\rfloor$ contando i multipli di $p,p^2,\ldots$. Mostra che la somma è finita e spiega perché iniziare da $h=0$ sarebbe sbagliato, già per $n=1$.
+
+Se ti blocchi: [[#I fattoriali e la formula di Legendre|I fattoriali e la formula di Legendre]].
+
+Controllo dopo il tentativo: [[#Riscontro 11|riscontro 11]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Un prodotto può raccontare due storie diverse?
 
 Il numero $60$ si può scrivere come $6\cdot10$, come $4\cdot15$ oppure come $3\cdot20$. Le scomposizioni sembrano diverse, ma continuando a spezzare i fattori troviamo sempre due copie di $2$, una di $3$ e una di $5$:
@@ -261,49 +377,86 @@ MCD, mcm, divisori e terne di prodotto $2000$ provengono dalla [[Notes/Aritmetic
 
 Sono integrazioni didattiche la prova esplicita del lemma tramite Bézout, il caso del prodotto vuoto nella dimostrazione, la gestione di unità, segni e zero, il criterio fino a $\sqrt N$, l’infinità dei primi, la formulazione generale delle proprietà delle valutazioni e le applicazioni a zeri finali e binomiali. Gli esercizi sono costruiti per questa esposizione.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 trasferiscono il metodo a nuovi conteggi e ai coefficienti binomiali.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Fattorizza $252$ in primi positivi. Indica la lunghezza della fattorizzazione e il numero di primi distinti presenti. Quanti divisori positivi ha?
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > $252=4\cdot63=2^2\cdot3^2\cdot7$. La lunghezza conta le ripetizioni: $2+2+1=5$; i primi distinti sono tre. I divisori sono $2^a3^b7^c$, con rispettivamente $3,3,2$ scelte: $\tau(252)=18$.
 
-2. Una dimostrazione afferma: «Se $d>1$ divide $ab$, allora divide $a$ oppure $b$; perciò ogni scomposizione in fattori maggiori di $1$ è unica». Trova un controesempio alla prima affermazione e due scomposizioni di $12$ che smentiscano la conclusione. Quale ipotesi ripara il lemma?
+Torna a [[#Esercizio 1 — Leggere una fattorizzazione (primi e numero dei divisori)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > $6\mid3\cdot4$, ma $6\nmid3$ e $6\nmid4$. Inoltre $12=2\cdot6=3\cdot4$ dà scomposizioni diverse in fattori maggiori di $1$. Il lemma vale se $d$ è primo. Per ottenere l’unicità della fattorizzazione bisogna anche richiedere che tutti i fattori della scomposizione siano primi, escludendo le unità.
 
-3. Calcola $\gcd(-288,432)$ e $\operatorname{mcm}(-288,432)$ mediante gli esponenti. Verifica l’identità del prodotto. Indica poi MCD e mcm della coppia $(0,-288)$.
+Torna a [[#Esercizio 2 — Un lemma troppo forte (lemma del primo e unicità)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > $288=2^5\cdot3^2$ e $432=2^4\cdot3^3$. I minimi danno $2^4\cdot3^2=144$; i massimi $2^5\cdot3^3=864$. Il prodotto è $144\cdot864=124416=288\cdot432$. Per $(0,-288)$ si ottengono $288$ e $0$ per le convenzioni sui casi nulli, senza usare $v_p(0)$.
 
-4. Dimostra che un intero positivo è un quadrato se e solo se tutti gli esponenti della sua fattorizzazione prima sono pari. Usa il criterio per trovare tutti i divisori positivi di $2000$ che sono quadrati.
+Torna a [[#Esercizio 3 — Minimi e massimi degli esponenti (MCD, mcm e segni)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Se $N=c^2$, allora $v_p(N)=2v_p(c)$ è pari per ogni primo. Viceversa, dimezzando tutti gli esponenti pari si costruisce un intero $c>0$ con $c^2=N$. Tra i divisori $2^a5^b$ di $2000$, gli esponenti consentiti sono $a\in\{0,2,4\}$ e $b\in\{0,2\}$. I sei quadrati sono $1,4,16,25,100,400$; anche $1$ è incluso, con tutti gli esponenti nulli.
 
-5. Si propone di dividere $150$ per $3!$ per contare le terne positive $x\leq y\leq z$ con $xyz=2000$. Spiega perché questo passaggio non è giustificato, confrontando i riordinamenti di $(1,1,2000)$ e $(1,2,1000)$. Non è richiesto il conteggio delle terne non decrescenti.
+Torna a [[#Esercizio 4 — Riconoscere i quadrati (valutazioni e divisibilità)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > La prima terna ha tre riordinamenti distinti, perché i due $1$ sono uguali. La seconda ne ha sei. Il numero di terne ordinate che corrispondono a una stessa terna non decrescente non è costante: la divisione uniforme per $6$ non è applicabile.
 
-6. Calcola $v_2(25!)$, $v_5(25!)$ e il numero di zeri finali di $25!$. Spiega il contributo aggiuntivo del fattore $25$.
+Torna a [[#Esercizio 5 — Terne e riordinamenti (fattorizzazioni ordinate e sovraconteggio)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Legendre dà $v_2(25!)=12+6+3+1=22$ e $v_5(25!)=5+1=6$. Gli zeri finali sono $\min(22,6)=6$. Il fattore $25$ compare già tra i cinque multipli di $5$, ma contiene un secondo $5$, contato nel livello successivo.
 
-7. Quante quadruple ordinate $(x_1,x_2,x_3,x_4)\in\mathbb N_{>0}^4$ hanno prodotto $720$? Generalizza il procedimento a $r\geq1$ fattori positivi con prodotto $N=\prod_{i=1}^t p_i^{\alpha_i}$, includendo $N=1$.
+Torna a [[#Esercizio 6 — Contare gli zeri finali (formula di Legendre)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > $720=2^4\cdot3^2\cdot5$. Distribuisci gli esponenti di ciascun primo nelle quattro posizioni: ottieni $\binom73\binom53\binom43=35\cdot10\cdot4=1400$ quadruple. In generale il numero è $\prod_{i=1}^t\binom{\alpha_i+r-1}{r-1}$: ogni lista di distribuzioni determina una sola lista di fattori. Per $N=1$ il prodotto vuoto vale $1$, corrispondente alla sola lista $(1,\ldots,1)$.
 
-8. Senza calcolare $\binom{20}{8}$ come intero, determina le sue valutazioni per $p=2,3,5$. È divisibile per $30$? Per $100$? Spiega perché si possono sottrarre le valutazioni dei fattoriali.
+Torna a [[#Esercizio 7 — Distribuire gli esponenti (prodotti prescritti e stelle e sbarre)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > Dall’identità $20!=\binom{20}{8}8!12!$ segue la sottrazione. Per $2$: $v_2(20!)=18$, $v_2(8!)=7$, $v_2(12!)=10$, dunque il risultato è $1$. Per $3$: $8-2-5=1$. Per $5$: $4-1-2=1$. Il binomiale è divisibile per $30=2\cdot3\cdot5$, mentre non è divisibile per $100=2^2\cdot5^2$, perché entrambi gli esponenti richiesti sono insufficienti.
+
+Torna a [[#Esercizio 8 — Divisibilità senza sviluppare (valutazioni dei coefficienti binomiali)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Se $p\nmid a$, allora $\gcd(p,a)=1$ e da $p\mid ab$ Bézout dà $p\mid b$. Un primo di una fattorizzazione divide quindi un primo dell'altra e gli è uguale; cancellando si conclude per induzione sulla lunghezza. Per $1$ c'è il prodotto vuoto, per negativi si separa il segno, per zero non c'è fattorizzazione finita. In $n=ab$ composto almeno un fattore è $\le\sqrt n$ e ha un divisore primo non maggiore. Se i primi fossero $p_1,\ldots,p_s$, un primo divisore di $p_1\cdots p_s+1$ sarebbe nuovo. L'unicità rende additivi gli esponenti nei prodotti; $a\mid b$ equivale a $v_p(a)\le v_p(b)$ per ogni primo, per interi non nulli. MCD e mcm prendono minimi e massimi. Per le somme fallisce: $v_2(2+6)=3\ne v_2(2)+v_2(6)=2$.
+
+Torna a [[#Esercizio 9 — Dai primi agli esponenti (unicità, infinità dei primi e valutazioni)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Un divisore è determinato da un'unica lista $0\le\beta_i\le\alpha_i$, dunque $\tau(N)=\prod_i(\alpha_i+1)$. Il prodotto è dispari esattamente quando tutti gli $\alpha_i$ sono pari, cioè quando $N$ è un quadrato. Per uno, la lista vuota dà un unico divisore e il prodotto vuoto vale uno.
+
+Torna a [[#Esercizio 10 — Quanti divisori (divisori e fattorizzazione unica)|esercizio 10]].
+
+### Riscontro 11
+
+> [!tip]- Riscontro 11
+> Un intero $m\le n$ con valutazione $j$ viene contato una volta a ciascuno dei livelli $1,\ldots,j$, quindi esattamente $j$ volte. Il livello $h$ contiene $\lfloor n/p^h\rfloor$ multipli. Se $p^h>n$ il contributo è zero e rimane zero. Per $n=0$ tutti i termini sono nulli e $0!=1$. Il livello zero aggiungerebbe $n$ copie spurie: per $n=1$ darebbe uno, ma $v_p(1!)=0$. **Correzione della fonte:** la formula stampata a p. 55 del PDF fornito parte da $h=0$; qui si usa $h=1$.
+
+Torna a [[#Esercizio 11 — Quanti fattori primi nel fattoriale (dimostrazione della formula di Legendre)|esercizio 11]].
 
 Il capitolo è acquisito quando sai ricostruire il passaggio da Bézout all’unicità e tradurre una domanda di divisibilità in condizioni sugli esponenti. Nei conteggi, controlla sempre che ogni scelta di esponenti produca esattamente uno degli oggetti richiesti.
 

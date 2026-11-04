@@ -9,6 +9,112 @@ Prerequisiti: [[Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni|gruppi
 > - Imparerai a trovare l'ordine esatto di una classe cercandolo fra i divisori di $\varphi(n)$.
 > - L'idea che lega tutto: *contare* i blocchi di una partizione obbliga gli esponenti a comportarsi bene.
 
+## Domande per iniziare dagli esercizi
+
+Prova prima gli esercizi indicati dalla domanda. Se ti manca uno strumento, apri soltanto la sezione collegata, poi torna al problema e ricostruisci il passaggio senza guardare. Per le prove, scrivi ipotesi, tesi e motivo di ogni implicazione. I riscontri sono raccolti dopo la teoria.
+
+La tabella copre tutte le sezioni teoriche del capitolo, compresi casi limite e approfondimenti. Gli esercizi 1–8 conservano la numerazione originaria; dal 9 trovi le integrazioni. Gli esercizi tratti dal PDF fornito hanno un riferimento esplicito alla fonte; gli altri sono redazionali.
+
+| Domanda guida | Esercizi da tentare | Teoria da recuperare |
+|---|---|---|
+| Come prevedi una potenza mediante il gruppo delle unità? | [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)\|9]] | [[#Una potenza prevedibile senza calcolarla\|Una potenza prevedibile senza calcolarla]] |
+| Perché le classi laterali sono blocchi disgiunti della stessa taglia? | [[#Esercizio 5 — Blocchi della stessa taglia (classi laterali, indice e Lagrange)\|5]], [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)\|9]] | [[#Traslare un sottogruppo\|Traslare un sottogruppo]] |
+| Come la partizione dimostra che l’ordine del sottogruppo divide quello del gruppo? | [[#Esercizio 5 — Blocchi della stessa taglia (classi laterali, indice e Lagrange)\|5]], [[#Esercizio 7 — Un gruppo di ordine primo (conseguenze del teorema di Lagrange)\|7]], [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)\|9]] | [[#Lagrange: la divisibilità nasce dalla partizione\|Lagrange: la divisibilità nasce dalla partizione]] |
+| Come calcoli la funzione di Eulero dalla fattorizzazione? | [[#Esercizio 1 — Contare le unità (funzione di Eulero e moltiplicatività)\|1]], [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)\|9]], [[#Esercizio 10 — Contare le coppie coprime (funzione di Eulero e simmetria del conteggio)\|10]] | [[#Quante classi sono invertibili? La funzione di Eulero\|Quante classi sono invertibili? La funzione di Eulero]] |
+| Quali ipotesi servono per Eulero e per le due forme di Fermat? | [[#Esercizio 2 — Ridurre un esponente (teorema di Eulero)\|2]], [[#Esercizio 3 — Un inverso come potenza (Eulero e inversi modulari)\|3]], [[#Esercizio 6 — Due deduzioni sbagliate (coprimalità e ordine contro cardinalità)\|6]], [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)\|9]] | [[#Eulero e Fermat\|Eulero e Fermat]] |
+| Come escludi i divisori per riconoscere l’ordine minimo? | [[#Esercizio 4 — Scartare i divisori (ordine e teorema di Lagrange)\|4]], [[#Esercizio 6 — Due deduzioni sbagliate (coprimalità e ordine contro cardinalità)\|6]] | [[#Determinare l’ordine: quali divisori sopravvivono?\|Determinare l’ordine: quali divisori sopravvivono?]] |
+| Perché il gruppo delle unità può non essere ciclico e Fermat non certifica un primo? | [[#Esercizio 8 — Un ordine massimo più piccolo (unità modulo un prodotto di primi)\|8]], [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)\|9]] | [[#Due limiti delle conclusioni\|Due limiti delle conclusioni]] |
+
+## Esercizi per verificare la comprensione
+
+Gli esercizi 1–6 allenano gli strumenti di base; 7–8 li collegano ad altri problemi. Le integrazioni successive completano il controllo della teoria; quelle dalla raccolta fornita sono segnalate con numero e pagina. Non serve riuscire subito: individua che cosa ti manca, studia il passaggio collegato e riprova.
+
+### Esercizio 1 — Contare le unità (funzione di Eulero e moltiplicatività)
+
+Calcola $\varphi(72)$ e $\varphi(125)$ spiegando quali fattori primi intervengono. Perché non puoi usare $\varphi(8\cdot9)=\varphi(8)\varphi(9)$ senza controllare un’ipotesi?
+
+Se ti blocchi: [[#Quante classi sono invertibili? La funzione di Eulero|Quante classi sono invertibili? La funzione di Eulero]].
+
+Controllo dopo il tentativo: [[#Riscontro 1|riscontro 1]].
+
+### Esercizio 2 — Ridurre un esponente (teorema di Eulero)
+
+Calcola il resto di $10^{2026}$ modulo $77$ usando Eulero e poi potenze brevi. Specifica perché il teorema è applicabile.
+
+Se ti blocchi: [[#Eulero e Fermat|Eulero e Fermat]].
+
+Controllo dopo il tentativo: [[#Riscontro 2|riscontro 2]].
+
+### Esercizio 3 — Un inverso come potenza (Eulero e inversi modulari)
+
+Trova l’inverso di $[3]_{40}$ usando un esponente garantito da Eulero. Controlla il risultato con una moltiplicazione.
+
+Se ti blocchi: [[#Eulero e Fermat|Eulero e Fermat]].
+
+Controllo dopo il tentativo: [[#Riscontro 3|riscontro 3]].
+
+### Esercizio 4 — Scartare i divisori (ordine e teorema di Lagrange)
+
+Determina $\operatorname{ord}_7(3)$ considerando i divisori di $\varphi(7)$ ed escludendo quelli propri.
+
+Se ti blocchi: [[#Determinare l’ordine: quali divisori sopravvivono?|Determinare l’ordine: quali divisori sopravvivono?]].
+
+Controllo dopo il tentativo: [[#Riscontro 4|riscontro 4]].
+
+### Esercizio 5 — Blocchi della stessa taglia (classi laterali, indice e Lagrange)
+
+Nel gruppo additivo $G=\mathbb Z/15\mathbb Z$ considera $H=\langle[5]_{15}\rangle$. Scrivi tutte le classi laterali distinte, calcola $[G:H]$ e verifica numericamente Lagrange.
+
+Se ti blocchi: [[#Traslare un sottogruppo|Traslare un sottogruppo]] · [[#Lagrange: la divisibilità nasce dalla partizione|Lagrange: la divisibilità nasce dalla partizione]].
+
+Controllo dopo il tentativo: [[#Riscontro 5|riscontro 5]].
+
+### Esercizio 6 — Due deduzioni sbagliate (coprimalità e ordine contro cardinalità)
+
+Diagnostica entrambe le conclusioni: «$\varphi(15)=8$, quindi $[2]_{15}$ ha ordine $8$ e $[3]_{15}^{\,8}=[1]_{15}$». Correggile con calcoli espliciti.
+
+Se ti blocchi: [[#Eulero e Fermat|Eulero e Fermat]] · [[#Determinare l’ordine: quali divisori sopravvivono?|Determinare l’ordine: quali divisori sopravvivono?]].
+
+Controllo dopo il tentativo: [[#Riscontro 6|riscontro 6]].
+
+### Esercizio 7 — Un gruppo di ordine primo (conseguenze del teorema di Lagrange)
+
+Sia $G$ un gruppo con un numero primo $p$ di elementi. Dimostra che ogni $g\ne e$ genera tutto $G$. Devi assumere che $G$ sia commutativo?
+
+Se ti blocchi: [[#Lagrange: la divisibilità nasce dalla partizione|Lagrange: la divisibilità nasce dalla partizione]].
+
+Controllo dopo il tentativo: [[#Riscontro 7|riscontro 7]].
+
+### Esercizio 8 — Un ordine massimo più piccolo (unità modulo un prodotto di primi)
+
+Mostra che ogni elemento di $U(65)$ ha ordine divisore di $12$, mentre $|U(65)|=48$. Determina poi $\operatorname{ord}_{65}(2)$ e spiega perché $[2]_{65}$ non genera tutto $U(65)$.
+
+Se ti blocchi: [[#Due limiti delle conclusioni|Due limiti delle conclusioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 8|riscontro 8]].
+
+### Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)
+
+Dimostra $gH=kH\iff k^{-1}g\in H$, la disgiunzione o uguaglianza delle classi laterali e la biiezione $H\to gH$. Deduci Lagrange e $\operatorname{ord}(g)\mid|G|$. Conta le unità modulo $p^e$ e usa il teorema cinese per dimostrare $\varphi(n)=n\prod_{p\mid n}(1-1/p)$, precisando $\varphi(1)$. Deduci Eulero e entrambe le forme di Fermat, compreso il caso $p\mid a$. Perché $2^{340}\equiv1\pmod{341}$ non prova la primalità di $341$?
+
+Se ti blocchi: [[#Una potenza prevedibile senza calcolarla|Una potenza prevedibile senza calcolarla]] · [[#Traslare un sottogruppo|Traslare un sottogruppo]] · [[#Lagrange: la divisibilità nasce dalla partizione|Lagrange: la divisibilità nasce dalla partizione]] · [[#Quante classi sono invertibili? La funzione di Eulero|Quante classi sono invertibili? La funzione di Eulero]] · [[#Eulero e Fermat|Eulero e Fermat]] · [[#Due limiti delle conclusioni|Due limiti delle conclusioni]].
+
+Controllo dopo il tentativo: [[#Riscontro 9|riscontro 9]].
+
+### Esercizio 10 — Contare le coppie coprime (funzione di Eulero e simmetria del conteggio)
+
+*Dalla raccolta fornita: esercizio 16, p. 71 stampata / [[Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf#page=81|p. 81 del PDF]]. Enunciato riformulato; riscontro redazionale.*
+
+Sia $X=\{(m,n):1\le m,n\le100,\ \gcd(m,n)=1\}$. Dimostra $|X|+1=2\sum_{k=1}^{100}\varphi(k)$. Quale coppia sulla diagonale deve essere trattata a parte?
+
+Se ti blocchi: [[#Quante classi sono invertibili? La funzione di Eulero|Quante classi sono invertibili? La funzione di Eulero]].
+
+Controllo dopo il tentativo: [[#Riscontro 10|riscontro 10]].
+
+## Teoria da recuperare
+
+Usa i collegamenti della tabella iniziale per leggere lo strumento che ti serve. Dopo la lettura, torna all’esercizio e prova a risolverlo senza suggerimenti.
+
 ## Una potenza prevedibile senza calcolarla
 
 Come possiamo sapere che $7^{40}\equiv1\pmod{100}$ senza costruire quell’enorme intero? Nei capitoli precedenti abbiamo imparato che le potenze di una classe invertibile, lavorando fra un numero finito di classi, tornano all’identità. Ma questo assicura l’esistenza di un esponente; non spiega ancora perché proprio $40$ debba funzionare.
@@ -366,49 +472,79 @@ L’esposizione riprende [[Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici
 
 La costruzione delle classi laterali e la dimostrazione completa di Lagrange sono un’integrazione didattica: il risultato è richiamato nelle fonti senza questo sviluppo. Sono inoltre ricostruite le prove della formula di $\varphi$, delle conseguenze di Fermat e dei criteri usati nei calcoli. Il controesempio $341$ e gli esercizi completano autonomamente l’esposizione; non sono citazioni del docente.
 
-## Esercizi per verificare la comprensione
+## Riscontri degli esercizi
 
-Gli esercizi 1–6 sono fondamentali; 7–8 collegano i risultati del capitolo ad altre idee.
+Apri il riscontro soltanto dopo aver scritto un tentativo. Per una dimostrazione, confronta anche le ipotesi e la completezza, non soltanto il risultato.
 
-1. Calcola $\varphi(72)$ e $\varphi(125)$ spiegando quali fattori primi intervengono. Perché non puoi usare $\varphi(8\cdot9)=\varphi(8)\varphi(9)$ senza controllare un’ipotesi?
+### Riscontro 1
 
 > [!tip]- Riscontro 1
 > $72=2^3\cdot3^2$ e $\gcd(8,9)=1$, quindi $\varphi(72)=4\cdot6=24$. Inoltre $\varphi(125)=125-25=100$. La moltiplicatività richiede moduli coprimi; qui l’ipotesi è soddisfatta.
 
-2. Calcola il resto di $10^{2026}$ modulo $77$ usando Eulero e poi potenze brevi. Specifica perché il teorema è applicabile.
+Torna a [[#Esercizio 1 — Contare le unità (funzione di Eulero e moltiplicatività)|esercizio 1]].
+
+### Riscontro 2
 
 > [!tip]- Riscontro 2
 > $\gcd(10,77)=1$ e $\varphi(77)=6\cdot10=60$. Dunque l’esponente può essere ridotto modulo $60$. Ma $10^2\equiv23$ e $10^3\equiv230\equiv-1\pmod{77}$, perciò $10^6\equiv1$. Siccome $2026=337\cdot6+4$, il resto è $10^4\equiv-10\equiv67\pmod{77}$.
 
-3. Trova l’inverso di $[3]_{40}$ usando un esponente garantito da Eulero. Controlla il risultato con una moltiplicazione.
+Torna a [[#Esercizio 2 — Ridurre un esponente (teorema di Eulero)|esercizio 2]].
+
+### Riscontro 3
 
 > [!tip]- Riscontro 3
 > $\varphi(40)=16$, quindi l’inverso è $[3^{15}]_{40}$. Poiché $3^4=81\equiv1$, si ha $3^{15}\equiv3^3=27\pmod{40}$. Il controllo è $3\cdot27=81\equiv1\pmod{40}$.
 
-4. Determina $\operatorname{ord}_7(3)$ considerando i divisori di $\varphi(7)$ ed escludendo quelli propri.
+Torna a [[#Esercizio 3 — Un inverso come potenza (Eulero e inversi modulari)|esercizio 3]].
+
+### Riscontro 4
 
 > [!tip]- Riscontro 4
 > Fermat dà $3^6\equiv1\pmod7$, quindi l’ordine divide $6$. I divisori sono $1,2,3,6$. Siccome $3^2\equiv2\ne1$ e $3^3\equiv6\ne1$, escludiamo $2,3$ e anche $1$. L’ordine è $6$.
 
-5. Nel gruppo additivo $G=\mathbb Z/15\mathbb Z$ considera $H=\langle[5]_{15}\rangle$. Scrivi tutte le classi laterali distinte, calcola $[G:H]$ e verifica numericamente Lagrange.
+Torna a [[#Esercizio 4 — Scartare i divisori (ordine e teorema di Lagrange)|esercizio 4]].
+
+### Riscontro 5
 
 > [!tip]- Riscontro 5
 > $H=\{[0]_{15},[5]_{15},[10]_{15}\}$. Le cinque classi sono $[r]_{15}+H=\{[r]_{15},[r+5]_{15},[r+10]_{15}\}$ per $r=0,1,2,3,4$. Sono disgiunte perché hanno resti diversi modulo $5$, e ricoprono le quindici classi. Quindi $[G:H]=5$ e $15=5\cdot3$.
 
-6. Diagnostica entrambe le conclusioni: «$\varphi(15)=8$, quindi $[2]_{15}$ ha ordine $8$ e $[3]_{15}^{\,8}=[1]_{15}$». Correggile con calcoli espliciti.
+Torna a [[#Esercizio 5 — Blocchi della stessa taglia (classi laterali, indice e Lagrange)|esercizio 5]].
+
+### Riscontro 6
 
 > [!tip]- Riscontro 6
 > Per $[2]_{15}$ Eulero dice che l’ordine divide $8$. In realtà $2^4=16\equiv1$ e $2^2\equiv4\ne1$, quindi l’ordine è $4$. Per $[3]_{15}$ manca la coprimalità: non è un’unità. Infatti $3^4\equiv6$ e $3^8\equiv36\equiv6\not\equiv1\pmod{15}$.
 
-7. Sia $G$ un gruppo con un numero primo $p$ di elementi. Dimostra che ogni $g\ne e$ genera tutto $G$. Devi assumere che $G$ sia commutativo?
+Torna a [[#Esercizio 6 — Due deduzioni sbagliate (coprimalità e ordine contro cardinalità)|esercizio 6]].
+
+### Riscontro 7
 
 > [!tip]- Riscontro 7
 > Lagrange dà $\operatorname{ord}(g)\mid p$, dunque l’ordine è $1$ oppure $p$. Un elemento ha ordine $1$ soltanto se è $e$, quindi per $g\ne e$ l’ordine è $p$. Il sottogruppo $\langle g\rangle$ ha allora tanti elementi quanti $G$ e coincide con $G$. Non serve assumere commutatività; essa segue dalla ciclicità appena dimostrata.
 
-8. Mostra che ogni elemento di $U(65)$ ha ordine divisore di $12$, mentre $|U(65)|=48$. Determina poi $\operatorname{ord}_{65}(2)$ e spiega perché $[2]_{65}$ non genera tutto $U(65)$.
+Torna a [[#Esercizio 7 — Un gruppo di ordine primo (conseguenze del teorema di Lagrange)|esercizio 7]].
+
+### Riscontro 8
 
 > [!tip]- Riscontro 8
 > $65=5\cdot13$, quindi $\varphi(65)=4\cdot12=48$. Fermat nelle due componenti del teorema cinese dà $a^{12}\equiv1$ modulo $65$ per ogni unità, perché $12=\operatorname{mcm}(4,12)$. Per $2$, $2^6=64\equiv-1$ e $2^4=16\not\equiv1\pmod{65}$. Questi due controlli escludono tutti i divisori propri di $12$: ogni divisore proprio divide $6$ oppure $4$. Quindi $\operatorname{ord}_{65}(2)=12$. Il sottogruppo generato contiene soltanto $12$ delle $48$ unità.
+
+Torna a [[#Esercizio 8 — Un ordine massimo più piccolo (unità modulo un prodotto di primi)|esercizio 8]].
+
+### Riscontro 9
+
+> [!tip]- Riscontro 9
+> Se le classi coincidono, $g=kh$ per un $h\in H$; il viceversa segue moltiplicando tutto $H$ per $h$. Un elemento comune riporta a questo criterio. La traslazione è invertita da $x\mapsto g^{-1}x$, quindi tutte le classi hanno $|H|$ elementi e $|G|=[G:H]|H|$. Applica a $\langle g\rangle$. Modulo $p^e$ i non invertibili sono i $p^{e-1}$ multipli di $p$; le coordinate cinesi moltiplicano i conteggi per potenze prime coprime. Per convenzione $\varphi(1)=1$. In $U(n)$ Lagrange dà Eulero; per $n=p$ dà Fermat $a^{p-1}\equiv1$ se $p\nmid a$. Moltiplica per $a$ e tratta separatamente $p\mid a$ per $a^p\equiv a$. Infine $341=11\cdot31$ è composto, ma $2^{10}=1024\equiv1\pmod{341}$, quindi anche la potenza $340$ vale uno.
+
+Torna a [[#Esercizio 9 — Dalla partizione ai teoremi (dimostrazione di Lagrange, formula di Eulero e Fermat)|esercizio 9]].
+
+### Riscontro 10
+
+> [!tip]- Riscontro 10
+> Per $k\ge2$, le coppie con massimo $k$ sono $(j,k)$ e $(k,j)$ con $1\le j<k$, $\gcd(j,k)=1$: sono $2\varphi(k)$. La diagonale contiene soltanto $(1,1)$. Quindi $|X|=1+2\sum_{k=2}^{100}\varphi(k)=2\sum_{k=1}^{100}\varphi(k)-1$, dato $\varphi(1)=1$.
+
+Torna a [[#Esercizio 10 — Contare le coppie coprime (funzione di Eulero e simmetria del conteggio)|esercizio 10]].
 
 Il capitolo è acquisito quando sai ricostruire il conteggio delle classi laterali e trasformarlo in un vincolo sugli esponenti. Nei calcoli, devi saper distinguere una potenza che vale uno dall’ordine esatto e controllare la coprimalità prima di applicare Eulero.
 
