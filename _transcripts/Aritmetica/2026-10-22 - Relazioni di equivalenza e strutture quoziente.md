@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-22
+date: '2026-10-22'
 title: Relazioni di equivalenza e strutture quoziente
-summary: La lezione introduce le relazioni di equivalenza e le classi di
-  equivalenza, applicandole alla costruzione dei numeri razionali e delle classi
-  di resto modulo n. Vengono definite le operazioni sul quoziente, verificandone
-  la buona definizione, e si discutono gruppi, anelli, campi e l’invertibilità
+summary: La lezione introduce le relazioni di equivalenza e le classi di equivalenza, applicandole alla
+  costruzione dei numeri razionali e delle classi di resto modulo n. Vengono definite le operazioni sul
+  quoziente, verificandone la buona definizione, e si discutono gruppi, anelli, campi e l’invertibilità
   delle classi modulo n, caratterizzata dalla coprimalità con n.
 source_audio: _audio/Aritmetica/New Recording 76.m4a
 duration_seconds: 5594
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-22T11:39:16.040Z
+transcribed_at: '2026-10-22T11:39:16.040Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md
+source_audio_status: missing
+study_note_date: '2026-10-21'
 ---
 
 # Relazioni di equivalenza e strutture quoziente

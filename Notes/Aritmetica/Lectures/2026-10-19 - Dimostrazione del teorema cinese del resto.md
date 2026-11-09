@@ -1,16 +1,17 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-19
+date: '2026-10-19'
 title: Dimostrazione del teorema cinese del resto
 source: Quando_G._Bresciani_fa__teoria_2.pdf
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Dimostrazione del teorema cinese del resto
 
 Lezione di teoria di G. Bresciani del 19/10. Si dimostra il **teorema cinese del resto** per un numero qualsiasi di moduli a due a due coprimi: prima un lemma sul MCD di un prodotto, poi il teorema per induzione sul numero di moduli. In coda c'è un metodo pratico per trovare l'inverso moltiplicativo modulo $b$.
 
-L'enunciato e il metodo di risoluzione per due congruenze compaiono anche negli appunti di Aritmetica, in [[2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari#Teorema cinese del resto|Fattorizzazione unica, congruenze e sistemi modulari]]. Qui si aggiungono la dimostrazione completa e il caso di $n$ moduli.
+L'enunciato e il metodo di risoluzione per due congruenze compaiono anche negli appunti di Aritmetica, in [[2026-10-08 - Fattorizzazione unica, congruenze e sistemi modulari#Teorema cinese del resto|Fattorizzazione unica, congruenze e sistemi modulari]]. Qui si aggiungono la dimostrazione completa e il caso di $n$ moduli.
 
 Notazione: $(a,b)$ indica il massimo comun divisore $\gcd(a,b)$.
 

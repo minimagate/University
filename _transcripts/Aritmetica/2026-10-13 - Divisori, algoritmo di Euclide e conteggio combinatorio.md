@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-13
+date: '2026-10-13'
 title: Divisori, algoritmo di Euclide e conteggio combinatorio
-summary: La lezione tratta massimo comun divisore e minimo comune multiplo
-  tramite fattorizzazione in primi, inclusa la formula per il numero dei
-  divisori. Introduce inoltre il metodo delle stelle e sbarre, l’algoritmo di
-  Euclide e la risoluzione delle equazioni diofantee lineari, con applicazioni
-  al conteggio di terne di interi distinti.
+summary: La lezione tratta massimo comun divisore e minimo comune multiplo tramite fattorizzazione in
+  primi, inclusa la formula per il numero dei divisori. Introduce inoltre il metodo delle stelle e sbarre,
+  l’algoritmo di Euclide e la risoluzione delle equazioni diofantee lineari, con applicazioni al conteggio
+  di terne di interi distinti.
 source_audio: _audio/Aritmetica/New Recording 72.m4a
 duration_seconds: 5383
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-13T11:31:11.374Z
+transcribed_at: '2026-10-13T11:31:11.374Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md
+source_audio_status: missing
+study_note_date: '2026-10-13'
 ---
 
 # Divisori, algoritmo di Euclide e conteggio combinatorio

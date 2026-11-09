@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-10-27
+date: '2026-10-27'
 title: Rango, sistemi lineari e matrici elementari
-source_transcript: _transcripts/Geometria 1/2026-10-27 - Rango, sistemi lineari
-  e matrici elementari.md
+source_transcript: _transcripts/Geometria 1/2026-10-27 - Rango, sistemi lineari e matrici elementari.md
 source_hash: sha256:c76a4339b4a6809d57dcb73e877bab8ab0c979fdfa5f75448332bf7700fd2393
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-27T22:05:19.250Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-27T22:05:19.250Z'
 ---
 
 # Rango, sistemi lineari e matrici elementari

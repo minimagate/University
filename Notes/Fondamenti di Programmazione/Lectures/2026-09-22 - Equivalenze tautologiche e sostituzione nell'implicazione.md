@@ -1,8 +1,9 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-09-22
+date: '2026-09-22'
 title: Equivalenze tautologiche e sostituzione nell'implicazione
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Equivalenze tautologiche e sostituzione nell'implicazione

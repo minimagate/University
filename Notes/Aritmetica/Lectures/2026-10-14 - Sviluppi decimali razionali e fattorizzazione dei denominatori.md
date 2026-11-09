@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-14
+date: '2026-10-14'
 title: Sviluppi decimali razionali e fattorizzazione dei denominatori
-source_transcript: _transcripts/Aritmetica/2026-10-14 - Sviluppi decimali
-  razionali e fattorizzazione dei denominatori.md
+source_transcript: _transcripts/Aritmetica/2026-10-14 - Sviluppi decimali razionali e fattorizzazione
+  dei denominatori.md
 source_hash: sha256:2c8f4437f21173b7ca4e36498b02858da8a9fc43f8d8ecf39acafc3378a7314e
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-14T11:30:02.663Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-14T11:30:02.663Z'
 ---
 
 # Sviluppi decimali razionali e fattorizzazione dei denominatori
@@ -247,9 +247,9 @@ A prima vista potrebbe sembrare che questo dia solo una classe molto particolare
 
 ---
 
-# 5. Un lemma sulle potenze modulo $b$
+## 5. Un lemma sulle potenze modulo $b$
 
-## Lemma 2
+### Lemma 2
 
 Siano $a,b\in\mathbb{Z}$ con
 
@@ -269,7 +269,7 @@ $$
 b\mid a^n-1.
 $$
 
-### Dimostrazione mediante i resti
+#### Dimostrazione mediante i resti
 
 Consideriamo le potenze
 
@@ -327,7 +327,7 @@ Il docente ha osservato che una versione più precisa di questo risultato sarà 
 
 ---
 
-# 6. Fattorizzazione del denominatore
+## 6. Fattorizzazione del denominatore
 
 Vogliamo mostrare che, per ogni intero positivo $b$, esistono $s,m$ tali che
 
@@ -395,7 +395,7 @@ Il caso in cui $b$ è già coprimo con $10$ è direttamente il caso particolare 
 
 ---
 
-# 7. Ogni numero razionale ha sviluppo eventualmente periodico
+## 7. Ogni numero razionale ha sviluppo eventualmente periodico
 
 Consideriamo un numero razionale non negativo
 
@@ -483,11 +483,11 @@ $$
 
 ---
 
-# 8. Valutazione dell’esponente di un primo nel fattoriale
+## 8. Valutazione dell’esponente di un primo nel fattoriale
 
 La seconda parte della lezione riguarda la fattorizzazione dei numeri interi, in particolare l’esponente con cui un primo compare nella fattorizzazione di un fattoriale.
 
-## Definizione
+### Definizione
 
 Sia $p$ un numero primo e sia $N$ un intero positivo. Si indica con $v_p(N)$ l’esponente di $p$ nella fattorizzazione prima di $N$.
 
@@ -519,7 +519,7 @@ $$
 
 ---
 
-## 9. Metodo mediante una tabella
+### 9. Metodo mediante una tabella
 
 Per esempio, consideriamo $19!$ e calcoliamo l’esponente di $2$.
 
@@ -604,7 +604,7 @@ Non è necessario considerare $2^{32}$ o potenze successive, perché appena $2^k
 
 ---
 
-## 10. Formula generale di Legendre
+### 10. Formula generale di Legendre
 
 Il ragionamento precedente vale per ogni primo $p$ e ogni intero $n\ge 1$.
 
@@ -641,7 +641,7 @@ $$
 
 Questa è la **formula di Legendre**.
 
-### Dimostrazione per righe
+#### Dimostrazione per righe
 
 Ogni multiplo di $p$ contribuisce almeno una volta alla fattorizzazione di $n!$.
 
@@ -662,7 +662,7 @@ v_p(n!)
 +\cdots.
 $$
 
-### Dimostrazione per colonne
+#### Dimostrazione per colonne
 
 In alternativa, si può organizzare il conteggio per colonne.
 
@@ -736,7 +736,7 @@ Le due dimostrazioni corrispondono ai due modi di leggere la tabella:
 
 ---
 
-# 11. Equazioni del tipo $x^2-y^2=n$
+## 11. Equazioni del tipo $x^2-y^2=n$
 
 Nella parte finale della lezione viene considerata l’equazione diofantea
 
@@ -784,7 +784,7 @@ quindi sia $u+v$ sia $u-v$ devono essere pari. Questo accade esattamente quando 
 
 ---
 
-## 12. Esempio: $x^2-y^2=26$
+### 12. Esempio: $x^2-y^2=26$
 
 Consideriamo
 
@@ -815,7 +815,7 @@ Ne segue che l’equazione non ha soluzioni intere.
 
 ---
 
-## 13. Osservazione modulo $4$
+### 13. Osservazione modulo $4$
 
 La stessa conclusione può essere ottenuta usando le congruenze.
 
@@ -867,11 +867,11 @@ Più in generale:
 
 ---
 
-# 14. Classificazione in base alla parità di $n$
+## 14. Classificazione in base alla parità di $n$
 
 Dalla condizione che $x+y$ e $x-y$ debbano avere la stessa parità si ottiene una classificazione.
 
-## Caso 1: $n$ dispari
+### Caso 1: $n$ dispari
 
 Se $n$ è dispari e
 
@@ -905,11 +905,11 @@ $$
 
 Si possono considerare anche divisori negativi, che producono ulteriori soluzioni legate ai cambiamenti di segno.
 
-## Caso 2: $n\equiv 2\pmod 4$
+### Caso 2: $n\equiv 2\pmod 4$
 
 In questo caso non esistono soluzioni, perché una differenza di quadrati non può essere congrua a $2$ modulo $4$.
 
-## Caso 3: $4\mid n$
+### Caso 3: $4\mid n$
 
 Scriviamo
 

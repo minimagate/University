@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-11-01
+date: '2026-11-01'
 title: Indipendenza lineare e basi mediante Gauss
-source_transcript: _transcripts/Geometria 1/2026-11-01 - Indipendenza lineare e
-  basi mediante Gauss.md
+source_transcript: _transcripts/Geometria 1/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md
 source_hash: sha256:cff3070b4affb5feb66e96046568b86db3d438b245edba7b8652159dc1984687
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-11-01T08:08:08.682Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-11-01T08:08:08.682Z'
 ---
 
 # Indipendenza lineare e basi mediante l’algoritmo di Gauss

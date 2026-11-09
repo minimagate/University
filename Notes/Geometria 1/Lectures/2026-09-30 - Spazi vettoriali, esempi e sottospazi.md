@@ -1,12 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-09-30
+date: '2026-09-30'
 title: Spazi vettoriali, esempi e sottospazi
 source_transcript: _transcripts/Geometria 1/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md
 source_hash: sha256:ee96d8a5fb7e614e3fbbe9f6d2e9d60d2c46086915b110f586dc29623b788533
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-30T06:56:37.331Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-30T06:56:37.331Z'
 ---
 
 # Spazi vettoriali, esempi e sottospazi

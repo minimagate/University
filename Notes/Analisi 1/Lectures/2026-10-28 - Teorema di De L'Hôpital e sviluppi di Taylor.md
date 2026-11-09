@@ -1,12 +1,13 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-28
+date: '2026-10-28'
 title: Teorema di De L'Hôpital e sviluppi di Taylor
 source_files:
-  - AM1_26_L027.pdf
-  - AM1_26_L028.pdf
-source_date: 2025-10-27
+- AM1_26_L027.pdf
+- AM1_26_L028.pdf
+source_date: '2025-10-27'
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Teorema di De L'Hôpital e sviluppi di Taylor

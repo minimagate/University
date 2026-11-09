@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-07
+date: '2026-10-07'
 title: Coordinate, basi e dimensione degli spazi vettoriali
-summary: La lezione introduce le coordinate rispetto a una base, anche nel caso
-  infinito con combinazioni a supporto finito, e dimostra che nel caso finito
-  l’applicazione delle coordinate è un isomorfismo con K^n. Vengono inoltre
-  studiate le matrici, la base canonica, l’indipendenza lineare, gli insiemi
-  generatori, il lemma dello scambio e l’unicità della dimensione.
+summary: La lezione introduce le coordinate rispetto a una base, anche nel caso infinito con combinazioni
+  a supporto finito, e dimostra che nel caso finito l’applicazione delle coordinate è un isomorfismo con
+  K^n. Vengono inoltre studiate le matrici, la base canonica, l’indipendenza lineare, gli insiemi generatori,
+  il lemma dello scambio e l’unicità della dimensione.
 source_audio: _audio/Aritmetica/New Recording 69.m4a
 duration_seconds: 5910
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-07T09:19:55.616Z
+transcribed_at: '2026-10-07T09:19:55.616Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md
+source_audio_status: missing
+study_note_date: '2026-10-07'
 ---
 
 # Coordinate, basi e dimensione degli spazi vettoriali

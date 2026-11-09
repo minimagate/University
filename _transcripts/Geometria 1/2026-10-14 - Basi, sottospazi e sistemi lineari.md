@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-14
+date: '2026-10-14'
 title: Basi, sottospazi e sistemi lineari
-summary: La lezione tratta l’indipendenza lineare, la generazione e i criteri
-  per riconoscere una base mediante la dimensione. Sono studiati sottospazi
-  definiti da equazioni lineari o condizioni sui polinomi, intersezioni e unioni
-  di sottospazi, completamento e riduzione di insiemi generatori. Infine vengono
-  introdotti il prodotto tra matrici e vettori e la rappresentazione matriciale
-  dei sistemi lineari omogenei.
+summary: La lezione tratta l’indipendenza lineare, la generazione e i criteri per riconoscere una base
+  mediante la dimensione. Sono studiati sottospazi definiti da equazioni lineari o condizioni sui polinomi,
+  intersezioni e unioni di sottospazi, completamento e riduzione di insiemi generatori. Infine vengono
+  introdotti il prodotto tra matrici e vettori e la rappresentazione matriciale dei sistemi lineari omogenei.
 source_audio: _audio/Geometria 1/New Recording 74.m4a
 duration_seconds: 5364
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-14T11:29:00.719Z
+transcribed_at: '2026-10-14T11:29:00.719Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-14 - Basi, sottospazi e sistemi lineari.md
+source_audio_status: missing
+study_note_date: '2026-10-14'
 ---
 
 # Basi, sottospazi e sistemi lineari

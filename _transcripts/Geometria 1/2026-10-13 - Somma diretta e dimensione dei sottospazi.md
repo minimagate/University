@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-13
+date: '2026-10-13'
 title: Somma diretta e dimensione dei sottospazi
-summary: La lezione tratta l’estensione di insiemi linearmente indipendenti a
-  basi, la costruzione di sottospazi di dimensione assegnata e le somme di
-  sottospazi. Vengono caratterizzate la somma diretta e l’unicità della
-  decomposizione, dimostrata la formula della dimensione della somma tramite
-  l’intersezione e introdotta la decomposizione delle matrici in parti
-  simmetrica e antisimmetrica.
+summary: La lezione tratta l’estensione di insiemi linearmente indipendenti a basi, la costruzione di
+  sottospazi di dimensione assegnata e le somme di sottospazi. Vengono caratterizzate la somma diretta
+  e l’unicità della decomposizione, dimostrata la formula della dimensione della somma tramite l’intersezione
+  e introdotta la decomposizione delle matrici in parti simmetrica e antisimmetrica.
 source_audio: _audio/Geometria 1/New Recording 73 copy.m4a
 duration_seconds: 5265
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-13T11:48:00.709Z
+transcribed_at: '2026-10-13T11:48:00.709Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-13 - Somma diretta e dimensione dei sottospazi.md
+source_audio_status: missing
+study_note_date: '2026-10-13'
 ---
 
 # Somma diretta e dimensione dei sottospazi

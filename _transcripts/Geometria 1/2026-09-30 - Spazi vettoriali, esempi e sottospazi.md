@@ -1,18 +1,20 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-09-30
+date: '2026-09-30'
 title: Spazi vettoriali, esempi e sottospazi
-summary: La lezione introduce gli spazi vettoriali su un campo, definendo somma
-  e prodotto esterno e verificandone gli assiomi. Vengono analizzati gli esempi
-  di K^n, polinomi e funzioni, quindi il criterio per riconoscere i sottospazi,
-  con applicazioni a rette e piani per l’origine, intersezioni e unioni.
+summary: La lezione introduce gli spazi vettoriali su un campo, definendo somma e prodotto esterno e verificandone
+  gli assiomi. Vengono analizzati gli esempi di K^n, polinomi e funzioni, quindi il criterio per riconoscere
+  i sottospazi, con applicazioni a rette e piani per l’origine, intersezioni e unioni.
 source_audio: _audio/Geometria 1/geo.mp3
 duration_seconds: 5291
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-30T06:53:50.724Z
+transcribed_at: '2026-09-30T06:53:50.724Z'
+study_note: Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md
+source_audio_status: missing
+study_note_date: '2026-09-30'
 ---
 
 # Spazi vettoriali, esempi e sottospazi

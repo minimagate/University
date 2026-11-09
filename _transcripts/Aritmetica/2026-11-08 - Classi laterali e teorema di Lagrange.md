@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-11-08
+date: '2026-11-08'
 title: Classi laterali e teorema di Lagrange
-summary: La lezione introduce le relazioni di equivalenza associate a un
-  sottogruppo e definisce classi laterali sinistre e destre, mostrando che
-  formano una partizione del gruppo. Viene dimostrato il teorema di Lagrange e
-  discussi l’ordine degli elementi, i gruppi ciclici di ordine primo, le classi
-  in gruppi simmetrici e la nozione di sottogruppo normale.
+summary: La lezione introduce le relazioni di equivalenza associate a un sottogruppo e definisce classi
+  laterali sinistre e destre, mostrando che formano una partizione del gruppo. Viene dimostrato il teorema
+  di Lagrange e discussi l’ordine degli elementi, i gruppi ciclici di ordine primo, le classi in gruppi
+  simmetrici e la nozione di sottogruppo normale.
 source_audio: _audio/Aritmetica/New Recording 89.m4a
 duration_seconds: 6046
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-11-08T12:58:22.512Z
+transcribed_at: '2026-11-08T12:58:22.512Z'
+study_note: Notes/Aritmetica/Lectures/2026-11-09 - Classi laterali e teorema di Lagrange.md
+source_audio_status: available
+study_note_date: '2026-11-09'
 ---
 
 # Classi laterali e teorema di Lagrange

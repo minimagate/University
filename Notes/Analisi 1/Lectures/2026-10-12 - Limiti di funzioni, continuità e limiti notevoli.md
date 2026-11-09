@@ -1,11 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-12
+date: '2026-10-12'
 title: Limiti di funzioni, continuità e limiti notevoli
 source_files:
-  - AM1_26_L017.pdf
-  - AM1_26_L018.pdf
+- AM1_26_L017.pdf
+- AM1_26_L018.pdf
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Limiti di funzioni, continuità e limiti notevoli

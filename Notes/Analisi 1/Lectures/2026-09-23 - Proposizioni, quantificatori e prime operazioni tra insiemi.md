@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-09-23
+date: '2026-09-23'
 title: Proposizioni, quantificatori e prime operazioni tra insiemi
-source_transcript: _transcripts/Analisi 1/2026-09-23 - Proposizioni,
-  quantificatori e prime operazioni tra insiemi.md
+source_transcript: _transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni
+  tra insiemi.md
 source_hash: sha256:5192cae4771ead651e830de0d25628e474de93d32564f11ce4a15e6904f1d9a1
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-23T14:13:25.396Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-23T14:13:25.396Z'
 ---
 
 # Proposizioni, quantificatori e prime operazioni tra insiemi
@@ -36,9 +36,9 @@ La lezione è dedicata alla logica elementare e alle prime operazioni tra insiem
 
 ---
 
-# 1. Proposizioni e predicati
+## 1. Proposizioni e predicati
 
-## 1.1 Definizione intuitiva di proposizione
+### 1.1 Definizione intuitiva di proposizione
 
 Una **proposizione** è, informalmente, una frase per la quale abbia senso chiedersi se sia **vera** o **falsa**.
 
@@ -58,7 +58,7 @@ La logica proposizionale elementare, detta nel corso anche **logica di ordine ze
 
 ---
 
-## 1.2 Predicati
+### 1.2 Predicati
 
 Un **predicato** è una frase che contiene uno o più parametri o variabili e che diventa vera o falsa a seconda dei valori assegnati a tali parametri.
 
@@ -89,9 +89,9 @@ Formalmente, si può indicare con $P(S,M)$. Il valore di verità dipende sia dal
 
 ---
 
-# 2. Quantificatori
+## 2. Quantificatori
 
-## 2.1 Quantificare tutte le variabili
+### 2.1 Quantificare tutte le variabili
 
 I principali quantificatori sono:
 
@@ -117,7 +117,7 @@ Se rimangono variabili libere, l’espressione non è ancora una proposizione co
 
 ---
 
-## 2.2 Esempi con un parametro
+### 2.2 Esempi con un parametro
 
 Consideriamo il predicato:
 
@@ -165,7 +165,7 @@ Questa afferma che esiste almeno un docente giovane e può essere vera oppure fa
 
 ---
 
-## 2.3 Esempi con due parametri
+### 2.3 Esempi con due parametri
 
 Consideriamo il predicato:
 
@@ -175,7 +175,7 @@ $$
 
 Le diverse disposizioni dei quantificatori hanno significati completamente diversi.
 
-### Tutti gli studenti apprezzano tutte le birre
+#### Tutti gli studenti apprezzano tutte le birre
 
 $$
 \forall S\,\forall B,\quad P(S,B).
@@ -185,7 +185,7 @@ In italiano:
 
 > A ogni studente piacciono tutte le birre.
 
-### Esiste uno studente a cui piace almeno una birra
+#### Esiste uno studente a cui piace almeno una birra
 
 $$
 \exists S\,\exists B,\quad P(S,B).
@@ -195,7 +195,7 @@ In italiano:
 
 > Esiste almeno uno studente a cui piace almeno una birra.
 
-### Ogni studente apprezza almeno una birra
+#### Ogni studente apprezza almeno una birra
 
 $$
 \forall S\,\exists B,\quad P(S,B).
@@ -207,7 +207,7 @@ In italiano:
 
 La birra può dipendere dallo studente: studenti diversi possono avere birre preferite diverse.
 
-### Esiste una birra apprezzata da tutti gli studenti
+#### Esiste una birra apprezzata da tutti gli studenti
 
 $$
 \exists B\,\forall S,\quad P(S,B).
@@ -219,7 +219,7 @@ In italiano:
 
 Qui la birra è scelta una volta sola e deve funzionare per ogni studente.
 
-### Esiste uno studente a cui piacciono tutte le birre
+#### Esiste uno studente a cui piacciono tutte le birre
 
 $$
 \exists S\,\forall B,\quad P(S,B).
@@ -229,7 +229,7 @@ In italiano:
 
 > Esiste almeno uno studente a cui piacciono tutte le birre.
 
-### Ogni birra piace ad almeno uno studente
+#### Ogni birra piace ad almeno uno studente
 
 $$
 \forall B\,\exists S,\quad P(S,B).
@@ -260,7 +260,7 @@ Per un predicato con due parametri, il docente osserva che si possono ottenere s
 
 ---
 
-## 2.4 Perché si usano i quantificatori
+### 2.4 Perché si usano i quantificatori
 
 Il formalismo matematico serve a evitare ambiguità linguistiche. La matematica non usa i simboli soltanto per formalismo, ma per esprimere con precisione ciò che si intende.
 
@@ -270,11 +270,11 @@ Prima regola pratica:
 
 ---
 
-# 3. Operazioni logiche tra proposizioni
+## 3. Operazioni logiche tra proposizioni
 
 Siano $P$ e $Q$ proposizioni.
 
-## 3.1 Negazione
+### 3.1 Negazione
 
 La negazione di $P$ si indica con:
 
@@ -299,7 +299,7 @@ Esempi:
 
 ---
 
-## 3.2 Congiunzione: AND
+### 3.2 Congiunzione: AND
 
 La congiunzione di $P$ e $Q$ si indica con:
 
@@ -320,7 +320,7 @@ Il simbolo $\land$ richiama la lettera iniziale della parola inglese “and”.
 
 ---
 
-## 3.3 Disgiunzione: OR inclusivo
+### 3.3 Disgiunzione: OR inclusivo
 
 La disgiunzione si indica con:
 
@@ -340,7 +340,7 @@ Questo va distinto dall’“oppure” esclusivo del linguaggio comune, nel qual
 
 ---
 
-## 3.4 Leggi di De Morgan per le proposizioni
+### 3.4 Leggi di De Morgan per le proposizioni
 
 La negazione di una congiunzione è:
 
@@ -373,11 +373,11 @@ In forma discorsiva:
 
 ---
 
-# 4. Negazione dei quantificatori
+## 4. Negazione dei quantificatori
 
 Queste equivalenze sono fondamentali e verranno utilizzate frequentemente.
 
-## 4.1 Negazione del quantificatore universale
+### 4.1 Negazione del quantificatore universale
 
 La negazione di:
 
@@ -427,7 +427,7 @@ Non significa che nessuna pecora sia nera; è sufficiente trovarne una non nera.
 
 ---
 
-## 4.2 Negazione del quantificatore esistenziale
+### 4.2 Negazione del quantificatore esistenziale
 
 La negazione di:
 
@@ -469,7 +469,7 @@ $$
 
 ---
 
-## 4.3 Esempio con quantificatori annidati
+### 4.3 Esempio con quantificatori annidati
 
 Consideriamo:
 
@@ -501,7 +501,7 @@ L’ordine dei quantificatori cambia, perché ogni negazione trasforma $\forall$
 
 ---
 
-## 4.4 Esempio: uno studente che fallisce tutti gli esami ogni anno
+### 4.4 Esempio: uno studente che fallisce tutti gli esami ogni anno
 
 Consideriamo l’enunciato:
 
@@ -531,9 +531,9 @@ La negazione non dice necessariamente che in quell’anno tutti gli studenti sup
 
 ---
 
-# 5. Implicazione
+## 5. Implicazione
 
-## 5.1 Definizione
+### 5.1 Definizione
 
 L’implicazione si indica con:
 
@@ -589,7 +589,7 @@ $$
 
 ---
 
-## 5.2 Condizione sufficiente e condizione necessaria
+### 5.2 Condizione sufficiente e condizione necessaria
 
 L’implicazione
 
@@ -599,13 +599,13 @@ $$
 
 può essere espressa in due modi equivalenti.
 
-### Condizione sufficiente
+#### Condizione sufficiente
 
 $P$ è una **condizione sufficiente** affinché valga $Q$.
 
 Infatti, se $P$ è vera, questo è sufficiente per garantire che $Q$ sia vera.
 
-### Condizione necessaria
+#### Condizione necessaria
 
 $Q$ è una **condizione necessaria** affinché valga $P$.
 
@@ -623,7 +623,7 @@ Non significa necessariamente che $Q$ implichi $P$.
 
 ---
 
-## 5.3 Negazione dell’implicazione
+### 5.3 Negazione dell’implicazione
 
 La negazione di un’implicazione è:
 
@@ -649,7 +649,7 @@ $$
 
 ---
 
-## 5.4 Contraposizione
+### 5.4 Contraposizione
 
 L’implicazione
 
@@ -711,18 +711,18 @@ La contraposizione è alla base della **dimostrazione per assurdo** e delle dimo
 
 ---
 
-# 6. Tavole di verità
+## 6. Tavole di verità
 
 Una tavola di verità elenca tutti i possibili valori di verità delle proposizioni coinvolte e determina il valore dell’espressione composta.
 
-## 6.1 Negazione
+### 6.1 Negazione
 
 | $P$ | $\neg P$ |
 |---|---|
 | Vera | Falsa |
 | Falsa | Vera |
 
-## 6.2 Congiunzione
+### 6.2 Congiunzione
 
 | $P$ | $Q$ | $P\land Q$ |
 |---|---|---|
@@ -733,7 +733,7 @@ Una tavola di verità elenca tutti i possibili valori di verità delle proposizi
 
 La congiunzione è vera solo quando entrambe le proposizioni sono vere.
 
-## 6.3 Disgiunzione inclusiva
+### 6.3 Disgiunzione inclusiva
 
 | $P$ | $Q$ | $P\lor Q$ |
 |---|---|---|
@@ -744,7 +744,7 @@ La congiunzione è vera solo quando entrambe le proposizioni sono vere.
 
 La disgiunzione è falsa solo quando entrambe le proposizioni sono false.
 
-## 6.4 Implicazione
+### 6.4 Implicazione
 
 | $P$ | $Q$ | $P\Rightarrow Q$ |
 |---|---|---|
@@ -755,7 +755,7 @@ La disgiunzione è falsa solo quando entrambe le proposizioni sono false.
 
 La sola riga in cui l’implicazione è falsa è quella in cui la premessa è vera e la conclusione è falsa.
 
-## 6.5 Doppia implicazione
+### 6.5 Doppia implicazione
 
 La doppia implicazione, o equivalenza, si indica con:
 
@@ -790,9 +790,9 @@ $$
 
 ---
 
-# 7. Insiemi
+## 7. Insiemi
 
-## 7.1 Definizione intuitiva
+### 7.1 Definizione intuitiva
 
 Il concetto di insieme non viene definito formalmente in questa lezione. Si utilizza l’idea intuitiva di una collezione di oggetti, chiamati **elementi** dell’insieme.
 
@@ -803,7 +803,7 @@ Un insieme può essere presentato principalmente in due modi:
 
 ---
 
-## 7.2 Rappresentazione per elencazione
+### 7.2 Rappresentazione per elencazione
 
 Un insieme si presenta per elencazione scrivendo tra parentesi graffe i suoi elementi.
 
@@ -836,7 +836,7 @@ L’insieme non è una lista ordinata: le ripetizioni non producono nuovi elemen
 
 ---
 
-## 7.3 Rappresentazione per proprietà
+### 7.3 Rappresentazione per proprietà
 
 Un insieme può essere definito descrivendo la proprietà verificata dai suoi elementi.
 
@@ -852,7 +852,7 @@ La scrittura indica tutti gli oggetti $s$ che soddisfano la proprietà specifica
 
 ---
 
-## 7.4 Esempio: i quadrati degli interi
+### 7.4 Esempio: i quadrati degli interi
 
 Consideriamo l’insieme dei quadrati degli interi:
 
@@ -898,9 +898,9 @@ L’insieme è formato da tutti i naturali $m$ per i quali tale proprietà è ve
 
 ---
 
-# 8. Operazioni tra insiemi
+## 8. Operazioni tra insiemi
 
-## 8.1 Appartenenza
+### 8.1 Appartenenza
 
 La scrittura
 
@@ -922,7 +922,7 @@ Essa significa che $x$ non è un elemento di $A$.
 
 ---
 
-## 8.2 Intersezione
+### 8.2 Intersezione
 
 L’intersezione di due insiemi $A$ e $B$ si indica con:
 
@@ -942,7 +942,7 @@ In altre parole, si prendono gli elementi comuni ai due insiemi.
 
 ---
 
-## 8.3 Unione
+### 8.3 Unione
 
 L’unione di $A$ e $B$ si indica con:
 
@@ -962,7 +962,7 @@ Il “oppure” è inclusivo: un elemento che appartiene a entrambi gli insiemi 
 
 ---
 
-## 8.4 Differenza tra insiemi
+### 8.4 Differenza tra insiemi
 
 La differenza tra $A$ e $B$ si indica con:
 
@@ -990,9 +990,9 @@ in generale.
 
 ---
 
-# 9. Prodotto cartesiano
+## 9. Prodotto cartesiano
 
-## 9.1 Definizione
+### 9.1 Definizione
 
 Il prodotto cartesiano di due insiemi $A$ e $B$ si indica con:
 
@@ -1026,7 +1026,7 @@ Il primo elemento della coppia proviene da $A$, il secondo da $B$.
 
 ---
 
-## 9.2 Esempio
+### 9.2 Esempio
 
 Siano:
 
@@ -1057,9 +1057,9 @@ Se $A=B$, allora si considera $A\times A$. Anche in questo caso le coppie sono o
 
 ---
 
-# 10. Insieme delle parti
+## 10. Insieme delle parti
 
-## 10.1 Definizione
+### 10.1 Definizione
 
 Dato un insieme $A$, il suo **insieme delle parti** è l’insieme di tutti i sottoinsiemi di $A$.
 
@@ -1085,7 +1085,7 @@ Appartengono sempre all’insieme delle parti:
 
 ---
 
-## 10.2 Esempio con tre elementi
+### 10.2 Esempio con tre elementi
 
 Sia:
 
@@ -1144,7 +1144,7 @@ Quindi $\mathcal{P}(A)$ ha $8$ elementi.
 
 ---
 
-## 10.3 Cardinalità dell’insieme delle parti
+### 10.3 Cardinalità dell’insieme delle parti
 
 Se $A$ ha $n$ elementi, allora $\mathcal{P}(A)$ ha:
 
@@ -1167,7 +1167,7 @@ $$
 
 ---
 
-## 10.4 Attenzione alla differenza tra elemento e sottoinsieme
+### 10.4 Attenzione alla differenza tra elemento e sottoinsieme
 
 Consideriamo ancora:
 
@@ -1208,9 +1208,9 @@ La distinzione fondamentale è tra:
 
 ---
 
-# 11. Inclusione tra insiemi
+## 11. Inclusione tra insiemi
 
-## 11.1 Definizione
+### 11.1 Definizione
 
 La relazione di inclusione si indica con:
 
@@ -1244,7 +1244,7 @@ La prima è una relazione tra un elemento e un insieme; la seconda è una relazi
 
 ---
 
-## 11.2 L’insieme vuoto
+### 11.2 L’insieme vuoto
 
 L’insieme vuoto è indicato con:
 
@@ -1301,7 +1301,7 @@ L’insieme delle parti dell’insieme vuoto ha un solo elemento: l’insieme vu
 
 ---
 
-## 11.3 Notazioni ambigue per l’inclusione
+### 11.3 Notazioni ambigue per l’inclusione
 
 È opportuno usare notazioni non ambigue:
 
@@ -1329,7 +1329,7 @@ quando la si esclude.
 
 ---
 
-# 12. Convenzioni sui numeri naturali
+## 12. Convenzioni sui numeri naturali
 
 La definizione dell’insieme dei numeri naturali può variare:
 

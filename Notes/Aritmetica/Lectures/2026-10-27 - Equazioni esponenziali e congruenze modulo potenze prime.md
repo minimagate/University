@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-27
+date: '2026-10-27'
 title: Equazioni esponenziali e congruenze modulo potenze prime
-source_transcript: _transcripts/Aritmetica/2026-10-27 - Equazioni esponenziali e
-  congruenze modulo potenze prime.md
+source_transcript: _transcripts/Aritmetica/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze
+  prime.md
 source_hash: sha256:ef6d913ea121163e2010d5dae761a938686332fd9dd0ebb316b2bcb99fbc9055
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-27T22:03:44.980Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-27T22:03:44.980Z'
 ---
 
 # Equazioni esponenziali e congruenze modulo potenze prime
@@ -396,7 +396,7 @@ $$
 
 ---
 
-# 7. Sistema di congruenze con moduli non necessariamente coprimi
+## 7. Sistema di congruenze con moduli non necessariamente coprimi
 
 Il teorema cinese del resto nella forma usuale richiede moduli coprimi. La versione generale considera il sistema
 
@@ -413,7 +413,7 @@ $$
 d=\gcd(m,n).
 $$
 
-## Teorema cinese del resto generalizzato
+### Teorema cinese del resto generalizzato
 
 Il sistema è risolvibile se e solo se
 
@@ -429,7 +429,7 @@ $$
 \frac{mn}{\gcd(m,n)}.
 $$
 
-### Dimostrazione della condizione di compatibilità
+#### Dimostrazione della condizione di compatibilità
 
 Scriviamo la prima congruenza come
 
@@ -491,7 +491,7 @@ Nel caso particolare $\gcd(m,n)=1$, la condizione è sempre verificata e si recu
 
 ---
 
-# 8. Attenzione alla cancellazione nelle congruenze
+## 8. Attenzione alla cancellazione nelle congruenze
 
 Nelle congruenze non si può cancellare automaticamente un fattore. Se
 
@@ -523,7 +523,7 @@ La cancellazione è invece valida nei campi, ad esempio modulo un numero primo $
 
 ---
 
-# 9. Principio di annullamento modulo un primo
+## 9. Principio di annullamento modulo un primo
 
 Se $p$ è primo e
 
@@ -573,7 +573,7 @@ non si può concludere automaticamente che uno dei due fattori sia nullo modulo 
 
 ---
 
-## 10. Esempio: $x(x-1)\equiv0\pmod4$
+### 10. Esempio: $x(x-1)\equiv0\pmod4$
 
 Consideriamo
 
@@ -602,7 +602,7 @@ Il ragionamento tramite il principio di annullamento è valido modulo $p$, ma de
 
 ---
 
-# 11. Equazioni quadratiche modulo un primo
+## 11. Equazioni quadratiche modulo un primo
 
 Consideriamo una congruenza quadratica
 
@@ -634,13 +634,13 @@ $$
 
 Se $\Delta$ non è un quadrato modulo $p$, la congruenza non ha soluzioni.
 
-## Caso $p=2$
+### Caso $p=2$
 
 Quando il modulo è $2$, non si può usare direttamente la formula che richiede la divisione per $2$. In questo caso si controllano direttamente le classi modulo $2$.
 
 ---
 
-## 12. Esempio: congruenza modulo $5$
+### 12. Esempio: congruenza modulo $5$
 
 Consideriamo
 
@@ -678,7 +678,7 @@ $$
 
 ---
 
-## 13. Esempio: una congruenza senza soluzioni modulo $11$
+### 13. Esempio: una congruenza senza soluzioni modulo $11$
 
 Consideriamo
 
@@ -737,7 +737,7 @@ Poiché $2$ non appartiene a questo insieme, la congruenza non ha soluzioni modu
 
 ---
 
-# 14. Passaggio da modulo $p$ a modulo $p^2$
+## 14. Passaggio da modulo $p$ a modulo $p^2$
 
 Una soluzione modulo $p$ non è automaticamente una soluzione modulo $p^2$. Se
 
@@ -829,7 +829,7 @@ Questo è il meccanismo alla base del sollevamento delle soluzioni alle potenze 
 
 ---
 
-## 15. Forma generale del sollevamento
+### 15. Forma generale del sollevamento
 
 Per un polinomio
 
@@ -883,7 +883,7 @@ Se una soluzione non può essere sollevata già da modulo $p$ a modulo $p^2$, no
 
 ---
 
-# 16. Strategia generale per problemi modulo potenze prime
+## 16. Strategia generale per problemi modulo potenze prime
 
 Quando compare un modulo fattorizzabile o una potenza di primo, è utile procedere nel seguente ordine:
 

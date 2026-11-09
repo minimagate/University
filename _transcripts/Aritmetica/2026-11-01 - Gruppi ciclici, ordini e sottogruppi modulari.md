@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-11-01
+date: '2026-11-01'
 title: Gruppi ciclici, ordini e sottogruppi modulari
-summary: La lezione introduce i gruppi ciclici, gli elementi generatori e
-  l’ordine di un elemento, mostrando che ogni sottogruppo di un gruppo ciclico è
-  ciclico. Vengono studiati esempi nei gruppi di classi modulo n, l’ordine di
-  una potenza tramite il massimo comune divisore, il teorema di Eulero e alcune
-  applicazioni alle congruenze.
+summary: La lezione introduce i gruppi ciclici, gli elementi generatori e l’ordine di un elemento, mostrando
+  che ogni sottogruppo di un gruppo ciclico è ciclico. Vengono studiati esempi nei gruppi di classi modulo
+  n, l’ordine di una potenza tramite il massimo comune divisore, il teorema di Eulero e alcune applicazioni
+  alle congruenze.
 source_audio: _audio/Aritmetica/New Recording 84.m4a
 duration_seconds: 6163
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-11-01T08:04:54.198Z
+transcribed_at: '2026-11-01T08:04:54.198Z'
+study_note: Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md
+source_audio_status: missing
+study_note_date: '2026-11-01'
 ---
 
 # Gruppi ciclici, ordini e sottogruppi modulari

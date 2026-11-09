@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-09-25
+date: '2026-09-25'
 title: Stati, algoritmi e fondamenti della logica formale
-source_transcript: _transcripts/Fondamenti di Programmazione/2026-09-25 - Stati,
-  algoritmi e fondamenti della logica formale.md
+source_transcript: _transcripts/Fondamenti di Programmazione/2026-09-25 - Stati, algoritmi e fondamenti
+  della logica formale.md
 source_hash: sha256:232fff73d178b953c16fac63a878142ddce6b59d11a15f510cff88e5d24b4483
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-25T19:33:38.894Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-25T19:33:38.894Z'
 ---
 
 # Stati, algoritmi e fondamenti della logica formale

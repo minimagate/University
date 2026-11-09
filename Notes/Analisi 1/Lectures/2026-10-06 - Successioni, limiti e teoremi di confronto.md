@@ -1,11 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-06
+date: '2026-10-06'
 title: Successioni, limiti e teoremi di confronto
 source_files:
-  - AM1_26_L011.pdf
-  - AM1_26_L012.pdf
+- AM1_26_L011.pdf
+- AM1_26_L012.pdf
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Successioni, limiti e teoremi di confronto

@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-11-08
+date: '2026-11-08'
 title: Omomorfismi, nuclei e prodotti diretti di gruppi
-source_transcript: _transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e
-  prodotti diretti di gruppi.md
+source_transcript: _transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md
 source_hash: sha256:30598f18406808a4d74c1e2ca6821bd1f3caf147ba9cb457ff5de118507d34fc
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-11-08T13:01:01.737Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-11-08T13:01:01.737Z'
 ---
 
 # Omomorfismi, nuclei e prodotti diretti di gruppi
@@ -162,7 +161,7 @@ $$
 
 ---
 
-# 3. Omomorfismi di gruppi
+## 3. Omomorfismi di gruppi
 
 Siano $(G,\cdot)$ e $(H,*)$ gruppi. Un’applicazione
 
@@ -209,9 +208,9 @@ L’isomorfismo non identifica letteralmente gli elementi dei due gruppi: identi
 
 ---
 
-## 4. Proprietà fondamentali degli omomorfismi
+### 4. Proprietà fondamentali degli omomorfismi
 
-### 4.1 L’identità viene mandata nell’identità
+#### 4.1 L’identità viene mandata nell’identità
 
 Sia $e_G$ l’identità di $G$ ed $e_H$ l’identità di $H$. Allora
 
@@ -237,7 +236,7 @@ La cancellazione è lecita perché ogni gruppo possiede inversi. Per esempio, da
 
 > Attenzione: $\mathbb{Z}/n\mathbb{Z}$ è un gruppo rispetto all’addizione, non rispetto alla moltiplicazione in generale. La moltiplicazione modulo $n$ dà un gruppo soltanto restringendosi agli elementi invertibili, oppure in casi particolari.
 
-### 4.2 L’inverso dell’immagine è l’immagine dell’inverso
+#### 4.2 L’inverso dell’immagine è l’immagine dell’inverso
 
 Per ogni $x\in G$ vale
 
@@ -276,7 +275,7 @@ Per $n>0$ segue dalla proprietà di omomorfismo; per $n<0$ si usa la proprietà 
 
 ---
 
-# 5. Immagini e controimmagini
+## 5. Immagini e controimmagini
 
 Sia $f\colon G\to H$ un omomorfismo e sia $K\leq G$ un sottogruppo. L’immagine di $K$ è
 
@@ -284,7 +283,7 @@ $$
 f(K)=\{f(x)\mid x\in K\}.
 $$
 
-## Proposizione
+### Proposizione
 
 L’immagine di un sottogruppo tramite un omomorfismo è un sottogruppo del codominio:
 
@@ -294,7 +293,7 @@ K\leq G
 f(K)\leq H.
 $$
 
-### Dimostrazione
+#### Dimostrazione
 
 Per il criterio di sottogruppo, bisogna mostrare che $f(K)$ è non vuoto, chiuso rispetto al prodotto e rispetto agli inversi.
 
@@ -338,7 +337,7 @@ Pertanto $f(K)$ è un sottogruppo di $H$.
 
 ---
 
-## Controimmagine di un sottogruppo
+### Controimmagine di un sottogruppo
 
 Se $K\leq H$, la controimmagine di $K$ è
 
@@ -367,9 +366,9 @@ Ne segue che $xy^{-1}\in f^{-1}(K)$.
 
 ---
 
-# 6. Il nucleo di un omomorfismo
+## 6. Il nucleo di un omomorfismo
 
-## Definizione
+### Definizione
 
 Il **nucleo** di un omomorfismo $f\colon G\to H$ è la controimmagine dell’identità di $H$:
 
@@ -387,7 +386,7 @@ $$
 \ker(f)\leq G.
 $$
 
-### Esempio: il nucleo della proiezione canonica
+#### Esempio: il nucleo della proiezione canonica
 
 Per
 
@@ -421,9 +420,9 @@ Questo mostra concretamente che il nucleo non è necessariamente costituito solt
 
 ---
 
-## 7. Criterio di iniettività
+### 7. Criterio di iniettività
 
-## Teorema
+### Teorema
 
 Sia $f\colon G\to H$ un omomorfismo. Allora
 
@@ -433,7 +432,7 @@ f \text{ è iniettivo}
 \ker(f)=\{e_G\}.
 $$
 
-### Dimostrazione: direzione facile
+#### Dimostrazione: direzione facile
 
 Supponiamo che $f$ sia iniettivo. Se $x\in\ker(f)$, allora
 
@@ -459,7 +458,7 @@ $$
 \ker(f)=\{e_G\}.
 $$
 
-### Dimostrazione: direzione inversa
+#### Dimostrazione: direzione inversa
 
 Supponiamo ora che
 
@@ -517,7 +516,7 @@ Pertanto $f$ è iniettivo.
 
 ---
 
-# 8. Ordine degli elementi e omomorfismi
+## 8. Ordine degli elementi e omomorfismi
 
 Ricordiamo che l’ordine di un elemento $x\in G$ è il minimo intero positivo $n$ tale che
 
@@ -527,7 +526,7 @@ $$
 
 se tale intero esiste. Se non esiste, si dice che $x$ ha ordine infinito.
 
-## Proposizione
+### Proposizione
 
 Se $f\colon G\to H$ è un omomorfismo e $x\in G$ ha ordine finito, allora
 
@@ -537,7 +536,7 @@ $$
 \operatorname{ord}(x).
 $$
 
-### Dimostrazione
+#### Dimostrazione
 
 Sia
 
@@ -573,7 +572,7 @@ $$
 
 L’ordine può quindi diminuire, ma non aumentare.
 
-### Caso degli omomorfismi iniettivi
+#### Caso degli omomorfismi iniettivi
 
 Se $f$ è iniettivo, allora gli ordini vengono conservati:
 
@@ -597,7 +596,7 @@ $$
 
 I due ordini coincidono.
 
-### Avvertenza
+#### Avvertenza
 
 Gli elementi del nucleo non devono necessariamente avere ordine infinito o ordine particolare. L’unica cosa che li caratterizza è
 
@@ -615,7 +614,7 @@ tutti gli elementi di $n\mathbb{Z}$ appartengono al nucleo, e in $\mathbb{Z}$ ha
 
 ---
 
-# 9. Gruppi ciclici
+## 9. Gruppi ciclici
 
 Un gruppo $G$ si dice **ciclico** se esiste un elemento $g\in G$ tale che
 
@@ -629,7 +628,7 @@ L’elemento $g$ è detto generatore di $G$.
 
 A seconda dell’ordine di $g$, si distinguono due casi.
 
-## 9.1 Gruppo ciclico infinito
+### 9.1 Gruppo ciclico infinito
 
 Se $g$ ha ordine infinito, allora tutte le potenze
 
@@ -673,7 +672,7 @@ $$
 G\cong\mathbb{Z}.
 $$
 
-## 9.2 Gruppo ciclico finito
+### 9.2 Gruppo ciclico finito
 
 Se $g$ ha ordine $n$, allora
 
@@ -697,7 +696,7 @@ $$
 \varphi(\overline{k})=g^k.
 $$
 
-### Buona definizione
+#### Buona definizione
 
 Se
 
@@ -719,7 +718,7 @@ $$
 
 Quindi $\varphi$ è ben definita.
 
-### Omomorfismo
+#### Omomorfismo
 
 Si ha
 
@@ -735,11 +734,11 @@ g^kg^\ell
 \varphi(\overline{k})\varphi(\overline{\ell}).
 $$
 
-### Suriettività
+#### Suriettività
 
 Ogni elemento di $G$ è una potenza di $g$, quindi è immagine di una classe $\overline{k}$.
 
-### Iniettività
+#### Iniettività
 
 Se
 
@@ -776,7 +775,7 @@ Questo è importante perché consente di studiare tutti i gruppi ciclici dello s
 
 ---
 
-## 10. Omomorfismi determinati dall’immagine di un generatore
+### 10. Omomorfismi determinati dall’immagine di un generatore
 
 Sia $G=\langle g\rangle$ un gruppo ciclico e sia $f\colon G\to H$ un omomorfismo. Per ogni $k\in\mathbb{Z}$,
 
@@ -786,7 +785,7 @@ $$
 
 Quindi l’omomorfismo è completamente determinato dal valore $f(g)$.
 
-### Caso finito
+#### Caso finito
 
 Se $g$ ha ordine $n$, deve valere
 
@@ -824,7 +823,7 @@ La condizione $h^n=e_H$ è precisamente quella che garantisce la buona definizio
 
 ---
 
-# 11. Esempio: gruppi ciclici di radici dell’unità
+## 11. Esempio: gruppi ciclici di radici dell’unità
 
 Nel gruppo moltiplicativo dei numeri complessi non nulli, l’insieme delle radici $n$-esime dell’unità è
 
@@ -862,7 +861,7 @@ $$
 
 ---
 
-## 12. Esempio: omomorfismi da $\mathbb{Z}/4\mathbb{Z}$ a $\mathbb{Z}/3\mathbb{Z}$
+### 12. Esempio: omomorfismi da $\mathbb{Z}/4\mathbb{Z}$ a $\mathbb{Z}/3\mathbb{Z}$
 
 Un omomorfismo
 
@@ -897,7 +896,7 @@ Questo si può vedere anche dal fatto che l’immagine di un elemento di ordine 
 
 ---
 
-# 13. Prodotti diretti di gruppi
+## 13. Prodotti diretti di gruppi
 
 Siano $G_1$ e $G_2$ due gruppi. Il loro **prodotto diretto** è il prodotto cartesiano
 
@@ -917,7 +916,7 @@ $$
 
 Le operazioni utilizzate nelle due componenti sono quelle dei gruppi $G_1$ e $G_2$, che non devono necessariamente essere la stessa operazione concreta.
 
-### Verifica della struttura di gruppo
+#### Verifica della struttura di gruppo
 
 - L’identità è
   $$
@@ -960,7 +959,7 @@ $$
 
 ---
 
-## 14. Centro del prodotto diretto
+### 14. Centro del prodotto diretto
 
 Il centro di un gruppo $G$ è
 
@@ -1002,7 +1001,7 @@ $$
 
 ---
 
-# 15. Ordine di un elemento in un prodotto diretto
+## 15. Ordine di un elemento in un prodotto diretto
 
 Siano $x\in G_1$ e $y\in G_2$. Consideriamo l’elemento $(x,y)\in G_1\times G_2$.
 
@@ -1036,7 +1035,7 @@ $$
 
 Quindi $d$ deve essere simultaneamente un multiplo di $m$ e di $n$. Il minimo possibile è il minimo comune multiplo.
 
-## Teorema
+### Teorema
 
 Se $x$ e $y$ hanno ordine finito, allora
 
@@ -1046,7 +1045,7 @@ $$
 \operatorname{mcm}\bigl(\operatorname{ord}(x),\operatorname{ord}(y)\bigr).
 $$
 
-### Dimostrazione
+#### Dimostrazione
 
 Poniamo
 
@@ -1108,7 +1107,7 @@ $$
 \operatorname{mcm}(m,n).
 $$
 
-### Esempio
+#### Esempio
 
 Se $x$ ha ordine $2$ e $y$ ha ordine $3$, allora
 
@@ -1130,7 +1129,7 @@ In particolare, l’ordine di una coppia non è generalmente il prodotto degli o
 
 ---
 
-# 16. Collegamento tra prodotti e gruppi ciclici
+## 16. Collegamento tra prodotti e gruppi ciclici
 
 Il prodotto diretto di due gruppi ciclici non è sempre ciclico.
 
@@ -1184,7 +1183,7 @@ quindi la coppia formata da due generatori ha ordine pari alla cardinalità dell
 
 ---
 
-# 17. Esempi con gruppi ciclici finiti e ordini degli elementi
+## 17. Esempi con gruppi ciclici finiti e ordini degli elementi
 
 In un gruppo ciclico di ordine $n$, isomorfo a $\mathbb{Z}/n\mathbb{Z}$, l’ordine della classe $\overline{k}$ è
 
@@ -1210,7 +1209,7 @@ $$
 
 Questo permette di individuare gli elementi di un certo ordine senza controllarli uno per uno.
 
-### Esempio in $\mathbb{Z}/100\mathbb{Z}$
+#### Esempio in $\mathbb{Z}/100\mathbb{Z}$
 
 Il sottogruppo di ordine $25$ è generato da
 
@@ -1264,7 +1263,7 @@ $$
 
 ---
 
-# 18. Osservazioni conclusive sui nuclei e sugli isomorfismi
+## 18. Osservazioni conclusive sui nuclei e sugli isomorfismi
 
 Gli omomorfismi permettono di trasferire molte proprietà strutturali:
 

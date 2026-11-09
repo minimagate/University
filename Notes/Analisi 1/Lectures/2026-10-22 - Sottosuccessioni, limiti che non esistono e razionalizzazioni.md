@@ -1,12 +1,13 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-22
+date: '2026-10-22'
 title: Sottosuccessioni, limiti che non esistono e razionalizzazioni
 source_files:
-  - AM1_26_L021.pdf
-  - AM1_26_L022.pdf
-source_date: 2025-10-20
+- AM1_26_L021.pdf
+- AM1_26_L022.pdf
+source_date: '2025-10-20'
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Sottosuccessioni, limiti che non esistono e razionalizzazioni

@@ -1,8 +1,9 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-09-19
+date: '2026-09-19'
 title: Pensiero computazionale, algoritmi e modelli di calcolo
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Pensiero computazionale, algoritmi e modelli di calcolo

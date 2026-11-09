@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-22
+date: '2026-10-22'
 title: Sistemi lineari e algoritmo di eliminazione di Gauss
-summary: La lezione collega la risoluzione di un sistema lineare
-  all’appartenenza del vettore dei termini noti allo span delle colonne. Vengono
-  definite le matrici a scala, analizzate le soluzioni tramite pivot e variabili
-  libere e presentate le operazioni elementari di riga e l’algoritmo di Gauss.
-  Si discutono inoltre rango, basi, indipendenza lineare e sottospazi.
+summary: La lezione collega la risoluzione di un sistema lineare all’appartenenza del vettore dei termini
+  noti allo span delle colonne. Vengono definite le matrici a scala, analizzate le soluzioni tramite pivot
+  e variabili libere e presentate le operazioni elementari di riga e l’algoritmo di Gauss. Si discutono
+  inoltre rango, basi, indipendenza lineare e sottospazi.
 source_audio: _audio/Geometria 1/New Recording 77.m4a
 duration_seconds: 6117
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-22T11:43:04.133Z
+transcribed_at: '2026-10-22T11:43:04.133Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md
+source_audio_status: missing
+study_note_date: '2026-10-22'
 ---
 
 # Sistemi lineari e algoritmo di eliminazione di Gauss

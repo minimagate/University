@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Analisi 1
-date: 2026-10-01
+date: '2026-10-01'
 title: Funzioni trigonometriche e funzioni inverse
-summary: La lezione introduce seno, coseno e tangente tramite la circonferenza
-  trigonometrica, discutendone segni, periodicità, simmetrie e grafici. Vengono
-  definite le funzioni inverse arcoseno, arcocoseno e arcotangente, con
-  particolare attenzione a domini, codomini e composizioni. Infine si affrontano
-  immagini e controimmagini di intervalli e proprietà di parità e periodicità.
+summary: La lezione introduce seno, coseno e tangente tramite la circonferenza trigonometrica, discutendone
+  segni, periodicità, simmetrie e grafici. Vengono definite le funzioni inverse arcoseno, arcocoseno e
+  arcotangente, con particolare attenzione a domini, codomini e composizioni. Infine si affrontano immagini
+  e controimmagini di intervalli e proprietà di parità e periodicità.
 source_audio: _audio/Analisi 1/Largo Bruno Pontecorvo 2.m4a
 duration_seconds: 5802
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-01T09:16:03.524Z
+transcribed_at: '2026-10-01T09:16:03.524Z'
+study_note: Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md
+source_audio_status: missing
+study_note_date: '2026-10-01'
 ---
 
 # Funzioni trigonometriche e funzioni inverse

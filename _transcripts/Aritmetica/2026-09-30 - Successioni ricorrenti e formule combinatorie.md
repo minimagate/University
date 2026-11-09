@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-09-30
+date: '2026-09-30'
 title: Successioni ricorrenti e formule combinatorie
-summary: La lezione introduce la risoluzione delle successioni lineari omogenee
-  per ricorrenza mediante soluzioni del tipo λ^n, equazione caratteristica e
-  combinazioni lineari. Vengono inoltre presentati il teorema binomiale di
-  Newton, la cardinalità dell’insieme delle parti e il principio di
-  inclusione-esclusione, anche tramite funzioni caratteristiche e dimostrazioni
-  combinatorie.
+summary: La lezione introduce la risoluzione delle successioni lineari omogenee per ricorrenza mediante
+  soluzioni del tipo λ^n, equazione caratteristica e combinazioni lineari. Vengono inoltre presentati
+  il teorema binomiale di Newton, la cardinalità dell’insieme delle parti e il principio di inclusione-esclusione,
+  anche tramite funzioni caratteristiche e dimostrazioni combinatorie.
 source_audio: _audio/Aritmetica/Via Filippo Buonarroti 2.m4a
 duration_seconds: 5536
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-30T10:51:39.318Z
+transcribed_at: '2026-09-30T10:51:39.318Z'
+study_note: Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md
+source_audio_status: missing
+study_note_date: '2026-09-30'
 ---
 
 # Successioni ricorrenti e formule combinatorie

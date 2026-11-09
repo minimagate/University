@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-19
+date: '2026-10-19'
 title: Espressioni, comandi e triple di Hoare
 source: Lezione_09.pdf (slide 260-297)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Espressioni, comandi e triple di Hoare

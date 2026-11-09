@@ -1,27 +1,29 @@
 ---
 type: transcript
 course: Analisi 1
-date: 2026-09-30
+date: '2026-09-30'
 title: Simmetrie, monotonia e grafici delle funzioni elementari
-summary: La lezione introduce le funzioni reali, il grafico e le proprietà di
-  parità, disparità, periodicità e monotonia. Vengono analizzate potenze e
-  radici, le relazioni tra funzione e inversa, il valore assoluto e le
-  trasformazioni dei grafici. Si studia inoltre l’interpretazione grafica di
-  equazioni e disequazioni e si discutono condizioni di iniettività e
-  soggettività.
+summary: La lezione introduce le funzioni reali, il grafico e le proprietà di parità, disparità, periodicità
+  e monotonia. Vengono analizzate potenze e radici, le relazioni tra funzione e inversa, il valore assoluto
+  e le trasformazioni dei grafici. Si studia inoltre l’interpretazione grafica di equazioni e disequazioni
+  e si discutono condizioni di iniettività e suriettività.
 source_audio: _audio/Analisi 1/Largo Bruno Pontecorvo.m4a
 duration_seconds: 4807
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-30T14:04:33.004Z
+transcribed_at: '2026-09-30T14:04:33.004Z'
+study_note: Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md
+source_audio_status: missing
+study_note_date: '2026-09-30'
+metadata_corrected_at: '2026-11-09'
 ---
 
 # Simmetrie, monotonia e grafici delle funzioni elementari
 
 ## Summary
 
-La lezione introduce le funzioni reali, il grafico e le proprietà di parità, disparità, periodicità e monotonia. Vengono analizzate potenze e radici, le relazioni tra funzione e inversa, il valore assoluto e le trasformazioni dei grafici. Si studia inoltre l’interpretazione grafica di equazioni e disequazioni e si discutono condizioni di iniettività e soggettività.
+La lezione introduce le funzioni reali, il grafico e le proprietà di parità, disparità, periodicità e monotonia. Vengono analizzate potenze e radici, le relazioni tra funzione e inversa, il valore assoluto e le trasformazioni dei grafici. Si studia inoltre l’interpretazione grafica di equazioni e disequazioni e si discutono condizioni di iniettività e suriettività.
 
 ## Transcript
 

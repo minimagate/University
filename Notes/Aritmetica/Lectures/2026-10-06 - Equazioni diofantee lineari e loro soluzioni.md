@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-06
+date: '2026-10-06'
 title: Equazioni diofantee lineari e loro soluzioni
-source_transcript: _transcripts/Aritmetica/2026-10-06 - Equazioni diofantee
-  lineari e loro soluzioni.md
+source_transcript: _transcripts/Aritmetica/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md
 source_hash: sha256:b5974126edb18c3920a494932d787fdf5293b04d20bdd7fb4d3da6daba336fba
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-06T08:58:01.444Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-06T08:58:01.444Z'
 ---
 
 # Equazioni diofantee lineari e loro soluzioni

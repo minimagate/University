@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-09-23
+date: '2026-09-23'
 title: Numeri naturali, induzione e fattorizzazione
-source_transcript: _transcripts/Aritmetica/2026-09-23 - Numeri naturali,
-  induzione e fattorizzazione.md
+source_transcript: _transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md
 source_hash: sha256:bae8eb904bb68ea992cfe5c76090ed12fc96e585ed8cbe50270c1b5e0eead68d
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-23T12:13:44.649Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-23T12:13:44.649Z'
 ---
 
 # Numeri naturali, induzione e fattorizzazione
@@ -220,13 +219,13 @@ In generale, un insieme dotato di operazioni è tanto più strutturato quanto pi
 
 ---
 
-# 3. Definizione assiomatica dei numeri naturali
+## 3. Definizione assiomatica dei numeri naturali
 
 I numeri naturali possono essere introdotti intuitivamente contando, ma in matematica vengono anche caratterizzati assiomaticamente.
 
 Un assioma è un’affermazione assunta come base della teoria, senza essere dimostrata all’interno della teoria stessa.
 
-## 3.1 Elemento iniziale e successore
+### 3.1 Elemento iniziale e successore
 
 Si assume che esista un elemento iniziale, scelto convenzionalmente come $0$.
 
@@ -259,9 +258,9 @@ In termini intuitivi, ogni numero naturale si ottiene partendo da $0$ e applican
 
 ---
 
-# 4. Il principio del minimo
+## 4. Il principio del minimo
 
-## 4.1 Enunciato
+### 4.1 Enunciato
 
 Il principio del minimo, o principio del buon ordinamento, afferma che ogni sottoinsieme non vuoto dei numeri naturali possiede un elemento minimo.
 
@@ -279,7 +278,7 @@ L’elemento $m$ viene chiamato minimo di $S$.
 
 Questo principio è caratteristico dei numeri naturali e costituisce una delle ragioni per cui l’ordine dei naturali è particolarmente utile nelle dimostrazioni.
 
-## 4.2 Interpretazione intuitiva
+### 4.2 Interpretazione intuitiva
 
 Immaginiamo di rappresentare i numeri naturali come punti allineati:
 
@@ -301,13 +300,13 @@ Questa idea dipende dal fatto che i naturali hanno un punto iniziale, $0$, e son
 
 ---
 
-# 5. Principio di induzione matematica
+## 5. Principio di induzione matematica
 
 Il principio di induzione è uno strumento per dimostrare che una proprietà vale per tutti i numeri naturali, oppure per tutti i naturali a partire da un certo punto.
 
 Sia $P(n)$ una proprietà definita per $n\in\mathbb{N}$.
 
-## 5.1 Forma debole dell’induzione
+### 5.1 Forma debole dell’induzione
 
 La forma usuale dell’induzione afferma che, se:
 
@@ -333,7 +332,7 @@ $$
 
 L’ipotesi $P(n)$ viene chiamata **ipotesi induttiva**. La proprietà $P(n+1)$ è la tesi del passo induttivo.
 
-### Schema logico
+#### Schema logico
 
 Il ragionamento è analogo a una successione di tessere del domino:
 
@@ -348,7 +347,7 @@ Nel caso dei numeri naturali:
 
 È essenziale verificare entrambe le parti. Non basta dimostrare che, se la proprietà vale a un certo livello, allora vale al livello successivo: occorre anche verificare che la catena inizi effettivamente dal valore corretto.
 
-## 5.2 Esempio: somma dei primi numeri naturali
+### 5.2 Esempio: somma dei primi numeri naturali
 
 Una formula classica è
 
@@ -363,7 +362,7 @@ P(n):\qquad
 1+2+\cdots+n=\frac{n(n+1)}{2}.
 $$
 
-### Passo base
+#### Passo base
 
 Per $n=1$:
 
@@ -375,7 +374,7 @@ $$
 
 Quindi $P(1)$ è vera.
 
-### Passo induttivo
+#### Passo induttivo
 
 Supponiamo vera $P(n)$, cioè supponiamo che
 
@@ -407,7 +406,7 @@ $$
 
 Quindi $P(n+1)$ è vera. Per il principio di induzione, la formula vale per ogni $n\geq 1$.
 
-## 5.3 Importanza della scrittura formale
+### 5.3 Importanza della scrittura formale
 
 Nelle dimostrazioni per induzione occorre mantenere chiara la distinzione tra:
 
@@ -434,11 +433,11 @@ La precisione nella notazione diventa particolarmente importante quando le formu
 
 ---
 
-# 6. Dimostrazione del principio di induzione mediante il principio del minimo
+## 6. Dimostrazione del principio di induzione mediante il principio del minimo
 
 Il principio di induzione e il principio del minimo sono equivalenti: ciascuno può essere utilizzato per dimostrare l’altro.
 
-## 6.1 Dal principio del minimo all’induzione
+### 6.1 Dal principio del minimo all’induzione
 
 Supponiamo di avere una proprietà $P(n)$ definita per ogni $n\geq n_0$ e di assumere:
 
@@ -477,7 +476,7 @@ e pertanto $P(m_0)$ è vera. Ma questo contraddice il fatto che $m_0\in S$, cio�
 
 Abbiamo ottenuto una contraddizione. Quindi $S$ è vuoto e $P(n)$ è vera per ogni $n\geq n_0$.
 
-### Struttura della dimostrazione
+#### Struttura della dimostrazione
 
 La dimostrazione segue questo schema:
 
@@ -488,7 +487,7 @@ La dimostrazione segue questo schema:
 5. si usa il passo induttivo per dimostrare che neppure il minimo controesempio è un controesempio;
 6. si ottiene una contraddizione.
 
-## 6.2 Dall’induzione al principio del minimo
+### 6.2 Dall’induzione al principio del minimo
 
 Supponiamo di assumere il principio di induzione e consideriamo un insieme non vuoto
 
@@ -525,11 +524,11 @@ Le due proprietà sono dunque equivalenti:
 
 ---
 
-# 7. Errori nell’induzione: il passo base
+## 7. Errori nell’induzione: il passo base
 
 Il passo base non è una formalità trascurabile. Deve essere verificato nel punto corretto, cioè nel primo indice a partire dal quale si vuole dimostrare la proprietà.
 
-## 7.1 Un esempio fallace
+### 7.1 Un esempio fallace
 
 Si consideri l’affermazione scherzosa secondo cui:
 
@@ -562,9 +561,9 @@ Questo esempio mostra che bisogna sempre:
 
 ---
 
-# 8. Induzione forte
+## 8. Induzione forte
 
-## 8.1 Enunciato
+### 8.1 Enunciato
 
 La forma forte dell’induzione, detta anche induzione completa, è la seguente.
 
@@ -599,7 +598,7 @@ $$
 
 La differenza rispetto all’induzione debole è che, per dimostrare $P(n)$, si possono usare tutte le proprietà precedenti, non soltanto $P(n-1)$.
 
-## 8.2 Interpretazione con le tessere del domino
+### 8.2 Interpretazione con le tessere del domino
 
 Nell’induzione debole, ogni tessera fa cadere direttamente la successiva.
 
@@ -611,7 +610,7 @@ $$
 
 L’induzione forte è particolarmente utile quando il problema relativo a $n$ dipende da numeri molto più piccoli di $n$, non necessariamente dal solo predecessore $n-1$.
 
-## 8.3 Equivalenza tra induzione debole e forte
+### 8.3 Equivalenza tra induzione debole e forte
 
 Le due forme di induzione sono equivalenti: ogni proprietà dimostrabile con una forma è dimostrabile anche con l’altra.
 
@@ -628,7 +627,7 @@ La proprietà $Q(n)$ afferma quindi che tutte le proprietà fino al livello $n$ 
 
 Si procede per induzione debole su $Q(n)$.
 
-### Passo base
+#### Passo base
 
 Per $n=n_0$,
 
@@ -638,7 +637,7 @@ $$
 
 coincide con $P(n_0)$, che è vera per ipotesi.
 
-### Passo induttivo
+#### Passo induttivo
 
 Supponiamo vera $Q(n)$. Questo significa che
 
@@ -654,9 +653,9 @@ La tecnica consiste quindi nel sostituire la proprietà originaria con una propr
 
 ---
 
-# 9. Teorema fondamentale dell’aritmetica
+## 9. Teorema fondamentale dell’aritmetica
 
-## 9.1 Numeri primi e numeri composti
+### 9.1 Numeri primi e numeri composti
 
 Un numero naturale $p\geq 2$ è detto **primo** se i suoi soli divisori naturali sono $1$ e $p$.
 
@@ -672,7 +671,7 @@ $$
 
 Il numero $1$ non è considerato primo. La condizione $n\geq 2$ nella definizione dei numeri primi è quindi essenziale.
 
-## 9.2 Enunciato
+### 9.2 Enunciato
 
 Il teorema fondamentale dell’aritmetica afferma che ogni numero naturale $n\geq 2$ può essere scritto come prodotto di numeri primi.
 
@@ -712,7 +711,7 @@ Nella lezione viene dimostrata inizialmente la parte di **esistenza** della fatt
 
 ---
 
-# 10. Dimostrazione dell’esistenza della fattorizzazione mediante induzione forte
+## 10. Dimostrazione dell’esistenza della fattorizzazione mediante induzione forte
 
 Definiamo la proprietà
 
@@ -723,7 +722,7 @@ $$
 
 Vogliamo dimostrare che $P(n)$ è vera per ogni $n\geq 2$.
 
-## 10.1 Passo base
+### 10.1 Passo base
 
 Per $n=2$, il numero $2$ è primo. È quindi già una fattorizzazione in numeri primi, costituita da un solo fattore:
 
@@ -733,7 +732,7 @@ $$
 
 Dunque $P(2)$ è vera.
 
-## 10.2 Passo induttivo
+### 10.2 Passo induttivo
 
 Supponiamo che $n>2$ e che tutte le proprietà precedenti siano vere:
 
@@ -745,11 +744,11 @@ Dobbiamo dimostrare $P(n)$.
 
 Si distinguono due casi.
 
-### Caso 1: $n$ è primo
+#### Caso 1: $n$ è primo
 
 Se $n$ è primo, allora $n$ è già una fattorizzazione in numeri primi. Pertanto $P(n)$ è vera.
 
-### Caso 2: $n$ è composto
+#### Caso 2: $n$ è composto
 
 Se $n$ non è primo, allora esistono $a,b\in\mathbb{N}$ tali che
 
@@ -795,7 +794,7 @@ Abbiamo dimostrato $P(n)$ in entrambi i casi. Per induzione forte, ogni numero n
 
 ---
 
-# 11. Perché è naturale usare l’induzione forte
+## 11. Perché è naturale usare l’induzione forte
 
 La dimostrazione precedente non utilizza necessariamente la fattorizzazione di $n-1$. Se $n$ è composto, infatti, si scrive
 
@@ -817,7 +816,7 @@ Sapere che $n-1$ è fattorizzabile non dà direttamente informazioni sufficienti
 
 Per questo l’induzione forte è la forma più naturale per il teorema di fattorizzazione.
 
-## 11.1 Dimostrazione con induzione debole
+### 11.1 Dimostrazione con induzione debole
 
 Poiché induzione debole e induzione forte sono equivalenti, il teorema si potrebbe dimostrare anche usando l’induzione debole, ma occorrerebbe cambiare proprietà.
 
@@ -835,11 +834,11 @@ Q(n):\qquad
 \text{ è fattorizzabile in numeri primi}.
 $$
 
-### Passo base
+#### Passo base
 
 Per $n=2$, $Q(2)$ equivale alla fattorizzazione di $2$, che è vera.
 
-### Passo induttivo
+#### Passo induttivo
 
 Supponiamo vera $Q(n)$. Allora tutti i numeri
 
@@ -866,9 +865,9 @@ La proprietà cumulativa $Q(n)$ contiene precisamente tutte le informazioni che,
 
 ---
 
-# 12. Osservazioni metodologiche
+## 12. Osservazioni metodologiche
 
-## 12.1 Scelta dell’indice iniziale
+### 12.1 Scelta dell’indice iniziale
 
 Il valore iniziale $n_0$ deve essere scelto in modo coerente con:
 
@@ -904,7 +903,7 @@ $$
 
 Non è necessario che il dominio della formula inizi esattamente da $n_0$: è sufficiente che la proprietà sia definita nel punto iniziale e in tutti i punti successivi considerati.
 
-## 12.2 Il passo base e il passo induttivo hanno ruoli distinti
+### 12.2 Il passo base e il passo induttivo hanno ruoli distinti
 
 Il passo base dimostra che la proprietà parte effettivamente.
 
@@ -912,7 +911,7 @@ Il passo induttivo dimostra che la proprietà si conserva passando da un livello
 
 Trascurare il passo base può produrre dimostrazioni apparentemente convincenti ma errate. L’esempio degli studenti con gli occhi dello stesso colore mostra che un passaggio induttivo formalmente plausibile può fallire proprio al primo livello.
 
-## 12.3 Scelta della forma di induzione
+### 12.3 Scelta della forma di induzione
 
 È opportuno scegliere la forma più adatta alla struttura del problema:
 

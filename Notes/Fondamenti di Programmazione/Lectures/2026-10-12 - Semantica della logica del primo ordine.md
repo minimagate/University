@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-12
+date: '2026-10-12'
 title: Semantica della logica del primo ordine
 source: Lezione_07.pdf (slide 201-235)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Semantica della logica del primo ordine

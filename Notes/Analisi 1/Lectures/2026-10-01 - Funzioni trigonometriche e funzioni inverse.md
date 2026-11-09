@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-01
+date: '2026-10-01'
 title: Funzioni trigonometriche e funzioni inverse
-source_transcript: _transcripts/Analisi 1/2026-10-01 - Funzioni trigonometriche
-  e funzioni inverse.md
+source_transcript: _transcripts/Analisi 1/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md
 source_hash: sha256:f219828e05ace401a5b9b6213189b4ad834c199c0acc9df76dbdc4d2651b6d00
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-01T09:17:05.676Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-01T09:17:05.676Z'
 ---
 
 # Funzioni trigonometriche e funzioni inverse
@@ -254,11 +253,11 @@ e si ripete con periodo $\pi$.
 
 ---
 
-# 6. Funzioni inverse trigonometriche
+## 6. Funzioni inverse trigonometriche
 
 Una funzione periodica non è iniettiva su tutto il proprio dominio. Per poterla invertire si restringe il dominio a un intervallo in cui diventa iniettiva e, contemporaneamente, si conserva l’immagine desiderata.
 
-## 6.1. Arcoseno
+### 6.1. Arcoseno
 
 Si considera la restrizione del seno
 
@@ -296,7 +295,7 @@ $$
 
 Esempio: $\arcsin(0{,}5)$ è l’angolo compreso tra $-\frac{\pi}{2}$ e $\frac{\pi}{2}$ il cui seno vale $0{,}5$.
 
-## 6.2. Arcocoseno
+### 6.2. Arcocoseno
 
 Si considera la restrizione del coseno
 
@@ -324,7 +323,7 @@ $$
 
 In particolare, l’arcocoseno non restituisce mai valori negativi.
 
-## 6.3. Arcotangente
+### 6.3. Arcotangente
 
 Si considera la restrizione della tangente
 
@@ -349,7 +348,7 @@ Gli estremi non sono inclusi perché la tangente non assume mai valori finiti in
 
 ---
 
-# 7. Grafici delle funzioni inverse
+## 7. Grafici delle funzioni inverse
 
 Il grafico della funzione inversa si ottiene riflettendo il grafico della funzione rispetto alla retta
 
@@ -371,9 +370,9 @@ $$
 
 ---
 
-# 8. Interpretazione geometrica delle funzioni inverse
+## 8. Interpretazione geometrica delle funzioni inverse
 
-## 8.1. Interpretazione di $\arcsin\lambda$
+### 8.1. Interpretazione di $\arcsin\lambda$
 
 Per calcolare $\arcsin\lambda$, con $\lambda\in[-1,1]$, si considera la retta orizzontale
 
@@ -391,7 +390,7 @@ L’angolo associato a quel punto è $\arcsin\lambda$.
 
 L’altra intersezione non viene scelta perché corrisponde a un angolo esterno all’intervallo di definizione dell’arcoseno.
 
-## 8.2. Interpretazione di $\arccos\lambda$
+### 8.2. Interpretazione di $\arccos\lambda$
 
 Per calcolare $\arccos\lambda$, con $\lambda\in[-1,1]$, si considera la retta verticale
 
@@ -407,7 +406,7 @@ $$
 
 L’angolo corrispondente è $\arccos\lambda$.
 
-## 8.3. Interpretazione di $\arctan\lambda$
+### 8.3. Interpretazione di $\arctan\lambda$
 
 Per calcolare $\arctan\lambda$, con $\lambda\in\mathbb{R}$, si considera la retta orizzontale
 
@@ -425,7 +424,7 @@ L’angolo individuato è $\arctan\lambda$.
 
 ---
 
-# 9. Attenzione alle composizioni con le inverse
+## 9. Attenzione alle composizioni con le inverse
 
 Se $f\colon A\to B$ è biiettiva e $g=f^{-1}\colon B\to A$, allora
 
@@ -441,7 +440,7 @@ $$
 
 Le due identità valgono quindi su insiemi diversi: una sul dominio di $f$, l’altra sul dominio di $g$.
 
-## 9.1. Seno e arcoseno
+### 9.1. Seno e arcoseno
 
 Poiché il seno è stato ristretto a
 
@@ -468,7 +467,7 @@ $$
 
 Non è corretto scrivere $\arcsin(\sin x)=x$ per ogni $x\in\mathbb{R}$: l’arcoseno restituisce sempre un valore nel suo intervallo principale.
 
-## 9.2. Coseno e arcocoseno
+### 9.2. Coseno e arcocoseno
 
 Poiché il coseno è stato ristretto a $[0,\pi]$,
 
@@ -488,7 +487,7 @@ $$
 
 Anche qui, fuori dall’intervallo $[0,\pi]$, la semplificazione $\arccos(\cos x)=x$ non è generalmente valida.
 
-## 9.3. Tangente e arcotangente
+### 9.3. Tangente e arcotangente
 
 Poiché la tangente è stata ristretta a $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$,
 
@@ -511,9 +510,9 @@ Il dominio corretto è fondamentale: le formule di semplificazione con le invers
 
 ---
 
-# 10. Esempi di composizioni
+## 10. Esempi di composizioni
 
-## 10.1. $\arcsin(\sin 2)$
+### 10.1. $\arcsin(\sin 2)$
 
 L’angolo $2$ non appartiene a $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$, quindi non si può semplificare direttamente.
 
@@ -529,7 +528,7 @@ $$
 \sin(\pi-2)=\sin 2.
 $$
 
-## 10.2. $\arccos(\cos 4)$
+### 10.2. $\arccos(\cos 4)$
 
 L’angolo $4$ non appartiene a $[0,\pi]$. Dopo aver percorso un giro completo, si può rappresentare lo stesso punto mediante l’angolo
 
@@ -545,7 +544,7 @@ $$
 
 Il risultato non è $4$, perché l’arcocoseno restituisce soltanto valori in $[0,\pi]$.
 
-## 10.3. Dominio di $\arccos(\cos x)$ e di $\cos(\arccos x)$
+### 10.3. Dominio di $\arccos(\cos x)$ e di $\cos(\arccos x)$
 
 Le due composizioni hanno comportamenti diversi:
 
@@ -556,7 +555,7 @@ Quindi una composizione può essere definita anche quando non si semplifica nell
 
 ---
 
-# 11. Funzioni periodiche ottenute per composizione
+## 11. Funzioni periodiche ottenute per composizione
 
 Se la funzione interna di una composizione è periodica, allora anche la composizione è periodica.
 
@@ -596,9 +595,9 @@ non hanno la stessa struttura: qui $x^2$ o $x^3$ sono dentro la funzione seno e 
 
 ---
 
-# 12. Identità utili con seno e coseno inversi
+## 12. Identità utili con seno e coseno inversi
 
-## 12.1. Somma di arcoseno e arcocoseno
+### 12.1. Somma di arcoseno e arcocoseno
 
 Per ogni $x\in[-1,1]$ vale
 
@@ -608,7 +607,7 @@ $$
 
 Infatti, se $\alpha=\arcsin x$, allora $\alpha\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ e l’angolo complementare $\frac{\pi}{2}-\alpha$ appartiene a $[0,\pi]$ e ha coseno uguale a $x$.
 
-## 12.2. Calcolo di $\sin(\arccos x)$
+### 12.2. Calcolo di $\sin(\arccos x)$
 
 Sia
 
@@ -662,7 +661,7 @@ perché $\arcsin x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ e in tale interv
 
 ---
 
-# 13. Identità con l’arcotangente
+## 13. Identità con l’arcotangente
 
 Per $x>0$ vale
 
@@ -670,7 +669,7 @@ $$
 \arctan x+\arctan\frac{1}{x}=\frac{\pi}{2}.
 $$
 
-### Dimostrazione
+#### Dimostrazione
 
 Poniamo
 
@@ -747,7 +746,7 @@ Il punto delicato della dimostrazione è verificare che l’angolo trovato appar
 
 ---
 
-# 14. Composizione $\arccos(\sin x)$
+## 14. Composizione $\arccos(\sin x)$
 
 La funzione
 
@@ -785,7 +784,7 @@ $$
 
 ---
 
-# 15. Immagine e controimmagine
+## 15. Immagine e controimmagine
 
 Sia
 
@@ -795,7 +794,7 @@ $$
 
 una funzione.
 
-## 15.1. Immagine di un insieme
+### 15.1. Immagine di un insieme
 
 Dato un sottoinsieme $E\subseteq A$, si definisce l’immagine di $E$ mediante $f$ come
 
@@ -813,7 +812,7 @@ Graficamente:
 
 Non basta sostituire gli estremi dell’intervallo: bisogna determinare tutti i valori assunti dalla funzione nel tratto considerato, tenendo conto di massimi e minimi interni.
 
-## 15.2. Controimmagine di un insieme
+### 15.2. Controimmagine di un insieme
 
 Dato un sottoinsieme $E\subseteq B$, si definisce la controimmagine di $E$ come
 
@@ -841,7 +840,7 @@ Il significato della notazione deve essere dedotto dal contesto.
 
 ---
 
-# 16. Esempio di immagine e controimmagine
+## 16. Esempio di immagine e controimmagine
 
 Consideriamo
 
@@ -869,7 +868,7 @@ $$
 f(0)=4.
 $$
 
-## 16.1. Calcolo dell’immagine $f([1,4])$
+### 16.1. Calcolo dell’immagine $f([1,4])$
 
 Si considera l’intervallo in partenza $[1,4]$.
 
@@ -887,7 +886,7 @@ $$
 
 Non è corretto calcolare l’immagine di un intervallo sostituendo soltanto gli estremi: in questo caso $f(1)=3$ e $f(4)=12$, ma l’immagine non è $[3,12]$, perché la funzione assume anche valori tra $0$ e $3$.
 
-## 16.2. Calcolo della controimmagine $f^{-1}([-2,1])$
+### 16.2. Calcolo della controimmagine $f^{-1}([-2,1])$
 
 Cerchiamo tutti gli $x$ tali che
 
@@ -933,20 +932,20 @@ La controimmagine è dunque unione di due intervalli, perché la funzione non è
 
 ---
 
-# 17. Strategie grafiche per gli esercizi
+## 17. Strategie grafiche per gli esercizi
 
-## Iniettività
+### Iniettività
 
 Per verificare graficamente se una funzione è iniettiva si usa il criterio delle rette orizzontali:
 
 - se ogni retta orizzontale interseca il grafico al massimo una volta, la funzione è iniettiva;
 - se esiste una retta orizzontale che interseca il grafico in più punti, la funzione non è iniettiva.
 
-## Suriettività
+### Suriettività
 
 La suriettività dipende dal codominio dichiarato. Graficamente, bisogna verificare che ogni valore del codominio sia assunto dalla funzione, cioè che ogni retta orizzontale corrispondente a un valore del codominio intersechi il grafico.
 
-## Numero di soluzioni di un’equazione
+### Numero di soluzioni di un’equazione
 
 Per determinare il numero di soluzioni di
 
@@ -962,7 +961,7 @@ $$
 
 Variando $\lambda$, il numero di intersezioni può cambiare.
 
-## Funzioni pari e dispari
+### Funzioni pari e dispari
 
 Per verificare che una funzione sia pari o dispari è generalmente sufficiente un calcolo simbolico:
 

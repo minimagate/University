@@ -1,0 +1,1617 @@
+[
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-09-23",
+      "title": "Proposizioni, quantificatori e prime operazioni tra insiemi",
+      "source_transcript": "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+      "source_hash": "sha256:5192cae4771ead651e830de0d25628e474de93d32564f11ce4a15e6904f1d9a1",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-23 14:13:25.396000+00:00"
+    },
+    "sha": "c419a48a90b26b0c4bd20a37ed9eba7458f766d637f4448849b9eb4e1820e719"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-09-24",
+      "title": "Funzioni, composizione e principio d’induzione",
+      "source_transcript": "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+      "source_hash": "sha256:46df7e14e14bf379b34dceae4d7f4844f65cdcb90f65d7c1ceb0baa246c6a7d7",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-24 09:13:47.266000+00:00"
+    },
+    "sha": "564e48e9d254461496a82d7b7451ea838fdf65150d157661f3560a2b4d46afe7"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-09-28",
+      "title": "Assiomi dei reali e proprietà di completezza",
+      "source_transcript": "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+      "source_hash": "sha256:7f491d3e4a1ae47dcc827230e1efaae0c6685f2af0f7125cdb84895c273cd75c",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-28 12:31:50.721000+00:00"
+    },
+    "sha": "19c2b1e05e338660ebf0ab16c899c10606c8df2ed49767f588dd2647f89c5544"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-09-30",
+      "title": "Simmetrie, monotonia e grafici delle funzioni elementari",
+      "source_transcript": "_transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+      "source_hash": "sha256:acf8c406bfb075458f303e5843955f72b3da79f833a8e7ca99aeef789d8b0090",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-30 14:07:17.430000+00:00"
+    },
+    "sha": "3358dc871ce95f9e72e33750d112579c8ff0dbcba53e981bf3edba88e67583f7"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-01",
+      "title": "Funzioni trigonometriche e funzioni inverse",
+      "source_transcript": "_transcripts/Analisi 1/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+      "source_hash": "sha256:f219828e05ace401a5b9b6213189b4ad834c199c0acc9df76dbdc4d2651b6d00",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-01 09:17:05.676000+00:00"
+    },
+    "sha": "ccffb9e6d1c7f05128e3ac8fe4fa329b528ca8c628c48f5fd849e0b3ab1a8a88"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-06 - Successioni, limiti e teoremi di confronto.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-06",
+      "title": "Successioni, limiti e teoremi di confronto",
+      "source_files": [
+        "AM1_26_L011.pdf",
+        "AM1_26_L012.pdf"
+      ]
+    },
+    "sha": "393c91438f510fe558887de9e406cee0116e9311a5ce57c457036c58976c8439"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-07 - Successioni monotone, numero di Nepero e teoremi algebrici sui limiti.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-07",
+      "title": "Successioni monotone, numero di Nepero e teoremi algebrici sui limiti",
+      "source_files": [
+        "AM1_26_L013.pdf",
+        "AM1_26_L014.pdf"
+      ]
+    },
+    "sha": "b58b84272ddcd752cda3c0ab5921aa035a1dfb04d64a0c09479411105b731a3d"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-08 - Criteri della radice e del rapporto e gerarchia degli infiniti.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-08",
+      "title": "Criteri della radice e del rapporto e gerarchia degli infiniti",
+      "source_files": [
+        "AM1_26_L015.pdf",
+        "AM1_26_L016.pdf"
+      ]
+    },
+    "sha": "129347b036942134b6bf4e21780710e2b3c81e84779ee1f93d9ae1a9ff01ba08"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-12 - Limiti di funzioni, continuità e limiti notevoli.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-12",
+      "title": "Limiti di funzioni, continuità e limiti notevoli",
+      "source_files": [
+        "AM1_26_L017.pdf",
+        "AM1_26_L018.pdf"
+      ]
+    },
+    "sha": "5c0485c92f3b89b1b203faf1fa20856a3ed3f3d4aa185291a68c92f20229872c"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-21 - Dimostrazioni dei limiti notevoli e applicazioni.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-21",
+      "title": "Dimostrazioni dei limiti notevoli e applicazioni",
+      "source_files": [
+        "AM1_26_L019.pdf",
+        "AM1_26_L020.pdf"
+      ],
+      "source_date": "2025-10-15"
+    },
+    "sha": "46c662e1ee0b46b13cf4bc30c9bd9ffc5162babcd55f3d9b76de36d9ba481d4f"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-22",
+      "title": "Sottosuccessioni, limiti che non esistono e razionalizzazioni",
+      "source_files": [
+        "AM1_26_L021.pdf",
+        "AM1_26_L022.pdf"
+      ],
+      "source_date": "2025-10-20"
+    },
+    "sha": "6466fcf8412c3bc79c68b3c60ca6130f4a0d1858eee127c9d0d9613488e8041b"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-26 - Simboli di Landau, o piccolo e sviluppi dei limiti notevoli.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-26",
+      "title": "Simboli di Landau, o piccolo e sviluppi dei limiti notevoli",
+      "source_files": [
+        "AM1_26_L023.pdf",
+        "AM1_26_L024.pdf"
+      ],
+      "source_date": "2025-10-21"
+    },
+    "sha": "c3e8872a4ea11612da057a6b66098e8a1d42de437b616dd2c5092c07246186b9"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-27 - Derivate, differenziabilità e regole di derivazione.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-27",
+      "title": "Derivate, differenziabilità e regole di derivazione",
+      "source_files": [
+        "AM1_26_L025.pdf",
+        "AM1_26_L026.pdf"
+      ],
+      "source_date": "2025-10-22"
+    },
+    "sha": "e79cf40f36c11e1c6f421de60474bab99f4c55a5fac1dd7dfa46c4a677a59d27"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-28 - Operazioni con Taylor e parti principali.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-28",
+      "title": "Operazioni con Taylor e parti principali",
+      "source_files": [
+        "AM1_26_L029.pdf",
+        "AM1_26_L030.pdf"
+      ],
+      "source_date": "2025-10-28"
+    },
+    "sha": "ec97c826306958ae2e71a6ef886ca50ceb736f37ac18e132ab877643eb355dad"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-28 - Teorema di De L'Hôpital e sviluppi di Taylor.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-28",
+      "title": "Teorema di De L'Hôpital e sviluppi di Taylor",
+      "source_files": [
+        "AM1_26_L027.pdf",
+        "AM1_26_L028.pdf"
+      ],
+      "source_date": "2025-10-27"
+    },
+    "sha": "75c4b6ecea3874b4952de9c2a6407b7bbebde85c7bce0846b01f1385bf00472f"
+  },
+  {
+    "path": "Notes/Analisi 1/Lectures/2026-10-29 - Funzioni iperboliche ed esercizi sugli sviluppi di Taylor.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Analisi 1",
+      "date": "2026-10-29",
+      "title": "Funzioni iperboliche ed esercizi sugli sviluppi di Taylor",
+      "source_files": [
+        "AM1_26_L031.pdf",
+        "AM1_26_L032.pdf"
+      ],
+      "source_date": "2025-10-29"
+    },
+    "sha": "b3d24bb9e7e9a873a26ad75ef856cb0cb6642cc8faf77ca7f3a5b039f02b12b1"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-09-23",
+      "title": "Numeri naturali, induzione e fattorizzazione",
+      "source_transcript": "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+      "source_hash": "sha256:bae8eb904bb68ea992cfe5c76090ed12fc96e585ed8cbe50270c1b5e0eead68d",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-23 12:13:44.649000+00:00"
+    },
+    "sha": "b3c4879691a936f818dc7b5c5618974ca0c205493a6a303e09b91d7393a2d346"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-09-29",
+      "title": "Cardinalità e tecniche fondamentali del calcolo combinatorio",
+      "source_transcript": "_transcripts/Aritmetica/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+      "source_hash": "sha256:3a1a9b90f978be42eca4f10664786c7c66fea21c2fd6366a213efbe68b857999",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-29 10:52:19.306000+00:00"
+    },
+    "sha": "95100f399b0c01798d6638c8658421826f14e426d82735538970433c57c53e3f"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-09-30",
+      "title": "Successioni ricorrenti e formule combinatorie",
+      "source_transcript": "_transcripts/Aritmetica/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+      "source_hash": "sha256:532ba34507db258a4a087cabe38fa06c5b8a88d0b6679626e1e4302ebe381328",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-30 10:52:54.176000+00:00"
+    },
+    "sha": "c2345df3dbd453d261e27981220edcef89b4dda6512dbb64ae228a8d9a2aec2b"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-05",
+      "title": "Divisione euclidea, massimo comun divisore e identità di Bézout",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+      "source_hash": "sha256:28c0aa73c00135ac5102eb318ec64f56061f5cf6299b0c70cd77edc926fa9374",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-05 14:38:58.042000+00:00"
+    },
+    "sha": "a1c88e14e3266d8dd022701e66677fa5765ad6f5542930739b18a1352497b497"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-06",
+      "title": "Conteggio combinatorio e principio di inclusione-esclusione",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+      "source_hash": "sha256:3b83a8f1346e7eca210322b426b54f5cf7f3990011457579245ae10db83fe4d3",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-06 13:51:39.890000+00:00"
+    },
+    "sha": "53798861bb705f29f6fdc39c0fc82ed383ba117afd39f41780bbc8cced4e2c3b"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-06",
+      "title": "Equazioni diofantee lineari e loro soluzioni",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
+      "source_hash": "sha256:b5974126edb18c3920a494932d787fdf5293b04d20bdd7fb4d3da6daba336fba",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-06 08:58:01.444000+00:00"
+    },
+    "sha": "e3c96d3f52a133e34df17f8f9627da5651eba37405afc33daeb338c2118f959a"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-07",
+      "title": "Fattorizzazione unica, congruenze e sistemi modulari",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+      "source_hash": "sha256:365206487b4ab9b8232c23e5429a4dccc63dc5bfaef3ab1a4bb4ebb3a4d5c4c8",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-07 11:02:00.436000+00:00"
+    },
+    "sha": "cd3c2e5289efe085157f636d80c0ee50ae38e50532d36e3d42647f0b0abe2367"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-13",
+      "title": "Divisori, algoritmo di Euclide e conteggio combinatorio",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
+      "source_hash": "sha256:d004e61613a94ed1838b3c865d273dfd92d4ae496ffbbc8c556847a289a29d05",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-13 12:15:52.759000+00:00"
+    },
+    "sha": "c7c3ffed932de9193b9e756fca5e17ef21b5d687fe5232e937472baf49b550ac"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-14",
+      "title": "Sviluppi decimali razionali e fattorizzazione dei denominatori",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
+      "source_hash": "sha256:2c8f4437f21173b7ca4e36498b02858da8a9fc43f8d8ecf39acafc3378a7314e",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-14 11:30:02.663000+00:00"
+    },
+    "sha": "3bdc09e0afe8c253a840a4c3af568f58bcf8f917d66e3c42f1051ec8f703ee3f"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-19 - Dimostrazione del teorema cinese del resto.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-19",
+      "title": "Dimostrazione del teorema cinese del resto",
+      "source": "Quando_G._Bresciani_fa__teoria_2.pdf"
+    },
+    "sha": "6b63406198619c602cc8654f77908aa17e678024157f527edb198422a51051d3"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-21",
+      "title": "Relazioni di equivalenza e strutture quoziente",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-22 - Relazioni di equivalenza e strutture quoziente.md",
+      "source_hash": "sha256:2079632a9956e76f9f7c51f5f66cb232365193288bc3c7869f776df0e419ab32",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-22 11:57:48.864000+00:00"
+    },
+    "sha": "2bfd3551e07571322f1e9028309bb392db441af20a8544e0ce856d86ffb0ad3d"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-22",
+      "title": "Omomorfismi tra anelli e teorema cinese",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
+      "source_hash": "sha256:f6ec04ec1918c8efb467be582afb3369fba1dd7dbf2bd461846d3f206a1d6265",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-22 11:56:46.052000+00:00"
+    },
+    "sha": "605c7709ae054ab169e40d2ff1991641a74f52fdca30cc3cdcb5e1d2c747d354"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-27",
+      "title": "Equazioni esponenziali e congruenze modulo potenze prime",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
+      "source_hash": "sha256:ef6d913ea121163e2010d5dae761a938686332fd9dd0ebb316b2bcb99fbc9055",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-27 22:03:44.980000+00:00"
+    },
+    "sha": "aaefd7ae5d62ebf877dd1e8953c552d2bc26b8783a7ec85dcd800fd03975e621"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-10-27",
+      "title": "Gruppi ciclici, sottogruppi e permutazioni",
+      "source_transcript": "_transcripts/Aritmetica/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
+      "source_hash": "sha256:2d6d16bb550fe475b5f6f3a400e6d7eb63ffbbb40dfa56308aaaf5eed9d8e925",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-27 22:04:32.898000+00:00"
+    },
+    "sha": "3287bb9f3721b3fbde0c073f0d0dbc88e4e0a15499a1c157858350c0584cee08"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-11-01",
+      "title": "Gruppi ciclici, ordini e sottogruppi modulari",
+      "source_transcript": "_transcripts/Aritmetica/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md",
+      "source_hash": "sha256:5f9520e88a48e5f8c6b641f99a6c7f1ed776f4d0d62bac07e384a364a94dc4d2",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-01 08:07:38.115000+00:00"
+    },
+    "sha": "22b4eea38f05d64893ec49d38ea532e4b60b8996e1f2ea307c20c2b1563a0cbf"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange 2.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Classi laterali e teorema di Lagrange",
+      "source_transcript": "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+      "source_hash": "sha256:c9c5876fe4776d262f6b1259312669943f675b505353d29fb9c8d82e51a4bef6",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-08 13:00:05.935000+00:00"
+    },
+    "sha": "1751fb5487c1739d565013c962d6074d2c9505caa83de60e7d58c832e20679d2"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Classi laterali e teorema di Lagrange",
+      "source_transcript": "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+      "source_hash": "sha256:c9c5876fe4776d262f6b1259312669943f675b505353d29fb9c8d82e51a4bef6",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-08 13:00:05.935000+00:00"
+    },
+    "sha": "1751fb5487c1739d565013c962d6074d2c9505caa83de60e7d58c832e20679d2"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi 2.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Omomorfismi, nuclei e prodotti diretti di gruppi",
+      "source_transcript": "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+      "source_hash": "sha256:30598f18406808a4d74c1e2ca6821bd1f3caf147ba9cb457ff5de118507d34fc",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-08 13:01:01.737000+00:00"
+    },
+    "sha": "8f3604bfbd01a35a5002af0628d2b9c6cd51d9df812b8575ecce705fccade06f"
+  },
+  {
+    "path": "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Omomorfismi, nuclei e prodotti diretti di gruppi",
+      "source_transcript": "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+      "source_hash": "sha256:30598f18406808a4d74c1e2ca6821bd1f3caf147ba9cb457ff5de118507d34fc",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-08 13:01:01.737000+00:00"
+    },
+    "sha": "8f3604bfbd01a35a5002af0628d2b9c6cd51d9df812b8575ecce705fccade06f"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-09-19",
+      "title": "Pensiero computazionale, algoritmi e modelli di calcolo"
+    },
+    "sha": "b57a2e4a0d0aaf0be8f798bc53aca638bfb97ce3335383bab78b95bc2b7e937a"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-09-21 - Semantica del calcolo proposizionale e dimostrazioni per equivalenza.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-09-21",
+      "title": "Semantica del calcolo proposizionale e dimostrazioni per equivalenza"
+    },
+    "sha": "21780473400bfe0dbfcc5a3519f2f95d35759f23b449672e2178d15f1866a27a"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-09-22 - Equivalenze tautologiche e sostituzione nell'implicazione.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-09-22",
+      "title": "Equivalenze tautologiche e sostituzione nell'implicazione"
+    },
+    "sha": "ef4d972c240529b47719b3d3d6f6265bd01d33c8621888c2804d87ca3faab111"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-09-23 - Forme normali, tecniche di dimostrazione e logica del primo ordine.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-09-23",
+      "title": "Forme normali, tecniche di dimostrazione e logica del primo ordine"
+    },
+    "sha": "84dcd432cb97a8d6fffda3a49532fe8530f97739d4764ea8d54a5942fc13e017"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-09-25",
+      "title": "Stati, algoritmi e fondamenti della logica formale",
+      "source_transcript": "_transcripts/Fondamenti di Programmazione/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+      "source_hash": "sha256:232fff73d178b953c16fac63a878142ddce6b59d11a15f510cff88e5d24b4483",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-25 19:33:38.894000+00:00"
+    },
+    "sha": "7dd2732e499bd203e9468577ae82d300b053c7cee2034743790822ca38a33651"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-08 - Sintassi e semantica della logica del primo ordine.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-08",
+      "title": "Sintassi e semantica della logica del primo ordine",
+      "source": "Lezione_06.pdf (slide 177-200)"
+    },
+    "sha": "4db37b0c927becaa84c0795c0989b9413d3d0112b43393d31d64d146ac2db23f"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-12 - Semantica della logica del primo ordine.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-12",
+      "title": "Semantica della logica del primo ordine",
+      "source": "Lezione_07.pdf (slide 201-235)"
+    },
+    "sha": "b514981218b32803670824b0457e152db036ae0b215d37d5ea3d0a0bc8008a7b"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-13 - Quantificazione ristretta, uguaglianza e specifiche formali.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-13",
+      "title": "Quantificazione ristretta, uguaglianza e specifiche formali",
+      "source": "Lezione_08.pdf (slide 236-259)"
+    },
+    "sha": "b77ba9aae7538529145f0aa7ee73491f9d9826e2206baf4aa4b5fc9db44efdff"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-19 - Espressioni, comandi e triple di Hoare.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-19",
+      "title": "Espressioni, comandi e triple di Hoare",
+      "source": "Lezione_09.pdf (slide 260-297)"
+    },
+    "sha": "7ec9eb8e7e9652be0b6609a7735d27dc10ac0455c2f3741361aba336877c1c36"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-20 - Regole di inferenza per le triple di Hoare e invarianti.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-20",
+      "title": "Regole di inferenza per le triple di Hoare e invarianti",
+      "source": "Lezione_10.pdf (slide 298-329)"
+    },
+    "sha": "ebbd104446a1fb818eff7b9f3763a7723ca435a0a632777332e2c2744d71735c"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-26 - Correttezza totale dei cicli, funzioni di terminazione e programmi annotati.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-26",
+      "title": "Correttezza totale dei cicli, funzioni di terminazione e programmi annotati",
+      "source": "Lezione_11.pdf (slide 330-354)"
+    },
+    "sha": "d7f804b150eedd0ba873d3cd6ec219724a9a5327d0a5e7d02ab659ebcb0ae206"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-27 - Verifica di programmi iterativi e introduzione agli array.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-27",
+      "title": "Verifica di programmi iterativi e introduzione agli array",
+      "source": "Lezione_12.pdf (slide 355-370)"
+    },
+    "sha": "cf48a2f4ebe28690e1babf81f473d3412b55880db2adda61ddf8f6fd6fcab5fc"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-10-29 - Aggiornamento degli array e tecniche di costruzione dei cicli.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-10-29",
+      "title": "Aggiornamento degli array e tecniche di costruzione dei cicli",
+      "source": "Lezione_13.pdf (slide 371-405)"
+    },
+    "sha": "02d8ec0b58ed4e19cabbc12f982db8212e1498d37d2f2fb8fcb4561b6994965e"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output 2.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-11-03",
+      "title": "Introduzione al C, variabili e input-output",
+      "source": "Lezione_14.pdf (slide 406-447)"
+    },
+    "sha": "f76e2e1f09239e80415eb58ba2c1f62ad6d623627e0594cc973f5df67c501626"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-11-03",
+      "title": "Introduzione al C, variabili e input-output",
+      "source": "Lezione_14.pdf (slide 406-447)"
+    },
+    "sha": "f76e2e1f09239e80415eb58ba2c1f62ad6d623627e0594cc973f5df67c501626"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for 2.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-11-05",
+      "title": "Tipi e conversioni in C, selezione e cicli for",
+      "source": "Lezione_15.pdf (slide 448-486)"
+    },
+    "sha": "76c4c1c3a7a1d8077ee3eed0aa1f11229edfa8d607374febc252be0e7f76324e"
+  },
+  {
+    "path": "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-11-05",
+      "title": "Tipi e conversioni in C, selezione e cicli for",
+      "source": "Lezione_15.pdf (slide 448-486)"
+    },
+    "sha": "76c4c1c3a7a1d8077ee3eed0aa1f11229edfa8d607374febc252be0e7f76324e"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-09-23",
+      "title": "Insiemi, applicazioni e spazi vettoriali",
+      "source_transcript": "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+      "source_hash": "sha256:b46d37b13beecd9d1c6d4928613205d8b86d908462b5efadb7426c0b3b686b60",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-23 10:33:40.887000+00:00"
+    },
+    "sha": "cd731d37f92bf69c0611f4ca4e7059339fafc6fea3d1f560d5d18349be1a9407"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-09-25",
+      "title": "Numeri complessi- operazioni, forma polare e radici",
+      "source_transcript": "_transcripts/Geometria 1/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+      "source_hash": "sha256:5a8f706bd903b1fde9fbd3d3ae6bd71d9611dddfc9d36122fc7f52eb951c7757",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-25 18:16:05.917000+00:00"
+    },
+    "sha": "af599b3e23689e2f65afb41fbd472d42c43c6be020209e8d189fc02c8b2c5aba"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-09-30",
+      "title": "Fattorizzazione dei polinomi e radici complesse",
+      "source_transcript": "_transcripts/Geometria 1/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+      "source_hash": "sha256:c9f34d88caaaaceb4074db546fd127fa27b26a7317006679f7f3151b619bf750",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-30 09:26:54.384000+00:00"
+    },
+    "sha": "09615b58f0c51a822c1882e0d7a3cce03d486d73e6a0f1b87c1286b8355e6629"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-09-30",
+      "title": "Spazi vettoriali, esempi e sottospazi",
+      "source_transcript": "_transcripts/Geometria 1/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+      "source_hash": "sha256:ee96d8a5fb7e614e3fbbe9f6d2e9d60d2c46086915b110f586dc29623b788533",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-09-30 06:56:37.331000+00:00"
+    },
+    "sha": "d5aceb99761e15189e664445c02b3c3ebcf34f47b996c3ec574df01ddfe43624"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-02",
+      "title": "Span, indipendenza lineare e basi vettoriali",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+      "source_hash": "sha256:f2bb89bdead7999acfdbc3f52475edb66424acfa2848a3efa321570d6d7cafaf",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-02 12:18:40.871000+00:00"
+    },
+    "sha": "50f0e66fd226730d105f662bb134aac6a5ccdb9d2f98038ccffd228068a59bd5"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-06 - (!) Sottospazi, combinazioni lineari e basi.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-06",
+      "title": "Sottospazi, combinazioni lineari e basi",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-06 - Sottospazi, combinazioni lineari e basi.md",
+      "source_hash": "sha256:f558db5910ed636444b5c4f7caa0a37c43455f9cef3e055c4a71576ac405bace",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-06 13:25:36.895000+00:00"
+    },
+    "sha": "c4eed95a8688796616dc98bd522b14ecf2fb7cdeb02db45f86389655c15c1007"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-07",
+      "title": "Coordinate, basi e dimensione degli spazi vettoriali",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md",
+      "source_hash": "sha256:6d95338851a56c635b7ee568603a0def38c917a300f8c3ba79d04f8d2a02eedc",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-07 09:20:59.456000+00:00"
+    },
+    "sha": "c232fbf7c9080e733aa7c551e7165088013ecab6d00fd29b3d57b8e2dd5c8524"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-13",
+      "title": "Somma diretta e dimensione dei sottospazi",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+      "source_hash": "sha256:831de69209097cdbd99f6ea75f28bda255cc5fd8afa97be12069403b3771a94f",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-13 12:16:41.875000+00:00"
+    },
+    "sha": "42214634e71fe09d53614666060df5d78de05806f8ea5e09f5783389f9b7edeb"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-14 - Basi, sottospazi e sistemi lineari.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-14",
+      "title": "Basi, sottospazi e sistemi lineari",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-14 - Basi, sottospazi e sistemi lineari.md",
+      "source_hash": "sha256:f3bbfac95cf61c73b22a3d345fd7ac73f4e70f74a59f549dc998ba0e7e696891",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-14 11:30:54.118000+00:00"
+    },
+    "sha": "418d28f2b64b665be0097abb6fdef3f3ebaf3a2ccc259c30315e863f6f67e793"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-22",
+      "title": "Sistemi lineari e algoritmo di eliminazione di Gauss",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md",
+      "source_hash": "sha256:eec556b0f85ec39319008d46b208b352ab507cff846b16950c27a5e34f5a109e",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-22 11:59:02.375000+00:00"
+    },
+    "sha": "49ddc04a4960473d1f2806d043a3ae90bc33ccc51433b33936b3430703b05ac6"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-22",
+      "title": "Sistemi lineari, nucleo, immagine e rango",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+      "source_hash": "sha256:6821682246f7941b3ece3a2f732de7860eef8090877f415a502bf181e49a696f",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-22 11:59:54.453000+00:00"
+    },
+    "sha": "7cc9e6ebbe4db33715a7069906e927a8323e2530ff56ee9346496662165f448a"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-10-27",
+      "title": "Rango, sistemi lineari e matrici elementari",
+      "source_transcript": "_transcripts/Geometria 1/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+      "source_hash": "sha256:c76a4339b4a6809d57dcb73e877bab8ab0c979fdfa5f75448332bf7700fd2393",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-10-27 22:05:19.250000+00:00"
+    },
+    "sha": "e75a750fa64f3db7559f70136eb53d3d369a0df459abe18cff12207d9cb90394"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-11-01",
+      "title": "Indipendenza lineare e basi mediante Gauss",
+      "source_transcript": "_transcripts/Geometria 1/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md",
+      "source_hash": "sha256:cff3070b4affb5feb66e96046568b86db3d438b245edba7b8652159dc1984687",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-01 08:08:08.682000+00:00"
+    },
+    "sha": "777315b67d03442875f609725d178cc545a5e0ea3390f9bbca981e993e30de69"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate 2.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Applicazioni lineari e matrici associate",
+      "source_transcript": "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate.md",
+      "source_hash": "sha256:cb40d0d3268174062d8d13e62643a3f02ae807790a890f9475d89348bde5eb4d",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-04 13:36:35.746000+00:00"
+    },
+    "sha": "3352852bd24088cd89f8ca56c06a29c616600e49aad882921319332c61ad8a5e"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Applicazioni lineari e matrici associate",
+      "source_transcript": "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate.md",
+      "source_hash": "sha256:cb40d0d3268174062d8d13e62643a3f02ae807790a890f9475d89348bde5eb4d",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-04 13:36:35.746000+00:00"
+    },
+    "sha": "3352852bd24088cd89f8ca56c06a29c616600e49aad882921319332c61ad8a5e"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Sistemi lineari e somme dirette di sottospazi",
+      "source_transcript": "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "source_hash": "sha256:ac4b8c8aacd19b6e540afb35eeeab7f351d4b048906b8da1606c3f8b553f8806",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-04 13:37:33.673000+00:00"
+    },
+    "sha": "92dc688d5254645f2b8a933d071f5d79178efec8846b9555b327d1cf3cce95bd"
+  },
+  {
+    "path": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+    "meta": {
+      "type": "lecture-note",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Sistemi lineari e somme dirette di sottospazi",
+      "source_transcript": "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "source_hash": "sha256:ac4b8c8aacd19b6e540afb35eeeab7f351d4b048906b8da1606c3f8b553f8806",
+      "teaching_model": "openai/gpt-5.6-luna",
+      "taught_at": "2026-11-04 13:37:33.673000+00:00"
+    },
+    "sha": "92dc688d5254645f2b8a933d071f5d79178efec8846b9555b327d1cf3cce95bd"
+  },
+  {
+    "path": "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Analisi 1",
+      "date": "2026-09-23",
+      "title": "Proposizioni, quantificatori e prime operazioni tra insiemi",
+      "summary": "La lezione introduce proposizioni, predicati, quantificatori e principali connettivi logici, analizzandone negazioni, implicazioni e tavole di verità. Presenta inoltre gli insiemi, le rappresentazioni per elenco e proprietà, l’appartenenza e l’inclusione, le operazioni fondamentali, il prodotto cartesiano e l’insieme delle parti.",
+      "source_audio": "_audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica.m4a",
+      "duration_seconds": 5491,
+      "transcription_model": "openai/whisper-large-v3-turbo",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-23 14:10:46.446000+00:00"
+    },
+    "sha": "21b667432a6458acf823b572aafca0711b4fb1d6b2543f7b655785eb5b935b2f"
+  },
+  {
+    "path": "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Analisi 1",
+      "date": "2026-09-24",
+      "title": "Funzioni, composizione e principio d’induzione",
+      "summary": "La lezione definisce una funzione tramite il suo grafico come sottoinsieme del prodotto cartesiano, introduce composizione, iniettività, suriettività, biettività, invertibilità, immagine e controimmagine. Presenta poi il principio di induzione matematica, illustrandolo con somme di quadrati e potenze, la disuguaglianza di Bernoulli, fattoriali e somme telescopiche.",
+      "source_audio": "_audio/Analisi 1/Università Di Pisa Dipartimento di Matematica 2.m4a",
+      "duration_seconds": 5829,
+      "transcription_model": "openai/whisper-large-v3-turbo",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-24 09:12:24.135000+00:00"
+    },
+    "sha": "4ba7742136f57be0b7d9736fe58333d9ec9ae7e46942e1c0070507d6a319c276"
+  },
+  {
+    "path": "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Analisi 1",
+      "date": "2026-09-28",
+      "title": "Assiomi dei reali e proprietà di completezza",
+      "summary": "La lezione descrive i numeri reali assiomaticamente come campo ordinato, introducendo assiomi algebrici, di ordinamento e di continuità. Si mostra come la completezza distingua \u001bR\u001b da \u001bQ\u001b e si definiscono maggioranti, minoranti, massimo, minimo, estremo superiore e inferiore, con relative caratterizzazioni mediante quantificatori ed epsilon.",
+      "source_audio": "_audio/Analisi 1/analisi_FaPxzecJ.mp3",
+      "duration_seconds": 6036,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-28 12:30:41.041000+00:00"
+    },
+    "sha": "ea27c160350838befee2593d226c1fce2c73e83882e6be6ef85d6bfe9c4fd633"
+  },
+  {
+    "path": "_transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Analisi 1",
+      "date": "2026-09-30",
+      "title": "Simmetrie, monotonia e grafici delle funzioni elementari",
+      "summary": "La lezione introduce le funzioni reali, il grafico e le proprietà di parità, disparità, periodicità e monotonia. Vengono analizzate potenze e radici, le relazioni tra funzione e inversa, il valore assoluto e le trasformazioni dei grafici. Si studia inoltre l’interpretazione grafica di equazioni e disequazioni e si discutono condizioni di iniettività e soggettività.",
+      "source_audio": "_audio/Analisi 1/Largo Bruno Pontecorvo.m4a",
+      "duration_seconds": 4807,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-30 14:04:33.004000+00:00"
+    },
+    "sha": "dbd1b1c6ca1455a4de6e604aa6852d23966109a807ead583d7f10dd82b89d59d"
+  },
+  {
+    "path": "_transcripts/Analisi 1/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Analisi 1",
+      "date": "2026-10-01",
+      "title": "Funzioni trigonometriche e funzioni inverse",
+      "summary": "La lezione introduce seno, coseno e tangente tramite la circonferenza trigonometrica, discutendone segni, periodicità, simmetrie e grafici. Vengono definite le funzioni inverse arcoseno, arcocoseno e arcotangente, con particolare attenzione a domini, codomini e composizioni. Infine si affrontano immagini e controimmagini di intervalli e proprietà di parità e periodicità.",
+      "source_audio": "_audio/Analisi 1/Largo Bruno Pontecorvo 2.m4a",
+      "duration_seconds": 5802,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-01 09:16:03.524000+00:00"
+    },
+    "sha": "9352d0a645784bdcd98d5198eb4de797b83d3ee6feac1b8798c395e7441c088c"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-09-23",
+      "title": "Numeri naturali, induzione e fattorizzazione",
+      "summary": "La lezione introduce i numeri naturali, le loro operazioni e la definizione assiomatica mediante elemento iniziale e successore. Vengono presentati il principio del minimo e le diverse forme equivalenti dell’induzione matematica, con esempi e attenzione alla verifica del passo base. Infine si discute l’esistenza della fattorizzazione in numeri primi e il ruolo dell’induzione forte.",
+      "source_audio": "_audio/Aritmetica/Università Di Pisa Dipartimento di Matematica.m4a",
+      "duration_seconds": 5118,
+      "transcription_model": "openai/whisper-large-v3-turbo",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-23 12:13:02.265000+00:00"
+    },
+    "sha": "010758e6bca4600668eeb7ce982de7c08515caf28e9a3f06bfd9ee259ed76fe9"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-09-29",
+      "title": "Cardinalità e tecniche fondamentali del calcolo combinatorio",
+      "summary": "La lezione introduce il calcolo combinatorio come conteggio di insiemi finiti tramite corrispondenze biunivoche e cardinalità. Vengono studiati prodotti cartesiani, numero di funzioni, funzioni iniettive e suriettive, principio dei cassetti, insieme delle parti, coefficienti binomiali e tecniche di doppio conteggio, con esempi e dimostrazioni.",
+      "source_audio": "_audio/Aritmetica/aritmetica 29.09.mp3",
+      "duration_seconds": 6118,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-29 10:46:17.053000+00:00"
+    },
+    "sha": "14d6717c10cd7c0b21ae6918991340efac624958119c7b58adecbfda14e8a521"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-09-30",
+      "title": "Successioni ricorrenti e formule combinatorie",
+      "summary": "La lezione introduce la risoluzione delle successioni lineari omogenee per ricorrenza mediante soluzioni del tipo λ^n, equazione caratteristica e combinazioni lineari. Vengono inoltre presentati il teorema binomiale di Newton, la cardinalità dell’insieme delle parti e il principio di inclusione-esclusione, anche tramite funzioni caratteristiche e dimostrazioni combinatorie.",
+      "source_audio": "_audio/Aritmetica/Via Filippo Buonarroti 2.m4a",
+      "duration_seconds": 5536,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-30 10:51:39.318000+00:00"
+    },
+    "sha": "a7bd82263f1acb46e029146a1ebc9bc50861b03df35fefe0aaf8c1a4bc33dd7a"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-05",
+      "title": "Divisione euclidea, massimo comun divisore e identità di Bézout",
+      "summary": "La lezione dimostra esistenza e unicità della divisione euclidea, usando il valore assoluto per caratterizzare il resto. Presenta quindi l’algoritmo di Euclide per il calcolo del massimo comun divisore, la risalita attraverso le divisioni successive e l’identità di Bézout, collegando questi concetti alle proprietà della divisibilità e delle relazioni d’ordine.",
+      "source_audio": "_audio/Aritmetica/Largo Bruno Pontecorvo 3.m4a",
+      "duration_seconds": 6581,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-05 14:22:28.598000+00:00"
+    },
+    "sha": "69bca01592fc2a3de3e54a47cfdd500723dd3a5b67175623337cde2c112e768f"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-06",
+      "title": "Conteggio combinatorio e principio di inclusione-esclusione",
+      "summary": "La lezione tratta il conteggio degli anagrammi con lettere ripetute tramite fattoriali e coefficienti multinomiali. Vengono studiate le funzioni suriettive mediante il principio di inclusione-esclusione, il conteggio di tassellazioni di griglie 2×n con una ricorrenza di tipo Fibonacci e alcune identità binomiali ottenute con il doppio conteggio.",
+      "source_audio": "_audio/Aritmetica/New Recording 68.m4a",
+      "duration_seconds": 5128,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-06 13:50:37.419000+00:00"
+    },
+    "sha": "721320cc2fca45034f79a1ee804637ecd63826c4283cd302e80c283a69d0152e"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-06",
+      "title": "Equazioni diofantee lineari e loro soluzioni",
+      "summary": "La lezione studia le equazioni diofantee lineari ax+by=c, mostrando che ammettono soluzioni intere se e solo se il massimo comune divisore di a e b divide c. Attraverso l’identità di Bézout si costruisce una soluzione particolare e si descrivono tutte le soluzioni mediante un parametro intero, con riduzione preliminare tramite il massimo comune divisore.",
+      "source_audio": "_audio/Aritmetica/Aula Magna - Polo Fibonacci.m4a",
+      "duration_seconds": 5257,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-06 08:52:03.831000+00:00"
+    },
+    "sha": "4bbeb8a2feb2ca04d8f9a272c06c65d1044ddb298aff7274382b0e723f0d6604"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-07",
+      "title": "Fattorizzazione unica, congruenze e sistemi modulari",
+      "summary": "La lezione dimostra l’unicità della fattorizzazione in primi mediante induzione sulla lunghezza della fattorizzazione. Introduce poi le congruenze modulo n come relazione di equivalenza, descrivendone classi e proprietà operative, e affronta massimo comune divisore, algoritmo euclideo, congruenze lineari e sistemi di congruenze, con riferimento al teorema cinese del resto.",
+      "source_audio": "_audio/Aritmetica/New Recording 71.m4a",
+      "duration_seconds": 5936,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-07 11:00:49.257000+00:00"
+    },
+    "sha": "dd382ff7813c0d481e919c162cc0ed627c1aed48e0ec8765e8fa63122310eb0c"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-13",
+      "title": "Divisori, algoritmo di Euclide e conteggio combinatorio",
+      "summary": "La lezione tratta massimo comun divisore e minimo comune multiplo tramite fattorizzazione in primi, inclusa la formula per il numero dei divisori. Introduce inoltre il metodo delle stelle e sbarre, l’algoritmo di Euclide e la risoluzione delle equazioni diofantee lineari, con applicazioni al conteggio di terne di interi distinti.",
+      "source_audio": "_audio/Aritmetica/New Recording 72.m4a",
+      "duration_seconds": 5383,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-13 11:31:11.374000+00:00"
+    },
+    "sha": "f316a79f990218531d800dce17974093cc3f3ac657afc827427fe3acfdf69ba3"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-14",
+      "title": "Sviluppi decimali razionali e fattorizzazione dei denominatori",
+      "summary": "Si dimostra che i numeri razionali sono precisamente quelli con espansione decimale eventualmente periodica, usando divisioni con resto, potenze modulari e la scomposizione dei denominatori rispetto a 2 e 5. La lezione introduce inoltre la formula per l’esponente di un primo in un fattoriale e analizza equazioni del tipo x²−y²=n mediante fattorizzazione e congruenze modulo 4.",
+      "source_audio": "_audio/Aritmetica/New Recording 75.m4a",
+      "duration_seconds": 5464,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-14 11:24:06.833000+00:00"
+    },
+    "sha": "57d279207b0dfdafde3e63fbec6408b718b99c0b5b38d6ea3a2892ae645b5567"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-22",
+      "title": "Omomorfismi tra anelli e teorema cinese",
+      "summary": "La lezione introduce gli omomorfismi di gruppi e anelli, sottolineando la conservazione delle operazioni e la necessità di verificare la buona definizione. Viene studiata la mappa da Z/(mn) a Z/m × Z/n, dimostrata ben definita e omomorfismo, e analizzata la sua biiettività quando m e n sono coprimi, con un’estensione ai gruppi moltiplicativi delle classi invertibili.",
+      "source_audio": "_audio/Aritmetica/New Recording 79.m4a",
+      "duration_seconds": 3961,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-22 11:40:52.949000+00:00"
+    },
+    "sha": "0e50923c8010ce17748b7aa263bcc14bc1ebd9c8dbc6ec79576c75ea8387a668"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-22 - Relazioni di equivalenza e strutture quoziente.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-22",
+      "title": "Relazioni di equivalenza e strutture quoziente",
+      "summary": "La lezione introduce le relazioni di equivalenza e le classi di equivalenza, applicandole alla costruzione dei numeri razionali e delle classi di resto modulo n. Vengono definite le operazioni sul quoziente, verificandone la buona definizione, e si discutono gruppi, anelli, campi e l’invertibilità delle classi modulo n, caratterizzata dalla coprimalità con n.",
+      "source_audio": "_audio/Aritmetica/New Recording 76.m4a",
+      "duration_seconds": 5594,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-22 11:39:16.040000+00:00"
+    },
+    "sha": "a9d1f5b8ae0adfa55450f61f4d00a6fa141ced695e8ed750b97f884eb5931e4a"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-27",
+      "title": "Equazioni esponenziali e congruenze modulo potenze prime",
+      "summary": "La lezione tratta le equazioni esponenziali nelle congruenze, introducendo l’ordine di un elemento, la descrizione delle soluzioni e il controllo dell’appartenenza di un termine alle potenze di una classe. Vengono inoltre discussi il teorema cinese dei resti nella forma generalizzata, la scomposizione modulo potenze prime e la risoluzione di congruenze quadratiche mediante sollevamento modulo potenze.",
+      "source_audio": "_audio/Aritmetica/New Recording 80.m4a",
+      "duration_seconds": 5479,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-27 21:56:56.999000+00:00"
+    },
+    "sha": "6d965706580cc3a5717af55b091f63b3b06062dcdf3d334273883f7be244652c"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-10-27",
+      "title": "Gruppi ciclici, sottogruppi e permutazioni",
+      "summary": "La lezione introduce i gruppi e verifica le proprietà dell’operazione, dell’elemento neutro e degli inversi, considerando anche gruppi moltiplicativi di campi, classi modulo un intero e radici ennesime dell’unità. Vengono inoltre discussi sottogruppi ciclici, ordine degli elementi, permutazioni, composizione e alcuni aspetti del teorema cinese del resto.",
+      "source_audio": "_audio/Aritmetica/New Recording 81.m4a",
+      "duration_seconds": 5781,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-27 21:59:45.786000+00:00"
+    },
+    "sha": "66af082478594463ac80f7ccd3a50052265e8cb306f35789cab28679881c2560"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-11-01",
+      "title": "Gruppi ciclici, ordini e sottogruppi modulari",
+      "summary": "La lezione introduce i gruppi ciclici, gli elementi generatori e l’ordine di un elemento, mostrando che ogni sottogruppo di un gruppo ciclico è ciclico. Vengono studiati esempi nei gruppi di classi modulo n, l’ordine di una potenza tramite il massimo comune divisore, il teorema di Eulero e alcune applicazioni alle congruenze.",
+      "source_audio": "_audio/Aritmetica/New Recording 84.m4a",
+      "duration_seconds": 6163,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-01 08:04:54.198000+00:00"
+    },
+    "sha": "aeba851fd6474e60c0456bb3e9b9d88b2fc0dfe1415f1bb23902c066e4537d98"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange 2.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Classi laterali e teorema di Lagrange",
+      "summary": "La lezione introduce le relazioni di equivalenza associate a un sottogruppo e definisce classi laterali sinistre e destre, mostrando che formano una partizione del gruppo. Viene dimostrato il teorema di Lagrange e discussi l’ordine degli elementi, i gruppi ciclici di ordine primo, le classi in gruppi simmetrici e la nozione di sottogruppo normale.",
+      "source_audio": "_audio/Aritmetica/New Recording 89.m4a",
+      "duration_seconds": 6046,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-08 12:58:22.512000+00:00"
+    },
+    "sha": "aa344f27c74cc78778792d24b1efc66bbca978e4511747f6f54d20c506988b94"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Classi laterali e teorema di Lagrange",
+      "summary": "La lezione introduce le relazioni di equivalenza associate a un sottogruppo e definisce classi laterali sinistre e destre, mostrando che formano una partizione del gruppo. Viene dimostrato il teorema di Lagrange e discussi l’ordine degli elementi, i gruppi ciclici di ordine primo, le classi in gruppi simmetrici e la nozione di sottogruppo normale.",
+      "source_audio": "_audio/Aritmetica/New Recording 89.m4a",
+      "duration_seconds": 6046,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-08 12:58:22.512000+00:00"
+    },
+    "sha": "aa344f27c74cc78778792d24b1efc66bbca978e4511747f6f54d20c506988b94"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi 2.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Omomorfismi, nuclei e prodotti diretti di gruppi",
+      "summary": "La lezione analizza la buona definizione degli omomorfismi tra gruppi quoziente, con particolare attenzione alle mappe tra gruppi ciclici e alle condizioni di divisibilità. Vengono studiate immagine, controimmagine e nucleo, i criteri per iniettività e conservazione dell’ordine, la classificazione dei gruppi ciclici e il prodotto diretto, il cui ordine si calcola tramite il minimo comune multiplo.",
+      "source_audio": "_audio/Aritmetica/New Recording 85.m4a",
+      "duration_seconds": 5405,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-08 12:54:39.794000+00:00"
+    },
+    "sha": "e6f1307e7c8d4ba75cb80478544f9ff98462a37417d43e263e5f1086d7280367"
+  },
+  {
+    "path": "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Aritmetica",
+      "date": "2026-11-08",
+      "title": "Omomorfismi, nuclei e prodotti diretti di gruppi",
+      "summary": "La lezione analizza la buona definizione degli omomorfismi tra gruppi quoziente, con particolare attenzione alle mappe tra gruppi ciclici e alle condizioni di divisibilità. Vengono studiate immagine, controimmagine e nucleo, i criteri per iniettività e conservazione dell’ordine, la classificazione dei gruppi ciclici e il prodotto diretto, il cui ordine si calcola tramite il minimo comune multiplo.",
+      "source_audio": "_audio/Aritmetica/New Recording 85.m4a",
+      "duration_seconds": 5405,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-08 12:54:39.794000+00:00"
+    },
+    "sha": "e6f1307e7c8d4ba75cb80478544f9ff98462a37417d43e263e5f1086d7280367"
+  },
+  {
+    "path": "_transcripts/Fondamenti di Programmazione/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Fondamenti di Programmazione",
+      "date": "2026-09-25",
+      "title": "Stati, algoritmi e fondamenti della logica formale",
+      "summary": "La lezione presenta il rapporto tra algoritmi, programmi, esecuzione e debugging, introducendo la rappresentazione astratta dello stato come associazione tra nomi e valori. Attraverso l’esempio della moltiplicazione vengono illustrati specifica, esecutore e modifiche di stato. Sono inoltre introdotti interpretazione, modello, conseguenza logica, dimostrazione e connettivi del calcolo proposizionale.",
+      "source_audio": "_audio/Fondamenti di Programmazione/09-25-202614.m4a",
+      "duration_seconds": 5200,
+      "transcription_model": "google/gemini-3.5-transcribe",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-25 19:27:29.553000+00:00"
+    },
+    "sha": "c3ab462d125816bd71f9192e1a5dcc3048ac1027802a200f43e4ddb700159fa8"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-09-23",
+      "title": "Insiemi, applicazioni e spazi vettoriali",
+      "summary": "La lezione introduce la notazione degli insiemi, le operazioni di unione, intersezione e prodotto cartesiano, quindi definisce applicazioni, iniettività, suriettività, composizione e applicazione inversa. Presenta inoltre vettori geometrici, coordinate rispetto a riferimenti, somma e prodotto esterno, fino alla definizione assiomatica di campo e spazio vettoriale, con alcuni esercizi sugli elementi neutri e gli inversi.",
+      "source_audio": "_audio/Geometria 1/New Recording 66.m4a",
+      "duration_seconds": 5635,
+      "transcription_model": "openai/whisper-large-v3-turbo",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-23 10:32:27.052000+00:00"
+    },
+    "sha": "711b37c803e9bc3409cc10e53332aafd61322af9432206bdc4c13559c4ebf4cd"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-09-25",
+      "title": "Numeri complessi- operazioni, forma polare e radici",
+      "summary": "La lezione definisce i numeri complessi, le operazioni di somma e prodotto, il modulo e il coniugio, mostrando che formano un campo e ricavando l’inverso moltiplicativo. Vengono introdotte le coordinate polari, le formule per prodotti e potenze, il calcolo delle radici ennesime e il teorema fondamentale dell’algebra.",
+      "source_audio": "_audio/Geometria 1/Università Di Pisa Dipartimento di Matematica 3 copy.m4a",
+      "duration_seconds": 5706,
+      "transcription_model": "openai/whisper-large-v3-turbo",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-25 12:37:06.329000+00:00"
+    },
+    "sha": "ab67f49ca7e2ce7d6aa9109e7f7b77c6be83f205502624930d26906cbf5ac23a"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-09-30",
+      "title": "Fattorizzazione dei polinomi e radici complesse",
+      "summary": "La lezione dimostra per induzione la fattorizzazione di un polinomio complesso in fattori lineari, usando il teorema fondamentale dell’algebra e la divisione per un fattore associato a una radice. Vengono chiariti molteplicità, numero massimo di radici e, per polinomi a coefficienti reali, la comparsa delle radici complesse coniugate. Si applicano inoltre la formula quadratica e le radici dell’unità.",
+      "source_audio": "_audio/Geometria 1/Via Filippo Buonarroti.m4a",
+      "duration_seconds": 6525,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-30 09:13:41.366000+00:00"
+    },
+    "sha": "0b34b76a2147203fb044f31e9190d81e0c02863e2c705527f3d546f6914cf7ea"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-09-30",
+      "title": "Spazi vettoriali, esempi e sottospazi",
+      "summary": "La lezione introduce gli spazi vettoriali su un campo, definendo somma e prodotto esterno e verificandone gli assiomi. Vengono analizzati gli esempi di K^n, polinomi e funzioni, quindi il criterio per riconoscere i sottospazi, con applicazioni a rette e piani per l’origine, intersezioni e unioni.",
+      "source_audio": "_audio/Geometria 1/geo.mp3",
+      "duration_seconds": 5291,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-09-30 06:53:50.724000+00:00"
+    },
+    "sha": "754eba30f4fe1d9de9fe3e7dfc0c44ed6b62e405b15e69b50691875ccfc44361"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-02",
+      "title": "Span, indipendenza lineare e basi vettoriali",
+      "summary": "La lezione introduce le combinazioni lineari e lo span di un insieme di vettori, mostrando che lo span è un sottospazio e caratterizzandolo come il più piccolo sottospazio contenente l’insieme. Vengono definite indipendenza lineare, basi e coordinate rispetto a una base, con esempi in R^n e nello spazio dei polinomi.",
+      "source_audio": "_audio/Geometria 1/Biblioteca di Matematica Informatica e Fisica 2.m4a",
+      "duration_seconds": 5115,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-02 12:17:40.876000+00:00"
+    },
+    "sha": "217fd8ed3a0d14f315a76a151a69cdf4c5cf88c9d65c69f185a316922f530857"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-06 - Sottospazi, combinazioni lineari e basi.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-06",
+      "title": "Sottospazi, combinazioni lineari e basi",
+      "summary": "La lezione presenta esempi di spazi vettoriali formati da polinomi, funzioni e matrici, definendo somma e prodotto per scalare componente per componente. Si studiano il criterio per riconoscere i sottospazi, i sottospazi di R² e R³ descritti da equazioni o combinazioni lineari, e i concetti di insieme generatore, indipendenza lineare e base.",
+      "source_audio": "_audio/Geometria 1/Biblioteca di Matematica Informatica e Fisica 3.m4a",
+      "duration_seconds": 5565,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-06 13:23:04.623000+00:00"
+    },
+    "sha": "85b73843883f0a363dc59340565627c4f09bcaff6e66b1bb047b6f3c6e85632a"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-07",
+      "title": "Coordinate, basi e dimensione degli spazi vettoriali",
+      "summary": "La lezione introduce le coordinate rispetto a una base, anche nel caso infinito con combinazioni a supporto finito, e dimostra che nel caso finito l’applicazione delle coordinate è un isomorfismo con K^n. Vengono inoltre studiate le matrici, la base canonica, l’indipendenza lineare, gli insiemi generatori, il lemma dello scambio e l’unicità della dimensione.",
+      "source_audio": "_audio/Aritmetica/New Recording 69.m4a",
+      "duration_seconds": 5910,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-07 09:19:55.616000+00:00"
+    },
+    "sha": "c0024c0752717ec53a7e4afba976cb340afc741a97502f4e0ff8be4c6fbf3105"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-13",
+      "title": "Somma diretta e dimensione dei sottospazi",
+      "summary": "La lezione tratta l’estensione di insiemi linearmente indipendenti a basi, la costruzione di sottospazi di dimensione assegnata e le somme di sottospazi. Vengono caratterizzate la somma diretta e l’unicità della decomposizione, dimostrata la formula della dimensione della somma tramite l’intersezione e introdotta la decomposizione delle matrici in parti simmetrica e antisimmetrica.",
+      "source_audio": "_audio/Geometria 1/New Recording 73 copy.m4a",
+      "duration_seconds": 5265,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-13 11:48:00.709000+00:00"
+    },
+    "sha": "13d130decc8a85e74d9d27c6cee12aa65c6f22cd9aac696eb4fe169070ca52a7"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-14 - Basi, sottospazi e sistemi lineari.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-14",
+      "title": "Basi, sottospazi e sistemi lineari",
+      "summary": "La lezione tratta l’indipendenza lineare, la generazione e i criteri per riconoscere una base mediante la dimensione. Sono studiati sottospazi definiti da equazioni lineari o condizioni sui polinomi, intersezioni e unioni di sottospazi, completamento e riduzione di insiemi generatori. Infine vengono introdotti il prodotto tra matrici e vettori e la rappresentazione matriciale dei sistemi lineari omogenei.",
+      "source_audio": "_audio/Geometria 1/New Recording 74.m4a",
+      "duration_seconds": 5364,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-14 11:29:00.719000+00:00"
+    },
+    "sha": "7a6f0ae4a4ecee5cd5f0f4f7a5c884830bfb994475504f45405af9d10f4fbc6e"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-22",
+      "title": "Sistemi lineari e algoritmo di eliminazione di Gauss",
+      "summary": "La lezione collega la risoluzione di un sistema lineare all’appartenenza del vettore dei termini noti allo span delle colonne. Vengono definite le matrici a scala, analizzate le soluzioni tramite pivot e variabili libere e presentate le operazioni elementari di riga e l’algoritmo di Gauss. Si discutono inoltre rango, basi, indipendenza lineare e sottospazi.",
+      "source_audio": "_audio/Geometria 1/New Recording 77.m4a",
+      "duration_seconds": 6117,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-22 11:43:04.133000+00:00"
+    },
+    "sha": "d2a556ea3ef44d90c348d89e311ee6bb08464814cf74b03b64752cbf76ad87f7"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-22",
+      "title": "Sistemi lineari, nucleo, immagine e rango",
+      "summary": "La lezione introduce i sistemi lineari nella forma matriciale Ax=b e interpreta la moltiplicazione per una matrice come applicazione lineare e combinazione delle sue colonne. Vengono studiati nucleo e immagine, le soluzioni dei sistemi omogenei e non omogenei, la loro struttura come traslato di un sottospazio, il criterio di iniettività e la formula delle dimensioni, collegata al rango.",
+      "source_audio": "_audio/Geometria 1/New Recording 78.m4a",
+      "duration_seconds": 4271,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-22 11:44:44.475000+00:00"
+    },
+    "sha": "ba51bb09692da8a0b745d83f6354fe6498ec6cd2a4302b3b495eeaa4bf67d0d8"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-10-27",
+      "title": "Rango, sistemi lineari e matrici elementari",
+      "summary": "La lezione tratta il nucleo, l’immagine e la formula delle dimensioni, collegandoli alla risoluzione dei sistemi lineari omogenei e non omogenei. Vengono discussi il criterio dei ranghi, la riduzione di Gauss, l’uguaglianza tra rango per righe e per colonne, le operazioni elementari, le matrici invertibili e le equivalenze a sinistra e a destra.",
+      "source_audio": "_audio/Geometria 1/New Recording 82.m4a",
+      "duration_seconds": 4236,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-10-27 22:01:53.713000+00:00"
+    },
+    "sha": "50fe96a4e99ae45b35d8abb7701853c481887ffee32ff95333ddba0ea3434899"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-11-01",
+      "title": "Indipendenza lineare e basi mediante Gauss",
+      "summary": "La lezione definisce l’indipendenza lineare e mostra come verificarla riducendo a scala la matrice dei vettori. Si illustra l’estrazione di una base da un insieme di generatori tramite le colonne pivot, il completamento di un insieme indipendente a una base e l’impostazione di intersezioni e somme di sottospazi mediante equazioni e generatori.",
+      "source_audio": "_audio/Geometria 1/New Recording 83.m4a",
+      "duration_seconds": 3129,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-01 08:06:10.951000+00:00"
+    },
+    "sha": "6cd78a7da2be3540bb8aa01245834c20ce120fe8cc604f2e9cce08329c77849d"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate 2.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Applicazioni lineari e matrici associate",
+      "summary": "La lezione introduce la matrice associata a un’applicazione lineare rispetto a basi fissate e la formula che collega le coordinate del vettore immagine alla moltiplicazione matriciale. Vengono analizzati l’isomorfismo tra applicazioni lineari e matrici, nucleo, immagine e rango, con esempi su matrici 2×2 e sottospazi. Si discutono inoltre composizione di applicazioni e prodotto tra matrici.",
+      "source_audio": "_audio/Geometria 1/New Recording 88.m4a",
+      "duration_seconds": 6058,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-04 13:34:21.766000+00:00"
+    },
+    "sha": "4cda65d41bf2129cf8cf5b020c533f8e24b10f549fae4635f4f20cbcc56c3633"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Applicazioni lineari e matrici associate",
+      "summary": "La lezione introduce la matrice associata a un’applicazione lineare rispetto a basi fissate e la formula che collega le coordinate del vettore immagine alla moltiplicazione matriciale. Vengono analizzati l’isomorfismo tra applicazioni lineari e matrici, nucleo, immagine e rango, con esempi su matrici 2×2 e sottospazi. Si discutono inoltre composizione di applicazioni e prodotto tra matrici.",
+      "source_audio": "_audio/Geometria 1/New Recording 88.m4a",
+      "duration_seconds": 6058,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-04 13:34:21.766000+00:00"
+    },
+    "sha": "4cda65d41bf2129cf8cf5b020c533f8e24b10f549fae4635f4f20cbcc56c3633"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Sistemi lineari e somme dirette di sottospazi",
+      "summary": "La lezione tratta la riduzione di sistemi lineari con il metodo di Gauss, l’analisi di rango, parametri liberi, soluzioni particolari e sistemi omogenei. Vengono inoltre discussi la costruzione di basi per sottospazi e intersezioni, le somme dirette, l’unicità delle decomposizioni e la relazione tra dimensioni e basi.",
+      "source_audio": "_audio/Geometria 1/New Recording 86.m4a",
+      "duration_seconds": 5815,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-04 13:30:46.830000+00:00"
+    },
+    "sha": "2cb1657a01922671a661275eb69ac3871dc9a2cc74d1080a144cc9966b7d3a3a"
+  },
+  {
+    "path": "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+    "meta": {
+      "type": "transcript",
+      "course": "Geometria 1",
+      "date": "2026-11-04",
+      "title": "Sistemi lineari e somme dirette di sottospazi",
+      "summary": "La lezione tratta la riduzione di sistemi lineari con il metodo di Gauss, l’analisi di rango, parametri liberi, soluzioni particolari e sistemi omogenei. Vengono inoltre discussi la costruzione di basi per sottospazi e intersezioni, le somme dirette, l’unicità delle decomposizioni e la relazione tra dimensioni e basi.",
+      "source_audio": "_audio/Geometria 1/New Recording 86.m4a",
+      "duration_seconds": 5815,
+      "transcription_model": "openai/whisper-large-v3",
+      "metadata_model": "openai/gpt-5.6-luna",
+      "metadata_status": "complete",
+      "transcribed_at": "2026-11-04 13:30:46.830000+00:00"
+    },
+    "sha": "2cb1657a01922671a661275eb69ac3871dc9a2cc74d1080a144cc9966b7d3a3a"
+  }
+]

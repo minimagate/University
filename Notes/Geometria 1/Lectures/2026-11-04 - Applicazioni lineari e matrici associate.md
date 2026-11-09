@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-11-04
+date: '2026-11-04'
 title: Applicazioni lineari e matrici associate
-source_transcript: _transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e
-  matrici associate.md
+source_transcript: _transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate.md
 source_hash: sha256:cb40d0d3268174062d8d13e62643a3f02ae807790a890f9475d89348bde5eb4d
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-11-04T13:36:35.746Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-11-04T13:36:35.746Z'
 ---
 
 # Applicazioni lineari e matrici associate
@@ -472,7 +471,7 @@ Questo isomorfismo dipende dalle basi scelte; non è quindi, in generale, un’i
 
 ---
 
-# 7. Calcolo di nucleo e immagine tramite la matrice associata
+## 7. Calcolo di nucleo e immagine tramite la matrice associata
 
 Sia
 
@@ -492,7 +491,7 @@ $$
 [F(v)]_{\mathcal{B}'}=A[v]_{\mathcal{B}}.
 $$
 
-## 7.1 Nucleo
+### 7.1 Nucleo
 
 Un vettore $v\in V$ appartiene al nucleo di $F$ se e solo se
 
@@ -551,7 +550,7 @@ $$
 
 È importante distinguere i vettori numerici di $\mathbb{K}^n$ dai vettori dello spazio $V$: durante la risoluzione del sistema si lavora con coordinate, non direttamente con i vettori astratti.
 
-## 7.2 Immagine
+### 7.2 Immagine
 
 L’immagine di $F$ corrisponde all’immagine dell’applicazione
 
@@ -569,13 +568,13 @@ $$
 
 Per trovare una base dell’immagine si può procedere in due modi.
 
-### Riduzione per colonne
+#### Riduzione per colonne
 
 Si possono effettuare operazioni elementari sulle colonne di $A$. Tali operazioni non modificano il sottospazio generato dalle colonne. Le colonne della matrice ridotta forniscono quindi una base dello spazio delle colonne della matrice ridotta.
 
 Tuttavia, in questo modo la base ottenuta potrebbe non essere formata da colonne originarie di $A$.
 
-### Riduzione per righe
+#### Riduzione per righe
 
 Si riduce $A$ a scala mediante operazioni elementari sulle righe. Le posizioni dei pivot indicano quali colonne della matrice originale sono linearmente indipendenti.
 
@@ -585,7 +584,7 @@ Anche in questo caso, le colonne sono vettori di coordinate in $\mathbb{K}^m$. P
 
 ---
 
-# 8. Rango e teorema rango-nullità
+## 8. Rango e teorema rango-nullità
 
 Il **rango** di un’applicazione lineare $F$ è definito come
 
@@ -629,7 +628,7 @@ $$
 
 ---
 
-# 9. Esempio: l’applicazione $F(X)=AX-XA$
+## 9. Esempio: l’applicazione $F(X)=AX-XA$
 
 Consideriamo lo spazio
 
@@ -647,7 +646,7 @@ F:V\to V,
 F(X)=AX-XA.
 $$
 
-## 9.1 Linearità
+### 9.1 Linearità
 
 Per $X,Y\in V$:
 
@@ -675,7 +674,7 @@ $$
 
 Quindi $F$ è lineare.
 
-## 9.2 Matrice associata nella base canonica
+### 9.2 Matrice associata nella base canonica
 
 Consideriamo la base canonica ordinata
 
@@ -772,7 +771,7 @@ $$
 
 Il procedimento da ricordare è sempre lo stesso: la $j$-esima colonna è il vettore delle coordinate di $F(E_j)$.
 
-## 9.3 Nucleo dell’applicazione
+### 9.3 Nucleo dell’applicazione
 
 La condizione $X\in\ker F$ equivale a
 
@@ -823,7 +822,7 @@ $$
 
 Se non si riconoscono immediatamente le matrici che commutano con $A$, si può sempre risolvere il sistema omogeneo associato alla matrice $4\times4$.
 
-## 9.4 Immagine
+### 9.4 Immagine
 
 Poiché il rango è $2$,
 
@@ -852,9 +851,9 @@ $$
 
 ---
 
-# 10. Spazi di applicazioni con vincoli su nucleo e immagine
+## 10. Spazi di applicazioni con vincoli su nucleo e immagine
 
-## 10.1 Applicazioni che mandano un sottospazio in un altro
+### 10.1 Applicazioni che mandano un sottospazio in un altro
 
 Siano $U\subseteq V$ e $Z\subseteq W$ sottospazi vettoriali. Si considera l’insieme
 
@@ -880,7 +879,7 @@ $$
 
 Quindi $\mathcal{S}$ è chiuso rispetto a somma e prodotto per scalare.
 
-## 10.2 Matrice in basi adattate
+### 10.2 Matrice in basi adattate
 
 Supponiamo:
 
@@ -947,7 +946,7 @@ $$
 F(U)\subseteq Z.
 $$
 
-## 10.3 Dimensione dello spazio delle applicazioni
+### 10.3 Dimensione dello spazio delle applicazioni
 
 Le prime $k$ colonne hanno $\ell$ coefficienti liberi ciascuna, mentre le restanti $n-k$ colonne hanno $m$ coefficienti liberi ciascuna.
 
@@ -961,7 +960,7 @@ $$
 
 Questa dimensione si può anche vedere contando le posizioni arbitrarie nella matrice associata.
 
-### Caso particolare: applicazioni che annullano un sottospazio
+#### Caso particolare: applicazioni che annullano un sottospazio
 
 Consideriamo
 
@@ -993,7 +992,7 @@ $$
 
 ---
 
-# 11. Somma di applicazioni lineari
+## 11. Somma di applicazioni lineari
 
 L’insieme $\mathcal{L}(V,W)$ è uno spazio vettoriale con le operazioni definite punto per punto:
 
@@ -1023,7 +1022,7 @@ Questo è precisamente il contenuto della linearità dell’isomorfismo tra $\ma
 
 ---
 
-# 12. Composizione di applicazioni lineari
+## 12. Composizione di applicazioni lineari
 
 Siano
 
@@ -1041,7 +1040,7 @@ G\circ F:V\to Z,
 (G\circ F)(v)=G(F(v)).
 $$
 
-## 12.1 La composizione è lineare
+### 12.1 La composizione è lineare
 
 Per $u,v\in V$:
 
@@ -1069,7 +1068,7 @@ $$
 
 Quindi $G\circ F$ è lineare.
 
-## 12.2 Proprietà della composizione
+### 12.2 Proprietà della composizione
 
 La composizione è associativa:
 
@@ -1113,7 +1112,7 @@ Le verifiche si fanno applicando entrambi i membri a un vettore e usando la line
 
 ---
 
-# 13. Rango dell’applicazione e rango della matrice
+## 13. Rango dell’applicazione e rango della matrice
 
 Per un’applicazione lineare $F$ si definisce:
 
@@ -1159,7 +1158,7 @@ Quindi il rango di un’applicazione lineare può sempre essere calcolato scegli
 
 ---
 
-# 14. Matrice della composizione
+## 14. Matrice della composizione
 
 Siano
 

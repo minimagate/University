@@ -1,8 +1,9 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-09-23
+date: '2026-09-23'
 title: Forme normali, tecniche di dimostrazione e logica del primo ordine
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Forme normali, tecniche di dimostrazione e logica del primo ordine

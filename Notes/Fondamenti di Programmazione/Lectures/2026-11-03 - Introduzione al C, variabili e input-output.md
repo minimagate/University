@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-11-03
+date: '2026-11-03'
 title: Introduzione al C, variabili e input-output
 source: Lezione_14.pdf (slide 406-447)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Introduzione al C, variabili e input-output

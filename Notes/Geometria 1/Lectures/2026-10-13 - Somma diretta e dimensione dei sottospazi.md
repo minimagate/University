@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-10-13
+date: '2026-10-13'
 title: Somma diretta e dimensione dei sottospazi
-source_transcript: _transcripts/Geometria 1/2026-10-13 - Somma diretta e
-  dimensione dei sottospazi.md
+source_transcript: _transcripts/Geometria 1/2026-10-13 - Somma diretta e dimensione dei sottospazi.md
 source_hash: sha256:831de69209097cdbd99f6ea75f28bda255cc5fd8afa97be12069403b3771a94f
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-13T12:16:41.875Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-13T12:16:41.875Z'
 ---
 
 # Somma diretta e dimensione dei sottospazi
@@ -126,7 +125,7 @@ Si ottengono così i due fatti fondamentali:
 
 ---
 
-# 4. Somma di due sottospazi
+## 4. Somma di due sottospazi
 
 Siano $U,W$ due sottospazi vettoriali di $V$.
 
@@ -140,7 +139,7 @@ $$
 
 Quindi $U+W$ è l’insieme di tutti i vettori che si possono ottenere sommando un vettore di $U$ e un vettore di $W$.
 
-## 4.1. $U+W$ è un sottospazio vettoriale
+### 4.1. $U+W$ è un sottospazio vettoriale
 
 Per dimostrare che $U+W$ è un sottospazio, si verificano le proprietà fondamentali.
 
@@ -190,7 +189,7 @@ $$
 
 Dunque $U+W$ è un sottospazio vettoriale di $V$.
 
-## 4.2. Interpretazione come span
+### 4.2. Interpretazione come span
 
 La somma $U+W$ è il più piccolo sottospazio vettoriale che contiene sia $U$ sia $W$.
 
@@ -223,7 +222,7 @@ Questo è importante perché l’unione $U\cup W$, in generale, non è un sottos
 
 ---
 
-# 5. Somma diretta
+## 5. Somma diretta
 
 Si dice che $U+W$ è una **somma diretta** se
 
@@ -247,9 +246,9 @@ $$
 
 La condizione sull’intersezione significa che l’unico vettore comune ai due sottospazi è il vettore nullo.
 
-## 5.1. Esempi geometrici
+### 5.1. Esempi geometrici
 
-### Due rette in $\mathbb R^2$
+#### Due rette in $\mathbb R^2$
 
 Siano $U$ e $W$ due rette passanti per l’origine e distinte. La loro intersezione è
 
@@ -269,7 +268,7 @@ $$
 \mathbb R^2=U\oplus W.
 $$
 
-### Un piano e una retta in $\mathbb R^3$
+#### Un piano e una retta in $\mathbb R^3$
 
 Sia $U$ un piano passante per l’origine e sia $W$ una retta non contenuta nel piano. In questo caso
 
@@ -297,7 +296,7 @@ $$
 
 quindi l’intersezione non sarebbe $\{0\}$ e la somma non sarebbe diretta.
 
-### Due piani in $\mathbb R^3$
+#### Due piani in $\mathbb R^3$
 
 Due piani distinti passanti per l’origine si intersecano in una retta passante per l’origine. Di conseguenza,
 
@@ -315,7 +314,7 @@ Due piani in $\mathbb R^3$ non possono dunque essere in somma diretta.
 
 ---
 
-# 6. Caratterizzazione della somma diretta tramite l’unicità
+## 6. Caratterizzazione della somma diretta tramite l’unicità
 
 La somma $U+W$ è diretta se e solo se ogni vettore di $U+W$ si scrive in modo unico come somma di un vettore di $U$ e di un vettore di $W$.
 
@@ -329,7 +328,7 @@ U\oplus W
 \text{ tali che }z=u+w.
 $$
 
-## 6.1. Se l’intersezione è nulla, la decomposizione è unica
+### 6.1. Se l’intersezione è nulla, la decomposizione è unica
 
 Supponiamo che
 
@@ -381,7 +380,7 @@ $$
 
 La decomposizione è unica.
 
-## 6.2. Se la decomposizione è unica, l’intersezione è nulla
+### 6.2. Se la decomposizione è unica, l’intersezione è nulla
 
 Supponiamo ora che ogni vettore di $U+W$ abbia una decomposizione unica.
 
@@ -414,7 +413,7 @@ $$
 
 ---
 
-# 7. Somma diretta generata da vettori linearmente indipendenti
+## 7. Somma diretta generata da vettori linearmente indipendenti
 
 Sia
 
@@ -444,7 +443,7 @@ $$
 \operatorname{span}(\mathcal B)=U\oplus W.
 $$
 
-## 7.1. La somma è $U+W$
+### 7.1. La somma è $U+W$
 
 Ogni vettore di $\operatorname{span}(\mathcal B)$ è una combinazione lineare dei vettori di $\mathcal B$:
 
@@ -476,7 +475,7 @@ $$
 \operatorname{span}(\mathcal B)=U+W.
 $$
 
-## 7.2. L’intersezione è nulla
+### 7.2. L’intersezione è nulla
 
 Sia $v\in U\cap W$. Allora $v$ si può scrivere sia usando i vettori di $\mathcal B_1$ sia usando quelli di $\mathcal B_2$:
 
@@ -517,9 +516,9 @@ $$
 
 ---
 
-# 8. Dimensione della somma diretta
+## 8. Dimensione della somma diretta
 
-## Proposizione
+### Proposizione
 
 Se
 
@@ -533,7 +532,7 @@ $$
 \dim(U\oplus W)=\dim U+\dim W.
 $$
 
-## Dimostrazione
+### Dimostrazione
 
 Siano
 
@@ -557,7 +556,7 @@ $$
 
 Poiché $U\cap W=\{0\}$, le due basi non hanno vettori in comune. Inoltre, il vettore nullo non appartiene a nessuna base, perché un insieme contenente il vettore nullo è linearmente dipendente.
 
-### $\mathcal B$ genera $U\oplus W$
+#### $\mathcal B$ genera $U\oplus W$
 
 Ogni vettore $z\in U\oplus W$ è della forma
 
@@ -587,7 +586,7 @@ $$
 
 quindi $z$ è combinazione lineare dei vettori di $\mathcal B$.
 
-### $\mathcal B$ è linearmente indipendente
+#### $\mathcal B$ è linearmente indipendente
 
 Supponiamo che
 
@@ -636,7 +635,7 @@ $$
 
 ---
 
-# 9. Formula generale per la dimensione della somma
+## 9. Formula generale per la dimensione della somma
 
 In generale, se $U$ e $W$ non sono in somma diretta, la dimensione della somma non è semplicemente la somma delle dimensioni.
 
@@ -652,9 +651,9 @@ $$
 
 Il termine $\dim(U\cap W)$ corregge il conteggio doppio dei vettori appartenenti a entrambi i sottospazi.
 
-## Esempi
+### Esempi
 
-### Due piani in $\mathbb R^3$
+#### Due piani in $\mathbb R^3$
 
 Se $U$ e $W$ sono due piani distinti in $\mathbb R^3$, allora
 
@@ -680,7 +679,7 @@ $$
 
 La somma non è diretta, perché l’intersezione ha dimensione $1$.
 
-### Un piano e una retta trasversale in $\mathbb R^3$
+#### Un piano e una retta trasversale in $\mathbb R^3$
 
 Se $U$ è un piano e $W$ una retta che interseca il piano soltanto nell’origine, allora
 
@@ -704,7 +703,7 @@ $$
 \mathbb R^3=U\oplus W.
 $$
 
-### Interpretazione geometrica
+#### Interpretazione geometrica
 
 La dimensione della somma dipende dalla posizione relativa dei sottospazi:
 
@@ -714,7 +713,7 @@ La dimensione della somma dipende dalla posizione relativa dei sottospazi:
 
 ---
 
-# 10. Dimostrazione della formula generale
+## 10. Dimostrazione della formula generale
 
 Vogliamo dimostrare che
 
@@ -732,7 +731,7 @@ $$
 \dim(U\cap W)=q.
 $$
 
-## 10.1. Base dell’intersezione
+### 10.1. Base dell’intersezione
 
 Sia
 
@@ -776,7 +775,7 @@ $$
 q+(n-q)+(p-q)=n+p-q.
 $$
 
-## 10.2. $\mathcal B$ genera $U+W$
+### 10.2. $\mathcal B$ genera $U+W$
 
 Sia $z\in U+W$. Allora
 
@@ -820,7 +819,7 @@ $$
 
 Quindi $z$ è combinazione lineare dei vettori di $\mathcal B$, e dunque $\mathcal B$ genera $U+W$.
 
-## 10.3. $\mathcal B$ è linearmente indipendente
+### 10.3. $\mathcal B$ è linearmente indipendente
 
 Supponiamo che una combinazione lineare dei vettori di $\mathcal B$ sia nulla:
 
@@ -906,11 +905,11 @@ $$
 
 ---
 
-# 11. Decomposizione di matrici in parte simmetrica e antisimmetrica
+## 11. Decomposizione di matrici in parte simmetrica e antisimmetrica
 
 Consideriamo lo spazio vettoriale delle matrici quadrate a coefficienti reali.
 
-## 11.1. Matrici simmetriche
+### 11.1. Matrici simmetriche
 
 Una matrice quadrata $A=(a_{ij})$ è **simmetrica** se
 
@@ -940,7 +939,7 @@ $$
 
 L’insieme delle matrici simmetriche è un sottospazio vettoriale: la somma di due matrici simmetriche è simmetrica e il prodotto di una matrice simmetrica per uno scalare è ancora simmetrico.
 
-## 11.2. Matrici antisimmetriche
+### 11.2. Matrici antisimmetriche
 
 Una matrice quadrata $A=(a_{ij})$ è **antisimmetrica** se
 
@@ -990,7 +989,7 @@ Anche l’insieme delle matrici antisimmetriche è un sottospazio vettoriale.
 
 > La caratteristica del campo è rilevante: il fatto che dalla relazione $a_{ii}=-a_{ii}$ segua $a_{ii}=0$ richiede che $2$ sia invertibile nel campo. In particolare, vale sui reali e sui complessi.
 
-## 11.3. L’intersezione è nulla
+### 11.3. L’intersezione è nulla
 
 Nel caso reale, una matrice che sia contemporaneamente simmetrica e antisimmetrica soddisfa
 
@@ -1032,7 +1031,7 @@ $$
 
 dove $\mathcal S$ è il sottospazio delle matrici simmetriche e $\mathcal A$ quello delle matrici antisimmetriche.
 
-## 11.4. Trasposta di una matrice
+### 11.4. Trasposta di una matrice
 
 Se $M=(a_{ij})$ è una matrice $m\times n$, la sua trasposta $M^T$ è la matrice $n\times m$ definita da
 
@@ -1074,7 +1073,7 @@ M\text{ antisimmetrica}
 M=-M^T.
 $$
 
-## 11.5. Decomposizione canonica
+### 11.5. Decomposizione canonica
 
 Per ogni matrice quadrata reale $M$,
 
@@ -1146,7 +1145,7 @@ La decomposizione è unica per la caratterizzazione generale della somma diretta
 
 ---
 
-# 12. Osservazioni metodologiche sugli esercizi
+## 12. Osservazioni metodologiche sugli esercizi
 
 Negli esercizi sulla determinazione di una base non è sufficiente individuare concretamente alcuni vettori. Occorre dimostrare entrambe le proprietà:
 

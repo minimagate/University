@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-08
+date: '2026-10-08'
 title: Sintassi e semantica della logica del primo ordine
 source: Lezione_06.pdf (slide 177-200)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Sintassi e semantica della logica del primo ordine

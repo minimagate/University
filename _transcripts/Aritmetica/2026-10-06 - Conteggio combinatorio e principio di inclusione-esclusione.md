@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-06
+date: '2026-10-06'
 title: Conteggio combinatorio e principio di inclusione-esclusione
-summary: La lezione tratta il conteggio degli anagrammi con lettere ripetute
-  tramite fattoriali e coefficienti multinomiali. Vengono studiate le funzioni
-  suriettive mediante il principio di inclusione-esclusione, il conteggio di
-  tassellazioni di griglie 2×n con una ricorrenza di tipo Fibonacci e alcune
-  identità binomiali ottenute con il doppio conteggio.
+summary: La lezione tratta il conteggio degli anagrammi con lettere ripetute tramite fattoriali e coefficienti
+  multinomiali. Vengono studiate le funzioni suriettive mediante il principio di inclusione-esclusione,
+  il conteggio di tassellazioni di griglie 2×n con una ricorrenza di tipo Fibonacci e alcune identità
+  binomiali ottenute con il doppio conteggio.
 source_audio: _audio/Aritmetica/New Recording 68.m4a
 duration_seconds: 5128
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-06T13:50:37.419Z
+transcribed_at: '2026-10-06T13:50:37.419Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-07 - Conteggio combinatorio e principio di inclusione-esclusione.md
+source_audio_status: missing
+study_note_date: '2026-10-07'
 ---
 
 # Conteggio combinatorio e principio di inclusione-esclusione

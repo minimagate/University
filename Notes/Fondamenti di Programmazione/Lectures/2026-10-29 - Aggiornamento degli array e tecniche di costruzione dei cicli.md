@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-29
+date: '2026-10-29'
 title: Aggiornamento degli array e tecniche di costruzione dei cicli
 source: Lezione_13.pdf (slide 371-405)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Aggiornamento degli array e tecniche di costruzione dei cicli

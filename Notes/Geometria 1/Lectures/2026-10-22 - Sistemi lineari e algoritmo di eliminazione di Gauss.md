@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-10-22
+date: '2026-10-22'
 title: Sistemi lineari e algoritmo di eliminazione di Gauss
-source_transcript: _transcripts/Geometria 1/2026-10-22 - Sistemi lineari e
-  algoritmo di eliminazione di Gauss.md
+source_transcript: _transcripts/Geometria 1/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di
+  Gauss.md
 source_hash: sha256:eec556b0f85ec39319008d46b208b352ab507cff846b16950c27a5e34f5a109e
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-22T11:59:02.375Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-22T11:59:02.375Z'
 ---
 
 # Sistemi lineari e algoritmo di eliminazione di Gauss

@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-13
+date: '2026-10-13'
 title: Quantificazione ristretta, uguaglianza e specifiche formali
 source: Lezione_08.pdf (slide 236-259)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Quantificazione ristretta, uguaglianza e specifiche formali

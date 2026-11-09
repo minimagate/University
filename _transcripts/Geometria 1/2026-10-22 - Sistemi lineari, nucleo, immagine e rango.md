@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-22
+date: '2026-10-22'
 title: Sistemi lineari, nucleo, immagine e rango
-summary: La lezione introduce i sistemi lineari nella forma matriciale Ax=b e
-  interpreta la moltiplicazione per una matrice come applicazione lineare e
-  combinazione delle sue colonne. Vengono studiati nucleo e immagine, le
-  soluzioni dei sistemi omogenei e non omogenei, la loro struttura come traslato
-  di un sottospazio, il criterio di iniettività e la formula delle dimensioni,
-  collegata al rango.
+summary: La lezione introduce i sistemi lineari nella forma matriciale Ax=b e interpreta la moltiplicazione
+  per una matrice come applicazione lineare e combinazione delle sue colonne. Vengono studiati nucleo
+  e immagine, le soluzioni dei sistemi omogenei e non omogenei, la loro struttura come traslato di un
+  sottospazio, il criterio di iniettività e la formula delle dimensioni, collegata al rango.
 source_audio: _audio/Geometria 1/New Recording 78.m4a
 duration_seconds: 4271
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-22T11:44:44.475Z
+transcribed_at: '2026-10-22T11:44:44.475Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-23 - Sistemi lineari, nucleo, immagine e rango.md
+source_audio_status: missing
+study_note_date: '2026-10-23'
 ---
 
 # Sistemi lineari, nucleo, immagine e rango

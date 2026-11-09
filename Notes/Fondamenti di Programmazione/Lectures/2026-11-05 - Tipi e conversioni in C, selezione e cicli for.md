@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-11-05
+date: '2026-11-05'
 title: Tipi e conversioni in C, selezione e cicli for
 source: Lezione_15.pdf (slide 448-486)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Tipi e conversioni in C, selezione e cicli for

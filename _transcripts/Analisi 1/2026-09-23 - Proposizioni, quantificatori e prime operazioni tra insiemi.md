@@ -1,19 +1,22 @@
 ---
 type: transcript
 course: Analisi 1
-date: 2026-09-23
+date: '2026-09-23'
 title: Proposizioni, quantificatori e prime operazioni tra insiemi
-summary: La lezione introduce proposizioni, predicati, quantificatori e
-  principali connettivi logici, analizzandone negazioni, implicazioni e tavole
-  di verità. Presenta inoltre gli insiemi, le rappresentazioni per elenco e
-  proprietà, l’appartenenza e l’inclusione, le operazioni fondamentali, il
-  prodotto cartesiano e l’insieme delle parti.
+summary: La lezione introduce proposizioni, predicati, quantificatori e principali connettivi logici,
+  analizzandone negazioni, implicazioni e tavole di verità. Presenta inoltre gli insiemi, le rappresentazioni
+  per elenco e proprietà, l’appartenenza e l’inclusione, le operazioni fondamentali, il prodotto cartesiano
+  e l’insieme delle parti.
 source_audio: _audio/Analisi 1/Biblioteca di Matematica Informatica e Fisica.m4a
 duration_seconds: 5491
 transcription_model: openai/whisper-large-v3-turbo
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-23T14:10:46.446Z
+transcribed_at: '2026-09-23T14:10:46.446Z'
+study_note: Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra
+  insiemi.md
+source_audio_status: missing
+study_note_date: '2026-09-23'
 ---
 
 # Proposizioni, quantificatori e prime operazioni tra insiemi

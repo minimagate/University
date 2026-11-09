@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-10-07
+date: '2026-10-07'
 title: Coordinate, basi e dimensione degli spazi vettoriali
-source_transcript: _transcripts/Geometria 1/2026-10-07 - Coordinate, basi e
-  dimensione degli spazi vettoriali.md
+source_transcript: _transcripts/Geometria 1/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md
 source_hash: sha256:6d95338851a56c635b7ee568603a0def38c917a300f8c3ba79d04f8d2a02eedc
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-07T09:20:59.456Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-07T09:20:59.456Z'
 ---
 
 # Coordinate, basi e dimensione degli spazi vettoriali
@@ -89,7 +88,7 @@ La base permette di descrivere astrattamente un vettore tramite i coefficienti c
 
 ---
 
-# Il caso finito: basi ordinate e coordinate in $K^n$
+## Il caso finito: basi ordinate e coordinate in $K^n$
 
 Supponiamo ora che la base sia finita e abbia $n$ elementi. Per parlare di coordinate come $n$-uple ordinate è necessario scegliere un ordinamento:
 
@@ -140,7 +139,7 @@ $$
 
 descrivono lo stesso vettore in due modi diversi: la prima usa i vettori della base, la seconda usa i coefficienti.
 
-## L’importanza dell’ordinamento
+### L’importanza dell’ordinamento
 
 Se si cambia l’ordine dei vettori della base, cambiano in generale le coordinate.
 
@@ -182,7 +181,7 @@ Per questo, quando si lavora con le coordinate, si considera sempre una base ord
 
 ---
 
-# La mappa delle coordinate è un isomorfismo
+## La mappa delle coordinate è un isomorfismo
 
 La mappa
 
@@ -192,7 +191,7 @@ $$
 
 è una biiezione lineare, quindi è un isomorfismo di spazi vettoriali.
 
-## Linearità
+### Linearità
 
 Siano
 
@@ -260,7 +259,7 @@ $$
 
 Le coordinate rispettano quindi le operazioni di somma e moltiplicazione per scalare.
 
-## Iniettività
+### Iniettività
 
 Supponiamo che due vettori $v,w\in V$ abbiano le stesse coordinate:
 
@@ -278,7 +277,7 @@ $$
 
 Ne segue che $v=w$. Pertanto $\Phi_{\mathcal{B}}$ è iniettiva.
 
-## Suriettività
+### Suriettività
 
 Sia
 
@@ -300,7 +299,7 @@ $$
 
 Ogni elemento di $K^n$ è quindi immagine di un vettore di $V$, perciò $\Phi_{\mathcal{B}}$ è suriettiva.
 
-## Conclusione
+### Conclusione
 
 La mappa delle coordinate è un isomorfismo:
 
@@ -312,9 +311,9 @@ Questo mostra che ogni spazio vettoriale finitamente dimensionale è, una volta 
 
 ---
 
-# Matrici come spazio vettoriale
+## Matrici come spazio vettoriale
 
-## Definizione dello spazio delle matrici
+### Definizione dello spazio delle matrici
 
 Sia $K$ un campo. Si indica con
 
@@ -343,7 +342,7 @@ $$
 
 Per esempio, $M_2(K)$ è lo spazio delle matrici $2\times 2$.
 
-## Operazioni
+### Operazioni
 
 La somma è definita soltanto tra matrici dello stesso tipo, cioè con lo stesso numero di righe e di colonne:
 
@@ -363,7 +362,7 @@ Le operazioni sono analoghe a quelle di $K^n$, con la differenza che gli element
 
 ---
 
-# La base canonica di $M_{m,n}(K)$
+## La base canonica di $M_{m,n}(K)$
 
 Per ogni coppia di indici
 
@@ -418,7 +417,7 @@ $$
 
 è la base canonica di $M_{m,n}(K)$.
 
-## Generazione
+### Generazione
 
 Sia
 
@@ -436,7 +435,7 @@ Infatti, il termine $a_{ij}E_{ij}$ contribuisce soltanto alla posizione $(i,j)$,
 
 Quindi le matrici elementari generano $M_{m,n}(K)$.
 
-## Indipendenza lineare
+### Indipendenza lineare
 
 Supponiamo che
 
@@ -456,7 +455,7 @@ Pertanto le matrici elementari sono linearmente indipendenti.
 
 Di conseguenza, $\mathcal{E}$ è una base di $M_{m,n}(K)$.
 
-## Dimensione
+### Dimensione
 
 Il numero di posizioni in una matrice con $m$ righe e $n$ colonne è $mn$. Quindi
 
@@ -490,7 +489,7 @@ $$
 
 ---
 
-# Verifica dell’indipendenza: attenzione al campo
+## Verifica dell’indipendenza: attenzione al campo
 
 Negli esercizi sulle matrici si può arrivare a sistemi di equazioni sui coefficienti. È importante ricordare che le conclusioni dipendono dal campo degli scalari.
 
@@ -515,7 +514,7 @@ quindi l’equazione $2\lambda=0$ è vera per ogni $\lambda$ e non permette di c
 
 ---
 
-# Basi: due caratterizzazioni fondamentali
+## Basi: due caratterizzazioni fondamentali
 
 Una base può essere definita come un insieme di vettori che è contemporaneamente:
 
@@ -524,7 +523,7 @@ Una base può essere definita come un insieme di vettori che è contemporaneamen
 
 Esistono però due ulteriori caratterizzazioni molto importanti.
 
-## Base come insieme linearmente indipendente massimale
+### Base come insieme linearmente indipendente massimale
 
 Un insieme $B\subseteq V$ è linearmente indipendente massimale se:
 
@@ -533,7 +532,7 @@ Un insieme $B\subseteq V$ è linearmente indipendente massimale se:
 
 “Massimale” si riferisce all’inclusione tra insiemi: non è possibile aggiungere a $B$ un ulteriore vettore mantenendo l’indipendenza lineare.
 
-### Dimostrazione: un insieme linearmente indipendente massimale genera
+#### Dimostrazione: un insieme linearmente indipendente massimale genera
 
 Supponiamo che $B$ sia linearmente indipendente massimale. Vogliamo dimostrare che $B$ genera $V$.
 
@@ -588,7 +587,7 @@ $$
 
 Essendo già linearmente indipendente, $B$ è una base.
 
-## Base come insieme minimale di generatori
+### Base come insieme minimale di generatori
 
 Un insieme $B\subseteq V$ è un insieme minimale di generatori se:
 
@@ -597,7 +596,7 @@ Un insieme $B\subseteq V$ è un insieme minimale di generatori se:
 
 “Minimale” si riferisce all’inclusione tra insiemi: non è possibile eliminare un vettore da $B$ mantenendo la proprietà di generare tutto lo spazio.
 
-### Dimostrazione: un insieme minimale di generatori è indipendente
+#### Dimostrazione: un insieme minimale di generatori è indipendente
 
 Supponiamo che $B$ sia un insieme minimale di generatori. Vogliamo dimostrare che $B$ è linearmente indipendente.
 
@@ -634,7 +633,7 @@ Ma questo contraddice la minimalità di $B$.
 
 Pertanto $B$ è linearmente indipendente. Essendo anche un insieme di generatori, è una base.
 
-## Equivalenza
+### Equivalenza
 
 Per ogni insieme $B\subseteq V$ sono equivalenti:
 
@@ -650,7 +649,7 @@ Queste tre descrizioni sottolineano aspetti diversi della stessa situazione:
 
 ---
 
-# Esistenza di una base nel caso finitamente generato
+## Esistenza di una base nel caso finitamente generato
 
 Supponiamo che $V$ sia generato da un insieme finito
 
@@ -673,11 +672,11 @@ In particolare, ogni spazio vettoriale finitamente generato ammette una base fin
 
 ---
 
-# Lemma di scambio
+## Lemma di scambio
 
 Il risultato centrale per confrontare basi è il lemma di scambio, noto anche come lemma di Steinitz.
 
-## Forma elementare
+### Forma elementare
 
 Siano
 
@@ -704,7 +703,7 @@ Il nuovo insieme:
 1. è linearmente indipendente;
 2. genera lo stesso sottospazio del vecchio insieme.
 
-### Dimostrazione della generazione
+#### Dimostrazione della generazione
 
 Dalla relazione
 
@@ -733,7 +732,7 @@ $$
 
 L’inclusione opposta segue dal fatto che $v$ è combinazione lineare dei vecchi vettori. Quindi gli span coincidono.
 
-### Dimostrazione dell’indipendenza
+#### Dimostrazione dell’indipendenza
 
 Supponiamo che
 
@@ -776,7 +775,7 @@ Il nuovo insieme è quindi linearmente indipendente.
 
 ---
 
-# Lemma di scambio nella forma per basi
+## Lemma di scambio nella forma per basi
 
 Sia
 
@@ -837,7 +836,7 @@ Quindi tutte le basi di uno spazio vettoriale finito hanno lo stesso numero di e
 
 ---
 
-# Dimensione
+## Dimensione
 
 Sia $V$ uno spazio vettoriale finitamente dimensionale. La dimensione di $V$ è il numero di elementi di una sua base:
 
@@ -859,9 +858,9 @@ $$
 
 Le coordinate di un vettore sono precisamente questi $n$ parametri.
 
-## Esempi
+### Esempi
 
-### Spazio delle colonne
+#### Spazio delle colonne
 
 $$
 \dim_K(K^n)=n.
@@ -883,7 +882,7 @@ e_n=
 \end{pmatrix}.
 $$
 
-### Matrici rettangolari
+#### Matrici rettangolari
 
 Per lo spazio delle matrici $m\times n$,
 
@@ -891,7 +890,7 @@ $$
 \dim_K(M_{m,n}(K))=mn.
 $$
 
-### Matrici quadrate
+#### Matrici quadrate
 
 Per lo spazio delle matrici quadrate $n\times n$,
 
@@ -907,7 +906,7 @@ $$
 
 ---
 
-# Confronto tra basi nel caso infinito
+## Confronto tra basi nel caso infinito
 
 Nel caso finito, dire che due basi hanno lo stesso numero di elementi significa dimostrare che hanno la stessa cardinalità naturale.
 
@@ -921,7 +920,7 @@ Nel corso è stato sviluppato soprattutto il caso finito, utilizzando il lemma d
 
 ---
 
-# Schema concettuale
+## Schema concettuale
 
 Per uno spazio vettoriale finitamente dimensionale $V$:
 

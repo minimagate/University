@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-06
+date: '2026-10-06'
 title: Equazioni diofantee lineari e loro soluzioni
-summary: La lezione studia le equazioni diofantee lineari ax+by=c, mostrando che
-  ammettono soluzioni intere se e solo se il massimo comune divisore di a e b
-  divide c. Attraverso l’identità di Bézout si costruisce una soluzione
-  particolare e si descrivono tutte le soluzioni mediante un parametro intero,
-  con riduzione preliminare tramite il massimo comune divisore.
+summary: La lezione studia le equazioni diofantee lineari ax+by=c, mostrando che ammettono soluzioni intere
+  se e solo se il massimo comune divisore di a e b divide c. Attraverso l’identità di Bézout si costruisce
+  una soluzione particolare e si descrivono tutte le soluzioni mediante un parametro intero, con riduzione
+  preliminare tramite il massimo comune divisore.
 source_audio: _audio/Aritmetica/Aula Magna - Polo Fibonacci.m4a
 duration_seconds: 5257
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-06T08:52:03.831Z
+transcribed_at: '2026-10-06T08:52:03.831Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md
+source_audio_status: missing
+study_note_date: '2026-10-06'
 ---
 
 # Equazioni diofantee lineari e loro soluzioni

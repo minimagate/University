@@ -1,8 +1,9 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-09-21
+date: '2026-09-21'
 title: Semantica del calcolo proposizionale e dimostrazioni per equivalenza
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Semantica del calcolo proposizionale e dimostrazioni per equivalenza

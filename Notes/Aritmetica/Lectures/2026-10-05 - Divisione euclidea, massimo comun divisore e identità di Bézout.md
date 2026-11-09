@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-05
+date: '2026-10-05'
 title: Divisione euclidea, massimo comun divisore e identità di Bézout
-source_transcript: _transcripts/Aritmetica/2026-10-05 - Divisione euclidea,
-  massimo comun divisore e identità di Bézout.md
+source_transcript: _transcripts/Aritmetica/2026-10-05 - Divisione euclidea, massimo comun divisore e identità
+  di Bézout.md
 source_hash: sha256:28c0aa73c00135ac5102eb318ec64f56061f5cf6299b0c70cd77edc926fa9374
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-05T14:38:58.042Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-05T14:38:58.042Z'
 ---
 
 # Divisione euclidea, massimo comun divisore e identità di Bézout

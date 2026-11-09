@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-09-28
+date: '2026-09-28'
 title: Assiomi dei reali e proprietà di completezza
-source_transcript: _transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e
-  proprietà di completezza.md
+source_transcript: _transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md
 source_hash: sha256:7f491d3e4a1ae47dcc827230e1efaae0c6685f2af0f7125cdb84895c273cd75c
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-28T12:31:50.721Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-28T12:31:50.721Z'
 ---
 
 # Assiomi dei reali e proprietà di completezza
@@ -564,11 +563,11 @@ Per dimostrare che in $\mathbb{R}$ i naturali sono distinti e che l’applicazio
 
 ---
 
-# 11. Maggioranti, minoranti, massimo e minimo
+## 11. Maggioranti, minoranti, massimo e minimo
 
 Sia $A\subseteq\mathbb{R}$ un insieme non vuoto.
 
-## 11.1 Maggiorante
+### 11.1 Maggiorante
 
 Un numero $M\in\mathbb{R}$ è un **maggiorante** di $A$ se
 
@@ -590,7 +589,7 @@ Un insieme può avere molti maggioranti. Se $M$ è un maggiorante, in genere anc
 
 I maggioranti non sono quindi necessariamente unici e non devono necessariamente appartenere all’insieme $A$.
 
-## 11.2 Minorante
+### 11.2 Minorante
 
 Un numero $m\in\mathbb{R}$ è un **minorante** di $A$ se
 
@@ -602,7 +601,7 @@ Un minorante è una barriera dal basso: è minore o uguale a tutti gli elementi 
 
 Anche i minoranti possono essere numerosi e non devono appartenere ad $A$.
 
-## 11.3 Massimo
+### 11.3 Massimo
 
 Un numero $M\in\mathbb{R}$ è il **massimo** di $A$ se:
 
@@ -625,7 +624,7 @@ $$
 
 Un maggiorante che appartiene all’insieme è dunque il massimo.
 
-## 11.4 Minimo
+### 11.4 Minimo
 
 Un numero $m\in\mathbb{R}$ è il **minimo** di $A$ se:
 
@@ -646,7 +645,7 @@ m\in A
 \forall a\in A,\ m\leq a.
 $$
 
-## 11.5 Unicità di massimo e minimo
+### 11.5 Unicità di massimo e minimo
 
 Se il massimo esiste, è unico.
 
@@ -681,9 +680,9 @@ Esempi:
 
 ---
 
-# 12. Insiemi limitati
+## 12. Insiemi limitati
 
-## 12.1 Limitatezza superiore
+### 12.1 Limitatezza superiore
 
 Un insieme $A\subseteq\mathbb{R}$ è **limitato superiormente** se possiede almeno un maggiorante:
 
@@ -694,7 +693,7 @@ $$
 
 Non è necessario che esista un massimo. La limitatezza superiore richiede soltanto l’esistenza di una barriera dall’alto.
 
-## 12.2 Limitatezza inferiore
+### 12.2 Limitatezza inferiore
 
 Un insieme $A$ è **limitato inferiormente** se possiede almeno un minorante:
 
@@ -703,7 +702,7 @@ $$
 \forall a\in A,\ m\leq a.
 $$
 
-## 12.3 Insieme limitato
+### 12.3 Insieme limitato
 
 Un insieme è detto semplicemente **limitato** se è limitato sia superiormente sia inferiormente.
 
@@ -732,11 +731,11 @@ Le due barriere possono essere rese simmetriche scegliendo un valore di $L$ suff
 
 ---
 
-# 13. Estremo superiore ed estremo inferiore
+## 13. Estremo superiore ed estremo inferiore
 
 Sia $A\subseteq\mathbb{R}$ non vuoto.
 
-## 13.1 Estremo superiore
+### 13.1 Estremo superiore
 
 Se $A$ non è limitato superiormente, si pone per convenzione
 
@@ -760,7 +759,7 @@ L’estremo superiore è quindi il più piccolo dei maggioranti.
 
 Il fatto che tale minimo esista non è automatico dalla definizione: deriva dall’assioma di completezza.
 
-## 13.2 Estremo inferiore
+### 13.2 Estremo inferiore
 
 Se $A$ non è limitato inferiormente, si pone
 
@@ -780,7 +779,7 @@ L’estremo inferiore è quindi il più grande dei minoranti.
 
 Anche l’esistenza di questo massimo deriva dall’assioma di completezza.
 
-## 13.3 Relazione con massimo e minimo
+### 13.3 Relazione con massimo e minimo
 
 Se il massimo esiste, allora coincide con il supremo:
 
@@ -820,7 +819,7 @@ In questo senso, il supremo e l’infimo sono i numeri che “vorrebbero essere�
 
 ---
 
-# 14. Dimostrazione dell’esistenza del supremo
+## 14. Dimostrazione dell’esistenza del supremo
 
 Consideriamo il caso non banale: $A$ è non vuoto e limitato superiormente.
 
@@ -888,11 +887,11 @@ Questa dimostrazione mostra il legame diretto tra completezza e supremi: il supr
 
 ---
 
-# 15. Caratterizzazione del supremo
+## 15. Caratterizzazione del supremo
 
 La definizione di $\sup A$ può essere riscritta in una forma basata sui quantificatori e su una proprietà di approssimazione.
 
-## 15.1 Caso $\sup A=+\infty$
+### 15.1 Caso $\sup A=+\infty$
 
 Per un insieme non vuoto $A\subseteq\mathbb{R}$,
 
@@ -910,7 +909,7 @@ $$
 
 Equivalentemente, si può scrivere $a\geq M$ a seconda della convenzione adottata; la forma con $a>M$ esprime chiaramente che l’insieme contiene elementi arbitrariamente grandi.
 
-### Dimostrazione tramite negazione
+#### Dimostrazione tramite negazione
 
 Dire che $A$ non è limitato superiormente significa negare
 
@@ -935,7 +934,7 @@ Non sarebbe equivalente chiedere l’esistenza di un unico $a$ che superi tutti 
 
 L’interpretazione geometrica è che, per ogni barriera reale $M$, l’insieme riesce a produrre un elemento che si trova oltre quella barriera.
 
-## 15.2 Caso $\sup A=L\in\mathbb{R}$
+### 15.2 Caso $\sup A=L\in\mathbb{R}$
 
 Per $A\neq\varnothing$, vale
 
@@ -979,7 +978,7 @@ Questa è la prima comparsa strutturale del parametro $\varepsilon$, che sarà c
 
 ---
 
-# 16. Caratterizzazione dell’infimo
+## 16. Caratterizzazione dell’infimo
 
 In modo analogo:
 
@@ -1021,7 +1020,7 @@ Se non esistesse un elemento di $A$ minore di $l+\varepsilon$, allora $l+\vareps
 
 ---
 
-# 17. Il ruolo dell’insieme vuoto
+## 17. Il ruolo dell’insieme vuoto
 
 Molte definizioni vengono formulate assumendo
 
@@ -1068,7 +1067,7 @@ Le formule generali devono essere formulate in modo da rimanere coerenti anche n
 
 ---
 
-# 18. Esempio: il supremo di $\mathbb{N}$
+## 18. Esempio: il supremo di $\mathbb{N}$
 
 Consideriamo $\mathbb{N}$ come sottoinsieme di $\mathbb{R}$. L’affermazione
 
@@ -1142,7 +1141,7 @@ che devono anch’esse essere giustificate a partire dagli assiomi se si vuole u
 
 ---
 
-# 19. Significato concettuale della completezza
+## 19. Significato concettuale della completezza
 
 L’assioma di completezza:
 

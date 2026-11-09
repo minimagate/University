@@ -1,20 +1,22 @@
 ---
 type: transcript
 course: Fondamenti di Programmazione
-date: 2026-09-25
+date: '2026-09-25'
 title: Stati, algoritmi e fondamenti della logica formale
-summary: La lezione presenta il rapporto tra algoritmi, programmi, esecuzione e
-  debugging, introducendo la rappresentazione astratta dello stato come
-  associazione tra nomi e valori. Attraverso l’esempio della moltiplicazione
-  vengono illustrati specifica, esecutore e modifiche di stato. Sono inoltre
-  introdotti interpretazione, modello, conseguenza logica, dimostrazione e
-  connettivi del calcolo proposizionale.
+summary: La lezione presenta il rapporto tra algoritmi, programmi, esecuzione e debugging, introducendo
+  la rappresentazione astratta dello stato come associazione tra nomi e valori. Attraverso l’esempio della
+  moltiplicazione vengono illustrati specifica, esecutore e modifiche di stato. Sono inoltre introdotti
+  interpretazione, modello, conseguenza logica, dimostrazione e connettivi del calcolo proposizionale.
 source_audio: _audio/Fondamenti di Programmazione/09-25-202614.m4a
 duration_seconds: 5200
 transcription_model: google/gemini-3.5-transcribe
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-25T19:27:29.553Z
+transcribed_at: '2026-09-25T19:27:29.553Z'
+study_note: Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della
+  logica formale.md
+source_audio_status: missing
+study_note_date: '2026-09-25'
 ---
 
 # Stati, algoritmi e fondamenti della logica formale

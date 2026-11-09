@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-09-24
+date: '2026-09-24'
 title: Funzioni, composizione e principio d’induzione
-source_transcript: _transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e
-  principio d’induzione.md
+source_transcript: _transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md
 source_hash: sha256:46df7e14e14bf379b34dceae4d7f4844f65cdcb90f65d7c1ceb0baa246c6a7d7
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-24T09:13:47.266Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-24T09:13:47.266Z'
 ---
 
 # Funzioni, composizione e principio d’induzione
@@ -568,9 +567,9 @@ In termini di proprietà, si selezionano tutti gli elementi $a\in A$ tali che la
 
 ---
 
-# 9. Il principio d’induzione
+## 9. Il principio d’induzione
 
-## 9.1 Predicati con una variabile naturale
+### 9.1 Predicati con una variabile naturale
 
 Sia $P(n)$ un predicato dipendente da $n\in\mathbb{N}$.
 
@@ -598,7 +597,7 @@ $$
 
 Nel passo induttivo si assume vera $P(n)$: questa è l’**ipotesi induttiva**. Sotto tale ipotesi si dimostra $P(n+1)$, che è la **tesi induttiva**.
 
-### 9.2 Interpretazione intuitiva: le tessere del domino
+#### 9.2 Interpretazione intuitiva: le tessere del domino
 
 Si possono immaginare le proposizioni
 
@@ -621,7 +620,7 @@ L’argomento intuitivo spiega il meccanismo, ma una dimostrazione rigorosa deve
 
 ---
 
-## 10. Somma dei quadrati
+### 10. Somma dei quadrati
 
 La formula da dimostrare è
 
@@ -639,7 +638,7 @@ $$
 0^2+1^2+2^2+\cdots+n^2.
 $$
 
-### 10.1 Passo base
+#### 10.1 Passo base
 
 Per $n=0$:
 
@@ -667,7 +666,7 @@ $$
 \frac{1\cdot 2\cdot 3}{6}=1.
 $$
 
-### 10.2 Passo induttivo
+#### 10.2 Passo induttivo
 
 Supponiamo vera l’ipotesi induttiva
 
@@ -717,7 +716,7 @@ L’induzione permette di verificare la formula senza dover scoprire, durante la
 
 ---
 
-## 11. Somma geometrica finita
+### 11. Somma geometrica finita
 
 Per $a\neq 1$ si vuole dimostrare la formula
 
@@ -735,7 +734,7 @@ $$
 \frac{a^{n+1}-1}{a-1}.
 $$
 
-### 11.1 Passo base
+#### 11.1 Passo base
 
 Per $n=0$:
 
@@ -754,7 +753,7 @@ $$
 
 purché $a\neq 1$.
 
-### 11.2 Passo induttivo
+#### 11.2 Passo induttivo
 
 Ipotesi induttiva:
 
@@ -790,7 +789,7 @@ $$
 
 Anche qui il passaggio centrale consiste nell’isolare l’ultimo termine per poter applicare l’ipotesi induttiva.
 
-### 11.3 Attenzione al caso $a=1$
+#### 11.3 Attenzione al caso $a=1$
 
 La formula contiene il denominatore $a-1$, quindi richiede
 
@@ -814,7 +813,7 @@ Questa è una tipica situazione in cui un denominatore che può annullarsi deve 
 
 ---
 
-## 12. Disuguaglianza di Bernoulli
+### 12. Disuguaglianza di Bernoulli
 
 La disuguaglianza di Bernoulli afferma che
 
@@ -826,7 +825,7 @@ per ogni $n\in\mathbb{N}$ e per ogni $x\geq -1$.
 
 Il caso $x=-1$ è ammesso, anche se nella dimostrazione si può inizialmente lavorare con $x>-1$ per evitare alcune complicazioni sul segno.
 
-### 12.1 Organizzazione del predicato
+#### 12.1 Organizzazione del predicato
 
 La proposizione contiene due parametri, $n$ e $x$. Per applicare l’induzione rispetto a $n$, si fissa o si quantifica preliminarmente $x$ e si considera il predicato
 
@@ -838,7 +837,7 @@ $$
 
 A quel punto il solo parametro libero è $n$.
 
-### 12.2 Passo base
+#### 12.2 Passo base
 
 Per $n=0$:
 
@@ -854,7 +853,7 @@ $$
 
 Il passo base è verificato.
 
-### 12.3 Passo induttivo
+#### 12.3 Passo induttivo
 
 Ipotesi induttiva:
 
@@ -896,7 +895,7 @@ $$
 nx^2\geq 0.
 $$
 
-### 12.4 Dove si usa l’ipotesi $x\geq -1$
+#### 12.4 Dove si usa l’ipotesi $x\geq -1$
 
 L’ipotesi $x\geq -1$ equivale a
 
@@ -930,7 +929,7 @@ che è vero.
 
 ---
 
-## 13. Un’induzione a partire da un indice diverso da zero
+### 13. Un’induzione a partire da un indice diverso da zero
 
 Consideriamo il problema di determinare per quali $n$ vale
 
@@ -946,7 +945,7 @@ n!=1\cdot 2\cdot 3\cdots n,
 0!=1.
 $$
 
-### 13.1 Esplorazione dei primi casi
+#### 13.1 Esplorazione dei primi casi
 
 Si calcolano i primi valori:
 
@@ -992,13 +991,13 @@ L’induzione si applica separatamente:
 - il caso $n=0$ è verificato direttamente;
 - per dimostrare la validità per ogni $n\geq 4$, si parte dal passo base $n=4$.
 
-### 13.2 Passo base per $n=4$
+#### 13.2 Passo base per $n=4$
 
 $$
 4!=24\geq 16=2^4.
 $$
 
-### 13.3 Passo induttivo
+#### 13.3 Passo induttivo
 
 Ipotesi induttiva, per $n\geq 4$:
 
@@ -1034,7 +1033,7 @@ Poi si usa $n+1\geq 2$, che è certamente vero per $n\geq 1$.
 
 Quindi la proprietà vale per ogni $n\geq 4$.
 
-### 13.4 Il meccanismo di caduta non deve necessariamente partire da zero
+#### 13.4 Il meccanismo di caduta non deve necessariamente partire da zero
 
 In questo esempio:
 
@@ -1047,7 +1046,7 @@ Le tessere corrispondenti a $1,2,3$ sono come incollate: anche se esiste il mecc
 
 ---
 
-## 14. Dimostrare un enunciato più forte
+### 14. Dimostrare un enunciato più forte
 
 Consideriamo la somma
 
@@ -1085,7 +1084,7 @@ $$
 
 che non è sufficiente per concludere che la somma sia minore o uguale a $1$.
 
-### 14.1 Un enunciato più forte
+#### 14.1 Un enunciato più forte
 
 Calcolando i primi casi:
 
@@ -1120,7 +1119,7 @@ La strategia generale è:
 
 Un enunciato più forte sembra, in linea di principio, più difficile, ma può avere una forma più adatta all’induzione.
 
-### 14.2 Dimostrazione della formula
+#### 14.2 Dimostrazione della formula
 
 La formula è
 

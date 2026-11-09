@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-09-23
+date: '2026-09-23'
 title: Numeri naturali, induzione e fattorizzazione
-summary: La lezione introduce i numeri naturali, le loro operazioni e la
-  definizione assiomatica mediante elemento iniziale e successore. Vengono
-  presentati il principio del minimo e le diverse forme equivalenti
-  dell’induzione matematica, con esempi e attenzione alla verifica del passo
-  base. Infine si discute l’esistenza della fattorizzazione in numeri primi e il
-  ruolo dell’induzione forte.
+summary: La lezione introduce i numeri naturali, le loro operazioni e la definizione assiomatica mediante
+  elemento iniziale e successore. Vengono presentati il principio del minimo e le diverse forme equivalenti
+  dell’induzione matematica, con esempi e attenzione alla verifica del passo base. Infine si discute l’esistenza
+  della fattorizzazione in numeri primi e il ruolo dell’induzione forte.
 source_audio: _audio/Aritmetica/Università Di Pisa Dipartimento di Matematica.m4a
 duration_seconds: 5118
 transcription_model: openai/whisper-large-v3-turbo
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-23T12:13:02.265Z
+transcribed_at: '2026-09-23T12:13:02.265Z'
+study_note: Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md
+source_audio_status: missing
+study_note_date: '2026-09-23'
 ---
 
 # Numeri naturali, induzione e fattorizzazione

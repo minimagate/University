@@ -1,12 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-21
+date: '2026-10-21'
 title: Relazioni di equivalenza e strutture quoziente
 source_transcript: _transcripts/Aritmetica/2026-10-22 - Relazioni di equivalenza e strutture quoziente.md
 source_hash: sha256:2079632a9956e76f9f7c51f5f66cb232365193288bc3c7869f776df0e419ab32
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-22T11:57:48.864Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-22T11:57:48.864Z'
 ---
 
 # Relazioni di equivalenza e strutture quoziente

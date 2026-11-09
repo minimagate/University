@@ -1,20 +1,22 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-27
+date: '2026-10-27'
 title: Equazioni esponenziali e congruenze modulo potenze prime
-summary: La lezione tratta le equazioni esponenziali nelle congruenze,
-  introducendo l’ordine di un elemento, la descrizione delle soluzioni e il
-  controllo dell’appartenenza di un termine alle potenze di una classe. Vengono
-  inoltre discussi il teorema cinese dei resti nella forma generalizzata, la
-  scomposizione modulo potenze prime e la risoluzione di congruenze quadratiche
-  mediante sollevamento modulo potenze.
+summary: La lezione tratta le equazioni esponenziali nelle congruenze, introducendo l’ordine di un elemento,
+  la descrizione delle soluzioni e il controllo dell’appartenenza di un termine alle potenze di una classe.
+  Vengono inoltre discussi il teorema cinese dei resti nella forma generalizzata, la scomposizione modulo
+  potenze prime e la risoluzione di congruenze quadratiche mediante sollevamento modulo potenze.
 source_audio: _audio/Aritmetica/New Recording 80.m4a
 duration_seconds: 5479
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-27T21:56:56.999Z
+transcribed_at: '2026-10-27T21:56:56.999Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze
+  prime.md
+source_audio_status: missing
+study_note_date: '2026-10-27'
 ---
 
 # Equazioni esponenziali e congruenze modulo potenze prime

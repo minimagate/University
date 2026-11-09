@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-11-01
+date: '2026-11-01'
 title: Gruppi ciclici, ordini e sottogruppi modulari
-source_transcript: _transcripts/Aritmetica/2026-11-01 - Gruppi ciclici, ordini e
-  sottogruppi modulari.md
+source_transcript: _transcripts/Aritmetica/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md
 source_hash: sha256:5f9520e88a48e5f8c6b641f99a6c7f1ed776f4d0d62bac07e384a364a94dc4d2
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-11-01T08:07:38.115Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-11-01T08:07:38.115Z'
 ---
 
 # Gruppi ciclici, ordini e sottogruppi modulari

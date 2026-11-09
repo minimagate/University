@@ -1,12 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-22
+date: '2026-10-22'
 title: Omomorfismi tra anelli e teorema cinese
 source_transcript: _transcripts/Aritmetica/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md
 source_hash: sha256:f6ec04ec1918c8efb467be582afb3369fba1dd7dbf2bd461846d3f206a1d6265
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-22T11:56:46.052Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-22T11:56:46.052Z'
 ---
 
 # Omomorfismi tra anelli e teorema cinese
@@ -63,7 +63,7 @@ In generale, quando si parla di omomorfismo tra strutture algebriche, è necessa
 
 ---
 
-# Il prodotto diretto di anelli
+## Il prodotto diretto di anelli
 
 Siano $A$ e $B$ due anelli. Sul prodotto cartesiano
 
@@ -122,7 +122,7 @@ Queste operazioni sono semplicemente quelle usuali sugli anelli $\mathbb Z/m\mat
 
 ---
 
-# La mappa naturale
+## La mappa naturale
 
 Si considerino due interi positivi $m,n$. È definita la funzione
 
@@ -144,7 +144,7 @@ In altre parole, una classe modulo $mn$ viene mandata nelle due classi ottenute 
 
 La funzione è naturale perché prende un intero $x$ e ne considera contemporaneamente il resto modulo $m$ e il resto modulo $n$.
 
-## Attenzione alla buona definizione
+### Attenzione alla buona definizione
 
 La formula è scritta usando un rappresentante $x$ della classe $\overline x^{\,mn}$. Bisogna quindi dimostrare che il risultato non dipende dalla scelta del rappresentante.
 
@@ -191,11 +191,11 @@ La funzione $\varphi$ è dunque ben definita.
 
 ---
 
-# $\varphi$ è un omomorfismo di anelli
+## $\varphi$ è un omomorfismo di anelli
 
 Si devono verificare la conservazione della somma e del prodotto.
 
-## Conservazione della somma
+### Conservazione della somma
 
 Siano $\overline x^{\,mn},\overline y^{\,mn}\in\mathbb Z/mn\mathbb Z$. Allora
 
@@ -238,7 +238,7 @@ $$
 \varphi\left(\overline y^{\,mn}\right).
 $$
 
-## Conservazione del prodotto
+### Conservazione del prodotto
 
 Analogamente,
 
@@ -285,9 +285,9 @@ $$
 
 ---
 
-# Il teorema cinese del resto
+## Il teorema cinese del resto
 
-## Enunciato
+### Enunciato
 
 La mappa naturale
 
@@ -335,7 +335,7 @@ Se $m$ e $n$ sono coprimi, il sistema ammette sempre una soluzione, unica modulo
 
 ---
 
-## Dimostrazione della sufficienza
+### Dimostrazione della sufficienza
 
 Supponiamo che
 
@@ -345,7 +345,7 @@ $$
 
 Si vuole dimostrare che $\varphi$ è un isomorfismo. Poiché $\varphi$ è già stata dimostrata essere un omomorfismo, è sufficiente dimostrare che è biiettiva.
 
-### Suriettività
+#### Suriettività
 
 Prendiamo un elemento arbitrario del codominio:
 
@@ -406,7 +406,7 @@ $$
 
 La funzione $\varphi$ è suriettiva.
 
-### Unicità modulo $mn$
+#### Unicità modulo $mn$
 
 Se $x$ e $y$ sono due soluzioni dello stesso sistema, allora
 
@@ -456,7 +456,7 @@ Una funzione tra due insiemi finiti della stessa cardinalità è suriettiva se e
 
 ---
 
-## Dimostrazione della necessità
+### Dimostrazione della necessità
 
 Supponiamo ora che $\varphi$ sia suriettiva. Vogliamo dimostrare che
 
@@ -510,7 +510,7 @@ Quindi la suriettività di $\varphi$ implica che $m$ e $n$ siano coprimi.
 
 ---
 
-# Esempio: il caso modulo $6$
+## Esempio: il caso modulo $6$
 
 Poiché
 
@@ -578,7 +578,7 @@ $$
 
 Il fatto che tutti i resti modulo $2$ e modulo $3$ vengano combinati in modo unico corrisponde esattamente alla biiettività della mappa.
 
-## Interpretazione tramite i resti
+### Interpretazione tramite i resti
 
 Un intero della forma $6k$ ha resto $0$ sia modulo $2$ sia modulo $3$.
 
@@ -596,7 +596,7 @@ Queste sei possibilità sono tutte le coppie possibili di resti modulo $2$ e mod
 
 ---
 
-# Perché la coprimalità è essenziale
+## Perché la coprimalità è essenziale
 
 Se $m$ e $n$ non sono coprimi, non tutte le coppie di classi possono essere realizzate.
 
@@ -631,7 +631,7 @@ La condizione di coprimalità non è quindi un dettaglio tecnico: è precisament
 
 ---
 
-# Passaggio dai gruppi additivi ai gruppi moltiplicativi
+## Passaggio dai gruppi additivi ai gruppi moltiplicativi
 
 Per ogni $m$, si considera il gruppo moltiplicativo delle classi invertibili modulo $m$:
 
@@ -682,7 +682,7 @@ $$
 
 Questa è la restrizione della mappa $\varphi$ al sottoinsieme degli elementi invertibili, con codominio ristretto al prodotto dei gruppi di elementi invertibili.
 
-## La mappa è ben definita sul gruppo moltiplicativo
+### La mappa è ben definita sul gruppo moltiplicativo
 
 Se $\overline x^{\,mn}$ è invertibile, allora
 
@@ -719,7 +719,7 @@ Quindi $\varphi^\times$ è un omomorfismo di gruppi.
 
 ---
 
-# Teorema cinese per gli elementi invertibili
+## Teorema cinese per gli elementi invertibili
 
 Se $\gcd(m,n)=1$, la restrizione induce un isomorfismo di gruppi
 
@@ -781,7 +781,7 @@ $$
 
 La mappa è quindi suriettiva. Anche l’iniettività segue dal teorema cinese, oppure dal fatto che è la restrizione di un isomorfismo di anelli.
 
-## Esempio nel caso modulo $6$
+### Esempio nel caso modulo $6$
 
 Gli elementi invertibili modulo $6$ sono
 
@@ -845,7 +845,7 @@ $$
 
 ---
 
-# Isomorfismo e nomi degli elementi
+## Isomorfismo e nomi degli elementi
 
 Un isomorfismo non richiede che gli elementi dei due oggetti abbiano lo stesso nome o siano letteralmente gli stessi elementi. Richiede che esista una corrispondenza biiettiva che conservi le operazioni.
 

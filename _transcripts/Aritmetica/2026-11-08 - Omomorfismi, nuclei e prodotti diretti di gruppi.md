@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-11-08
+date: '2026-11-08'
 title: Omomorfismi, nuclei e prodotti diretti di gruppi
-summary: La lezione analizza la buona definizione degli omomorfismi tra gruppi
-  quoziente, con particolare attenzione alle mappe tra gruppi ciclici e alle
-  condizioni di divisibilità. Vengono studiate immagine, controimmagine e
-  nucleo, i criteri per iniettività e conservazione dell’ordine, la
-  classificazione dei gruppi ciclici e il prodotto diretto, il cui ordine si
-  calcola tramite il minimo comune multiplo.
+summary: La lezione analizza la buona definizione degli omomorfismi tra gruppi quoziente, con particolare
+  attenzione alle mappe tra gruppi ciclici e alle condizioni di divisibilità. Vengono studiate immagine,
+  controimmagine e nucleo, i criteri per iniettività e conservazione dell’ordine, la classificazione dei
+  gruppi ciclici e il prodotto diretto, il cui ordine si calcola tramite il minimo comune multiplo.
 source_audio: _audio/Aritmetica/New Recording 85.m4a
 duration_seconds: 5405
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-11-08T12:54:39.794Z
+transcribed_at: '2026-11-08T12:54:39.794Z'
+study_note: Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md
+source_audio_status: available
+study_note_date: '2026-11-08'
 ---
 
 # Omomorfismi, nuclei e prodotti diretti di gruppi

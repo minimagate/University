@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-09-23
+date: '2026-09-23'
 title: Insiemi, applicazioni e spazi vettoriali
-source_transcript: _transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e
-  spazi vettoriali.md
+source_transcript: _transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md
 source_hash: sha256:b46d37b13beecd9d1c6d4928613205d8b86d908462b5efadb7426c0b3b686b60
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-23T10:33:40.887Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-23T10:33:40.887Z'
 ---
 
 # Insiemi, applicazioni e spazi vettoriali
@@ -27,9 +26,9 @@ Il docente ha sottolineato l’importanza di svolgere personalmente gli esercizi
 
 ---
 
-# 1. Insiemi e operazioni tra insiemi
+## 1. Insiemi e operazioni tra insiemi
 
-## 1.1 Notazione per gli insiemi
+### 1.1 Notazione per gli insiemi
 
 Un insieme viene indicato generalmente con una lettera maiuscola, ad esempio $A$, mentre i suoi elementi vengono indicati con lettere minuscole oppure con altri simboli.
 
@@ -55,7 +54,7 @@ $$
 
 Gli insiemi sono considerati oggetti primitivi: non si dà, in questo contesto, una definizione ulteriore di “insieme”, ma si fissano le notazioni e le operazioni fondamentali.
 
-## 1.2 Intersezione
+### 1.2 Intersezione
 
 Dati due insiemi $X$ e $Y$, la loro intersezione è l’insieme degli elementi appartenenti a entrambi:
 
@@ -73,7 +72,7 @@ $$
 
 Graficamente, usando i diagrammi di Venn, $X\cap Y$ è la regione comune ai due insiemi.
 
-## 1.3 Unione
+### 1.3 Unione
 
 L’unione di $X$ e $Y$ è l’insieme degli elementi che appartengono ad almeno uno dei due insiemi:
 
@@ -91,7 +90,7 @@ $$
 
 Il termine “oppure” è da intendere in senso inclusivo: un elemento può appartenere a $X$, a $Y$ oppure a entrambi.
 
-## 1.4 Prodotto cartesiano
+### 1.4 Prodotto cartesiano
 
 Il prodotto cartesiano di due insiemi $X$ e $Y$ è l’insieme delle coppie ordinate $(x,y)$ tali che il primo elemento appartiene a $X$ e il secondo appartiene a $Y$:
 
@@ -149,7 +148,7 @@ $$
 
 cioè coppie il cui primo elemento è a sua volta una coppia. Formalmente, questo insieme non coincide esattamente con $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$, i cui elementi sono scritti come terne $(x,y,z)$. Esiste tuttavia una corrispondenza naturale tra le due descrizioni. Questa distinzione formale diventa importante quando si lavora con definizioni precise.
 
-## 1.5 Insiemi numerici
+### 1.5 Insiemi numerici
 
 Tra gli insiemi numerici fondamentali si considerano:
 
@@ -161,7 +160,7 @@ Tra gli insiemi numerici fondamentali si considerano:
 
 La convenzione riguardo alla presenza dello zero in $\mathbb{N}$ può variare. In alcuni contesti si pone $\mathbb{N}=\{0,1,2,\ldots\}$, in altri $\mathbb{N}=\{1,2,3,\ldots\}$.
 
-## 1.6 Proprietà distributive tra unione e intersezione
+### 1.6 Proprietà distributive tra unione e intersezione
 
 Per tre insiemi $X$, $Y$ e $Z$ valgono le proprietà distributive:
 
@@ -183,7 +182,7 @@ Queste identità possono essere verificate mediante diagrammi di Venn oppure for
 
 ---
 
-# 2. Come si dimostra l’uguaglianza tra insiemi
+## 2. Come si dimostra l’uguaglianza tra insiemi
 
 Per dimostrare che due insiemi $A$ e $B$ sono uguali, si dimostrano le due inclusioni:
 
@@ -203,7 +202,7 @@ A\subseteq B
 \forall x\,(x\in A\Rightarrow x\in B).
 $$
 
-## 2.1 Dimostrazione di un’inclusione
+### 2.1 Dimostrazione di un’inclusione
 
 Per dimostrare $A\subseteq B$:
 
@@ -226,7 +225,7 @@ A\subseteq B
 B\subseteq A.
 $$
 
-## 2.2 Esempio: proprietà distributiva
+### 2.2 Esempio: proprietà distributiva
 
 Consideriamo
 
@@ -278,9 +277,9 @@ Questa tecnica sarà utilizzata frequentemente nel seguito del corso.
 
 ---
 
-# 3. Applicazioni tra insiemi
+## 3. Applicazioni tra insiemi
 
-## 3.1 Definizione intuitiva
+### 3.1 Definizione intuitiva
 
 Un’applicazione, o funzione, da un insieme $X$ a un insieme $Y$ è una regola che associa a ogni elemento di $X$ uno e un solo elemento di $Y$.
 
@@ -308,7 +307,7 @@ Il simbolo $\exists!$ significa “esiste uno e un solo”.
 
 È importante specificare non solo la legge $x\mapsto f(x)$, ma anche dominio e codominio. La stessa espressione può definire applicazioni diverse se cambiano dominio o codominio.
 
-## 3.2 Definizione mediante il grafico
+### 3.2 Definizione mediante il grafico
 
 Il concetto intuitivo di “regola” può essere formalizzato usando il prodotto cartesiano.
 
@@ -346,9 +345,9 @@ La rappresentazione grafica del prodotto cartesiano è solo un supporto intuitiv
 
 ---
 
-# 4. Iniettività, suriettività e biettività
+## 4. Iniettività, suriettività e biettività
 
-## 4.1 Applicazioni iniettive
+### 4.1 Applicazioni iniettive
 
 Un’applicazione $f:X\to Y$ è **iniettiva** se elementi distinti del dominio hanno immagini distinte:
 
@@ -376,7 +375,7 @@ $$
 
 Quindi $f$ non è iniettiva se esistono due elementi distinti del dominio che vengono mandati nello stesso elemento del codominio.
 
-## 4.2 Applicazioni suriettive
+### 4.2 Applicazioni suriettive
 
 Un’applicazione $f:X\to Y$ è **suriettiva** se ogni elemento del codominio è immagine di almeno un elemento del dominio:
 
@@ -394,7 +393,7 @@ $$
 
 La suriettività riguarda il codominio: ogni elemento di $Y$ deve essere effettivamente raggiunto.
 
-## 4.3 Applicazioni biettive
+### 4.3 Applicazioni biettive
 
 Un’applicazione è **biettiva** se è contemporaneamente iniettiva e suriettiva.
 
@@ -404,7 +403,7 @@ Le applicazioni biettive sono anche dette corrispondenze biunivoche.
 
 ---
 
-# 5. Composizione e applicazione identica
+## 5. Composizione e applicazione identica
 
 Siano date due applicazioni compatibili:
 
@@ -436,7 +435,7 @@ h\circ(g\circ f)
 (h\circ g)\circ f.
 $$
 
-## 5.1 Applicazione identica
+### 5.1 Applicazione identica
 
 L’identità di un insieme $X$ è l’applicazione
 
@@ -468,7 +467,7 @@ $$
 
 L’applicazione $g$ si chiama **applicazione inversa** di $f$ e si indica con $f^{-1}$.
 
-## 5.2 Costruzione dell’inversa di una biezione
+### 5.2 Costruzione dell’inversa di una biezione
 
 Supponiamo che $f:X\to Y$ sia biettiva. Per definire $g=f^{-1}$ bisogna specificare il valore di $g$ su ogni elemento $y\in Y$.
 
@@ -517,11 +516,11 @@ $$
 
 ---
 
-# 6. Il piano e i vettori geometrici
+## 6. Il piano e i vettori geometrici
 
 Il corso introdurrà gli spazi vettoriali come generalizzazione di oggetti geometrici e numerici già noti.
 
-## 6.1 Punti del piano e coordinate
+### 6.1 Punti del piano e coordinate
 
 Fissata un’origine $O$ e due direzioni indipendenti, ogni punto $P$ del piano può essere identificato con una coppia di numeri reali $(x,y)$.
 
@@ -535,7 +534,7 @@ $$
 
 I numeri $x$ e $y$ sono le coordinate di $P$, oppure le coordinate del vettore $\overrightarrow{OP}$ rispetto alla base scelta.
 
-## 6.2 Vettori geometrici
+### 6.2 Vettori geometrici
 
 Intuitivamente, un vettore geometrico può essere rappresentato da un segmento orientato. Due segmenti traslati l’uno rispetto all’altro rappresentano lo stesso vettore: conta la direzione, il verso e la lunghezza, non il punto specifico in cui il segmento è disegnato.
 
@@ -555,7 +554,7 @@ $$
 
 è evidente geometricamente perché il parallelogramma costruito non cambia scambiando i due lati.
 
-## 6.3 Riferimenti non ortogonali
+### 6.3 Riferimenti non ortogonali
 
 Non è necessario scegliere un sistema cartesiano ortogonale. Si possono scegliere due vettori $\mathbf{v}_1$ e $\mathbf{v}_2$ non allineati, anche non unitari e non ortogonali.
 
@@ -573,7 +572,7 @@ La costruzione geometrica usa il parallelogramma: si scompone $\overrightarrow{O
 
 Le coordinate dipendono dal riferimento scelto. Se si cambiano i vettori $\mathbf{v}_1$ e $\mathbf{v}_2$, lo stesso vettore può avere coefficienti differenti. L’unicità riguarda quindi le coordinate rispetto a un riferimento fissato.
 
-## 6.4 Coordinate nello spazio
+### 6.4 Coordinate nello spazio
 
 Nello spazio si scelgono tre vettori non complanari $\mathbf{v}_1,\mathbf{v}_2,\mathbf{v}_3$. Essi costituiscono un riferimento, anche se non sono necessariamente ortogonali o unitari.
 
@@ -597,7 +596,7 @@ La proprietà fondamentale richiesta alle coordinate è:
 
 ---
 
-# 7. Somma e prodotto per scalare
+## 7. Somma e prodotto per scalare
 
 Sia $\mathbf{v}$ un vettore scritto rispetto a una base $\mathbf{v}_1,\mathbf{v}_2,\mathbf{v}_3$ come
 
@@ -615,7 +614,7 @@ $$
 x'\mathbf{v}_1+y'\mathbf{v}_2+z'\mathbf{v}_3.
 $$
 
-## 7.1 Coordinate della somma
+### 7.1 Coordinate della somma
 
 La somma è:
 
@@ -645,7 +644,7 @@ $$
 
 Questa proprietà dipende dalle proprietà della somma di vettori, in particolare dalla commutatività e dall’associatività.
 
-## 7.2 Prodotto esterno
+### 7.2 Prodotto esterno
 
 Il prodotto di uno scalare per un vettore è un’operazione distinta dalla somma vettoriale. Si tratta di un’applicazione
 
@@ -696,11 +695,11 @@ $$
 (\alpha x,\alpha y,\alpha z).
 $$
 
-## 7.3 Proprietà del prodotto per scalare
+### 7.3 Proprietà del prodotto per scalare
 
 Per scalari $\alpha,\beta\in\mathbb{R}$ e vettori $\mathbf{u},\mathbf{v}\in V$, valgono le proprietà:
 
-### Distributività rispetto alla somma di vettori
+#### Distributività rispetto alla somma di vettori
 
 $$
 \alpha(\mathbf{u}+\mathbf{v})
@@ -708,7 +707,7 @@ $$
 \alpha\mathbf{u}+\alpha\mathbf{v}.
 $$
 
-### Distributività rispetto alla somma di scalari
+#### Distributività rispetto alla somma di scalari
 
 $$
 (\alpha+\beta)\mathbf{v}
@@ -716,7 +715,7 @@ $$
 \alpha\mathbf{v}+\beta\mathbf{v}.
 $$
 
-### Compatibilità con il prodotto degli scalari
+#### Compatibilità con il prodotto degli scalari
 
 $$
 \alpha(\beta\mathbf{v})
@@ -724,7 +723,7 @@ $$
 (\alpha\beta)\mathbf{v}.
 $$
 
-### Azione dell’unità
+#### Azione dell’unità
 
 $$
 1\mathbf{v}=\mathbf{v}.
@@ -734,9 +733,9 @@ Le proprietà geometriche della somma e del prodotto per scalare sono l’origin
 
 ---
 
-# 8. Operazioni e campi
+## 8. Operazioni e campi
 
-## 8.1 Operazioni interne
+### 8.1 Operazioni interne
 
 Un’operazione interna su un insieme $K$ è un’applicazione
 
@@ -764,7 +763,7 @@ $$
 
 dove il primo elemento è uno scalare e il secondo è un vettore.
 
-## 8.2 Campi
+### 8.2 Campi
 
 Un campo è un insieme $K$ dotato di due operazioni interne, somma e prodotto, che soddisfano determinati assiomi.
 
@@ -776,7 +775,7 @@ $$
 
 L’obiettivo della definizione assiomatica è isolare le proprietà essenziali dei numeri, senza dipendere dalla particolare costruzione degli interi, dei razionali o dei reali.
 
-### Assiomi della somma
+#### Assiomi della somma
 
 La somma deve soddisfare:
 
@@ -808,7 +807,7 @@ La somma deve soddisfare:
 
 Di conseguenza, $(K,+)$ è un gruppo abeliano, cioè un gruppo commutativo.
 
-### Assiomi del prodotto
+#### Assiomi del prodotto
 
 Il prodotto deve soddisfare:
 
@@ -840,7 +839,7 @@ Il prodotto deve soddisfare:
 
 La restrizione $x\neq 0$ è necessaria: lo zero non è invertibile. Gli elementi non nulli di un campo formano un gruppo abeliano rispetto al prodotto.
 
-### Proprietà distributive
+#### Proprietà distributive
 
 Il prodotto deve essere distributivo rispetto alla somma:
 
@@ -862,7 +861,7 @@ In sintesi, un campo è un insieme con due operazioni, somma e prodotto, tali ch
 - gli elementi non nulli rendano l’insieme un gruppo abeliano rispetto al prodotto;
 - il prodotto sia distributivo rispetto alla somma.
 
-## 8.3 Il campo con due elementi
+### 8.3 Il campo con due elementi
 
 Esiste un campo con soli due elementi:
 
@@ -904,9 +903,9 @@ Più in generale, per ogni numero primo $p$ esiste un campo con $p$ elementi, in
 
 ---
 
-# 9. Spazi vettoriali
+## 9. Spazi vettoriali
 
-## 9.1 Idea generale
+### 9.1 Idea generale
 
 Uno spazio vettoriale è una generalizzazione astratta dell’insieme dei vettori geometrici del piano o dello spazio.
 
@@ -935,11 +934,11 @@ $$
 (\alpha,\mathbf{v})\longmapsto \alpha\mathbf{v}.
 $$
 
-## 9.2 Assiomi di spazio vettoriale
+### 9.2 Assiomi di spazio vettoriale
 
 Un insieme $V$ dotato di queste operazioni è uno spazio vettoriale su $K$ se valgono le seguenti proprietà.
 
-### Proprietà della somma
+#### Proprietà della somma
 
 Per ogni $\mathbf{u},\mathbf{v},\mathbf{w}\in V$:
 
@@ -977,7 +976,7 @@ Per ogni $\mathbf{u},\mathbf{v},\mathbf{w}\in V$:
 
 Quindi $(V,+)$ è un gruppo abeliano.
 
-### Proprietà del prodotto esterno
+#### Proprietà del prodotto esterno
 
 Per ogni $\alpha,\beta\in K$ e $\mathbf{u},\mathbf{v}\in V$:
 
@@ -1011,11 +1010,11 @@ Questi assiomi formalizzano le proprietà già osservate per i vettori geometric
 
 ---
 
-# 10. Unicità degli elementi neutri e degli inversi
+## 10. Unicità degli elementi neutri e degli inversi
 
 Tra gli esercizi proposti vi sono alcune dimostrazioni fondamentali sugli assiomi di gruppo e di campo.
 
-## 10.1 Unicità dell’elemento neutro per la somma
+### 10.1 Unicità dell’elemento neutro per la somma
 
 Supponiamo che $0$ e $0'$ siano entrambi elementi neutri rispetto alla somma. Ciò significa che per ogni $x$:
 
@@ -1049,7 +1048,7 @@ Quindi l’elemento neutro rispetto alla somma è unico.
 
 La struttura della dimostrazione è generale: per dimostrare l’unicità di un oggetto caratterizzato da una proprietà, si suppone che esistano due oggetti con tale proprietà e si mostra che coincidono.
 
-## 10.2 Unicità dell’opposto
+### 10.2 Unicità dell’opposto
 
 Supponiamo che $y$ e $z$ siano entrambi opposti di $x$. Allora:
 
@@ -1075,7 +1074,7 @@ $$
 
 Quindi l’opposto di un elemento è unico.
 
-## 10.3 Unicità dell’inverso moltiplicativo
+### 10.3 Unicità dell’inverso moltiplicativo
 
 Analogamente, se $y$ e $z$ sono entrambi inversi di $x\neq 0$, allora:
 
@@ -1102,7 +1101,7 @@ Quindi l’inverso moltiplicativo di un elemento non nullo è unico.
 
 ---
 
-# 11. Collegamento con gli argomenti successivi
+## 11. Collegamento con gli argomenti successivi
 
 Gli spazi vettoriali costituiscono il primo grande oggetto astratto del corso. In seguito verranno studiate soprattutto:
 

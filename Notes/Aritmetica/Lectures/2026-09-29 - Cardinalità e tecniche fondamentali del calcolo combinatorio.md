@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-09-29
+date: '2026-09-29'
 title: Cardinalità e tecniche fondamentali del calcolo combinatorio
-source_transcript: _transcripts/Aritmetica/2026-09-29 - Cardinalità e tecniche
-  fondamentali del calcolo combinatorio.md
+source_transcript: _transcripts/Aritmetica/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo
+  combinatorio.md
 source_hash: sha256:3a1a9b90f978be42eca4f10664786c7c66fea21c2fd6366a213efbe68b857999
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-29T10:52:19.306Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-29T10:52:19.306Z'
 ---
 
 # Cardinalità e tecniche fondamentali del calcolo combinatorio
@@ -138,7 +138,7 @@ Questo è un esempio di conteggio doppio: i quadratini vengono contati una prima
 
 ---
 
-# 3. Che cosa significa contare
+## 3. Che cosa significa contare
 
 Nel contesto del corso, il calcolo combinatorio consiste nel contare oggetti appartenenti a insiemi finiti.
 
@@ -150,7 +150,7 @@ $$
 
 La scelta di iniziare da $1$, anziché da $0$, è convenzionale. In alcuni contesti si potrebbe usare $\{0,\ldots,r-1\}$, ma bisogna mantenere coerente la convenzione.
 
-## Cardinalità
+### Cardinalità
 
 La **cardinalità** di un insieme finito $X$ è il numero di elementi di $X$ e si indica con una delle notazioni
 
@@ -178,7 +178,7 @@ $$
 
 significa costruire una corrispondenza biunivoca tra l’insieme degli oggetti e $[5]$.
 
-## Cardinalità come relazione di equivalenza
+### Cardinalità come relazione di equivalenza
 
 Due insiemi $X$ e $Y$ hanno la stessa cardinalità se e solo se esiste una biiezione
 
@@ -199,7 +199,7 @@ Una biiezione è una funzione che è contemporaneamente:
 - **iniettiva**;
 - **suriettiva**.
 
-### Dimostrazione della composizione
+#### Dimostrazione della composizione
 
 Se esistono biiezioni
 
@@ -221,7 +221,7 @@ Viceversa, se esiste una biiezione $h:X\to Y$, allora, nel caso finito, si può 
 
 ---
 
-# 4. Funzioni, iniettività, suriettività e biiettività
+## 4. Funzioni, iniettività, suriettività e biiettività
 
 Una funzione
 
@@ -271,7 +271,7 @@ Non basta che abbiano la stessa immagine come insieme: l’associazione tra elem
 
 ---
 
-# 5. Il principio dei cassetti
+## 5. Il principio dei cassetti
 
 Il **principio dei cassetti**, detto anche principio di Dirichlet o principio della piccionaia, afferma:
 
@@ -293,7 +293,7 @@ Il principio dei cassetti è spesso utilizzato per dimostrare l’impossibilità
 
 ---
 
-# 6. Cardinalità del prodotto cartesiano
+## 6. Cardinalità del prodotto cartesiano
 
 Il prodotto cartesiano di due insiemi $X$ e $Y$ è
 
@@ -325,7 +325,7 @@ $$
 |X\times Y|=nm.
 $$
 
-### Motivazione
+#### Motivazione
 
 Per la prima componente della coppia ci sono $n$ possibilità. Per ciascuna scelta della prima componente, la seconda componente può essere scelta in $m$ modi. Le scelte sono indipendenti, quindi il numero totale è
 
@@ -351,7 +351,7 @@ $$
 
 ---
 
-# 7. Numero di funzioni tra due insiemi finiti
+## 7. Numero di funzioni tra due insiemi finiti
 
 Siano $X$ e $Y$ insiemi finiti con
 
@@ -404,7 +404,7 @@ La notazione $Y^X$ viene talvolta utilizzata per indicare l’insieme di tutte l
 
 ---
 
-# 8. Conteggio delle funzioni iniettive
+## 8. Conteggio delle funzioni iniettive
 
 Siano ancora
 
@@ -470,7 +470,7 @@ $$
 
 ---
 
-# 9. Funzioni tra insiemi finiti con la stessa cardinalità
+## 9. Funzioni tra insiemi finiti con la stessa cardinalità
 
 Se $X$ e $Y$ sono finiti e hanno la stessa cardinalità,
 
@@ -494,11 +494,11 @@ f\text{ suriettiva}
 f\text{ biiettiva}.
 $$
 
-### Perché una funzione iniettiva è suriettiva
+#### Perché una funzione iniettiva è suriettiva
 
 Se $f$ è iniettiva, le $n$ immagini degli $n$ elementi di $X$ sono tutte distinte. Poiché anche $Y$ ha esattamente $n$ elementi, queste immagini devono essere tutti gli elementi di $Y$. Quindi $f$ è suriettiva.
 
-### Perché una funzione non iniettiva non può essere suriettiva
+#### Perché una funzione non iniettiva non può essere suriettiva
 
 Se $f$ non è iniettiva, almeno due elementi distinti di $X$ hanno la stessa immagine. In tal modo, tra le immagini compaiono meno di $n$ elementi distinti. Poiché $Y$ contiene $n$ elementi, almeno un elemento del codominio rimane escluso: la funzione non è suriettiva.
 
@@ -514,7 +514,7 @@ $$
 
 ---
 
-# 10. Insieme delle parti
+## 10. Insieme delle parti
 
 Dato un insieme $X$, si indica con
 
@@ -534,7 +534,7 @@ $$
 \boxed{|\mathcal{P}(X)|=2^n.}
 $$
 
-### Conteggio diretto
+#### Conteggio diretto
 
 Per costruire un sottoinsieme $A\subseteq X$, ogni elemento di $X$ può essere:
 
@@ -570,7 +570,7 @@ $$
 
 ---
 
-# 11. Funzioni caratteristiche e corrispondenza con l’insieme delle parti
+## 11. Funzioni caratteristiche e corrispondenza con l’insieme delle parti
 
 A ogni sottoinsieme $A\subseteq X$ si associa la sua **funzione caratteristica**
 
@@ -644,7 +644,7 @@ Questa è una seconda dimostrazione, più formale, della cardinalità dell’ins
 
 ---
 
-# 12. Uguaglianza e inclusione tra insiemi
+## 12. Uguaglianza e inclusione tra insiemi
 
 Due insiemi $A$ e $B$ sono uguali se e solo se hanno esattamente gli stessi elementi:
 
@@ -696,7 +696,7 @@ Questa tecnica va però usata solo quando le due situazioni sono realmente simme
 
 ---
 
-# 13. Sottoinsiemi di cardinalità fissata e coefficienti binomiali
+## 13. Sottoinsiemi di cardinalità fissata e coefficienti binomiali
 
 Sia $X$ un insieme con $|X|=n$. Si vuole contare il numero di sottoinsiemi di $X$ aventi cardinalità $r$.
 
@@ -735,7 +735,7 @@ $$
 
 Il fattore $r!$ serve proprio a eliminare l’ordine.
 
-## Casi limite
+### Casi limite
 
 Si hanno le convenzioni:
 
@@ -754,7 +754,7 @@ $$
 \qquad\text{se }r>n.
 $$
 
-## Simmetria dei coefficienti binomiali
+### Simmetria dei coefficienti binomiali
 
 Vale la relazione
 
@@ -785,7 +785,7 @@ $$
 
 ---
 
-# 14. Relazione tra funzioni iniettive, tuple ordinate e sottoinsiemi
+## 14. Relazione tra funzioni iniettive, tuple ordinate e sottoinsiemi
 
 Le funzioni iniettive
 
@@ -848,7 +848,7 @@ sono lo stesso insieme.
 
 ---
 
-# 15. Conteggio mediante quozienti: evitare il sovracconteggio
+## 15. Conteggio mediante quozienti: evitare il sovracconteggio
 
 Nel calcolo combinatorio capita spesso di contare un insieme in modo non biunivoco: ogni oggetto viene contato più volte.
 
@@ -860,7 +860,7 @@ $$
 
 Questo procedimento è valido solo quando il numero di volte in cui ogni oggetto viene contato è lo stesso.
 
-### Esempio generale
+#### Esempio generale
 
 Supponiamo di voler contare i sottoinsiemi di cardinalità $r$ di un insieme con $n$ elementi.
 
@@ -882,7 +882,7 @@ Il punto essenziale è che il sovracconteggio deve essere uniforme. Se oggetti d
 
 ---
 
-# 16. Collegamento tra le principali tecniche
+## 16. Collegamento tra le principali tecniche
 
 Le tecniche affrontate sono diverse manifestazioni della stessa idea di base: trasformare il problema in un conteggio più semplice.
 

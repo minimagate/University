@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-09-30
+date: '2026-09-30'
 title: Simmetrie, monotonia e grafici delle funzioni elementari
-source_transcript: _transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e
-  grafici delle funzioni elementari.md
+source_transcript: _transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md
 source_hash: sha256:acf8c406bfb075458f303e5843955f72b3da79f833a8e7ca99aeef789d8b0090
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-30T14:07:17.430Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-30T14:07:17.430Z'
 ---
 
 # Simmetrie, monotonia e grafici delle funzioni elementari
@@ -48,9 +47,9 @@ Il grafico permette di interpretare geometricamente molte proprietà della funzi
 
 ---
 
-# 2. Proprietà di simmetria
+## 2. Proprietà di simmetria
 
-## 2.1 Funzioni pari
+### 2.1 Funzioni pari
 
 Sia $f\colon\mathbb{R}\to\mathbb{R}$. La funzione si dice **pari** se
 
@@ -60,7 +59,7 @@ $$
 
 La definizione richiede che il dominio sia simmetrico rispetto a $0$: se $x$ appartiene al dominio, deve appartenervi anche $-x$.
 
-### Interpretazione geometrica
+#### Interpretazione geometrica
 
 Il grafico di una funzione pari è simmetrico rispetto all’asse $y$.
 
@@ -68,7 +67,7 @@ Conoscendo il grafico per $x\geq 0$, il resto del grafico si ottiene riflettendo
 
 ---
 
-## 2.2 Funzioni dispari
+### 2.2 Funzioni dispari
 
 Sia $f\colon\mathbb{R}\to\mathbb{R}$. La funzione si dice **dispari** se
 
@@ -78,7 +77,7 @@ $$
 
 Anche in questo caso il dominio deve essere simmetrico rispetto all’origine.
 
-### Interpretazione geometrica
+#### Interpretazione geometrica
 
 Il grafico di una funzione dispari è simmetrico rispetto all’origine.
 
@@ -86,7 +85,7 @@ Conoscendo il grafico per $x\geq 0$, il resto si ottiene mediante una rotazione 
 
 ---
 
-## 2.3 Funzioni periodiche
+### 2.3 Funzioni periodiche
 
 Una funzione $f\colon\mathbb{R}\to\mathbb{R}$ si dice **periodica** se esiste un numero $T>0$ tale che
 
@@ -98,7 +97,7 @@ Un tale $T$ si chiama **periodo** della funzione.
 
 Geometricamente, il grafico si ripete traslando orizzontalmente un suo tratto di ampiezza pari a $T$. Conoscendo il grafico su un intervallo di lunghezza $T$, si può ricostruire il grafico completo per ripetizione.
 
-### Il periodo non è unico
+#### Il periodo non è unico
 
 Se $T$ è un periodo, in generale anche i multipli interi positivi di $T$ sono periodi:
 
@@ -117,11 +116,11 @@ Se $f$ e $g$ sono periodiche con lo stesso periodo $T$, allora anche $f+g$ è pe
 
 ---
 
-## 2.4 Costruzione di funzioni pari e dispari
+### 2.4 Costruzione di funzioni pari e dispari
 
 Supponiamo di conoscere una funzione soltanto per $x\geq 0$.
 
-### Costruzione della funzione pari
+#### Costruzione della funzione pari
 
 Per rendere la funzione pari, si riflette il grafico della parte destra rispetto all’asse $y$. In formule, la parte negativa viene definita imponendo
 
@@ -129,7 +128,7 @@ $$
 f(-x)=f(x).
 $$
 
-### Costruzione della funzione dispari
+#### Costruzione della funzione dispari
 
 Per rendere la funzione dispari, si riflette la parte destra rispetto all’origine. In formule, si impone
 
@@ -141,13 +140,13 @@ Questa costruzione è utile per completare graficamente una funzione inizialment
 
 ---
 
-# 3. Monotonia
+## 3. Monotonia
 
 La monotonia descrive il comportamento di crescita o decrescita di una funzione.
 
 È importante specificare sempre se la funzione è **debolmente** o **strettamente** crescente/decrescente.
 
-## 3.1 Funzione debolmente crescente
+### 3.1 Funzione debolmente crescente
 
 Una funzione $f\colon\mathbb{R}\to\mathbb{R}$ è **debolmente crescente** se
 
@@ -166,7 +165,7 @@ $$
 
 ---
 
-## 3.2 Funzione strettamente crescente
+### 3.2 Funzione strettamente crescente
 
 La funzione è **strettamente crescente** se
 
@@ -179,7 +178,7 @@ La differenza rispetto alla crescenza debole è il passaggio da $\leq$ a $<$.
 
 ---
 
-## 3.3 Funzione debolmente decrescente
+### 3.3 Funzione debolmente decrescente
 
 La funzione è **debolmente decrescente** se
 
@@ -190,7 +189,7 @@ $$
 
 ---
 
-## 3.4 Funzione strettamente decrescente
+### 3.4 Funzione strettamente decrescente
 
 La funzione è **strettamente decrescente** se
 
@@ -201,7 +200,7 @@ $$
 
 ---
 
-## 3.5 Funzione monotona
+### 3.5 Funzione monotona
 
 Una funzione si dice **monotona** se rientra in uno dei seguenti casi:
 
@@ -214,7 +213,7 @@ Non si deve usare genericamente “monotona” senza specificare, quando necessa
 
 ---
 
-## 3.6 Stretta monotonia e iniettività
+### 3.6 Stretta monotonia e iniettività
 
 Ogni funzione strettamente crescente o strettamente decrescente è iniettiva.
 
@@ -238,7 +237,7 @@ La monotonia debole, invece, non garantisce l’iniettività: una funzione debol
 
 ---
 
-# 4. Potenze con esponente intero positivo
+## 4. Potenze con esponente intero positivo
 
 Consideriamo la funzione
 
@@ -251,7 +250,7 @@ Il comportamento dipende fortemente dalla parità di $k$.
 
 ---
 
-## 4.1 Potenze pari
+### 4.1 Potenze pari
 
 Sia $k$ pari. Allora
 
@@ -267,7 +266,7 @@ $$
 
 Il grafico è simmetrico rispetto all’asse $y$.
 
-### Considerata su $\mathbb{R}$
+#### Considerata su $\mathbb{R}$
 
 Come funzione
 
@@ -292,7 +291,7 @@ $$
 
 Quindi la funzione non è iniettiva.
 
-### Restrizione a $[0,+\infty)$
+#### Restrizione a $[0,+\infty)$
 
 Consideriamo invece
 
@@ -328,7 +327,7 @@ Quindi:
 
 ---
 
-## 4.2 Dimostrazione della stretta crescenza delle potenze pari su $[0,+\infty)$
+### 4.2 Dimostrazione della stretta crescenza delle potenze pari su $[0,+\infty)$
 
 Siano
 
@@ -380,7 +379,7 @@ La parte relativa alla stretta crescenza e quindi all’iniettività è relativa
 
 ---
 
-## 4.3 Il ruolo dell’assioma di completezza
+### 4.3 Il ruolo dell’assioma di completezza
 
 Dire che la funzione
 
@@ -414,7 +413,7 @@ Le radici, invece, nascono come inverse delle potenze e richiedono che le funzio
 
 ---
 
-## 4.4 Potenze dispari
+### 4.4 Potenze dispari
 
 Sia $k$ dispari. Allora
 
@@ -463,7 +462,7 @@ $$
 
 Invece $\sqrt[4]{-27}$ non è un numero reale.
 
-### Confronto tra radici pari e dispari
+#### Confronto tra radici pari e dispari
 
 - Indice pari:
 
@@ -481,9 +480,9 @@ Invece $\sqrt[4]{-27}$ non è un numero reale.
 
 ---
 
-# 5. Grafici delle potenze e delle radici
+## 5. Grafici delle potenze e delle radici
 
-## 5.1 Confronto tra potenze pari
+### 5.1 Confronto tra potenze pari
 
 Nel primo quadrante, confrontando per esempio $x^2$, $x^4$ e $x^6$:
 
@@ -511,7 +510,7 @@ Le potenze pari sono simmetriche rispetto all’asse $y$.
 
 ---
 
-## 5.2 Confronto tra potenze dispari
+### 5.2 Confronto tra potenze dispari
 
 I grafici di $x^3$ e $x^5$ sono simmetrici rispetto all’origine e passano per
 
@@ -523,7 +522,7 @@ Per $x>1$, la potenza con esponente maggiore cresce più rapidamente; per $0<x<1
 
 ---
 
-## 5.3 Grafico di una funzione e della sua inversa
+### 5.3 Grafico di una funzione e della sua inversa
 
 Se $f$ è invertibile, il grafico di $f^{-1}$ si ottiene riflettendo il grafico di $f$ rispetto alla bisettrice del primo e del terzo quadrante:
 
@@ -561,9 +560,9 @@ e tra:
 
 ---
 
-# 6. Interpretazione grafica di equazioni e proprietà funzionali
+## 6. Interpretazione grafica di equazioni e proprietà funzionali
 
-## 6.1 Risolvere l’equazione $f(x)=\lambda$
+### 6.1 Risolvere l’equazione $f(x)=\lambda$
 
 Sia $\lambda\in\mathbb{R}$. Risolvere
 
@@ -584,7 +583,7 @@ Le soluzioni dell’equazione sono le ascisse dei punti di intersezione.
 
 ---
 
-## 6.2 Interpretazione grafica della suriettività
+### 6.2 Interpretazione grafica della suriettività
 
 La funzione $f\colon A\to B$ è suriettiva se
 
@@ -604,7 +603,7 @@ Quindi:
 
 ---
 
-## 6.3 Interpretazione grafica dell’iniettività
+### 6.3 Interpretazione grafica dell’iniettività
 
 La funzione $f$ è iniettiva se
 
@@ -631,7 +630,7 @@ Il criterio grafico è noto come **test della retta orizzontale**:
 
 ---
 
-## 6.4 Esempio: $x^2$
+### 6.4 Esempio: $x^2$
 
 Consideriamo inizialmente
 
@@ -663,9 +662,9 @@ La scelta del dominio e del codominio modifica quindi le proprietà della funzio
 
 ---
 
-# 7. Interpretazione grafica delle disequazioni
+## 7. Interpretazione grafica delle disequazioni
 
-## 7.1 Disequazione $f(x)\leq\lambda$
+### 7.1 Disequazione $f(x)\leq\lambda$
 
 Risolvere
 
@@ -689,7 +688,7 @@ In modo analogo:
 
 ---
 
-## 7.2 Esempio: disequazione quadratica
+### 7.2 Esempio: disequazione quadratica
 
 Per risolvere
 
@@ -723,9 +722,9 @@ Questo richiama il metodo generale delle disequazioni di secondo grado: per una 
 
 ---
 
-# 8. Funzione valore assoluto
+## 8. Funzione valore assoluto
 
-## 8.1 Definizione
+### 8.1 Definizione
 
 La funzione valore assoluto è
 
@@ -751,7 +750,7 @@ Il grafico è una “V” con vertice nell’origine.
 
 ---
 
-## 8.2 Proprietà del valore assoluto
+### 8.2 Proprietà del valore assoluto
 
 Come funzione $\mathbb{R}\to\mathbb{R}$, $|x|$ è:
 
@@ -786,7 +785,7 @@ coincide con la funzione identità, quindi è invertibile.
 
 ---
 
-## 8.3 Attenzione all’insieme di arrivo
+### 8.3 Attenzione all’insieme di arrivo
 
 Non è corretto definire semplicemente
 
@@ -806,9 +805,9 @@ Una funzione $f\colon A\to B$ deve associare a ogni elemento di $A$ un elemento 
 
 ---
 
-# 9. Operazioni sui grafici
+## 9. Operazioni sui grafici
 
-## 9.1 Traslazioni verticali
+### 9.1 Traslazioni verticali
 
 Dato il grafico di $f$, il grafico di
 
@@ -837,7 +836,7 @@ $$
 
 ---
 
-## 9.2 Traslazioni orizzontali
+### 9.2 Traslazioni orizzontali
 
 Il grafico di
 
@@ -862,7 +861,7 @@ Analogamente, $f(x-3)$ sposta il grafico verso destra di $3$.
 
 ---
 
-## 9.3 Simmetria rispetto all’asse $y$
+### 9.3 Simmetria rispetto all’asse $y$
 
 Il grafico di
 
@@ -876,7 +875,7 @@ Un punto che prima aveva ascissa $a$ viene spostato all’ascissa $-a$.
 
 ---
 
-## 9.4 Valore assoluto esterno
+### 9.4 Valore assoluto esterno
 
 Il grafico di
 
@@ -890,7 +889,7 @@ In altri termini, tutte le ordinate negative vengono trasformate nelle corrispon
 
 ---
 
-## 9.5 Valore assoluto interno
+### 9.5 Valore assoluto interno
 
 Il grafico di
 
@@ -912,9 +911,9 @@ $$
 
 ---
 
-# 10. Esercizi grafici
+## 10. Esercizi grafici
 
-## 10.1 Numero di soluzioni di $(x-3)^2=\lambda$
+### 10.1 Numero di soluzioni di $(x-3)^2=\lambda$
 
 Si vuole determinare, al variare di $\lambda\in\mathbb{R}$, il numero di soluzioni dell’equazione
 
@@ -961,7 +960,7 @@ $$
 
 ---
 
-## 10.2 Numero di soluzioni di $|x^2-2026|=\lambda$
+### 10.2 Numero di soluzioni di $|x^2-2026|=\lambda$
 
 Nel transcript l’esercizio è riportato con la costante $2026$:
 
@@ -979,7 +978,7 @@ $$
 
 Si studiano le intersezioni con la retta $y=\lambda$.
 
-### Caso $\lambda<0$
+#### Caso $\lambda<0$
 
 Il valore assoluto è sempre non negativo, quindi non ci sono soluzioni:
 
@@ -987,7 +986,7 @@ $$
 0\quad\text{soluzioni}.
 $$
 
-### Caso $\lambda=0$
+#### Caso $\lambda=0$
 
 Si risolve
 
@@ -1005,17 +1004,17 @@ $$
 
 quindi ci sono $2$ soluzioni.
 
-### Caso $0<\lambda<2026$
+#### Caso $0<\lambda<2026$
 
 La retta orizzontale interseca il grafico in quattro punti: due sul ramo interno e due sui rami esterni.
 
 Quindi ci sono $4$ soluzioni.
 
-### Caso $\lambda=2026$
+#### Caso $\lambda=2026$
 
 Si ottengono tre punti di intersezione: uno in $x=0$ e due simmetrici esterni. Quindi ci sono $3$ soluzioni.
 
-### Caso $\lambda>2026$
+#### Caso $\lambda>2026$
 
 Il livello è maggiore dell’altezza del vertice riflesso e rimangono soltanto due intersezioni sui rami esterni.
 
@@ -1035,7 +1034,7 @@ $$
 
 ---
 
-## 10.3 Disequazione $\sqrt{x+6}>x$
+### 10.3 Disequazione $\sqrt{x+6}>x$
 
 Si considera la disequazione
 
@@ -1043,7 +1042,7 @@ $$
 \sqrt{x+6}>x.
 $$
 
-### Dominio
+#### Dominio
 
 La radice è definita quando
 
@@ -1057,7 +1056,7 @@ $$
 x\geq -6.
 $$
 
-### Interpretazione grafica
+#### Interpretazione grafica
 
 Il grafico di $\sqrt{x+6}$ si ottiene traslando verso sinistra di $6$ il grafico di $\sqrt{x}$. Si deve confrontare con la retta $y=x$.
 
@@ -1127,7 +1126,7 @@ $$
 
 ---
 
-## 10.4 Perché il quadramento può introdurre soluzioni estranee
+### 10.4 Perché il quadramento può introdurre soluzioni estranee
 
 Nel passaggio
 
@@ -1164,7 +1163,7 @@ Geometricamente, la soluzione estranea $x=-2$ corrisponde all’intersezione con
 
 ---
 
-# 11. Identità importanti con le radici
+## 11. Identità importanti con le radici
 
 È una fonte frequente di errori confondere
 
@@ -1203,7 +1202,7 @@ $$
 
 ---
 
-# 12. Uso dell’iniettività nelle equazioni
+## 12. Uso dell’iniettività nelle equazioni
 
 Una funzione iniettiva soddisfa
 
@@ -1225,7 +1224,7 @@ Questo è il principio che consente di applicare il logaritmo, o di confrontare 
 
 Tuttavia, occorre distinguere il caso crescente da quello decrescente.
 
-## 12.1 Funzione strettamente crescente
+### 12.1 Funzione strettamente crescente
 
 Se $f$ è strettamente crescente, allora
 
@@ -1237,7 +1236,7 @@ $$
 
 La funzione conserva il verso delle disuguaglianze.
 
-## 12.2 Funzione strettamente decrescente
+### 12.2 Funzione strettamente decrescente
 
 Se $f$ è strettamente decrescente, allora
 
@@ -1249,7 +1248,7 @@ $$
 
 La funzione inverte il verso delle disuguaglianze.
 
-## 12.3 Perché la crescenza debole non basta
+### 12.3 Perché la crescenza debole non basta
 
 Se $f$ è soltanto debolmente crescente, non è necessariamente iniettiva. Può infatti assumere lo stesso valore in corrispondenza di argomenti diversi.
 
@@ -1263,7 +1262,7 @@ senza l’ipotesi di iniettività, che è garantita, per esempio, dalla stretta 
 
 ---
 
-# 13. Condizioni di dominio nelle manipolazioni algebriche
+## 13. Condizioni di dominio nelle manipolazioni algebriche
 
 Ogni trasformazione deve rispettare il dominio delle funzioni coinvolte.
 
@@ -1292,7 +1291,7 @@ non si può concludere $x=y$ se $x$ e $y$ sono reali arbitrari; la conclusione �
 
 ---
 
-# 14. Anticipazione sull’esponenziale
+## 14. Anticipazione sull’esponenziale
 
 La lezione successiva introdurrà le funzioni esponenziali.
 

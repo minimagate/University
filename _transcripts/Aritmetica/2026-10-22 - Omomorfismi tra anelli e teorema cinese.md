@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-22
+date: '2026-10-22'
 title: Omomorfismi tra anelli e teorema cinese
-summary: La lezione introduce gli omomorfismi di gruppi e anelli, sottolineando
-  la conservazione delle operazioni e la necessità di verificare la buona
-  definizione. Viene studiata la mappa da Z/(mn) a Z/m × Z/n, dimostrata ben
-  definita e omomorfismo, e analizzata la sua biiettività quando m e n sono
-  coprimi, con un’estensione ai gruppi moltiplicativi delle classi invertibili.
+summary: La lezione introduce gli omomorfismi di gruppi e anelli, sottolineando la conservazione delle
+  operazioni e la necessità di verificare la buona definizione. Viene studiata la mappa da Z/(mn) a Z/m
+  × Z/n, dimostrata ben definita e omomorfismo, e analizzata la sua biiettività quando m e n sono coprimi,
+  con un’estensione ai gruppi moltiplicativi delle classi invertibili.
 source_audio: _audio/Aritmetica/New Recording 79.m4a
 duration_seconds: 3961
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-22T11:40:52.949Z
+transcribed_at: '2026-10-22T11:40:52.949Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md
+source_audio_status: missing
+study_note_date: '2026-10-22'
 ---
 
 # Omomorfismi tra anelli e teorema cinese

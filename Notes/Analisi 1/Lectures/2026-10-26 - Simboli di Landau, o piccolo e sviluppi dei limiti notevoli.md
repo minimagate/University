@@ -1,12 +1,13 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-26
+date: '2026-10-26'
 title: Simboli di Landau, o piccolo e sviluppi dei limiti notevoli
 source_files:
-  - AM1_26_L023.pdf
-  - AM1_26_L024.pdf
-source_date: 2025-10-21
+- AM1_26_L023.pdf
+- AM1_26_L024.pdf
+source_date: '2025-10-21'
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Simboli di Landau, o piccolo e sviluppi dei limiti notevoli

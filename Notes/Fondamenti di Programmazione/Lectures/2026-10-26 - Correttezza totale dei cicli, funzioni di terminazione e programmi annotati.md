@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-26
+date: '2026-10-26'
 title: Correttezza totale dei cicli, funzioni di terminazione e programmi annotati
 source: Lezione_11.pdf (slide 330-354)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Correttezza totale dei cicli, funzioni di terminazione e programmi annotati

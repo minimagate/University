@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-27
+date: '2026-10-27'
 title: Gruppi ciclici, sottogruppi e permutazioni
-summary: La lezione introduce i gruppi e verifica le proprietà dell’operazione,
-  dell’elemento neutro e degli inversi, considerando anche gruppi moltiplicativi
-  di campi, classi modulo un intero e radici ennesime dell’unità. Vengono
-  inoltre discussi sottogruppi ciclici, ordine degli elementi, permutazioni,
-  composizione e alcuni aspetti del teorema cinese del resto.
+summary: La lezione introduce i gruppi e verifica le proprietà dell’operazione, dell’elemento neutro e
+  degli inversi, considerando anche gruppi moltiplicativi di campi, classi modulo un intero e radici ennesime
+  dell’unità. Vengono inoltre discussi sottogruppi ciclici, ordine degli elementi, permutazioni, composizione
+  e alcuni aspetti del teorema cinese del resto.
 source_audio: _audio/Aritmetica/New Recording 81.m4a
 duration_seconds: 5781
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-27T21:59:45.786Z
+transcribed_at: '2026-10-27T21:59:45.786Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-28 - Gruppi ciclici, sottogruppi e permutazioni.md
+source_audio_status: missing
+study_note_date: '2026-10-28'
 ---
 
 # Gruppi ciclici, sottogruppi e permutazioni

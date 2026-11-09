@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-10-13
+date: '2026-10-13'
 title: Divisori, algoritmo di Euclide e conteggio combinatorio
-source_transcript: _transcripts/Aritmetica/2026-10-13 - Divisori, algoritmo di
-  Euclide e conteggio combinatorio.md
+source_transcript: _transcripts/Aritmetica/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md
 source_hash: sha256:d004e61613a94ed1838b3c865d273dfd92d4ae496ffbbc8c556847a289a29d05
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-13T12:15:52.759Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-13T12:15:52.759Z'
 ---
 
 # Divisori, algoritmo di Euclide e conteggio combinatorio

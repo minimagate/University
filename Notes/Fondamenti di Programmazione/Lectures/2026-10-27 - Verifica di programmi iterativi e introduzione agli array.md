@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-27
+date: '2026-10-27'
 title: Verifica di programmi iterativi e introduzione agli array
 source: Lezione_12.pdf (slide 355-370)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Verifica di programmi iterativi e introduzione agli array

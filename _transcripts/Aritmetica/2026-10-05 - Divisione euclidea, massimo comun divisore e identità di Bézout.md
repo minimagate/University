@@ -1,19 +1,22 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-05
+date: '2026-10-05'
 title: Divisione euclidea, massimo comun divisore e identità di Bézout
-summary: La lezione dimostra esistenza e unicità della divisione euclidea,
-  usando il valore assoluto per caratterizzare il resto. Presenta quindi
-  l’algoritmo di Euclide per il calcolo del massimo comun divisore, la risalita
-  attraverso le divisioni successive e l’identità di Bézout, collegando questi
-  concetti alle proprietà della divisibilità e delle relazioni d’ordine.
+summary: La lezione dimostra esistenza e unicità della divisione euclidea, usando il valore assoluto per
+  caratterizzare il resto. Presenta quindi l’algoritmo di Euclide per il calcolo del massimo comun divisore,
+  la risalita attraverso le divisioni successive e l’identità di Bézout, collegando questi concetti alle
+  proprietà della divisibilità e delle relazioni d’ordine.
 source_audio: _audio/Aritmetica/Largo Bruno Pontecorvo 3.m4a
 duration_seconds: 6581
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-05T14:22:28.598Z
+transcribed_at: '2026-10-05T14:22:28.598Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità
+  di Bézout.md
+source_audio_status: missing
+study_note_date: '2026-10-05'
 ---
 
 # Divisione euclidea, massimo comun divisore e identità di Bézout

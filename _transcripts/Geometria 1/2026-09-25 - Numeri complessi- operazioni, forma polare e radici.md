@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-09-25
+date: '2026-09-25'
 title: Numeri complessi- operazioni, forma polare e radici
-summary: La lezione definisce i numeri complessi, le operazioni di somma e
-  prodotto, il modulo e il coniugio, mostrando che formano un campo e ricavando
-  l’inverso moltiplicativo. Vengono introdotte le coordinate polari, le formule
-  per prodotti e potenze, il calcolo delle radici ennesime e il teorema
-  fondamentale dell’algebra.
+summary: La lezione definisce i numeri complessi, le operazioni di somma e prodotto, il modulo e il coniugio,
+  mostrando che formano un campo e ricavando l’inverso moltiplicativo. Vengono introdotte le coordinate
+  polari, le formule per prodotti e potenze, il calcolo delle radici ennesime e il teorema fondamentale
+  dell’algebra.
 source_audio: _audio/Geometria 1/Università Di Pisa Dipartimento di Matematica 3 copy.m4a
 duration_seconds: 5706
 transcription_model: openai/whisper-large-v3-turbo
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-25T12:37:06.329Z
+transcribed_at: '2026-09-25T12:37:06.329Z'
+study_note: Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md
+source_audio_status: missing
+study_note_date: '2026-09-25'
 ---
 
 # Numeri complessi- operazioni, forma polare e radici

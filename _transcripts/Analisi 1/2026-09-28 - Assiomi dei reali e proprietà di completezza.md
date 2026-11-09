@@ -1,26 +1,29 @@
 ---
 type: transcript
 course: Analisi 1
-date: 2026-09-28
+date: '2026-09-28'
 title: Assiomi dei reali e proprietà di completezza
-summary: "La lezione descrive i numeri reali assiomaticamente come campo
-  ordinato, introducendo assiomi algebrici, di ordinamento e di continuità. Si
-  mostra come la completezza distingua \eR\e da \eQ\e e si definiscono
-  maggioranti, minoranti, massimo, minimo, estremo superiore e inferiore, con
-  relative caratterizzazioni mediante quantificatori ed epsilon."
+summary: La lezione descrive i numeri reali assiomaticamente come campo ordinato, introducendo assiomi
+  algebrici, di ordinamento e di continuità. Si mostra come la completezza distingua $\mathbb{R}$ da $\mathbb{Q}$
+  e si definiscono maggioranti, minoranti, massimo, minimo, estremo superiore e inferiore, con relative
+  caratterizzazioni mediante quantificatori ed epsilon.
 source_audio: _audio/Analisi 1/analisi_FaPxzecJ.mp3
 duration_seconds: 6036
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-28T12:30:41.041Z
+transcribed_at: '2026-09-28T12:30:41.041Z'
+study_note: Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md
+source_audio_status: missing
+study_note_date: '2026-09-28'
+metadata_corrected_at: '2026-11-09'
 ---
 
 # Assiomi dei reali e proprietà di completezza
 
 ## Summary
 
-La lezione descrive i numeri reali assiomaticamente come campo ordinato, introducendo assiomi algebrici, di ordinamento e di continuità. Si mostra come la completezza distingua R da Q e si definiscono maggioranti, minoranti, massimo, minimo, estremo superiore e inferiore, con relative caratterizzazioni mediante quantificatori ed epsilon.
+La lezione descrive i numeri reali assiomaticamente come campo ordinato, introducendo assiomi algebrici, di ordinamento e di continuità. Si mostra come la completezza distingua $\mathbb{R}$ da $\mathbb{Q}$ e si definiscono maggioranti, minoranti, massimo, minimo, estremo superiore e inferiore, con relative caratterizzazioni mediante quantificatori ed epsilon.
 
 ## Transcript
 

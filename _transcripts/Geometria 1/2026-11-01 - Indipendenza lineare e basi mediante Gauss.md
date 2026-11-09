@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-11-01
+date: '2026-11-01'
 title: Indipendenza lineare e basi mediante Gauss
-summary: La lezione definisce l’indipendenza lineare e mostra come verificarla
-  riducendo a scala la matrice dei vettori. Si illustra l’estrazione di una base
-  da un insieme di generatori tramite le colonne pivot, il completamento di un
-  insieme indipendente a una base e l’impostazione di intersezioni e somme di
-  sottospazi mediante equazioni e generatori.
+summary: La lezione definisce l’indipendenza lineare e mostra come verificarla riducendo a scala la matrice
+  dei vettori. Si illustra l’estrazione di una base da un insieme di generatori tramite le colonne pivot,
+  il completamento di un insieme indipendente a una base e l’impostazione di intersezioni e somme di sottospazi
+  mediante equazioni e generatori.
 source_audio: _audio/Geometria 1/New Recording 83.m4a
 duration_seconds: 3129
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-11-01T08:06:10.951Z
+transcribed_at: '2026-11-01T08:06:10.951Z'
+study_note: Notes/Geometria 1/Lectures/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md
+source_audio_status: missing
+study_note_date: '2026-11-01'
 ---
 
 # Indipendenza lineare e basi mediante Gauss

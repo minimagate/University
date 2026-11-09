@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-10-02
+date: '2026-10-02'
 title: Span, indipendenza lineare e basi vettoriali
-source_transcript: _transcripts/Geometria 1/2026-10-02 - Span, indipendenza
-  lineare e basi vettoriali.md
+source_transcript: _transcripts/Geometria 1/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md
 source_hash: sha256:f2bb89bdead7999acfdbc3f52475edb66424acfa2848a3efa321570d6d7cafaf
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-02T12:18:40.871Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-02T12:18:40.871Z'
 ---
 
 # Span, indipendenza lineare e basi vettoriali

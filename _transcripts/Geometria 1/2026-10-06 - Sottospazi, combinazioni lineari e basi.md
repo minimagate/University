@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-06
+date: '2026-10-06'
 title: Sottospazi, combinazioni lineari e basi
-summary: La lezione presenta esempi di spazi vettoriali formati da polinomi,
-  funzioni e matrici, definendo somma e prodotto per scalare componente per
-  componente. Si studiano il criterio per riconoscere i sottospazi, i sottospazi
-  di R² e R³ descritti da equazioni o combinazioni lineari, e i concetti di
-  insieme generatore, indipendenza lineare e base.
+summary: La lezione presenta esempi di spazi vettoriali formati da polinomi, funzioni e matrici, definendo
+  somma e prodotto per scalare componente per componente. Si studiano il criterio per riconoscere i sottospazi,
+  i sottospazi di R² e R³ descritti da equazioni o combinazioni lineari, e i concetti di insieme generatore,
+  indipendenza lineare e base.
 source_audio: _audio/Geometria 1/Biblioteca di Matematica Informatica e Fisica 3.m4a
 duration_seconds: 5565
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-06T13:23:04.623Z
+transcribed_at: '2026-10-06T13:23:04.623Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-06 - Sottospazi, combinazioni lineari e basi.md
+source_audio_status: missing
+study_note_date: '2026-10-06'
 ---
 
 # Sottospazi, combinazioni lineari e basi

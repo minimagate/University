@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-09-30
+date: '2026-09-30'
 title: Fattorizzazione dei polinomi e radici complesse
-summary: La lezione dimostra per induzione la fattorizzazione di un polinomio
-  complesso in fattori lineari, usando il teorema fondamentale dell’algebra e la
-  divisione per un fattore associato a una radice. Vengono chiariti
-  molteplicità, numero massimo di radici e, per polinomi a coefficienti reali,
-  la comparsa delle radici complesse coniugate. Si applicano inoltre la formula
-  quadratica e le radici dell’unità.
+summary: La lezione dimostra per induzione la fattorizzazione di un polinomio complesso in fattori lineari,
+  usando il teorema fondamentale dell’algebra e la divisione per un fattore associato a una radice. Vengono
+  chiariti molteplicità, numero massimo di radici e, per polinomi a coefficienti reali, la comparsa delle
+  radici complesse coniugate. Si applicano inoltre la formula quadratica e le radici dell’unità.
 source_audio: _audio/Geometria 1/Via Filippo Buonarroti.m4a
 duration_seconds: 6525
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-30T09:13:41.366Z
+transcribed_at: '2026-09-30T09:13:41.366Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-01 - Fattorizzazione dei polinomi e radici complesse.md
+source_audio_status: missing
+study_note_date: '2026-10-01'
 ---
 
 # Fattorizzazione dei polinomi e radici complesse

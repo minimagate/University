@@ -1,9 +1,10 @@
 ---
 type: lecture-note
 course: Fondamenti di Programmazione
-date: 2026-10-20
+date: '2026-10-20'
 title: Regole di inferenza per le triple di Hoare e invarianti
 source: Lezione_10.pdf (slide 298-329)
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Regole di inferenza per le triple di Hoare e invarianti

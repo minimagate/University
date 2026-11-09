@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-27
+date: '2026-10-27'
 title: Rango, sistemi lineari e matrici elementari
-summary: La lezione tratta il nucleo, l’immagine e la formula delle dimensioni,
-  collegandoli alla risoluzione dei sistemi lineari omogenei e non omogenei.
-  Vengono discussi il criterio dei ranghi, la riduzione di Gauss, l’uguaglianza
-  tra rango per righe e per colonne, le operazioni elementari, le matrici
-  invertibili e le equivalenze a sinistra e a destra.
+summary: La lezione tratta il nucleo, l’immagine e la formula delle dimensioni, collegandoli alla risoluzione
+  dei sistemi lineari omogenei e non omogenei. Vengono discussi il criterio dei ranghi, la riduzione di
+  Gauss, l’uguaglianza tra rango per righe e per colonne, le operazioni elementari, le matrici invertibili
+  e le equivalenze a sinistra e a destra.
 source_audio: _audio/Geometria 1/New Recording 82.m4a
 duration_seconds: 4236
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-27T22:01:53.713Z
+transcribed_at: '2026-10-27T22:01:53.713Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md
+source_audio_status: missing
+study_note_date: '2026-10-27'
 ---
 
 # Rango, sistemi lineari e matrici elementari

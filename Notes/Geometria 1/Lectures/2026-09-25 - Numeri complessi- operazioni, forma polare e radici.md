@@ -1,13 +1,13 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-09-25
+date: '2026-09-25'
 title: Numeri complessi- operazioni, forma polare e radici
-source_transcript: _transcripts/Geometria 1/2026-09-25 - Numeri complessi-
-  operazioni, forma polare e radici.md
+source_transcript: _transcripts/Geometria 1/2026-09-25 - Numeri complessi- operazioni, forma polare e
+  radici.md
 source_hash: sha256:5a8f706bd903b1fde9fbd3d3ae6bd71d9611dddfc9d36122fc7f52eb951c7757
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-25T18:16:05.917Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-25T18:16:05.917Z'
 ---
 
 # Numeri complessi: operazioni, forma polare e radici
@@ -705,7 +705,7 @@ $$
 
 ---
 
-# 14. Coordinate polari e forma trigonometrica
+## 14. Coordinate polari e forma trigonometrica
 
 La rappresentazione cartesiana
 
@@ -736,7 +736,7 @@ $$
 
 Per $z=0$ l’argomento non è definito: il vettore nullo non ha una direzione determinata.
 
-## 14.1 Periodicità dell’argomento
+### 14.1 Periodicità dell’argomento
 
 Gli angoli
 
@@ -767,7 +767,7 @@ $$
 \sin(\theta+2k\pi)=\sin\theta.
 $$
 
-## 14.2 Passaggio da coordinate polari a cartesiane
+### 14.2 Passaggio da coordinate polari a cartesiane
 
 Dal triangolo rettangolo associato al punto $(a,b)$ si ricava:
 
@@ -797,7 +797,7 @@ $$
 
 Questa è la **forma trigonometrica** o **forma polare** del numero complesso.
 
-## 14.3 Passaggio da coordinate cartesiane a polari
+### 14.3 Passaggio da coordinate cartesiane a polari
 
 Dato $z=a+ib$, il modulo si calcola con
 
@@ -831,7 +831,7 @@ Il punto fondamentale è che la tangente determina la pendenza, ma non individua
 
 ---
 
-# 15. Prodotto in forma polare
+## 15. Prodotto in forma polare
 
 La forma cartesiana rende immediata la somma, ma il prodotto appare meno trasparente. In forma polare, invece, il prodotto assume un significato geometrico molto semplice.
 
@@ -909,7 +909,7 @@ $$
 \quad\text{modulo }2\pi.
 $$
 
-### Interpretazione geometrica
+#### Interpretazione geometrica
 
 Per moltiplicare due numeri complessi in forma polare:
 
@@ -925,7 +925,7 @@ Questa interpretazione dà un significato geometrico al prodotto, che in coordin
 
 ---
 
-# 16. Potenze di numeri complessi
+## 16. Potenze di numeri complessi
 
 Se
 
@@ -964,7 +964,7 @@ La forma polare rende quindi particolarmente semplici i calcoli delle potenze.
 
 ---
 
-# 17. Radici $n$-esime di un numero complesso
+## 17. Radici $n$-esime di un numero complesso
 
 Si consideri l’equazione
 
@@ -1007,7 +1007,7 @@ $$
 
 Per avere $z^n=w$ devono valere due condizioni.
 
-## 17.1 Condizione sui moduli
+### 17.1 Condizione sui moduli
 
 Deve essere
 
@@ -1025,7 +1025,7 @@ $$
 
 Il modulo della radice è quindi univocamente determinato.
 
-## 17.2 Condizione sugli argomenti
+### 17.2 Condizione sugli argomenti
 
 Gli argomenti di $w$ sono
 
@@ -1090,7 +1090,7 @@ Geometricamente, le soluzioni sono disposte su una circonferenza di raggio $\sqr
 
 ---
 
-## 18. Caso particolare: $w=0$
+### 18. Caso particolare: $w=0$
 
 Se
 
@@ -1114,7 +1114,7 @@ La formula delle radici non si applica nello stesso modo perché l’argomento d
 
 ---
 
-## 19. Esempio: soluzione di $z^3=-8$
+### 19. Esempio: soluzione di $z^3=-8$
 
 Consideriamo
 
@@ -1130,7 +1130,7 @@ $$
 
 Nei numeri complessi, però, ci sono in generale tre radici cubiche.
 
-### Modulo
+#### Modulo
 
 Il modulo del numero a destra è
 
@@ -1144,7 +1144,7 @@ $$
 |z|=\sqrt[3]{8}=2.
 $$
 
-### Argomento
+#### Argomento
 
 Il numero $-8$ si trova sull’asse reale negativo, quindi un suo argomento è
 
@@ -1190,7 +1190,7 @@ $$
 
 Calcolandole:
 
-### Prima radice
+#### Prima radice
 
 $$
 z_0
@@ -1202,7 +1202,7 @@ z_0
 1+i\sqrt3.
 $$
 
-### Seconda radice
+#### Seconda radice
 
 $$
 z_1
@@ -1214,7 +1214,7 @@ z_1
 -2.
 $$
 
-### Terza radice
+#### Terza radice
 
 $$
 z_2
@@ -1238,7 +1238,7 @@ Le tre soluzioni sono i vertici di un triangolo equilatero inscritto nella circo
 
 ---
 
-## 20. Esercizi proposti
+### 20. Esercizi proposti
 
 Sono stati indicati esercizi del tipo:
 
@@ -1282,7 +1282,7 @@ Esse sono i vertici di un poligono regolare inscritto nella circonferenza unitar
 
 ---
 
-# 21. Teorema fondamentale dell’algebra
+## 21. Teorema fondamentale dell’algebra
 
 Il fatto che un numero complesso non nullo abbia esattamente $n$ radici $n$-esime è collegato alla struttura generale dei polinomi complessi.
 
@@ -1326,7 +1326,7 @@ $$
 
 I numeri complessi costituiscono quindi un campo sufficientemente grande da garantire l’esistenza di radici per tutti i polinomi non costanti a coefficienti complessi.
 
-## 21.1 Fattorizzazione dopo aver trovato una radice
+### 21.1 Fattorizzazione dopo aver trovato una radice
 
 Se $P(z)$ è un polinomio e $z_0$ è una sua radice, cioè
 

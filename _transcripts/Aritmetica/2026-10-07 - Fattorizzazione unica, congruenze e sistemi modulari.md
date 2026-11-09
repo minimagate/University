@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-07
+date: '2026-10-07'
 title: Fattorizzazione unica, congruenze e sistemi modulari
-summary: La lezione dimostra l’unicità della fattorizzazione in primi mediante
-  induzione sulla lunghezza della fattorizzazione. Introduce poi le congruenze
-  modulo n come relazione di equivalenza, descrivendone classi e proprietà
-  operative, e affronta massimo comune divisore, algoritmo euclideo, congruenze
-  lineari e sistemi di congruenze, con riferimento al teorema cinese del resto.
+summary: La lezione dimostra l’unicità della fattorizzazione in primi mediante induzione sulla lunghezza
+  della fattorizzazione. Introduce poi le congruenze modulo n come relazione di equivalenza, descrivendone
+  classi e proprietà operative, e affronta massimo comune divisore, algoritmo euclideo, congruenze lineari
+  e sistemi di congruenze, con riferimento al teorema cinese del resto.
 source_audio: _audio/Aritmetica/New Recording 71.m4a
 duration_seconds: 5936
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-07T11:00:49.257Z
+transcribed_at: '2026-10-07T11:00:49.257Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-08 - Fattorizzazione unica, congruenze e sistemi modulari.md
+source_audio_status: missing
+study_note_date: '2026-10-08'
 ---
 
 # Fattorizzazione unica, congruenze e sistemi modulari

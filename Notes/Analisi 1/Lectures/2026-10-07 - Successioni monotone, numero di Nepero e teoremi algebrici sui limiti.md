@@ -1,11 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-07
+date: '2026-10-07'
 title: Successioni monotone, numero di Nepero e teoremi algebrici sui limiti
 source_files:
-  - AM1_26_L013.pdf
-  - AM1_26_L014.pdf
+- AM1_26_L013.pdf
+- AM1_26_L014.pdf
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Successioni monotone, numero di Nepero e teoremi algebrici sui limiti

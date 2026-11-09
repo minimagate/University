@@ -1,11 +1,12 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-08
+date: '2026-10-08'
 title: Criteri della radice e del rapporto e gerarchia degli infiniti
 source_files:
-  - AM1_26_L015.pdf
-  - AM1_26_L016.pdf
+- AM1_26_L015.pdf
+- AM1_26_L016.pdf
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Criteri della radice e del rapporto e gerarchia degli infiniti

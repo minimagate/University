@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-11-04
+date: '2026-11-04'
 title: Sistemi lineari e somme dirette di sottospazi
-summary: La lezione tratta la riduzione di sistemi lineari con il metodo di
-  Gauss, l’analisi di rango, parametri liberi, soluzioni particolari e sistemi
-  omogenei. Vengono inoltre discussi la costruzione di basi per sottospazi e
-  intersezioni, le somme dirette, l’unicità delle decomposizioni e la relazione
+summary: La lezione tratta la riduzione di sistemi lineari con il metodo di Gauss, l’analisi di rango,
+  parametri liberi, soluzioni particolari e sistemi omogenei. Vengono inoltre discussi la costruzione
+  di basi per sottospazi e intersezioni, le somme dirette, l’unicità delle decomposizioni e la relazione
   tra dimensioni e basi.
 source_audio: _audio/Geometria 1/New Recording 86.m4a
 duration_seconds: 5815
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-11-04T13:30:46.830Z
+transcribed_at: '2026-11-04T13:30:46.830Z'
+study_note: Notes/Geometria 1/Lectures/2026-11-05 - Sistemi lineari e somme dirette di sottospazi.md
+source_audio_status: missing
+study_note_date: '2026-11-05'
 ---
 
 # Sistemi lineari e somme dirette di sottospazi

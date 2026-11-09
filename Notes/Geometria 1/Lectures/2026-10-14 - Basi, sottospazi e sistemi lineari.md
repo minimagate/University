@@ -1,12 +1,12 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: 2026-10-14
+date: '2026-10-14'
 title: Basi, sottospazi e sistemi lineari
 source_transcript: _transcripts/Geometria 1/2026-10-14 - Basi, sottospazi e sistemi lineari.md
 source_hash: sha256:f3bbfac95cf61c73b22a3d345fd7ac73f4e70f74a59f549dc998ba0e7e696891
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-10-14T11:30:54.118Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-10-14T11:30:54.118Z'
 ---
 
 # Basi, sottospazi e sistemi lineari

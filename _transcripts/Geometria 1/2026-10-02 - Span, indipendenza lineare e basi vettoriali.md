@@ -1,19 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-10-02
+date: '2026-10-02'
 title: Span, indipendenza lineare e basi vettoriali
-summary: La lezione introduce le combinazioni lineari e lo span di un insieme di
-  vettori, mostrando che lo span è un sottospazio e caratterizzandolo come il
-  più piccolo sottospazio contenente l’insieme. Vengono definite indipendenza
-  lineare, basi e coordinate rispetto a una base, con esempi in R^n e nello
-  spazio dei polinomi.
+summary: La lezione introduce le combinazioni lineari e lo span di un insieme di vettori, mostrando che
+  lo span è un sottospazio e caratterizzandolo come il più piccolo sottospazio contenente l’insieme. Vengono
+  definite indipendenza lineare, basi e coordinate rispetto a una base, con esempi in R^n e nello spazio
+  dei polinomi.
 source_audio: _audio/Geometria 1/Biblioteca di Matematica Informatica e Fisica 2.m4a
 duration_seconds: 5115
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-02T12:17:40.876Z
+transcribed_at: '2026-10-02T12:17:40.876Z'
+study_note: Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md
+source_audio_status: missing
+study_note_date: '2026-10-02'
 ---
 
 # Span, indipendenza lineare e basi vettoriali

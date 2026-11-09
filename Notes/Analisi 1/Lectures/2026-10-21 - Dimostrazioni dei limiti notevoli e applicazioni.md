@@ -1,12 +1,13 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-21
+date: '2026-10-21'
 title: Dimostrazioni dei limiti notevoli e applicazioni
 source_files:
-  - AM1_26_L019.pdf
-  - AM1_26_L020.pdf
-source_date: 2025-10-15
+- AM1_26_L019.pdf
+- AM1_26_L020.pdf
+source_date: '2025-10-15'
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Dimostrazioni dei limiti notevoli e applicazioni

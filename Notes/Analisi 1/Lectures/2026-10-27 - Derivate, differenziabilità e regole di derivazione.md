@@ -1,12 +1,13 @@
 ---
 type: lecture-note
 course: Analisi 1
-date: 2026-10-27
+date: '2026-10-27'
 title: Derivate, differenziabilità e regole di derivazione
 source_files:
-  - AM1_26_L025.pdf
-  - AM1_26_L026.pdf
-source_date: 2025-10-22
+- AM1_26_L025.pdf
+- AM1_26_L026.pdf
+source_date: '2025-10-22'
+teaching_model: anthropic/claude-opus-5.5
 ---
 
 # Derivate, differenziabilità e regole di derivazione

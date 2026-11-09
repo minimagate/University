@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-11-04
+date: '2026-11-04'
 title: Applicazioni lineari e matrici associate
-summary: La lezione introduce la matrice associata a un’applicazione lineare
-  rispetto a basi fissate e la formula che collega le coordinate del vettore
-  immagine alla moltiplicazione matriciale. Vengono analizzati l’isomorfismo tra
-  applicazioni lineari e matrici, nucleo, immagine e rango, con esempi su
-  matrici 2×2 e sottospazi. Si discutono inoltre composizione di applicazioni e
-  prodotto tra matrici.
+summary: La lezione introduce la matrice associata a un’applicazione lineare rispetto a basi fissate e
+  la formula che collega le coordinate del vettore immagine alla moltiplicazione matriciale. Vengono analizzati
+  l’isomorfismo tra applicazioni lineari e matrici, nucleo, immagine e rango, con esempi su matrici 2×2
+  e sottospazi. Si discutono inoltre composizione di applicazioni e prodotto tra matrici.
 source_audio: _audio/Geometria 1/New Recording 88.m4a
 duration_seconds: 6058
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-11-04T13:34:21.766Z
+transcribed_at: '2026-11-04T13:34:21.766Z'
+study_note: Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md
+source_audio_status: missing
+study_note_date: '2026-11-04'
 ---
 
 # Applicazioni lineari e matrici associate

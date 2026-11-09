@@ -1,0 +1,35 @@
+{
+  "notes": 63,
+  "transcripts": 37,
+  "unique_course_dates": true,
+  "original_backups_byte_identical": 110,
+  "source_hashes_match": true,
+  "all_active_notes_opus_metadata": true,
+  "broken_links": [],
+  "existing_note_paragraphs_checked": 16561,
+  "paragraphs_with_intentional_mathematical_corrections": [
+    {
+      "source": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+      "original_paragraph": "  quindi il sistema omogeneo ha infinite soluzioni."
+    },
+    {
+      "source": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md",
+      "original_paragraph": "In questo caso esistono infinite soluzioni."
+    },
+    {
+      "source": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md",
+      "original_paragraph": "- il sistema è compatibile se e solo se\n  $$\n  \\operatorname{rank}(A)=\\operatorname{rank}(A\\mid b);\n  $$\n- se il rango comune è uguale al numero $n$ delle incognite, la soluzione è unica;\n- se il rango comune è minore di $n$, ci sono infinite soluzioni con $n-r$ parametri liberi;\n- se\n  $$\n  \\operatorname{rank}(A)<\\operatorname{rank}(A\\mid b),\n  $$\n  il sistema è incompatibile."
+    },
+    {
+      "source": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "original_paragraph": "In questo caso esistono infinite soluzioni."
+    },
+    {
+      "source": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "original_paragraph": "- il sistema è compatibile se e solo se\n  $$\n  \\operatorname{rank}(A)=\\operatorname{rank}(A\\mid b);\n  $$\n- se il rango comune è uguale al numero $n$ delle incognite, la soluzione è unica;\n- se il rango comune è minore di $n$, ci sono infinite soluzioni con $n-r$ parametri liberi;\n- se\n  $$\n  \\operatorname{rank}(A)<\\operatorname{rank}(A\\mid b),\n  $$\n  il sistema è incompatibile."
+    }
+  ],
+  "pending_teaching_notes": 0,
+  "coverage_scope": "All distinct transcripts map to notes with matching hashes. Existing note paragraphs preserved except documented mathematical corrections. Full sentence-by-sentence source completeness not certified; source PDFs unavailable.",
+  "raw_asr_bodies_unchanged": 37
+}

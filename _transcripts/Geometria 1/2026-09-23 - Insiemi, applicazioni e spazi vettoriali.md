@@ -1,20 +1,22 @@
 ---
 type: transcript
 course: Geometria 1
-date: 2026-09-23
+date: '2026-09-23'
 title: Insiemi, applicazioni e spazi vettoriali
-summary: La lezione introduce la notazione degli insiemi, le operazioni di
-  unione, intersezione e prodotto cartesiano, quindi definisce applicazioni,
-  iniettività, suriettività, composizione e applicazione inversa. Presenta
-  inoltre vettori geometrici, coordinate rispetto a riferimenti, somma e
-  prodotto esterno, fino alla definizione assiomatica di campo e spazio
-  vettoriale, con alcuni esercizi sugli elementi neutri e gli inversi.
+summary: La lezione introduce la notazione degli insiemi, le operazioni di unione, intersezione e prodotto
+  cartesiano, quindi definisce applicazioni, iniettività, suriettività, composizione e applicazione inversa.
+  Presenta inoltre vettori geometrici, coordinate rispetto a riferimenti, somma e prodotto esterno, fino
+  alla definizione assiomatica di campo e spazio vettoriale, con alcuni esercizi sugli elementi neutri
+  e gli inversi.
 source_audio: _audio/Geometria 1/New Recording 66.m4a
 duration_seconds: 5635
 transcription_model: openai/whisper-large-v3-turbo
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-09-23T10:32:27.052Z
+transcribed_at: '2026-09-23T10:32:27.052Z'
+study_note: Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md
+source_audio_status: missing
+study_note_date: '2026-09-23'
 ---
 
 # Insiemi, applicazioni e spazi vettoriali

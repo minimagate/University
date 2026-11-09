@@ -1,20 +1,21 @@
 ---
 type: transcript
 course: Aritmetica
-date: 2026-10-14
+date: '2026-10-14'
 title: Sviluppi decimali razionali e fattorizzazione dei denominatori
-summary: Si dimostra che i numeri razionali sono precisamente quelli con
-  espansione decimale eventualmente periodica, usando divisioni con resto,
-  potenze modulari e la scomposizione dei denominatori rispetto a 2 e 5. La
-  lezione introduce inoltre la formula per l’esponente di un primo in un
-  fattoriale e analizza equazioni del tipo x²−y²=n mediante fattorizzazione e
-  congruenze modulo 4.
+summary: Si dimostra che i numeri razionali sono precisamente quelli con espansione decimale eventualmente
+  periodica, usando divisioni con resto, potenze modulari e la scomposizione dei denominatori rispetto
+  a 2 e 5. La lezione introduce inoltre la formula per l’esponente di un primo in un fattoriale e analizza
+  equazioni del tipo x²−y²=n mediante fattorizzazione e congruenze modulo 4.
 source_audio: _audio/Aritmetica/New Recording 75.m4a
 duration_seconds: 5464
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
-transcribed_at: 2026-10-14T11:24:06.833Z
+transcribed_at: '2026-10-14T11:24:06.833Z'
+study_note: Notes/Aritmetica/Lectures/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md
+source_audio_status: missing
+study_note_date: '2026-10-14'
 ---
 
 # Sviluppi decimali razionali e fattorizzazione dei denominatori

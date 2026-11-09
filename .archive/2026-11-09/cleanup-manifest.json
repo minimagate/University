@@ -1,0 +1,345 @@
+{
+  "date": "2026-11-09",
+  "duplicates": {
+    "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange 2.md": "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi 2.md": "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output 2.md": "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for 2.md": "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for.md",
+    "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate 2.md": "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md",
+    "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+    "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange 2.md": "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+    "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi 2.md": "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate 2.md": "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate.md",
+    "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md": "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md"
+  },
+  "note_destinations": {
+    "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md": "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+    "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md": "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+    "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md": "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+    "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md": "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+    "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md": "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+    "Notes/Analisi 1/Lectures/2026-10-06 - Successioni, limiti e teoremi di confronto.md": "Notes/Analisi 1/Lectures/2026-10-06 - Successioni, limiti e teoremi di confronto.md",
+    "Notes/Analisi 1/Lectures/2026-10-07 - Successioni monotone, numero di Nepero e teoremi algebrici sui limiti.md": "Notes/Analisi 1/Lectures/2026-10-07 - Successioni monotone, numero di Nepero e teoremi algebrici sui limiti.md",
+    "Notes/Analisi 1/Lectures/2026-10-08 - Criteri della radice e del rapporto e gerarchia degli infiniti.md": "Notes/Analisi 1/Lectures/2026-10-08 - Criteri della radice e del rapporto e gerarchia degli infiniti.md",
+    "Notes/Analisi 1/Lectures/2026-10-12 - Limiti di funzioni, continuità e limiti notevoli.md": "Notes/Analisi 1/Lectures/2026-10-12 - Limiti di funzioni, continuità e limiti notevoli.md",
+    "Notes/Analisi 1/Lectures/2026-10-21 - Dimostrazioni dei limiti notevoli e applicazioni.md": "Notes/Analisi 1/Lectures/2026-10-21 - Dimostrazioni dei limiti notevoli e applicazioni.md",
+    "Notes/Analisi 1/Lectures/2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni.md": "Notes/Analisi 1/Lectures/2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni.md",
+    "Notes/Analisi 1/Lectures/2026-10-26 - Simboli di Landau, o piccolo e sviluppi dei limiti notevoli.md": "Notes/Analisi 1/Lectures/2026-10-26 - Simboli di Landau, o piccolo e sviluppi dei limiti notevoli.md",
+    "Notes/Analisi 1/Lectures/2026-10-27 - Derivate, differenziabilità e regole di derivazione.md": "Notes/Analisi 1/Lectures/2026-10-27 - Derivate, differenziabilità e regole di derivazione.md",
+    "Notes/Analisi 1/Lectures/2026-10-28 - Teorema di De L'Hôpital e sviluppi di Taylor.md": "Notes/Analisi 1/Lectures/2026-10-28 - Teorema di De L'Hôpital e sviluppi di Taylor.md",
+    "Notes/Analisi 1/Lectures/2026-10-28 - Operazioni con Taylor e parti principali.md": "Notes/Analisi 1/Lectures/2026-10-29 - Operazioni con Taylor e parti principali.md",
+    "Notes/Analisi 1/Lectures/2026-10-29 - Funzioni iperboliche ed esercizi sugli sviluppi di Taylor.md": "Notes/Analisi 1/Lectures/2026-10-30 - Funzioni iperboliche ed esercizi sugli sviluppi di Taylor.md",
+    "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md": "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+    "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md": "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+    "Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md": "Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+    "Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md": "Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+    "Notes/Aritmetica/Lectures/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md": "Notes/Aritmetica/Lectures/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
+    "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md": "Notes/Aritmetica/Lectures/2026-10-07 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+    "Notes/Aritmetica/Lectures/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md": "Notes/Aritmetica/Lectures/2026-10-08 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+    "Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md": "Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
+    "Notes/Aritmetica/Lectures/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md": "Notes/Aritmetica/Lectures/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
+    "Notes/Aritmetica/Lectures/2026-10-19 - Dimostrazione del teorema cinese del resto.md": "Notes/Aritmetica/Lectures/2026-10-19 - Dimostrazione del teorema cinese del resto.md",
+    "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md": "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
+    "Notes/Aritmetica/Lectures/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md": "Notes/Aritmetica/Lectures/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
+    "Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md": "Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
+    "Notes/Aritmetica/Lectures/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md": "Notes/Aritmetica/Lectures/2026-10-28 - Gruppi ciclici, sottogruppi e permutazioni.md",
+    "Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md": "Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md": "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md": "Notes/Aritmetica/Lectures/2026-11-09 - Classi laterali e teorema di Lagrange.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md": "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-21 - Semantica del calcolo proposizionale e dimostrazioni per equivalenza.md": "Notes/Fondamenti di Programmazione/Lectures/2026-09-21 - Semantica del calcolo proposizionale e dimostrazioni per equivalenza.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-22 - Equivalenze tautologiche e sostituzione nell'implicazione.md": "Notes/Fondamenti di Programmazione/Lectures/2026-09-22 - Equivalenze tautologiche e sostituzione nell'implicazione.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-23 - Forme normali, tecniche di dimostrazione e logica del primo ordine.md": "Notes/Fondamenti di Programmazione/Lectures/2026-09-23 - Forme normali, tecniche di dimostrazione e logica del primo ordine.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md": "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-08 - Sintassi e semantica della logica del primo ordine.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-08 - Sintassi e semantica della logica del primo ordine.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-12 - Semantica della logica del primo ordine.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-12 - Semantica della logica del primo ordine.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-13 - Quantificazione ristretta, uguaglianza e specifiche formali.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-13 - Quantificazione ristretta, uguaglianza e specifiche formali.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-19 - Espressioni, comandi e triple di Hoare.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-19 - Espressioni, comandi e triple di Hoare.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-20 - Regole di inferenza per le triple di Hoare e invarianti.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-20 - Regole di inferenza per le triple di Hoare e invarianti.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-26 - Correttezza totale dei cicli, funzioni di terminazione e programmi annotati.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-26 - Correttezza totale dei cicli, funzioni di terminazione e programmi annotati.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-27 - Verifica di programmi iterativi e introduzione agli array.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-27 - Verifica di programmi iterativi e introduzione agli array.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-10-29 - Aggiornamento degli array e tecniche di costruzione dei cicli.md": "Notes/Fondamenti di Programmazione/Lectures/2026-10-29 - Aggiornamento degli array e tecniche di costruzione dei cicli.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output.md": "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for.md": "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for.md",
+    "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+    "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md": "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+    "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md": "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+    "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md": "Notes/Geometria 1/Lectures/2026-10-01 - Fattorizzazione dei polinomi e radici complesse.md",
+    "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md": "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+    "Notes/Geometria 1/Lectures/2026-10-06 - (!) Sottospazi, combinazioni lineari e basi.md": "Notes/Geometria 1/Lectures/2026-10-06 - Sottospazi, combinazioni lineari e basi.md",
+    "Notes/Geometria 1/Lectures/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md": "Notes/Geometria 1/Lectures/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md",
+    "Notes/Geometria 1/Lectures/2026-10-13 - Somma diretta e dimensione dei sottospazi.md": "Notes/Geometria 1/Lectures/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+    "Notes/Geometria 1/Lectures/2026-10-14 - Basi, sottospazi e sistemi lineari.md": "Notes/Geometria 1/Lectures/2026-10-14 - Basi, sottospazi e sistemi lineari.md",
+    "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md",
+    "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md": "Notes/Geometria 1/Lectures/2026-10-23 - Sistemi lineari, nucleo, immagine e rango.md",
+    "Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md": "Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+    "Notes/Geometria 1/Lectures/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md": "Notes/Geometria 1/Lectures/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md",
+    "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md": "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md",
+    "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md": "Notes/Geometria 1/Lectures/2026-11-05 - Sistemi lineari e somme dirette di sottospazi.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange 2.md": "Notes/Aritmetica/Lectures/2026-11-09 - Classi laterali e teorema di Lagrange.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi 2.md": "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output 2.md": "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output.md",
+    "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for 2.md": "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for.md",
+    "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate 2.md": "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md",
+    "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi 2.md": "Notes/Geometria 1/Lectures/2026-11-05 - Sistemi lineari e somme dirette di sottospazi.md"
+  },
+  "corrections": [
+    {
+      "path": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+      "change": "Qualified the number of homogeneous-system solutions over finite fields."
+    },
+    {
+      "path": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "change": "Stated the characteristic assumption for differentiation and root multiplicities; qualified solution counts over finite fields."
+    }
+  ],
+  "transcripts": [
+    {
+      "path": "_transcripts/Aritmetica/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-09-30 - Successioni ricorrenti e formule combinatorie.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-08 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-09-23 - Numeri naturali, induzione e fattorizzazione.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-06 - Equazioni diofantee lineari e loro soluzioni.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze prime.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+      "source_audio_status": "available"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-05 - Divisione euclidea, massimo comun divisore e identità di Bézout.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-13 - Divisori, algoritmo di Euclide e conteggio combinatorio.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-22 - Omomorfismi tra anelli e teorema cinese.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-28 - Gruppi ciclici, sottogruppi e permutazioni.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-22 - Relazioni di equivalenza e strutture quoziente.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-11-01 - Gruppi ciclici, ordini e sottogruppi modulari.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-09-29 - Cardinalità e tecniche fondamentali del calcolo combinatorio.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-11-09 - Classi laterali e teorema di Lagrange.md",
+      "source_audio_status": "available"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-14 - Sviluppi decimali razionali e fattorizzazione dei denominatori.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Aritmetica/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+      "study_note": "Notes/Aritmetica/Lectures/2026-10-07 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-14 - Basi, sottospazi e sistemi lineari.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-14 - Basi, sottospazi e sistemi lineari.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-11-05 - Sistemi lineari e somme dirette di sottospazi.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-09-25 - Numeri complessi- operazioni, forma polare e radici.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-11-01 - Indipendenza lineare e basi mediante Gauss.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-07 - Coordinate, basi e dimensione degli spazi vettoriali.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-13 - Somma diretta e dimensione dei sottospazi.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-11-04 - Applicazioni lineari e matrici associate.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-11-04 - Applicazioni lineari e matrici associate.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-23 - Sistemi lineari, nucleo, immagine e rango.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-01 - Fattorizzazione dei polinomi e radici complesse.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-02 - Span, indipendenza lineare e basi vettoriali.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari e algoritmo di eliminazione di Gauss.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-09-23 - Insiemi, applicazioni e spazi vettoriali.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Geometria 1/2026-10-06 - Sottospazi, combinazioni lineari e basi.md",
+      "study_note": "Notes/Geometria 1/Lectures/2026-10-06 - Sottospazi, combinazioni lineari e basi.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Analisi 1/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+      "study_note": "Notes/Analisi 1/Lectures/2026-09-24 - Funzioni, composizione e principio d’induzione.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+      "study_note": "Notes/Analisi 1/Lectures/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Analisi 1/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+      "study_note": "Notes/Analisi 1/Lectures/2026-10-01 - Funzioni trigonometriche e funzioni inverse.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+      "study_note": "Notes/Analisi 1/Lectures/2026-09-28 - Assiomi dei reali e proprietà di completezza.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Analisi 1/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+      "study_note": "Notes/Analisi 1/Lectures/2026-09-23 - Proposizioni, quantificatori e prime operazioni tra insiemi.md",
+      "source_audio_status": "missing"
+    },
+    {
+      "path": "_transcripts/Fondamenti di Programmazione/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+      "study_note": "Notes/Fondamenti di Programmazione/Lectures/2026-09-25 - Stati, algoritmi e fondamenti della logica formale.md",
+      "source_audio_status": "missing"
+    }
+  ],
+  "original_note_count": 69,
+  "active_note_count": 63,
+  "original_transcript_count": 41,
+  "active_transcript_count": 37,
+  "model_status": "All 63 active notes have teaching_model anthropic/claude-opus-5.5, correcting metadata on the user’s confirmation that they were already generated with Opus. No notes were regenerated or uploaded. Original archived metadata is unchanged.",
+  "date_adjustments": [
+    {
+      "original": "Notes/Analisi 1/Lectures/2026-10-28 - Operazioni con Taylor e parti principali.md",
+      "original_date": "2026-10-28",
+      "date": "2026-10-29"
+    },
+    {
+      "original": "Notes/Analisi 1/Lectures/2026-10-29 - Funzioni iperboliche ed esercizi sugli sviluppi di Taylor.md",
+      "original_date": "2026-10-29",
+      "date": "2026-10-30"
+    },
+    {
+      "original": "Notes/Aritmetica/Lectures/2026-10-06 - Conteggio combinatorio e principio di inclusione-esclusione.md",
+      "original_date": "2026-10-06",
+      "date": "2026-10-07"
+    },
+    {
+      "original": "Notes/Aritmetica/Lectures/2026-10-07 - Fattorizzazione unica, congruenze e sistemi modulari.md",
+      "original_date": "2026-10-07",
+      "date": "2026-10-08"
+    },
+    {
+      "original": "Notes/Aritmetica/Lectures/2026-10-27 - Gruppi ciclici, sottogruppi e permutazioni.md",
+      "original_date": "2026-10-27",
+      "date": "2026-10-28"
+    },
+    {
+      "original": "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+      "original_date": "2026-11-08",
+      "date": "2026-11-09"
+    },
+    {
+      "original": "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+      "original_date": "2026-09-30",
+      "date": "2026-10-01"
+    },
+    {
+      "original": "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+      "original_date": "2026-10-22",
+      "date": "2026-10-23"
+    },
+    {
+      "original": "Notes/Geometria 1/Lectures/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md",
+      "original_date": "2026-11-04",
+      "date": "2026-11-05"
+    }
+  ],
+  "merged_notes": 0,
+  "transcript_summary_corrections": [
+    "_transcripts/Analisi 1/2026-09-30 - Simmetrie, monotonia e grafici delle funzioni elementari.md",
+    "_transcripts/Analisi 1/2026-09-28 - Assiomi dei reali e proprietà di completezza.md"
+  ],
+  "final_pass": {
+    "heading_levels_fixed": 478,
+    "original_iso_timestamps_preserved": 74,
+    "merged_notes": 0
+  }
+}

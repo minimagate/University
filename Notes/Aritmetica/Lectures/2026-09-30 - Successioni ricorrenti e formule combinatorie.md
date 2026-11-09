@@ -1,13 +1,12 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: 2026-09-30
+date: '2026-09-30'
 title: Successioni ricorrenti e formule combinatorie
-source_transcript: _transcripts/Aritmetica/2026-09-30 - Successioni ricorrenti e
-  formule combinatorie.md
+source_transcript: _transcripts/Aritmetica/2026-09-30 - Successioni ricorrenti e formule combinatorie.md
 source_hash: sha256:532ba34507db258a4a087cabe38fa06c5b8a88d0b6679626e1e4302ebe381328
-teaching_model: openai/gpt-5.6-luna
-taught_at: 2026-09-30T10:52:54.176Z
+teaching_model: anthropic/claude-opus-5.5
+taught_at: '2026-09-30T10:52:54.176Z'
 ---
 
 # Successioni ricorrenti e formule combinatorie
@@ -303,9 +302,9 @@ Il punto metodologico è che una ricorrenza, che rappresenta una famiglia infini
 
 ---
 
-# 6. Coefficienti binomiali e formula del binomio di Newton
+## 6. Coefficienti binomiali e formula del binomio di Newton
 
-## 6.1 Definizione del coefficiente binomiale
+### 6.1 Definizione del coefficiente binomiale
 
 Per $0\leq k\leq n$, il coefficiente binomiale è definito da
 
@@ -344,7 +343,7 @@ Questa convenzione rende più naturali le formule e permette di scrivere somme c
 
 ---
 
-## 6.2 Enunciato del binomio di Newton
+### 6.2 Enunciato del binomio di Newton
 
 Per ogni $n\in\mathbb{N}$ vale la formula
 
@@ -383,7 +382,7 @@ I coefficienti sono la seconda e la terza riga del triangolo di Pascal.
 
 ---
 
-## 6.3 Interpretazione combinatoria
+### 6.3 Interpretazione combinatoria
 
 Nello sviluppo di
 
@@ -426,11 +425,11 @@ $$
 
 ---
 
-## 6.4 Dimostrazione per induzione
+### 6.4 Dimostrazione per induzione
 
 Si dimostra la formula per induzione su $n$.
 
-### Caso base
+#### Caso base
 
 Per $n=0$:
 
@@ -450,7 +449,7 @@ $$
 
 Quindi la formula è vera per $n=0$.
 
-### Passo induttivo
+#### Passo induttivo
 
 Supponiamo vera la formula per un certo $n$:
 
@@ -561,7 +560,7 @@ $$
 
 Questo conclude il passo induttivo e quindi la dimostrazione.
 
-### Dimostrazione dell’identità di Pascal
+#### Dimostrazione dell’identità di Pascal
 
 L’identità
 
@@ -597,7 +596,7 @@ L’identità ha anche un’interpretazione combinatoria: per scegliere $j$ elem
 
 ---
 
-## 6.5 Attenzione agli indici nelle somme
+### 6.5 Attenzione agli indici nelle somme
 
 Quando si cambiano gli indici di sommatoria, l’indice è una variabile locale: il suo nome non ha significato al di fuori della somma.
 
@@ -615,7 +614,7 @@ Se il cambio d’indice non è chiaro, è utile verificare un caso piccolo, ad e
 
 ---
 
-# 7. Numero dei sottoinsiemi di un insieme finito
+## 7. Numero dei sottoinsiemi di un insieme finito
 
 Sia $X$ un insieme finito con $n$ elementi. L’insieme delle sue parti, indicato con $\mathcal{P}(X)$, è l’insieme di tutti i sottoinsiemi di $X$.
 
@@ -625,7 +624,7 @@ $$
 \boxed{|\mathcal{P}(X)|=2^n}.
 $$
 
-## 7.1 Dimostrazione tramite coefficienti binomiali
+### 7.1 Dimostrazione tramite coefficienti binomiali
 
 Un sottoinsieme di $X$ può avere cardinalità $k$, dove $0\leq k\leq n$.
 
@@ -670,7 +669,7 @@ Questa formula equivale al fatto che ogni elemento di $X$ può essere scelto opp
 
 ---
 
-## 7.2 Sottoinsiemi di cardinalità pari e dispari
+### 7.2 Sottoinsiemi di cardinalità pari e dispari
 
 Sia $X$ un insieme con $n$ elementi. Consideriamo il numero di sottoinsiemi di cardinalità pari e il numero di sottoinsiemi di cardinalità dispari.
 
@@ -737,7 +736,7 @@ dove $\triangle$ indica la differenza simmetrica. Questa operazione inserisce $x
 
 ---
 
-# 8. Funzioni caratteristiche
+## 8. Funzioni caratteristiche
 
 Sia $X$ un insieme e sia $A\subseteq X$. La **funzione caratteristica** di $A$ è la funzione
 
@@ -769,7 +768,7 @@ Infatti, ogni elemento di $A$ contribuisce con $1$, mentre ogni elemento esterno
 
 ---
 
-## 8.1 Intersezioni
+### 8.1 Intersezioni
 
 Per due sottoinsiemi $A,B\subseteq X$ vale
 
@@ -802,7 +801,7 @@ $$
 
 ---
 
-## 8.2 Unioni
+### 8.2 Unioni
 
 Per l’unione di due insiemi vale
 
@@ -833,9 +832,9 @@ Il termine $|A\cap B|$ viene sottratto perché gli elementi comuni erano stati c
 
 ---
 
-# 9. Principio di inclusione-esclusione
+## 9. Principio di inclusione-esclusione
 
-## 9.1 Formula generale
+### 9.1 Formula generale
 
 Siano $A_1,\dots,A_n$ sottoinsiemi di un insieme finito. La cardinalità della loro unione è
 
@@ -882,7 +881,7 @@ $$
 
 ---
 
-## 9.2 Perché compaiono i segni alternati
+### 9.2 Perché compaiono i segni alternati
 
 Consideriamo un elemento $x$ che appartiene esattamente a $m$ degli insiemi $A_1,\dots,A_n$.
 
@@ -933,7 +932,7 @@ Questo dimostra la formula di inclusione-esclusione.
 
 ---
 
-## 9.3 Dimostrazione tramite funzioni caratteristiche
+### 9.3 Dimostrazione tramite funzioni caratteristiche
 
 La stessa dimostrazione può essere formulata usando le funzioni caratteristiche.
 
@@ -990,7 +989,7 @@ $$
 
 ---
 
-## 9.4 Complementari e unioni
+### 9.4 Complementari e unioni
 
 Per un sottoinsieme $A\subseteq X$, il complementare è
 
@@ -1034,7 +1033,7 @@ La funzione caratteristica trasforma così operazioni insiemistiche, che possono
 
 ---
 
-## 9.5 Esempio con tre insiemi
+### 9.5 Esempio con tre insiemi
 
 Per tre sottoinsiemi $A,B,C$:
 
