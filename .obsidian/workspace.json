@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md",
+                "file": "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo"
+              "title": "2026-11-08 - Classi laterali e teorema di Lagrange"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.17578125
+    "width": 441.4966735839844
   },
   "right": {
     "id": "cfaa1f077aa9c112",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md",
+                "file": "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,34 +187,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "30e29a4449e2e66a",
+  "active": "cb49407fb8880402",
   "lastOpenFiles": [
-    "Notes/Fondamenti di Programmazione/Lectures/2026-11-05 - Tipi e conversioni in C, selezione e cicli for.md",
-    "Notes/Fondamenti di Programmazione/Lectures/2026-11-03 - Introduzione al C, variabili e input-output.md",
-    "Notes/Fondamenti di Programmazione/Lectures/2026-09-21 - Semantica del calcolo proposizionale e dimostrazioni per equivalenza.md",
-    "Notes/Fondamenti di Programmazione/Lectures/2026-09-19 - Pensiero computazionale, algoritmi e modelli di calcolo.md",
-    "Books/Geometria-I/14 - Matrici associate e composizione.md",
-    "Books/Geometria-I/15 - Basi adattate e spazi di applicazioni.md",
-    "Books/Geometria-I/90 - Fonti e criteri editoriali.md",
-    "Books/Geometria-I/13 - Calcolare basi somme e intersezioni.md",
     "Books/Geometria-I/12 - Rango invertibilità e matrici elementari.md",
-    "Books/Aritmetica-I/14 - Gruppi sottogruppi e permutazioni.md",
-    "Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente.md",
-    "Books/Aritmetica-I/12 - Sistemi e teorema cinese del resto.md",
+    "Notes/Geometria 1/Lectures/2026-10-27 - Rango, sistemi lineari e matrici elementari.md",
+    "Notes/Geometria 1/Lectures/2026-10-22 - Sistemi lineari, nucleo, immagine e rango.md",
+    "Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md",
+    "Books/Geometria-I/04 - Spazi vettoriali e operazioni lineari.md",
+    "Books/Geometria-I/05 - Sottospazi e combinazioni lineari.md",
+    "Notes/Analisi 1/Lectures/2026-10-29 - Funzioni iperboliche ed esercizi sugli sviluppi di Taylor.md",
+    "Notes/Analisi 1/Lectures/2026-10-28 - Teorema di De L'Hôpital e sviluppi di Taylor.md",
+    "Notes/Analisi 1/Lectures/2026-10-28 - Operazioni con Taylor e parti principali.md",
+    "Books/Geometria-I/15 - Basi adattate e spazi di applicazioni.md",
+    "Books/Geometria-I/14 - Matrici associate e composizione.md",
+    "Books/Geometria-I/13 - Calcolare basi somme e intersezioni.md",
+    "Books/Geometria-I/11 - Applicazioni lineari nucleo e immagine.md",
+    "Books/Geometria-I/10 - Il metodo di Gauss.md",
     "Books/Geometria-I/09 - Matrici e sistemi lineari.md",
     "Books/Geometria-I/08 - Somme dirette e decomposizioni.md",
     "Books/Geometria-I/07 - Dimensione scambio e completamento.md",
-    "Books/Geometria-I/04 - Spazi vettoriali e operazioni lineari.md",
     "Books/Geometria-I/06 - Indipendenza basi e coordinate.md",
-    "Books/Aritmetica-I/20 - Congruenze polinomiali e sollevamento.md",
-    "Books/Geometria-I/00 - Indice e piano di studio.md",
-    "Books/Geometria-I/05 - Sottospazi e combinazioni lineari.md",
     "Books/Geometria-I/03 - Polinomi radici e fattorizzazioni.md",
     "Books/Geometria-I/02 - Numeri complessi e geometria del piano.md",
     "Books/Geometria-I/01 - Il linguaggio della geometria e i campi.md",
-    "Books/Geometria-I/91 - Glossario.md",
-    "Books/Aritmetica-I/00 - Indice e piano di studio.md",
-    "Books/Aritmetica-I/16 - Gruppi ciclici e ordine.md",
+    "Books/Geometria-I/00 - Indice e piano di studio.md",
+    "Notes/Aritmetica/Lectures/2026-10-21 - Relazioni di equivalenza e strutture quoziente.md",
+    "Books/Aritmetica-I/13 - Equivalenze e insiemi quoziente.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md",
+    "Notes/Aritmetica/Lectures/2026-11-08 - Classi laterali e teorema di Lagrange.md",
+    "_audio/Aritmetica/New Recording 89.m4a",
+    "_audio/Aritmetica/New Recording 85.m4a",
     "Books/Geometria-I",
     "_audio/Geometria 1/New Recording 86.m4a",
     "_audio/Aritmetica/New Recording 84.m4a",
@@ -222,8 +224,6 @@
     "_audio/Geometria 1/New Recording 88.m4a",
     "Books/Aritmetica-I/Fonti/Esercizi algebra 1 2.pdf",
     "Books/Aritmetica-I/Fonti",
-    "Books/Aritmetica-I",
-    "Books",
-    "Books/October/aritmetica-ottobre.pdf"
+    "Books/Aritmetica-I"
   ]
 }
