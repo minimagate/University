@@ -965,7 +965,7 @@ da cui
 
 $$
 2a_{ii}=0
-\]
+$$
 
 e quindi
 
@@ -1013,7 +1013,7 @@ da cui
 
 $$
 2a_{ij}=0
-\]
+$$
 
 e quindi
 

@@ -599,7 +599,7 @@ Dato che $p$ ha grado al massimo $3$, il quoziente ha grado al massimo $1$. Pert
 
 $$
 p(x)=x(x-1)(a+bx),
-\]
+$$
 
 con $a,b\in\mathbb R$.
 
