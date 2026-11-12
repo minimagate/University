@@ -571,6 +571,49 @@ $$
 
 Poi si lavora sulla sottomatrice rimanente. Il risultato è una matrice a scala, dalla quale il sistema si risolve con la sostituzione all’indietro.
 
+**L'esempio di lezione.** Si parte dalla matrice completa
+
+$$
+\left(\begin{array}{ccc|c}
+0&1&-2&3\\
+2&0&-2&2\\
+-1&1&0&4
+\end{array}\right).
+$$
+
+- *Passo 0:* nessuna colonna nulla da scartare.
+- *Passo 1:* $a_{11}=0$, quindi si scambia la prima riga con una riga che ha un elemento non nullo in prima colonna (la scelta è libera: qui la seconda):
+
+$$
+\left(\begin{array}{ccc|c}
+2&0&-2&2\\
+0&1&-2&3\\
+-1&1&0&4
+\end{array}\right).
+$$
+
+- *Passo 2:* si annulla sotto il pivot $2$ con $R_3\to R_3+\frac12R_1$:
+
+$$
+\left(\begin{array}{ccc|c}
+2&0&-2&2\\
+0&1&-2&3\\
+0&1&-1&5
+\end{array}\right).
+$$
+
+- *Si ricomincia sulla sottomatrice* (righe 2–3, colonne 2–3): il pivot $1$ è già al suo posto, e $R_3\to R_3-R_2$ dà
+
+$$
+\left(\begin{array}{ccc|c}
+2&0&-2&2\\
+0&1&-2&3\\
+0&0&1&2
+\end{array}\right).
+$$
+
+È il sistema a scala $2x_1-2x_3=2$, $x_2-2x_3=3$, $x_3=2$. Risalendo: $x_3=2$, $x_2=3+2x_3=7$, $x_1=1+x_3=3$. Controllo sul sistema di partenza: $7-4=3$, $6-4=2$, $-3+7=4$.
+
 ---
 
 ## 8. Teorema sulla risoluzione dei sistemi a scala

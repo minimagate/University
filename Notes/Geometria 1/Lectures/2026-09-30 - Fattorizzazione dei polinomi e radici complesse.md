@@ -653,74 +653,42 @@ Questa è la specializzazione, per $n=2$, della regola generale per le radici $n
 
 ## 15. Esempio di equazione quadratica complessa
 
-Consideriamo, nella forma ricostruita dalla formula utilizzata a lezione, il polinomio
+Consideriamo il polinomio
 
 $$
-P(z)=z^2+(1-i)z.
+P(z)=z^2+(1-i)z-i,
+\qquad
+a=1,\quad b=1-i,\quad c=-i.
 $$
 
-In questo caso
+**Discriminante.** Prima si calcola $b^2=(1-i)^2$. Lo si può fare algebricamente, $(1-i)^2=1-2i+i^2=-2i$, oppure in forma polare, come a lezione: $1-i$ ha modulo $\sqrt2$ e argomento $-\frac\pi4$, quindi il suo quadrato ha modulo $2$ e argomento $-\frac\pi2$, cioè è $-2i$. Allora
 
 $$
-a=1,\qquad b=1-i,\qquad c=0.
+\Delta=b^2-4ac=-2i-4\cdot1\cdot(-i)=-2i+4i=2i.
 $$
 
-Il discriminante è
+**Radici quadrate di $\Delta$.** $2i$ ha modulo $2$ e argomento $\frac\pi2$; le sue radici quadrate hanno modulo $\sqrt2$ e argomento $\frac\pi4$ oppure $\frac\pi4+\pi$, cioè sono
 
 $$
-\Delta=(1-i)^2.
+\pm(1+i),
+\qquad\text{infatti }(1+i)^2=1+2i-1=2i.
 $$
 
-Calcoliamo:
+(È il gioco "speculare" del calcolo precedente: $(1-i)^2=-2i$, $(1+i)^2=2i$.)
+
+**Formula risolutiva.**
 
 $$
-(1-i)^2
-=1-2i+i^2
-=1-2i-1
-=-2i.
+z_{1,2}=\frac{-(1-i)\pm(1+i)}{2},
+\qquad
+z_1=\frac{-1+i+1+i}{2}=i,
+\qquad
+z_2=\frac{-1+i-1-i}{2}=-1.
 $$
 
-Una radice quadrata di $-2i$ è $1-i$, perché
+**Verifica.** $(z-i)(z+1)=z^2+z-iz-i=z^2+(1-i)z-i=P(z)$.
 
-$$
-(1-i)^2=-2i.
-$$
-
-Le due radici quadrate sono quindi
-
-$$
-\pm(1-i).
-$$
-
-La formula risolutiva dà
-
-$$
-z_{1,2}
-=
-\frac{-(1-i)\pm(1-i)}{2}.
-$$
-
-Da cui:
-
-$$
-z_1=0,
-$$
-
-e
-
-$$
-z_2=-(1-i)=-1+i.
-$$
-
-Infatti il polinomio è già fattorizzato:
-
-$$
-P(z)=z(z+1-i),
-$$
-
-e le sue radici sono $0$ e $-1+i$.
-
-L’esempio mostra anche che, quando i coefficienti non sono tutti reali, non ci si deve aspettare che le radici compaiano a coppie coniugate.
+Il polinomio ha coefficienti non reali, e infatti le radici $i$ e $-1$ **non** sono coniugate: la proprietà delle coppie coniugate (§9) vale solo per polinomi a coefficienti reali.
 
 ## 16. Radici $n$-esime dell’unità
 

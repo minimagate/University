@@ -722,7 +722,16 @@ $$
 \operatorname{span}\{A_1,A_2,A_3\}.
 $$
 
-Nel transcript l’esempio numerico della matrice è risultato non completamente leggibile; il punto concettuale è che il nucleo si calcola risolvendo $Ax=0$, mentre l’immagine coincide con lo spazio generato dalle colonne della matrice.
+**L'esempio di lezione: la proiezione sul piano $xy$.** Sia
+
+$$
+F:\mathbb R^3\to\mathbb R^3,\qquad F(x,y,z)=(x,y,0),\qquad A=\begin{pmatrix}1&0&0\\0&1&0\\0&0&0\end{pmatrix}.
+$$
+
+- **Nucleo.** $F(x,y,z)=(0,0,0)$ se e solo se $x=y=0$, con $z$ qualsiasi. Quindi $\ker F=\{(0,0,z)\}=\operatorname{span}\{e_3\}$ è l'asse $z$: tutti i punti che la proiezione schiaccia sull'origine.
+- **Immagine.** I vettori immagine sono tutti e soli quelli della forma $(x,y,0)$, quindi $\operatorname{Im}F=\operatorname{span}\{e_1,e_2\}$ è il piano $xy$. In accordo con la formula generale, è lo span delle colonne di $A$: $(1,0,0)$, $(0,1,0)$, $(0,0,0)$.
+
+È uno dei pochi casi in cui nucleo e immagine "si vedono" nella figura: la proiezione manda ogni punto nel piano $xy$ lungo la verticale. Si noti anche che $\dim\ker F+\dim\operatorname{Im}F=1+2=3=\dim\mathbb R^3$, come previsto dalla formula delle dimensioni dimostrata più avanti.
 
 ---
 
@@ -980,6 +989,20 @@ L’insieme delle soluzioni di un sistema compatibile è quindi un **traslato** 
 Se $S_0$ è una retta vettoriale passante per l’origine, allora $S=\xi+S_0$ è una retta parallela a $S_0$, ma generalmente non passante per l’origine.
 
 Più in generale, i traslati di sottospazi vettoriali sono chiamati **sottospazi affini**. Questo concetto verrà ripreso successivamente nel corso.
+
+**Esempio.** Il sistema di una sola equazione in $\mathbb R^2$
+
+$$
+x+y=2
+$$
+
+ha come omogeneo associato $x+y=0$, le cui soluzioni sono $S_0=\operatorname{span}\{(1,-1)\}$, la retta per l'origine di pendenza $-1$. Una soluzione particolare è $\xi=(2,0)$. Quindi
+
+$$
+S=\xi+S_0=\{(2+t,\,-t)\mid t\in\mathbb R\},
+$$
+
+la retta parallela a $S_0$ passante per $(2,0)$, che non passa per l'origine e quindi non è un sottospazio. Scegliendo un'altra soluzione particolare, per esempio $\eta=(1,1)$, si ottiene la stessa retta: infatti $\xi-\eta=(1,-1)\in S_0$.
 
 Una conseguenza importante è:
 

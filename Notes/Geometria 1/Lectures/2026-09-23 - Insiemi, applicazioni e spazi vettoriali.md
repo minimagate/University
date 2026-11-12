@@ -401,6 +401,36 @@ In tal caso ogni elemento del codominio è immagine di uno e un solo elemento de
 
 Le applicazioni biettive sono anche dette corrispondenze biunivoche.
 
+### 4.4 Esempi
+
+Le proprietà dipendono anche da dominio e codominio, non solo dalla "legge":
+
+| applicazione | iniettiva | suriettiva |
+|---|---|---|
+| $f:\mathbb R\to\mathbb R,\ x\mapsto x^2$ | no: $f(-1)=f(1)$ | no: $-1$ non è un quadrato |
+| $f:\mathbb R\to[0,+\infty),\ x\mapsto x^2$ | no | sì |
+| $f:[0,+\infty)\to[0,+\infty),\ x\mapsto x^2$ | sì | sì (biettiva) |
+| $f:\mathbb N\to\mathbb N,\ n\mapsto 2n$ | sì | no: i dispari non sono raggiunti |
+| $f:\mathbb R\to\mathbb R,\ x\mapsto 2x+1$ | sì | sì: $y$ è immagine di $\frac{y-1}2$ |
+
+### 4.5 Esercizi proposti a lezione
+
+**Negazione della suriettività.** $f$ non è suriettiva se
+
+$$
+\exists\, y\in Y\ \ \forall x\in X:\quad f(x)\neq y,
+$$
+
+cioè se esiste almeno un elemento del codominio che non viene raggiunto.
+
+**Iniettività e suriettività tramite il grafico.** Sia $\Gamma\subseteq X\times Y$ il grafico di $f$ (vedi §3.2). Che proprietà deve avere $\Gamma$ perché $f$ sia iniettiva, suriettiva, biettiva? La condizione che $\Gamma$ sia un'applicazione riguarda le coppie con primo elemento fissato; le nuove condizioni riguardano invece le coppie con **secondo** elemento fissato:
+
+- $f$ iniettiva $\iff$ per ogni $y\in Y$ esiste **al più un** $x\in X$ con $(x,y)\in\Gamma$;
+- $f$ suriettiva $\iff$ per ogni $y\in Y$ esiste **almeno un** $x\in X$ con $(x,y)\in\Gamma$;
+- $f$ biettiva $\iff$ per ogni $y\in Y$ esiste **uno e un solo** $x\in X$ con $(x,y)\in\Gamma$.
+
+L'ultima condizione è la stessa che definisce un'applicazione, con i ruoli di $X$ e $Y$ scambiati: è esattamente per questo che una biezione ha un'inversa (§5.2), il cui grafico è $\{(y,x)\mid (x,y)\in\Gamma\}\subseteq Y\times X$.
+
 ---
 
 ## 5. Composizione e applicazione identica

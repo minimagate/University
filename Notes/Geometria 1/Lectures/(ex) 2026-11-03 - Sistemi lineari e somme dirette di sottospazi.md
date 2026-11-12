@@ -426,6 +426,36 @@ $$
 
 Per evitare errori e casi superflui, conviene mantenere i prodotti e usare somme di multipli di righe finché possibile.
 
+### Esempio svolto
+
+A lezione è stato discusso un sistema $3\times3$ con un parametro $c$, in cui per un valore speciale di $c$ il rango della matrice completa supera quello della incompleta (nessuna soluzione), per altri valori si ha un'unica soluzione. I coefficienti esatti non si sono conservati; un esempio dello stesso tipo è
+
+$$
+\begin{cases}
+x+y+cz=1\\
+x+cy+z=1\\
+cx+y+z=1.
+\end{cases}
+$$
+
+Riduzione (solo mosse del tipo $R_i\to R_i+\lambda(c)R_j$, lecite per ogni $c$):
+
+$$
+\left(\begin{array}{ccc|c}1&1&c&1\\1&c&1&1\\c&1&1&1\end{array}\right)
+\xrightarrow[R_3-cR_1]{R_2-R_1}
+\left(\begin{array}{ccc|c}1&1&c&1\\0&c-1&1-c&0\\0&1-c&1-c^2&1-c\end{array}\right)
+\xrightarrow{R_3+R_2}
+\left(\begin{array}{ccc|c}1&1&c&1\\0&c-1&1-c&0\\0&0&-(c-1)(c+2)&-(c-1)\end{array}\right).
+$$
+
+(Si è usato $1-c^2+1-c=2-c-c^2=-(c-1)(c+2)$.) Ora si distinguono i casi in cui i "pivot" $c-1$ e $-(c-1)(c+2)$ si annullano:
+
+- **$c\neq1$ e $c\neq-2$.** Tre pivot, rango $3=$ numero di incognite: **una sola soluzione**. Dall'ultima riga $z=\frac1{c+2}$; dalla seconda $(c-1)(y-z)=0$, quindi $y=z$; dalla prima $x=1-y-cz=\frac1{c+2}$. Dunque $x=y=z=\frac1{c+2}$.
+- **$c=1$.** Le ultime due righe diventano nulle: resta $x+y+z=1$, rango $1$ sia per la incompleta sia per la completa, **infinite soluzioni** con $3-1=2$ parametri liberi: $(1-s-t,\ s,\ t)$.
+- **$c=-2$.** L'ultima riga diventa $(0\ 0\ 0\mid3)$, cioè $0=3$: rango della incompleta $2$, della completa $3$, **nessuna soluzione**.
+
+Controllo indipendente del caso $c=-2$: sommando le tre equazioni si ottiene $(c+2)(x+y+z)=3$, che per $c=-2$ dà $0=3$.
+
 ---
 
 ## 6. Verifica delle soluzioni

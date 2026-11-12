@@ -724,6 +724,20 @@ $$
 
 per matrici generiche $P$ e $Q$. Il prodotto di matrici non è infatti commutativo. L’identità, tuttavia, commuta con ogni matrice.
 
+A lezione lo si è visto guardando un solo elemento del prodotto. Con $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ e $A'=\begin{pmatrix}a'&b'\\c'&d'\end{pmatrix}$, l'elemento di posto $(1,2)$ vale
+
+$$
+(AA')_{12}=ab'+bd',\qquad (A'A)_{12}=a'b+b'd,
+$$
+
+che per scelte generiche dei numeri sono diversi. Un esempio concreto con matrici invertibili:
+
+$$
+\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}1&0\\1&1\end{pmatrix}=\begin{pmatrix}2&1\\1&1\end{pmatrix},
+\qquad
+\begin{pmatrix}1&0\\1&1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}=\begin{pmatrix}1&1\\1&2\end{pmatrix}.
+$$
+
 Nel caso $m=1$, le matrici sono semplicemente gli scalari di $\mathbb{K}$ e le matrici invertibili sono gli elementi non nulli:
 
 $$
@@ -813,6 +827,24 @@ $$
 $$
 
 In altre parole, le matrici elementari generano il gruppo $GL_m(\mathbb{K})$ rispetto al prodotto di matrici. Questo va inteso come generazione di gruppo, non come generazione di spazio vettoriale.
+
+**Esempio.** Sia $P=\begin{pmatrix}2&1\\1&1\end{pmatrix}$. La riduzione completa a $I_2$:
+
+| mossa | matrice elementare | risultato |
+|---|---|---|
+| $R_1\leftrightarrow R_2$ | $E_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ | $\begin{pmatrix}1&1\\2&1\end{pmatrix}$ |
+| $R_2\to R_2-2R_1$ | $E_2=\begin{pmatrix}1&0\\-2&1\end{pmatrix}$ | $\begin{pmatrix}1&1\\0&-1\end{pmatrix}$ |
+| $R_2\to -R_2$ | $E_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ | $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ |
+| $R_1\to R_1-R_2$ | $E_4=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$ | $\begin{pmatrix}1&0\\0&1\end{pmatrix}$ |
+
+Quindi $E_4E_3E_2E_1P=I_2$ e
+
+$$
+P=E_1^{-1}E_2^{-1}E_3^{-1}E_4^{-1}
+=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}1&0\\2&1\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}.
+$$
+
+Controllo, moltiplicando da destra: $\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}=\begin{pmatrix}1&1\\0&-1\end{pmatrix}$, poi $\begin{pmatrix}1&0\\2&1\end{pmatrix}\begin{pmatrix}1&1\\0&-1\end{pmatrix}=\begin{pmatrix}1&1\\2&1\end{pmatrix}$, infine lo scambio delle righe dà $\begin{pmatrix}2&1\\1&1\end{pmatrix}=P$.
 
 ---
 

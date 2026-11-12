@@ -1280,6 +1280,23 @@ $$
 
 Esse sono i vertici di un poligono regolare inscritto nella circonferenza unitaria.
 
+**Soluzioni.**
+
+- $z^3=1$: con $k=0,1,2$ gli argomenti sono $0,\ \frac{2\pi}3,\ \frac{4\pi}3$, quindi
+
+  $$
+  z_0=1,\qquad z_1=-\frac12+\frac{\sqrt3}2\,i,\qquad z_2=-\frac12-\frac{\sqrt3}2\,i,
+  $$
+
+  i vertici di un triangolo equilatero. Controllo: $z_1+z_2=-1$ e $z_1z_2=\frac14+\frac34=1$, quindi $z_1,z_2$ sono le radici di $z^2+z+1$, e infatti $z^3-1=(z-1)(z^2+z+1)$.
+- $z^4=1$: argomenti $0,\ \frac\pi2,\ \pi,\ \frac{3\pi}2$, quindi
+
+  $$
+  z\in\{1,\ i,\ -1,\ -i\},
+  $$
+
+  i vertici di un quadrato. Si ritrova $z^4-1=(z-1)(z+1)(z-i)(z+i)$; in $\mathbb R$ restano solo $\pm1$.
+
 ---
 
 ## 21. Teorema fondamentale dell’algebra

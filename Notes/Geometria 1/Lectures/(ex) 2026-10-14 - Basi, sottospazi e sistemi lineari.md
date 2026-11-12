@@ -96,6 +96,36 @@ In molti esempi il sistema utilizzato per l’indipendenza è lo stesso utilizza
 
 Se il sistema con il vettore generico ammette sempre un’unica soluzione, allora i vettori generano lo spazio e sono anche linearmente indipendenti.
 
+### 1.3 Esempio svolto
+
+Verifichiamo che
+
+$$
+v_1=\begin{pmatrix}3\\2\\-1\end{pmatrix},\qquad
+v_2=\begin{pmatrix}0\\-1\\1\end{pmatrix},\qquad
+v_3=\begin{pmatrix}1\\-2\\-1\end{pmatrix}
+$$
+
+sono una base di $\mathbb R^3$. Imponiamo $av_1+bv_2+cv_3=(x,y,z)$ con $(x,y,z)$ generico:
+
+$$
+\begin{cases}
+3a+c=x\\
+2a-b-2c=y\\
+-a+b-c=z.
+\end{cases}
+$$
+
+Sommando la seconda e la terza equazione si elimina $b$: $a-3c=y+z$, quindi $a=y+z+3c$. Sostituendo nella prima: $3(y+z+3c)+c=x$, cioè $10c=x-3y-3z$. Si ottiene
+
+$$
+c=\frac{x-3y-3z}{10},\qquad a=\frac{3x+y+z}{10},\qquad b=z+a+c=\frac{2x-y+4z}{5}.
+$$
+
+Il sistema ha una e una sola soluzione per **ogni** $(x,y,z)$: i tre vettori generano $\mathbb R^3$ e, prendendo $(x,y,z)=(0,0,0)$, l'unica combinazione nulla è quella banale. Quindi sono una base, e $a,b,c$ sono le coordinate di $(x,y,z)$ in questa base. Controllo: per $(x,y,z)=v_1=(3,2,-1)$ si trova $a=1$, $b=c=0$.
+
+In alternativa, sapendo che $\dim\mathbb R^3=3$, bastava mostrare **solo** l'indipendenza (sistema con termine noto nullo), per il criterio del §2.
+
 ---
 
 ## 2. Dimensione e criteri per le basi

@@ -704,55 +704,57 @@ A=
 \end{pmatrix}.
 $$
 
-Si ottiene:
+Moltiplicare $A$ a sinistra scambia le righe, moltiplicarla a destra scambia le colonne. Per esempio
 
 $$
-F(E_{11})=AE_{11}-E_{11}A=0,
+AE_{11}=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}1&0\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\1&0\end{pmatrix}=E_{21},
+\qquad
+E_{11}A=\begin{pmatrix}1&0\\0&0\end{pmatrix}\begin{pmatrix}0&1\\1&0\end{pmatrix}=\begin{pmatrix}0&1\\0&0\end{pmatrix}=E_{12}.
+$$
+
+Allo stesso modo si ottiene:
+
+$$
+F(E_{11})=AE_{11}-E_{11}A=E_{21}-E_{12},
 $$
 
 $$
-F(E_{12})=AE_{12}-E_{12}A=-E_{11}+E_{22},
+F(E_{12})=AE_{12}-E_{12}A=E_{22}-E_{11},
 $$
 
 $$
-F(E_{21})=AE_{21}-E_{21}A=E_{11}-E_{21},
+F(E_{21})=AE_{21}-E_{21}A=E_{11}-E_{22},
 $$
 
 $$
-F(E_{22})=AE_{22}-E_{22}A=0.
+F(E_{22})=AE_{22}-E_{22}A=E_{12}-E_{21}.
 $$
 
-Le coordinate nella base $\mathcal{E}$ sono quindi:
+Le coordinate nella base $\mathcal{E}=(E_{11},E_{12},E_{21},E_{22})$ sono quindi:
 
 $$
 [F(E_{11})]_{\mathcal{E}}
 =
 \begin{pmatrix}
-0\\0\\0\\0
+0\\-1\\1\\0
 \end{pmatrix},
-$$
-
-$$
+\qquad
 [F(E_{12})]_{\mathcal{E}}
 =
 \begin{pmatrix}
 -1\\0\\0\\1
 \end{pmatrix},
-$$
-
-$$
+\qquad
 [F(E_{21})]_{\mathcal{E}}
 =
 \begin{pmatrix}
-1\\0\\-1\\0
+1\\0\\0\\-1
 \end{pmatrix},
-$$
-
-$$
+\qquad
 [F(E_{22})]_{\mathcal{E}}
 =
 \begin{pmatrix}
-0\\0\\0\\0
+0\\1\\-1\\0
 \end{pmatrix}.
 $$
 
@@ -763,11 +765,13 @@ M_{\mathcal{E},\mathcal{E}}(F)
 =
 \begin{pmatrix}
 0&-1&1&0\\
-0&0&0&0\\
-0&0&-1&0\\
-0&1&0&0
+-1&0&0&1\\
+1&0&0&-1\\
+0&1&-1&0
 \end{pmatrix}.
 $$
+
+La terza colonna è l'opposta della seconda e la quarta è l'opposta della prima, mentre le prime due sono indipendenti: il rango è $2$.
 
 Il procedimento da ricordare è sempre lo stesso: la $j$-esima colonna è il vettore delle coordinate di $F(E_j)$.
 
@@ -820,7 +824,13 @@ $$
 \end{pmatrix}.
 $$
 
-Se non si riconoscono immediatamente le matrici che commutano con $A$, si può sempre risolvere il sistema omogeneo associato alla matrice $4\times4$.
+Se non si riconoscono immediatamente le matrici che commutano con $A$, si risolve il sistema omogeneo associato alla matrice $4\times4$, come fatto a lezione. Riducendo a scala restano due equazioni indipendenti,
+
+$$
+-x_1+x_4=0,\qquad -x_2+x_3=0,
+$$
+
+con $x_3,x_4$ libere. Scegliendo $(x_3,x_4)=(1,0)$ e $(0,1)$ si trovano le soluzioni $(0,1,1,0)$ e $(1,0,0,1)$. Sono **coordinate**, non matrici: tornando alle matrici con la base canonica si ritrovano esattamente $A$ e $I$.
 
 ### 9.4 Immagine
 
@@ -832,22 +842,46 @@ $$
 
 Una base dell’immagine può essere ottenuta scegliendo le colonne indipendenti della matrice associata e ritornando poi dalle coordinate alle matrici.
 
-Nel caso precedente, si possono usare i vettori:
-
-$$
--E_{11}+E_{22},
-\qquad
-E_{11}-E_{21}.
-$$
-
-Quindi:
+Nella forma a scala i pivot stanno nelle prime due colonne, quindi si prendono le prime due colonne della matrice associata, $(0,-1,1,0)$ e $(-1,0,0,1)$, e si torna alle matrici:
 
 $$
 \operatorname{Im}F
 =
 \operatorname{span}
-\{-E_{11}+E_{22},\,E_{11}-E_{21}\}.
+\left\{\begin{pmatrix}0&-1\\1&0\end{pmatrix},\ \begin{pmatrix}-1&0\\0&1\end{pmatrix}\right\}.
 $$
+
+Si noti che entrambe hanno traccia nulla: in effetti $\operatorname{tr}(AX-XA)=\operatorname{tr}(AX)-\operatorname{tr}(XA)=0$ per ogni $X$, quindi l'immagine sta sempre nel sottospazio (di dimensione $3$) delle matrici a traccia nulla.
+
+### 9.5 Esercizio: al variare di $A$
+
+Esercizio lasciato a lezione: per $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ qualsiasi, calcolare $\dim\ker F$ e $\dim\operatorname{Im}F$.
+
+Ripetendo il calcolo con $A$ generica:
+
+$$
+F(E_{11})=\begin{pmatrix}0&-b\\c&0\end{pmatrix},\quad
+F(E_{12})=\begin{pmatrix}-c&a-d\\0&c\end{pmatrix},\quad
+F(E_{21})=\begin{pmatrix}b&0\\d-a&-b\end{pmatrix},\quad
+F(E_{22})=\begin{pmatrix}0&b\\-c&0\end{pmatrix},
+$$
+
+quindi
+
+$$
+M_{\mathcal{E},\mathcal{E}}(F)=
+\begin{pmatrix}
+0&-c&b&0\\
+-b&a-d&0&b\\
+c&0&d-a&-c\\
+0&c&-b&0
+\end{pmatrix}.
+$$
+
+(Con $a=d=0$, $b=c=1$ si ritrova la matrice di §9.2.) La quarta colonna è sempre l'opposta della prima, quindi il rango è al più $3$; in realtà è al più $2$, perché $I$ e $A$ stanno sempre nel nucleo.
+
+- **$A$ multiplo dell'identità** ($b=c=0$, $a=d$): la matrice è nulla, $F=0$, $\dim\ker F=4$, $\dim\operatorname{Im}F=0$.
+- **$A$ non multiplo dell'identità**: almeno uno tra $b$, $c$, $a-d$ è non nullo, e si trovano due colonne indipendenti (se $b\neq0$ la prima e la terza; se $c\neq0$ la prima e la seconda; se $b=c=0$ e $a\neq d$ la seconda e la terza). Quindi il rango è $2$: $\dim\ker F=\dim\operatorname{Im}F=2$, con $\ker F=\operatorname{span}\{I,A\}$.
 
 ---
 
@@ -959,6 +993,26 @@ k\ell+(n-k)m.
 $$
 
 Questa dimensione si può anche vedere contando le posizioni arbitrarie nella matrice associata.
+
+**L'esempio di lezione.** $V=\mathbb R^4$, $W=\mathbb R^5$, $\dim U=2$, $\dim Z=3$. Con le basi adattate, la matrice associata è $5\times4$ e le prime due colonne devono avere zero nelle righe $4$ e $5$:
+
+$$
+\begin{pmatrix}
+a_{11}&a_{12}&a_{13}&a_{14}\\
+a_{21}&a_{22}&a_{23}&a_{24}\\
+a_{31}&a_{32}&a_{33}&a_{34}\\
+0&0&a_{43}&a_{44}\\
+0&0&a_{53}&a_{54}
+\end{pmatrix}.
+$$
+
+Delle $20$ posizioni di una matrice $5\times4$ ne sono vincolate $4$ (le posizioni $(4,1),(4,2),(5,1),(5,2)$), quindi $\dim\mathcal S=20-4=16$; con la formula, $k\ell+(n-k)m=2\cdot3+2\cdot5=16$. Una base di $\mathcal S$ si ottiene prendendo le $16$ matrici $E_{ij}$ della base canonica di $M_{5\times4}$ con $(i,j)$ diverso dalle quattro posizioni vincolate, e risalendo alle applicazioni: quella corrispondente a $E_{ij}$ manda $v_j$ in $w_i$ e tutti gli altri $v_h$ in $0$.
+
+Più in generale, poiché $\Phi$ è un isomorfismo,
+
+$$
+\dim\mathcal L(V,W)=\dim M_{m\times n}(\mathbb K)=mn=\dim V\cdot\dim W.
+$$
 
 #### Caso particolare: applicazioni che annullano un sottospazio
 

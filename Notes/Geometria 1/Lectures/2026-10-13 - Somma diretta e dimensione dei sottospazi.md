@@ -679,6 +679,18 @@ $$
 
 La somma non è diretta, perché l’intersezione ha dimensione $1$.
 
+Di conseguenza la scomposizione di un vettore non è unica. Se $v=u+w$ con $u\in U$, $w\in W$, allora per ogni $t\in U\cap W$ anche
+
+$$
+v=(u+t)+(w-t)
+$$
+
+è una scomposizione ammissibile: al variare di $t$ sulla retta $U\cap W$ se ne ottengono infinite. Per esempio, con $U=\{z=0\}$ e $W=\{x=0\}$ (intersezione: l'asse $y$), il vettore $(1,1,1)$ si scrive come
+
+$$
+(1,1,1)=(1,0,0)+(0,1,1)=(1,1,0)+(0,0,1)=(1,1+s,0)+(0,-s,1)\quad\text{per ogni } s\in\mathbb R.
+$$
+
 #### Un piano e una retta trasversale in $\mathbb R^3$
 
 Se $U$ è un piano e $W$ una retta che interseca il piano soltanto nell’origine, allora
@@ -1143,6 +1155,46 @@ $$
 
 La decomposizione è unica per la caratterizzazione generale della somma diretta.
 
+### 11.6. Esempi
+
+**Caso $2\times2$.** Con $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ si ha
+
+$$
+M+M^T=\begin{pmatrix}2a&b+c\\b+c&2d\end{pmatrix},\qquad M-M^T=\begin{pmatrix}0&b-c\\c-b&0\end{pmatrix},
+$$
+
+quindi
+
+$$
+M=\begin{pmatrix}a&\frac{b+c}2\\[2pt]\frac{b+c}2&d\end{pmatrix}+\begin{pmatrix}0&\frac{b-c}2\\[2pt]-\frac{b-c}2&0\end{pmatrix}.
+$$
+
+Per esempio
+
+$$
+\begin{pmatrix}1&4\\2&3\end{pmatrix}=\begin{pmatrix}1&3\\3&3\end{pmatrix}+\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+$$
+
+**Caso $3\times3$.**
+
+$$
+\begin{pmatrix}1&2&0\\4&5&6\\2&0&9\end{pmatrix}
+=\begin{pmatrix}1&3&1\\3&5&3\\1&3&9\end{pmatrix}
++\begin{pmatrix}0&-1&-1\\1&0&3\\1&-3&0\end{pmatrix}.
+$$
+
+Per controllare: la prima matrice è simmetrica, la seconda ha diagonale nulla ed elementi opposti in posizioni simmetriche, e la somma restituisce $M$.
+
+**Verifica delle dimensioni.** Una matrice simmetrica $n\times n$ è determinata dagli elementi sulla diagonale e sopra di essa, una antisimmetrica (nel caso reale) dagli elementi strettamente sopra la diagonale. Quindi
+
+$$
+\dim\mathcal S_n=\frac{n(n+1)}2,\qquad \dim\mathcal A_n=\frac{n(n-1)}2,\qquad \frac{n(n+1)}2+\frac{n(n-1)}2=n^2=\dim\mathcal M_n(\mathbb R),
+$$
+
+coerentemente con la formula $\dim(U\oplus W)=\dim U+\dim W$. Per $n=2$: $3+1=4$.
+
+**Attenzione al campo.** Il ragionamento usa la divisione per $2$, quindi vale su ogni campo in cui $1+1\neq0$ ($\mathbb Q$, $\mathbb R$, $\mathbb C$). Sul campo con due elementi $-1=1$: le matrici antisimmetriche coincidono con quelle simmetriche e la somma non è diretta.
+
 ---
 
 ## 12. Osservazioni metodologiche sugli esercizi
@@ -1155,5 +1207,7 @@ Negli esercizi sulla determinazione di una base non è sufficiente individuare c
 Solo dopo aver verificato queste due condizioni si può concludere che l’insieme è una base.
 
 In particolare, quando si costruisce una base di un sottospazio, bisogna esplicitare perché ogni vettore del sottospazio si scrive come combinazione dei vettori scelti e perché una combinazione lineare nulla implica che tutti i coefficienti siano nulli.
+
+Un altro errore frequente nel compito riguardava il teorema fondamentale dell'algebra: è stato usato per dire che un'equazione ha al più un certo numero di soluzioni anche quando l'equazione contiene un **modulo** $|z|$ o il coniugato. In quel caso l'espressione non è un polinomio in $z$ a coefficienti complessi, e il teorema non si applica: per esempio $z^2=|z|^2$ è soddisfatta da tutti i reali, quindi ha infinite soluzioni.
 
 È inoltre importante usare con attenzione i connettivi logici nella scrittura matematica. L’uso ambiguo di “e” e “oppure” può rendere difficile capire quali siano le ipotesi e quali le conclusioni di un’affermazione.

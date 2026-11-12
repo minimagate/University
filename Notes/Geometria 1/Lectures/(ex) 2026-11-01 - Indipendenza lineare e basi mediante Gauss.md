@@ -140,7 +140,36 @@ Per verificare se una famiglia di vettori è linearmente indipendente si procede
 
 Se tutte le colonne sono pivotali, i vettori iniziali sono linearmente indipendenti. Se invece una o più colonne non sono pivotali, la famiglia è linearmente dipendente.
 
-Nel corso della lezione sono stati considerati esempi numerici di famiglie di tre vettori. In un primo caso la riduzione produceva tre pivot, e dunque i tre vettori risultavano linearmente indipendenti. In un secondo caso la riduzione produceva soltanto due pivot, per cui i tre vettori erano linearmente dipendenti.
+A lezione sono stati considerati due esempi in $\mathbb R^4$, uno con tre pivot e uno con due.
+
+**Primo esempio: tre pivot.** $w_1=(1,0,1,0)$, $w_2=(0,1,2,-1)$, $w_3=(1,2,1,2)$.
+
+$$
+\begin{pmatrix}1&0&1\\0&1&2\\1&2&1\\0&-1&2\end{pmatrix}
+\xrightarrow{R_3-R_1}
+\begin{pmatrix}1&0&1\\0&1&2\\0&2&0\\0&-1&2\end{pmatrix}
+\xrightarrow[R_4+R_2]{R_3-2R_2}
+\begin{pmatrix}1&0&1\\0&1&2\\0&0&-4\\0&0&4\end{pmatrix}
+\xrightarrow{R_4+R_3}
+\begin{pmatrix}1&0&1\\0&1&2\\0&0&-4\\0&0&0\end{pmatrix}.
+$$
+
+Ogni colonna ha un pivot: $w_1,w_2,w_3$ sono linearmente indipendenti.
+
+**Secondo esempio: due pivot.** $w_1=(1,1,1,1)$, $w_2=(1,2,0,1)$, $w_3=(0,1,-1,0)$.
+
+$$
+\begin{pmatrix}1&1&0\\1&2&1\\1&0&-1\\1&1&0\end{pmatrix}
+\xrightarrow[R_4-R_1]{R_2-R_1,\ R_3-R_1}
+\begin{pmatrix}1&1&0\\0&1&1\\0&-1&-1\\0&0&0\end{pmatrix}
+\xrightarrow{R_3+R_2}
+\begin{pmatrix}1&1&0\\0&1&1\\0&0&0\\0&0&0\end{pmatrix}.
+$$
+
+I pivot sono solo nella prima e nella seconda colonna: la famiglia è dipendente (in effetti $w_3=w_2-w_1$). La stessa matrice dice di più (§4): togliendo la terza colonna restano due pivot, quindi $w_1,w_2$ sono indipendenti e sono una base di $\operatorname{Span}(w_1,w_2,w_3)$; togliendo la seconda, anche $w_1,w_3$ risultano indipendenti. Per $w_2,w_3$ invece, togliendo la prima colonna la matrice non è più a scala: si riparte da lì e si prosegue la riduzione.
+
+> [!warning]
+> La base di $\operatorname{Span}(w_1,w_2,w_3)$ è formata dai vettori **originali** $w_1,w_2$, non dalle colonne $(1,0,0,0)$ e $(1,1,0,0)$ della matrice ridotta: le mosse di riga conservano le relazioni lineari tra le colonne, ma cambiano lo span delle colonne.
 
 Il numero di pivot coincide con il rango della matrice e indica il numero massimo di vettori linearmente indipendenti contenuti nella famiglia considerata.
 
@@ -332,7 +361,7 @@ $$
 
 ---
 
-## 8. Esempio concettuale di completamento
+## 8. Esempio di completamento
 
 Se si parte da una famiglia linearmente indipendente
 
@@ -355,6 +384,32 @@ Dopo la riduzione a scala:
 In questo modo si ottengono esattamente $n$ vettori linearmente indipendenti, quindi una base di $\mathbb{K}^n$.
 
 Il punto essenziale è che non si cerca una base “a caso”: si completa sistematicamente l’insieme già linearmente indipendente.
+
+**Esempio.** Completiamo $w_1=(1,1,1,1)$, $w_2=(1,2,0,1)$ (indipendenti, §3) a una base di $\mathbb R^4$. Si affianca la base canonica:
+
+$$
+\left(\begin{array}{cc|cccc}
+1&1&1&0&0&0\\
+1&2&0&1&0&0\\
+1&0&0&0&1&0\\
+1&1&0&0&0&1
+\end{array}\right)
+\longrightarrow
+\left(\begin{array}{cc|cccc}
+1&1&1&0&0&0\\
+0&1&-1&1&0&0\\
+0&0&-2&1&1&0\\
+0&0&0&-\frac12&-\frac12&1
+\end{array}\right)
+$$
+
+(mosse: $R_i-R_1$ per $i=2,3,4$; poi $R_3+R_2$; poi $R_4-\frac12R_3$). I pivot stanno nelle colonne $1,2,3,4$, quindi
+
+$$
+w_1,\ w_2,\ e_1,\ e_2
+$$
+
+sono una base di $\mathbb R^4$. Come previsto, le prime due colonne sono pivotali, e tra i vettori canonici vengono scelti quelli che portano i pivot mancanti. Controllo diretto: $e_1,e_2$ coprono le prime due coordinate, e sulle ultime due $w_1,w_2$ si riducono a $(1,1),(0,1)$, che sono indipendenti.
 
 ---
 

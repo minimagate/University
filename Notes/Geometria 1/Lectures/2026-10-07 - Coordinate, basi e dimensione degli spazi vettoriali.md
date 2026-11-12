@@ -512,6 +512,29 @@ quindi l’equazione $2\lambda=0$ è vera per ogni $\lambda$ e non permette di c
 > [!warning]
 > Non si può “dividere per $2$” senza verificare che $2$ sia non nullo e invertibile nel campo considerato. In generale, quando si risolvono relazioni lineari, bisogna tenere conto della caratteristica del campo.
 
+**Esercizio tipico.** In $M_2(K)$ si considerino
+
+$$
+A_1=\begin{pmatrix}1&0\\0&1\end{pmatrix},\quad
+A_2=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\quad
+A_3=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
+A_4=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+$$
+
+*Indipendenza.* Una combinazione nulla dà
+
+$$
+aA_1+bA_2+cA_3+dA_4=\begin{pmatrix}a+b&c+d\\c-d&a-b\end{pmatrix}=0,
+$$
+
+cioè $a+b=0$, $a-b=0$, $c+d=0$, $c-d=0$. Sommando le prime due si trova $2a=0$, e analogamente $2c=0$. Se $2\neq0$ in $K$ (per esempio $K=\mathbb R$ o $\mathbb C$) si conclude $a=c=0$ e poi $b=d=0$: le quattro matrici sono indipendenti, e poiché $\dim M_2(K)=4$ sono una base. Le coordinate di una matrice qualsiasi sono
+
+$$
+\begin{pmatrix}p&q\\r&s\end{pmatrix}=\frac{p+s}2A_1+\frac{p-s}2A_2+\frac{q+r}2A_3+\frac{q-r}2A_4.
+$$
+
+Nel campo con due elementi, invece, $-1=1$: si ha $A_2=A_1$ e $A_4=A_3$, quindi le quattro matrici **non** sono una base.
+
 ---
 
 ## Basi: due caratterizzazioni fondamentali

@@ -146,10 +146,39 @@ Sono dunque vettori indipendenti del sottospazio, in numero pari alla sua dimens
 
 ### Esempio numerico
 
-Durante la lezione l'algoritmo è stato applicato a un esempio concreto. Tra i dati compaiono, tra gli altri, i vettori $(-6,1,1)$, $(1,1,0)$ e frammenti come $(4,0,-5)$ e $(0,1)$. Nei passaggi di riduzione si sottrae 5 volte la prima riga. A un certo punto una riga risulta il doppio di un'altra e si annulla; in seguito una riga viene divisa per 5 e un'altra per 2. Il docente ha anche corretto un errore in cui aveva confuso un 3 con un 2.
+A lezione l'algoritmo è stato applicato a un esempio in $\mathbb R^3$ i cui dati non si sono conservati (si leggono solo frammenti come $(-6,1,1)$, $(1,1,0)$, $(4,0,-5)$; nella riduzione si sottrae $5$ volte la prima riga, una riga risulta il doppio di un'altra, e poi si divide per $5$ e per $2$). Ecco lo stesso procedimento su un esempio completo.
 
-> [!warning]
-> I dati completi dell'esempio (sottospazi di partenza, matrice e risultato) non sono ricostruibili con certezza. Si consiglia di recuperarli dagli appunti presi a lezione.
+Siano in $\mathbb R^3$
+
+$$
+U=\operatorname{Span}\big((1,1,0),\,(0,1,1)\big),\qquad W=\operatorname{Span}\big((1,0,0),\,(0,0,1)\big).
+$$
+
+Si scrive la matrice $4\times 6$ con le righe $(u_i,u_i)$ e $(w_j,0)$:
+
+$$
+A=\left(\begin{array}{ccc|ccc}
+1&1&0&1&1&0\\
+0&1&1&0&1&1\\
+1&0&0&0&0&0\\
+0&0&1&0&0&0
+\end{array}\right).
+$$
+
+Riduzione: $R_3\to R_3-R_1$ dà $(0,-1,0\mid -1,-1,0)$; poi $R_3\to R_3+R_2$ dà $(0,0,1\mid -1,0,1)$; infine $R_4\to R_4-R_3$ dà $(0,0,0\mid 1,0,-1)$. Quindi
+
+$$
+S=\left(\begin{array}{ccc|ccc}
+1&1&0&1&1&0\\
+0&1&1&0&1&1\\
+0&0&1&-1&0&1\\
+0&0&0&1&0&-1
+\end{array}\right).
+$$
+
+Le prime $r=3$ righe hanno il pivot a sinistra: le loro metà sinistre $(1,1,0),(0,1,1),(0,0,1)$ sono una base di $U+W$, che quindi è tutto $\mathbb R^3$. L'ultima riga ha metà sinistra nulla: la sua metà destra $(1,0,-1)$ è una base di $U\cap W$.
+
+**Controllo.** $(1,0,-1)=(1,1,0)-(0,1,1)\in U$ e $(1,0,-1)=(1,0,0)-(0,0,1)\in W$. Le dimensioni tornano con Grassmann: $\dim U+\dim W=2+2=4=3+1=\dim(U+W)+\dim(U\cap W)$. In effetti $U$ è il piano $x-y+z=0$, $W$ è il piano $y=0$, e la loro intersezione è la retta $y=0,\ x=-z$.
 
 ## 2. Calcolo della matrice inversa tramite mosse di riga
 
@@ -224,7 +253,7 @@ $$
 A^{-1} = \begin{pmatrix} \frac{1}{2} & \frac{i}{2} \\ -\frac{i}{2} & -\frac{1}{2} \end{pmatrix} = \frac{1}{2}A.
 $$
 
-La relazione $A^{-1} = \frac12 A$ equivale a $A^2 = 2I$. Non è chiaro se il docente l'abbia commentata esplicitamente.
+La relazione $A^{-1} = \frac12 A$ equivale a $A^2 = 2I$, e si controlla subito: $A^2=\begin{pmatrix}1+i(-i) & i+i(-1)\\ -i+(-1)(-i) & (-i)i+1\end{pmatrix}=\begin{pmatrix}2&0\\0&2\end{pmatrix}$.
 
 **Verifica.** Il docente ha controllato il risultato calcolando il prodotto riga per colonna di $A$ per la matrice trovata e ottenendo l'identità. Per esempio, prima riga per prima colonna:
 
@@ -282,10 +311,19 @@ Per la sezione 3, le sottomatrici $A_{(h)}$ e $B_{(h)}$ sono equivalenti e quind
 
 Si può anche ragionare così: si prendono le colonne dei pivot di una delle due matrici e si guardano le stesse colonne nell'altra. Poiché le sottomatrici sono equivalenti, devono avere lo stesso rango, e quindi anche nell'altra matrice in quelle colonne devono comparire i pivot.
 
-**Esempio discusso.** Il docente ha considerato una matrice a scala completa con pivot nella seconda e nella terza colonna. Ha poi confrontato la sottomatrice formata da quelle colonne con altre scelte di colonne, per esempio la seconda e la quarta, che non sono colonne dei pivot.
+**Esempio.** Il docente ha considerato una matrice a scala completa con pivot nella seconda e nella terza colonna, confrontando poi quelle colonne con altre scelte (per esempio la seconda e la quarta). Un esempio di questo tipo:
 
-> [!warning]
-> Gli elementi precisi della matrice di questo esempio non sono ricostruibili.
+$$
+A=\begin{pmatrix}0&1&0&2\\0&0&1&3\end{pmatrix}.
+$$
+
+I ranghi delle sottomatrici formate dalle prime $h$ colonne sono
+
+| $h$ | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| $\operatorname{rk}A_{(h)}$ | 0 | 1 | 2 | 2 |
+
+Il rango sale esattamente in corrispondenza delle colonne $2$ e $3$, che sono le colonne dei pivot. La sottomatrice delle colonne $2$ e $4$, $\begin{pmatrix}1&2\\0&3\end{pmatrix}$, ha anch'essa rango $2$, ma la colonna $4$ non contiene un pivot: per individuare i pivot bisogna guardare i ranghi delle sottomatrici formate dalle **prime** $h$ colonne, non di colonne scelte a caso.
 
 ### Secondo passo: le matrici coincidono
 
