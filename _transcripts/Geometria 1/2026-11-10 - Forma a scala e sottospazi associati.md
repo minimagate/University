@@ -9,6 +9,7 @@ summary: La lezione studia la riduzione di matrici in forma a scala per
   matrice aumentata, l’equivalenza per operazioni di riga, i pivot e il ruolo
   delle sottomatrici associate alle colonne pivot.
 source_audio: _audio/Geometria 1/2026-11-10 - New Recording 98.m4a
+source_audio_status: missing
 duration_seconds: 5437
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna

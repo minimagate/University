@@ -9,6 +9,7 @@ summary: La lezione introduce le classi laterali e i gruppi quoziente rispetto a
   omomorfismi, il nucleo, la proiezione canonica e l’omomorfismo indotto, con
   applicazioni ai teoremi di isomorfismo e ai gruppi ciclici finiti.
 source_audio: _audio/Aritmetica/2026-11-11 - New Recording 99.m4a
+source_audio_status: missing
 duration_seconds: 6174
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna

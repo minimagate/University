@@ -9,6 +9,7 @@ summary: La lezione analizza l’ordine moltiplicativo di 7 modulo 11, mostrando
   classi di resto, coprimalità, sistemi di congruenze e generatori del gruppo
   moltiplicativo.
 source_audio: _audio/Aritmetica/2026-11-10 - New Recording 97.m4a
+source_audio_status: missing
 duration_seconds: 5244
 transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
