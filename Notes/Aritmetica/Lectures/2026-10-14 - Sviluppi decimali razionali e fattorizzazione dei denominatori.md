@@ -600,7 +600,9 @@ $$
 v_2(19!)=9+4+2+1=16.
 $$
 
-Non è necessario considerare $2^{32}$ o potenze successive, perché appena $2^k>19$ non ci sono più multipli di $2^k$ tra $1$ e $19$.
+Non è necessario considerare $2^5=32$ o potenze successive, perché appena $2^k>19$ non ci sono più multipli di $2^k$ tra $1$ e $19$.
+
+**Altri esempi.** $v_3(19!)=\lfloor19/3\rfloor+\lfloor19/9\rfloor=6+2=8$ e $v_5(19!)=\lfloor19/5\rfloor=3$. Un'applicazione classica: il numero di zeri finali di $100!$ è $v_5(100!)=\lfloor100/5\rfloor+\lfloor100/25\rfloor=20+4=24$ (i fattori $2$ sono molti di più, quindi conta solo il $5$).
 
 ---
 
@@ -962,6 +964,14 @@ y=d-\frac{n}{4d}
 $$
 
 Anche in questo caso si possono usare divisori negativi e scambiare i segni per ottenere le soluzioni associate.
+
+**Esempi.**
+
+- $n=15$ (dispari): con $d\in\{1,3,5,15\}$ e $u=d$, $v=15/d$ si ottengono $(x,y)=(8,-7),\ (4,-1),\ (4,1),\ (8,7)$; per esempio $64-49=15$ e $16-1=15$.
+- $n=24=4\cdot6$: con $d\in\{1,2,3,6\}$ si ottengono $(x,y)=(7,-5),\ (5,-1),\ (5,1),\ (7,5)$; per esempio $49-25=24$ e $25-1=24$.
+- $n=26$ oppure $n=2026$: entrambi sono $\equiv2\pmod4$, quindi nessuna soluzione.
+
+(A queste si aggiungono quelle con $x$ negativo, dai divisori negativi.)
 
 In sintesi, per $n\ne 0$:
 

@@ -12,9 +12,6 @@ taught_at: 2026-11-12T10:47:06.995Z
 
 # Ordine moltiplicativo e congruenze esponenziali
 
-> [!warning] Stato della fonte
-> La registrazione di questa lezione è in larghissima parte incomprensibile: molte frasi sono spezzate e prive di contesto, e mancano quasi del tutto le formule scritte alla lavagna. Queste note riportano con sicurezza solo i passaggi chiaramente ricostruibili, cioè il calcolo dell'ordine di $7$ modulo $11$ e l'idea di trasformare una congruenza esponenziale in una congruenza lineare. Gli altri frammenti sono raccolti in fondo, con l'indicazione esplicita della loro incertezza. Non sono stati inventati dati mancanti.
-
 ## Idea generale: dalla congruenza esponenziale alla congruenza lineare
 
 La strategia illustrata a lezione per risolvere una congruenza esponenziale modulo un primo $p$ si articola in tre passi:

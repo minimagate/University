@@ -796,7 +796,7 @@ In generale, per determinare l’ordine di $\overline a$ modulo $n$:
    a^d\equiv1\pmod n.
    $$
 
-### Esempio concettuale modulo $17$
+### Esempio modulo $17$
 
 Poiché $17$ è primo:
 
@@ -817,6 +817,17 @@ $$
 $$
 
 Non è necessario che ogni elemento abbia ordine $16$: ciò accade solo se il gruppo è generato da quell’elemento.
+
+Poiché i divisori di $16$ sono potenze di $2$, l'ordine di $\bar a$ è $16$ se e solo se $a^8\not\equiv1$; più in generale basta elevare ripetutamente al quadrato. Qualche esempio:
+
+| $a$ | $a^2$ | $a^4$ | $a^8$ | $a^{16}$ | ordine |
+|---|---|---|---|---|---|
+| $16\equiv-1$ | $1$ | | | | $2$ |
+| $4$ | $16\equiv-1$ | $1$ | | | $4$ |
+| $2$ | $4$ | $16\equiv-1$ | $1$ | | $8$ |
+| $3$ | $9$ | $81\equiv13$ | $169\equiv-1$ | $1$ | $16$ |
+
+Quindi $\bar3$ genera $(\mathbb Z/17\mathbb Z)^\times$, che è ciclico, mentre $\bar2$ no. Si noti il segnale utile: appena una potenza vale $-1$, la successiva (il quadrato) vale $1$, e l'ordine è il doppio dell'esponente a cui compare $-1$.
 
 ---
 

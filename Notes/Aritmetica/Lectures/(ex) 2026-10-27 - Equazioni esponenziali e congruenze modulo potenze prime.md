@@ -349,7 +349,6 @@ $$
 x\equiv-1\pmod6.
 $$
 
-Nel transcript l’esponente viene indicato anche come $x_0=-2$ in un passaggio; il calcolo diretto delle potenze modulo $7$ mostra invece che per $3^x\equiv5\pmod7$ si ottiene $x\equiv5\pmod6$.
 
 ### Congruenza modulo $13$
 
@@ -393,6 +392,8 @@ Ne segue che le soluzioni della congruenza iniziale sono
 $$
 \boxed{x\equiv5\pmod6}.
 $$
+
+Controllo con il valore più piccolo: $3^5=243=2\cdot91+61$, quindi $3^5\equiv61\pmod{91}$. Il periodo $6$ si spiega così: l'ordine di $3$ modulo $91$ è il minimo comune multiplo degli ordini modulo $7$ e modulo $13$, cioè $[6,3]=6$.
 
 ---
 

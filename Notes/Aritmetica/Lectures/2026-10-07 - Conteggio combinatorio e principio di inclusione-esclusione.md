@@ -480,6 +480,19 @@ Un principio metodologico importante è quindi:
 
 > Quando compare una sommatoria contenente coefficienti binomiali, conviene cercare un’interpretazione combinatoria dei suoi termini prima di manipolarla algebricamente.
 
+**L'esercizio finale della lezione.** Dimostrare che
+
+$$
+\sum_{k=0}^{n}k\binom nk=n\,2^{n-1}.
+$$
+
+Contiamo le coppie $(A,x)$ con $A\subseteq\{1,\dots,n\}$ e $x\in A$ (un "comitato" con un "presidente").
+
+- *Primo modo:* si sceglie prima $A$, con $|A|=k$, in $\binom nk$ modi, poi il presidente $x\in A$ in $k$ modi. Sommando su $k$: $\sum_k k\binom nk$.
+- *Secondo modo:* si sceglie prima il presidente $x$, in $n$ modi, poi il resto del comitato, cioè un sottoinsieme qualsiasi degli altri $n-1$ elementi, in $2^{n-1}$ modi. Totale: $n\,2^{n-1}$.
+
+Le due espressioni contano lo stesso insieme, quindi coincidono. Controllo con $n=3$: $0+1\cdot3+2\cdot3+3\cdot1=12=3\cdot2^2$.
+
 ---
 
 ## 7. Conteggio di coppie di sottoinsiemi con intersezione fissata
@@ -764,6 +777,12 @@ La regola generale è:
 > La somma di un insieme di interi è pari se e solo se il sottoinsieme degli elementi dispari scelti ha cardinalità pari.
 
 Se invece si scelgono $47$ numeri dispari, la somma è dispari, perché il numero di addendi dispari è dispari.
+
+Numericamente: $\binom{50}{46}=\binom{50}{4}=230300$ e $\binom{50}{48}=\binom{50}{2}=1225$, quindi il totale è
+
+$$
+230300+1225^2+230300=230300+1500625+230300=1961225.
+$$
 
 ---
 

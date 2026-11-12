@@ -139,6 +139,13 @@ $$
 
 Questa relazione può essere dimostrata anche direttamente, senza usare la fattorizzazione in primi, partendo dalle definizioni astratte di massimo comune divisore e minimo comune multiplo. La dimostrazione mediante gli esponenti primi è però particolarmente trasparente.
 
+**Esercizio per casa: dimostrarlo senza fattorizzazione.** Siano $A,B$ interi positivi, $d=\gcd(A,B)$, e scriviamo $A=dA'$, $B=dB'$ con $\gcd(A',B')=1$. Poniamo $m=dA'B'=\frac{AB}{d}$.
+
+- $m$ è un multiplo comune: $m=A\cdot B'=B\cdot A'$.
+- $m$ divide ogni multiplo comune. Sia $c$ multiplo sia di $A$ sia di $B$; allora $c=Ak=dA'k$ per qualche $k$. Poiché $B\mid c$, si ha $dB'\mid dA'k$, cioè $B'\mid A'k$. Essendo $\gcd(A',B')=1$, segue $B'\mid k$ (per Bézout: da $uA'+vB'=1$ si ottiene $k=uA'k+vB'k$, somma di due multipli di $B'$). Quindi $k=B't$ e $c=dA'B't=mt$.
+
+Dunque $m$ è il minimo comune multiplo, e $\gcd(A,B)\operatorname{lcm}(A,B)=d\cdot\frac{AB}d=AB$. Per esempio, con $A=12$, $B=18$: $d=6$, $A'=2$, $B'=3$, $m=36$ e $6\cdot36=216=12\cdot18$.
+
 > [!warning]
 > Nel passaggio dal massimo comune divisore al minimo comune multiplo bisogna sostituire sistematicamente i minimi con i massimi e le disuguaglianze $\leq$ con le disuguaglianze $\geq$.
 
@@ -647,21 +654,14 @@ $$
 \lambda\in\{-3,-2,-1,0,1\}.
 $$
 
-Ci sono dunque almeno cinque valori possibili.
+Ci sono dunque esattamente cinque valori possibili. Le soluzioni corrispondenti sono
 
-Per questi valori,
+| $\lambda$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ |
+|---|---|---|---|---|---|
+| $x=30+41\lambda$ | $-93$ | $-52$ | $-11$ | $30$ | $71$ |
+| $y=-8-11\lambda$ | $25$ | $14$ | $3$ | $-8$ | $-19$ |
 
-$$
-y=-8-11\lambda
-$$
-
-assume rispettivamente i valori
-
-$$
-25,\ 14,\ 3,\ -8,\ -19,
-$$
-
-tutti compresi tra $-100$ e $100$. La condizione su $y$ è quindi automaticamente soddisfatta.
+Controllo su una di esse: $11\cdot(-93)+41\cdot25=-1023+1025=2$. I valori di $y$ sono tutti compresi tra $-100$ e $100$. La condizione su $y$ è quindi automaticamente soddisfatta.
 
 Pertanto il numero di soluzioni intere con
 

@@ -13,7 +13,7 @@ transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
 transcribed_at: '2026-10-27T21:56:56.999Z'
-study_note: Notes/Aritmetica/Lectures/2026-10-27 - Equazioni esponenziali e congruenze modulo potenze
+study_note: Notes/Aritmetica/Lectures/(ex) 2026-10-27 - Equazioni esponenziali e congruenze modulo potenze
   prime.md
 source_audio_status: missing
 study_note_date: '2026-10-27'

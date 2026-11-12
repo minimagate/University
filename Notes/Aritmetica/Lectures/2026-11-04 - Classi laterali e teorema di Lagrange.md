@@ -455,7 +455,9 @@ $$
 \langle x\rangle=G.
 $$
 
-Si conclude che ogni gruppo di ordine primo è ciclico.
+Si conclude che ogni gruppo di ordine primo è ciclico. Di più: **ogni** elemento diverso dall'identità è un generatore.
+
+**Esempio.** In $\mathbb Z/5\mathbb Z$ (con la somma) ciascuna delle classi $\bar1,\bar2,\bar3,\bar4$ genera tutto il gruppo. Per esempio, i multipli di $\bar2$ sono $\bar2,\bar4,\bar6=\bar1,\bar8=\bar3,\overline{10}=\bar0$: compaiono tutte e cinque le classi. Attenzione: qui il gruppo è additivo, quindi "potenze" vuol dire multipli.
 
 ---
 
@@ -549,27 +551,43 @@ $$
 
 Quindi esistono esattamente tre classi laterali sinistre e tre classi laterali destre.
 
-Le classi laterali sinistre sono del tipo
+Facciamo il conto esplicito con
 
 $$
-H,\qquad \sigma H,\qquad \sigma^2H,
+\sigma=(1\,2\,3),\qquad \sigma^2=(1\,3\,2),\qquad \tau=(1\,2),
 $$
 
-dove $\sigma$ è un elemento scelto fuori da $H$ e le classi vengono generate scegliendo ogni volta un rappresentante che non appartenga alle classi già ottenute.
-
-Analogamente, le classi laterali destre sono del tipo
+componendo da destra a sinistra ($\sigma\tau$ significa: prima $\tau$, poi $\sigma$). Per esempio $\sigma\tau$ manda $1\mapsto2\mapsto3$, $2\mapsto1\mapsto2$, $3\mapsto3\mapsto1$, quindi $\sigma\tau=(1\,3)$. Allo stesso modo
 
 $$
-H,\qquad H\sigma,\qquad H\sigma^2.
+\tau\sigma=(2\,3),\qquad \sigma^2\tau=(2\,3),\qquad \tau\sigma^2=(1\,3).
 $$
 
-Poiché $S_3$ non è abeliano, in generale può accadere che
+Che $\sigma\tau$ non sia né $e$, né $\tau$, né $\sigma$, né $\sigma^2$ si vede anche senza calcoli, con la legge di cancellazione: per esempio $\sigma\tau=\sigma$ darebbe $\tau=e$, e $\sigma\tau=\sigma^2$ darebbe $\tau=\sigma$.
+
+**Classi laterali sinistre** (si parte da $H$, poi si sceglie ogni volta un rappresentante non ancora usato):
 
 $$
-\sigma H\neq H\sigma.
+H=\{e,(1\,2)\},\qquad \sigma H=\{\sigma,\sigma\tau\}=\{(1\,2\,3),(1\,3)\},\qquad \sigma^2H=\{\sigma^2,\sigma^2\tau\}=\{(1\,3\,2),(2\,3)\}.
 $$
 
-Tuttavia, sia le classi sinistre sia quelle destre sono partizioni di $S_3$ in tre sottoinsiemi di due elementi.
+**Classi laterali destre:**
+
+$$
+H=\{e,(1\,2)\},\qquad H\sigma=\{\sigma,\tau\sigma\}=\{(1\,2\,3),(2\,3)\},\qquad H\sigma^2=\{\sigma^2,\tau\sigma^2\}=\{(1\,3\,2),(1\,3)\}.
+$$
+
+Entrambe sono partizioni di $S_3$ in tre insiemi di due elementi, ma **sono partizioni diverse**: $\sigma H\neq H\sigma$. Quindi $H$ non è normale.
+
+### Il sottogruppo $K=\langle\sigma\rangle$ di ordine $3$
+
+Sia ora $K=\{e,\sigma,\sigma^2\}$, di indice $[S_3:K]=2$. Le classi sinistre sono $K$ e il suo complementare:
+
+$$
+K,\qquad \tau K=\{\tau,\tau\sigma,\tau\sigma^2\}=\{(1\,2),(2\,3),(1\,3)\},
+$$
+
+e le classi destre sono $K$ e $K\tau=\{\tau,\sigma\tau,\sigma^2\tau\}=\{(1\,2),(1\,3),(2\,3)\}$, cioè lo stesso insieme. Quindi $\tau K=K\tau$ e $K$ è normale, anche se $\tau\sigma\neq\sigma\tau$: gli elementi sono gli stessi, ma "riordinati" (come insieme $\{\tau,\tau\sigma,\tau\sigma^2\}=\{\tau,\sigma^2\tau,\sigma\tau\}$). È un caso particolare della proposizione sui sottogruppi di indice $2$ vista più avanti.
 
 ---
 
@@ -781,7 +799,23 @@ $$
 
 ---
 
-## 16. Indice di un sottogruppo
+## 16. Due criteri: indice 2 e ordine 2
+
+**Proposizione (indice $2$).** Se $[G:H]=2$, allora $H\trianglelefteq G$.
+
+*Dimostrazione.* Le classi laterali sinistre sono solo due: una è $H$, quindi l'altra è necessariamente il complementare $G\setminus H$. Lo stesso vale per le destre. Sia $g\in G$. Se $g\in H$, allora $gH=H=Hg$. Se $g\notin H$, allora $gH$ è una classe sinistra che contiene $g$ e non è $H$, quindi $gH=G\setminus H$; per lo stesso motivo $Hg=G\setminus H$. In ogni caso $gH=Hg$. $\square$
+
+(Il ragionamento usa solo che ogni elemento è rappresentante della propria classe, e che due classi coincidono o sono disgiunte: è la stessa idea per cui, modulo $6$, il numero $15$ deve cadere in una e una sola classe.) Esempio: $\langle\sigma\rangle\trianglelefteq S_3$, come calcolato nel §10.
+
+**Proposizione (ordine $2$).** Se $H=\{e,h\}$ è un sottogruppo normale di ordine $2$, allora $H\subseteq Z(G)$.
+
+*Dimostrazione.* Per ogni $g\in G$, $gHg^{-1}=\{geg^{-1},ghg^{-1}\}=\{e,ghg^{-1}\}$ deve essere uguale a $H=\{e,h\}$. Poiché $ghg^{-1}\neq e$ (altrimenti $h=e$), deve essere $ghg^{-1}=h$, cioè $gh=hg$. Quindi $h$ commuta con tutti gli elementi di $G$. $\square$
+
+Nel caso di $S_3$: $\langle\tau\rangle$ ha ordine $2$ ma $\tau$ non commuta con $\sigma$, quindi (di nuovo) $\langle\tau\rangle$ non è normale.
+
+---
+
+## 17. Indice di un sottogruppo
 
 Il numero delle classi laterali sinistre di $H$ in $G$ si chiama **indice** di $H$ in $G$ e si indica con
 
@@ -807,7 +841,7 @@ Le classi laterali sono quindi tre, ciascuna con due elementi.
 
 ---
 
-## 17. Procedura pratica per trovare le classi laterali
+## 18. Procedura pratica per trovare le classi laterali
 
 Per determinare le classi laterali di $H$ in $G$:
 

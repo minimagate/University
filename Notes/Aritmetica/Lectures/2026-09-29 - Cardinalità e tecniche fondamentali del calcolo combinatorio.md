@@ -462,6 +462,8 @@ $$
 
 Il prodotto dei fattori decrescenti è spesso indicato informalmente con una notazione di permutazione, ma la forma con i fattoriali rende esplicito il conteggio.
 
+**Esempio.** Con $|X|=3$ e $|Y|=5$: le funzioni $X\to Y$ sono $5^3=125$, quelle iniettive $5\cdot4\cdot3=\frac{5!}{2!}=60$. Interpretazione: le parole di $3$ lettere scelte tra $5$ sono $125$; quelle con lettere tutte diverse sono $60$. Dividendo ulteriormente per $3!=6$ (gli ordinamenti di ciascuna terna) si ottengono i $\binom53=10$ sottoinsiemi di $3$ elementi, come nel §14.
+
 Per convenzione:
 
 $$
@@ -605,6 +607,14 @@ $$
 \chi_A(b)=0,\qquad
 \chi_A(c)=1.
 $$
+
+La tabella completa per $X=\{a,b,c\}$, scrivendo $\chi_A$ come la terna $(\chi_A(a),\chi_A(b),\chi_A(c))$:
+
+| $A$ | $\varnothing$ | $\{a\}$ | $\{b\}$ | $\{c\}$ | $\{a,b\}$ | $\{a,c\}$ | $\{b,c\}$ | $X$ |
+|---|---|---|---|---|---|---|---|---|
+| $\chi_A$ | $000$ | $100$ | $010$ | $001$ | $110$ | $101$ | $011$ | $111$ |
+
+Il vuoto corrisponde alla funzione costante $0$, l'intero $X$ alla funzione costante $1$, e le $8=2^3$ terne compaiono tutte una sola volta.
 
 Il sottoinsieme $A$ determina completamente $\chi_A$, e viceversa: conoscendo la funzione caratteristica, si ricostruisce il sottoinsieme come
 

@@ -443,6 +443,19 @@ $$
 n = \sum_{d \mid n} \varphi(d).
 $$
 
+**Esempio: $\mathbb Z/12\mathbb Z$.** Per ogni divisore $d$ di $12$ c'è un solo sottogruppo di ordine $d$, cioè $\langle 12/d\rangle$, e i suoi generatori sono gli elementi di ordine $d$:
+
+| $d$ | sottogruppo | elementi di ordine $d$ | $\varphi(d)$ |
+|---|---|---|---|
+| $1$ | $\{0\}$ | $0$ | $1$ |
+| $2$ | $\langle 6\rangle$ | $6$ | $1$ |
+| $3$ | $\langle 4\rangle$ | $4,8$ | $2$ |
+| $4$ | $\langle 3\rangle$ | $3,9$ | $2$ |
+| $6$ | $\langle 2\rangle$ | $2,10$ | $2$ |
+| $12$ | $\mathbb Z/12\mathbb Z$ | $1,5,7,11$ | $4$ |
+
+e infatti $1+1+2+2+2+4=12$: ogni elemento compare in esattamente una riga. In un gruppo non ciclico il conteggio cambia: in $\mathbb Z/2\times\mathbb Z/2$ ci sono tre sottogruppi ciclici di ordine $2$, quindi $3\cdot\varphi(2)=3$ elementi di ordine $2$.
+
 > [!warning]
 > La formula di somma finale è la lettura più plausibile di un passaggio poco intelligibile, in cui si parla del numero degli elementi del gruppo ripartiti in gruppi di elementi con lo stesso ordine. Le parti precedenti (mappa $x \mapsto \langle x\rangle$, formula dell'ordine di $y^k$, condizione $\operatorname{MCD}=1$) sono invece chiaramente presenti.
 

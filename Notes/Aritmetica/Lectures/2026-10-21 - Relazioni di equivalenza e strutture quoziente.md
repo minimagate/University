@@ -400,6 +400,16 @@ $$
 
 La classe $[1]_{12}$ può essere indicata anche usando $-11$, $13$, $25$ o qualunque altro intero congruo a $1$ modulo $12$.
 
+**Esercizio: a quale classe modulo $12$ appartiene $-317$?** Conviene spezzare il numero in pezzi di cui si conosce il resto: $317=300+17$, e $300=25\cdot12$, quindi $317\equiv17\equiv5\pmod{12}$. Allora $-317\equiv-5\equiv7\pmod{12}$, cioè $[-317]_{12}=[7]_{12}$. Controllo: $-317=-27\cdot12+7$, perché $27\cdot12=324$.
+
+**Scegliere il rappresentante comodo.** Il resto $0\le r<n$ è il rappresentante "canonico", ma nei conti si può usare qualunque elemento della classe. Per esempio, modulo $12$:
+
+$$
+11\cdot7\equiv(-1)\cdot(-5)=5\pmod{12},
+$$
+
+e infatti $77=6\cdot12+5$. Usare $-1$ al posto di $11$ e $-5$ al posto di $7$ rende il conto immediato; è lecito proprio perché le operazioni sulle classi non dipendono dai rappresentanti (§6.1).
+
 ---
 
 ## 6. Operazioni sulle classi modulo $n$

@@ -292,11 +292,13 @@ $$
 \psi=\frac{1-\sqrt{5}}{2}.
 $$
 
-Di conseguenza, la formula di Fibonacci si ottiene come combinazione lineare di $\varphi^n$ e $\psi^n$:
+Di conseguenza $F_n=x\varphi^n+y\psi^n$, e le costanti si trovano come nel §4. Da $F_0=0$ si ha $x+y=0$; da $F_1=1$ si ha $x\varphi+y\psi=1$, cioè $x(\varphi-\psi)=1$. Poiché $\varphi-\psi=\sqrt5$, si ottiene $x=\frac1{\sqrt5}$, $y=-\frac1{\sqrt5}$ e quindi la **formula di Binet**
 
 $$
 F_n=\frac{\varphi^n-\psi^n}{\sqrt{5}}.
 $$
+
+Controllo per $n=2$: $\varphi^2-\psi^2=(\varphi-\psi)(\varphi+\psi)=\sqrt5\cdot1$, quindi $F_2=1$, come da $F_2=F_1+F_0$. I primi termini sono $0,1,1,2,3,5,8,13,21,\dots$: nonostante le radici irrazionali, la formula dà sempre interi. Poiché $|\psi|<1$, il termine $\psi^n/\sqrt5$ tende a $0$, e $F_n$ è l'intero più vicino a $\varphi^n/\sqrt5$.
 
 Il punto metodologico è che una ricorrenza, che rappresenta una famiglia infinita di equazioni, viene trasformata in una singola equazione algebrica, il cui polinomio caratteristico può essere risolto.
 

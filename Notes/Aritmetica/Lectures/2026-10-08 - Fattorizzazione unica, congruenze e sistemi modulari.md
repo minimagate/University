@@ -893,6 +893,34 @@ In questo caso la congruenza ha una sola classe di soluzioni modulo $n$.
 
 ---
 
+### Esempio svolto: $12x\equiv15\pmod{21}$
+
+**Esistenza.** $\gcd(12,21)=3$ e $3\mid15$: ci sono soluzioni.
+
+**Riduzione.** Dividendo tutto per $3$ si ottiene la congruenza equivalente
+
+$$
+4x\equiv5\pmod7,\qquad \gcd(4,7)=1.
+$$
+
+**Inverso di $4$ modulo $7$.** Basta trovare una combinazione $4u+7v=1$; qui si vede a occhio $4\cdot2-7\cdot1=1$ (per numeri grandi si userebbe l'algoritmo di Euclide), quindi $4^{-1}\equiv2\pmod7$.
+
+**Soluzione.** Moltiplicando per $2$: $x\equiv2\cdot5=10\equiv3\pmod7$. Controllo: $4\cdot3=12\equiv5\pmod7$.
+
+**Lettura delle soluzioni.** Gli interi che risolvono la congruenza sono
+
+$$
+x=3+7\lambda:\qquad \dots,\ -4,\ 3,\ 10,\ 17,\ 24,\ 31,\ \dots
+$$
+
+Il problema però era posto **modulo $21$**: modulo $21$ la classe $x\equiv3\pmod7$ si spezza in $\gcd(12,21)=3$ classi distinte,
+
+$$
+x\equiv3,\ 10,\ 17\pmod{21}.
+$$
+
+Controllo: $12\cdot10=120=5\cdot21+15$ e $12\cdot17=204=9\cdot21+15$.
+
 ### Esempio di congruenza senza soluzione
 
 Consideriamo una congruenza in cui il massimo comune divisore dei coefficienti non divide il termine noto. Se, per esempio,

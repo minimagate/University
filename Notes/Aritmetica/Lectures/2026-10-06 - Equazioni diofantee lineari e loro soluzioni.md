@@ -500,6 +500,30 @@ y&=y_0-\frac{a}{d}t,
 }
 $$
 
+### Esempio svolto
+
+**(a)** $60x+140y=30$. Si ha $\gcd(60,140)=20$ e $20\nmid30$: **nessuna soluzione intera** (il primo membro è sempre multiplo di $20$).
+
+**(b)** $60x+140y=40$. Ora $20\mid40$. Dividendo tutto per $20$ si ottiene l'equazione equivalente
+
+$$
+3x+7y=2,\qquad \gcd(3,7)=1.
+$$
+
+Euclide: $7=2\cdot3+1$, quindi $1=7-2\cdot3$, cioè $3\cdot(-2)+7\cdot1=1$. Moltiplicando per $2$:
+
+$$
+3\cdot(-4)+7\cdot2=2,\qquad (x_0,y_0)=(-4,2).
+$$
+
+Controllo sull'equazione originale: $60\cdot(-4)+140\cdot2=-240+280=40$. Tutte le soluzioni:
+
+$$
+x=-4+7t,\qquad y=2-3t,\qquad t\in\mathbb Z.
+$$
+
+Per $t=0,1,2$ si trovano $(-4,2)$, $(3,-1)$, $(10,-4)$. Si noti che i passi sono $\frac bd=7$ e $\frac ad=3$, calcolati con $a,b$ **divisi per** $d$: usare $140$ e $60$ al posto di $7$ e $3$ farebbe perdere soluzioni.
+
 ---
 
 ## 12. Soluzioni diverse e parametrizzazioni diverse
@@ -509,6 +533,14 @@ Una stessa famiglia di soluzioni può essere scritta in modi apparentemente diff
 Per esempio, cambiando il parametro da $t$ a $t+1$, oppure da $t$ a $t+k$ con $k\in\mathbb{Z}$, si ottiene una scrittura diversa, ma la stessa collezione di punti, purché il cambiamento di parametro sia compatibile con la parametrizzazione.
 
 Il fatto che due formule abbiano un aspetto diverso non implica che descrivano soluzioni diverse. Occorre verificare se generano lo stesso insieme di coppie $(x,y)$.
+
+Nell'esempio del §11, partendo dalla soluzione particolare $(3,-1)$ invece che da $(-4,2)$ si scrive
+
+$$
+x=3+7s,\qquad y=-1-3s,\qquad s\in\mathbb Z,
+$$
+
+che è la stessa famiglia: basta porre $s=t-1$.
 
 In particolare, non è necessario che le coordinate di una soluzione siano entrambe non nulle: sono ammesse anche soluzioni come
 
