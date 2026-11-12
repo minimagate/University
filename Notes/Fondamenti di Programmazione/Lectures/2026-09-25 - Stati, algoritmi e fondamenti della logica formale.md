@@ -477,6 +477,21 @@ Il problema consiste nel:
 4. dimostrare che la conclusione è corretta;
 5. dimostrare, eventualmente, che le altre conclusioni non seguono dalle premesse.
 
+**Soluzione.** Indichiamo con $A$, $B$, $C$ le proposizioni «Antonio (risp. Bruno, Corrado) va al cinema». Le premesse sono
+
+$$
+C\Rightarrow A,\qquad A\Rightarrow B
+$$
+
+(«condizione necessaria perché $A$ è che $B$» significa proprio $A\Rightarrow B$).
+
+- **Prima conclusione, $C\Rightarrow B$: segue.** Se Corrado va, per la prima premessa va Antonio, e per la seconda va Bruno. È la transitività dell'implicazione.
+- **Seconda, «nessuno è andato»: non segue.** Basta un caso in cui le premesse sono vere e la conclusione falsa: se vanno tutti e tre, $C\Rightarrow A$ e $A\Rightarrow B$ sono vere.
+- **Terza, $B\Rightarrow C$: non segue.** Controesempio: va solo Bruno ($B$ vera, $A$ e $C$ false). Le premesse sono vere ($C\Rightarrow A$ ha premessa falsa, $A\Rightarrow B$ anche), ma $B\Rightarrow C$ è falsa.
+- **Quarta, $\neg C\Rightarrow\neg B$: non segue.** Lo stesso controesempio: Corrado non va, ma Bruno sì.
+
+Si noti la struttura: per dimostrare che una conclusione segue bisogna ragionare in **tutti** i casi in cui le premesse sono vere; per mostrare che non segue basta **un** caso (un controesempio). La terza e la quarta sono infatti la stessa implicazione, una contronominale dell'altra.
+
 ### 7.2 Conseguenza logica
 
 In un ragionamento non è essenziale, inizialmente, stabilire se le premesse siano effettivamente vere nel mondo reale.
