@@ -759,7 +759,7 @@ Consideriamo, per semplicità, un polinomio quadratico
 
 $$
 f(x)=x^2+ax+b.
-$$]
+$$
 
 Poiché $x_0$ è soluzione modulo $p$, esiste un intero $\gamma$ tale che
 

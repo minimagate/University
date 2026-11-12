@@ -13,9 +13,9 @@ transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
 transcribed_at: '2026-11-08T12:58:22.512Z'
-study_note: Notes/Aritmetica/Lectures/2026-11-09 - Classi laterali e teorema di Lagrange.md
+study_note: Notes/Aritmetica/Lectures/2026-11-04 - Classi laterali e teorema di Lagrange.md
 source_audio_status: available
-study_note_date: '2026-11-09'
+study_note_date: '2026-11-04'
 ---
 
 # Classi laterali e teorema di Lagrange

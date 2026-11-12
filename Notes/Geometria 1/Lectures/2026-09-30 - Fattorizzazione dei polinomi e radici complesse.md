@@ -1,14 +1,14 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: '2026-10-01'
+date: '2026-09-30'
 title: Fattorizzazione dei polinomi e radici complesse
 source_transcript: _transcripts/Geometria 1/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md
 source_hash: sha256:c9f34d88caaaaceb4074db546fd127fa27b26a7317006679f7f3151b619bf750
 teaching_model: anthropic/claude-opus-5.5
 taught_at: '2026-09-30T09:26:54.384Z'
 original_date: '2026-09-30'
-date_adjustment: Shifted forward one day to keep one note per course and date.
+date_adjustment: 'Swapped with the vector-spaces note on 2026-11-12: recorded 30 Sep, continues the complex-numbers lecture.'
 ---
 
 # Fattorizzazione dei polinomi e radici complesse

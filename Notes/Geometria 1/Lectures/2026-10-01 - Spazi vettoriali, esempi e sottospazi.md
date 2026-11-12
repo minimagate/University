@@ -1,12 +1,14 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: '2026-09-30'
+date: '2026-10-01'
 title: Spazi vettoriali, esempi e sottospazi
 source_transcript: _transcripts/Geometria 1/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md
 source_hash: sha256:ee96d8a5fb7e614e3fbbe9f6d2e9d60d2c46086915b110f586dc29623b788533
 teaching_model: anthropic/claude-opus-5.5
 taught_at: '2026-09-30T06:56:37.331Z'
+original_date: '2026-09-30'
+date_adjustment: 'Swapped with the polynomials note on 2026-11-12: introduces vector spaces from scratch and leads into span (2 Oct); source geo.mp3 has no recording date.'
 ---
 
 # Spazi vettoriali, esempi e sottospazi

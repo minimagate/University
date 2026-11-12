@@ -1,12 +1,14 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: '2026-11-08'
+date: '2026-11-03'
 title: Omomorfismi, nuclei e prodotti diretti di gruppi
 source_transcript: _transcripts/Aritmetica/2026-11-08 - Omomorfismi, nuclei e prodotti diretti di gruppi.md
 source_hash: sha256:30598f18406808a4d74c1e2ca6821bd1f3caf147ba9cb457ff5de118507d34fc
 teaching_model: anthropic/claude-opus-5.5
 taught_at: '2026-11-08T13:01:01.737Z'
+recorded_on: '2026-11-03'
+date_adjustment: 'Set to the Voice Memos recording date on 2026-11-12 (was 2026-11-08) to free 2026-11-09 for Lezione 13.'
 ---
 
 # Omomorfismi, nuclei e prodotti diretti di gruppi

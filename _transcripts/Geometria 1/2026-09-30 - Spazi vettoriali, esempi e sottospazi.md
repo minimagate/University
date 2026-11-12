@@ -12,9 +12,9 @@ transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
 transcribed_at: '2026-09-30T06:53:50.724Z'
-study_note: Notes/Geometria 1/Lectures/2026-09-30 - Spazi vettoriali, esempi e sottospazi.md
+study_note: Notes/Geometria 1/Lectures/2026-10-01 - Spazi vettoriali, esempi e sottospazi.md
 source_audio_status: missing
-study_note_date: '2026-09-30'
+study_note_date: '2026-10-01'
 ---
 
 # Spazi vettoriali, esempi e sottospazi

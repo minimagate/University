@@ -1,14 +1,14 @@
 ---
 type: lecture-note
 course: Geometria 1
-date: '2026-11-05'
+date: '2026-11-03'
 title: Sistemi lineari e somme dirette di sottospazi
 source_transcript: _transcripts/Geometria 1/2026-11-04 - Sistemi lineari e somme dirette di sottospazi.md
 source_hash: sha256:ac4b8c8aacd19b6e540afb35eeeab7f351d4b048906b8da1606c3f8b553f8806
 teaching_model: anthropic/claude-opus-5.5
 taught_at: '2026-11-04T13:37:33.673Z'
 original_date: '2026-11-04'
-date_adjustment: Shifted forward one day to keep one note per course and date.
+date_adjustment: 'Set to the Voice Memos recording date (New Recording 86, 3 Nov) on 2026-11-12 to restore lecture order.'
 ---
 
 # Sistemi lineari e somme dirette di sottospazi

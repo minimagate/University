@@ -13,9 +13,9 @@ transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
 transcribed_at: '2026-11-04T13:30:46.830Z'
-study_note: Notes/Geometria 1/Lectures/2026-11-05 - Sistemi lineari e somme dirette di sottospazi.md
+study_note: Notes/Geometria 1/Lectures/2026-11-03 - Sistemi lineari e somme dirette di sottospazi.md
 source_audio_status: missing
-study_note_date: '2026-11-05'
+study_note_date: '2026-11-03'
 ---
 
 # Sistemi lineari e somme dirette di sottospazi

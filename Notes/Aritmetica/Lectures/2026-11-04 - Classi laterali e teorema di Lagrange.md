@@ -1,14 +1,14 @@
 ---
 type: lecture-note
 course: Aritmetica
-date: '2026-11-09'
+date: '2026-11-04'
 title: Classi laterali e teorema di Lagrange
 source_transcript: _transcripts/Aritmetica/2026-11-08 - Classi laterali e teorema di Lagrange.md
 source_hash: sha256:c9c5876fe4776d262f6b1259312669943f675b505353d29fb9c8d82e51a4bef6
 teaching_model: anthropic/claude-opus-5.5
 taught_at: '2026-11-08T13:00:05.935Z'
-original_date: '2026-11-08'
-date_adjustment: Shifted forward one day to keep one note per course and date.
+recorded_on: '2026-11-04'
+date_adjustment: 'Set to the Voice Memos recording date on 2026-11-12 (was 2026-11-09) to free 2026-11-09 for Lezione 13.'
 ---
 
 # Classi laterali e teorema di Lagrange

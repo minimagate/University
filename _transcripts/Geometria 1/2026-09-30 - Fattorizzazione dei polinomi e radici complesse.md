@@ -13,9 +13,9 @@ transcription_model: openai/whisper-large-v3
 metadata_model: openai/gpt-5.6-luna
 metadata_status: complete
 transcribed_at: '2026-09-30T09:13:41.366Z'
-study_note: Notes/Geometria 1/Lectures/2026-10-01 - Fattorizzazione dei polinomi e radici complesse.md
+study_note: Notes/Geometria 1/Lectures/2026-09-30 - Fattorizzazione dei polinomi e radici complesse.md
 source_audio_status: missing
-study_note_date: '2026-10-01'
+study_note_date: '2026-09-30'
 ---
 
 # Fattorizzazione dei polinomi e radici complesse
