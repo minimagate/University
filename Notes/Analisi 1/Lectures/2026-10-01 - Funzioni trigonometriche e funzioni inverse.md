@@ -512,6 +512,13 @@ Il dominio corretto è fondamentale: le formule di semplificazione con le invers
 
 ## 10. Esempi di composizioni
 
+A lezione gli esempi sono stati proposti a coppie: uno in cui la semplificazione funziona e uno in cui non funziona.
+
+- $\arcsin(\sin 1)=1$, perché $1\in\left[-\frac\pi2,\frac\pi2\right]$ (infatti $\frac\pi2\approx1{,}57$; l'arco lungo $1$ corrisponde a poco meno di $60°$).
+- $\arccos(\cos 3)=3$, perché $3\in[0,\pi]$.
+
+Con la calcolatrice (in radianti) si ottiene invece $\arcsin(\sin2)\approx1{,}1416$ e $\arccos(\cos4)\approx2{,}2832$: sono i numeri «buffi» spiegati qui sotto.
+
 ### 10.1. $\arcsin(\sin 2)$
 
 L’angolo $2$ non appartiene a $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$, quindi non si può semplificare direttamente.
@@ -552,6 +559,49 @@ Le due composizioni hanno comportamenti diversi:
 - $\cos(\arccos x)$ è definita soltanto per $x\in[-1,1]$, perché l’arcocoseno accetta solo argomenti in $[-1,1]$.
 
 Quindi una composizione può essere definita anche quando non si semplifica nell’identità.
+
+### 10.4. Grafico di $\arccos(\cos x)$
+
+Ponendo $f_1(x)=\cos(\arccos x)$ e $f_2(x)=\arccos(\cos x)$:
+
+- $f_1(x)=x$ per ogni $x\in[-1,1]$, e fuori da lì non è definita: il suo grafico è solo un segmento della bisettrice;
+- $f_2$ è definita su tutto $\mathbb R$ ed è periodica di periodo $2\pi$, quindi basta studiarla su $[0,2\pi]$.
+
+Su $[0,\pi]$ la semplificazione funziona: $f_2(x)=x$. Su $[\pi,2\pi]$ si ragiona come per $\arccos(\cos4)$: il punto della circonferenza di angolo $x$ ha lo stesso coseno del punto di angolo $2\pi-x\in[0,\pi]$, quindi
+
+$$
+\arccos(\cos x)=
+\begin{cases}
+x, & 0\le x\le\pi,\\
+2\pi-x, & \pi\le x\le 2\pi,
+\end{cases}
+$$
+
+ripetuta con periodo $2\pi$. Il grafico è una «capannina» triangolare: sale da $(0,0)$ a $(\pi,\pi)$ lungo $y=x$, scende fino a $(2\pi,0)$ lungo $y=2\pi-x$, e poi si ripete. Controllo: in $x=4$ si ritrova $2\pi-4$.
+
+### 10.5. Gli analoghi con seno e tangente
+
+L'esercizio lasciato a casa era rifare lo stesso studio per $\arcsin(\sin x)$ e $\arctan(\tan x)$.
+
+**$\arcsin(\sin x)$.** È periodica di periodo $2\pi$ e dispari. Su $\left[-\frac\pi2,\frac\pi2\right]$ vale $x$; su $\left[\frac\pi2,\frac{3\pi}2\right]$ l'angolo con lo stesso seno nel ramo principale è $\pi-x$ (come per $\arcsin(\sin2)=\pi-2$). Quindi
+
+$$
+\arcsin(\sin x)=
+\begin{cases}
+x, & -\frac\pi2\le x\le\frac\pi2,\\[2pt]
+\pi-x, & \frac\pi2\le x\le\frac{3\pi}2,
+\end{cases}
+$$
+
+ripetuta con periodo $2\pi$: di nuovo un'onda triangolare, che oscilla tra $-\frac\pi2$ e $\frac\pi2$.
+
+**$\arctan(\tan x)$.** È definita dove è definita la tangente, cioè per $x\neq\frac\pi2+k\pi$, ed è periodica di periodo $\pi$. Su $\left(-\frac\pi2,\frac\pi2\right)$ vale $x$, quindi
+
+$$
+\arctan(\tan x)=x-k\pi\qquad\text{per } x\in\left(-\tfrac\pi2+k\pi,\ \tfrac\pi2+k\pi\right),\ k\in\mathbb Z.
+$$
+
+Il grafico è un «dente di sega»: segmenti di pendenza $1$ che salgono da $-\frac\pi2$ a $\frac\pi2$ e ripartono dal basso, senza mai toccare $\pm\frac\pi2$.
 
 ---
 

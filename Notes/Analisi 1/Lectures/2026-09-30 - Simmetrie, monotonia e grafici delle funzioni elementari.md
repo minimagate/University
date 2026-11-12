@@ -112,7 +112,9 @@ In alcuni casi esiste un periodo positivo più piccolo di tutti gli altri. Esso 
 > [!warning]
 > Non bisogna confondere l’intuizione grafica con una proprietà generale. In particolare, la somma di due funzioni periodiche non è necessariamente periodica.
 
-Se $f$ e $g$ sono periodiche con lo stesso periodo $T$, allora anche $f+g$ è periodica con periodo $T$. Se invece hanno periodi diversi, la somma può non essere periodica. Esistono infatti funzioni periodiche $f$ e $g$ tali che $f+g$ non sia periodica; la costruzione di esempi rigorosi richiede strumenti teorici non ancora introdotti.
+Se $f$ e $g$ sono periodiche con lo stesso periodo $T$, allora anche $f+g$ è periodica con periodo $T$. Se invece hanno periodi diversi, la somma può non essere periodica. Esistono infatti funzioni periodiche $f$ e $g$ tali che $f+g$ non sia periodica; la costruzione di esempi rigorosi richiede strumenti teorici non ancora introdotti. L'esempio tipico è $\sin x+\sin(\sqrt2\,x)$: i due addendi hanno periodi $2\pi$ e $\sqrt2\pi$, il cui rapporto $\sqrt2$ è irrazionale, e la somma non è periodica.
+
+**Un periodo minimo può non esistere.** Sia $f$ la funzione che vale $1$ sui razionali e $0$ sugli irrazionali (funzione di Dirichlet). Per ogni razionale $q>0$, $x+q$ è razionale se e solo se $x$ lo è, quindi $f(x+q)=f(x)$ per ogni $x$: **ogni** razionale positivo è un periodo. Poiché esistono razionali positivi piccoli quanto si vuole, non c'è un periodo minimo. È un altro esempio di come l'intuizione grafica sulle funzioni periodiche possa ingannare.
 
 ---
 

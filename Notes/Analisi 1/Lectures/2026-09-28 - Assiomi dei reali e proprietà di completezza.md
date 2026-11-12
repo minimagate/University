@@ -346,6 +346,14 @@ Anche il fatto che $1>0$ non è assunto esplicitamente negli assiomi di campo e 
 
 Analogamente, occorre dimostrare che gli elementi neutri e gli inversi sono unici.
 
+### 6.1 Le dimostrazioni
+
+- **$0\cdot x=0$.** Per la proprietà dell'elemento neutro $0=0+0$, quindi $0\cdot x=(0+0)x=0\cdot x+0\cdot x$ per la distributiva. Sommando a entrambi i membri l'opposto di $0\cdot x$ si ottiene $0=0\cdot x$.
+- **$-(-x)=x$.** $-(-x)$ è, per definizione, l'unico numero che sommato a $-x$ dà $0$. Ma anche $x$ ha questa proprietà: $x+(-x)=0$. Per l'unicità dell'opposto, $-(-x)=x$.
+- **$(-1)x=-x$.** $x+(-1)x=1\cdot x+(-1)x=(1+(-1))x=0\cdot x=0$, quindi $(-1)x$ è un opposto di $x$, e per unicità coincide con $-x$.
+- **$(-x)(-y)=xy$.** $(-x)(-y)=(-1)x(-1)y=(-1)(-1)xy$, e $(-1)(-1)=-(-1)=1$ per i due punti precedenti.
+- **$1>0$.** Per totalità vale $1\ge0$ oppure $1\le0$; inoltre $1\neq0$ per assioma. Supponiamo per assurdo $1<0$. Sommando $-1$ a entrambi i membri (compatibilità con la somma) si ha $0<-1$. Moltiplicando la disuguaglianza $0\le-1$ per il numero non negativo $-1$ (compatibilità con il prodotto) si ottiene $0\le(-1)(-1)=1$, cioè $1\ge0$, che insieme a $1<0$ è una contraddizione. Quindi $1>0$. (Lo stesso argomento mostra che $x^2\ge0$ per ogni $x$.)
+
 > [!warning]
 > Non bisogna confondere ciò che è assunto come assioma con ciò che è una conseguenza dimostrabile. Le regole di calcolo usuali sono corrette, ma molte non sono primitive: derivano dagli assiomi.
 

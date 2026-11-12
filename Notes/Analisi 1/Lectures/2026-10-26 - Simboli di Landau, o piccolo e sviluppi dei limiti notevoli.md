@@ -12,7 +12,7 @@ teaching_model: anthropic/claude-opus-5.5
 
 # Simboli di Landau, o piccolo e sviluppi dei limiti notevoli
 
-Questa nota riunisce le due parti **023 e 024** della stessa lezione e prosegue [[2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni]]. La prima parte introduce il **linguaggio degli infinitesimi** (o piccolo, O grande, equivalenza asintotica) e ne dimostra le regole di calcolo. La seconda riscrive i [[2026-10-12 - Limiti di funzioni, continuità e limiti notevoli|limiti notevoli]] come **sviluppi** con o piccolo e li usa per calcolare limiti in modo più meccanico.
+Questa nota riunisce le due parti **023 e 024** della stessa lezione e prosegue [[(ex) 2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni]]. La prima parte introduce il **linguaggio degli infinitesimi** (o piccolo, O grande, equivalenza asintotica) e ne dimostra le regole di calcolo. La seconda riscrive i [[2026-10-12 - Limiti di funzioni, continuità e limiti notevoli|limiti notevoli]] come **sviluppi** con o piccolo e li usa per calcolare limiti in modo più meccanico.
 
 ## 1. I tre simboli
 
@@ -313,7 +313,7 @@ Sommare e sottrarre equivalenze asintotiche non è lecito in generale (vedi l'es
 
 ### Esercizio 3: $\displaystyle\lim_{n\to+\infty}\sqrt{n^2+7n-4}-n=\frac72$
 
-È lo stesso tipo dell'esempio 2 (sezione 4) di [[2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni]], risolto lì razionalizzando e ora con gli sviluppi.
+È lo stesso tipo dell'esempio 2 (sezione 4) di [[(ex) 2026-10-22 - Sottosuccessioni, limiti che non esistono e razionalizzazioni]], risolto lì razionalizzando e ora con gli sviluppi.
 
 > **Troppo brutale.** «$\sqrt{n^2+7n-4}-n\sim n-n=0$». Sbagliato.
 
