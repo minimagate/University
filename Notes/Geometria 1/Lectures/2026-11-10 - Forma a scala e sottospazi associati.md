@@ -391,6 +391,9 @@ Nel calcolo compaiono il vettore $(1,0,1)$, come primo vettore su cui si calcola
 > [!warning]
 > La definizione esatta di $F$ e della base di $U$, e quindi la matrice finale, non sono ricostruibili con certezza.
 
+> [!tip] Aggiornamento
+> Lo stesso tipo di esercizio è svolto per intero, con tutti i dati, nella [[2026-11-13 - Conseguenze del teorema rango-nullità, restrizioni e cambiamenti di base#4. Esempio: matrice della restrizione e cambiamento di base|lezione del 13 novembre]]: lì $U = \{x+y-z=0\}$ con base $(1,0,1), (0,1,1)$.
+
 ## Esercizi assegnati
 
 Dagli esercizi del testo di Martelli:
