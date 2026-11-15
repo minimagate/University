@@ -485,8 +485,8 @@ $$
 
 Poiché $a^{-1} = a$ e $b^{-1} = b$, si ottiene $ba = ab$. $\square$
 
-> [!warning]
-> L'enunciato è ricostruito dai frammenti "a uguale ad a alla meno 1", "moltiplico per ... alla meno 1" e "se ne vanno". Non è certo se l'ipotesi fosse esattamente $a^2 = e$ per ogni $a$.
+> [!note] Fonte
+> L'enunciato è ricostruito dai frammenti "a uguale ad a alla meno 1", "moltiplico per ... alla meno 1" e "se ne vanno". L'ipotesi $a^2=e$ per ogni $a$ è confermata dall'Esercizio 2. Lì un gruppo non ciclico di ordine $4$ ha solo elementi di ordine $1$ o $2$ (cioè $a^2=e$ per ogni $a$), e si conclude applicando proprio questo esercizio.
 
 ### Esercizio 2 (per casa)
 

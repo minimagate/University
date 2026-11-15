@@ -219,6 +219,17 @@ dove $A=(a,f(a))$ e $B=(b,f(b))$. Quindi: **esiste almeno un punto in cui la ret
 
 *(Il PDF non dimostra il teorema: lo usa come "misterioso", cioè come strumento noto la cui dimostrazione non viene data qui.)*
 
+> [!tip] Dimostrazione *(aggiunta, la dimostrazione standard)*
+> Si "raddrizza" la corda $AB$ sottraendola a $f$:
+> $$g(x)=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}\,(x-a).$$
+> $g$ è continua su $[a,b]$, derivabile in $(a,b)$, con $g(a)=g(b)=0$ e $g'(x)=f'(x)-\frac{f(b)-f(a)}{b-a}$. Basta trovare $c\in(a,b)$ con $g'(c)=0$ (**teorema di Rolle**).
+>
+> Per **Weierstrass** ([[2026-11-11 - Massimi e minimi, teorema di Weierstrass e studio locale|lezione dell'11 novembre]]) $g$ ha massimo e minimo su $[a,b]$.
+> - Se entrambi sono assunti negli estremi, allora $\max g=\min g=0$, quindi $g\equiv0$ e ogni $c\in(a,b)$ va bene.
+> - Altrimenti uno dei due, diciamo il massimo, è assunto in un punto interno $c$. Se fosse $g'(c)>0$, per **Monotonia 1** (§4.1) $g$ sarebbe strettamente crescente in $c$, e varrebbe $g(x)>g(c)$ per $x>c$ vicino a $c$: impossibile, perché $g(c)$ è il massimo. Analogamente $g'(c)<0$ è impossibile. Quindi $g'(c)=0$.
+>
+> Da $g'(c)=0$ segue $f'(c)=\frac{f(b)-f(a)}{b-a}$. $\square$
+
 ### 4.4 Dimostrazione di Monotonia 2
 
 **(i) + (ii).** Siano $a<x_1<x_2<b$. Per Lagrange su $[x_1,x_2]$ esiste un punto "misterioso" $c\in(x_1,x_2)$ tale che
@@ -311,5 +322,5 @@ I tre intervalli sono disgiunti, quindi ci sono **almeno tre soluzioni reali**.
 - `AM1_26_L040.pdf`: intestazione "ANALISI 1 – LEZIONE 040", data **10/11/2025**. Contiene i legami tra monotonia e segno della derivata (Monotonia 1, 2, 3, Lagrange) e tre esercizi (sezioni 4-5).
 - Nel PDF L039 il termine "convesso" nella prima definizione è scritto con la stessa grafia di "connesso" (l'effetto ottico del titolo); la prima definizione (segmento $PQ$) è quella di convesso, la seconda ("da un pezzo solo") quella di connesso.
 - Nella dimostrazione 2 (sezione 1.4) si usa implicitamente $c>a$ (garantito da $f(a)<0$ e dalla continuità); il PDF non lo esplicita.
-- Il teorema di Lagrange è enunciato ma non dimostrato in L040.
+- Il teorema di Lagrange è enunciato ma non dimostrato in L040; la dimostrazione standard (via Rolle e Weierstrass) è aggiunta in §4.3.
 - L'esercizio 3 di L040 si interrompe senza conclusione sulla pagina: la parte finale è aggiunta.

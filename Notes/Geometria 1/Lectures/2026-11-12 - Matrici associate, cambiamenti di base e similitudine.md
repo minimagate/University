@@ -142,6 +142,19 @@ $$
 
 Segue dalla formula delle dimensioni della restrizione. Il testo esatto dell'esercizio però non è ricostruibile con certezza.
 
+> [!tip] Dimostrazioni *(aggiunte)*
+> Siano $A\in M_{m\times n}$ e $B\in M_{n\times p}$, e sia $U=\operatorname{Im}F_B\subseteq K^n$. Per la formula della restrizione (vedi anche [[2026-11-13 - Conseguenze del teorema rango-nullità, restrizioni e cambiamenti di base#3. Restrizione a un sottospazio|lezione del 13 novembre, §3]]):
+> $$\operatorname{rk}(AB)=\dim F_A(U)=\dim U-\dim(\ker F_A\cap U)=\operatorname{rk}B-\dim(\ker F_A\cap\operatorname{Im}F_B).$$
+> **(1)** Quindi $\operatorname{rk}(AB)=\operatorname{rk}B\iff\ker F_A\cap\operatorname{Im}F_B=\{0\}$.
+>
+> **(2)** Versione con **sottospazi complementari** e **somma delle dimensioni**, compatibile con i frammenti. Per Grassmann e rango-nullità ($\dim\ker F_A=n-\operatorname{rk}A$):
+> $$\dim(\operatorname{Im}F_B+\ker F_A)=\operatorname{rk}B+(n-\operatorname{rk}A)-\dim(\ker F_A\cap\operatorname{Im}F_B)=n-\operatorname{rk}A+\operatorname{rk}(AB).$$
+> Quindi $\operatorname{rk}(AB)=\operatorname{rk}A\iff\operatorname{Im}F_B+\ker F_A=K^n$.
+>
+> In particolare, se $\operatorname{Im}F_B$ e $\ker F_A$ sono **complementari** ($K^n=\operatorname{Im}F_B\oplus\ker F_A$), valgono entrambe: $\operatorname{rk}(AB)=\operatorname{rk}A=\operatorname{rk}B$.
+>
+> Quale delle due versioni sia stata svolta in classe resta incerto.
+
 ## 3. L'algebra degli endomorfismi $L(V)$
 
 Sia $L(V)$ l'insieme delle applicazioni lineari $V\to V$, cioè degli endomorfismi di $V$.

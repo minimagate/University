@@ -144,6 +144,13 @@ $$
 
 che, secondo il PDF, **si dimostra volendo per induzione**.
 
+> [!tip] Dimostrazione della stima *(aggiunta)*
+> Più che l'induzione, basta contare i blocchi. Si spezza $\{1,\dots,2^n\}$ in $\{1\}$, $\{2\}$ e nei blocchi $I_j=\{2^{j}+1,\dots,2^{j+1}\}$ per $j=1,\dots,n-1$. Ogni $I_j$ ha $2^j$ elementi e, per la decrescenza, ogni termine $a_k$ con $k\in I_j$ verifica $a_k\le a_{2^j}$:
+> $$\sum_{k=1}^{2^n}a_k\le a_1+a_2+\sum_{j=1}^{n-1}2^j a_{2^j}.$$
+> Per la stima a sinistra si usano invece i blocchi $J_j=\{2^{j-1}+1,\dots,2^j\}$, $j=1,\dots,n$, ciascuno di $2^{j-1}$ elementi, dove $a_k\ge a_{2^j}$:
+> $$\sum_{k=1}^{2^n}a_k\ \ge\ a_1+\sum_{j=1}^{n}2^{j-1}a_{2^j}=a_1+\frac12\sum_{j=1}^{n}2^j a_{2^j}.$$
+> Le somme parziali $S_N=\sum_{k\le N}a_k$ sono crescenti (termini $\ge0$). Basta quindi controllarle lungo $N=2^n$: per una successione crescente, limitatezza su una sottosuccessione equivale a limitatezza.
+
 - **(1)** Se $\sum 2^k a_{2^k}$ converge, guardando la disuguaglianza **a destra** le somme parziali di $\sum a_k$ sono limitate, e quindi $\sum a_k$ converge.
 - **(2)** Se $\sum 2^k a_{2^k}$ diverge, guardando la disuguaglianza **a sinistra** diverge anche $\sum a_k$.
 
@@ -196,6 +203,15 @@ e dimostrarlo per induzione è "quasi un esercizio". Questa stima implica la con
 
 *Domanda aperta posta nel PDF:* come farsi venire in mente la stima che implica la convergenza per ogni $a>1$?
 
+> [!tip] Dimostrazione per induzione e risposta alla domanda *(aggiunte)*
+> **Caso $a=2$.** Per $n=1$: $1\le 2-1$. Passo induttivo: basta $\frac1{(n+1)^2}\le\frac1n-\frac1{n+1}=\frac1{n(n+1)}$, vero perché $n(n+1)\le(n+1)^2$.
+>
+> **Caso generale $a>1$.** Per $n=1$ il membro destro vale $\frac{a}{a-1}-\frac1{a-1}=1$, e vale l'uguaglianza. Per il passo induttivo serve
+> $$\frac1{(n+1)^a}\le\frac1{a-1}\left(\frac1{n^{a-1}}-\frac1{(n+1)^{a-1}}\right).$$
+> Si applica Lagrange ([[2026-11-10 - Teorema degli zeri, valori intermedi e monotonia tramite la derivata#4.3 Il "teorema misterioso" (Lagrange)|lezione del 10 novembre]]) a $g(x)=x^{1-a}$ su $[n,n+1]$. Esiste $c\in(n,n+1)$ con $g(n)-g(n+1)=(a-1)\,c^{-a}\ge(a-1)(n+1)^{-a}$, che è esattamente la disuguaglianza cercata.
+>
+> **Da dove viene la stima.** Si cerca una successione $T_n$ con $T_n-T_{n+1}\ge\frac1{(n+1)^a}$, così che la somma "telescopi". La scelta naturale è $T_n=\frac{1}{(a-1)n^{a-1}}$: è una funzione la cui derivata è $-\frac1{x^a}$. Nel caso $a=2$ è il trucco $\frac1{n(n+1)}=\frac1n-\frac1{n+1}$ del Fatto 3. È lo stesso confronto "serie contro area sotto il grafico" che si formalizzerà con gli integrali.
+
 ## 5. Esercizi
 
 La strategia è sempre la stessa: prima un'analisi **"brutale"** (si individua la parte principale di $a_n$ e si intuisce il comportamento), poi la **verifica rigorosa** con il confronto asintotico (C.A.). Il PDF ricorda: la parte principale è proprio il candidato $b_n$.
@@ -219,19 +235,22 @@ Nota bene: $\frac1n$ è la **parte principale** di $a_n$.
 
 ### Esercizio 3: $\displaystyle\sum_{n=1}^{\infty}\left(\frac1n-\sin\frac1n\right)$
 
-*Brutale:* da $\sin\frac1n=\frac1n-\frac16\frac1{n^3}+\cdots$ si ha
+*Brutale:* da $\sin\frac1n=\frac1n-\frac16\frac1{n^3}+o\!\left(\frac1{n^3}\right)$ si ha
 $$
-a_n\sim\frac1n-\frac1n-\frac16\frac1{n^3}\ \rightsquigarrow\ a_n\text{ è definitivamente }\le0
+a_n=\frac1n-\left(\frac1n-\frac16\frac1{n^3}+\cdots\right)\sim\frac16\,\frac1{n^3}\ \rightsquigarrow\ a_n\text{ è definitivamente }>0
 $$
-(così riportato nel PDF, con il segno "$\le0$": vedi Incertezze) e converge come $\sum\frac1{n^3}$.
+e converge come $\sum\frac1{n^3}$.
 
 *Rigoroso:* considero $b_n=\frac1{n^3}$ e calcolo, con $x=\frac1n$,
 $$
 \lim_{n\to+\infty}\frac{a_n}{b_n}=\lim_{n\to+\infty}\frac{\frac1n-\sin\frac1n}{\frac1{n^3}}
-=\lim_{x\to0}\frac{x-\sin x}{x^3}=-\frac16\quad\text{(Taylor).}
+=\lim_{x\to0}\frac{x-\sin x}{x^3}=+\frac16\quad\text{(Taylor).}
 $$
 
-Questo mi dice che $a_n/b_n<0$ definitivamente. Essendo $b_n>0$, ciò dice che $a_n<0$ definitivamente. Porto il segno fuori (ottenendo una serie a termini positivi) e concludo con il C.A. con $\frac1{n^3}$ (essendo $\frac16\neq0,\neq+\infty$): **converge**.
+Poiché $\frac16\neq0,\neq+\infty$ e i termini sono positivi, il C.A. con $\frac1{n^3}$ dà: **converge**.
+
+> [!warning] Svista nel PDF
+> Il PDF scrive "$a_n$ definitivamente $\le0$" e un limite pari a $-\frac16$, e porta il segno meno fuori dalla serie. Il segno è sbagliato: $\sin x<x$ per $x>0$, quindi $a_n>0$, e il limite è $+\frac16$. La conclusione (convergenza) non cambia.
 
 ### Esercizio 4: $\displaystyle\sum_{n=2}^{\infty}\left(\sqrt[n]{n}-1\right)$
 
@@ -320,11 +339,21 @@ $$
 
 *Osservazione:* la **condizione necessaria** (termine generale infinitesimo) è verificata se e solo se $3a<1$, cioè $a<\frac13$.
 
+**Casi mancanti nel PDF** *(aggiunti)*. Sia $x_n=\dfrac{n^{3a}+5}{n+7}$.
+
+- **$a\le0$.** Ora $0<n^{3a}\le1$, quindi $x_n\sim\frac{5}{n}$ (per $a<0$) oppure $x_n=\frac{6}{n+7}\sim\frac6n$ (per $a=0$). In entrambi i casi $x_n\to0$ e $\sin^2 x_n\sim x_n^2\sim\frac{c}{n^2}$: **converge** per C.A. con $\frac1{n^2}$. Attenzione: qui la formula "brutale" $\frac1{n^{2-6a}}$ non vale, perché domina la costante $5$, non $n^{3a}$.
+- **$a=\frac13$.** $x_n=\frac{n+5}{n+7}\to1$, quindi $\sin^2x_n\to\sin^21\neq0$: manca la condizione necessaria e la serie **diverge** (termini positivi).
+- **$\frac13<a<\frac23$.** $x_n\to+\infty$, ma con passi $x_{n+1}-x_n\sim(3a-1)\,n^{3a-2}\to0$. Una successione che tende a $+\infty$ con passi sempre più piccoli passa vicino a ogni $\frac\pi2+k\pi$ per infiniti $k$. Quindi $\sin^2x_n$ è vicino a $1$ infinite volte, non tende a $0$, e la serie **diverge**.
+- **$a\ge\frac23$.** Anche qui $\sin^2x_n\not\to0$ e la serie **diverge**. Per esempio, per $a=\frac23$ si ha $x_n=n-7+\frac{54}{n+7}$, e $\sin^2(n+\text{costante}+o(1))\not\to0$. In generale, però, la dimostrazione rigorosa richiede strumenti oltre il corso (equidistribuzione modulo $\pi$).
+
+**Risposta completa:** la serie converge **se e solo se $a<\frac16$**.
+
 ## Incertezze e note sulla trascrizione
 
 - Entrambi i PDF riportano la data **04/11/2025**, conservata in `source_date`; la data della lezione nel corso attuale è 04/11/2026.
 - La lezione è scritta a mano. Il testo è stato trascritto fedelmente; sono state aggiunte pochissime spiegazioni (marcate come *passaggio aggiunto*).
-- Nello sviluppo della disuguaglianza di condensazione, il PDF scrive i termini di bordo come qui riportato; la dimostrazione è lasciata per induzione e non è sviluppata.
-- Nell'Esercizio 3 la serie ha termini $\frac1n-\sin\frac1n>0$; il PDF scrive "$a_n$ è a termini definitivamente $\le0$" e calcola un limite pari a $-\frac16$. Il segno non è coerente con $\sin x\le x$ per $x>0$: con lo sviluppo $\sin x=x-\frac{x^3}6+o(x^3)$ si ha $\lim_{x\to0}\frac{x-\sin x}{x^3}=+\frac16$. Probabile svista nell'originale (il valore $-\frac16$ e il "$\le0$" sono riportati come scritti); la conclusione, convergenza, non cambia.
-- Per i blocchi della "subalternativa" della serie armonica la lettura delle parentesi nel PDF è incerta (*illeggibile con sicurezza*).
-- Esercizio 10: i casi $a\ge\frac13$ e $a\le0$ non sono trattati nel PDF.
+- Nel PDF la disuguaglianza di condensazione è "da dimostrare per induzione" e non è sviluppata: la dimostrazione (per blocchi) è aggiunta in §3.3.
+- La stima $\sum_{k\le n}k^{-a}\le\frac{a}{a-1}-\frac{1}{(a-1)n^{a-1}}$ è dimostrata in §4 (aggiunta, via Lagrange).
+- Esercizio 3: il PDF sbaglia il segno ($\le0$, $-\frac16$). Nel testo è corretto a $+\frac16$, con il richiamo alla svista.
+- Per i blocchi della "subalternativa" della serie armonica la lettura delle parentesi nel PDF è incerta. Il valore $\frac12$ per blocco è quello dell'argomento classico di Oresme, ed è corretto.
+- Esercizio 10: i casi $a\le0$ e $a\ge\frac13$, assenti nel PDF, sono aggiunti. Per $a\ge\frac23$ la divergenza è giustificata solo parzialmente.

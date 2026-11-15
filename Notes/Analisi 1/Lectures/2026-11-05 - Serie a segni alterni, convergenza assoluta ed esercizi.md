@@ -87,6 +87,13 @@ allora tutta la successione tende allo stesso $\ell$.
 - Il lemma vale anche con **2025 sottosuccessioni** (basta il massimo di 2025 indici).
 - Resta una domanda: vale anche se le sottosuccessioni sono **infinite**? Il PDF la propone come *"esercizio molto interessante"* con punto interrogativo, senza risposta.
 
+> [!tip] Risposta *(aggiunta)*: no, con infinite sottosuccessioni il lemma è falso
+> Si spezza $\mathbb N_{\ge1}$ negli infiniti insiemi $A_k=\{2^k(2m+1) : m\ge0\}$, $k\ge0$: ogni $n\ge1$ si scrive in un solo modo come potenza di $2$ per dispari. Si pone
+> $$a_n=\begin{cases}1 & \text{se } n \text{ è una potenza di } 2,\\ 0 & \text{altrimenti.}\end{cases}$$
+> Lungo ogni $A_k$ solo il primo termine ($m=0$, cioè $n=2^k$) vale $1$, poi tutti valgono $0$: ogni sottosuccessione tende a $0$. Eppure $a_n=1$ per infiniti $n$, quindi $a_n\not\to0$.
+>
+> Il punto della dimostrazione che si rompe è l'indice "definitivamente comune": il massimo di infiniti indici $N_k$ può non esistere. Con un numero finito di sottosuccessioni (2, o 2025) il massimo esiste sempre.
+
 ## 3. Convergenza assoluta
 
 **Definizione.** Una serie $\sum_{n=0}^\infty a_n$ si dice **assolutamente convergente** se $\sum_{n=0}^\infty|a_n|$ è convergente.
@@ -260,12 +267,18 @@ Quindi $a_n\le b_n$ definitivamente, e la serie **converge**.
 - per $|a|<3$ si usa la **convergenza assoluta**, il confronto asintotico con $\left(\dfrac{|a|}{3}\right)^n n^3$ e il criterio della radice (converge);
 - per $|a|\ge3$ **manca la condizione necessaria** (il termine non tende a $0$): la serie non converge.
 
-*(Il PDF non scrive la conclusione finale; dalle due parti segue che converge per $|a|<3$.)*
+*Dettaglio per $|a|\ge3$ (aggiunto).* Poiché $\frac{n^3}{3^n}\to0$ e $\arcsin t\sim t$ per $t\to0$,
+$$
+\left|a^n\arcsin\frac{n^3}{3^n}\right|\sim\left(\frac{|a|}{3}\right)^n n^3\ \ge\ n^3\to+\infty .
+$$
+Il termine generale non è infinitesimo, quindi la serie non converge. Per $a\ge3$ i termini sono positivi e la serie diverge a $+\infty$. Per $a\le-3$ i termini hanno segno alterno con modulo che esplode, e la serie è irregolare. (L'argomento dell'arcoseno è sempre in $[0,1]$: il massimo di $\frac{n^3}{3^n}$ è $1$, per $n=3$.)
+
+**Conclusione:** la serie converge **se e solo se $|a|<3$**. Il "brutale" $a<3$ va letto come $|a|<3$, perché il criterio della radice si applica a $|a_n|$.
 
 ## Note e incertezze
 
 - Data della lezione: il PDF riporta **05/11/2025**, conservata in `source_date`; la data nel corso attuale è **05/11/2026**.
 - Nel lemma delle due sottosuccessioni il PDF scrive $\ell\in\mathbb R$; si è mantenuta questa lettura.
-- La domanda sul caso di **infinite** sottosuccessioni è lasciata aperta nel PDF.
+- La domanda sul caso di **infinite** sottosuccessioni è lasciata aperta nel PDF; la risposta (negativa, con controesempio) è aggiunta in §2.2.
 - Nell'Esercizio 5 il PDF indica la serie con indice da $n=1$ e usa $a_n$ per il termine generale; qui si è usato $t_n$ per non confondere il termine con il parametro $a$.
-- Esercizio 7: la conclusione per $|a|\ge3$ (non convergenza) segue dall'annotazione "manca cond. nec." del PDF; il termine con $|a|\ge 3$ è un'inferenza, non una dimostrazione esplicita.
+- Esercizio 7: il PDF annota solo "manca cond. nec." per $|a|\ge3$; la verifica esplicita è aggiunta nel testo.
