@@ -14,6 +14,10 @@ taught_at: 2026-11-12T10:44:46.400Z
 
 > [!warning] Nota sulla fonte
 > Il materiale di partenza è in molti punti frammentario. Lo sviluppo che segue ricostruisce la struttura logica della lezione: classi laterali e fibre degli omomorfismi, gruppo quoziente, teorema fondamentale di omomorfismo, teoremi di isomorfismo, conteggi nei gruppi ciclici ed esercizi finali. I passaggi la cui ricostruzione è incerta sono segnalati esplicitamente.
+>
+> **Aggiornamento:** la nota è stata confrontata con gli appunti del corso (Del Corso, Bresciani, *Appunti personali del corso di Aritmetica 26/27*, Lez. 22 dell'11/11/2026, pp. 152–160). Gli appunti confermano la struttura e risolvono i punti prima incerti (§4, §6, esercizi). Negli appunti i teoremi si chiamano "primo, secondo e terzo **teorema di omomorfismo**".
+>
+> Gli appunti avvertono anche: «non faremo il teorema di corrispondenza tra sottogruppi, quindi quegli esercizi [del libro] vanno saltati».
 
 ## 1. Le fibre di un omomorfismo sono classi laterali del nucleo
 
@@ -291,16 +295,10 @@ L'idea generale, già incontrata nel "teorema di omomorfismo per insiemi", è qu
 
 Per gli omomorfismi c'è in più la regolarità: non succede che in un elemento ne vadano $7$ e in un altro $19$, perché le fibre sono le classi laterali del nucleo. Quozientando per il nucleo, ogni classe laterale diventa un unico elemento. La mappa indotta è ben definita perché tutti gli elementi di una classe hanno la stessa immagine, ed è iniettiva.
 
-## 4. Sottogruppi del quoziente e terzo teorema di isomorfismo
+## 4. Quoziente di quozienti: secondo teorema di omomorfismo
 
-> [!warning] Ricostruzione incerta
-> Questa parte della lezione è molto lacunosa. Restano leggibili alcuni elementi:
-> - un quoziente "$G$ modulo $H$";
-> - un sottogruppo del quoziente "i cui elementi sono classi laterali", che è un sottogruppo "perché sono alcune delle classi laterali";
-> - l'uso della proiezione, della sua suriettività e del suo nucleo;
-> - la doppia applicazione del teorema fondamentale.
->
-> L'enunciato che segue è la lettura più coerente con questi frammenti, ma non è confermato parola per parola.
+> [!note] Fonte
+> Gli appunti del corso confermano enunciato e dimostrazione. Nel corso questo è il **secondo teorema di omomorfismo** (Teorema 22.2). L'idea, dagli appunti: «posso semplificare come con le frazioni», cioè "cancellare" $H$. $K/H$ è un sottogruppo di $G/H$ «perché sono alcune delle classi laterali modulo $H$».
 
 Siano $H, K$ sottogruppi normali di $G$ con $H \subseteq K$. Allora $K/H$, cioè l'insieme di alcune delle classi laterali di $H$ (quelle con rappresentante in $K$), è un sottogruppo, normale, di $G/H$, e
 
@@ -321,7 +319,12 @@ che fa commutare il diagramma.
 
 Applicando ora il primo teorema di isomorfismo a $\psi$ si ottiene l'isomorfismo voluto. Il teorema fondamentale viene così usato "due volte".
 
-## 5. Prodotto di sottogruppi e secondo teorema di isomorfismo
+> [!todo] Per casa (dagli appunti)
+> Scrivere esplicitamente la mappa che dà l'isomorfismo.
+>
+> *Risposta (aggiunta):* è $(gH)(K/H)\mapsto gK$, cioè la mappa indotta da $\psi(gH)=gK$ sul quoziente per $\ker\psi=K/H$.
+
+## 5. Prodotto di sottogruppi e terzo teorema di omomorfismo
 
 ### Il prodotto $HK$
 
@@ -331,7 +334,7 @@ $$
 HK = \{ hk \mid h \in H, \ k \in K \}.
 $$
 
-In generale **$HK$ non è un sottogruppo**. Una condizione, la cui verifica è facile, è la seguente:
+In generale **$HK$ non è un sottogruppo**. Vale la caratterizzazione seguente, lasciata **per casa** (dagli appunti: «dovrebbe essere un esercizio dell'Herstein»):
 
 $$
 HK \le G \iff HK = KH .
@@ -351,9 +354,9 @@ $$
 ### Enunciato
 
 > [!note]
-> Nella lezione i ruoli di $H$ e $K$ sembrano scambiati in alcuni punti: in un passaggio è $K$ a essere detto normale. Nel calcolo del nucleo, però, la classe banale è $H$ e la mappa è $k \mapsto kH$. Si adotta quindi la convenzione con $H$ normale.
+> Nel corso questo è il **terzo teorema di omomorfismo** (Teorema 22.3). Gli appunti lo enunciano con $H,K\trianglelefteq G$, ma nella dimostrazione serve solo che $H$ sia normale. Anche negli appunti in un passaggio $H$ e $K$ sono scambiati; la mappa è comunque $k\mapsto kH$. Per ricordare l'enunciato, dagli appunti: «$H$ compare tre volte e $K$ compare tre volte».
 
-**Teorema (secondo teorema di isomorfismo).** Siano $H \trianglelefteq G$ e $K \le G$. Allora:
+**Teorema (terzo teorema di omomorfismo).** Siano $H \trianglelefteq G$ e $K \le G$. Allora:
 
 1. $HK$ è un sottogruppo di $G$;
 2. $H \subseteq HK$ e $H$ è normale in $HK$;
@@ -456,14 +459,16 @@ $$
 
 e infatti $1+1+2+2+2+4=12$: ogni elemento compare in esattamente una riga. In un gruppo non ciclico il conteggio cambia: in $\mathbb Z/2\times\mathbb Z/2$ ci sono tre sottogruppi ciclici di ordine $2$, quindi $3\cdot\varphi(2)=3$ elementi di ordine $2$.
 
-> [!warning]
-> La formula di somma finale è la lettura più plausibile di un passaggio poco intelligibile, in cui si parla del numero degli elementi del gruppo ripartiti in gruppi di elementi con lo stesso ordine. Le parti precedenti (mappa $x \mapsto \langle x\rangle$, formula dell'ordine di $y^k$, condizione $\operatorname{MCD}=1$) sono invece chiaramente presenti.
+> [!note] Fonte
+> Negli appunti del corso il risultato della lezione è scritto come
+> $$\#\{\text{sottogruppi ciclici di ordine } d\}=\frac{\#\{\text{elementi di ordine } d\}}{\varphi(d)},$$
+> perché la mappa $x\mapsto\langle x\rangle$ è "$\varphi(d)$ a $1$". Gli appunti la spiegano così: è come contare le persone in un'aula contando le braccia e dividendo per due; con i capelli non si può fare, perché ognuno ne ha un numero diverso. La formula $n=\sum_{d\mid n}\varphi(d)$ era già stata vista negli appunti della Lez. 16 (28/10).
 
 ## 7. Esercizi
 
 ### Esercizio 1: gruppi in cui ogni elemento ha quadrato uguale all'identità
 
-**Enunciato (ricostruito).** Se in un gruppo $G$ vale $a^2 = e$ per ogni $a \in G$, allora $G$ è abeliano.
+**Enunciato** («esercizio facile, dall'Herstein»). Un gruppo in cui tutti gli elementi diversi dall'identità hanno ordine $2$, cioè $a^2=e$ per ogni $a\in G$, è abeliano.
 
 **Svolgimento.** Si osserva che
 
@@ -486,13 +491,13 @@ $$
 Poiché $a^{-1} = a$ e $b^{-1} = b$, si ottiene $ba = ab$. $\square$
 
 > [!note] Fonte
-> L'enunciato è ricostruito dai frammenti "a uguale ad a alla meno 1", "moltiplico per ... alla meno 1" e "se ne vanno". L'ipotesi $a^2=e$ per ogni $a$ è confermata dall'Esercizio 2. Lì un gruppo non ciclico di ordine $4$ ha solo elementi di ordine $1$ o $2$ (cioè $a^2=e$ per ogni $a$), e si conclude applicando proprio questo esercizio.
+> Enunciato e svolgimento sono confermati dagli appunti del corso (p. 159–160).
 
 ### Esercizio 2 (per casa)
 
-1. **Prima parte.** Dimostrare che ogni gruppo di ordine $4$ è abeliano. Il professore l'ha indicata come facile. Un gruppo di ordine $4$ o è ciclico, oppure, non essendo ciclico, ha solo elementi di ordine $1$ o $2$, e in tal caso si applica l'esercizio 1.
+Dagli appunti del corso: «Ogni gruppo di ordine $4$ è abeliano. Dimostrare che ogni gruppo di ordine $4$ o è ciclico (quindi è $\mathbb Z/4\mathbb Z$) o è isomorfo a $\mathbb Z/2\mathbb Z\times\mathbb Z/2\mathbb Z$.»
 
-2. **Seconda parte.** È più difficile e riguarda un gruppo di ordine diverso, di cui si discute il caso in cui "o è ciclico o è..." e un gruppo non ciclico ha soltanto elementi di certi ordini.
-
-> [!warning]
-> L'ordine del gruppo nella seconda parte non è identificabile con sicurezza: i frammenti riportano numeri incoerenti tra loro. Va verificato sulle indicazioni del corso.
+> [!tip] Traccia di soluzione *(aggiunta)*
+> Sia $|G|=4$. Per Lagrange ogni elemento ha ordine $1$, $2$ o $4$.
+> - Se c'è un elemento di ordine $4$, esso genera $G$: $G$ è ciclico, quindi $G\cong\mathbb Z/4\mathbb Z$ (e in particolare è abeliano).
+> - Altrimenti ogni $a\ne e$ ha ordine $2$. Per l'esercizio 1 $G$ è abeliano. Scritto $G=\{e,a,b,c\}$, il prodotto $ab$ non può essere $e$ (sarebbe $b=a^{-1}=a$), né $a$ o $b$ (sarebbe $b=e$ o $a=e$). Quindi $ab=c$. La mappa $\mathbb Z/2\times\mathbb Z/2\to G$, $(i,j)\mapsto a^ib^j$, è allora un omomorfismo (perché $G$ è abeliano) e biiettivo: $(0,0),(1,0),(0,1),(1,1)\mapsto e,a,b,c$.

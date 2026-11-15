@@ -14,6 +14,8 @@ taught_at: 2026-11-15T12:19:18.640Z
 
 > [!note]
 > Ampie parti della registrazione sono inintelligibili. La struttura e i contenuti qui riportati sono quelli riconoscibili con ragionevole sicurezza. Dove un passaggio è incerto, lo si segnala esplicitamente.
+>
+> **Aggiornamento:** la nota è stata confrontata con gli appunti scritti a mano della lezione (`12_11_26.pdf`). Questi confermano la struttura e risolvono i punti prima incerti: il testo dell'esercizio del §2 e lo spazio quoziente del §6.
 
 **Notazione.** Per un'applicazione lineare $F: V \to W$, con $\mathcal{B}$ base di $V$ (partenza) e $\mathcal{C}$ base di $W$ (arrivo), indichiamo con
 
@@ -126,23 +128,31 @@ Il nucleo della restrizione è $\ker F_A\cap\operatorname{Im}F_B$. Il docente ha
 
 **Morale.** Applicando un'applicazione lineare a un sottospazio, la dimensione dell'immagine è minore o uguale a quella del sottospazio: non può aumentare.
 
-### Esercizio successivo (contenuto incerto)
+### Esercizio successivo: $V=\ker f\oplus\operatorname{Im}f$
 
-È stato svolto un ulteriore esercizio, presentato come "più interessante". Dai frammenti si riconoscono:
+Il testo, confermato dagli appunti scritti a mano (`12_11_26.pdf`), è:
 
-- sottospazi complementari;
-- la somma delle dimensioni;
-- un enunciato del tipo "se e soltanto se il rango di [un prodotto/composizione] è uguale al rango di [uno dei fattori]".
+> **Esercizio.** Sia $f:V\to V$ lineare. Dimostrare che
+> $$V=\ker f\oplus\operatorname{Im}f\iff\operatorname{rk}f=\operatorname{rk}(f^2),\qquad f^2=f\circ f.$$
 
-Una formulazione compatibile con la dimostrazione precedente è la seguente:
+Negli appunti, subito prima, compaiono gli strumenti da usare:
 
 $$
-\operatorname{rk}(AB)=\operatorname{rk}(B) \iff \ker F_A\cap\operatorname{Im}F_B=\{0\}.
+\operatorname{Im}(g\circ f)=g(\operatorname{Im}f),\qquad \dim\operatorname{Im}(g\circ f)=\dim\operatorname{Im}f-\dim(\operatorname{Im}f\cap\ker g),
 $$
 
-Segue dalla formula delle dimensioni della restrizione. Il testo esatto dell'esercizio però non è ricostruibile con certezza.
+che è la formula $\dim f(U)=\dim U-\dim(U\cap\ker f)$ applicata alla restrizione ($\ker(f|_U)=U\cap\ker f$).
 
-> [!tip] Dimostrazioni *(aggiunte)*
+> [!tip] Soluzione *(aggiunta)*
+> Si applica la formula con $g=f$:
+> $$\operatorname{rk}(f^2)=\operatorname{rk}f-\dim(\operatorname{Im}f\cap\ker f).$$
+> Quindi $\operatorname{rk}(f^2)=\operatorname{rk}f\iff\ker f\cap\operatorname{Im}f=\{0\}$.
+>
+> Per rango-nullità, $\dim\ker f+\dim\operatorname{Im}f=\dim V$. Se l'intersezione è nulla, Grassmann dà $\dim(\ker f+\operatorname{Im}f)=\dim V$, quindi $\ker f+\operatorname{Im}f=V$ e la somma è diretta. Viceversa, se $V=\ker f\oplus\operatorname{Im}f$ l'intersezione è nulla per definizione di somma diretta. $\blacksquare$
+>
+> *Controesempio utile:* $f(x,y)=(y,0)$ su $K^2$ ha $\ker f=\operatorname{Im}f=\operatorname{Span}(e_1)$, quindi $f^2=0$ e $\operatorname{rk}f=1\ne0=\operatorname{rk}f^2$.
+
+> [!tip] Versione per matrici *(aggiunta)*
 > Siano $A\in M_{m\times n}$ e $B\in M_{n\times p}$, e sia $U=\operatorname{Im}F_B\subseteq K^n$. Per la formula della restrizione (vedi anche [[2026-11-13 - Conseguenze del teorema rango-nullità, restrizioni e cambiamenti di base#3. Restrizione a un sottospazio|lezione del 13 novembre, §3]]):
 > $$\operatorname{rk}(AB)=\dim F_A(U)=\dim U-\dim(\ker F_A\cap U)=\operatorname{rk}B-\dim(\ker F_A\cap\operatorname{Im}F_B).$$
 > **(1)** Quindi $\operatorname{rk}(AB)=\operatorname{rk}B\iff\ker F_A\cap\operatorname{Im}F_B=\{0\}$.
@@ -151,9 +161,7 @@ Segue dalla formula delle dimensioni della restrizione. Il testo esatto dell'ese
 > $$\dim(\operatorname{Im}F_B+\ker F_A)=\operatorname{rk}B+(n-\operatorname{rk}A)-\dim(\ker F_A\cap\operatorname{Im}F_B)=n-\operatorname{rk}A+\operatorname{rk}(AB).$$
 > Quindi $\operatorname{rk}(AB)=\operatorname{rk}A\iff\operatorname{Im}F_B+\ker F_A=K^n$.
 >
-> In particolare, se $\operatorname{Im}F_B$ e $\ker F_A$ sono **complementari** ($K^n=\operatorname{Im}F_B\oplus\ker F_A$), valgono entrambe: $\operatorname{rk}(AB)=\operatorname{rk}A=\operatorname{rk}B$.
->
-> Quale delle due versioni sia stata svolta in classe resta incerto.
+> In particolare, se $\operatorname{Im}F_B$ e $\ker F_A$ sono **complementari** ($K^n=\operatorname{Im}F_B\oplus\ker F_A$), valgono entrambe: $\operatorname{rk}(AB)=\operatorname{rk}A=\operatorname{rk}B$. Con $A=B$ si ritrova l'esercizio sopra.
 
 ## 3. L'algebra degli endomorfismi $L(V)$
 
@@ -381,6 +389,13 @@ $$
 
 Quindi una qualunque matrice invertibile diversa da $I_n$ ha rango $n$ come $I_n$, ma sicuramente non è simile a $I_n$. Servono altri invarianti.
 
+**Esempio (dagli appunti).** $I=\begin{pmatrix}1&0\\0&1\end{pmatrix}$ e $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ hanno entrambe rango $2$ e (vedi sotto) traccia $2$, ma non sono simili: $I$ è simile solo a se stessa. Quindi nemmeno rango e traccia insieme bastano a decidere la similitudine.
+
+> [!example] Esercizio (dagli appunti)
+> Se $P$ è invertibile, allora $\operatorname{rk}(AP)=\operatorname{rk}A$ e $\operatorname{rk}(PA)=\operatorname{rk}A$.
+>
+> *Soluzione (aggiunta).* Per il corollario del §2, $\operatorname{rk}(AP)\le\operatorname{rk}A$. Inoltre $A=(AP)P^{-1}$, quindi $\operatorname{rk}A\le\operatorname{rk}(AP)$. Lo stesso argomento, con $A=P^{-1}(PA)$, vale per $PA$.
+
 ### La traccia
 
 Data $A=(a_{ij})\in M_n(K)$ quadrata, si definisce la **traccia** come la somma degli elementi diagonali:
@@ -419,8 +434,8 @@ Matrici con traccia diversa non sono quindi simili. Come conseguenza, si può de
 
 ## 6. Lo spazio quoziente
 
-> [!warning] Sezione ricostruita
-> Nella registrazione si sentono solo frammenti di fine lezione: "si definisce l'insieme … delle classi di equivalenza di una certa relazione", "viene partizionato in classi". Che la relazione sia $v - w \in U$ e che si tratti dello spazio quoziente $V/U$ è un'interpretazione, compatibile con quei frammenti ma non confermata dall'audio. Verifica su appunti o libro.
+> [!note] Fonte
+> La registrazione conserva solo frammenti di fine lezione. Gli appunti scritti a mano (`12_11_26.pdf`) confermano il contenuto: spazio quoziente con relazione $v\sim v'\iff v-v'\in W$, classi $[v]_W=v+W$, operazioni e buona definizione, $[0]=W$. Negli appunti il sottospazio si chiama $W$, qui $U$.
 
 ### Costruzione
 
@@ -477,3 +492,6 @@ La classe del risultato non cambia.
 - Lo zero è la classe $[0]=0+U=U$.
 - L'opposto di una classe $[u]$ è $[-u]=-u+U$.
 - Gli altri assiomi seguono da quelli di $V$.
+
+> [!todo] Per casa
+> Negli appunti: «verificare che è uno spazio vettoriale (assiomi)». Ogni assioma si verifica scrivendo le classi tramite rappresentanti e usando l'assioma corrispondente in $V$, per esempio $[v]+[w]=[v+w]=[w+v]=[w]+[v]$.

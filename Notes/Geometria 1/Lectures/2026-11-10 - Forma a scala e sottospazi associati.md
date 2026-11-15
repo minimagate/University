@@ -12,7 +12,9 @@ taught_at: 2026-11-12T10:46:20.968Z
 # Forma a scala e sottospazi associati
 
 > [!warning] Nota sulla fonte
-> Il materiale di questa lezione è arrivato in forma molto frammentaria. Le parti seguenti ricostruiscono gli argomenti e i ragionamenti solo dove la loro struttura matematica è riconoscibile senza ambiguità. Dove i dati (in particolare quelli numerici degli esempi) non sono recuperabili, lo si segnala esplicitamente.
+> Il materiale di questa lezione è arrivato in forma molto frammentaria. Le parti seguenti ricostruiscono gli argomenti e i ragionamenti solo dove la loro struttura matematica è riconoscibile senza ambiguità.
+>
+> **Aggiornamento:** la nota è stata confrontata con gli appunti scritti a mano della lezione (`10_11_26.pdf`). Questi confermano la struttura e forniscono i dati mancanti: l'esempio del §1, l'esercizio del §5 (Martelli 4.2) e i numeri degli esercizi assegnati.
 
 ## 1. Algoritmo per base della somma e dell'intersezione di due sottospazi
 
@@ -144,41 +146,71 @@ $$
 
 Sono dunque vettori indipendenti del sottospazio, in numero pari alla sua dimensione, e ne formano una base.
 
-### Esempio numerico
+### Esempio numerico (dagli appunti)
 
-A lezione l'algoritmo è stato applicato a un esempio in $\mathbb R^3$ i cui dati non si sono conservati (si leggono solo frammenti come $(-6,1,1)$, $(1,1,0)$, $(4,0,-5)$; nella riduzione si sottrae $5$ volte la prima riga, una riga risulta il doppio di un'altra, e poi si divide per $5$ e per $2$). Ecco lo stesso procedimento su un esempio completo.
-
-Siano in $\mathbb R^3$
+L'esempio svolto in classe è in $\mathbb R^4$:
 
 $$
-U=\operatorname{Span}\big((1,1,0),\,(0,1,1)\big),\qquad W=\operatorname{Span}\big((1,0,0),\,(0,0,1)\big).
+U=\operatorname{Span}\big((1,-1,1,0),\,(1,-1,-1,2)\big),\qquad W=\operatorname{Span}\big((5,5,-6,1),\,(0,-5,3,2)\big).
 $$
 
-Si scrive la matrice $4\times 6$ con le righe $(u_i,u_i)$ e $(w_j,0)$:
+> [!warning] Un dato da controllare
+> Negli appunti il secondo generatore di $W$ è scritto $(0,-5,1,2)$. Però tutta la riduzione successiva usa la riga $(0,-5,3,2)$, e il risultato finale torna solo con $3$. Con $(0,-5,1,2)$ i quattro generatori sarebbero indipendenti: $U+W=\mathbb R^4$ e $U\cap W=\{0\}$. Qui si usa $(0,-5,3,2)$. Controlla sul testo o con un compagno.
+
+Si scrive la matrice $4\times 8$ con le righe $(u_i,u_i)$ e $(w_j,0)$:
 
 $$
-A=\left(\begin{array}{ccc|ccc}
-1&1&0&1&1&0\\
-0&1&1&0&1&1\\
-1&0&0&0&0&0\\
-0&0&1&0&0&0
+A=\left(\begin{array}{cccc|cccc}
+1&-1&1&0&1&-1&1&0\\
+1&-1&-1&2&1&-1&-1&2\\
+5&5&-6&1&0&0&0&0\\
+0&-5&3&2&0&0&0&0
 \end{array}\right).
 $$
 
-Riduzione: $R_3\to R_3-R_1$ dà $(0,-1,0\mid -1,-1,0)$; poi $R_3\to R_3+R_2$ dà $(0,0,1\mid -1,0,1)$; infine $R_4\to R_4-R_3$ dà $(0,0,0\mid 1,0,-1)$. Quindi
+**Riduzione.**
+
+1. $R_2\to R_2-R_1$ e $R_3\to R_3-5R_1$:
+$$
+\left(\begin{array}{cccc|cccc}
+1&-1&1&0&1&-1&1&0\\
+0&0&-2&2&0&0&-2&2\\
+0&10&-11&1&-5&5&-5&0\\
+0&-5&3&2&0&0&0&0
+\end{array}\right).
+$$
+2. Si scambiano la seconda e la quarta riga. La terza riga ha $10$ nella seconda colonna, il doppio (cambiato di segno) del $-5$ della nuova seconda riga: $R_3\to R_3+2R_2$ dà $(0,0,-5,5\mid-5,5,-5,0)$, che si divide per $5$.
+3. $R_4\to R_4-2R_3$ dà $(0,0,0,0\mid 2,-2,0,2)$, che si divide per $2$.
 
 $$
-S=\left(\begin{array}{ccc|ccc}
-1&1&0&1&1&0\\
-0&1&1&0&1&1\\
-0&0&1&-1&0&1\\
-0&0&0&1&0&-1
+S=\left(\begin{array}{cccc|cccc}
+1&-1&1&0&1&-1&1&0\\
+0&-5&3&2&0&0&0&0\\
+0&0&-1&1&-1&1&-1&0\\
+0&0&0&0&1&-1&0&1
 \end{array}\right).
 $$
 
-Le prime $r=3$ righe hanno il pivot a sinistra: le loro metà sinistre $(1,1,0),(0,1,1),(0,0,1)$ sono una base di $U+W$, che quindi è tutto $\mathbb R^3$. L'ultima riga ha metà sinistra nulla: la sua metà destra $(1,0,-1)$ è una base di $U\cap W$.
+**Lettura del risultato.** Le prime $r=3$ righe hanno il pivot a sinistra:
 
-**Controllo.** $(1,0,-1)=(1,1,0)-(0,1,1)\in U$ e $(1,0,-1)=(1,0,0)-(0,0,1)\in W$. Le dimensioni tornano con Grassmann: $\dim U+\dim W=2+2=4=3+1=\dim(U+W)+\dim(U\cap W)$. In effetti $U$ è il piano $x-y+z=0$, $W$ è il piano $y=0$, e la loro intersezione è la retta $y=0,\ x=-z$.
+$$
+U+W=\operatorname{Span}\big((1,-1,1,0),\,(0,-5,3,2),\,(0,0,-1,1)\big),\qquad \dim(U+W)=3.
+$$
+
+L'ultima riga ha metà sinistra nulla, e la sua metà destra dà
+
+$$
+U\cap W=\operatorname{Span}\big((1,-1,0,1)\big),\qquad \dim(U\cap W)=1.
+$$
+
+**Controllo.** $(1,-1,0,1)=\tfrac12\big[(1,-1,1,0)+(1,-1,-1,2)\big]\in U$ e $(1,-1,0,1)=\tfrac15(5,5,-6,1)+\tfrac25(0,-5,3,2)\in W$. Grassmann: $2+2=3+1$.
+
+> [!tip] Un secondo esempio *(aggiunto)*
+> Lo stesso procedimento in $\mathbb R^3$, con $U=\operatorname{Span}((1,1,0),(0,1,1))$ e $W=\operatorname{Span}((1,0,0),(0,0,1))$. La matrice
+> $$\left(\begin{array}{ccc|ccc}1&1&0&1&1&0\\0&1&1&0&1&1\\1&0&0&0&0&0\\0&0&1&0&0&0\end{array}\right)$$
+> si riduce a
+> $$\left(\begin{array}{ccc|ccc}1&1&0&1&1&0\\0&1&1&0&1&1\\0&0&1&-1&0&1\\0&0&0&1&0&-1\end{array}\right).$$
+> Quindi $U+W=\mathbb R^3$ e $U\cap W=\operatorname{Span}((1,0,-1))$: in effetti $U$ è il piano $x-y+z=0$, $W$ il piano $y=0$.
 
 ## 2. Calcolo della matrice inversa tramite mosse di riga
 
@@ -266,7 +298,7 @@ $$
 
 ## 3. Mosse di riga e sottomatrici di colonne
 
-**Proposizione.** Siano $A, B \in M_{m\times n}(K)$ equivalenti per mosse di riga. Nella lezione si parla di "$S$-equivalenza", presumibilmente per indicare questa relazione. Siano $j_1 < \dots < j_k$ indici di colonna. Indichiamo con $A_{j_1,\dots,j_k}$ la sottomatrice di $A$ formata dalle sole colonne $j_1, \dots, j_k$, e analogamente $B_{j_1,\dots,j_k}$. Allora
+**Proposizione.** Siano $A, B \in M_{m\times n}(K)$ equivalenti per mosse di riga. Negli appunti la relazione si scrive $A\sim_s B$ ("$S$-equivalenza"). Siano $j_1 < \dots < j_k$ indici di colonna. Indichiamo con $A_{j_1,\dots,j_k}$ la sottomatrice di $A$ formata dalle sole colonne $j_1, \dots, j_k$, e analogamente $B_{j_1,\dots,j_k}$. Allora
 
 $$
 A_{j_1,\dots,j_k} \text{ è equivalente per mosse di riga a } B_{j_1,\dots,j_k}.
@@ -374,31 +406,36 @@ Il viceversa è ovvio. $\square$
 > [!note] Intuizione
 > Conoscendo il sottospazio generato dalle righe e le colonne dei pivot, si conosce interamente la matrice a scala completa. Ogni riga è l'unico vettore del sottospazio che, lungo le colonne dei pivot, ha $1$ nella "sua" posizione e $0$ in tutte le altre.
 
-## 5. Matrice di un'applicazione lineare rispetto a basi date
+## 5. Esercizio 4.2 (Martelli): matrice di una restrizione
 
-È stato svolto un esercizio tratto dal testo di Martelli. Si considera un'applicazione lineare $F : U \to K^3$, dove $U$ è un sottospazio di dimensione $2$ di cui è data una base, e si cerca la matrice di $F$ rispetto alla base data di $U$ e alla base canonica di $K^3$.
-
-**Forma della matrice.** Lo spazio di partenza ha dimensione $2$, quindi la matrice ha $2$ colonne. Lo spazio di arrivo ha dimensione $3$, quindi la matrice ha $3$ righe:
+Dagli appunti: sia $F:\mathbb R^3\to\mathbb R^3$,
 
 $$
-[F] \in M_{3\times 2}(K).
+F\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}2x-y+z\\x+y+z\\y-z\end{pmatrix},\qquad U=\{x+y-z=0\}.
 $$
 
-**Costruzione.** La prima colonna contiene le coordinate, nella base canonica, dell'immagine tramite $F$ del primo vettore della base di $U$. La seconda colonna contiene quelle dell'immagine del secondo vettore. Nella base canonica le coordinate di un vettore sono semplicemente le sue componenti: il vettore immagine "è sempre lui".
+Si cerca la matrice di $F|_U:U\to\mathbb R^3$ rispetto alla base $\mathcal B=\{(1,0,1),(0,1,1)\}$ di $U$ e alla base canonica $\mathcal E$ di $\mathbb R^3$.
 
-Nel calcolo compaiono il vettore $(1,0,1)$, come primo vettore su cui si calcola $F$, e frammenti come $(0,1,-1)$ e $(6,4,0)$.
+**Forma della matrice.** Lo spazio di partenza ha dimensione $2$ e quello di arrivo dimensione $3$, quindi $[F|_U]^{\mathcal B}_{\mathcal E}\in M_{3\times 2}(\mathbb R)$.
 
-> [!warning]
-> La definizione esatta di $F$ e della base di $U$, e quindi la matrice finale, non sono ricostruibili con certezza.
+**Costruzione.** Ogni colonna contiene le coordinate, nella base canonica, dell'immagine di un vettore di $\mathcal B$. Nella base canonica le coordinate di un vettore sono le sue componenti.
 
-> [!tip] Aggiornamento
-> Lo stesso tipo di esercizio è svolto per intero, con tutti i dati, nella [[2026-11-13 - Conseguenze del teorema rango-nullità, restrizioni e cambiamenti di base#4. Esempio: matrice della restrizione e cambiamento di base|lezione del 13 novembre]]: lì $U = \{x+y-z=0\}$ con base $(1,0,1), (0,1,1)$.
+$$
+F(1,0,1)=(3,2,-1),\qquad F(0,1,1)=(0,2,0),
+$$
+
+$$
+[F|_U]^{\mathcal B}_{\mathcal E}=\begin{pmatrix}3&0\\2&2\\-1&0\end{pmatrix}.
+$$
+
+> [!tip] Seguito
+> Lo stesso esercizio prosegue nella [[2026-11-13 - Conseguenze del teorema rango-nullità, restrizioni e cambiamenti di base#4. Esempio: matrice della restrizione e cambiamento di base|lezione del 13 novembre]], dove la matrice si ricalcola rispetto a un'altra base dell'arrivo.
 
 ## Esercizi assegnati
 
-Dagli esercizi del testo di Martelli:
+Dal testo di Martelli (numeri dagli appunti scritti a mano):
 
-- esercizio 3.5, svolto o discusso in classe, e da provare anche il 4 della stessa serie. La numerazione esatta è incerta: compare anche "6.4";
-- esercizio 4.4, da svolgere a casa, analogo all'esercizio sulla matrice di un'applicazione lineare.
+- **3.5, 4.10, 4.13**, assegnati dopo il calcolo della matrice inversa;
+- **4.4**, assegnato dopo l'esercizio 4.2 svolto in classe.
 
 Il docente ha annunciato che metterà online il materiale entro il giorno successivo.

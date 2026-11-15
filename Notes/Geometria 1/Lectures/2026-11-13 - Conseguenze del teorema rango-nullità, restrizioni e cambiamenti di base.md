@@ -95,6 +95,8 @@ In particolare, se $F$ è iniettiva anche $F|_U$ lo è, e $\dim F(U) = \dim U$.
 
 ## 4. Esempio: matrice della restrizione e cambiamento di base
 
+È il seguito dell'esercizio 4.2 di Martelli, iniziato nella [[2026-11-10 - Forma a scala e sottospazi associati#5. Esercizio 4.2 (Martelli): matrice di una restrizione|lezione del 10 novembre]].
+
 ### Dati
 
 $$
